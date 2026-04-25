@@ -6,7 +6,7 @@ This site is plain static HTML and CSS — no build step, no JavaScript framewor
 
 - **Host:** Vercel (project `npsi-site`, scope `jesse-james-projects-7f92fbf5`)
 - **Default URL:** `https://npsi-site.vercel.app`
-- **Primary domain:** `northpacific.org` (not yet attached — see DNS section)
+- **Primary domain:** `npsi.ca` (registered for ten years through CIRA; not yet attached — see DNS section)
 - **Linked locally:** `.vercel/project.json` (gitignored — this is per-developer config, not committed)
 
 The Vercel project is linked from this directory. To deploy:
@@ -20,12 +20,17 @@ vercel deploy          # preview deploy on a branch / unique URL
 
 ## DNS / Domain
 
-Primary domain: `northpacific.org`. `npsi.org` and any other variants are 301-redirects to the primary.
+Primary domain: `npsi.ca`, registered for ten years at the current registrar. `.ca` is restricted by CIRA (Canadian Presence Requirement) and is **not** sold by Cloudflare Registrar — DNS-only management at Cloudflare is still available if desired, while the registration stays at a CIRA-accredited registrar (easyDNS, Hover, Porkbun, Namecheap). Defensive `npsi.org` / `northpacific.org` redirects are optional, not required (see brand specification §10).
 
-After registration:
-1. Add `northpacific.org` (and `www.northpacific.org`) to the Vercel project under **Settings → Domains**. Vercel will provide the required `A`/`CNAME`/`ALIAS` records (or, if the registrar supports it, full nameserver delegation).
-2. Configure DNS at the registrar to match. HTTPS provisions automatically via Let's Encrypt (typically 5–15 minutes).
-3. Configure email forwarding for `editor@northpacific.org` and `commentary@northpacific.org`. Vercel does not handle MX — use the registrar's email forwarding (most offer free forwarding) or a dedicated provider (Forward Email, ImprovMX, or Fastmail if a real inbox is needed). Set MX, SPF, and DKIM at the registrar's DNS — separate from the A/CNAME records pointing the web traffic at Vercel.
+**Pointing the domain at Vercel:**
+1. Add `npsi.ca` and `www.npsi.ca` to the Vercel project under **Settings → Domains**. Vercel will provide the required `A`/`CNAME`/`ALIAS` records.
+2. Configure DNS at the registrar (or at Cloudflare DNS if delegated) to match. HTTPS provisions automatically via Let's Encrypt (typically 5–15 minutes).
+3. **Enable DNSSEC** at the registrar — `.ca` supports it; flip the toggle. Cryptographically signs DNS, blocks zone hijacks. Most institutional domains skip this; ours should not.
+
+**Email — the credibility-critical part:**
+Vercel does not handle MX. Configure separately at whichever DNS service holds the zone:
+1. **Forwarding** for `editor@npsi.ca`, `commentary@npsi.ca`, `press@npsi.ca` — registrar forwarding is usually free; Cloudflare Email Routing is the cleanest option if DNS is at Cloudflare; ImprovMX (free up to 25 aliases) and Forward Email are reliable third-party options. Forward to your existing personal inbox until volume warrants a real mailbox provider.
+2. **SPF, DKIM, DMARC** records — the single biggest technical-credibility signal. Without them, mail from `editor@npsi.ca` lands in recipients' spam folders and forged mail can claim to be from NPSI. Whichever forwarder you pick will give you the exact records to publish. Set DMARC to `p=none` (observation) for the first two weeks, then `p=reject` for production.
 
 ## File structure
 
@@ -57,10 +62,11 @@ The site references these files; place them at the indicated paths before launch
 
 ## Pre-launch checklist
 
-- [ ] Domain `northpacific.org` registered
-- [ ] `northpacific.org` and `www.northpacific.org` attached to Vercel project, DNS pointed, HTTPS verified
-- [ ] `npsi.org` and any other secondary domains configured as 301-redirects to `northpacific.org`
-- [ ] Email aliases configured: `editor@northpacific.org`, `commentary@northpacific.org` (MX/SPF/DKIM at the registrar, separate from the web records)
+- [x] Domain `npsi.ca` registered (10-year CIRA registration)
+- [ ] `npsi.ca` and `www.npsi.ca` attached to Vercel project, DNS pointed, HTTPS verified
+- [ ] DNSSEC enabled at registrar
+- [ ] Email aliases configured: `editor@npsi.ca`, `commentary@npsi.ca` (MX + SPF + DKIM + DMARC, separate from the A/CNAME web records)
+- [ ] (Optional) Defensive redirects: `npsi.org`, `northpacific.org` registered and 301'd to `npsi.ca`
 - [ ] All four PDF/image release files dropped in
 - [ ] OG image renders correctly when URL is pasted into LinkedIn / Twitter / Slack preview
 - [ ] All internal links verified (especially across pages: home → wp1 → engage → commentary)
@@ -70,7 +76,7 @@ The site references these files; place them at the indicated paths before launch
 - [ ] Form submission for mailing list either disabled or wired to a real handler (Buttondown, ConvertKit, Mailchimp — pick whichever has the cleanest no-tracking option)
 - [ ] GitHub repository at `github.com/npsi-pacific/working-paper-1` exists, populated, and public
 - [ ] Working Paper PDF released as a GitHub Release (not just a file in the repo)
-- [ ] Confirm `/CLAUDE.md` and `/DEPLOYMENT.md` return 404 at the public URL
+- [ ] Confirm `/CLAUDE.md`, `/DEPLOYMENT.md`, and `/NPSI-brand-specification.md` all return 404 at the public URL
 
 ## Mailing list integration
 
