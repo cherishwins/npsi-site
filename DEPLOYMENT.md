@@ -1,23 +1,31 @@
 # NPSI Site — Deployment Notes
 
-This site is plain static HTML and CSS — no build step, no JavaScript framework, no backend. It deploys cleanly to any static-hosting platform.
+This site is plain static HTML and CSS — no build step, no JavaScript framework, no backend. It is deployed on **Vercel**.
 
-## Recommended deployment
+## Current deployment
 
-**Cloudflare Pages** — recommended for institutional sites. Free, fast global CDN, custom domain, automatic HTTPS, no analytics by default. Setup: create a Cloudflare account, connect the GitHub repository, point it at the `npsi-site` directory, deploy. Add the custom domain `npsi.ca` and Cloudflare handles DNS, certificates, and CDN.
+- **Host:** Vercel (project `npsi-site`, scope `jesse-james-projects-7f92fbf5`)
+- **Default URL:** `https://npsi-site.vercel.app`
+- **Primary domain:** `northpacific.org` (not yet attached — see DNS section)
+- **Linked locally:** `.vercel/project.json` (gitignored — this is per-developer config, not committed)
 
-**Netlify** or **Vercel** — equivalent options. Both offer the same workflow, both have generous free tiers, both handle custom domains and HTTPS automatically.
+The Vercel project is linked from this directory. To deploy:
 
-**GitHub Pages** — works but more limited; no custom 404 routing on the free tier without a custom domain.
+```bash
+vercel deploy --prod   # production deploy
+vercel deploy          # preview deploy on a branch / unique URL
+```
+
+`.vercelignore` excludes `CLAUDE.md`, `DEPLOYMENT.md`, and `.git/` from public deploys. Verify after any structural change that internal docs are not exposed at the deploy URL.
 
 ## DNS / Domain
 
-Primary domain: `npsi.ca`. `.ca` is restricted by CIRA (Canadian Presence Requirement — the registrant must be a Canadian citizen, permanent resident, registered Canadian organisation, or otherwise meet a CPR category) and is **not** offered by Cloudflare Registrar. Recommended registrars for `.ca`: **easyDNS** (Canadian, CIRA-accredited, the institutional default), **Hover**, **Porkbun**, or **Namecheap**. Avoid GoDaddy.
+Primary domain: `northpacific.org`. `npsi.org` and any other variants are 301-redirects to the primary.
 
 After registration:
-1. Point the domain at the static-host's edge (CNAME or A records the host provides). For Cloudflare Pages, delegate the `npsi.ca` zone to Cloudflare nameservers at the registrar — Cloudflare can host DNS for a domain it doesn't sell.
-2. Verify HTTPS is provisioned (typically automatic, takes 5–15 minutes).
-3. Configure email forwarding (`editor@`, `commentary@`). Cloudflare Email Routing is the cleanest option once DNS is on Cloudflare — free, reliable, and handles MX/SPF/DKIM automatically. easyDNS also offers free forwarding if DNS stays at the registrar.
+1. Add `northpacific.org` (and `www.northpacific.org`) to the Vercel project under **Settings → Domains**. Vercel will provide the required `A`/`CNAME`/`ALIAS` records (or, if the registrar supports it, full nameserver delegation).
+2. Configure DNS at the registrar to match. HTTPS provisions automatically via Let's Encrypt (typically 5–15 minutes).
+3. Configure email forwarding for `editor@northpacific.org` and `commentary@northpacific.org`. Vercel does not handle MX — use the registrar's email forwarding (most offer free forwarding) or a dedicated provider (Forward Email, ImprovMX, or Fastmail if a real inbox is needed). Set MX, SPF, and DKIM at the registrar's DNS — separate from the A/CNAME records pointing the web traffic at Vercel.
 
 ## File structure
 
@@ -44,14 +52,15 @@ npsi-site/
 The site references these files; place them at the indicated paths before launch:
 
 1. `wp1/working-paper.pdf` — the full Working Paper No. 1 v1.0 PDF release.
-2. `wp1/executive-brief.pdf` — already exists; copy from the kit.
-3. `wp1/ckpif-architecture.png` — already exists; copy from the kit.
+2. `wp1/executive-brief.pdf` — copy from the kit if not yet present.
+3. `wp1/ckpif-architecture.png` — copy from `assets/img/` if not yet present at the wp1 path.
 
 ## Pre-launch checklist
 
-- [ ] Domain registered and DNS pointed at static host
-- [ ] HTTPS provisioned and verified
-- [ ] Email aliases configured: `editor@npsi.ca`, `commentary@npsi.ca`
+- [ ] Domain `northpacific.org` registered
+- [ ] `northpacific.org` and `www.northpacific.org` attached to Vercel project, DNS pointed, HTTPS verified
+- [ ] `npsi.org` and any other secondary domains configured as 301-redirects to `northpacific.org`
+- [ ] Email aliases configured: `editor@northpacific.org`, `commentary@northpacific.org` (MX/SPF/DKIM at the registrar, separate from the web records)
 - [ ] All four PDF/image release files dropped in
 - [ ] OG image renders correctly when URL is pasted into LinkedIn / Twitter / Slack preview
 - [ ] All internal links verified (especially across pages: home → wp1 → engage → commentary)
@@ -61,6 +70,7 @@ The site references these files; place them at the indicated paths before launch
 - [ ] Form submission for mailing list either disabled or wired to a real handler (Buttondown, ConvertKit, Mailchimp — pick whichever has the cleanest no-tracking option)
 - [ ] GitHub repository at `github.com/npsi-pacific/working-paper-1` exists, populated, and public
 - [ ] Working Paper PDF released as a GitHub Release (not just a file in the repo)
+- [ ] Confirm `/CLAUDE.md` and `/DEPLOYMENT.md` return 404 at the public URL
 
 ## Mailing list integration
 
@@ -74,7 +84,11 @@ Whichever you pick, the form should POST to the provider's API endpoint. Replace
 
 ## Analytics
 
-Recommend **none** for v1. Institutional credibility is enhanced by the absence of tracking. If analytics become necessary later, **Plausible** (privacy-respecting, open-source, no cookies) is the recommended choice.
+Recommend **none** for v1. Institutional credibility is enhanced by the absence of tracking. **Vercel Web Analytics is disabled and should remain disabled** — it injects a tracking script and conflicts with the brand discipline (`CLAUDE.md`: "Not a tracking surface"). If analytics ever become necessary later, **Plausible** (privacy-respecting, open-source, no cookies) is the recommended choice.
+
+## CI / source of truth
+
+The GitHub repository is the source of truth. Once the repo is created at `github.com/npsi-pacific/npsi-site` (or chosen name) and connected to the Vercel project under **Settings → Git**, every push to `main` produces a production deploy and every branch produces a preview deploy. Until then, deploys are driven from this working tree via the Vercel CLI.
 
 ## Future maintenance
 
