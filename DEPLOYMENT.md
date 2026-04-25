@@ -90,7 +90,11 @@ Whichever you pick, the form should POST to the provider's API endpoint. Replace
 
 ## Analytics
 
-Recommend **none** for v1. Institutional credibility is enhanced by the absence of tracking. **Vercel Web Analytics is disabled and should remain disabled** — it injects a tracking script and conflicts with the brand discipline (`CLAUDE.md`: "Not a tracking surface"). If analytics ever become necessary later, **Plausible** (privacy-respecting, open-source, no cookies) is the recommended choice.
+The site uses **Umami** (Umami Cloud, website ID `46eb01bb-d447-4798-a026-584cc1f9a3c0`) — cookieless, no personally-identifying data, GDPR-compliant by design. The script is loaded `defer` from `cloud.umami.is/script.js` in every page's `<head>`. The dashboard is publicly shareable; if/when ready, link it from the colophon as an institutional-transparency signal.
+
+**Vercel Web Analytics remains disabled** — redundant given Umami, and it adds Vercel-specific tracking that doesn't carry editorial weight. Do not enable it.
+
+**Never add Google Analytics, Mixpanel, Segment, Hotjar, or any session-replay / fingerprinting product to this site.** They are categorically incompatible with the brand spec (`CLAUDE.md`: "Not a tracking surface") and trigger PIPEDA/GDPR consent obligations the site is structured to avoid.
 
 ## CI / source of truth
 

@@ -18,7 +18,7 @@ These constraints are non-negotiable. They are the brand discipline. Drift on an
 - **Not a personal platform.** The editor signs the work, the imprint hosts it. Don't write content as if Jesse is the brand.
 - **Not a content stream.** Working papers publish when substantive material is ready. There is no cadence. The site does not need a blog, news section, or tag cloud.
 - **Not a consulting page.** No services menu, no "work with us," no rates.
-- **Not a tracking surface.** Zero analytics, zero cookies, zero third-party scripts. The absence is part of the credibility.
+- **Not a tracking surface.** No cookies, no fingerprinting, no Google Analytics or any equivalent product that profiles visitors. The site uses **Umami** (cookieless, no personally-identifying data, GDPR-compliant by design); the analytics dashboard is itself shareable as a public URL, which fits the editorial-transparency posture rather than violating it. Adding any other third-party script — fonts excepted — requires the same discipline check.
 - **Not a movement.** No flags, no national symbols, no slogans. Treaty-document register only.
 - **Not a JavaScript framework SPA.** No React, no Vue, no Next.js, no build step. Plain HTML and CSS, hand-authored. Adding a framework would slow the site, add tracking surface, and break the institutional aesthetic.
 
