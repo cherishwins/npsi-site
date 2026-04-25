@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet">
+  <!-- Cream background -->
+  <rect width="32" height="32" fill="#F4EFE3"/>
+
+  <!-- Treaty Bronze meridian with three ticks -->
+  <line x1="6" y1="13" x2="26" y2="13" stroke="#A47148" stroke-width="0.75"/>
+  <line x1="6" y1="11.5" x2="6" y2="14.5" stroke="#A47148" stroke-width="0.75"/>
+  <line x1="16" y1="11.8" x2="16" y2="14.2" stroke="#A47148" stroke-width="0.75"/>
+  <line x1="26" y1="11.5" x2="26" y2="14.5" stroke="#A47148" stroke-width="0.75"/>
+
+  <!-- N P -->
+  <text x="16" y="24" text-anchor="middle"
+        font-family="Source Serif 4, EB Garamond, Georgia, serif"
+        font-weight="700"
+        font-size="11"
+        letter-spacing="0.5"
+        fill="#0E2B47">NP</text>
+</svg>

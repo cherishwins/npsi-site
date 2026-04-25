@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .mh-mark { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, serif; font-weight: 600; letter-spacing: 0.22em; }
+      .mh-rule { stroke: #A47148; stroke-width: 0.75; fill: none; }
+    </style>
+  </defs>
+
+  <text class="mh-mark" x="40" y="35" fill="#0E2B47" font-size="13">
+    NORTH PACIFIC STRATEGY INITIATIVE
+  </text>
+
+  <line class="mh-rule" x1="40" y1="50" x2="860" y2="50"/>
+</svg>

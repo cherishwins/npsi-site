@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .mark { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-weight: 700; letter-spacing: 0.16em; }
+      .desc { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-style: italic; font-weight: 400; }
+      .vol { font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace; font-weight: 400; letter-spacing: 0.2em; }
+      .lede { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-weight: 400; }
+    </style>
+  </defs>
+
+  <!-- Cream background -->
+  <rect width="1200" height="630" fill="#F4EFE3"/>
+
+  <!-- Top masthead bar -->
+  <text class="mark" x="80" y="58" fill="#0E2B47" font-size="14">NORTH PACIFIC STRATEGY INITIATIVE</text>
+  <text class="vol" x="1120" y="58" text-anchor="end" fill="#3D6A78" font-size="11">VOL. I  ·  EST. MMXXVI</text>
+  <line x1="80" y1="76" x2="1120" y2="76" stroke="#A47148" stroke-width="0.75"/>
+
+  <!-- Meridian line above the title -->
+  <g transform="translate(160, 240)">
+    <line x1="0" y1="0" x2="880" y2="0" stroke="#A47148" stroke-width="1.25"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#A47148" stroke-width="1.25"/>
+    <line x1="440" y1="-4" x2="440" y2="4" stroke="#A47148" stroke-width="1"/>
+    <line x1="880" y1="-6" x2="880" y2="6" stroke="#A47148" stroke-width="1.25"/>
+  </g>
+
+  <!-- Centered title block -->
+  <text class="mark" x="600" y="340" text-anchor="middle" fill="#0E2B47" font-size="44">
+    NORTH PACIFIC STRATEGY INITIATIVE
+  </text>
+
+  <text class="desc" x="600" y="400" text-anchor="middle" fill="#A47148" font-size="22">
+    Working Papers on Pacific Sovereignty &amp; Bilateral Architecture
+  </text>
+
+  <!-- Optional lede tag -->
+  <text class="lede" x="600" y="470" text-anchor="middle" fill="#1A1A1A" font-size="16" font-style="italic">
+    Defensive options for middle powers in a period of dollar-system stress.
+  </text>
+
+  <!-- Bottom signature line -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#A47148" stroke-width="0.5"/>
+  <text class="vol" x="80" y="588" fill="#3D6A78" font-size="10">NORTHPACIFIC.ORG  ·  GITHUB.COM/NPSI-PACIFIC</text>
+  <text class="vol" x="1120" y="588" text-anchor="end" fill="#3D6A78" font-size="10">VOL. I  ·  WORKING PAPERS</text>
+</svg>

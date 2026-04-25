@@ -1,0 +1,12 @@
+# Vercel
+.vercel/
+
+# OS / editor cruft
+.DS_Store
+*Zone.Identifier
+*.swp
+.vscode/
+.idea/
+
+# Node (defensive — we don't ship a build, but if a future tool adds one)
+node_modules/

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 260" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .npsi-mark { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif; font-weight: 600; letter-spacing: 0.14em; }
+      .npsi-sub { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; letter-spacing: 0.03em; }
+      .npsi-meridian { stroke: #A47148; stroke-width: 1.25; fill: none; }
+      .npsi-tick { stroke: #A47148; stroke-width: 1; fill: none; }
+      .npsi-volume { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, monospace; font-weight: 400; letter-spacing: 0.18em; }
+    </style>
+  </defs>
+
+  <!-- The meridian line: thin horizon, evokes the Pacific waterline.
+       Three ticks: Victoria — mid-Pacific — Busan. -->
+  <g transform="translate(140, 70)">
+    <line class="npsi-meridian" x1="0" y1="0" x2="820" y2="0"/>
+    <line class="npsi-tick" x1="0" y1="-5" x2="0" y2="5"/>
+    <line class="npsi-tick" x1="410" y1="-3" x2="410" y2="3"/>
+    <line class="npsi-tick" x1="820" y1="-5" x2="820" y2="5"/>
+  </g>
+
+  <text class="npsi-mark" x="550" y="145" text-anchor="middle" fill="#0E2B47" font-size="34">
+    NORTH PACIFIC STRATEGY INITIATIVE
+  </text>
+
+  <text class="npsi-sub" x="550" y="190" text-anchor="middle" fill="#A47148" font-size="16">
+    Working Papers on Pacific Sovereignty &amp; Bilateral Architecture
+  </text>
+
+  <text class="npsi-volume" x="550" y="225" text-anchor="middle" fill="#3D6A78" font-size="11">
+    VOL.  I   ·   EST.  MMXXVI
+  </text>
+</svg>
