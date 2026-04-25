@@ -390,46 +390,6 @@ hr {
   text-transform: uppercase;
 }
 
-/* Mailing form */
-.mail-form {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 8px;
-}
-.mail-form input[type="email"] {
-  flex: 1;
-  min-width: 220px;
-  padding: 10px 14px;
-  border: 0.75px solid var(--rule);
-  background: var(--paper);
-  font-family: var(--font-serif);
-  font-size: 15px;
-  color: var(--ink);
-  transition: border-color 0.15s ease;
-}
-.mail-form input[type="email"]:focus {
-  outline: none;
-  border-color: var(--bronze);
-}
-.mail-form button {
-  padding: 10px 22px;
-  border: 0.75px solid var(--navy);
-  background: var(--navy);
-  color: var(--cream);
-  font-family: var(--font-serif);
-  font-size: 15px;
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-.mail-form button:hover { background: var(--navy-deep); }
-.mail-note {
-  margin-top: 10px;
-  font-size: 13px;
-  font-style: italic;
-  color: var(--teal);
-}
-
 /* Working paper full-text styling */
 .wp-prose { margin-top: 8px; }
 .wp-prose p { font-size: 17px; line-height: 1.65; margin-bottom: 14px; color: var(--ink); }
