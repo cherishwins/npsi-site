@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+  <!-- NPSI WP2 · Figure A · The Three-Rail Pacific Architecture -->
+  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Document Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif       { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
+      .mono        { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+      .label       { font-size: 10px; letter-spacing: 2.4px; fill: #A47148; text-transform: uppercase; }
+      .endpoint    { font-size: 13px; font-weight: 600; fill: #0E2B47; letter-spacing: 1.5px; }
+      .descriptor  { font-size: 11px; fill: #1A1A1A; }
+      .rail-title  { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #3D6A78; }
+    </style>
+    <!-- Arrow marker -->
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A47148"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="540" fill="#FBF8EF"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono label">FIGURE A · THE THREE-RAIL PACIFIC ARCHITECTURE</text>
+
+  <!-- Top meridian rule with three ticks -->
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#A47148" stroke-width="1"/>
+
+  <!-- ================== RAIL 1: FINANCIAL ================== -->
+  <g transform="translate(0, 90)">
+    <text x="40" y="0" class="mono rail-title">RAIL 1 · FINANCIAL · WORKING PAPER NO. 1</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+
+    <!-- Korea endpoint -->
+    <text x="64" y="44" class="serif endpoint">KOREA</text>
+    <text x="64" y="68"  class="serif descriptor">National Pension Service · KIC</text>
+    <text x="64" y="84"  class="serif descriptor">Korea Post · Korean life insurers</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#3D6A78">SENIOR BOND PLACEMENT</text>
+
+    <!-- Connector line with arrows -->
+    <line x1="280" y1="68" x2="612" y2="68" stroke="#A47148" stroke-width="1"
+          marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">CKPIF · LUXEMBOURG SEAT</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">USD · CAD · KRW · ENGLISH LAW</text>
+
+    <!-- Canada endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">CANADA</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">Federal Crown · BoC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">FNMPC · CIB Indigenous Equity</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">SOVEREIGN GUARANTOR</text>
+  </g>
+
+  <!-- ================== RAIL 2: ENERGY & COMPUTE ================== -->
+  <g transform="translate(0, 240)">
+    <text x="40" y="0" class="mono rail-title">RAIL 2 · ENERGY &amp; COMPUTE · WORKING PAPER NO. 2 (THIS PAPER)</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+
+    <!-- Canada endpoint -->
+    <text x="64" y="44" class="serif endpoint">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor">Hydro-Québec · BC Hydro</text>
+    <text x="64" y="84"  class="serif descriptor">Manitoba Hydro · 56,000 MW dispatchable</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#3D6A78">GENERATION + TRANSMISSION</text>
+
+    <!-- Connector line -->
+    <line x1="320" y1="68" x2="572" y2="68" stroke="#A47148" stroke-width="1"
+          marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">UHV INTERTIES · TRAINING NODES</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">U.S. URBAN-EDGE INFERENCE PRESERVED</text>
+
+    <!-- US endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">UNITED STATES</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">DOE · LBNL · FERC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">Hyperscale operators · U.S. utilities</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">OFF-TAKE COUNTERPARTY</text>
+  </g>
+
+  <!-- ================== RAIL 3: CRITICAL MINERALS ================== -->
+  <g transform="translate(0, 390)">
+    <text x="40" y="0" class="mono rail-title">RAIL 3 · CRITICAL MINERALS · CROSS-CUTTING</text>
+
+    <rect x="40" y="14" width="820" height="80" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+
+    <!-- Canada origin -->
+    <text x="64" y="44" class="serif endpoint">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor">Cu · Ni · Co · Li · REE · U</text>
+    <text x="64" y="84"  class="mono"
+          font-size="9" letter-spacing="1.5" fill="#3D6A78">RAW + PROCESSED FEEDSTOCK</text>
+
+    <!-- Two arrows: to Korea and to United States -->
+    <line x1="320" y1="50" x2="572" y2="50" stroke="#A47148" stroke-width="1"
+          marker-end="url(#arrowhead)"/>
+    <text x="446" y="40" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">HBM · BATTERY CATHODE · SEMICONDUCTOR</text>
+
+    <line x1="320" y1="74" x2="572" y2="74" stroke="#A47148" stroke-width="1"
+          marker-end="url(#arrowhead)"/>
+    <text x="446" y="86" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">EV BATTERY · ADVANCED MFG</text>
+
+    <!-- Dual destination -->
+    <text x="836" y="44" class="serif endpoint" text-anchor="end">KOREA  +  USA</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">Samsung · SK Hynix · LG ES · Hyundai</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end" font-style="italic">downstream U.S. manufacturing</text>
+  </g>
+
+  <!-- Bottom meridian -->
+  <line x1="40" y1="510" x2="860" y2="510" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="506" x2="40"  y2="514" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="507" x2="450" y2="513" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="506" x2="860" y2="514" stroke="#A47148" stroke-width="1"/>
+
+  <!-- Footer -->
+  <text x="40" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#3D6A78">CANADA AT THE MERIDIAN · INTERLOCKING THREE-RAIL ARCHITECTURE</text>
+  <text x="860" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#3D6A78" text-anchor="end">NPSI-WP-002 · v0.9</text>
+</svg>
