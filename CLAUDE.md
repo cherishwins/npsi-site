@@ -7,8 +7,9 @@
 The institutional website of the **North Pacific Strategy Initiative (NPSI)** — an independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.
 
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
-**Editor:** Jesse James (`editor@npsi.ca`).
-**Scope of the site:** 6 pages plus a 404 — home, working paper No. 1 reading view, about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
+**LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
+**Scope of the site:** 7 pages plus a 404 — home, two working-paper reading views (No. 1 and No. 2), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
 ## What this site is *not*
 
@@ -84,7 +85,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
   <div class="masthead-inner">
     <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="/wp1/">Working Paper</a>
+      <a href="/wp2/">Working Paper</a>
       <a href="/about/">About</a>
       <a href="/engage/">Engage</a>
       <a href="/commentary/">Commentary</a>
@@ -94,7 +95,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
 </header>
 ```
 
-The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
+The "Working Paper" nav link points to the **current** working paper (currently `/wp2/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
 
 ### Page opener (every content page)
 
@@ -120,14 +121,14 @@ The meridian rule with three ticks (`<span>` is the middle tick) appears at the 
       <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
       <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
       <div class="colophon-text">
-        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
+        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
         Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
       </div>
     </div>
     <div class="colophon-right">
       VOL. I<br>
       EST. MMXXVI<br>
-      <a href="https://github.com/npsi-pacific">GITHUB</a>  ·  <a href="/colophon/">COLOPHON</a>
+      <a href="https://github.com/npsi-pacific">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
     </div>
   </div>
 </footer>
@@ -149,18 +150,21 @@ The site copy and any working-paper prose hosted here follow the same discipline
 ```
 npsi-site/
 ├── CLAUDE.md                        ← this file
+├── README.md                        institutional landing for the GitHub repo
 ├── DEPLOYMENT.md                    deployment instructions for Cloudflare Pages / Netlify / Vercel
-├── index.html                       home page
+├── index.html                       home — current working paper, archive, the imprint
 ├── 404.html                         not-found page
 ├── about/index.html                 about NPSI
 ├── engage/index.html                contribution standards
-├── commentary/index.html            named commentary index
+├── commentary/index.html            named commentary index, per paper
 ├── colophon/index.html              technical colophon
 ├── wp1/
-│   ├── index.html                   Working Paper No. 1 — full reading view
+│   ├── index.html                   Working Paper No. 1 — full reading view (with "previous paper" banner once a newer paper publishes)
 │   ├── working-paper.pdf            (drop-in: full PDF release; not yet present)
 │   ├── executive-brief.pdf          (drop-in: 2-page brief; not yet present)
 │   └── ckpif-architecture.png       (drop-in: figure; copy from assets/img/)
+├── wp2/
+│   └── index.html                   Working Paper No. 2 — full reading view (current paper)
 └── assets/
     ├── css/site.css                 shared stylesheet, fully tokenized
     └── img/
@@ -168,7 +172,13 @@ npsi-site/
         ├── npsi-masthead.svg        compact masthead
         ├── favicon.svg              square mark
         ├── ckpif-architecture.svg   Figure A from WP1
-        └── og-default.png/.svg      Open Graph share preview (1200x630)
+        ├── wp2-og.svg/.png          WP2 Open Graph share card (1200×630)
+        ├── wp2-architecture.svg     WP2 Figure A — three-rail Pacific architecture
+        ├── wp2-bifurcation.svg      WP2 Figure B — training and inference bifurcation
+        ├── wp2-capacity-gap.svg     WP2 Figure C — U.S. capacity gap by 2028
+        ├── wp2-compact.svg          WP2 Figure D — six-layer compact architecture
+        ├── wp2-indigenous.svg       WP2 Figure E — Series II tranche structure
+        └── og-default.png/.svg      site-wide Open Graph share preview (1200×630)
 ```
 
 ## Conventions for changes
@@ -184,13 +194,16 @@ npsi-site/
 
 ### When adding a new working paper
 
-1. Create `wp[N]/index.html`, modeled on `wp1/index.html`.
-2. Update the home page's "Current Working Paper" card with the new paper.
-3. Add a new section to `commentary/index.html` for the new paper's commentary collection (open for submission).
-4. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
-5. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]`.
-6. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
-7. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata.
+1. Create `wp[N]/index.html`, modeled on `wp1/index.html` (the canonical chrome reference).
+2. **Update the home page's "Current Working Paper" card** with the new paper. Move the previously-current paper's card into the "Previous Working Papers" section on the home page (if it doesn't exist yet, create it directly below the Current card).
+3. **Update the nav `Working Paper` link sitewide** to point to the new paper (`/wp[N]/`). The four-link nav is intentional restraint — *never add a fifth link.* Previous papers remain accessible via direct URL and the home-page archive.
+4. **Add a "previous paper" banner near the top of the prior paper's page**, pointing readers to the current paper. The banner uses the `<aside class="standard">` pattern with an `<h4>` and a one-sentence pointer.
+5. Add a new section to `commentary/index.html` for the new paper's commentary collection (above the previous paper's section). Open for submission.
+6. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
+7. Build the OG image at `assets/img/wp[N]-og.png` (1200×630, NPSI register, three stat blocks, no red, no flags). Build hand-coded SVG figures into `assets/img/` and reference via `<figure><img></figure>` in the paper.
+8. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
+9. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
+10. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
 
 ### When fixing or improving CSS
 
@@ -215,9 +228,11 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Working-paper substance — the canonical reference
+## Working-paper substance — canonical references
 
-Working Paper No. 1 (`wp1/index.html`) proposes a Canada–Korea Pacific Infrastructure Facility (CKPIF) — a treaty-based supranational issuer for Pacific corridor infrastructure. Key facts that should remain consistent across any future edits:
+### Working Paper No. 1 — A Canada–Korea Pacific Infrastructure Facility (`wp1/index.html`)
+
+Proposes the CKPIF — a treaty-based supranational issuer for Pacific corridor infrastructure. Key facts that should remain consistent across any future edits:
 
 - 50/50 Canada–Korea ownership, Luxembourg seat, English law, LCIA arbitration
 - Indicative programme size US$25–40 billion over 5–7 years
@@ -229,11 +244,27 @@ Working Paper No. 1 (`wp1/index.html`) proposes a Canada–Korea Pacific Infrast
 - BoC–BoK standing swap line, signed November 2017, no expiry, no preset limit — the institutional foundation
 - Author: Jesse James (editor); v1.0 published April 2026
 
-If new content cites different numbers, structure, or framing for CKPIF without explicit reason, that's a drift to flag.
+### Working Paper No. 2 — A Canada–United States Energy and Compute Compact (`wp2/index.html`)
+
+Proposes the **Compact** — a treaty-grade bilateral architecture pairing Canadian dispatchable generation with the U.S. grid through ultra-high-voltage transmission, siting AI training on Canadian hydro and preserving inference at the U.S. urban edge. Companion to WP1; financed through the same CKPIF supranational vehicle (Phase 2). Key facts:
+
+- Canada–U.S. bilateral, several (not joint) liability, English law, LCIA arbitration; survives CUSMA non-renewal
+- U.S. structural capacity gap: ~44 GW required by 2028 vs ~25 GW deliverable = 19 GW shortfall
+- Combined dispatchable Canadian hydro: Hydro-Québec 37,370 MW + BC Hydro 13,200 MW + Manitoba Hydro 5,500 MW = ~56,000 MW
+- AI training/inference bifurcation: training latency-agnostic (~25% CAGR); inference sub-50 ms latency (~79% CAGR); 80% of total AI critical-IT load is inference by 2030
+- Three corridor candidates: Saguenay/Côte-Nord (QC), Peace River/Bennett (BC), Northern Manitoba
+- CUSMA July 2026 review is the timing peg; v1.0 target pre-1-July-2026
+- Indigenous Series II tranche (parallel to WP1 Series I), 10–15% of compact capex, +25 bp ratchet
+- Three-rail Pacific architecture: financial rail (Korea, WP1) + energy/compute rail (U.S., WP2) + critical-minerals rail (cross-cutting)
+- Author: Jesse James (editor); v0.9 complete-draft May 2026 (v1.0 target June 2026)
+
+If new content cites different numbers, structure, or framing for either CKPIF or the Compact without explicit reason, that's a drift to flag.
 
 ## Other NPSI projects in scope
 
 - **Briefing Note No. 1** (`NPSI-BN-001`, two-part document on Canadian voter files and the privacy asymmetry) — exists as PDFs, not yet integrated into the site. If asked to integrate, create `bn1/index.html` modeled on `wp1/index.html` with adjustments for the briefing-note format.
+- **Briefing Note No. 2 — Confederation Mathematics** (`NPSI-BN-002`, forthcoming) — empirical constraints on provincial secession in 2026 (Quebec + Alberta), forensic two-part briefing-note format. Source material drafted, not yet integrated. If asked to integrate, create `bn2/index.html` modeled on `wp1/index.html` with briefing-note format. Cited in WP2 §10 as forthcoming.
+- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, forthcoming) — Korea–Canada bilateral defence-industrial architecture; KSS-III submarine bid as case study. Awaits primary source material on the May 23 ROK demonstration.
 - **LinkedIn Company Page** assets exist in a sibling directory (`npsi-linkedin/`). Not part of this repo.
 
 ## What to ask before doing
