@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="640" viewBox="0 0 720 640">
+  <!-- NPSI WP2 · Figure D · Architecture of the Compact — six layers -->
+  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="640" fill="#FBF8EF"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE D · ARCHITECTURE OF THE COMPACT — SIX LAYERS</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#A47148" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">Six layers, off-the-shelf components.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">The novelty is the bundling. Every component is in liquid form today.</text>
+
+  <!-- Layers -->
+
+  <!-- Layer 6 (top, governance) — sits at top of stack visually -->
+  <g transform="translate(40, 144)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 6</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Governance, listing, settlement</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#3D6A78">English law (bonds) · NY law (off-take) · LCIA + ICDR arbitration</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">LUXEMBOURG · SGX · TOKENISED PILOT</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">EUROCLEAR / CLEARSTREAM</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">BIS TORONTO · PROJECT AGORÁ</text>
+  </g>
+
+  <!-- Layer 5 — KPI overlay -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 5</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0E2B47">KPI-linked coupon overlay</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#3D6A78">Construction milestones · Throughput · GHG intensity · Indigenous equity ≥10%</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">ICMA SLB PRINCIPLES</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">25 bp STEP CALIBRATION</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">±100 bp AGGREGATE CAP</text>
+  </g>
+
+  <!-- Layer 4 — Off-take / commercial -->
+  <g transform="translate(40, 296)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 4</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Off-take and commercial structure</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#3D6A78">Take-or-pay reserves · Multi-counterparty diversification · TMX precedent</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">HYPERSCALE DIRECT</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">U.S. UTILITY INTERMEDIATION</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">U.S. FEDERAL AI COMPUTE</text>
+  </g>
+
+  <!-- Layer 3 — Training-centre siting -->
+  <g transform="translate(40, 372)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 3</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Training-centre siting</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#3D6A78">Three corridors · Indigenous co-ownership · Major Projects Office FID</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">SAGUENAY / CÔTE-NORD (QC)</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">PEACE RIVER / BENNETT (BC)</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">NORTHERN MANITOBA (MB)</text>
+  </g>
+
+  <!-- Layer 2 — Transmission topology -->
+  <g transform="translate(40, 448)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 2</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Transmission topology</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#3D6A78">Existing 15,000+ MW interties · 10,000–15,000 MW incremental UHV</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">PACIFIC NW · BPA</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">QUEBEC – NYISO · NEISO · CHPE</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0E2B47" text-anchor="end">MANITOBA – MISO</text>
+  </g>
+
+  <!-- Layer 1 (foundation) -->
+  <g transform="translate(40, 524)">
+    <rect x="0" y="0" width="640" height="68" fill="#0E2B47"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">LAYER 1 · FOUNDATION</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Treaty wrapper</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#A47148">Bilateral · Several (not joint) liability · Survives CUSMA non-renewal</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">CANADA × UNITED STATES</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">EIB / NIB PRECEDENT</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">FINANCED THROUGH CKPIF (WP1)</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40"  y1="608" x2="680" y2="608" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="604" x2="40"  y2="612" stroke="#A47148" stroke-width="1"/>
+  <line x1="360" y1="605" x2="360" y2="611" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="680" y1="604" x2="680" y2="612" stroke="#A47148" stroke-width="1"/>
+
+  <text x="40"  y="626" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">EVERY COMPONENT IN LIQUID FORM TODAY · THE NOVELTY IS THE BUNDLING</text>
+  <text x="680" y="626" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-002 · §5</text>
+</svg>
