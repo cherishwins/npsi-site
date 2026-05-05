@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <!-- NPSI WP2 · Figure C · The U.S. Capacity Gap by 2028 -->
+  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+    </style>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#A47148" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="480" fill="#FBF8EF"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE C · THE U.S. CAPACITY GAP BY 2028</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#A47148" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92" class="serif" font-size="20" font-weight="600" fill="#0E2B47">
+    Required vs deliverable U.S. data-centre capacity, 2028
+  </text>
+  <text x="40" y="118" class="serif" font-style="italic" font-size="14" fill="#A47148">
+    Lawrence Berkeley National Laboratory and FERC interconnection-queue data.
+  </text>
+
+  <!-- Chart area: y axis from 0 (bottom y=380) to 50 GW (top y=140) -->
+  <!-- Scale: 1 GW = 4.8 px; chart height 240 -->
+
+  <!-- Y-axis baseline -->
+  <line x1="80" y1="380" x2="640" y2="380" stroke="#0E2B47" stroke-width="1"/>
+
+  <!-- Y-axis ticks -->
+  <g class="mono" font-size="10" fill="#3D6A78" letter-spacing="0.5">
+    <line x1="76" y1="380" x2="80" y2="380" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="383" text-anchor="end">0</text>
+    <line x1="76" y1="332" x2="80" y2="332" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="335" text-anchor="end">10</text>
+    <line x1="76" y1="284" x2="80" y2="284" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="287" text-anchor="end">20</text>
+    <line x1="76" y1="236" x2="80" y2="236" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="239" text-anchor="end">30</text>
+    <line x1="76" y1="188" x2="80" y2="188" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="191" text-anchor="end">40</text>
+    <line x1="76" y1="140" x2="80" y2="140" stroke="#0E2B47" stroke-width="0.5"/>
+    <text x="72" y="143" text-anchor="end">50</text>
+  </g>
+  <text x="40" y="260" class="mono" font-size="10" letter-spacing="2" fill="#3D6A78"
+        transform="rotate(-90 40 260)" text-anchor="middle">GIGAWATTS</text>
+
+  <!-- BAR 1: Required (44 GW) — hatched bronze outline -->
+  <g>
+    <rect x="160" y="168" width="120" height="212" fill="url(#hatch)" stroke="#A47148" stroke-width="1.2"/>
+    <text x="220" y="158" class="mono" font-size="22" font-weight="500" fill="#A47148" text-anchor="middle">44 GW</text>
+    <text x="220" y="402" class="mono" font-size="10" letter-spacing="2" fill="#0E2B47" text-anchor="middle">REQUIRED</text>
+    <text x="220" y="418" class="serif" font-style="italic" font-size="11" fill="#A47148" text-anchor="middle">data-centre additions</text>
+    <text x="220" y="434" class="serif" font-style="italic" font-size="11" fill="#A47148" text-anchor="middle">needed by 2028</text>
+  </g>
+
+  <!-- BAR 2: Deliverable (25 GW) — solid navy -->
+  <g>
+    <rect x="320" y="260" width="120" height="120" fill="#0E2B47"/>
+    <text x="380" y="250" class="mono" font-size="22" font-weight="500" fill="#0E2B47" text-anchor="middle">25 GW</text>
+    <text x="380" y="402" class="mono" font-size="10" letter-spacing="2" fill="#0E2B47" text-anchor="middle">DELIVERABLE</text>
+    <text x="380" y="418" class="serif" font-style="italic" font-size="11" fill="#A47148" text-anchor="middle">grid expected to add</text>
+    <text x="380" y="434" class="serif" font-style="italic" font-size="11" fill="#A47148" text-anchor="middle">in same window</text>
+  </g>
+
+  <!-- The gap, called out -->
+  <g>
+    <!-- Bracket -->
+    <line x1="475" y1="168" x2="490" y2="168" stroke="#A47148" stroke-width="1"/>
+    <line x1="475" y1="260" x2="490" y2="260" stroke="#A47148" stroke-width="1"/>
+    <line x1="490" y1="168" x2="490" y2="260" stroke="#A47148" stroke-width="1"/>
+    <!-- Pointer -->
+    <line x1="490" y1="214" x2="510" y2="214" stroke="#A47148" stroke-width="1"/>
+
+    <!-- Gap label -->
+    <text x="520" y="200" class="mono" font-size="32" font-weight="500" fill="#A47148">19 GW</text>
+    <text x="520" y="222" class="mono" font-size="10" letter-spacing="2.4" fill="#0E2B47">SHORTFALL</text>
+    <text x="520" y="244" class="serif" font-style="italic" font-size="11" fill="#A47148">structural · binding</text>
+    <text x="520" y="258" class="serif" font-style="italic" font-size="11" fill="#A47148">within four years</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40" y1="452" x2="680" y2="452" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="448" x2="40"  y2="456" stroke="#A47148" stroke-width="1"/>
+  <line x1="360" y1="449" x2="360" y2="455" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="680" y1="448" x2="680" y2="456" stroke="#A47148" stroke-width="1"/>
+
+  <text x="40"  y="470" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">LBNL · PJM 2025 AUCTION · DOE JAN 2026 EMERGENCY ORDER</text>
+  <text x="680" y="470" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-002 · §2</text>
+</svg>
