@@ -9,7 +9,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 7 pages plus a 404 — home, two working-paper reading views (No. 1 and No. 2), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 8 pages plus a 404 — home, three working-paper reading views (No. 1 published, No. 2 published, No. 3 in pre-publication draft), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
 ## What this site is *not*
 
@@ -260,11 +260,24 @@ Proposes the **Compact** — a treaty-grade bilateral architecture pairing Canad
 
 If new content cites different numbers, structure, or framing for either CKPIF or the Compact without explicit reason, that's a drift to flag.
 
+- **Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor** (`wp3/index.html`, in pre-publication draft as of May 2026) — submarine procurement, industrial offsets, and the third rail of middle-power sovereignty; pairs with WP1 (financial) and WP2 (energy/compute) to complete the three-rail Pacific architecture; v1.0 target pre-23 May 2026.
+
+  Key facts that should remain consistent:
+  - CPSP indicative CAD 40 billion programme; up to 12 submarines by 2035
+  - KSS-III (Hanwha Ocean Dosan Ahn Chang-ho class), 3,000 tonnes, diesel-electric AIP
+  - Hanwha bid offsets: USD 250 M / CAD 345 M Algoma Steel structural arrangement (Sault Ste. Marie beam mill); Hanwha–APMA armoured-vehicle MOU
+  - ROK Navy demonstration: ROKS Dosan Ahn Chang-ho departed Jinhae 25 March 2026, arrives CFB Esquimalt 23 May 2026, exercises through 2 June, accompanied by ROKS Daejeon
+  - HBM oligopoly: SK Hynix ~53%, Samsung ~35%, Micron ~11% (Q3 2025)
+  - CKFTA in force 1 January 2015; 99% Canadian export duty-free now, 99.75% by 2032
+  - January 2026 Canada–Korea Industrial Cooperation Committee MOU on co-mining and co-production
+  - FORGE plurilateral framework — Korea-chaired through mid-2026
+  - Author: Jesse James (editor); v0.1 pre-publication draft May 2026
+
 ## Other NPSI projects in scope
 
 - **Briefing Note No. 1** (`NPSI-BN-001`, two-part document on Canadian voter files and the privacy asymmetry) — exists as PDFs, not yet integrated into the site. If asked to integrate, create `bn1/index.html` modeled on `wp1/index.html` with adjustments for the briefing-note format.
 - **Briefing Note No. 2 — Confederation Mathematics** (`NPSI-BN-002`, forthcoming) — empirical constraints on provincial secession in 2026 (Quebec + Alberta), forensic two-part briefing-note format. Source material drafted, not yet integrated. If asked to integrate, create `bn2/index.html` modeled on `wp1/index.html` with briefing-note format. Cited in WP2 §10 as forthcoming.
-- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, forthcoming) — Korea–Canada bilateral defence-industrial architecture; KSS-III submarine bid as case study. Awaits primary source material on the May 23 ROK demonstration.
+- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, in pre-publication draft) — see "Working-paper substance" above for canonical-fact list. v0.1 ships May 2026; v1.0 target pre-23 May 2026.
 - **LinkedIn Company Page** assets exist in a sibling directory (`npsi-linkedin/`). Not part of this repo.
 
 ## What to ask before doing
