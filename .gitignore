@@ -8,6 +8,9 @@
 .vscode/
 .idea/
 
+# Editor working notes — local-only, not for public repo
+.editor/
+
 # Node (defensive — we don't ship a build, but if a future tool adds one)
 node_modules/
 .vercel
