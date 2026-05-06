@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480">
+  <!-- NPSI WP3 · Figure B · Trans-Pacific Voyage of ROKS Dosan Ahn Chang-ho -->
+  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" fill="#FBF8EF"/>
+
+  <!-- Title -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE B · TRANS-PACIFIC VOYAGE · ROKS DOSAN AHN CHANG-HO</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="860" y2="56" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#A47148" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">14,000 km · 25 March – 23 May 2026</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">First Korean submarine to cross the Pacific independently. AIP-at-scale demonstrated.</text>
+
+  <!-- Voyage path: horizontal line with four nodes -->
+  <!-- Path coordinates: x = 100 (Jinhae), 320 (Guam), 540 (Pearl Harbor), 800 (Esquimalt) -->
+
+  <g transform="translate(0, 250)">
+    <!-- Solid line connector for completed legs -->
+    <line x1="100" y1="0" x2="540" y2="0" stroke="#0E2B47" stroke-width="2.5"/>
+    <!-- Dashed line for the upcoming leg -->
+    <line x1="540" y1="0" x2="800" y2="0" stroke="#A47148" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <!-- Node 1: Jinhae -->
+    <circle cx="100" cy="0" r="9" fill="#0E2B47"/>
+    <text x="100" y="-22" class="serif" font-weight="700" font-size="14" fill="#0E2B47" text-anchor="middle">JINHAE</text>
+    <text x="100" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#A47148" text-anchor="middle">25 MAR</text>
+    <text x="100" y="40" class="serif" font-style="italic" font-size="11" fill="#3D6A78" text-anchor="middle">Departure</text>
+    <text x="100" y="56" class="serif" font-size="10" fill="#1A1A1A" text-anchor="middle">Republic of Korea</text>
+
+    <!-- Node 2: Guam -->
+    <circle cx="320" cy="0" r="9" fill="#0E2B47"/>
+    <text x="320" y="-22" class="serif" font-weight="700" font-size="14" fill="#0E2B47" text-anchor="middle">GUAM</text>
+    <text x="320" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#A47148" text-anchor="middle">EARLY APR</text>
+    <text x="320" y="40" class="serif" font-style="italic" font-size="11" fill="#3D6A78" text-anchor="middle">Maintenance &amp; resupply</text>
+    <text x="320" y="56" class="serif" font-size="10" fill="#1A1A1A" text-anchor="middle">U.S. territory</text>
+
+    <!-- Node 3: Pearl Harbor -->
+    <circle cx="540" cy="0" r="9" fill="#0E2B47"/>
+    <text x="540" y="-22" class="serif" font-weight="700" font-size="14" fill="#0E2B47" text-anchor="middle">PEARL HARBOR</text>
+    <text x="540" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#A47148" text-anchor="middle">2 MAY</text>
+    <text x="540" y="40" class="serif" font-style="italic" font-size="11" fill="#3D6A78" text-anchor="middle">RCN submariners embark</text>
+    <text x="540" y="56" class="serif" font-size="10" fill="#1A1A1A" text-anchor="middle">U.S. Hawaii</text>
+
+    <!-- Node 4: Esquimalt (highlighted as upcoming) -->
+    <circle cx="800" cy="0" r="11" fill="#A47148" stroke="#0E2B47" stroke-width="2"/>
+    <text x="800" y="-22" class="serif" font-weight="700" font-size="14" fill="#A47148" text-anchor="middle">ESQUIMALT</text>
+    <text x="800" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#A47148" text-anchor="middle">23 MAY</text>
+    <text x="800" y="40" class="serif" font-style="italic" font-size="11" fill="#3D6A78" text-anchor="middle">Joint exercises with RCN</text>
+    <text x="800" y="56" class="serif" font-size="10" fill="#1A1A1A" text-anchor="middle">Canada · British Columbia</text>
+  </g>
+
+  <!-- Distance labels above the line -->
+  <g transform="translate(0, 195)">
+    <text x="210" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="middle">~3,300 km</text>
+    <text x="430" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="middle">~6,200 km</text>
+    <text x="670" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="middle">~4,500 km</text>
+  </g>
+
+  <!-- Stage labels above distances -->
+  <g transform="translate(0, 175)">
+    <text x="210" y="0" class="mono" font-size="9" letter-spacing="2" fill="#0E2B47" text-anchor="middle">LEG 1 · TRANSPACIFIC</text>
+    <text x="430" y="0" class="mono" font-size="9" letter-spacing="2" fill="#0E2B47" text-anchor="middle">LEG 2 · OPEN OCEAN</text>
+    <text x="670" y="0" class="mono" font-size="9" letter-spacing="2" fill="#A47148" text-anchor="middle">LEG 3 · APPROACH</text>
+  </g>
+
+  <!-- AIP indicator strip -->
+  <g transform="translate(0, 360)">
+    <text x="40" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">EXTENSIVE AIR-INDEPENDENT PROPULSION (AIP) USE THROUGHOUT</text>
+
+    <rect x="40"  y="10" width="760" height="14" fill="#0E2B47"/>
+    <text x="420" y="22" class="mono" font-size="9.5" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">SUSTAINED SUBMERGED OPERATION · BLUE-WATER ENDURANCE DEMONSTRATED</text>
+  </g>
+
+  <!-- After Esquimalt: RIMPAC integration -->
+  <g transform="translate(0, 410)">
+    <line x1="40"  y1="0" x2="860" y2="0" stroke="#C4B79B" stroke-width="0.5"/>
+    <text x="40" y="20" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">23 MAY – 2 JUNE · ESQUIMALT JOINT EXERCISES WITH RCN AND RCAF</text>
+    <text x="860" y="20" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">SUMMER 2026 · RIMPAC INTEGRATION</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40"  y1="450" x2="860" y2="450" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="446" x2="40"  y2="454" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="447" x2="450" y2="453" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="446" x2="860" y2="454" stroke="#A47148" stroke-width="1"/>
+
+  <text x="40"  y="468" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">SOURCE · ROK NAVY · ASIA TODAY/UPI 5 MAY 2026</text>
+  <text x="860" y="468" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-003 · §3</text>
+</svg>

@@ -28,8 +28,9 @@ This repository is the source of the website at [`npsi.ca`](https://npsi.ca). Pl
 |---|---|---|---|
 | **No. 1** | [A Canada–Korea Pacific Infrastructure Facility](https://npsi.ca/wp1/) | `v1.0` &nbsp;·&nbsp; For Discussion | April 2026 |
 | **No. 2** | [A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
+| **No. 3** | [A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
 
-> *forthcoming · `NPSI-BN-002` Confederation Mathematics · `NPSI-WP-003` Pacific Defence-Industrial Corridor*
+> *forthcoming · `NPSI-BN-002` Confederation Mathematics*
 
 ## What this site is — and is not
 

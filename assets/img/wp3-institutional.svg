@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640">
+  <!-- NPSI WP3 · Figure D · CKFTA → SDCP → 2+2 Institutional Timeline (vertical) -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <rect width="900" height="640" fill="#FBF8EF"/>
+
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE D · CANADA–KOREA INSTITUTIONAL PLUMBING · 2015 → 2026</text>
+
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#A47148" stroke-width="1"/>
+
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">From episodic engagement to sustained strategic alignment.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">Twelve years of treaty-grade and treaty-adjacent agreements. Defence Cooperation Agreement now in negotiation.</text>
+
+  <!-- Vertical timeline rail -->
+  <line x1="160" y1="156" x2="160" y2="568" stroke="#0E2B47" stroke-width="1.5"/>
+
+  <!-- Epoch 1: Trade Foundation -->
+  <g transform="translate(0, 168)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#3D6A78" text-anchor="end">2015</text>
+    <circle cx="160" cy="0" r="7" fill="#A47148"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#0E2B47">CKFTA enters into force</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">1 January 2015 · Canada's first comprehensive Asia-Pacific FTA</text>
+  </g>
+
+  <g transform="translate(0, 222)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#3D6A78" text-anchor="end">2022</text>
+    <circle cx="160" cy="0" r="7" fill="#A47148"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Comprehensive Strategic Partnership (CSP)</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">September 2022 · five pillars including security and defence</text>
+  </g>
+
+  <g transform="translate(0, 262)">
+    <circle cx="160" cy="0" r="5" fill="#0E2B47"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Defence Materiel Cooperation MoU renewed</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">December 2022 · first signed 2009</text>
+  </g>
+
+  <!-- Epoch 2: Materiel layer -->
+  <g transform="translate(0, 312)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#3D6A78" text-anchor="end">2024</text>
+    <circle cx="160" cy="0" r="7" fill="#A47148"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#0E2B47">CSP Action Plan operationalised</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">2024 · classified information sharing, defence R&amp;D, cyber/maritime/space</text>
+  </g>
+
+  <g transform="translate(0, 352)">
+    <circle cx="160" cy="0" r="5" fill="#0E2B47"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#0E2B47">CCC × DAPA Defence Industry &amp; Procurement MoU</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">June 2024 · government-to-government procurement framework</text>
+  </g>
+
+  <g transform="translate(0, 392)">
+    <circle cx="160" cy="0" r="5" fill="#0E2B47"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Inaugural 2+2 Foreign and Defence Ministerial</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">November 2024 · the 2+2 mechanism extended to Canada</text>
+  </g>
+
+  <!-- Epoch 3: Security architecture -->
+  <g transform="translate(0, 442)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#3D6A78" text-anchor="end">2025</text>
+    <circle cx="160" cy="0" r="9" fill="#0E2B47"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Security and Defence Cooperation Partnership (SDCP)</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">October 2025 · Canada's first Indo-Pacific bilateral defence roadmap</text>
+  </g>
+
+  <g transform="translate(0, 492)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#3D6A78" text-anchor="end">2026</text>
+    <circle cx="160" cy="0" r="9" fill="#0E2B47"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="15" fill="#0E2B47">Second 2+2 Ministerial · twin treaty-grade instruments</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">25 February 2026 · Classified Information Agreement signed; Defence Cooperation Agreement negotiations initiated</text>
+  </g>
+
+  <g transform="translate(0, 540)">
+    <circle cx="160" cy="0" r="7" fill="#A47148"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#A47148">ROKS Dosan Ahn Chang-ho arrives Esquimalt</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#A47148">23 May 2026 · operational demonstration; CPSP decision in June</text>
+  </g>
+
+  <!-- Footer narrative bar -->
+  <g transform="translate(40, 580)">
+    <rect x="0" y="0" width="820" height="36" fill="#0E2B47"/>
+    <text x="20" y="14" class="mono" font-size="9" letter-spacing="2" fill="#A47148">CONTINUOUS INSTITUTIONAL DEEPENING</text>
+    <text x="20" y="30" class="serif" font-style="italic" font-size="11.5" fill="#F4EFE3">No new architecture required for the corridor — only the bundling of existing layers + the June 2026 CPSP decision.</text>
+  </g>
+
+  <!-- Footer rule -->
+  <line x1="40"  y1="624" x2="860" y2="624" stroke="#A47148" stroke-width="0.6"/>
+  <line x1="40"  y1="620" x2="40"  y2="628" stroke="#A47148" stroke-width="1"/>
+  <line x1="450" y1="621" x2="450" y2="627" stroke="#A47148" stroke-width="0.9"/>
+  <line x1="860" y1="620" x2="860" y2="628" stroke="#A47148" stroke-width="1"/>
+
+  <text x="40"  y="638" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" style="display:none;">SOURCES · GAC · APF CANADA · 2+2 JOINT STATEMENTS</text>
+</svg>

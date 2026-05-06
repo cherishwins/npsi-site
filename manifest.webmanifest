@@ -1,0 +1,26 @@
+{
+  "name": "North Pacific Strategy Initiative",
+  "short_name": "NPSI",
+  "description": "Working Papers on Pacific Sovereignty & Bilateral Architecture",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#F4EFE3",
+  "theme_color": "#F4EFE3",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/assets/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
