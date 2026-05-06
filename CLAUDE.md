@@ -271,13 +271,13 @@ If new content cites different numbers, structure, or framing for either CKPIF o
   - CKFTA in force 1 January 2015; 99% Canadian export duty-free now, 99.75% by 2032
   - January 2026 Canada–Korea Industrial Cooperation Committee MOU on co-mining and co-production
   - FORGE plurilateral framework — Korea-chaired through mid-2026
-  - Author: Jesse James (editor); v0.1 pre-publication draft May 2026
+  - Author: Jesse James (editor); v1.0 published May 2026
 
 ## Other NPSI projects in scope
 
 - **Briefing Note No. 1** (`NPSI-BN-001`, two-part document on Canadian voter files and the privacy asymmetry) — exists as PDFs, not yet integrated into the site. If asked to integrate, create `bn1/index.html` modeled on `wp1/index.html` with adjustments for the briefing-note format.
 - **Briefing Note No. 2 — Confederation Mathematics** (`NPSI-BN-002`, forthcoming) — empirical constraints on provincial secession in 2026 (Quebec + Alberta), forensic two-part briefing-note format. Source material drafted, not yet integrated. If asked to integrate, create `bn2/index.html` modeled on `wp1/index.html` with briefing-note format. Cited in WP2 §10 as forthcoming.
-- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, in pre-publication draft) — see "Working-paper substance" above for canonical-fact list. v0.1 ships May 2026; v1.0 target pre-23 May 2026.
+- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, v1.0 published May 2026) — see "Working-paper substance" above for canonical-fact list. Released ahead of the 23 May 2026 ROK Navy operational demonstration at CFB Esquimalt and the June 2026 CPSP final-contractor decision.
 - **LinkedIn Company Page** assets exist in a sibling directory (`npsi-linkedin/`). Not part of this repo.
 
 ## What to ask before doing
