@@ -256,7 +256,7 @@ Proposes the **Compact** — a treaty-grade bilateral architecture pairing Canad
 - CUSMA July 2026 review is the timing peg; v1.0 target pre-1-July-2026
 - Indigenous Series II tranche (parallel to WP1 Series I), 10–15% of compact capex, +25 bp ratchet
 - Three-rail Pacific architecture: financial rail (Korea, WP1) + energy/compute rail (U.S., WP2) + critical-minerals rail (cross-cutting)
-- Author: Jesse James (editor); v0.9 complete-draft May 2026 (v1.0 target June 2026)
+- Author: Jesse James (editor); v1.0 published May 2026
 
 If new content cites different numbers, structure, or framing for either CKPIF or the Compact without explicit reason, that's a drift to flag.
 
