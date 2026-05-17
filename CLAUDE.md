@@ -216,6 +216,7 @@ npsi-site/
 - Never introduce a new typeface.
 - Never add JavaScript dependencies, build tooling, or framework imports.
 - Test changes in both desktop (1280px) and mobile (390px) viewports before considering done.
+- **Use the fluid scale, not hard pixels.** Type and space are a continuous `clamp()` system in `site.css` (`--fs-*`, `--space-*`, fluid `--pad-x`); each clamp's max is the desktop identity and its min is the small-screen identity, so the look is pixel-identical at 1280px and 390px and interpolates between. Add new sizes as `clamp()` tokens in `:root`; do not hard-code a px size and do not add per-breakpoint font-size overrides — the `@media (max-width: 820px)` block is layout-only by design. Measure (line length) is set in `ch` via `--max-w`; keep it in the 66–75ch readability band. Print is A4 (`@page { size: A4 }`) — preserve the keep-together rules on `.pull/.wp-card/figure/.wp-meta-block`.
 
 ### When updating copy
 
