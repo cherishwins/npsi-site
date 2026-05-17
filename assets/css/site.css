@@ -1,11 +1,19 @@
 /* =========================================================================
    North Pacific Strategy Initiative
-   Site stylesheet  ·  v1.0  ·  April 2026
+   Site stylesheet  ·  v1.1  ·  May 2026
+   Fluid modular scale: every role is clamp(min, fluid, max) where max == the
+   established desktop value and min == the established small-screen value, so
+   the identity is pixel-identical at the ends and continuous in between.
    ========================================================================= */
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* keep TOC/anchor targets clear of the sticky masthead */
+  scroll-padding-top: 96px;
+}
 
 /* ---------- Tokens ---------- */
 :root {
@@ -27,10 +35,27 @@ html { scroll-behavior: smooth; }
   --font-mono:   'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
   --font-kr:     'Noto Serif KR', 'Source Serif 4', serif;
 
-  --max-w:       760px;
+  /* Measure: line length governed in characters, not pixels (≈66–75ch ideal) */
+  --max-w:       70ch;
   --max-w-wide:  1020px;
-  --pad-x:       56px;
-  --pad-x-mob:   24px;
+  --pad-x:       clamp(24px, 5.2vw, 56px);
+
+  /* Document proportion — the imprint thinks in A4 */
+  --ratio-a4:    1 / 1.4142;
+
+  /* Fluid type scale — max = desktop identity, min = small-screen identity */
+  --fs-body:      clamp(16px, 0.95rem + 0.20vw, 17px);
+  --fs-lede:      clamp(17px, 0.98rem + 0.55vw, 19px);
+  --fs-subtitle:  clamp(18px, 0.95rem + 1.05vw, 22px);
+  --fs-h1:        clamp(32px, 1.55rem + 3.30vw, 44px);
+  --fs-h1-large:  clamp(38px, 1.75rem + 4.30vw, 52px);
+  --fs-h3:        clamp(19px, 1.05rem + 0.85vw, 22px);
+  --fs-prose:     clamp(16px, 0.94rem + 0.45vw, 17px);
+  --fs-card-title:clamp(19px, 1.05rem + 0.85vw, 22px);
+
+  /* Fluid spacing scale — keeps vertical rhythm proportional at every width */
+  --space-section: clamp(40px, 5.2vw, 56px);
+  --space-opener:  clamp(44px, 6.4vw, 64px);
 }
 
 /* ---------- Body ---------- */
@@ -39,7 +64,7 @@ body {
   font-family: var(--font-serif);
   color: var(--ink);
   background: var(--cream);
-  font-size: 17px;
+  font-size: var(--fs-body);
   line-height: 1.55;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,8 +74,23 @@ body {
   flex-direction: column;
 }
 
-/* ---------- Selection ---------- */
+/* ---------- Accessibility ---------- */
 ::selection { background: var(--bronze); color: var(--cream); }
+:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ---------- Aspect-ratio utilities (reliable, no layout shift) ---------- */
+.aspect-a4 { aspect-ratio: var(--ratio-a4); }
 
 /* ============ MASTHEAD / NAVIGATION ============ */
 .masthead {
@@ -121,7 +161,7 @@ main {
   flex: 1;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 72px var(--pad-x) 48px;
+  padding: clamp(48px, 7vw, 72px) var(--pad-x) clamp(32px, 5vw, 48px);
   width: 100%;
 }
 main.wide {
@@ -129,7 +169,7 @@ main.wide {
 }
 
 /* ============ HERO / PAGE OPENERS ============ */
-.opener { margin-bottom: 64px; }
+.opener { margin-bottom: var(--space-opener); }
 .meridian {
   height: 1px;
   background: var(--bronze);
@@ -165,33 +205,36 @@ main.wide {
 h1 {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: 44px;
+  font-size: var(--fs-h1);
   line-height: 1.08;
   color: var(--navy);
   letter-spacing: -0.012em;
   margin-bottom: 16px;
+  text-wrap: balance;
 }
-h1.large { font-size: 52px; }
+h1.large { font-size: var(--fs-h1-large); }
 
 .subtitle {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 22px;
+  font-size: var(--fs-subtitle);
   color: var(--bronze);
   line-height: 1.32;
   margin-bottom: 32px;
+  text-wrap: balance;
 }
 
 .lede {
-  font-size: 19px;
+  font-size: var(--fs-lede);
   line-height: 1.55;
   color: var(--ink);
   margin-bottom: 18px;
+  text-wrap: pretty;
 }
 .lede + .lede { margin-top: 14px; }
 
 /* ============ BODY TEXT ============ */
-section { margin-bottom: 56px; }
+section { margin-bottom: var(--space-section); }
 section:last-child { margin-bottom: 0; }
 
 h2 {
@@ -208,11 +251,12 @@ h2 {
 h3 {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 19px;
+  font-size: var(--fs-h3);
   color: var(--navy);
   margin-top: 24px;
   margin-bottom: 8px;
   line-height: 1.3;
+  text-wrap: balance;
 }
 h3:first-child { margin-top: 0; }
 h4 {
@@ -225,10 +269,10 @@ h4 {
   margin-bottom: 6px;
 }
 
-p { margin-bottom: 14px; }
+p { margin-bottom: 14px; text-wrap: pretty; }
 p:last-child { margin-bottom: 0; }
 
-a { color: var(--navy); text-decoration: none; border-bottom: 0.5px dotted var(--bronze); transition: background 0.12s ease; }
+a { color: var(--navy); text-decoration: none; border-bottom: 0.5px dotted var(--bronze); transition: background 0.12s ease, color 0.12s ease; }
 a:hover { background: var(--bronze); color: var(--cream); border-bottom-color: var(--bronze); }
 a.plain { border-bottom: none; }
 a.plain:hover { background: transparent; color: var(--bronze); }
@@ -288,10 +332,11 @@ hr {
 .wp-card-title {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 22px;
+  font-size: var(--fs-card-title);
   color: var(--navy);
   line-height: 1.18;
   margin-bottom: 6px;
+  text-wrap: balance;
 }
 .wp-card-subtitle {
   font-style: italic;
@@ -391,8 +436,8 @@ hr {
 }
 
 /* Working paper full-text styling */
-.wp-prose { margin-top: 8px; }
-.wp-prose p { font-size: 17px; line-height: 1.65; margin-bottom: 14px; color: var(--ink); }
+.wp-prose { margin-top: 8px; overflow-wrap: break-word; hyphens: auto; }
+.wp-prose p { font-size: var(--fs-prose); line-height: 1.65; margin-bottom: 14px; color: var(--ink); }
 .wp-prose h2 {
   margin-top: 48px;
   font-size: 12px;
@@ -400,7 +445,7 @@ hr {
 }
 .wp-prose h3 {
   margin-top: 28px;
-  font-size: 22px;
+  font-size: var(--fs-card-title);
   color: var(--navy);
   font-weight: 600;
 }
@@ -553,10 +598,8 @@ figure figcaption {
 }
 
 /* ============ RESPONSIVE ============ */
+/* Type and space scale fluidly via clamp() — this block is layout only. */
 @media (max-width: 820px) {
-  .masthead {
-    padding: 18px var(--pad-x-mob) 12px;
-  }
   .masthead-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -564,20 +607,40 @@ figure figcaption {
   }
   .nav { gap: 18px; flex-wrap: wrap; }
   .nav-volume { display: none; }
-  main { padding: 48px var(--pad-x-mob) 32px; }
-  h1 { font-size: 32px; }
-  h1.large { font-size: 38px; }
-  .subtitle { font-size: 18px; }
-  .lede { font-size: 17px; }
   .grid-2, .ledger { grid-template-columns: 1fr; }
-  .wp-prose p { font-size: 16px; }
-  .wp-prose h3 { font-size: 19px; }
-  .site-footer { padding: 24px var(--pad-x-mob); }
 }
 
-/* ============ PRINT ============ */
+/* ============ PRINT — A4 reference document ============ */
+@page {
+  size: A4;
+  margin: 18mm 16mm;
+}
 @media print {
-  .masthead, .site-footer, .nav { display: none; }
-  body { background: white; color: black; }
+  html { scroll-behavior: auto; }
+  .masthead, .site-footer, .nav, .wp-card-actions, .toc { display: none; }
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
   main { max-width: 100%; padding: 0; }
+  a { color: #000; border-bottom: none; }
+  /* Surface destinations of external links in print */
+  .wp-prose a[href^="http"]::after,
+  .lede a[href^="http"]::after {
+    content: " <" attr(href) ">";
+    font-family: var(--font-mono);
+    font-size: 8pt;
+    color: #555;
+    word-break: break-all;
+  }
+  h1, h2, h3, h4 { color: #000; break-after: avoid; }
+  p, blockquote, li { orphans: 3; widows: 3; }
+  .pull, .wp-card, .wp-meta-block, figure, blockquote {
+    break-inside: avoid;
+    border-color: #999;
+  }
+  section { break-inside: auto; }
+  .meridian, .meridian::before, .meridian::after, .meridian span { background: #000; }
 }

@@ -1,0 +1,28 @@
+/* Canonical reference — shipped :root block from cherishwins/npsi-site.
+   A correct instance of the identity-anchored fluid-scale protocol.
+   Regenerate the numbers per project with scripts/clamp.py; keep the SHAPE. */
+
+:root {
+  /* Measure: line length governed in characters, not pixels (~66–75ch ideal) */
+  --max-w:        70ch;
+  --max-w-wide:   1020px;
+  --pad-x:        clamp(24px, 5.2vw, 56px);
+
+  /* Document proportion — ISO 216, the Lichtenberg √2 ratio */
+  --ratio-a4:     1 / 1.4142;
+
+  /* Fluid type scale — max = desktop identity, min = small-screen identity.
+     Every clamp keeps a rem term so it scales with user font size. */
+  --fs-body:       clamp(16px, 0.95rem + 0.20vw, 17px);
+  --fs-lede:       clamp(17px, 0.98rem + 0.55vw, 19px);
+  --fs-subtitle:   clamp(18px, 0.95rem + 1.05vw, 22px);
+  --fs-h1:         clamp(32px, 1.55rem + 3.30vw, 44px);
+  --fs-h1-large:   clamp(38px, 1.75rem + 4.30vw, 52px);
+  --fs-h3:         clamp(19px, 1.05rem + 0.85vw, 22px);
+  --fs-prose:      clamp(16px, 0.94rem + 0.45vw, 17px);
+  --fs-card-title: clamp(19px, 1.05rem + 0.85vw, 22px);
+
+  /* Fluid spacing scale — keeps vertical rhythm proportional at every width */
+  --space-section: clamp(40px, 5.2vw, 56px);
+  --space-opener:  clamp(44px, 6.4vw, 64px);
+}
