@@ -9,7 +9,9 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 8 pages plus a 404 — home, three working-paper reading views (No. 1 published, No. 2 published, No. 3 in pre-publication draft), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 9 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. The "Working Paper" nav link sitewide points to the current paper, **`/wp4/`**.
 
 ## What this site is *not*
 
@@ -85,7 +87,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
   <div class="masthead-inner">
     <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="/wp2/">Working Paper</a>
+      <a href="/wp4/">Working Paper</a>
       <a href="/about/">About</a>
       <a href="/engage/">Engage</a>
       <a href="/commentary/">Commentary</a>
@@ -95,7 +97,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
 </header>
 ```
 
-The "Working Paper" nav link points to the **current** working paper (currently `/wp2/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
+The "Working Paper" nav link points to the **current** working paper (currently `/wp4/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
 
 ### Page opener (every content page)
 
@@ -159,12 +161,15 @@ npsi-site/
 ├── commentary/index.html            named commentary index, per paper
 ├── colophon/index.html              technical colophon
 ├── wp1/
-│   ├── index.html                   Working Paper No. 1 — full reading view (with "previous paper" banner once a newer paper publishes)
-│   ├── working-paper.pdf            (drop-in: full PDF release; not yet present)
-│   ├── executive-brief.pdf          (drop-in: 2-page brief; not yet present)
-│   └── ckpif-architecture.png       (drop-in: figure; copy from assets/img/)
+│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP4)
+│   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── wp2/
-│   └── index.html                   Working Paper No. 2 — full reading view (current paper)
+│   └── index.html                   Working Paper No. 2 — full reading view (previous paper)
+├── wp3/
+│   └── index.html                   Working Paper No. 3 — full reading view (previous paper)
+├── wp4/
+│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (CURRENT paper)
+│   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 └── assets/
     ├── css/site.css                 shared stylesheet, fully tokenized
     └── img/
@@ -276,6 +281,18 @@ If new content cites different numbers, structure, or framing for either CKPIF o
   - January 2026 Canada–Korea Industrial Cooperation Committee MOU on co-mining and co-production.
   - FORGE plurilateral framework — Korea-chaired through mid-2026.
   - Author: Jesse James (editor); v1.0 published May 2026.
+
+### Working Paper No. 4 — The Addition Paradox (`wp4/index.html`)
+
+An energy thesis for Canada — the **current** working paper, v1.0 published 15 May 2026. Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
+
+- **Core thesis:** the global energy transition did not substitute, it *added*. 2024 saw a record 858 TWh of new clean electricity *and* record fossil combustion; global electricity demand grew 1,172 TWh (clean supplied 858, fossil supplied the remaining 314); power-sector CO₂ ≈ 14.6 Gt; coal ≈ 10,613 TWh and forecast largest single source through the mid-2030s; clean-energy investment ≈ US$2 trillion in 2024 (≈2× fossil); upstream oil investment ≈ US$570 bn (highest since 2017).
+- **Chokepoint migration:** clean-tech refining/assembly concentration in a single nation — polysilicon ≈ 95%, lithium cells ≈ 80%, NdFeB magnets ≈ 90%. Framed as concentration risk, **not** anti-clean-energy and **not** named beyond "a single nation / the People's Republic of China" as the paper does.
+- **Four Canadian assets (one hand):** 3rd-largest oil reserves with lowest-carbon barrel (oil-sands intensity −33% since 2009); largest per-capita clean electricity in the industrial democracies (hydro > 380 TWh/yr); 2nd-largest high-grade uranium reserves (Athabasca Basin, 10–100× global mean grade); only G7 nation with simultaneous Pacific and Atlantic deepwater export capacity (Kitimat, Prince Rupert, Vancouver within ~5 sailing days of Yokohama/Busan/Shanghai).
+- Positioned as the strategic preface to the three-rail architecture: WP1 (financial), WP2 (energy/compute), WP3 (defence-industrial).
+- Editorial-voice note: the paper uses sustained funeral/inheritance metaphor ("the casket will remain closed"). Preserve it; it is intentional register, not drift. **No red** in the site rendering even though the source PDF cover uses a maroon accent — the HTML reading view uses the four-colour palette only.
+- Author: Jesse James; v1.0 published 15 May 2026.
+- PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1).
 
 ## Other NPSI projects in scope
 
