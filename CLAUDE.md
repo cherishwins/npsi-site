@@ -209,6 +209,7 @@ npsi-site/
 8. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
 9. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
 10. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
+11. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`** with the release date as `lastmod`. Bump the previous paper's `<priority>` down a notch and the new paper's up to `0.9`. The home-page `<lastmod>` should be updated to the release date as well.
 
 ### When fixing or improving CSS
 
