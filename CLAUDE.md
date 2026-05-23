@@ -205,11 +205,40 @@ npsi-site/
 4. **Add a "previous paper" banner near the top of the prior paper's page**, pointing readers to the current paper. The banner uses the `<aside class="standard">` pattern with an `<h4>` and a one-sentence pointer.
 5. Add a new section to `commentary/index.html` for the new paper's commentary collection (above the previous paper's section). Open for submission.
 6. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
-7. Build the OG image at `assets/img/wp[N]-og.png` (1200×630, NPSI register, three stat blocks, no red, no flags). Build hand-coded SVG figures into `assets/img/` and reference via `<figure><img></figure>` in the paper.
-8. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
-9. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
-10. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
-11. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`** with the release date as `lastmod`. Bump the previous paper's `<priority>` down a notch and the new paper's up to `0.9`. The home-page `<lastmod>` should be updated to the release date as well.
+7. **OG card pipeline.** Hand-code `assets/img/wp[N]-og.svg` (1200×630, NPSI register, three stat blocks, no red, no flags) using `wp1-og.svg` / `wp4-og.svg` as the template. Render to PNG with `npx --yes resvg-cli assets/img/wp[N]-og.svg assets/img/wp[N]-og.png`. The PNG is what `og:image` must reference — social platforms (Twitter, Facebook, LinkedIn) require raster. The SVG is the source of truth; commit both. Build hand-coded SVG figures into `assets/img/` and reference via `<figure><img></figure>` in the paper.
+8. **JSON-LD ScholarlyArticle.** Add a `<script type="application/ld+json">` block to the paper's `<head>`, mirroring the WP1–WP4 pattern (`@type: ScholarlyArticle`, `headline`, `datePublished`, `identifier: NPSI-WP-NNN`, `issueNumber`, `image` pointing to wp[N]-og.png, `license`, `keywords`, `abstract`, `author`, `publisher`, `isPartOf: NPSI Working Papers`, and `encoding` carrying the PDF when released). This is what Google's Knowledge Graph, Bing, and academic crawlers index beyond the Highwire `citation_*` tags.
+9. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
+10. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
+11. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
+12. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`** with the release date as `lastmod`. Bump the previous paper's `<priority>` down a notch and the new paper's up to `0.9`. The home-page `<lastmod>` should be updated to the release date as well.
+
+### Page chrome — three pieces every page carries
+
+The skip-link, the masthead, and the footer are the page-chrome trio. New pages must include all three verbatim:
+
+```html
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">...</header>
+
+<main id="main" tabindex="-1">
+  ...
+</main>
+
+<footer class="site-footer">...</footer>
+```
+
+The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex="-1">` is the focus target. Both come from `.skip-link` rules in `site.css` and must not be styled per-page.
+
+### Site infrastructure (well-known files)
+
+- **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets). Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
+- **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar.
+- **`humans.txt`** at site root — editorial/technical credits.
+- **`.well-known/security.txt`** — RFC 9116 contact for security researchers. Bump the `Expires:` field annually.
+- **`CITATION.cff`** at repo root — renders GitHub's "Cite this repository" widget for academic reuse.
 
 ### When fixing or improving CSS
 

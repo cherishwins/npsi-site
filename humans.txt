@@ -1,0 +1,21 @@
+/* TEAM */
+Editor: Jesse James
+Site: https://npsi.ca/
+Location: Victoria, British Columbia, Canada
+Contact: jesse [at] fitforgov.com
+LinkedIn: linkedin.com/company/north-pacific-strategy-initiative
+
+/* THANKS */
+Editorial debts are recorded in each working paper's CHANGELOG.md
+as named contributions arrive. Named commentary, when published,
+is attributed in the corresponding commentary page.
+
+/* SITE */
+Language: English (en-CA)
+Standards: HTML5, CSS3
+Components: Plain static HTML and CSS, hand-authored, no JavaScript framework
+Type: Source Serif 4, Source Sans 3, JetBrains Mono, Noto Serif KR / Sans KR
+Hosting: Cloudflare Pages-class CDN
+Analytics: Umami (cookieless, aggregate, no fingerprinting)
+Repository: github.com/cherishwins/npsi-site
+Licence: Working paper text CC-BY-4.0; site source MIT; imprint and wordmark not licensed.
