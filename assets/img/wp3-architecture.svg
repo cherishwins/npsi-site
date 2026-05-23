@@ -105,7 +105,7 @@
     <!-- Connector line -->
     <line x1="290" y1="68" x2="602" y2="68" stroke="#A47148" stroke-width="1"
           marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
-    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">KSS-III · CPSP · CAD 100B PROGRAM</text>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">KSS-III · CPSP · UP TO 12 BY 2035</text>
     <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">DEFENCE COOPERATION AGREEMENT · SDCP · 2+2</text>
 
     <!-- Korea endpoint -->
