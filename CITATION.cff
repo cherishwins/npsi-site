@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "North Pacific Strategy Initiative — Working Papers"
+message: >-
+  If you cite an individual NPSI working paper, please use the per-paper
+  citation metadata embedded in its reading view (the citation_* meta tags
+  consumed by Google Scholar and reference managers), or the GitHub release
+  tag for that paper. For the imprint itself, please use the citation below.
+type: software
+authors:
+  - given-names: Jesse
+    family-names: James
+    email: jesse@fitforgov.com
+    affiliation: North Pacific Strategy Initiative
+abstract: >-
+  The North Pacific Strategy Initiative is an independent research imprint
+  publishing reference-grade working papers on Pacific sovereignty, bilateral
+  financial architecture, and the defensive options available to middle powers
+  in a period of dollar-system stress.
+keywords:
+  - Pacific sovereignty
+  - bilateral architecture
+  - middle-power policy
+  - Canada
+  - Korea
+  - counterparty-risk diversification
+url: "https://npsi.ca/"
+repository-code: "https://github.com/cherishwins/npsi-site"
+license: CC-BY-4.0
