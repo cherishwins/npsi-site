@@ -9,7 +9,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 9 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 10 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. The "Working Paper" nav link sitewide points to the current paper, **`/wp4/`**.
 
@@ -170,6 +170,9 @@ npsi-site/
 ├── wp4/
 │   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (CURRENT paper)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
+├── tb1/
+│   └── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
+├── llms.txt                         LLM-crawler index (llms.txt convention): imprint summary + canonical URL and one-line abstract per paper
 └── assets/
     ├── css/site.css                 shared stylesheet, fully tokenized
     └── img/
@@ -183,6 +186,7 @@ npsi-site/
         ├── wp2-capacity-gap.svg     WP2 Figure C — U.S. capacity gap by 2028
         ├── wp2-compact.svg          WP2 Figure D — six-layer compact architecture
         ├── wp2-indigenous.svg       WP2 Figure E — Series II tranche structure
+        ├── tb1-og.svg/.png          TB1 Open Graph share card (1200×630)
         └── og-default.png/.svg      site-wide Open Graph share preview (1200×630)
 ```
 
@@ -237,6 +241,7 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 - **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets). Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
 - **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar.
 - **`humans.txt`** at site root — editorial/technical credits.
+- **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
 - **`.well-known/security.txt`** — RFC 9116 contact for security researchers. Bump the `Expires:` field annually.
 - **`CITATION.cff`** at repo root — renders GitHub's "Cite this repository" widget for academic reuse.
 
@@ -324,6 +329,17 @@ An energy thesis for Canada — the **current** working paper, v1.0 published 15
 - Editorial-voice note: the paper uses sustained funeral/inheritance metaphor ("the casket will remain closed"). Preserve it; it is intentional register, not drift. **No red** in the site rendering even though the source PDF cover uses a maroon accent — the HTML reading view uses the four-colour palette only.
 - Author: Jesse James; v1.0 published 15 May 2026.
 - PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1).
+
+### Technical Briefing No. 1 — The Verified Sky (`tb1/index.html`)
+
+The first of the **Technical Briefings** — a companion line to the Working Papers addressing the engineering substrate beneath the policy architecture. Document IDs follow `NPSI-TB-NNN`. The reading view uses the standard site chrome (masthead, skip-link, footer verbatim) plus page-scoped, `tb-`-prefixed components in an inline `<style>` block (verification ledger, data tables, KPI row, footnotes, series index, endmark) — all on the four-colour palette and the three site typefaces. Technical briefings do **not** join the four-link nav; they are reached from the home page's "Technical Briefings" section and direct URL. Key facts that should remain consistent:
+
+- Subject: sensing, certainty, and the law of automated airspace awareness — computer-vision and sensor-fusion state of the art 2025–2026 for monitoring a defined airspace volume.
+- Signature element: the **verification ledger** — seven conditions (class, size, altitude, kinematics, window, geofence, persistence) that must all pass before any action fires; two-sensor corroboration as the industry standing rule.
+- Benchmark honesty: Anti-UAV410 state accuracy plateaued in the low-to-mid 60s since 2023; CST Anti-UAV (realistic tiny targets) best method 35.92% — realistic small-and-distant performance is roughly half of headline performance.
+- Legal line (Canada): detection, tracking, evidence, and notification are lawful for civil operators; jamming/spoofing (Radiocommunication Act ss. 4(4), 9(1)(b)), takeover (Criminal Code ss. 342.1–342.2), and physical downing (Aeronautics Act, CARs Part IX) are not. Transport Canada NPA 2026-005 (8 June 2026) proposes mandatory Remote ID on ASTM F3411; comment window to 9 September 2026.
+- Register: technical and regulatory survey, explicitly not legal advice (standing caveat block); no first person; conservative forecast framing ("treat a breakout as upside, never as the plan").
+- Author: Jesse James; v1.0 published 11 June 2026. No PDF release. OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
 
 ## Other NPSI projects in scope
 
