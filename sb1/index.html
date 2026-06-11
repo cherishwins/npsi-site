@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Secrets · NPSI Special Briefing No. 1</title>
+<meta name="description" content="Canada effectively holds no data secrets from the United States — not by choice, but by architecture. An NPSI Special Briefing on data sovereignty, the CLOUD Act, and the sovereign AI imperative. v1.0, June 2026.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="Zero Secrets">
+<meta property="og:description" content="Canada's data already answers to American law, and the new generation of military AI turns that exposure into a complete intelligence picture. Data residency is not data sovereignty. NPSI Special Briefing No. 1.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/sb1/">
+<meta property="og:image" content="https://npsi.ca/assets/img/sb1-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/sb1/">
+<link rel="alternate" type="application/pdf" href="/sb1/special-briefing.pdf" title="Special Briefing No. 1 (PDF)">
+
+<meta name="citation_title" content="Zero Secrets: Canada's Data and AI Sovereignty Crisis">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/06/11">
+<meta name="citation_journal_title" content="NPSI Special Briefings">
+<meta name="citation_issue" content="1">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_pdf_url" content="https://npsi.ca/sb1/special-briefing.pdf">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/sb1/">
+<meta name="citation_keywords" content="data sovereignty; CLOUD Act; FISA 702; sovereign AI; sovereign compute; cloud jurisdiction; Investment Canada Act; Canada">
+<meta name="dc.identifier" content="NPSI-SB-001">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#F4EFE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Report",
+  "headline": "Zero Secrets",
+  "alternativeHeadline": "Canada's data and AI sovereignty crisis",
+  "datePublished": "2026-06-11",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/sb1/",
+  "identifier": "NPSI-SB-001",
+  "issueNumber": "1",
+  "image": "https://npsi.ca/assets/img/sb1-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "data sovereignty, CLOUD Act, FISA 702, sovereign AI, sovereign compute, cloud jurisdiction, Investment Canada Act, Canada",
+  "abstract": "Canada effectively holds no data secrets from the United States — not by choice, but by architecture. The overwhelming majority of Canadian government, corporate, and citizen data sits on infrastructure owned by three American corporations, and under the US CLOUD Act and FISA Section 702, American jurisdiction follows corporate ownership, not server location. This briefing audits the exposure, the federal response, and the demonstrated capability class, and recommends a three-stage sovereign-infrastructure response.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "jesse@fitforgov.com",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Special Briefings"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://npsi.ca/sb1/special-briefing.pdf",
+    "encodingFormat": "application/pdf"
+  }
+}
+</script>
+
+<style>
+  /* Page-scoped components for the Special Briefing format.
+     Palette and type are the site tokens only; classes are sb-prefixed to
+     avoid colliding with site.css components. */
+
+  /* Signature element: the hollow redaction bar — nothing left to redact */
+  .sb-redaction{
+    display: block;
+    width: 220px;
+    height: 30px;
+    border: 1px solid var(--bronze);
+    position: relative;
+    margin: 0 0 24px;
+  }
+  .sb-redaction::after{
+    content: "NOTHING LEFT TO REDACT";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    color: var(--teal);
+  }
+
+  .sb-exec{
+    background: var(--paper);
+    border: 0.5px solid var(--rule);
+    border-left: 2px solid var(--bronze);
+    padding: 28px 30px 16px;
+    margin: 8px 0 0;
+  }
+  .sb-exec .label{
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin-bottom: 18px;
+  }
+  .sb-exec p{ font-size: 15.5px; line-height: 1.6; }
+  .sb-exec p:first-of-type{ font-size: 17px; }
+
+  ol.sb-findings{ list-style: none; counter-reset: f; margin: 8px 0 0; }
+  ol.sb-findings li{
+    counter-increment: f;
+    border-top: 0.5px solid var(--rule);
+    padding: 24px 0 24px 58px;
+    position: relative;
+    margin: 0;
+  }
+  ol.sb-findings li:last-child{ border-bottom: 0.5px solid var(--rule); }
+  ol.sb-findings li::before{
+    content: counter(f, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 26px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bronze);
+  }
+  ol.sb-findings li p{ margin-bottom: 0; }
+  ol.sb-findings .fhead{ display: block; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+
+  .sb-src{
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--teal);
+    letter-spacing: 0;
+  }
+
+  .sb-stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 0.5px solid var(--rule);
+    margin: 32px 0;
+  }
+  .sb-stat{ background: var(--paper); padding: 22px 20px; }
+  .sb-stat .n{
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: clamp(22px, 3vw, 28px);
+    color: var(--navy);
+    display: block;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .sb-stat .d{
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    color: var(--teal);
+    line-height: 1.5;
+    display: block;
+  }
+
+  .table-scroll{ overflow-x: auto; margin: 24px 0 28px; }
+  @media (min-width: 980px){
+    .table-scroll{
+      width: 860px;
+      margin-left: calc((100% - 860px) / 2);
+    }
+  }
+  .sb-table{
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+  }
+  .sb-table caption{
+    caption-side: top;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  .sb-table th{
+    text-align: left;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--navy);
+    padding: 8px 14px 8px 0;
+  }
+  .sb-table td{
+    border-bottom: 0.5px solid var(--rule);
+    padding: 10px 14px 10px 0;
+    vertical-align: top;
+    color: var(--ink);
+  }
+  .sb-table td:last-child, .sb-table th:last-child{ padding-right: 0; }
+
+  .sb-stage{
+    background: var(--paper);
+    border: 0.5px solid var(--rule);
+    padding: 26px 28px;
+    margin-bottom: 18px;
+  }
+  .sb-stage .stage-k{
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .sb-stage h3{ margin: 0 0 16px; }
+  .sb-stage ol{ list-style: none; counter-reset: r; margin: 0; }
+  .sb-stage ol li{
+    counter-increment: r;
+    position: relative;
+    padding: 0 0 16px 38px;
+    margin: 0;
+  }
+  .sb-stage ol li:last-child{ padding-bottom: 0; }
+  .sb-stage ol li::before{
+    content: counter(r);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--bronze);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--bronze);
+  }
+  .sb-bench{
+    display: block;
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--teal);
+  }
+  .sb-bench::before{
+    content: "BENCHMARK → ";
+    color: var(--bronze);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    font-size: 10px;
+  }
+
+  .sb-caveat{ border-top: 0.5px solid var(--rule); padding: 22px 0; }
+  .sb-caveat:last-of-type{ border-bottom: 0.5px solid var(--rule); }
+  .sb-caveat .ch{ font-weight: 600; color: var(--navy); display: block; margin-bottom: 8px; }
+  .sb-caveat p{ margin-bottom: 0; }
+
+  ol.fn{ counter-reset: fnc; list-style: none; margin: 18px 0 0 0; }
+  ol.fn li{
+    counter-increment: fnc;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin-bottom: 10px;
+    padding-left: 34px;
+    position: relative;
+  }
+  ol.fn li::before{
+    content: counter(fnc, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--bronze);
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+
+  .sb-series{ margin-top: 12px; }
+  .sb-series-item{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 0.5px solid var(--rule);
+    font-size: 15px;
+  }
+  .sb-series-id{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--teal);
+    padding-top: 2px;
+  }
+  .sb-series-item.current .sb-series-id{ color: var(--bronze); }
+  .sb-series-item.current div:last-child{ color: var(--navy); font-weight: 600; }
+  .sb-series-item em{ color: var(--bronze); font-weight: 400; }
+
+  .endmark{ text-align: center; margin: 64px 0 0; }
+  .endmark .em-line{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+  .endmark .em-rule{ width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
+  .endmark .em-quote{
+    font-style: italic;
+    font-size: 17px;
+    color: var(--navy);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .endmark .em-src{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--teal);
+    margin-top: 22px;
+    text-transform: uppercase;
+  }
+
+  @media print{
+    .sb-exec, .sb-stage, .sb-stats, .table-scroll, .sb-redaction{ break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/wp4/">Working Paper</a>
+      <a href="/about/">About</a>
+      <a href="/engage/">Engage</a>
+      <a href="/commentary/">Commentary</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Special Briefing No.&nbsp;1  ·  v1.0  ·  June 2026  ·  Unclassified — All Sources Open <span class="status-badge" style="margin-left: 14px;">v1.0 · JUNE 2026</span></div>
+  <span class="sb-redaction" role="img" aria-label="An empty redaction bar — nothing left to redact"></span>
+  <h1>Zero Secrets</h1>
+  <div class="subtitle">Canada's data already answers to American law. The new generation of military AI turns that exposure into a complete intelligence picture. A wake-up call for the people who still think residency is sovereignty.</div>
+</div>
+
+<aside class="wp-meta-block" aria-label="Special briefing metadata">
+  <dl>
+    <dt>Author</dt>        <dd>Jesse James</dd>
+    <dt>Document ID</dt>   <dd><code>NPSI-SB-001</code></dd>
+    <dt>Version</dt>       <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/sb1/index.html">change log</a></dd>
+    <dt>Series</dt>        <dd>Special Briefing — single-issue strategic assessments published when an exposure demands attention outside the working-paper cycle</dd>
+    <dt>Released</dt>      <dd>11 June 2026 · Victoria, British Columbia</dd>
+    <dt>Status</dt>        <dd>Unclassified · All sources open. Editorially controlled. Public version-controlled review open.</dd>
+    <dt>Companion</dt>     <dd>NPSI Working Paper No. 5, <em>Sovereign Compute North</em> (forthcoming)</dd>
+    <dt>Cite as</dt>       <dd>James, J. (2026). <em>Zero Secrets: Canada's Data and AI Sovereignty Crisis</em> (NPSI Special Briefing No.&nbsp;1, v1.0). https://npsi.ca/sb1/</dd>
+  </dl>
+</aside>
+
+<div class="wp-card-actions" style="margin-bottom: 36px;">
+  <a class="btn" href="/sb1/special-briefing.pdf">Download Briefing (PDF)</a>
+  <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
+  <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#findings">Key Findings</a></li>
+    <li><a href="#residency">Residency Is Not Sovereignty</a></li>
+    <li><a href="#acquisition">The Acquisition Layer</a></li>
+    <li><a href="#ottawa">Ottawa's Answer, Audited</a></li>
+    <li><a href="#machine">The Machine That Reads Everything</a></li>
+    <li><a href="#models">What Sovereign Actually Looks Like</a></li>
+    <li><a href="#recommendations">Recommendations</a></li>
+    <li><a href="#caveats">Caveats</a></li>
+    <li><a href="#sources">Selected Sources</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="executive-summary">
+  <h2>Executive Summary</h2>
+  <div class="sb-exec">
+    <div class="label">Executive summary</div>
+    <p>Canada effectively holds no data secrets from the United States. Not because we are careless, and not because we chose transparency — because of architecture. The overwhelming majority of Canadian government, corporate, and citizen data sits on infrastructure owned by three American corporations, and under the US CLOUD Act and FISA Section 702, American jurisdiction follows corporate ownership, not server location. A US warrant for data in Toronto is as enforceable as one for Redmond.</p>
+    <p>This stopped being a legal theory on June 10, 2025, when Microsoft France's director of public and legal affairs, Anton Carniaux, was asked under oath by the French Senate whether he could guarantee that French citizens' data would never reach US authorities. His answer: <em>"No, I cannot guarantee that."</em> The same answer applies to Canada. Microsoft's December 2025 pledge of C$19 billion in Canadian AI infrastructure — complete with a five-point "digital sovereignty" plan — does not change the law it operates under. The company admitted as much in Paris.</p>
+    <p>The stakes have changed because the technology has. AI-driven sensor and data fusion now converts raw data exhaust into real-time targeting pictures: the Pentagon's Maven Smart System prosecuted roughly 1,000 targets in the first 24 hours of the 2026 Iran operation and 13,000 targets in 38 days. The capability class is what matters for Canada: whoever controls the infrastructure layer a nation's data transits can, in principle, denoise that nation into permanent legibility. Allies have done this to allies before — the NSA tapped Angela Merkel's communications through Danish cables — and foreign-controlled infrastructure has already been used as policy leverage against a partner at war, when Starlink declined coverage over Crimea.</p>
+    <p>The Carney government's sovereign AI agenda — the $2-billion Sovereign AI Compute Strategy, the June 2026 "AI for All" strategy — is real and material. But its flagship Cohere data centre is operated by a New Jersey company, and the federal definition of "sovereign" still leans on geography instead of jurisdiction. This briefing recommends a three-stage response: adopt a control-based definition of sovereign infrastructure, move classified and defence workloads to genuinely Canadian-controlled systems, and use the Investment Canada Act and the new $500-million Canadian Tech Growth Fund to ensure Canada's AI champions are not acquired before scale — the pattern that took Nortel's patents and Element AI.</p>
+  </div>
+</section>
+
+<section id="findings">
+  <h2>Key Findings — Six Findings, Each One a Structural Fact</h2>
+  <ol class="sb-findings">
+    <li>
+      <span class="fhead">Most Canadian cloud usage runs on foreign infrastructure — and the famous statistic needs honest attribution.</span>
+      <p>The widely repeated claim that "over 80 percent of Canadian cloud services rely on foreign infrastructure" traces to IDC Canada's <em>Canadian Cloud Services Market Analysis</em> (2024) — private market research, not a Government of Canada figure, though it has been mis-cited as one. Ottawa's own position is qualitative and damning enough: "As long as a CSP that operates in Canada is subject to the laws of a foreign country, Canada will not have full sovereignty over its data." <span class="sb-src">[Source: TBS White Paper on Data Sovereignty and Public Cloud, 2018–2023; IDC Canada 2024, via Balsillie Papers]</span></p>
+    </li>
+    <li>
+      <span class="fhead">Jurisdiction follows ownership, not geography.</span>
+      <p>The US CLOUD Act (18 U.S.C. §2713, enacted March 2018) compels any US-controlled provider to produce data in its "possession, custody or control" regardless of storage location. FISA Section 702 reaches the same providers for foreign-intelligence collection. No Canada–US CLOUD Act bilateral agreement exists as of early 2026, so the exposure is one-directional: Washington reaches Canadian data directly; Ottawa still queues through MLAT. <span class="sb-src">[Source: 18 U.S.C. §2713; Balsillie Papers, 2026]</span></p>
+    </li>
+    <li>
+      <span class="fhead">Microsoft confirmed the exposure under oath.</span>
+      <p>Carniaux's June 10, 2025 French Senate testimony converted a decade of legal debate into an on-the-record corporate admission. Canadian analysts noted immediately that the identical logic covers Canadian data on Azure, AWS, Google Cloud — and Starlink. <span class="sb-src">[Source: French Senate hearing transcript, June 10, 2025; Canadian Cyber in Context]</span></p>
+    </li>
+    <li>
+      <span class="fhead">The acquisition risk is real but the sharper exposure is the operating layer.</span>
+      <p>Canada's largest data-centre operator, eStruxture, was recapitalized in a CA$1.8-billion deal led by Toronto's Fengate Asset Management (closed October 2024) — Canadian control retained, US private-markets investors participating. The harder problem: Cohere's $725-million flagship facility, backed by up to $240 million in federal funding, is operated in Cambridge, Ontario by New Jersey-based CoreWeave. <span class="sb-src">[Source: Fengate/eStruxture announcements, 2024; ISED AI Compute Challenge award]</span></p>
+    </li>
+    <li>
+      <span class="fhead">The Carney agenda is substantial — and partly built on the thing it is trying to escape.</span>
+      <p>The $2-billion Sovereign AI Compute Strategy (December 2024) and the ~$2.3-billion "AI for All" strategy (June 4, 2026) are genuine commitments, targeting 850 MW of compute by 2030 and a $500-million Canadian Tech Growth Fund. Five days after Microsoft's C$19-billion Canadian pledge, experts pointed out the contradiction: sovereignty isn't determined by where the data centres sit, but by which company runs the servers. <span class="sb-src">[Source: ISED; PMO, June 4, 2026; Microsoft, Dec 9, 2025; Blayne Haggart, Brock University]</span></p>
+    </li>
+    <li>
+      <span class="fhead">The threat is demonstrated, not hypothetical.</span>
+      <p>Maven Smart System fused satellite, drone, SIGINT, and geolocation feeds into a single targeting picture at operational tempo in 2026. Allies have structurally surveilled allies (Operation Dunhammer). US data brokers sold military-personnel records for as little as $0.12 each. Starlink coverage was withheld from a partner's operation as a matter of one company's policy. Every mechanism in this briefing has already been used. <span class="sb-src">[Source: Breaking Defense, May 2026; Danish DR / Operation Dunhammer, 2021; Duke University Sanford School, Nov 2023]</span></p>
+    </li>
+  </ol>
+
+  <div class="sb-stats">
+    <div class="sb-stat"><span class="n">4×</span><span class="d">Federal Azure consumption vs. AWS since FY2019–20 — Microsoft is the Government of Canada's dominant cloud. [SSC evaluation, 2024–25]</span></div>
+    <div class="sb-stat"><span class="n">13,000</span><span class="d">Targets prosecuted in 38 days through Maven Smart System during Operation Epic Fury, per the Pentagon's Chief Digital &amp; AI Officer. [Breaking Defense, May 2026]</span></div>
+    <div class="sb-stat"><span class="n">$0.12</span><span class="d">Price per record at which Duke researchers legally purchased US military-personnel data from commercial brokers. [Duke Sanford School, 2023]</span></div>
+    <div class="sb-stat"><span class="n">C$19B</span><span class="d">Microsoft's 2023–2027 Canadian commitment — deepening the dependence its own Senate testimony concedes it cannot shield. [Microsoft, Dec 2025]</span></div>
+  </div>
+</section>
+
+<section id="residency">
+  <h2>§ 1 · Residency Is Not Sovereignty</h2>
+  <p class="lede">All three hyperscalers operate Canadian regions. All three are American corporations. Those two sentences do not cancel each other out — the second one wins.</p>
+  <p>Azure runs regions in Toronto and Québec City; AWS and Google Cloud in Montréal and Toronto. The marketing term for this is "data residency," and it answers exactly one question: where the bytes physically sit. Sovereignty answers a different question: whose law governs access to them. A Canadian data centre operated by a US company is a US-jurisdictioned service with a Canadian postal code.</p>
+  <p>The mechanics are unambiguous. The CLOUD Act applies to any provider with sufficient US "minimum contacts," not only US-headquartered firms. Selecting a Canadian region changes residency, not jurisdiction. Customer-managed encryption keys mitigate but do not eliminate the exposure: metadata, account information, file names, sharing structures, and activity logs remain compellable, and data must be decrypted in memory during active processing — a residual access window no contract clause closes. FISA 702 was reauthorized in 2024 and runs through April 2026, with the reauthorization fight ongoing in Washington as this briefing publishes. <span class="sb-src">[Source: 18 U.S.C. §2713; FISA Reform and Reauthorization Act, 2024]</span></p>
+  <h3>The federal footprint</h3>
+  <p>Shared Services Canada is the central IT provider for 43 federal organizations, historically operating roughly 700 data centres running some 14,000 applications. Per SSC's own 2024–25 evaluation, Azure is the most-used cloud in the federal government, with cumulative consumption since FY2019–20 running four times that of AWS. The Privacy Commissioner's 2023–24 annual report states the principle plainly: "data residency requirements alone cannot guarantee protection from foreign legal processes." <span class="sb-src">[Source: SSC Cloud Services Evaluation, 2024–25; OPC Annual Report, 2023–24]</span></p>
+  <h3>The defence exposure</h3>
+  <p>DND/CAF run common collaboration on "Defence 365," a defence-tailored Microsoft 365 deployment spanning the Defence Team and partner departments. Analysis published in the Balsillie Papers argues data on these systems could, in theory, be compelled by US authorities without Canadian judicial review. That is an analytical claim, not a documented disclosure event — this briefing labels it as such — but the architecture that makes it possible is not in dispute. <span class="sb-src">[Source: Balsillie Papers, Appleton, March 11, 2026 — analytical assessment]</span></p>
+  <p>Canada's own defence AI posture compounds the gap. The 2024 DND/CAF AI Strategy commits the Defence Team to being "AI enabled by 2030" and invokes "sovereign AI foundations" — but uses "sovereign" to mean indigenous capability, not data jurisdiction. The Communications Security Establishment's AI strategy is blunter about urgency ("we simply cannot afford to wait or we will be left behind") and reported hostile actors used AI against 27% of elections worldwide in 2023–2024. <span class="sb-src">[Source: DND/CAF AI Strategy, March 2024; CSE AI Strategy; CSE Democratic Process Update, 2025]</span></p>
+</section>
+
+<section id="acquisition">
+  <h2>§ 2 · The Acquisition Layer: Who Buys the Pipes, Who Runs the Racks</h2>
+  <p class="lede">The marquee Canadian data-centre deal stayed Canadian. The flagship sovereign AI facility did not stay Canadian-operated. Both facts should inform policy.</p>
+  <p>eStruxture — fifteen facilities across Montréal, Toronto, Calgary, and Vancouver, the country's largest operator — was recapitalized for CA$1.8 billion in 2024, the largest transaction in Canadian data-centre history. Toronto's Fengate Asset Management led; CDPQ exited; US private-markets investors Partners Group and Pantheon took secondary positions; majority control stayed with Fengate and the Wener Family Office. This is the template: foreign capital welcomed, Canadian control retained. <span class="sb-src">[Source: Fengate/eStruxture, June–October 2024]</span></p>
+  <p>The CoreWeave arrangement is the counter-template. The first award under the $700-million AI Compute Challenge — up to $240 million in federal funding anchoring Cohere's $725-million project — flows through a facility in Cambridge, Ontario operated by New Jersey-based CoreWeave. Denvr Dataworks' CEO called federal funds flowing to a US operator "ridiculous." Minister Evan Solomon's defence — "What I don't want to do is a purity test on sovereignty" — is honest about the trade-off, and it concedes the point: the operating layer of Canada's flagship sovereign compute is American. Telus's sold-out Sovereign AI Factory in Rimouski runs on NVIDIA hardware; Bell's AI Fabric leases capacity to Groq, Cerebras, and CoreWeave. Sovereign-branded, foreign-supplied. <span class="sb-src">[Source: ISED; The Logic; corporate announcements, 2025]</span></p>
+  <h3>The Investment Canada Act is sharpening — use it</h3>
+  <p>Bill C-34 took effect through 2024. On March 5, 2025 — amid the tariff confrontation — updated National Security Review Guidelines introduced an "economic security" factor, incorporated the new Sensitive Technology List (which names artificial intelligence, quantum, and advanced digital infrastructure among eleven sensitive areas), and made sensitive personal data — health, genetic, biometric, geolocation, and data on government, military, and intelligence officials — an explicit national-security consideration. There were 1,138 ICA filings in FY2024–25, the third-highest on record. Counsel at DLA Piper now advise that AI and digital-infrastructure investments face "a presumption of risk." The legal architecture for defending the asset class exists. What remains is the will to apply it before a sale, not after. <span class="sb-src">[Source: ISED National Security Review Guidelines, March 5, 2025; Sensitive Technology List, Feb 6, 2025; DLA Piper]</span></p>
+</section>
+
+<section id="ottawa">
+  <h2>§ 3 · Ottawa's Answer, Audited</h2>
+  <p class="lede">The Carney government is spending real money on the right problem. The audit question is whether the definition of "sovereign" underneath the spending can survive contact with the CLOUD Act.</p>
+  <p>The Canadian Sovereign AI Compute Strategy ($2 billion, Budget 2024, launched December 2024) has three pillars: up to $700 million mobilizing private investment through the AI Compute Challenge; up to $1 billion in public supercomputing, including up to $705 million for the AI Sovereign Compute Infrastructure Program and a secure SSC/NRC facility for national-security research; and the $300-million AI Compute Access Fund, open since March 2025. Partnerships now being finalized are stated to deliver 850 MW of compute by 2030, scalable to 2.3 GW. <span class="sb-src">[Source: ISED, Canadian Sovereign AI Compute Strategy]</span></p>
+  <p>"AI for All," announced by the Prime Minister on June 4, 2026, layers on roughly $2.3 billion more: up to 90,000 AI jobs for young Canadians, a target of 250,000 new jobs through AI adoption by 2031, raising business AI adoption from 12% to 60% by 2034, a $700-million top-up to the Compute Access Fund, $130 million for commercialization across Vector, Mila, and Amii, a $500-million Canadian Tech Growth Fund taking federal equity stakes in promising AI firms — and twelve international AI partnerships signed since March 2025, from Germany to the UAE. The strategy pledges to "build the foundations of sovereign Canadian AI." NDP critic Don Davies called it rushed and warned it leaves "Canadians dangerously exposed." <span class="sb-src">[Source: PMO, June 4, 2026; The Register, June 4, 2026]</span></p>
+  <h3>The Microsoft contradiction</h3>
+  <p>On December 9, 2025, Microsoft committed C$7.5 billion over two years within a C$19-billion 2023–2027 Canadian program — "the most important commitment in Microsoft Canada's history," per Brad Smith — expanding Azure Canada Central and Canada East, attaching a five-point digital-sovereignty plan ("keep Canadian data on Canadian soil," an Ottawa Threat Intelligence Hub, customer-controlled keys), and pledging litigation against any order to suspend Canadian operations. <span class="sb-src">[Source: Microsoft On the Issues, Dec 9, 2025]</span></p>
+  <div class="pull">
+    "Sovereignty isn't determined by where your data centres are located, but by which company runs the servers... Microsoft admitted in a June hearing before the French Senate that they have to follow U.S. law under the Cloud Act."
+    <cite>— Blayne Haggart, Brock University, December 16, 2025</cite>
+  </div>
+  <p>Hold both facts at once. Microsoft's investment deepens the dependence, and Microsoft's own sworn testimony concedes the dependence cannot be contractually shielded. The corporate sovereignty pledge and the corporate legal admission cannot both be operative. The law wins.</p>
+</section>
+
+<section id="machine">
+  <h2>§ 4 · The Machine That Reads Everything</h2>
+  <p class="lede">For thirty years, the comfort was that nobody could process it all. That comfort is gone. The denoising problem has been solved at operational tempo, and the proof is public.</p>
+  <p>Palantir's Maven Smart System — successor to Project Maven, with Palantir as primary partner after Google's 2018 withdrawal — consolidated nine separate Department of Defense targeting tools into one interface fusing satellite imagery, drone footage, signals intelligence, and geolocation feeds. During Operation Epic Fury, which began February 28, 2026, the Pentagon's Chief Digital and AI Officer told the SCSP AI+Expo that the system was used "to conduct strike missions across the entire battle space — 13,000 targets in 38 days." The Washington Post reported roughly 1,000 targets struck in the first 24 hours. The Pentagon awarded Palantir a $480-million expansion in 2024 and has sought roughly $2.3 billion in further Maven funding. <span class="sb-src">[Source: Breaking Defense, May 12, 2026; Washington Post; CSIS; C4ISRNET]</span></p>
+  <p>This briefing makes no operational claims and proposes no surveillance systems. The point is capability-class: the technology that converts massive multi-modal data flows into a coherent real-time picture is mature, commercial, and scaling. A nation whose government communications, energy-grid telemetry, health records, financial flows, and network metadata all transit foreign-controlled infrastructure is <strong>permanently legible</strong> to the power that controls that infrastructure. Friend or not.</p>
+  <h3>Allies do this to allies</h3>
+  <p>Operation Dunhammer — a Danish Defence Intelligence Service internal investigation conducted 2014–15 and revealed in May 2021 — confirmed the NSA used Danish underwater-cable access and the XKeyscore system to surveil Chancellor Angela Merkel, Frank-Walter Steinmeier, Peer Steinbrück, and other senior European officials from 2012 to 2014. Denmark: a small, loyal, "super-Atlanticist" NATO ally, dependent on US security guarantees, hosting US access against its closest neighbours. The structural parallel to Canada requires no elaboration. <span class="sb-src">[Source: Danmarks Radio / Operation Dunhammer disclosures, May 2021]</span></p>
+  <h3>You don't even need an agency — there's a market</h3>
+  <p>The US commercial data-broker ecosystem is estimated at roughly $200 billion across more than 750 registered brokers. Duke University researchers legally purchased US military-personnel records — names, addresses, health and financial attributes — through a .org and a .asia domain for as little as $0.12 per record, $0.01 in bulk, covering up to roughly 45,000 service members. In March 2026, the FBI Director declined before the Senate to commit to not purchasing Americans' location data. Canadian-relevant data flows through the same brokers, purchasable by allies and adversaries alike, no warrant required. <span class="sb-src">[Source: Duke Sanford School of Public Policy, Sherman et al., Nov 6, 2023; Senate testimony, March 2026]</span></p>
+  <h3>Starlink: the canonical lesson</h3>
+  <p>In 2022, coverage over Russian-occupied Crimea was withheld during a Ukrainian naval-drone operation — one company's decision constraining one nation's war. Ukraine's dependence on at least 47,000 terminals is simultaneously lifeline and vulnerability. Foreign Policy stated the principle exactly: when a private supplier can decide which operations a front-line state is permitted to conduct, the relationship has ceased to be commercial — it is a delegation of sovereignty. Prime Minister Carney invoked the Crimea episode directly in March 2026 while championing Telesat Lightspeed as Canada's $7-billion sovereign alternative. The lesson has been absorbed for satellites. It has not yet been absorbed for clouds. <span class="sb-src">[Source: Foreign Policy; iPhone in Canada / PMO remarks, March 9, 2026]</span></p>
+  <p>One more data point on the reliability of goodwill: the Biden administration's AI Diffusion Rule (January 15, 2025) sorted the world into three tiers of access to American chips and model weights — placing NATO allies in the second tier — and the Trump administration rescinded it on May 13, 2025, two days before it took effect. US technology policy toward allies now reverses on a change of administration. Planning national infrastructure on its continuity is not strategy; it is hope. <span class="sb-src">[Source: US Department of Commerce, BIS, 2025]</span></p>
+</section>
+
+<section id="models">
+  <h2>§ 5 · What Sovereign Actually Looks Like</h2>
+  <p class="lede">Four models exist. France regulates ownership. Europe builds standards. The Gulf buys managed interdependence. Canada has better raw inputs than any of them — and the worst record of keeping what it builds.</p>
+
+  <div class="table-scroll">
+    <table class="sb-table">
+      <caption>Table 1 · Four sovereign-infrastructure models and what Canada should take from each</caption>
+      <thead>
+        <tr><th>Model</th><th>Mechanism</th><th>What Canada should take</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>France</strong> — SecNumCloud 3.2</td>
+          <td>ANSSI standard: EU-only control (non-EU shareholders capped &lt;25% individually, 39% collectively, no veto), immunity from extraterritorial law required. Sensitive state data must run on qualified clouds. Mistral deployed on Outscale. <code>€109B</code> AI-infrastructure push (Feb 2025).</td>
+          <td>The control-based definition of "sovereign." Caveat: ITIF and US critics call the ownership caps protectionist and a potential WTO problem — study before importing wholesale.</td>
+        </tr>
+        <tr>
+          <td><strong>EU</strong> — Gaia-X / EuroStack</td>
+          <td>Standards-led; November 2025 Declaration for European Digital Sovereignty. European Parliament estimates &gt;80% reliance on non-EU digital products — a mirror of Canada's position.</td>
+          <td>Procurement preference as industrial policy; coalition leverage with non-US partners.</td>
+        </tr>
+        <tr>
+          <td><strong>Gulf</strong> — G42 / HUMAIN</td>
+          <td>Managed interdependence: local governance and residency paired with access to global model catalogs (G42–Microsoft).</td>
+          <td>Honesty that full autarky isn't the goal — control of the sensitive tier is.</td>
+        </tr>
+        <tr>
+          <td><strong>Japan / India</strong> — GENIAC / IndiaAI</td>
+          <td>State-funded national compute missions (IndiaAI ≈ <code>US$1.2B</code> / ₹10,372 crore).</td>
+          <td>Sustained public compute funding as baseline, not one-time announcement.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Canada's hand is strong</h3>
+  <p>Abundant low-carbon hydro in Quebec, BC, and Manitoba; a cold climate that lets facilities like Telus's Rimouski plant run on natural air cooling at roughly three times industry energy efficiency; Cohere, valued at US$5.5–6.8 billion, as a genuine sovereign foundation-model champion; the Hinton–Bengio research legacy institutionalized in Vector, Mila, and Amii; Telesat Lightspeed — Canadian-owned LEO connectivity backed by a $2.14-billion federal loan, $400 million from Quebec, and a &gt;$5-billion Telesat/MDA military satcom contract signed December 2024, now designated a sovereign capability in the defence industrial strategy; and the CANARIE national research network. Few countries hold all five cards: energy, climate, talent, a champion firm, and sovereign connectivity. <span class="sb-src">[Source: corporate and government announcements, 2024–2026]</span></p>
+  <h3>And Canada's record is the warning</h3>
+  <p>Nortel: roughly $400 billion in market value at peak, about 35% of the TSX, carrying an estimated three-quarters of North America's internet backbone — bankrupt by 2009, patents dispersed abroad. Element AI: Canada's flagship AI startup, Bengio-backed, roughly US$250 million raised — sold to California's ServiceNow in 2020 for about US$230 million, acquired for its patents and people, founders' equity largely wiped out, Ottawa's pending $20-million contribution cancelled. Jim Balsillie called it "a cautionary tale for governments falling prey to hype." The pattern is consistent: Canada builds, Canada underdefends, Canada sells before scale. Cohere is the live test of whether the pattern holds. <span class="sb-src">[Source: public record; Balsillie, 2020]</span></p>
+</section>
+
+<section id="recommendations">
+  <h2>Recommendations — Three Stages, Seven Moves</h2>
+
+  <div class="sb-stage">
+    <span class="stage-k">Stage 1 · 0–6 months</span>
+    <h3>Define and triage</h3>
+    <ol>
+      <li>Adopt a <strong>control-based definition of sovereign cloud</strong> — jurisdictional control (no foreign-compellable parent), operational control (Canadian-accountable administration), cryptographic control (Canadian-held keys), and audit control. All four, or it isn't sovereign.
+        <span class="sb-bench">Any documented CLOUD Act or FISA 702 request touching GC data triggers immediate escalation.</span></li>
+      <li>Mandate <strong>Transfer Impact Assessments</strong> across departments and Crown corporations, identifying every workload — including SaaS riding on hyperscaler infrastructure — whose infrastructure parent is US-jurisdictioned.</li>
+    </ol>
+  </div>
+
+  <div class="sb-stage">
+    <span class="stage-k">Stage 2 · 6–18 months</span>
+    <h3>Protect the crown jewels</h3>
+    <ol>
+      <li>Mandate genuinely sovereign infrastructure for <strong>classified and Protected B defence and intelligence workloads</strong>; begin migrating Defence 365 and equivalents to Canadian-controlled systems with Canadian key custody, anchored on the SSC/NRC secure-compute facility.</li>
+      <li><strong>Strengthen the Investment Canada Act for AI and data assets</strong>: mandatory pre-closing national-security review for foreign acquisitions of Canadian AI firms, data-centre operators, and large sensitive-data holders; distressed-asset acquisitions presumptively reviewable; CSE/CSIS consultation required.</li>
+    </ol>
+  </div>
+
+  <div class="sb-stage">
+    <span class="stage-k">Stage 3 · 18 months–5 years</span>
+    <h3>Build the alternative</h3>
+    <ol>
+      <li>In future Sovereign Compute Infrastructure Program awards, <strong>prioritize Canadian-owned-and-operated facilities</strong> with Canadian key custody — no repeat of the CoreWeave operator pattern.
+        <span class="sb-bench">At least one ≥100 MW Canadian-owned-and-operated AI facility online by 2028.</span></li>
+      <li><strong>Keep the champions Canadian-owned.</strong> Deploy the $500-million Canadian Tech Growth Fund and federal equity stakes to anchor Cohere and its successors with patient capital before they enter the pre-scale acquisition window that claimed Element AI and North.</li>
+      <li>Adopt a calibrated <strong>buy-Canadian / buy-allied-sovereign procurement preference</strong> for sensitive workloads, and use the twelve international AI partnerships to assemble a non-US sovereign-stack option — studying SecNumCloud's ownership rules and their trade-law exposure before importing them.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="caveats">
+  <h2>Caveats — The Strongest Cases Against This Briefing, Stated Fairly</h2>
+
+  <div class="sb-caveat">
+    <span class="ch">"Sovereign cloud is more expensive and less capable."</span>
+    <p>Largely true at the margin. Canadian and European sovereign providers lag hyperscalers on managed AI services, serverless, and ecosystem depth; AWS lists roughly 143 compliance certifications to OVHcloud's roughly 13. The defensible answer is tiering — sovereign infrastructure for classified and sensitive workloads, hyperscalers for the rest — not wholesale migration. This briefing recommends exactly that.</p>
+  </div>
+  <div class="sb-caveat">
+    <span class="ch">"Five Eyes integration is a feature, not a bug."</span>
+    <p>Canada benefits enormously from allied intelligence sharing, and that integration is a national asset. But there is a categorical difference between willing, policy-controlled sharing and structural, involuntary exposure. The first, Canada governs. The second, it does not — and the Merkel precedent shows allies exploit structural access when interests diverge.</p>
+  </div>
+  <div class="sb-caveat">
+    <span class="ch">"Canada free-rides on US security and can't afford autonomy."</span>
+    <p>A real tension. Full digital autarky is neither achievable nor desirable for a middle power. But infrastructure dependence is itself a vulnerability that a transactional administration has already shown willingness to convert into coercion — tariffs, the Diffusion Rule, Starlink-style leverage. The goal is resilience and optionality. In Minister Solomon's words: sovereignty does not mean solitude.</p>
+  </div>
+  <div class="sb-caveat">
+    <span class="ch">Methodological notes — what this briefing cannot certify.</span>
+    <p>(1) The "over 80%" figure is IDC Canada market research (2024), mis-attributed in some secondary sources as a government statistic; it is cited here as private market data. (2) The Defence 365 exposure is an analytical argument (Balsillie Papers, March 2026), not a documented disclosure event. (3) Maven and Operation Epic Fury figures derive from Pentagon and contractor public statements and journalism, and should be read as capability-class indicators, not independently audited operational data. (4) Microsoft's sovereignty pledges are corporate commitments that, by Microsoft's own sworn testimony, cannot override the CLOUD Act. (5) Several 2026-dated items — "AI for All," the December 2025 Microsoft deal, Epic Fury — are recent and may be revised as fuller documentation emerges. NPSI publishes its uncertainty alongside its findings.</p>
+  </div>
+</section>
+
+<section id="sources">
+  <h2>Selected Sources</h2>
+  <ol class="fn">
+    <li>Treasury Board of Canada Secretariat, <em>White Paper: Data Sovereignty and Public Cloud</em>, issued June 25, 2018 (maintained through 2023).</li>
+    <li>Balsillie Papers, "U.S. Cloud Act" (Canadian Data series), incl. Appleton analysis, March 11, 2026; citing IDC Canada, <em>Canadian Cloud Services Market Analysis</em>, 2024.</li>
+    <li>French Senate, hearing testimony of Anton Carniaux, Microsoft France, June 10, 2025.</li>
+    <li>US Code: CLOUD Act, 18 U.S.C. §2713 (2018); FISA Section 702 reauthorization (2024).</li>
+    <li>Shared Services Canada, Evaluation of Cloud Services, 2024–25; Office of the Privacy Commissioner of Canada, Annual Report 2023–24.</li>
+    <li>DND/CAF, <em>Artificial Intelligence Strategy</em>, March 7, 2024; CSE, <em>AI Strategy</em> and <em>Cyber Threats to Canada's Democratic Process: 2025 Update</em>.</li>
+    <li>ISED, <em>Canadian Sovereign AI Compute Strategy</em> (Dec 2024); National Security Review of Investments — updated Guidelines (March 5, 2025); Sensitive Technology List (Feb 6, 2025).</li>
+    <li>Prime Minister's Office, "AI for All" strategy announcement, June 4, 2026; The Register, "Canada wants its own AI, less reliance on US tech," June 4, 2026.</li>
+    <li>Microsoft On the Issues, "Microsoft Deepens Its Commitment to Canada with Landmark $19B AI Investment," Dec 9, 2025; Brock University expert commentary (Haggart), Dec 16, 2025.</li>
+    <li>Breaking Defense, "'Insatiable appetite' for AI: Maven usage surged for strikes on Iran," May 12, 2026; CSIS, "What Is Maven Smart System?"; C4ISRNET, May 30, 2024.</li>
+    <li>Danmarks Radio et al., Operation Dunhammer disclosures, May 2021.</li>
+    <li>Duke University Sanford School (Sherman et al.), <em>Data Brokers and the Sale of Data on U.S. Military Personnel</em>, Nov 6, 2023.</li>
+    <li>Fengate Asset Management / eStruxture recapitalization announcements, June–October 2024.</li>
+    <li>PMO remarks on Telesat Lightspeed, March 9, 2026; Telesat/MDA contract, December 2024.</li>
+    <li>US Department of Commerce, BIS: AI Diffusion Rule (Jan 15, 2025) and rescission (May 13, 2025); ITIF, "France's Cloud Service Restrictions," May 25, 2025.</li>
+  </ol>
+</section>
+
+<section id="series-index" aria-label="Series index">
+  <h2>Series Index</h2>
+  <div class="sb-series">
+    <div class="sb-series-item">
+      <div class="sb-series-id">WP-01</div>
+      <div><a href="/wp1/" class="plain">The Bilateral Foundation</a> — A thirty-year Canada–Korea sovereign bond. <em>(published May 2026)</em></div>
+    </div>
+    <div class="sb-series-item">
+      <div class="sb-series-id">WP-02</div>
+      <div><a href="/wp2/" class="plain">A Canada–United States Energy and Compute Compact.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="sb-series-item">
+      <div class="sb-series-id">WP-03</div>
+      <div><a href="/wp3/" class="plain">A Canada–Korea Pacific Defence-Industrial Corridor.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="sb-series-item">
+      <div class="sb-series-id">WP-04</div>
+      <div><a href="/wp4/" class="plain">The Addition Paradox</a> — An energy thesis for Canada. <em>(published May 2026)</em></div>
+    </div>
+    <div class="sb-series-item">
+      <div class="sb-series-id">TB-01</div>
+      <div><a href="/tb1/" class="plain">The Verified Sky</a> — Sensing, certainty, and the law of automated airspace awareness. <em>(published June 2026)</em></div>
+    </div>
+    <div class="sb-series-item">
+      <div class="sb-series-id">BN-01</div>
+      <div><a href="/bn1/" class="plain">The Voter File</a> — The five-layer record and the statute that immunized it. <em>(published June 2026)</em></div>
+    </div>
+    <div class="sb-series-item current">
+      <div class="sb-series-id">SB-01</div>
+      <div>Zero Secrets — Canada's data and AI sovereignty crisis. <em>(this briefing)</em></div>
+    </div>
+  </div>
+</section>
+
+<div class="endmark">
+  <div class="em-line">End of Special Briefing No. 1</div>
+  <div class="em-rule"></div>
+  <div class="em-quote">A Canadian data centre operated by a US company is a US-jurisdictioned service with a Canadian postal code.</div>
+  <div class="em-src">— § 1, Residency Is Not Sovereignty</div>
+</div>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

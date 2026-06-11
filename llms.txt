@@ -5,8 +5,8 @@
 The site is plain static HTML and CSS. Every paper's reading view carries
 Highwire citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle
 or TechArticle) for machine citation. Document IDs follow NPSI-WP-NNN for
-working papers and NPSI-TB-NNN for technical briefings. Cite the canonical
-URLs below.
+working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
+notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 
 ## Working Papers
 
@@ -17,7 +17,15 @@ URLs below.
 
 ## Technical Briefings
 
-- [TB1 — The Verified Sky](https://npsi.ca/tb1/): Sensing, certainty, and the law of automated airspace awareness — state of the art in computer vision and sensor fusion for monitoring defined airspace, the verification-ledger architecture, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031. v1.0, 11 June 2026.
+- [TB1 — The Verified Sky](https://npsi.ca/tb1/): Sensing, certainty, and the law of automated airspace awareness — state of the art in computer vision and sensor fusion for monitoring defined airspace, the verification-ledger architecture, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031. v1.0, 11 June 2026. PDF: https://npsi.ca/tb1/technical-briefing.pdf
+
+## Briefing Notes
+
+- [BN1 — The Voter File](https://npsi.ca/bn1/): What every Canadian federal political party holds on every voter — the five-layer file — and the March 2026 statute (Bill C-4, Part 4) that placed it beyond every privacy law in the country, retroactive to 2000. v1.0, 11 June 2026. PDF: https://npsi.ca/bn1/briefing-note.pdf
+
+## Special Briefings
+
+- [SB1 — Zero Secrets](https://npsi.ca/sb1/): Canada's data and AI sovereignty crisis — under the CLOUD Act and FISA 702, jurisdiction follows corporate ownership, not server location; an audit of the federal sovereign-AI agenda, four international models, and a three-stage response. Companion to WP5, Sovereign Compute North (forthcoming). v1.0, 11 June 2026. PDF: https://npsi.ca/sb1/special-briefing.pdf
 
 ## The Imprint
 

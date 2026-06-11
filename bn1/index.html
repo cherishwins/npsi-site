@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Voter File · NPSI Briefing Note No. 1</title>
+<meta name="description" content="What Canadian federal political parties hold on every voter — the five-layer file — and the statute that, as of March 2026, places that file beyond every privacy law in the country. NPSI Briefing Note No. 1, v1.0, June 2026.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="The Voter File">
+<meta property="og:description" content="The five-layer file every federal party holds on you, and the March 2026 statute that placed it beyond every privacy law in Canada — retroactive to 2000. NPSI Briefing Note No. 1.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/bn1/">
+<meta property="og:image" content="https://npsi.ca/assets/img/bn1-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/bn1/">
+<link rel="alternate" type="application/pdf" href="/bn1/briefing-note.pdf" title="Briefing Note No. 1 (PDF)">
+
+<meta name="citation_title" content="The Voter File">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/06/11">
+<meta name="citation_journal_title" content="NPSI Briefing Notes">
+<meta name="citation_issue" content="1">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_pdf_url" content="https://npsi.ca/bn1/briefing-note.pdf">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/bn1/">
+<meta name="citation_keywords" content="voter files; political parties; privacy law; Canada Elections Act; Bill C-4; PIPEDA; data-driven campaigning; microtargeting">
+<meta name="dc.identifier" content="NPSI-BN-001">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#F4EFE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Voter File",
+  "alternativeHeadline": "The five-layer record and the statute that immunized it",
+  "datePublished": "2026-06-11",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/bn1/",
+  "identifier": "NPSI-BN-001",
+  "issueNumber": "1",
+  "image": "https://npsi.ca/assets/img/bn1-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "voter files, political parties, privacy law, Canada Elections Act, Bill C-4, PIPEDA, data-driven campaigning, microtargeting",
+  "abstract": "Every major Canadian federal political party maintains a database with a record on substantially every voter, assembled in five layers: the Elections Canada list of electors, canvassing observations, appended public records, appended commercial data, and modelled behavioural scores. No layer requires consent; no layer grants a right of access. In March 2026, Part 4 of Bill C-4 excluded federal parties from provincial and territorial privacy law, retroactive to 2000.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "jesse@fitforgov.com",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Briefing Notes"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://npsi.ca/bn1/briefing-note.pdf",
+    "encodingFormat": "application/pdf"
+  }
+}
+</script>
+
+<style>
+  /* Page-scoped components for the Briefing Note format.
+     Palette and type are the site tokens only; classes are bn-prefixed to
+     avoid colliding with site.css components. */
+
+  .bn-abstract{
+    font-size: var(--fs-lede);
+    line-height: 1.6;
+    border-left: 2px solid var(--bronze);
+    padding-left: 22px;
+    margin-bottom: 16px;
+  }
+  .bn-abstract em{ color: var(--navy); }
+
+  .table-scroll{ overflow-x: auto; margin: 24px 0 28px; }
+  /* On wide viewports, let data tables breathe beyond the reading measure */
+  @media (min-width: 980px){
+    .table-scroll{
+      width: 860px;
+      margin-left: calc((100% - 860px) / 2);
+    }
+  }
+  .bn-table{
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+  }
+  .bn-table caption{
+    caption-side: top;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  .bn-table th{
+    text-align: left;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--navy);
+    padding: 8px 14px 8px 0;
+  }
+  .bn-table td{
+    border-bottom: 0.5px solid var(--rule);
+    padding: 10px 14px 10px 0;
+    vertical-align: top;
+    color: var(--ink);
+  }
+  .bn-table td:last-child, .bn-table th:last-child{ padding-right: 0; }
+
+  /* Signature element: the file card */
+  .bn-filecard{
+    background: var(--paper);
+    border: 0.5px solid var(--rule);
+    margin: 30px 0 28px;
+  }
+  .bn-filecard-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 20px;
+    border-bottom: 0.5px solid var(--rule);
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .bn-filecard-title{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    color: var(--navy);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .bn-filecard-status{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+  }
+  .bn-filecard-row{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 14px;
+    padding: 11px 20px;
+    border-bottom: 0.5px solid var(--rule);
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+    align-items: baseline;
+  }
+  .bn-filecard-row:last-of-type{ border-bottom: none; }
+  .bn-filecard-k{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+  .bn-filecard-v{ color: var(--ink); line-height: 1.45; }
+  .bn-filecard-v strong{ color: var(--navy); }
+  .bn-filecard-foot{
+    padding: 14px 20px;
+    background: var(--navy);
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .bn-filecard-foot .r{ color: var(--rule-soft); }
+
+  ol.fn{ counter-reset: fnc; list-style: none; margin: 18px 0 0 0; }
+  ol.fn li{
+    counter-increment: fnc;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin-bottom: 10px;
+    padding-left: 34px;
+    position: relative;
+  }
+  ol.fn li::before{
+    content: counter(fnc, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--bronze);
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+  sup.fnref{ font-family: var(--font-mono); font-size: 10px; color: var(--bronze); }
+  sup.fnref a{ border-bottom: none; color: var(--bronze); }
+  sup.fnref a:hover{ background: transparent; color: var(--navy); }
+
+  .bn-series{ margin-top: 12px; }
+  .bn-series-item{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 0.5px solid var(--rule);
+    font-size: 15px;
+  }
+  .bn-series-id{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--teal);
+    padding-top: 2px;
+  }
+  .bn-series-item.current .bn-series-id{ color: var(--bronze); }
+  .bn-series-item.current div:last-child{ color: var(--navy); font-weight: 600; }
+  .bn-series-item em{ color: var(--bronze); font-weight: 400; }
+
+  .endmark{ text-align: center; margin: 64px 0 0; }
+  .endmark .em-line{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+  .endmark .em-rule{ width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
+  .endmark .em-quote{
+    font-style: italic;
+    font-size: 17px;
+    color: var(--navy);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .endmark .em-src{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--teal);
+    margin-top: 22px;
+    text-transform: uppercase;
+  }
+
+  /* Layout-only adjustments at small widths */
+  @media (max-width: 640px){
+    .bn-filecard-row{ grid-template-columns: 1fr; gap: 4px; }
+  }
+  @media print{
+    .bn-filecard, .table-scroll{ break-inside: avoid; }
+    .bn-filecard-foot{ background: #fff; color: #000; border-top: 1px solid #999; }
+    .bn-filecard-foot .r{ color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/wp4/">Working Paper</a>
+      <a href="/about/">About</a>
+      <a href="/engage/">Engage</a>
+      <a href="/commentary/">Commentary</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Briefing Note No.&nbsp;1  ·  v1.0  ·  June 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0 · JUNE 2026</span></div>
+  <h1>The Voter File</h1>
+  <div class="subtitle">What every federal political party holds on every Canadian voter — and the statute that, as of March 2026, places that file beyond every privacy law in the country, retroactive to the year 2000.</div>
+</div>
+
+<aside class="wp-meta-block" aria-label="Briefing note metadata">
+  <dl>
+    <dt>Author</dt>        <dd>Jesse James</dd>
+    <dt>Document ID</dt>   <dd><code>NPSI-BN-001</code></dd>
+    <dt>Version</dt>       <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/bn1/index.html">change log</a></dd>
+    <dt>Series</dt>        <dd>Briefing Note — the imprint's short-form line: a single mechanism, documented end to end, in under twenty minutes of reading</dd>
+    <dt>Released</dt>      <dd>11 June 2026 · Victoria, British Columbia</dd>
+    <dt>Status</dt>        <dd>Unclassified · For public distribution. Editorially controlled. Public version-controlled review open.</dd>
+    <dt>Cite as</dt>       <dd>James, J. (2026). <em>The Voter File</em> (NPSI Briefing Note No.&nbsp;1, v1.0). https://npsi.ca/bn1/</dd>
+  </dl>
+</aside>
+
+<div class="wp-card-actions" style="margin-bottom: 36px;">
+  <a class="btn" href="/bn1/briefing-note.pdf">Download Briefing Note (PDF)</a>
+  <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
+  <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#file">The File: Five Layers</a></li>
+    <li><a href="#asymmetry">The Asymmetry: How the File Escaped Every Statute</a></li>
+    <li><a href="#sources">Sources and Notes</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="abstract" aria-label="Abstract">
+  <p class="bn-abstract">Every major Canadian federal political party maintains a database with a record on substantially every voter in the country. The record is assembled in five layers: the Elections Canada list of electors as the statutory spine; the party's own canvassing observations; appended public records; appended commercial data; and modelled scores predicting how the voter will behave. No layer requires the voter's consent. No layer grants the voter a right of access or correction. This briefing note documents the file — layer by layer, with a worked illustrative record — and then documents the law that governs it.</p>
+  <p class="bn-abstract">The law is the second finding, and it is recent. In March 2026, Part 4 of Bill C-4 — an omnibus affordability bill — received royal assent, replacing the privacy regime for federal political parties in the Canada Elections Act and <em>explicitly excluding</em> them from provincial and territorial privacy law, retroactive to the year 2000.<sup class="fnref"><a href="#fn-c4">[1]</a></sup> The provision was drafted while British Columbia's courts were considering whether that province's privacy law reached federal parties; it was designed to settle the question by statute before the courts could.<sup class="fnref"><a href="#fn-bc">[2]</a></sup> The Senate proposed a three-year sunset clause; the House rejected it; every party in the Commons supported the final bill except the Green Party.<sup class="fnref"><a href="#fn-vote">[3]</a></sup> The file described in Part I of this note is now, by Parliament's own hand, the least-regulated large personal database in Canada.</p>
+</section>
+
+<section id="file">
+  <h2>§ I · The File: Five Layers</h2>
+
+  <p>The voter file is not a list. It is a relational database in which a statutory spine is progressively enriched until the record can predict the voter's behaviour. The layers below are documented across party privacy policies, vendor marketing, parliamentary testimony, and the academic literature on Canadian data-driven campaigning.<sup class="fnref"><a href="#fn-lit">[4]</a></sup></p>
+
+  <div class="table-scroll">
+    <table class="bn-table">
+      <caption>Table 1 · The five layers of a Canadian federal voter file</caption>
+      <thead><tr><th style="width:18%;">Layer</th><th style="width:42%;">Contents</th><th>Source and legal basis</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1 · Statutory spine</strong></td><td>Name, address, unique elector identifier; updated lists during writ periods including who has voted (bingo sheets)</td><td>List of electors supplied to parties by Elections Canada under the Canada Elections Act; no voter consent involved or required</td></tr>
+        <tr><td><strong>2 · Canvassing layer</strong></td><td>Door-knock and phone observations: stated support, lawn sign, issues raised, demeanour, languages spoken, accessibility notes, donation and volunteering history</td><td>Collected by the party's own volunteers and staff; logged in party CRM tools at the door</td></tr>
+        <tr><td><strong>3 · Public-records layer</strong></td><td>Property registry data, political donation disclosures, professional licensure, corporate registries, court records where digitized</td><td>Appended from public registries; "public" at the record level, profiling-grade in aggregate</td></tr>
+        <tr><td><strong>4 · Commercial layer</strong></td><td>Geodemographic segment codes (e.g., postal-code lifestyle clusters), appended consumer attributes, social-platform custom-audience matching, and — at the aggressive end of practice — mobile location-derived audience data</td><td>Purchased or licensed from commercial data brokers and platforms; collected from consumers under commercial terms, repurposed for politics</td></tr>
+        <tr><td><strong>5 · Modelled scores</strong></td><td>Support score, turnout propensity, persuadability, issue-salience scores, volunteer and donation propensity — typically expressed 0–100 per voter</td><td>Computed by the party or its vendors from layers 1–4; the scores, not the raw data, drive who gets contacted and about what</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>What the layered structure produces is best seen in a single record. The record below is <em class="term">illustrative and fictional</em> — no real person — but every field type in it is documented practice.</p>
+
+  <div class="bn-filecard" role="img" aria-label="Illustrative voter file record showing the five layers resolved for one fictional voter">
+    <div class="bn-filecard-head">
+      <span class="bn-filecard-title">Illustrative Record · Elector № [REDACTED]</span>
+      <span class="bn-filecard-status">Fictional · Field types documented</span>
+    </div>
+    <div class="bn-filecard-row"><span class="bn-filecard-k">Spine</span><span class="bn-filecard-v"><strong>F., 52</strong> · single-family dwelling, suburban riding, BC · on list since 1998 · voted in 7 of last 8 federal elections</span></div>
+    <div class="bn-filecard-row"><span class="bn-filecard-k">Canvass</span><span class="bn-filecard-v">2021: "leaning, healthcare top issue" · 2025: refused at door, sign for rival party noted · spouse identified as supporter</span></div>
+    <div class="bn-filecard-row"><span class="bn-filecard-k">Public</span><span class="bn-filecard-v">Property assessed mid-six-figures, owned 14 yrs · $400 donation to a rival party, 2019 · registered professional designation</span></div>
+    <div class="bn-filecard-row"><span class="bn-filecard-k">Commercial</span><span class="bn-filecard-v">Geodemographic cluster: "established suburban families" · appended attributes: charitable donor, news-radio listener · matched to platform custom audience</span></div>
+    <div class="bn-filecard-row"><span class="bn-filecard-k">Modelled</span><span class="bn-filecard-v">Support 31/100 · Turnout 88/100 · Persuadability 64/100 · Issue salience: healthcare 0.81, affordability 0.77</span></div>
+    <div class="bn-filecard-foot"><span>Consent obtained: none required</span><span class="r">Right of access: none exists</span></div>
+  </div>
+
+  <p>Two properties of this record deserve emphasis. First, the high-turnout, mid-persuadability profile makes this fictional voter a priority contact — the file exists precisely to find her. Second, she cannot see it. There is no statutory right for a Canadian to access, correct, or delete their record in a federal party's database. That is not an oversight in the law. As of March 2026, it is the law's design.</p>
+</section>
+
+<section id="asymmetry">
+  <h2>§ II · The Asymmetry: How the File Escaped Every Statute</h2>
+
+  <p>A grocery chain holding one tenth of this data on its loyalty-card members would owe those members access, correction, breach notification, and a complaints regime under PIPEDA. The voter file owes its subjects nothing, and the path by which that came to be is short enough to state in four steps.</p>
+
+  <h3>Step one: PIPEDA never applied</h3>
+  <p>The federal private-sector privacy statute governs the collection of personal information in the course of <em class="term">commercial activity</em>. Federal political parties are not engaged in commercial activity when they profile voters, and so fall outside the Act — a position confirmed by the federal privacy regime's own administrators over many years.<sup class="fnref"><a href="#fn-pipeda">[5]</a></sup> The Privacy Act, governing federal institutions, does not reach parties either. Parties occupy a gap between the two pillars of federal privacy law.</p>
+
+  <h3>Step two: Bill C-76 installed a placebo</h3>
+  <p>The Elections Modernization Act of 2018 required parties to <em class="term">publish a privacy policy</em> as a condition of registration. It did not regulate what the policy must permit or forbid, created no audit power over the policy's substance, and granted voters no rights against the party. A party complies by describing its practices, whatever they are.<sup class="fnref"><a href="#fn-c76">[6]</a></sup></p>
+
+  <h3>Step three: British Columbia found the gap — and the courts agreed enough to frighten</h3>
+  <p>Three BC complainants asked whether the province's Personal Information Protection Act applied to federal parties operating in BC. In Order P22-02 (2022), the BC Information and Privacy Commissioner's delegate held that it did, and the BC Supreme Court upheld that conclusion on judicial review in 2024 — the first crack in the asymmetry: one province's law, with real access and consent rights, reaching the federal voter file. The parties appealed.<sup class="fnref"><a href="#fn-bc2">[7]</a></sup></p>
+
+  <h3>Step four: Parliament closed the gap from the inside — March 2026</h3>
+  <p>While the BC appeal was pending, the government introduced Bill C-4, the <em>Making Life More Affordable for Canadians Act</em>. Part 4 of that affordability bill replaced the federal parties' privacy regime in the Canada Elections Act with one declared to be national, uniform, exclusive, and complete — and to exclude provincial and territorial privacy law from applying to federal parties at all, <strong>retroactive to the year 2000</strong>.<sup class="fnref"><a href="#fn-c4b">[8]</a></sup> The substantive content of the new federal regime is, in essence, Step Two again: parties must have policies; the policies are not audited; voters gain no access, correction, or deletion rights. The Chief Electoral Officer told the Senate committee he was not consulted on the provisions and characterized the bill as not enhancing privacy protection; protections from an earlier bill (C-65) that had included prohibitions on selling voter data died with the 2025 dissolution and were not carried into C-4.<sup class="fnref"><a href="#fn-perrault">[9]</a></sup> The Senate, after expert study, proposed a three-year sunset clause that would have returned the question to Parliament; the House rejected the amendment, and the bill received royal assent in March 2026 with every party in the Commons in support except the Green Party.<sup class="fnref"><a href="#fn-vote2">[10]</a></sup></p>
+
+  <div class="pull">
+    The file is the least-regulated large personal database in Canada — not by oversight, but by a recorded vote of the people the file elects.
+    <cite>— §II, The Asymmetry</cite>
+  </div>
+
+  <p>The structural point matters more than the partisan one, and this note makes no partisan claim: the immunity was supported across the aisle, because every large party owns a file. That is precisely the asymmetry. Privacy law in Canada is written by the only data controllers it exempts. The European Union moved the opposite direction in the same period, bringing political messaging under a dedicated transparency-and-targeting regulation layered on top of its general privacy law.<sup class="fnref"><a href="#fn-eu">[11]</a></sup> Canada now anchors the permissive end of the democratic spectrum.</p>
+
+  <h3>What a real regime would contain</h3>
+  <p>The elements are not exotic; most appeared in the lapsed Bill C-65 or exist in provincial law: a voter's right to access and correct their record; consent or a defined lawful basis for appending commercial data; a prohibition on selling or maliciously disclosing voter data; breach notification; and independent audit — by the Privacy Commissioner or the Chief Electoral Officer, either of whom currently has none.<sup class="fnref"><a href="#fn-fix">[12]</a></sup> The C-4 regime's authors noted it does not preclude stronger future legislation. The sunset clause the Senate proposed would have guaranteed Parliament revisited the question by 2029; its rejection means the question returns only if voters put it there.</p>
+
+  <aside class="standard">
+    <h4>Standing caveat</h4>
+    <p>This note is a structural survey, not legal advice, and names no party as better or worse than another: the practices in §&nbsp;I are industry-standard across the major parties, and the statute in §&nbsp;II passed with all-party support save one. The illustrative record contains no real person's data. Statutory references current to 11 June 2026.</p>
+  </aside>
+</section>
+
+<section id="sources">
+  <h2>§ III · Sources and Notes</h2>
+
+  <ol class="fn">
+    <li id="fn-c4">Bill C-4, <em>Making Life More Affordable for Canadians Act</em>, 45th Parliament, 1st Session, Part 4 (amendments to the Canada Elections Act); Library of Parliament Legislative Summary 45-1-C4: the new regime is intended to be national, uniform, exclusive and complete, and excludes federal political parties from the application of provincial or territorial privacy laws. Royal assent March 2026. Retroactive application to the year 2000 as reported in parliamentary study and press coverage (see notes 3 and 8).</li>
+    <li id="fn-bc">On Part 4 as a response to the British Columbia litigation: S. Bannerman (McMaster University), public analysis, September 2025 — Part 4 explicitly states that provincial and territorial privacy laws do not apply to federal political parties, in apparent response to the BC ruling finding that they did.</li>
+    <li id="fn-vote">Canada's National Observer, 13 March 2026: royal assent; Senate three-year sunset amendment rejected by the House; Green Party the sole party opposing the privacy provisions.</li>
+    <li id="fn-lit">On the structure of Canadian voter files and data-driven campaigning generally: C. Bennett &amp; S. Bannerman (eds.) and the Canadian political-data literature, 2018–2026; party privacy policies as published under the Canada Elections Act; vendor documentation for Canadian campaign CRM platforms and geodemographic segmentation products.</li>
+    <li id="fn-pipeda">PIPEDA, S.C. 2000, c. 5, s. 4 (application limited to commercial activity); Office of the Privacy Commissioner of Canada findings and guidance on the non-application of PIPEDA to federal political parties, including the joint OPC–Elections Canada position, 2019–2021.</li>
+    <li id="fn-c76">Bill C-76, <em>Elections Modernization Act</em>, S.C. 2018, c. 31 (privacy-policy publication requirement as a condition of party registration; no substantive standards, audit power, or individual rights).</li>
+    <li id="fn-bc2">BC Office of the Information and Privacy Commissioner, Order P22-02 (2022); <em>Liberal Party of Canada v. Complainants</em>, BC Supreme Court, 2024 (PIPA capable of applying to federal parties operating in BC); appeal pending at the time of Bill C-4's introduction.</li>
+    <li id="fn-c4b">Library of Parliament Legislative Summary 45-1-C4, Part 4; Senate Standing Committee on Legal and Constitutional Affairs, Report No. 4 (45-1), February 2026.</li>
+    <li id="fn-perrault">Testimony of S. Perrault, Chief Electoral Officer, and C. Simard, Commissioner of Canada Elections, before the Senate committee, February 2026, as reported by The Globe and Mail (not consulted; provisions vague and difficult to oversee; bill does not enhance privacy protection). Senate LCJC Report No. 4: protections from former Bill C-65 — including prohibitions on selling or maliciously disclosing personal information — died on the Order Paper at the 2025 dissolution and were not incorporated into Part 4.</li>
+    <li id="fn-vote2">Canada's National Observer, 13 March 2026; Canadian Civil Liberties Association, open letters and legislative briefs on Bill C-4 Part 4, June 2025 – March 2026 (retroactive immunity; absence of access and correction rights).</li>
+    <li id="fn-eu">Regulation (EU) 2024/900 on the transparency and targeting of political advertising, applicable from late 2025, layered on the GDPR's general regime.</li>
+    <li id="fn-fix">Former Bill C-65, <em>Electoral Participation Act</em> (44th Parliament; died on the Order Paper, 2025): privacy elements as catalogued in Senate LCJC Report No. 4 (45-1). Privy Council Office witnesses before the same committee: Part 4 does not preclude further legislation specifying more comprehensive privacy standards.</li>
+  </ol>
+</section>
+
+<section id="series-index" aria-label="Series index">
+  <h2>Series Index</h2>
+  <div class="bn-series">
+    <div class="bn-series-item">
+      <div class="bn-series-id">WP-01</div>
+      <div><a href="/wp1/" class="plain">The Bilateral Foundation</a> — A thirty-year Canada–Korea sovereign bond. <em>(published May 2026)</em></div>
+    </div>
+    <div class="bn-series-item">
+      <div class="bn-series-id">WP-02</div>
+      <div><a href="/wp2/" class="plain">A Canada–United States Energy and Compute Compact.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="bn-series-item">
+      <div class="bn-series-id">WP-03</div>
+      <div><a href="/wp3/" class="plain">A Canada–Korea Pacific Defence-Industrial Corridor.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="bn-series-item">
+      <div class="bn-series-id">WP-04</div>
+      <div><a href="/wp4/" class="plain">The Addition Paradox</a> — An energy thesis for Canada. <em>(published May 2026)</em></div>
+    </div>
+    <div class="bn-series-item">
+      <div class="bn-series-id">TB-01</div>
+      <div><a href="/tb1/" class="plain">The Verified Sky</a> — Sensing, certainty, and the law of automated airspace awareness. <em>(published June 2026)</em></div>
+    </div>
+    <div class="bn-series-item current">
+      <div class="bn-series-id">BN-01</div>
+      <div>The Voter File — The five-layer record and the statute that immunized it. <em>(this note)</em></div>
+    </div>
+    <div class="bn-series-item">
+      <div class="bn-series-id">SB-01</div>
+      <div><a href="/sb1/" class="plain">Zero Secrets</a> — Canada's data and AI sovereignty crisis. <em>(published June 2026)</em></div>
+    </div>
+  </div>
+</section>
+
+<div class="endmark">
+  <div class="em-line">End of Briefing Note No. 1</div>
+  <div class="em-rule"></div>
+  <div class="em-quote">Privacy law in Canada is written by the only data controllers it exempts.</div>
+  <div class="em-src">— § II, The Asymmetry</div>
+</div>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
