@@ -9,7 +9,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 10 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 12 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), one special-briefing reading view (SB No. 1 *Zero Secrets*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. The "Working Paper" nav link sitewide points to the current paper, **`/wp4/`**.
 
@@ -171,7 +171,14 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (CURRENT paper)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── tb1/
-│   └── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
+│   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
+│   └── technical-briefing.pdf       full PDF release (direct download, no email gate)
+├── bn1/
+│   ├── index.html                   Briefing Note No. 1 — *The Voter File* — full reading view
+│   └── briefing-note.pdf            full PDF release (direct download, no email gate)
+├── sb1/
+│   ├── index.html                   Special Briefing No. 1 — *Zero Secrets* — full reading view
+│   └── special-briefing.pdf         full PDF release (direct download, no email gate)
 ├── llms.txt                         LLM-crawler index (llms.txt convention): imprint summary + canonical URL and one-line abstract per paper
 └── assets/
     ├── css/site.css                 shared stylesheet, fully tokenized
@@ -187,6 +194,8 @@ npsi-site/
         ├── wp2-compact.svg          WP2 Figure D — six-layer compact architecture
         ├── wp2-indigenous.svg       WP2 Figure E — Series II tranche structure
         ├── tb1-og.svg/.png          TB1 Open Graph share card (1200×630)
+        ├── bn1-og.svg/.png          BN1 Open Graph share card (1200×630)
+        ├── sb1-og.svg/.png          SB1 Open Graph share card (1200×630)
         └── og-default.png/.svg      site-wide Open Graph share preview (1200×630)
 ```
 
@@ -339,11 +348,31 @@ The first of the **Technical Briefings** — a companion line to the Working Pap
 - Benchmark honesty: Anti-UAV410 state accuracy plateaued in the low-to-mid 60s since 2023; CST Anti-UAV (realistic tiny targets) best method 35.92% — realistic small-and-distant performance is roughly half of headline performance.
 - Legal line (Canada): detection, tracking, evidence, and notification are lawful for civil operators; jamming/spoofing (Radiocommunication Act ss. 4(4), 9(1)(b)), takeover (Criminal Code ss. 342.1–342.2), and physical downing (Aeronautics Act, CARs Part IX) are not. Transport Canada NPA 2026-005 (8 June 2026) proposes mandatory Remote ID on ASTM F3411; comment window to 9 September 2026.
 - Register: technical and regulatory survey, explicitly not legal advice (standing caveat block); no first person; conservative forecast framing ("treat a breakout as upside, never as the plan").
-- Author: Jesse James; v1.0 published 11 June 2026. No PDF release. OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
+- Author: Jesse James; v1.0 published 11 June 2026. PDF: `tb1/technical-briefing.pdf` (direct download, no email gate). OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
+
+### Briefing Note No. 1 — The Voter File (`bn1/index.html`)
+
+The first of the **Briefing Notes** — the imprint's short-form line: a single mechanism, documented end to end, in under twenty minutes of reading. Document IDs follow `NPSI-BN-NNN`. Standard site chrome plus page-scoped, `bn-`-prefixed components (the **file card** — an illustrative five-layer voter record — data tables, footnotes, series index, endmark). Briefing notes do not join the four-link nav; reached from the home page's "Briefing Notes" section and direct URL. Key facts that should remain consistent:
+
+- Subject: the five-layer Canadian federal voter file (statutory spine from the Elections Canada list of electors; canvassing layer; public-records layer; commercial layer; modelled scores) and the privacy asymmetry that governs it.
+- Legal chronology: PIPEDA never applied (commercial-activity scope); Bill C-76 (2018) required only a published privacy policy; BC OIPC Order P22-02 (2022) and the 2024 BC Supreme Court judicial review found BC PIPA could apply; **Bill C-4 Part 4 (royal assent March 2026)** replaced the CEA regime and excluded federal parties from provincial/territorial privacy law retroactive to 2000. Senate's three-year sunset amendment rejected; Green Party the sole party opposed.
+- Register: structural survey, explicitly non-partisan (standing caveat block); the illustrative record is fictional and labelled as such.
+- Author: Jesse James; v1.0 published 11 June 2026. PDF: `bn1/briefing-note.pdf`. OG card `assets/img/bn1-og.svg/.png`.
+
+### Special Briefing No. 1 — Zero Secrets (`sb1/index.html`)
+
+The first of the **Special Briefings** — single-issue strategic assessments published when an exposure demands attention outside the working-paper cycle. Document IDs follow `NPSI-SB-NNN`. Standard site chrome plus page-scoped, `sb-`-prefixed components (the **hollow redaction bar** "NOTHING LEFT TO REDACT" — the signature device, rendered in bronze — executive-summary block, findings list, stat grid, staged recommendations with benchmark lines, caveats, sources). **The source draft arrived in a dark midnight/gold theme set in Inter; it was ported to the four-colour palette and site typefaces per the brand rules — never reintroduce the dark theme, Inter, or gold accents.** Key facts that should remain consistent:
+
+- Core claim: data residency is not data sovereignty — under the CLOUD Act (18 U.S.C. §2713) and FISA 702, US jurisdiction follows corporate ownership, not server location; no Canada–US CLOUD Act bilateral exists.
+- Anchor evidence: Microsoft France testimony before the French Senate, 10 June 2025 ("No, I cannot guarantee that"); SSC evaluation (federal Azure use ≈4× AWS); Maven Smart System / Operation Epic Fury (13,000 targets in 38 days) as capability-class indicator; Operation Dunhammer; Duke data-broker study ($0.12/record); Starlink-Crimea; AI Diffusion Rule rescission.
+- Federal response audited: $2B Sovereign AI Compute Strategy; "AI for All" (June 4, 2026, ~$2.3B); Cohere flagship operated by CoreWeave (the counter-template); Microsoft C$19B commitment vs. its own sworn testimony.
+- Recommendations: control-based definition of sovereign cloud (jurisdictional, operational, cryptographic, audit); classified/Protected B migration; ICA strengthening; Canadian-owned-and-operated SCIP awards; champion retention via the $500M Canadian Tech Growth Fund.
+- Register: caveats section states the strongest counter-cases fairly (cost, Five Eyes, free-riding) and publishes methodological uncertainty. Companion to WP5 *Sovereign Compute North* (forthcoming).
+- Author: Jesse James; v1.0 published 11 June 2026. PDF: `sb1/special-briefing.pdf` (direct download, no email gate). OG card `assets/img/sb1-og.svg/.png`.
 
 ## Other NPSI projects in scope
 
-- **Briefing Note No. 1** (`NPSI-BN-001`, two-part document on Canadian voter files and the privacy asymmetry) — exists as PDFs, not yet integrated into the site. If asked to integrate, create `bn1/index.html` modeled on `wp1/index.html` with adjustments for the briefing-note format.
+- **Briefing Note No. 1** (`NPSI-BN-001`, Canadian voter files and the privacy asymmetry) — **integrated June 2026** as `bn1/index.html` with `bn1/briefing-note.pdf`; see "Briefing Note No. 1 — The Voter File" above for the canonical-fact list.
 - **Briefing Note No. 2 — Confederation Mathematics** (`NPSI-BN-002`, forthcoming) — empirical constraints on provincial secession in 2026 (Quebec + Alberta), forensic two-part briefing-note format. Source material drafted, not yet integrated. If asked to integrate, create `bn2/index.html` modeled on `wp1/index.html` with briefing-note format. Cited in WP2 §10 as forthcoming.
 - **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, v1.0 published May 2026) — see "Working-paper substance" above for canonical-fact list. Released ahead of the 23 May 2026 ROK Navy operational demonstration at CFB Esquimalt and the June 2026 CPSP final-contractor decision.
 - **LinkedIn Company Page** assets exist in a sibling directory (`npsi-linkedin/`). Not part of this repo.
