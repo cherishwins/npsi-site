@@ -1,0 +1,32 @@
+# North Pacific Strategy Initiative
+
+> An independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress. Edited in Victoria, British Columbia. Working-paper text is licensed CC-BY-4.0; the imprint and wordmark are not licensed.
+
+The site is plain static HTML and CSS. Every paper's reading view carries
+Highwire citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle
+or TechArticle) for machine citation. Document IDs follow NPSI-WP-NNN for
+working papers and NPSI-TB-NNN for technical briefings. Cite the canonical
+URLs below.
+
+## Working Papers
+
+- [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada — the current working paper. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
+- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0, May 2026.
+- [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026.
+- [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/): A thirty-year Canada–Korea co-issued sovereign bond as the architecture of middle-power independence. v1.0, May 2026. PDF: https://npsi.ca/wp1/working-paper.pdf
+
+## Technical Briefings
+
+- [TB1 — The Verified Sky](https://npsi.ca/tb1/): Sensing, certainty, and the law of automated airspace awareness — state of the art in computer vision and sensor fusion for monitoring defined airspace, the verification-ledger architecture, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031. v1.0, 11 June 2026.
+
+## The Imprint
+
+- [About](https://npsi.ca/about/): Mandate, methodology, and editorial standards.
+- [Engage](https://npsi.ca/engage/): Contribution standards for named commentary, corrections, and technical critique.
+- [Commentary](https://npsi.ca/commentary/): Named commentary index, per paper.
+- [Colophon](https://npsi.ca/colophon/): Technical colophon — type, palette, infrastructure.
+
+## Optional
+
+- [Sitemap](https://npsi.ca/sitemap.xml)
+- [Repository](https://github.com/cherishwins/npsi-site): Public version-controlled source for the site and papers.

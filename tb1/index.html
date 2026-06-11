@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Verified Sky · NPSI Technical Briefing No. 1</title>
+<meta name="description" content="Sensing, certainty, and the law of automated airspace awareness. A reference briefing on the state of the art in computer vision and sensor systems for monitoring defined airspace, the verification architecture that produces near-certainty, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="The Verified Sky">
+<meta property="og:description" content="Sensing, certainty, and the law of automated airspace awareness — the state of the art, what it costs, how fast it acts, and what a Canadian operator may lawfully do with it. NPSI Technical Briefing No. 1.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/tb1/">
+<meta property="og:image" content="https://npsi.ca/assets/img/tb1-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/tb1/">
+
+<meta name="citation_title" content="The Verified Sky">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/06/11">
+<meta name="citation_journal_title" content="NPSI Technical Briefings">
+<meta name="citation_issue" content="1">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/tb1/">
+<meta name="citation_keywords" content="airspace awareness; computer vision; sensor fusion; counter-UAS; Remote ID; verification architecture; edge AI; Canada; Radiocommunication Act; PIPEDA">
+<meta name="dc.identifier" content="NPSI-TB-001">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#F4EFE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The Verified Sky",
+  "alternativeHeadline": "Sensing, certainty, and the law of automated airspace awareness",
+  "datePublished": "2026-06-11",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/tb1/",
+  "identifier": "NPSI-TB-001",
+  "issueNumber": "1",
+  "image": "https://npsi.ca/assets/img/tb1-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "airspace awareness, computer vision, sensor fusion, counter-UAS, Remote ID, verification architecture, edge AI, Canada, Radiocommunication Act, PIPEDA",
+  "abstract": "A survey of the 2025–2026 state of the art in computer vision and sensing for monitoring a defined volume of airspace; the verification architecture that converts a probabilistic detection into a near-certain identification; realistic detection-to-action latency; the statutory line between lawful and criminal automated response for a private Canadian operator; and a deliberately conservative capability forecast at one, two-and-a-half, and five years.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "jesse@fitforgov.com",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Technical Briefings"
+  }
+}
+</script>
+
+<style>
+  /* Page-scoped components for the Technical Briefing format.
+     Palette and type are the site tokens only; classes are tb-prefixed to
+     avoid colliding with site.css components (.ledger in particular). */
+
+  .tb-abstract{
+    font-size: var(--fs-lede);
+    line-height: 1.6;
+    border-left: 2px solid var(--bronze);
+    padding-left: 22px;
+    margin-bottom: 16px;
+  }
+  .tb-abstract em{ color: var(--navy); }
+
+  .table-scroll{ overflow-x: auto; margin: 24px 0 28px; }
+  /* On wide viewports, let data tables breathe beyond the reading measure */
+  @media (min-width: 980px){
+    .table-scroll{
+      width: 860px;
+      margin-left: calc((100% - 860px) / 2);
+    }
+  }
+  .tb-table{
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+  }
+  .tb-table caption{
+    caption-side: top;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  .tb-table th{
+    text-align: left;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--navy);
+    padding: 8px 14px 8px 0;
+  }
+  .tb-table td{
+    border-bottom: 0.5px solid var(--rule);
+    padding: 10px 14px 10px 0;
+    vertical-align: top;
+    color: var(--ink);
+  }
+  .tb-table td.mono, .tb-table th.mono{ font-family: var(--font-mono); font-size: 13px; }
+  .tb-table td:last-child, .tb-table th:last-child{ padding-right: 0; }
+
+  /* Signature element: the verification ledger */
+  .tb-ledger{
+    background: var(--paper);
+    border: 0.5px solid var(--rule);
+    margin: 30px 0 28px;
+  }
+  .tb-ledger-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 20px;
+    border-bottom: 0.5px solid var(--rule);
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-ledger-title{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    color: var(--navy);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .tb-ledger-status{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+  }
+  .tb-ledger-row{
+    display: grid;
+    grid-template-columns: 34px 1fr 180px;
+    gap: 14px;
+    padding: 12px 20px;
+    border-bottom: 0.5px solid var(--rule);
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+    align-items: baseline;
+  }
+  .tb-ledger-row:last-of-type{ border-bottom: none; }
+  .tb-ledger-check{ font-family: var(--font-mono); color: var(--teal); font-size: 13px; }
+  .tb-ledger-cond{ color: var(--ink); }
+  .tb-ledger-cond strong{ color: var(--navy); font-weight: 600; }
+  .tb-ledger-src{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.04em;
+    text-align: right;
+  }
+  .tb-ledger-gate{
+    padding: 14px 20px;
+    background: var(--navy);
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-ledger-gate .act{ color: var(--rule-soft); }
+
+  .tb-kpi-row{
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    border-top: 0.5px solid var(--rule);
+    border-bottom: 0.5px solid var(--rule);
+    padding: 22px 0;
+  }
+  .tb-kpi{ min-width: 140px; flex: 1; }
+  .tb-kpi .n{
+    font-family: var(--font-mono);
+    font-size: 26px;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .tb-kpi .l{
+    font-family: var(--font-sans);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+    text-transform: uppercase;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  ol.fn{ counter-reset: fnc; list-style: none; margin: 18px 0 0 0; }
+  ol.fn li{
+    counter-increment: fnc;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin-bottom: 10px;
+    padding-left: 34px;
+    position: relative;
+  }
+  ol.fn li::before{
+    content: counter(fnc, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--bronze);
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+  sup.fnref{ font-family: var(--font-mono); font-size: 10px; color: var(--bronze); }
+  sup.fnref a{ border-bottom: none; color: var(--bronze); }
+  sup.fnref a:hover{ background: transparent; color: var(--navy); }
+
+  .tb-series{ margin-top: 12px; }
+  .tb-series-item{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 0.5px solid var(--rule);
+    font-size: 15px;
+  }
+  .tb-series-id{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--teal);
+    padding-top: 2px;
+  }
+  .tb-series-item.current .tb-series-id{ color: var(--bronze); }
+  .tb-series-item.current div:last-child{ color: var(--navy); font-weight: 600; }
+  .tb-series-item em{ color: var(--bronze); font-weight: 400; }
+
+  .endmark{ text-align: center; margin: 64px 0 0; }
+  .endmark .em-line{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+  .endmark .em-rule{ width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
+  .endmark .em-quote{
+    font-style: italic;
+    font-size: 17px;
+    color: var(--navy);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .endmark .em-src{
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--teal);
+    margin-top: 22px;
+    text-transform: uppercase;
+  }
+
+  /* Layout-only adjustments at small widths */
+  @media (max-width: 640px){
+    .tb-ledger-row{ grid-template-columns: 28px 1fr; }
+    .tb-ledger-src{ grid-column: 2; text-align: left; margin-top: 2px; }
+  }
+  @media print{
+    .tb-ledger, .tb-kpi-row, .table-scroll{ break-inside: avoid; }
+    .tb-ledger-gate{ background: #fff; color: #000; border-top: 1px solid #999; }
+    .tb-ledger-gate .act{ color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/wp4/">Working Paper</a>
+      <a href="/about/">About</a>
+      <a href="/engage/">Engage</a>
+      <a href="/commentary/">Commentary</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Technical Briefing No.&nbsp;1  ·  v1.0  ·  June 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0 · JUNE 2026</span></div>
+  <h1>The Verified Sky</h1>
+  <div class="subtitle">Sensing, certainty, and the law of automated airspace awareness — the state of the art, what it costs, how fast it acts, and what a Canadian operator may lawfully do with it.</div>
+</div>
+
+<aside class="wp-meta-block" aria-label="Technical briefing metadata">
+  <dl>
+    <dt>Author</dt>        <dd>Jesse James</dd>
+    <dt>Document ID</dt>   <dd><code>NPSI-TB-001</code></dd>
+    <dt>Version</dt>       <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/tb1/index.html">change log</a></dd>
+    <dt>Series</dt>        <dd>Technical Briefing — a companion line to the Working Papers, addressing the engineering substrate beneath the policy architecture</dd>
+    <dt>Released</dt>      <dd>11 June 2026 · Victoria, British Columbia</dd>
+    <dt>Status</dt>        <dd>Unclassified · For public distribution. Editorially controlled. Public version-controlled review open.</dd>
+    <dt>Cite as</dt>       <dd>James, J. (2026). <em>The Verified Sky</em> (NPSI Technical Briefing No.&nbsp;1, v1.0). https://npsi.ca/tb1/</dd>
+  </dl>
+</aside>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#sensor-problem">The Sensor Problem</a></li>
+    <li><a href="#certainty">Certainty Is an Architecture</a></li>
+    <li><a href="#latency">The Speed of Noticing</a></li>
+    <li><a href="#response-law">Response and the Law</a></li>
+    <li><a href="#forecast">A Conservative Forecast</a></li>
+    <li><a href="#reference-architecture">A Reference Architecture in Four Stages</a></li>
+    <li><a href="#sources">Sources and Notes</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="abstract" aria-label="Abstract">
+  <p class="tb-abstract">A middle power that intends to know what is in its sky — over a port, a pipeline corridor, a flight park, or a farm — now has the tools to know it with engineering certainty, at consumer prices, in under a second. This briefing surveys the 2025–2026 state of the art in computer vision and sensing for monitoring a defined volume of airspace; describes the <em>verification architecture</em> that converts a probabilistic detection into a near-certain identification by requiring every condition in a configurable ledger to pass; reports realistic detection-to-action latency; maps the automated responses that are lawful for a private Canadian operator against those that are criminal; and offers a deliberately conservative capability forecast at one, two-and-a-half, and five years.</p>
+  <p class="tb-abstract">The central findings are three. First, the binding constraint is no longer compute or cost — a capable monitoring node is buildable for under <code>CAD $1,500</code> — but the detection of <em>small, distant targets</em>, where published accuracy has plateaued. Second, certainty is an architecture, not a model: the systems that work do not trust a classifier, they corroborate it. Third, in Canada the line between lawful and criminal response is bright, statutory, and indifferent to good intentions.</p>
+</section>
+
+<section id="sensor-problem">
+  <h2>§ I · The Sensor Problem</h2>
+
+  <p>No single sensor can watch a sky. Each modality answers one question well and goes blind on the others, and the discipline of airspace awareness consists largely of knowing which blindness is being purchased at which price. The table below summarizes the field as deployed in 2025–2026; ranges are indicative, since vendor figures are rarely stated against a defined target and condition set, and should be read as such.<sup class="fnref"><a href="#fn-iec">[1]</a></sup></p>
+
+  <div class="table-scroll">
+    <table class="tb-table">
+      <caption>Table 1 · Sensing modalities for a defined airspace volume, 0–3,000 m</caption>
+      <thead>
+        <tr><th>Modality</th><th>Answers</th><th>Indicative range</th><th>Blind to</th><th>Cost class</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>RGB camera</strong></td><td>What it is; evidence-grade imagery</td><td class="mono">~1–3 km (with zoom optics)</td><td>Night, fog, glare, sky-saturated backlight; narrow field of view</td><td>Consumer–prosumer</td></tr>
+        <tr><td><strong>Thermal (LWIR, uncooled)</strong></td><td>Presence in darkness and smoke</td><td class="mono">hundreds of m – several km, optics-dependent</td><td>Thermal crossover at dawn and dusk; obscured targets</td><td>Prosumer–industrial</td></tr>
+        <tr><td><strong>Radar (micro-Doppler)</strong></td><td>Range, bearing, elevation, in all weather; rotor-vs-bird discrimination</td><td class="mono">~1–5 km for small UAS</td><td>Identity, make, operator</td><td>Industrial–defence</td></tr>
+        <tr><td><strong>RF detection</strong></td><td>Control link; locates drone <em>and</em> operator; reads Remote ID</td><td class="mono">to ~5 km</td><td>Autonomous, RF-silent, and fibre-guided aircraft; everything that does not emit</td><td>Prosumer–defence</td></tr>
+        <tr><td><strong>Acoustic array</strong></td><td>Propeller and motor signature beyond line of sight</td><td class="mono">~300–500 m small UAS</td><td>Wind above ~5 m/s; urban noise; quiet and gliding aircraft</td><td>Consumer–industrial</td></tr>
+        <tr><td><strong>Event camera</strong></td><td>Microsecond-latency motion in extreme dynamic range</td><td class="mono">research-grade</td><td>Static objects; not yet a turnkey product</td><td>Prosumer R&amp;D</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The empirical reference point for what cheap, distributed sensing achieves at national scale is Ukraine's Zvook acoustic network: detections reportedly reach the armed forces' Delta situational-awareness system within roughly twelve seconds, at a false-positive rate of about 1.6 per cent, from sensors costing on the order of US$500 each.<sup class="fnref"><a href="#fn-zvook">[2]</a></sup> The lesson generalizes: coverage and corroboration, not exquisite individual sensors, are what produce reliable awareness.</p>
+
+  <p>The pairing logic follows from the blindness table. Radar and RF do the <em class="term">searching</em>; an electro-optical/infrared camera does the <em class="term">confirming</em> and produces the evidence. Commercial counter-UAS platforms — Dedrone (acquired by Axon), DroneShield, Fortem — are at bottom fusion engines that correlate detections across modalities and decline to escalate on a single sensor's word.<sup class="fnref"><a href="#fn-fusion">[3]</a></sup> The standing rule across the industry is two-sensor corroboration before escalation.</p>
+
+  <p>One consequence deserves emphasis because it inverts the intuition that more sensors are always better. For targets that are large, slow, mostly within visual range, and electromagnetically silent — a hang glider or paraglider over a coastal British Columbia flight park is the canonical case — RF detection contributes nothing, acoustics contribute little, and a camera-first architecture (RGB plus thermal, with radar optional for range and weather) is both sufficient and the correct allocation of budget. The modality must be matched to the target, not to the catalogue.</p>
+</section>
+
+<section id="certainty">
+  <h2>§ II · Certainty Is an Architecture</h2>
+
+  <p>A detector is a probability machine. It reports that a region of pixels resembles a class of object with some confidence, and on a good benchmark day that confidence is well calibrated; on a bad day a gull at altitude is a drone and a kite is an aircraft. The systems that work in production do not ask the detector to be certain. They make certainty <em class="term">structurally</em>, by requiring an identification to pass every condition in a configurable ledger before any action fires. The pattern is general; the instantiation below is the flight-park case.</p>
+
+  <div class="tb-ledger" role="img" aria-label="Verification ledger: seven conditions that must all pass before action">
+    <div class="tb-ledger-head">
+      <span class="tb-ledger-title">Verification Ledger · Track № 0147</span>
+      <span class="tb-ledger-status">All conditions must pass</span>
+    </div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Class.</strong> Detector confidence for the target class above a calibrated threshold</span><span class="tb-ledger-src">DETECTOR</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Size.</strong> Estimated physical dimension within bounds, from bounding box, optics, and range</span><span class="tb-ledger-src">GEOMETRY</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Altitude.</strong> Height estimate inside the declared envelope</span><span class="tb-ledger-src">RADAR / GEOMETRY</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Kinematics.</strong> Speed and trajectory consistent with the target's flight profile</span><span class="tb-ledger-src">TRACKER</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Window.</strong> Inside declared operating hours and daylight rules</span><span class="tb-ledger-src">CLOCK</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Geofence.</strong> Position inside the defined volume, point-in-polygon</span><span class="tb-ledger-src">GEOFENCE</span></div>
+    <div class="tb-ledger-row"><span class="tb-ledger-check">[✓]</span><span class="tb-ledger-cond"><strong>Persistence.</strong> Conditions held across N consecutive frames — the single most effective false-positive suppressor</span><span class="tb-ledger-src">TRACKER</span></div>
+    <div class="tb-ledger-gate"><span>Gate: 7 / 7 passed</span><span class="act">→ Action authorized</span></div>
+  </div>
+
+  <p>Every component of this ledger is available open-source, and the stack is stable enough to name. Detection: the YOLO family remains the deployable workhorse, with transformer detectors competitive at higher compute. On VisDrone — the standard aerial benchmark, whose objects average roughly 36 pixels — deployable models score in the high-30s to ~51 per cent mAP<code>50</code> depending on architecture and weight class, and sliced inference (SAHI) materially improves small-object recall.<sup class="fnref"><a href="#fn-visdrone">[4]</a></sup> Tracking: ByteTrack (80.3 MOTA on MOT17) and BoT-SORT (80.5 MOTA, with camera-motion compensation and a stronger motion model) convert per-frame detections into persistent tracks with tunable persistence buffers.<sup class="fnref"><a href="#fn-track">[5]</a></sup> Open-vocabulary detection — the ability to alert on a natural-language description without retraining — is real but young: Grounding DINO leads accuracy, YOLO-World leads speed, and sustaining useful frame rates on edge hardware remains an optimization exercise rather than a default.<sup class="fnref"><a href="#fn-ov">[6]</a></sup> The rules layer above all of this is ordinary application code.</p>
+
+  <div class="pull">
+    The systems that work do not trust a classifier. They corroborate it — across sensors, across frames, across conditions — and they decline to act until the ledger closes.
+    <cite>— §II, Certainty Is an Architecture</cite>
+  </div>
+
+  <p>It is worth stating plainly what the benchmarks say about the hard case, because this is where reputations in this field go to die. On Anti-UAV410, the standard thermal-infrared drone-tracking benchmark, state accuracy has sat in the low-to-mid 60s for three years — 67.7 per cent in 2023, with 2025 methods clustered between 64 and 67.<sup class="fnref"><a href="#fn-410">[7]</a></sup> When the field built a benchmark that looks like the real world — CST Anti-UAV, 220 thermal sequences, more than 240,000 annotations, tiny targets in complex scenes, 20 state-of-the-art trackers evaluated — the best method achieved 35.92 per cent state accuracy, against 67.69 per cent on Anti-UAV410.<sup class="fnref"><a href="#fn-cst">[8]</a></sup> Performance on realistic small-and-distant targets is roughly half of headline performance. Any system design that does not assume losing and re-acquiring the track is designed for the benchmark, not the sky.</p>
+</section>
+
+<section id="latency">
+  <h2>§ III · The Speed of Noticing</h2>
+
+  <p>Latency in these systems decomposes into three regimes that are routinely conflated in marketing material: model inference, verification, and action.</p>
+
+  <div class="tb-kpi-row">
+    <div class="tb-kpi"><div class="n">ms</div><div class="l">Inference — single-digit to tens of milliseconds per frame on edge silicon</div></div>
+    <div class="tb-kpi"><div class="n">0.3–1 s</div><div class="l">Verification — N-frame persistence at 30 fps; the deliberate cost of certainty</div></div>
+    <div class="tb-kpi"><div class="n">&lt; 1–3 s</div><div class="l">Soft action — first frame to delivered alert, slew command, or API call</div></div>
+  </div>
+
+  <p><strong>Inference.</strong> A Jetson Orin Nano Super — NVIDIA's <code>US$249</code> developer board, launched December 2024 at 67 INT8 TOPS — runs current YOLO models at 30–60+ frames per second under TensorRT; dedicated accelerators in the Hailo class run common detectors in under ten milliseconds.<sup class="fnref"><a href="#fn-jetson">[9]</a></sup> Inference is, for practical purposes, solved at the edge.</p>
+
+  <p><strong>Verification.</strong> The persistence requirement in the ledger is a deliberate latency purchase: holding all conditions across, say, ten to thirty frames costs a third of a second to a second and buys an order-of-magnitude reduction in false alarms. This is the correct trade for almost every civil application.</p>
+
+  <p><strong>Action.</strong> A soft response — email, SMS, push notification, webhook, an API call into another system — adds network time and lands the full chain at under a second to a few seconds. A pan-tilt-zoom slew-to-cue, in which radar or RF hands a predicted position to a camera that mechanically slews and locks an auto-tracker, is dominated by motor time: hundreds of milliseconds to roughly two seconds on commodity hardware. Physical response — launching an interceptor aircraft — runs to seconds and minutes and belongs, as §&nbsp;IV explains, to a legal category most readers must not enter. Cloud-routed pipelines add hundreds of milliseconds to seconds and are appropriate for notification and archival, not for the verification loop, which belongs at the edge.</p>
+</section>
+
+<section id="response-law">
+  <h2>§ IV · Response and the Law</h2>
+
+  <p>What may a private Canadian operator lawfully <em class="term">do</em> when the ledger closes? The answer divides cleanly, and the dividing line is statutory.</p>
+
+  <h3>Lawful and commercially routine</h3>
+  <p>Notification in every form; camera handoff and autonomous optical tracking; spotlight or audible deterrent, provided no aircraft is endangered; timestamped evidence packages of clip, track, and metadata; and ingestion of Remote ID broadcasts as a corroborating ledger condition for cooperative aircraft. On this last point the regulatory ground is moving in the operator's favour: on 8 June 2026 Transport Canada published Notice of Proposed Amendment 2026-005 (CARAC NPA 06-2026: <em>RPAS — Remote Identification, Community-Based Organizations, and Designated Airspace</em>), proposing mandatory Remote ID for most drone operations on a performance basis — Broadcast or Network, both on the ASTM F3411 standard — with the comment window open to 9 September 2026.<sup class="fnref"><a href="#fn-npa">[10]</a></sup> In the United States, Remote ID has been mandatory and enforced since 16 March 2024. If the Canadian proposal proceeds, cooperative-aircraft identification becomes a broadcast to be received rather than an inference to be made, and the strongest single condition a ledger can carry.</p>
+
+  <h3>Criminal for a civilian, regardless of intent</h3>
+  <p>Radio-frequency jamming and spoofing are prohibited by the Radiocommunication Act: subsection 4(4) bars the installation, use, possession, manufacture, import, or sale of jammers, and paragraph 9(1)(b) bars interference with radiocommunication, with exemptions under section 14 confined to federal bodies such as the RCMP and the Department of National Defence and to narrow authorized pilots.<sup class="fnref"><a href="#fn-radio">[11]</a></sup> Taking over a drone's control software engages the unauthorized-computer-use provisions of the Criminal Code, sections 342.1 and 342.2. Physically downing a drone is interference with an aircraft under the Aeronautics Act and CARs Part IX. The interceptor systems that exist — Fortem's DroneHunter, which according to the company began first customer deliveries of its 5.0 version in January 2026 and was selected by the Pentagon's counter-UAS task force under the Replicator-2 initiative; Anduril's Anvil — are defence and government systems, full stop.<sup class="fnref"><a href="#fn-fortem">[12]</a></sup> A Canadian civil operator's response ceiling is detection, tracking, evidence, and notification. That ceiling is set by Parliament, not by engineering.</p>
+
+  <h3>Privacy is a design input, not an afterthought</h3>
+  <p>Fixed cameras operated in the course of commercial activity engage PIPEDA and, in British Columbia, Alberta, and Québec, the provincial private-sector statutes. The obligations are settled: a reasonable purpose, visible signage, collection limited to what is necessary, a field of view that does not sweep neighbouring properties or public sidewalks, secured storage, scheduled retention and destruction, and a written policy.<sup class="fnref"><a href="#fn-pipeda">[13]</a></sup> Audio is the trap: recording private conversations without consent engages the Criminal Code's interception provisions, and the correct engineering answer is to disable microphones at the hardware level. A system pointed at the sky carries low privacy exposure by construction — one more argument, where targets permit, for the camera-first architecture aimed upward.</p>
+
+  <aside class="standard">
+    <h4>Standing caveat</h4>
+    <p>This briefing is a technical and regulatory survey, not legal advice. The counter-drone and Remote ID landscape is in active rulemaking on both sides of the border; an operator deploying any response capability should verify the current state of the law and obtain counsel.</p>
+  </aside>
+</section>
+
+<section id="forecast">
+  <h2>§ V · A Conservative Forecast</h2>
+
+  <p>Forecasts in this field fail in a characteristic way: they extrapolate the hardware curve, which is real, onto the accuracy curve, which is not. The measured baseline for the hardware curve is the Jetson Orin Nano line, which moved from 40 INT8 TOPS at US$499 in March 2023 to 67 INT8 TOPS at US$249 in December 2024 — roughly a three-to-four-fold improvement in compute per dollar in under two years — while headline TOPS figures across the industry are increasingly inflated by precision-format changes (INT8 to INT4 to FP4) rather than by efficiency gains at constant precision.<sup class="fnref"><a href="#fn-hw">[14]</a></sup> The measured baseline for the accuracy curve is the benchmark plateau documented in §&nbsp;II. Holding both honestly:</p>
+
+  <div class="table-scroll">
+    <table class="tb-table">
+      <caption>Table 2 · Conservative capability forecast — what a builder may plan on</caption>
+      <thead>
+        <tr><th>Horizon</th><th>Near-certain</th><th>Likely</th><th>Genuinely uncertain — do not plan on it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono">+1 yr<br>mid-2027</td>
+          <td>Edge compute 15–25% cheaper per unit; a robust RGB+thermal node in the low four figures; YOLO + ByteTrack/BoT-SORT remains the production stack</td>
+          <td>Open-vocabulary detection usable at modest frame rates on edge boards for coarse alerting</td>
+          <td>Any material jump in small-and-distant-target accuracy</td>
+        </tr>
+        <tr>
+          <td class="mono">+2.5 yr<br>end-2028</td>
+          <td>Continued hardware cost decline; thermal cores cheaper as 12 µm pitch standardizes</td>
+          <td>On-device vision-language models practical at the edge — "describe the thing to alert on" without retraining; sensor-fusion correlation software increasingly commoditized</td>
+          <td>Tiny-target tracking in clutter; design for re-acquisition, not for an unbroken track</td>
+        </tr>
+        <tr>
+          <td class="mono">+5 yr<br>2031</td>
+          <td>Multi-camera fusion nodes cheap and unremarkable; edge AI market substantially larger on any analyst definition</td>
+          <td>Natural-language-configurable monitoring as the normal interface; event-camera sensors entering fusion stacks for fast and backlit targets</td>
+          <td>Whether small-object detection at distance escapes its plateau at all. Treat a breakout as upside, never as the plan</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The asymmetry is the finding. Everything around the detector — compute, sensors, fusion, interface — is on a cost curve that favours the builder. The detector's performance on the hardest realistic case is not. Architecture must therefore carry what the model cannot: corroboration across sensors, persistence across frames, graceful loss and re-acquisition of track, and a verification ledger that converts an imperfect detector into a near-certain system.</p>
+</section>
+
+<section id="reference-architecture">
+  <h2>§ VI · A Reference Architecture in Four Stages</h2>
+
+  <p>For an operator proceeding from nothing to a deployed system, the staging below orders the spend by what each stage retires in risk. Each stage carries an explicit gate; the gate, not the calendar, authorizes the next stage.</p>
+
+  <div class="table-scroll">
+    <table class="tb-table">
+      <caption>Table 3 · Staged build — gates before spend</caption>
+      <thead>
+        <tr><th>Stage</th><th>Build</th><th>Gate to advance</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono">0 · Prove<br>&lt; CAD $1,500</td>
+          <td>Single RGB camera; Jetson Orin Nano Super or Raspberry Pi 5 with a Hailo accelerator; YOLO + ByteTrack; the full verification ledger in application code; action = email and webhook</td>
+          <td>Reliable detection of the declared target at the required range, with fewer than one false alert per day</td>
+        </tr>
+        <tr>
+          <td class="mono">1 · Harden</td>
+          <td>Add a 640×512 uncooled thermal camera for night, glare, and contrast failure; a PTZ for slew-to-track; BoT-SORT for motion robustness; evidence logging; Remote ID ingestion as a ledger condition</td>
+          <td>Two-sensor corroboration driving false positives to approximately zero across a full diurnal cycle</td>
+        </tr>
+        <tr>
+          <td class="mono">2 · Extend</td>
+          <td>Small commercial radar for beyond-visual range and all-weather cueing; rigorous time synchronization and a single coordinate convention (WGS84 with a local ENU frame) adopted before, not after, fusion; optionally an open-vocabulary model for reconfigurable alerting</td>
+          <td>Detection range and weather robustness meeting the site's declared requirement</td>
+        </tr>
+        <tr>
+          <td class="mono">3 · Respond</td>
+          <td>Soft responses only: alerting, autonomous optical tracking, deterrence that endangers no aircraft, evidence packages, operator dashboard. No jamming, no spoofing, no takeover, no kinetic capability — see §&nbsp;IV</td>
+          <td>Counsel's review of the response set against the current state of Canadian law</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Two engineering notes from the fusion literature merit standing inclusion because they are cheap to honour and expensive to retrofit. First, clock discipline: a two-hundred-millisecond drift between a radar plot and a camera frame is enough to spawn duplicate tracks and defeat corroboration; synchronize from the first commit. Second, coordinate discipline: one geodetic convention, declared once, carried everywhere. Most fusion failures in the field are bookkeeping failures.</p>
+</section>
+
+<section id="sources">
+  <h2>§ VII · Sources and Notes</h2>
+
+  <ol class="fn">
+    <li id="fn-iec">Vendor detection-range claims are generally stated without a defined target, aspect, or condition set; international standardization of counter-UAS detection metrics is in progress at the IEC. All ranges in Table 1 should be de-rated accordingly.</li>
+    <li id="fn-zvook">Figures for the Zvook acoustic detection network — approximately twelve seconds to appearance in the Delta system, a false-positive rate of about 1.6 per cent, and per-sensor cost on the order of US$500 — are as reported by the project's Air Force liaison in Western press coverage, 2023–2025, and are presented as reported rather than independently audited.</li>
+    <li id="fn-fusion">On fusion architecture and two-sensor corroboration as the industry false-positive control: vendor technical documentation, Dedrone (Axon) DedroneTracker.AI; DroneShield DroneSentry; Fortem SkyDome; and the counter-UAS trade literature, 2024–2026.</li>
+    <li id="fn-visdrone">VisDrone benchmark results, 2024–2025 literature: deployable single-stage models in the high-30s mAP50 (e.g., improved YOLOv8n variants) to approximately 51 per cent mAP50 for heavier 2025 detection-transformer architectures; sliced-inference (SAHI) gains documented in Akyon et al., 2022, and successors.</li>
+    <li id="fn-track">Zhang et al., <em>ByteTrack: Multi-Object Tracking by Associating Every Detection Box</em>, ECCV 2022 (80.3 MOTA, 77.3 IDF1, MOT17); Aharon et al., <em>BoT-SORT: Robust Associations Multi-Pedestrian Tracking</em>, 2022 (80.5 MOTA, 80.2 IDF1, MOT17).</li>
+    <li id="fn-ov">Grounding DINO 1.5 Edge (IDEA Research, 2024): 36.2 zero-shot AP on COCO with an edge-optimized backbone; Cheng et al., <em>YOLO-World: Real-Time Open-Vocabulary Object Detection</em>, CVPR 2024: 35.4 AP on LVIS at 52 fps on server-class hardware. Edge deployment of open-vocabulary models above ~10 fps remains an active optimization problem in the 2025 literature.</li>
+    <li id="fn-410">Anti-UAV410 thermal tracking benchmark: Huang et al., IEEE TPAMI 2023 (SiamDT, 67.7% state accuracy), with 2025 methods reporting 64.0–67.0% — a three-year plateau in the band.</li>
+    <li id="fn-cst">Xie, B., Zhang, C., Wang, F., Liu, P., Lu, F., Chen, Z., &amp; Hu, W. (2025). <em>CST Anti-UAV: A Thermal Infrared Benchmark for Tiny UAV Tracking in Complex Scenes.</em> ICCV 2025 Workshops; arXiv:2507.23473. 220 sequences, &gt;240k annotations, 20 trackers evaluated; best method 35.92% state accuracy versus 67.69% on Anti-UAV410.</li>
+    <li id="fn-jetson">NVIDIA Jetson Orin Nano Super Developer Kit, announced 17 December 2024: US$249, 67 INT8 TOPS, 102 GB/s memory bandwidth (NVIDIA developer blog and product documentation). Hailo-8 sub-10 ms detector latency per vendor documentation and the Frigate NVR community's published benchmarks.</li>
+    <li id="fn-npa">Transport Canada, Notice of Proposed Amendment 2026-005 (CARAC NPA 06-2026): <em>RPAS — Remote Identification, Community-Based Organizations, and Designated Airspace</em>, published 8 June 2026; comment period to 9 September 2026; performance-based Remote ID accepting Broadcast or Network paths on ASTM F3411. United States: 14 CFR Part 89, Remote ID enforcement from 16 March 2024.</li>
+    <li id="fn-radio">Radiocommunication Act, R.S.C. 1985, c. R-2, ss. 4(4), 9(1)(b), 14; Criminal Code, R.S.C. 1985, c. C-46, ss. 342.1, 342.2; Aeronautics Act, R.S.C. 1985, c. A-2; Canadian Aviation Regulations, Part IX, as amended by SOR/2025-70 (BVLOS and other operations framework, in force 4 November 2025).</li>
+    <li id="fn-fortem">Fortem Technologies press release, Lindon, Utah, January 2026 (DroneHunter 5.0 first customer deliveries; selection under the Replicator-2 initiative) — company statements, reported as such. Anduril Industries, Anvil product documentation.</li>
+    <li id="fn-pipeda">Office of the Privacy Commissioner of Canada, <em>Guidelines for Overt Video Surveillance in the Private Sector</em>; PIPEDA Report of Findings #2010-008 (cameras capturing neighbouring units and a public sidewalk found non-compliant); Personal Information Protection Act (British Columbia), S.B.C. 2003, c. 63.</li>
+    <li id="fn-hw">Jetson Orin Nano Developer Kit, announced March 2023: US$499, 40 INT8 TOPS; Jetson Orin Nano Super Developer Kit, December 2024: US$249, 67 INT8 TOPS (NVIDIA product announcements). On the inflation of headline TOPS by precision-format migration (INT8 → INT4 → FP4) rather than efficiency gains at constant precision: vendor datasheet conventions across the edge-accelerator industry, 2024–2026.</li>
+  </ol>
+</section>
+
+<section id="series-index" aria-label="Series index">
+  <h2>Series Index</h2>
+  <div class="tb-series">
+    <div class="tb-series-item">
+      <div class="tb-series-id">WP-01</div>
+      <div><a href="/wp1/" class="plain">The Bilateral Foundation</a> — A thirty-year Canada–Korea sovereign bond. <em>(published May 2026)</em></div>
+    </div>
+    <div class="tb-series-item">
+      <div class="tb-series-id">WP-02</div>
+      <div><a href="/wp2/" class="plain">A Canada–United States Energy and Compute Compact.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="tb-series-item">
+      <div class="tb-series-id">WP-03</div>
+      <div><a href="/wp3/" class="plain">A Canada–Korea Pacific Defence-Industrial Corridor.</a> <em>(published May 2026)</em></div>
+    </div>
+    <div class="tb-series-item">
+      <div class="tb-series-id">WP-04</div>
+      <div><a href="/wp4/" class="plain">The Addition Paradox</a> — An energy thesis for Canada. <em>(published May 2026)</em></div>
+    </div>
+    <div class="tb-series-item current">
+      <div class="tb-series-id">TB-01</div>
+      <div>The Verified Sky — Sensing, certainty, and the law of automated airspace awareness. <em>(this briefing)</em></div>
+    </div>
+  </div>
+</section>
+
+<div class="endmark">
+  <div class="em-line">End of Technical Briefing No. 1</div>
+  <div class="em-rule"></div>
+  <div class="em-quote">Certainty is an architecture, not a model. The systems that work do not trust a classifier; they corroborate it, and they decline to act until the ledger closes.</div>
+  <div class="em-src">— § II, Certainty Is an Architecture</div>
+</div>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
