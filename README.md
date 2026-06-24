@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <em>Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</em>
+  <em>Working Papers on Pacific Sovereignty & Bilateral Architecture</em>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://npsi.ca">npsi.ca</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a>
+  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a>
 </p>
 
 ---
@@ -30,7 +30,7 @@ This repository is the source of the website at [`npsi.ca`](https://npsi.ca). Pl
 | **No. 2** | [A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
 | **No. 3** | [A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
 
-> *forthcoming · `NPSI-BN-002` Confederation Mathematics*
+> *forthcoming · `NPSI-BN-002` Confederation Mathematics*</p>
 
 ## What this site is — and is not
 
@@ -87,7 +87,7 @@ Substantive editorial commentary, factual corrections, and technical critique ar
 
 | | How |
 |---|---|
-| **Named commentary** | 500–1,500 attributed words to [jesse@fitforgov.com](mailto:jesse@fitforgov.com) |
+| **Named commentary** | 500–1,500 attributed words to [editor@npsi.ca](mailto:editor@npsi.ca) |
 | **Pull requests** | Specific edit proposals against the relevant paper repo |
 | **Issues** | Factual questions, technical critique, general comment |
 | **Citation** | Working papers are CC-BY-4.0; cite, share, build upon |
@@ -114,7 +114,7 @@ Production deployment is documented in [`DEPLOYMENT.md`](./DEPLOYMENT.md). The s
 
 ## Editor
 
-**Jesse James** &nbsp;·&nbsp; Victoria, British Columbia &nbsp;·&nbsp; [jesse@fitforgov.com](mailto:jesse@fitforgov.com)
+**Jesse James** &nbsp;·&nbsp; Victoria, British Columbia &nbsp;·&nbsp; [editor@npsi.ca](mailto:editor@npsi.ca)
 
 The editor signs the work; the imprint hosts it.
 
