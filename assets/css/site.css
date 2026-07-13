@@ -188,13 +188,15 @@ body {
 /* ============ MAIN ============ */
 main {
   flex: 1;
-  max-width: var(--max-w);
+  /* border-box sizing means max-width includes --pad-x; add it back so the
+     text measure is a true 70ch (≈66–75ch readability band), not ~57ch */
+  max-width: calc(var(--max-w) + 2 * var(--pad-x));
   margin: 0 auto;
   padding: clamp(48px, 7vw, 72px) var(--pad-x) clamp(32px, 5vw, 48px);
   width: 100%;
 }
 main.wide {
-  max-width: var(--max-w-wide);
+  max-width: calc(var(--max-w-wide) + 2 * var(--pad-x));
 }
 
 /* ============ HERO / PAGE OPENERS ============ */
