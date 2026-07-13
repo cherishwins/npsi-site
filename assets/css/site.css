@@ -50,12 +50,15 @@ html {
   /* Document proportion — the imprint thinks in A4 */
   --ratio-a4:    1 / 1.4142;
 
-  /* Fluid type scale — max = desktop identity, min = small-screen identity */
+  /* Fluid type scale — max = desktop identity, min = small-screen identity.
+     Small-screen display anchors reduced July 2026 (phone-readability pass):
+     h1 32→28, h1-large 38→32, subtitle 18→17. Desktop identity unchanged. */
   --fs-body:      clamp(16px, 0.95rem + 0.20vw, 17px);
   --fs-lede:      clamp(17px, 0.98rem + 0.55vw, 19px);
-  --fs-subtitle:  clamp(18px, 0.95rem + 1.05vw, 22px);
-  --fs-h1:        clamp(32px, 1.55rem + 3.30vw, 44px);
-  --fs-h1-large:  clamp(38px, 1.75rem + 4.30vw, 52px);
+  --fs-subtitle:  clamp(17px, 0.940rem + 0.543vw, 22px);
+  --fs-h1:        clamp(28px, 1.359rem + 1.739vw, 44px);
+  --fs-h1-large:  clamp(32px, 1.511rem + 2.174vw, 52px);
+  --fs-mark:      clamp(10px, 0.576rem + 0.217vw, 12px);
   --fs-h3:        clamp(19px, 1.05rem + 0.85vw, 22px);
   --fs-prose:     clamp(16px, 0.94rem + 0.45vw, 17px);
   --fs-card-title:clamp(19px, 1.05rem + 0.85vw, 22px);
@@ -144,8 +147,10 @@ body {
 .masthead-mark {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.22em;
+  /* fluid: 10px at 360 → 12px at 1280 so the full wordmark always fits;
+     tracking eases with size per the 0.14–0.22em small-caps band */
+  font-size: var(--fs-mark);
+  letter-spacing: clamp(0.16em, 0.10em + 0.16vw, 0.22em);
   color: var(--navy);
   text-decoration: none;
   white-space: nowrap;
