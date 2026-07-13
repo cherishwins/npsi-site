@@ -7,7 +7,7 @@
 The institutional website of the **North Pacific Strategy Initiative (NPSI)** — an independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.
 
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
-**Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
+**Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
 **Scope of the site:** 12 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), one special-briefing reading view (SB No. 1 *Zero Secrets*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
@@ -123,7 +123,7 @@ The meridian rule with three ticks (`<span>` is the middle tick) appears at the 
       <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
       <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
       <div class="colophon-text">
-        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
+        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
         Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
       </div>
     </div>

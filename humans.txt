@@ -2,7 +2,7 @@
 Editor: Jesse James
 Site: https://npsi.ca/
 Location: Victoria, British Columbia, Canada
-Contact: jesse [at] fitforgov.com
+Contact: editor [at] npsi.ca
 LinkedIn: linkedin.com/company/north-pacific-strategy-initiative
 
 /* THANKS */
