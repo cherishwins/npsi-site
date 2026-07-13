@@ -4,8 +4,8 @@
     <style>
       .npsi-mark { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif; font-weight: 600; letter-spacing: 0.14em; }
       .npsi-sub { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; letter-spacing: 0.03em; }
-      .npsi-meridian { stroke: #A47148; stroke-width: 1.25; fill: none; }
-      .npsi-tick { stroke: #A47148; stroke-width: 1; fill: none; }
+      .npsi-meridian { stroke: #C08D60; stroke-width: 1.25; fill: none; }
+      .npsi-tick { stroke: #C08D60; stroke-width: 1; fill: none; }
       .npsi-volume { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, monospace; font-weight: 400; letter-spacing: 0.18em; }
     </style>
   </defs>
@@ -19,15 +19,15 @@
     <line class="npsi-tick" x1="820" y1="-5" x2="820" y2="5"/>
   </g>
 
-  <text class="npsi-mark" x="550" y="145" text-anchor="middle" fill="#0E2B47" font-size="34">
+  <text class="npsi-mark" x="550" y="145" text-anchor="middle" fill="#F4EFE3" font-size="34">
     NORTH PACIFIC STRATEGY INITIATIVE
   </text>
 
-  <text class="npsi-sub" x="550" y="190" text-anchor="middle" fill="#A47148" font-size="16">
+  <text class="npsi-sub" x="550" y="190" text-anchor="middle" fill="#C08D60" font-size="16">
     Working Papers on Pacific Sovereignty &amp; Bilateral Architecture
   </text>
 
-  <text class="npsi-volume" x="550" y="225" text-anchor="middle" fill="#3D6A78" font-size="11">
+  <text class="npsi-volume" x="550" y="225" text-anchor="middle" fill="#7FA8B5" font-size="11">
     VOL.  I   ·   EST.  MMXXVI
   </text>
 </svg>

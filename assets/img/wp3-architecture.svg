@@ -1,128 +1,128 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580">
   <!-- NPSI WP3 · Figure A · The Three-Rail Pacific Architecture, Complete -->
-  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Document Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Document Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
 
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
       .serif       { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif; }
       .mono        { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
-      .label       { font-size: 10px; letter-spacing: 2.4px; fill: #A47148; text-transform: uppercase; }
-      .endpoint    { font-size: 13px; font-weight: 600; fill: #0E2B47; letter-spacing: 1.5px; }
-      .endpoint-light { font-size: 13px; font-weight: 600; fill: #F4EFE3; letter-spacing: 1.5px; }
-      .descriptor  { font-size: 11px; fill: #1A1A1A; }
-      .descriptor-light { font-size: 11px; fill: #F4EFE3; }
-      .rail-title  { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #3D6A78; }
-      .rail-title-bronze { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #A47148; }
+      .label       { font-size: 10px; letter-spacing: 2.4px; fill: #C08D60; text-transform: uppercase; }
+      .endpoint    { font-size: 13px; font-weight: 600; fill: #F4EFE3; letter-spacing: 1.5px; }
+      .endpoint-light { font-size: 13px; font-weight: 600; fill: #0F2A44; letter-spacing: 1.5px; }
+      .descriptor  { font-size: 11px; fill: #D9D3C6; }
+      .descriptor-light { font-size: 11px; fill: #0F2A44; }
+      .rail-title  { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #7FA8B5; }
+      .rail-title-bronze { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #C08D60; }
     </style>
     <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A47148"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
     </marker>
     <marker id="arrowhead-bronze-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F4EFE3"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0F2A44"/>
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="580" fill="#FBF8EF"/>
+  <rect width="900" height="580" fill="#133150"/>
 
   <!-- Title bar -->
   <text x="40" y="36" class="mono label">FIGURE A · THE THREE-RAIL PACIFIC ARCHITECTURE, COMPLETE</text>
 
   <!-- Top meridian rule with three ticks -->
-  <line x1="40" y1="56" x2="860" y2="56" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
-  <line x1="450" y1="53" x2="450" y2="59" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="860" y1="52" x2="860" y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
 
   <!-- ================== RAIL 1: FINANCIAL ================== -->
   <g transform="translate(0, 90)">
     <text x="40" y="0" class="mono rail-title">RAIL 1 · FINANCIAL · WORKING PAPER NO. 1</text>
 
-    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Korea endpoint -->
     <text x="64" y="44" class="serif endpoint">KOREA</text>
     <text x="64" y="68"  class="serif descriptor">National Pension Service · KIC</text>
     <text x="64" y="84"  class="serif descriptor">Korea Post · Korean life insurers</text>
     <text x="64" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#3D6A78">SENIOR BOND PLACEMENT</text>
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">SENIOR BOND PLACEMENT</text>
 
     <!-- Connector line with arrows -->
-    <line x1="280" y1="68" x2="612" y2="68" stroke="#A47148" stroke-width="1"
+    <line x1="280" y1="68" x2="612" y2="68" stroke="#C08D60" stroke-width="1"
           marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
-    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">CKPIF · LUXEMBOURG SEAT</text>
-    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">USD · CAD · KRW · ENGLISH LAW</text>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">CKPIF · LUXEMBOURG SEAT</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">USD · CAD · KRW · ENGLISH LAW</text>
 
     <!-- Canada endpoint -->
     <text x="836" y="44"  class="serif endpoint" text-anchor="end">CANADA</text>
     <text x="836" y="68"  class="serif descriptor" text-anchor="end">Federal Crown · BoC</text>
     <text x="836" y="84"  class="serif descriptor" text-anchor="end">FNMPC · CIB Indigenous Equity</text>
     <text x="836" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">SOVEREIGN GUARANTOR</text>
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">SOVEREIGN GUARANTOR</text>
   </g>
 
   <!-- ================== RAIL 2: ENERGY & COMPUTE ================== -->
   <g transform="translate(0, 240)">
     <text x="40" y="0" class="mono rail-title">RAIL 2 · ENERGY &amp; COMPUTE · WORKING PAPER NO. 2</text>
 
-    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Canada endpoint -->
     <text x="64" y="44" class="serif endpoint">CANADA</text>
     <text x="64" y="68"  class="serif descriptor">Hydro-Québec · BC Hydro</text>
     <text x="64" y="84"  class="serif descriptor">Manitoba Hydro · 56,000 MW dispatchable</text>
     <text x="64" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#3D6A78">GENERATION + TRANSMISSION</text>
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">GENERATION + TRANSMISSION</text>
 
     <!-- Connector line -->
-    <line x1="320" y1="68" x2="572" y2="68" stroke="#A47148" stroke-width="1"
+    <line x1="320" y1="68" x2="572" y2="68" stroke="#C08D60" stroke-width="1"
           marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
-    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">UHV INTERTIES · TRAINING NODES</text>
-    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">U.S. URBAN-EDGE INFERENCE PRESERVED</text>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">UHV INTERTIES · TRAINING NODES</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">U.S. URBAN-EDGE INFERENCE PRESERVED</text>
 
     <!-- US endpoint -->
     <text x="836" y="44"  class="serif endpoint" text-anchor="end">UNITED STATES</text>
     <text x="836" y="68"  class="serif descriptor" text-anchor="end">DOE · LBNL · FERC</text>
     <text x="836" y="84"  class="serif descriptor" text-anchor="end">Hyperscale operators · U.S. utilities</text>
     <text x="836" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">OFF-TAKE COUNTERPARTY</text>
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">OFF-TAKE COUNTERPARTY</text>
   </g>
 
   <!-- ================== RAIL 3: DEFENCE-INDUSTRIAL (THIS PAPER, highlighted) ================== -->
   <g transform="translate(0, 390)">
     <text x="40" y="0" class="mono rail-title-bronze">RAIL 3 · DEFENCE-INDUSTRIAL · WORKING PAPER NO. 3 (THIS PAPER)</text>
 
-    <rect x="40" y="14" width="820" height="110" fill="#0E2B47"/>
+    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3"/>
 
     <!-- Canada endpoint -->
     <text x="64" y="44" class="serif endpoint-light">CANADA</text>
     <text x="64" y="68"  class="serif descriptor-light">RCN · Defence Investment Agency</text>
     <text x="64" y="84"  class="serif descriptor-light">Algoma Steel · APMA · MPO</text>
     <text x="64" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#A47148">PROCUREMENT + SUSTAINMENT</text>
+          font-size="9" letter-spacing="1.5" fill="#C08D60">PROCUREMENT + SUSTAINMENT</text>
 
     <!-- Connector line -->
-    <line x1="290" y1="68" x2="602" y2="68" stroke="#A47148" stroke-width="1"
+    <line x1="290" y1="68" x2="602" y2="68" stroke="#C08D60" stroke-width="1"
           marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
-    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">KSS-III · CPSP · UP TO 12 BY 2035</text>
-    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#A47148" text-anchor="middle">DEFENCE COOPERATION AGREEMENT · SDCP · 2+2</text>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">KSS-III · CPSP · UP TO 12 BY 2035</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">DEFENCE COOPERATION AGREEMENT · SDCP · 2+2</text>
 
     <!-- Korea endpoint -->
     <text x="836" y="44"  class="serif endpoint-light" text-anchor="end">KOREA</text>
     <text x="836" y="68"  class="serif descriptor-light" text-anchor="end">Hanwha Ocean · HD Hyundai HI</text>
     <text x="836" y="84"  class="serif descriptor-light" text-anchor="end">DAPA · K-Defense Strategy</text>
     <text x="836" y="106" class="mono"
-          font-size="9" letter-spacing="1.5" fill="#A47148" text-anchor="end">PLATFORM + INDUSTRIAL CAPACITY</text>
+          font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="end">PLATFORM + INDUSTRIAL CAPACITY</text>
   </g>
 
   <!-- Bottom meridian -->
-  <line x1="40" y1="540" x2="860" y2="540" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="536" x2="40"  y2="544" stroke="#A47148" stroke-width="1"/>
-  <line x1="450" y1="537" x2="450" y2="543" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="860" y1="536" x2="860" y2="544" stroke="#A47148" stroke-width="1"/>
+  <line x1="40" y1="540" x2="860" y2="540" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="536" x2="40"  y2="544" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="537" x2="450" y2="543" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="536" x2="860" y2="544" stroke="#C08D60" stroke-width="1"/>
 
   <!-- Footer -->
-  <text x="40" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#3D6A78">CANADA AT THE MERIDIAN · KOREAN INDUSTRIAL BASE ANCHORS RAILS 1 + 3 · CRITICAL MINERALS BIND ALL THREE</text>
-  <text x="860" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#3D6A78" text-anchor="end">NPSI-WP-003 · v0.9</text>
+  <text x="40" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5">CANADA AT THE MERIDIAN · KOREAN INDUSTRIAL BASE ANCHORS RAILS 1 + 3 · CRITICAL MINERALS BIND ALL THREE</text>
+  <text x="860" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · v0.9</text>
 </svg>

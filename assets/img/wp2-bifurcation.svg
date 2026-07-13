@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="500" viewBox="0 0 720 500">
   <!-- NPSI WP2 · Figure B · Training and Inference — The Strategic Bifurcation -->
-  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
 
   <defs>
     <style>
@@ -11,90 +11,90 @@
   </defs>
 
   <!-- Background -->
-  <rect width="720" height="500" fill="#FBF8EF"/>
+  <rect width="720" height="500" fill="#133150"/>
 
   <!-- Title bar -->
-  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE B · TRAINING AND INFERENCE — THE STRATEGIC BIFURCATION</text>
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE B · TRAINING AND INFERENCE — THE STRATEGIC BIFURCATION</text>
 
   <!-- Top meridian -->
-  <line x1="40"  y1="56" x2="680" y2="56" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
-  <line x1="360" y1="53" x2="360" y2="59" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="680" y1="52" x2="680" y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
 
   <!-- Subtitle -->
-  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">Two phases. Different physics. Different geography.</text>
-  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">Latency budget determines siting. The bifurcation is the compact's analytical hinge.</text>
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Two phases. Different physics. Different geography.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">Latency budget determines siting. The bifurcation is the compact's analytical hinge.</text>
 
   <!-- Two panels side by side -->
 
   <!-- LEFT: TRAINING -->
   <g transform="translate(40, 148)">
-    <rect x="0" y="0" width="305" height="248" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <rect x="0" y="0" width="305" height="248" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Header -->
-    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#0E2B47">TRAINING</text>
-    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#A47148">LATENCY-AGNOSTIC · BURSTY</text>
+    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#F4EFE3">TRAINING</text>
+    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#C08D60">LATENCY-AGNOSTIC · BURSTY</text>
 
-    <line x1="20" y1="72" x2="285" y2="72" stroke="#A47148" stroke-width="0.5"/>
+    <line x1="20" y1="72" x2="285" y2="72" stroke="#C08D60" stroke-width="0.5"/>
 
     <!-- Metric -->
-    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#0E2B47">~22%</text>
-    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">CAGR THROUGH 2030 · 23→62 GW</text>
+    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#F4EFE3">~22%</text>
+    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CAGR THROUGH 2030 · 23→62 GW</text>
 
     <!-- Characteristics -->
-    <text x="20" y="172" class="serif" font-size="12" fill="#1A1A1A">— Weeks-to-months per run</text>
-    <text x="20" y="190" class="serif" font-size="12" fill="#1A1A1A">— No human latency budget</text>
-    <text x="20" y="208" class="serif" font-size="12" fill="#1A1A1A">— Tens of MW continuous</text>
+    <text x="20" y="172" class="serif" font-size="12" fill="#D9D3C6">— Weeks-to-months per run</text>
+    <text x="20" y="190" class="serif" font-size="12" fill="#D9D3C6">— No human latency budget</text>
+    <text x="20" y="208" class="serif" font-size="12" fill="#D9D3C6">— Tens of MW continuous</text>
 
     <!-- Bottom: geographic implication -->
-    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#3D6A78">Sites where baseload is cheap and climate</text>
-    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#3D6A78">favours natural cooling — Canadian hydro fits.</text>
+    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Sites where baseload is cheap and climate</text>
+    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">favours natural cooling — Canadian hydro fits.</text>
   </g>
 
   <!-- RIGHT: INFERENCE -->
   <g transform="translate(375, 148)">
-    <rect x="0" y="0" width="305" height="248" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
+    <rect x="0" y="0" width="305" height="248" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Header -->
-    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#0E2B47">INFERENCE</text>
-    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#A47148">LATENCY-CRITICAL · PERSISTENT</text>
+    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#F4EFE3">INFERENCE</text>
+    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#C08D60">LATENCY-CRITICAL · PERSISTENT</text>
 
-    <line x1="20" y1="72" x2="285" y2="72" stroke="#A47148" stroke-width="0.5"/>
+    <line x1="20" y1="72" x2="285" y2="72" stroke="#C08D60" stroke-width="0.5"/>
 
     <!-- Metric -->
-    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#0E2B47">~35%</text>
-    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">CAGR THROUGH 2030 · 21→93 GW</text>
+    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#F4EFE3">~35%</text>
+    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CAGR THROUGH 2030 · 21→93 GW</text>
 
     <!-- Characteristics -->
-    <text x="20" y="172" class="serif" font-size="12" fill="#1A1A1A">— Sub-50&#8239;ms response budget</text>
-    <text x="20" y="190" class="serif" font-size="12" fill="#1A1A1A">— Continuous, concurrent users</text>
-    <text x="20" y="208" class="serif" font-size="12" fill="#1A1A1A">— Bound to user geography</text>
+    <text x="20" y="172" class="serif" font-size="12" fill="#D9D3C6">— Sub-50&#8239;ms response budget</text>
+    <text x="20" y="190" class="serif" font-size="12" fill="#D9D3C6">— Continuous, concurrent users</text>
+    <text x="20" y="208" class="serif" font-size="12" fill="#D9D3C6">— Bound to user geography</text>
 
     <!-- Bottom: geographic implication -->
-    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#3D6A78">Must run near the end-user — therefore tied</text>
-    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#3D6A78">to U.S. urban grid topology by physics, not policy.</text>
+    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Must run near the end-user — therefore tied</text>
+    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">to U.S. urban grid topology by physics, not policy.</text>
   </g>
 
   <!-- Bottom callout: today's split, with the trajectory inversion narrative -->
   <g transform="translate(40, 420)">
-    <text x="0" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">CURRENT AI COMPUTE SPLIT · TRAJECTORY INVERTS BEFORE 2030</text>
+    <text x="0" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CURRENT AI COMPUTE SPLIT · TRAJECTORY INVERTS BEFORE 2030</text>
 
     <!-- 20% inference (navy) | 80% training (bronze hatch background) -->
-    <rect x="0"   y="10" width="128" height="22" fill="#0E2B47"/>
-    <rect x="128" y="10" width="512" height="22" fill="#F4EFE3" stroke="#A47148" stroke-width="0.5"/>
-    <line x1="128" y1="10" x2="128" y2="32" stroke="#FBF8EF" stroke-width="1"/>
+    <rect x="0"   y="10" width="128" height="22" fill="#F4EFE3"/>
+    <rect x="128" y="10" width="512" height="22" fill="#0F2A44" stroke="#C08D60" stroke-width="0.5"/>
+    <line x1="128" y1="10" x2="128" y2="32" stroke="#133150" stroke-width="1"/>
 
-    <text x="64"  y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">~20% INFERENCE</text>
-    <text x="384" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#0E2B47" text-anchor="middle">~80% &#160; TRAINING (TODAY) → INFERENCE BECOMES MAJORITY BY 2030</text>
+    <text x="64"  y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#0F2A44" text-anchor="middle">~20% INFERENCE</text>
+    <text x="384" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">~80% &#160; TRAINING (TODAY) → INFERENCE BECOMES MAJORITY BY 2030</text>
   </g>
 
   <!-- Footer rule and source -->
-  <line x1="40"  y1="472" x2="680" y2="472" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="468" x2="40"  y2="476" stroke="#A47148" stroke-width="1"/>
-  <line x1="360" y1="469" x2="360" y2="475" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="680" y1="468" x2="680" y2="476" stroke="#A47148" stroke-width="1"/>
+  <line x1="40"  y1="472" x2="680" y2="472" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="468" x2="40"  y2="476" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="469" x2="360" y2="475" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="468" x2="680" y2="476" stroke="#C08D60" stroke-width="1"/>
 
-  <text x="40"  y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">SOURCE · McKINSEY AI WORKLOADS &amp; HYPERSCALER STRATEGIES · 2025</text>
-  <text x="680" y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-002 · §3</text>
+  <text x="40"  y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">SOURCE · McKINSEY AI WORKLOADS &amp; HYPERSCALER STRATEGIES · 2025</text>
+  <text x="680" y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §3</text>
 </svg>

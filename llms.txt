@@ -10,7 +10,8 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 
 ## Working Papers
 
-- [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada — the current working paper. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
+- [WP7 — Dazzle 2.0](https://npsi.ca/wp7/): Russia's "zebra" trucks and the contest between physical camouflage and machine vision — what the viral claim gets right, what it inflates, and the cost-asymmetry lesson for how NATO and Canada buy autonomy. First paper in the NPSI Counter-Autonomy series; the current working paper. v1.0, 12 July 2026.
+- [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
 - [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0, May 2026.
 - [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026.
 - [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/): A thirty-year Canada–Korea co-issued sovereign bond as the architecture of middle-power independence. v1.0, May 2026. PDF: https://npsi.ca/wp1/working-paper.pdf

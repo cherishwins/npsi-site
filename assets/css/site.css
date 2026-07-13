@@ -16,19 +16,26 @@ html {
 }
 
 /* ---------- Tokens ---------- */
+/* Dark identity (July 2026): the same four-colour brand, inverted.
+   Document Cream is now the ink; Pacific Navy is now the paper.
+   Token NAMES keep their light-era ROLES — --navy is still "primary ink",
+   --cream is still "page background" — only the values flipped, so every
+   page-scoped component inherits the dark theme untouched.
+   Print re-inverts to the light palette (see @media print) — the reference
+   document still prints as paper. */
 :root {
-  --navy:        #0E2B47;
-  --navy-deep:   #081C30;
-  --bronze:      #A47148;
-  --bronze-soft: #BC8B62;
-  --teal:        #3D6A78;
-  --cream:       #F4EFE3;
-  --paper:       #FBF8EF;
-  --paper-warm:  #F8F2E2;
-  --ink:         #1A1A1A;
-  --ink-soft:    #3A3A3A;
-  --rule:        #C4B79B;
-  --rule-soft:   #D8CFB6;
+  --navy:        #F4EFE3;  /* primary ink — Document Cream on navy ground */
+  --navy-deep:   #FFFDF6;  /* hover ink — lifted cream */
+  --bronze:      #C08D60;  /* Treaty Bronze, lightened one step for dark ground */
+  --bronze-soft: #D2A87E;
+  --teal:        #7FA8B5;  /* Maritime Teal, lightened for dark ground */
+  --cream:       #081C30;  /* page background — deep Pacific Navy */
+  --paper:       #0F2A44;  /* card & figure background — lifted navy */
+  --paper-warm:  #133150;
+  --ink:         #D9D3C6;  /* body text — dimmed cream */
+  --ink-soft:    #B9B3A6;
+  --rule:        #2E4A63;  /* rules on navy */
+  --rule-soft:   #23415B;
 
   --font-serif:  'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans:   'Source Sans 3', 'Source Sans Pro', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
@@ -118,7 +125,7 @@ body {
 .masthead {
   border-bottom: 0.5px solid var(--bronze);
   padding: 24px var(--pad-x) 14px;
-  background: rgba(244, 239, 227, 0.94);
+  background: rgba(8, 28, 48, 0.92);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   position: sticky;
@@ -638,6 +645,21 @@ figure figcaption {
   margin: 18mm 16mm;
 }
 @media print {
+  /* Re-invert to the light-era palette: the reference document prints as paper. */
+  :root {
+    --navy:        #0E2B47;
+    --navy-deep:   #081C30;
+    --bronze:      #A47148;
+    --bronze-soft: #BC8B62;
+    --teal:        #3D6A78;
+    --cream:       #FFFFFF;
+    --paper:       #FBF8EF;
+    --paper-warm:  #F8F2E2;
+    --ink:         #1A1A1A;
+    --ink-soft:    #3A3A3A;
+    --rule:        #C4B79B;
+    --rule-soft:   #D8CFB6;
+  }
   html { scroll-behavior: auto; }
   .masthead, .site-footer, .nav, .wp-card-actions, .toc { display: none; }
   body {

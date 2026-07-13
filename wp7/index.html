@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dazzle 2.0 · NPSI Working Paper No. 7</title>
+<meta name="description" content="Physical camouflage against machine vision: what the viral claim about Russia's zebra trucks gets right, what it inflates, and what it means for how the West buys autonomy. NPSI Working Paper No. 7, v1.0, July 2026.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="Dazzle 2.0">
+<meta property="og:description" content="Russia's zebra trucks and the contest between a can of paint and a machine that thinks it can see — what the viral claim gets right, what it inflates, and what it means for how the West buys autonomy. NPSI Working Paper No. 7.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/wp7/">
+<meta property="og:image" content="https://npsi.ca/assets/img/wp7-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/wp7/">
+
+<meta name="citation_title" content="Dazzle 2.0">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/07/12">
+<meta name="citation_journal_title" content="NPSI Working Papers">
+<meta name="citation_issue" content="7">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/wp7/">
+<meta name="citation_keywords" content="adversarial machine learning; dazzle camouflage; machine vision; drones; counter-autonomy; loitering munitions; sensor fusion; procurement; NATO; Canada">
+<meta name="dc.identifier" content="NPSI-WP-007">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#081C30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Dazzle 2.0",
+  "alternativeHeadline": "Physical camouflage against machine vision",
+  "datePublished": "2026-07-12",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/wp7/",
+  "identifier": "NPSI-WP-007",
+  "issueNumber": "7",
+  "image": "https://npsi.ca/assets/img/wp7-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "adversarial machine learning, dazzle camouflage, machine vision, drones, counter-autonomy, loitering munitions, sensor fusion, procurement, NATO, Canada",
+  "abstract": "Russian logistics trucks in Ukraine have worn high-contrast dazzle paint since late May 2026, and the intent — degrading the machine vision on strike drones — is accepted by serious analysts. But no controlled test shows the tactic defeating any named detector. The durable finding is cost asymmetry: a paint can iterates in an afternoon; a fielded detector re-learns only as fast as its slowest update loop. The paper separates confirmed fact from inference and hype, and draws the procurement lesson for NATO and Canada: vision-only terminal guidance is brittle; sensor fusion, human authorization, and edge-retrainable models are the robust answers.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "editor@npsi.ca",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Working Papers"
+  }
+}
+</script>
+
+<style>
+  /* Page-scoped components — evidence-tier table, wp7- prefixed, tokens only. */
+  .wp7-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.wp7-tiers { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13.5px; min-width: 440px; }
+  table.wp7-tiers th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
+    text-align: left; padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--bronze);
+  }
+  table.wp7-tiers td {
+    padding: 12px 16px 12px 0; vertical-align: top;
+    border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink);
+  }
+  table.wp7-tiers tr:last-child td { border-bottom: none; }
+  .wp7-tier {
+    display: inline-block; font-family: var(--font-mono); font-size: 9px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 2px 8px; border: 0.5px solid; white-space: nowrap;
+  }
+  .wp7-tier.confirmed   { color: var(--teal);     border-color: var(--teal); }
+  .wp7-tier.plausible   { color: var(--bronze);   border-color: var(--bronze); }
+  .wp7-tier.speculation { color: var(--ink-soft); border-color: var(--ink-soft); }
+  .wp7-basis { font-size: 13px; color: var(--ink-soft); }
+  @media print {
+    table.wp7-tiers { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/wp7/" class="active">Working Paper</a>
+      <a href="/about/">About</a>
+      <a href="/engage/">Engage</a>
+      <a href="/commentary/">Commentary</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Working Paper No.&nbsp;7  ·  v1.0  ·  July 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0 · JULY 2026</span></div>
+  <h1>Dazzle 2.0</h1>
+  <div class="subtitle">Russia's &ldquo;zebra&rdquo; trucks and the contest between a can of paint and a machine that thinks it can see.</div>
+  <p class="lede">What the viral claim gets right, what it inflates, and what it means for how the West buys autonomy. The first paper in the NPSI Counter-Autonomy series.</p>
+</div>
+
+<aside class="wp-meta-block" aria-label="Working paper metadata">
+  <dl>
+    <dt>Author</dt>             <dd>Jesse James</dd>
+    <dt>Document ID</dt>        <dd><code>NPSI-WP-007</code></dd>
+    <dt>Version</dt>            <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/wp7/index.html">change log</a></dd>
+    <dt>Series</dt>             <dd>NPSI Counter-Autonomy — the contest between machine autonomy and its countermeasures</dd>
+    <dt>Released</dt>           <dd>12 July 2026 · Victoria, British Columbia</dd>
+    <dt>Status</dt>             <dd>Unclassified · All sources open. Editorially controlled. Public version-controlled review open.</dd>
+    <dt>Cite as</dt>            <dd>James, J. (2026). <em>Dazzle 2.0</em> (NPSI Working Paper No.&nbsp;7, v1.0). https://npsi.ca/wp7/</dd>
+    <dt>Companions</dt>         <dd><a href="/tb1/">TB1 — The Verified Sky</a> (the sensing substrate)<br><a href="/wp4/">WP4 — The Addition Paradox</a> (the strategic preface)</dd>
+  </dl>
+</aside>
+
+<div class="wp-card-actions" style="margin-bottom: 36px;">
+  <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
+  <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#the-claim">What the Claim Actually Says</a></li>
+    <li><a href="#evidence-tiers">Confirmed, Plausible, or Hype</a></li>
+    <li><a href="#engineering">The Engineering</a></li>
+    <li><a href="#historical-hook">The Historical Hook</a></li>
+    <li><a href="#cost-asymmetry">The Real Story — Cost Asymmetry</a></li>
+    <li><a href="#procurement">Doctrine and Procurement</a></li>
+    <li><a href="#guardrails">Guardrails</a></li>
+    <li><a href="#sources">Selected Sources</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="executive-summary">
+  <h2>Executive Summary</h2>
+
+  <p>The viral claim is <strong>real at its root and inflated at its tip</strong>. Russian logistics trucks in Ukraine have genuinely worn high-contrast black-and-white &ldquo;dazzle&rdquo; paint since late May 2026, and the intent — degrading the machine vision on Ukrainian strike drones — is accepted by serious analysts. But the social-media post that carried this claim laundered a <em>hedged</em> Economist feature into a confident assertion that the tactic <em>works</em>. No controlled test shows it defeating any named detector, and most analysts doubt it survives a thermal sensor or a human in the loop.</p>
+
+  <p>The engineering premise is legitimate; the crude execution probably is not. Peer-reviewed work proves physical patterns <em>can</em> fool object detectors — but the reliable attacks are mathematically optimized against a specific model, not hand-painted stripes. The stripes most plausibly work by pushing a truck <em>out of the training distribution</em>, an effect that evaporates the moment the detector is retrained on the new pattern.</p>
+
+  <p><strong>Bottom line:</strong> the durable finding is not &ldquo;paint beats AI.&rdquo; It is <em>cost asymmetry</em>: a paint can costs nothing and iterates in an afternoon; a fielded detector re-learns only as fast as its slowest update loop — which a serving U.S. commander has put at <em>six months</em>. That asymmetry, not the zebra pattern itself, is the procurement warning for NATO and Canada: vision-only terminal guidance is brittle, sensor fusion and human authorization are the robust answers, and Western munitions are exposed to exactly the same trick.</p>
+</section>
+
+<section id="the-claim">
+  <h2>1. What the Claim Actually Says</h2>
+
+  <p><em class="term">The claim is well-corroborated in its existence and badly overstated in its effect — and the gap between those two things was manufactured by the repost chain, not by the reporting.</em></p>
+
+  <p>The image that started this file is a social-media post: a KamAZ truck painted like a zebra, over text asserting that Russia is confusing &ldquo;AI-powered vision systems&rdquo; and &ldquo;causing drones to misidentify their targets,&rdquo; sourced to <em>The Economist</em>. That sentence does something the underlying reporting never did: it states, flatly, that the tactic works.</p>
+
+  <p>The anchor is <em>The Economist</em>'s &ldquo;How to hide from killer drones&rdquo; (Science &amp; technology, 8 July 2026), whose own standfirst frames the phenomenon as &ldquo;bizarre forms of camouflage&rdquo; in an emerging arms race — not as a Russian success. The article predicts that any advantage is <em>temporary</em>, because once zebra trucks are common enough they enter the training data and the models learn them. The repost keeps that final hedge but deletes the conditionality around everything before it. &ldquo;Causing drones to misidentify their targets&rdquo; is an outcome no cited source demonstrates.</p>
+
+  <p>This matters for a hostile reader, because the strongest attack on the whole story is exactly this inflation. So the first task is to separate the claim's spine from its marketing. Three facts frame it: at least six independent outlets reported the trucks before or alongside the Economist anchor; the first imagery surfaced on Russian and Ukrainian Telegram channels around 31 May 2026; and the number of published controlled tests showing an effect on a named drone detector is zero.</p>
+
+  <figure>
+    <svg viewBox="0 0 760 232" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','IBM Plex Mono',Menlo,monospace" role="img" aria-label="Source-emergence timeline showing the claim is corroborated across independent outlets">
+      <rect width="760" height="232" fill="#0F2A44"/>
+      <text x="24" y="30" fill="#F4EFE3" font-size="12" font-weight="700" letter-spacing="1.5">SOURCE-EMERGENCE TIMELINE — THE CLAIM IS NOT SINGLE-SOURCED</text>
+      <line x1="40" y1="120" x2="720" y2="120" stroke="#2E4A63" stroke-width="2"/>
+      <g font-size="10.5" fill="#D9D3C6">
+        <circle cx="70" cy="120" r="6" fill="#F4EFE3"/>
+        <line x1="70" y1="120" x2="70" y2="86" stroke="#F4EFE3" stroke-width="1.2"/>
+        <text x="70" y="78" text-anchor="middle" font-weight="700" fill="#F4EFE3">~31 MAY</text>
+        <text x="70" y="150" text-anchor="middle">Telegram</text>
+        <text x="70" y="163" text-anchor="middle" fill="#B9B3A6">@milinfolive</text>
+        <circle cx="205" cy="120" r="6" fill="#7FA8B5"/>
+        <line x1="205" y1="120" x2="205" y2="86" stroke="#7FA8B5" stroke-width="1.2"/>
+        <text x="205" y="78" text-anchor="middle" font-weight="700" fill="#7FA8B5">1 JUN</text>
+        <text x="205" y="150" text-anchor="middle">The War Zone</text>
+        <text x="205" y="163" text-anchor="middle" fill="#B9B3A6">Newdick</text>
+        <circle cx="340" cy="120" r="6" fill="#7FA8B5"/>
+        <line x1="340" y1="120" x2="340" y2="152" stroke="#7FA8B5" stroke-width="1.2"/>
+        <text x="340" y="176" text-anchor="middle" font-weight="700" fill="#7FA8B5">4 JUN</text>
+        <text x="340" y="106" text-anchor="middle">RFE/RL</text>
+        <text x="340" y="93" text-anchor="middle" fill="#B9B3A6">Humphreys q.</text>
+        <circle cx="475" cy="120" r="6" fill="#7FA8B5"/>
+        <line x1="475" y1="120" x2="475" y2="86" stroke="#7FA8B5" stroke-width="1.2"/>
+        <text x="475" y="78" text-anchor="middle" font-weight="700" fill="#7FA8B5">11 JUN</text>
+        <text x="475" y="150" text-anchor="middle">France 24</text>
+        <text x="475" y="163" text-anchor="middle" fill="#B9B3A6">Marijan q.</text>
+        <circle cx="610" cy="120" r="7" fill="#C08D60"/>
+        <line x1="610" y1="120" x2="610" y2="152" stroke="#C08D60" stroke-width="1.4"/>
+        <text x="610" y="176" text-anchor="middle" font-weight="700" fill="#C08D60">8 JUL</text>
+        <text x="610" y="106" text-anchor="middle" font-weight="700" fill="#F4EFE3">Economist</text>
+        <text x="610" y="93" text-anchor="middle" fill="#B9B3A6">the anchor</text>
+        <circle cx="700" cy="120" r="6" fill="#F4EFE3"/>
+        <line x1="700" y1="120" x2="700" y2="86" stroke="#F4EFE3" stroke-width="1.2"/>
+        <text x="700" y="78" text-anchor="middle" font-weight="700" fill="#F4EFE3">~11 JUL</text>
+        <text x="700" y="150" text-anchor="middle">Repost</text>
+        <text x="700" y="163" text-anchor="middle" fill="#B9B3A6">+confidence</text>
+      </g>
+      <text x="40" y="215" font-size="9.5" fill="#B9B3A6">Teal = independent defense reporting · Bronze = primary anchor · Cream = origin imagery &amp; the inflating repost</text>
+    </svg>
+    <figcaption>Figure A · Source-emergence timeline. The phenomenon is corroborated across independent outlets; the <em>confidence</em> in the viral framing is an artifact of the last hop, not the reporting.</figcaption>
+  </figure>
+</section>
+
+<section id="evidence-tiers">
+  <h2>2. Confirmed, Plausible, or Hype</h2>
+
+  <p><em class="term">If a claim's tier cannot be stated, the claim cannot be defended — so every load-bearing statement in this paper is tagged.</em></p>
+
+  <p>A hostile analyst will not attack the trucks; the trucks are photographed. They will attack the leap from &ldquo;trucks exist&rdquo; to &ldquo;trucks defeat AI.&rdquo; The table below is the spine of the paper's credibility: it concedes everything that should be conceded, which is what earns the right to the findings that survive.</p>
+
+  <div class="wp7-tablewrap">
+    <table class="wp7-tiers">
+      <thead>
+        <tr><th style="width:19%">Tier</th><th style="width:47%">Claim</th><th style="width:34%">Basis / caveat</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="wp7-tier confirmed">Confirmed</span></td><td>KamAZ and Ural trucks wear two high-contrast schemes (straight zebra; organic swirl), white over dark green, covering body, cab, wheels and tires.</td><td class="wp7-basis">Imagery across The War Zone, RFE/RL, France 24, Defense Express, Militarnyi since ~31 May 2026.</td></tr>
+        <tr><td><span class="wp7-tier confirmed">Confirmed</span></td><td>Physical patterns <em>can</em> defeat deep-learning vision in the real world.</td><td class="wp7-basis">Eykholt et al. (CVPR 2018): black/white stickers → 84.8% misclassification in a moving-vehicle field test.</td></tr>
+        <tr><td><span class="wp7-tier confirmed">Confirmed</span></td><td>The analogous 2023 aircraft-tire tactic degraded U.S. computer-vision identification.</td><td class="wp7-basis">Schuyler Moore, then CENTCOM CTO, on record at CSIS, September 2024.</td></tr>
+        <tr><td><span class="wp7-tier confirmed">Confirmed</span></td><td>Thermal/IR and a human in the loop defeat visible-spectrum paint.</td><td class="wp7-basis">Near-universal analyst consensus; Brave1 states humans always authorize strikes.</td></tr>
+        <tr><td><span class="wp7-tier plausible">Plausible</span></td><td>The trucks' <em>purpose</em> is specifically anti-AI.</td><td class="wp7-basis">Analyst and mil-blogger inference. No Russian MoD statement.</td></tr>
+        <tr><td><span class="wp7-tier plausible">Plausible</span></td><td>The paint works by out-of-distribution confusion, not optimized attack.</td><td class="wp7-basis">Theoretically sound (Humphreys); not field-measured on these trucks.</td></tr>
+        <tr><td><span class="wp7-tier speculation">Speculation</span></td><td>The paint measurably degrades a real Ukrainian drone's targeting today.</td><td class="wp7-basis">No controlled test; no strike telemetry published. This is the inflated tip.</td></tr>
+        <tr><td><span class="wp7-tier speculation">Hype</span></td><td>Hand-painted stripes act as engineered adversarial examples or a durable counter.</td><td class="wp7-basis">Far more likely fragile out-of-distribution confusion; garish paint makes trucks <em>more</em> visible to eyes and thermal.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="engineering">
+  <h2>3. The Engineering</h2>
+
+  <p><em class="term">The literature says a detector can be fooled with paint; it also says it generally cannot be fooled with paint that was not computed.</em></p>
+
+  <h3>How the drone actually sees</h3>
+  <p>An AI-enabled strike drone runs a deep object detector — the YOLO family is the archetype for real-time inference on a small edge processor — that emits bounding boxes, class labels and confidence scores. Terminal guidance then locks onto a chosen detection and holds the aim point through the dive using optical-flow tracking. A human-in-the-loop system inserts an operator to confirm the target before or during that terminal phase. Each of those stages is a different thing to attack, and the paint plausibly bites at only one of them.</p>
+
+  <h3>The proof that paint can attack vision</h3>
+  <p>The adversarial-ML record is not ambiguous. Brown et al. (2017) built universal printable <em>adversarial patches</em> that force a chosen class regardless of scene. Eykholt et al. (2018) put black-and-white stickers on a real stop sign and caused targeted misclassification in 100% of lab images and 84.8% of frames from a moving vehicle. Thys, Van Ranst and Goedemé (2019) printed a patch that rendered a person invisible to a YOLOv2 detector. Vehicle-scale work — CAMOU, DAS, FCA — optimizes a texture across the whole three-dimensional surface of a car so it fails detection from many angles. The ceiling is real.</p>
+
+  <h3>Why the Russian floor is far below that ceiling</h3>
+  <p>Every one of those attacks was <em>computed</em> against a known model with gradient access. Hand-painted zebra stripes are not. Three gaps separate the two:</p>
+  <ul>
+    <li><strong>The optimization gap.</strong> Effective patches are the solution to an optimization problem; stripes are folk art. Naive patterns consistently underperform optimized ones in the literature.</li>
+    <li><strong>The physical-robustness gap.</strong> Even optimized patches decay under lighting, viewpoint, distance, motion blur and paint fidelity — and a drone diving from altitude sweeps through all of those at once.</li>
+    <li><strong>The transferability gap.</strong> Attacks crafted on one architecture transfer unreliably to others, and especially weakly from convolutional networks to transformer detectors. Ukraine fields heterogeneous, frequently-updated models, so one pattern is unlikely to generalize.</li>
+  </ul>
+  <p>The honest description of what the stripes most likely do is Todd Humphreys' own: they push the vehicle <em>out of the distribution</em> of the training images, so the model &ldquo;might not know what it is looking at.&rdquo; That is a genuine effect — and a fragile one. It collapses the moment zebra trucks enter the training set. Which is precisely why the Economist, and every serious analyst, calls the advantage temporary.</p>
+
+  <figure>
+    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Source Sans 3',system-ui,sans-serif" role="img" aria-label="The drone kill chain and where paint bites">
+      <rect width="760" height="300" fill="#0F2A44"/>
+      <text x="24" y="28" fill="#F4EFE3" font-size="12" font-weight="700" font-family="'JetBrains Mono',Menlo,monospace" letter-spacing="1">THE KILL CHAIN — AND WHERE PAINT BITES</text>
+      <g>
+        <rect x="30" y="52" width="160" height="150" rx="2" fill="#133150" stroke="#2E4A63"/>
+        <rect x="215" y="52" width="160" height="150" rx="2" fill="#133150" stroke="#2E4A63"/>
+        <rect x="400" y="52" width="160" height="150" rx="2" fill="#133150" stroke="#2E4A63"/>
+        <rect x="585" y="52" width="145" height="150" rx="2" fill="#133150" stroke="#2E4A63"/>
+        <path d="M190 127 L215 127" stroke="#B9B3A6" stroke-width="1.5" marker-end="url(#wp7ah)"/>
+        <path d="M375 127 L400 127" stroke="#B9B3A6" stroke-width="1.5" marker-end="url(#wp7ah)"/>
+        <path d="M560 127 L585 127" stroke="#B9B3A6" stroke-width="1.5" marker-end="url(#wp7ah)"/>
+      </g>
+      <defs><marker id="wp7ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#B9B3A6"/></marker></defs>
+      <g font-size="12.5" fill="#F4EFE3" text-anchor="middle" font-weight="700">
+        <text x="110" y="76">SEARCH</text>
+        <text x="295" y="76">DETECT / ID</text>
+        <text x="480" y="76">LOCK</text>
+        <text x="657" y="76">TERMINAL</text>
+      </g>
+      <g font-size="10" fill="#D9D3C6" text-anchor="middle">
+        <text x="110" y="100">Scan scene</text><text x="110" y="114">for candidates</text>
+        <text x="295" y="100">Classify object,</text><text x="295" y="114">score confidence</text>
+        <text x="480" y="100">Select box,</text><text x="480" y="114">begin tracking</text>
+        <text x="657" y="100">Optical-flow</text><text x="657" y="114">hold to impact</text>
+      </g>
+      <g>
+        <rect x="215" y="150" width="160" height="44" rx="2" fill="#C08D60" fill-opacity="0.16"/>
+        <text x="295" y="167" text-anchor="middle" font-size="9.5" font-weight="700" fill="#C08D60" font-family="'JetBrains Mono',Menlo,monospace">◄ PAINT BITES HERE</text>
+        <text x="295" y="184" text-anchor="middle" font-size="9" fill="#C08D60">OOD confusion drops confidence</text>
+      </g>
+      <g font-size="9" fill="#B9B3A6">
+        <text x="110" y="176" text-anchor="middle">weak effect</text>
+        <text x="480" y="167" text-anchor="middle">once locked,</text><text x="480" y="179" text-anchor="middle">stripes help less</text>
+        <text x="657" y="167" text-anchor="middle">no effect</text><text x="657" y="179" text-anchor="middle">on tracker</text>
+      </g>
+      <rect x="30" y="228" width="700" height="52" rx="2" fill="#7FA8B5" fill-opacity="0.12" stroke="#2E4A63"/>
+      <text x="46" y="248" font-size="9.5" font-weight="700" fill="#7FA8B5" font-family="'JetBrains Mono',Menlo,monospace" letter-spacing="1">DEFEATS THE PAINT ENTIRELY →</text>
+      <g font-size="10.5" fill="#7FA8B5" font-weight="600">
+        <text x="300" y="248">THERMAL / IR</text>
+        <text x="440" y="248">HUMAN-IN-THE-LOOP</text>
+        <text x="620" y="248">SAR / RF</text>
+      </g>
+      <text x="46" y="268" font-size="9.5" fill="#D9D3C6">A hot engine looks like a hot engine · an operator sees through the disguise instantly · radar does not read visible paint</text>
+    </svg>
+    <figcaption>Figure B · The zebra pattern most plausibly degrades the autonomous search/identification phase, not the endgame — and does nothing against a fused or human-supervised seeker.</figcaption>
+  </figure>
+</section>
+
+<section id="historical-hook">
+  <h2>4. The Historical Hook</h2>
+
+  <p><em class="term">Dazzle targeted a human estimator; this targets a machine one. The century-old analogy is elegant and imperfect — an analogy, never an equivalence.</em></p>
+
+  <p>In 1917 the marine artist Norman Wilkinson devised what the Royal Navy called <em>dazzle</em>: violent geometric paint on merchant hulls that made no attempt to hide the ship. A smoke-belching freighter cannot hide on open ocean. The point was to corrupt the <em>human</em> optical estimate of the ship's course, speed and range as a U-boat commander read it through a periscope rangefinder, so the torpedo went where the ship wasn't. Britain painted thousands of vessels; the United States over a thousand. Whether it ever measurably worked was contested then and is contested now — the most rigorous recent study (Lovell, Sharman and Meese, 2024) found only a small perceptual twist of roughly ten degrees.</p>
+
+  <p>The 2026 version swaps the estimator. A machine, not a submariner, now judges what the object is — and the paint tries to corrupt that judgment instead. That is a clean and genuinely useful frame. But it is loose in one way worth conceding up front: First World War dazzle attacked <em>geometric estimation</em> (heading and range); the zebra truck attacks <em>object classification</em>. Defense Express's critique — that Russia has borrowed the aesthetic while missing the mechanism — is fair on the physics, even if the broader anti-recognition intent is coherent.</p>
+
+  <figure>
+    <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" font-family="'Source Sans 3',system-ui,sans-serif" role="img" aria-label="Comparison of 1917 dazzle and 2026 zebra camouflage">
+      <rect width="760" height="210" fill="#0F2A44"/>
+      <line x1="380" y1="30" x2="380" y2="185" stroke="#2E4A63" stroke-width="1"/>
+      <text x="200" y="30" text-anchor="middle" font-family="'JetBrains Mono',Menlo,monospace" font-size="11" font-weight="700" fill="#F4EFE3" letter-spacing="1">1917 — DAZZLE</text>
+      <text x="565" y="30" text-anchor="middle" font-family="'JetBrains Mono',Menlo,monospace" font-size="11" font-weight="700" fill="#F4EFE3" letter-spacing="1">2026 — ZEBRA</text>
+      <g text-anchor="middle" font-size="11">
+        <text x="200" y="66" font-weight="700" fill="#F4EFE3">Human estimator</text>
+        <text x="200" y="84" fill="#B9B3A6" font-size="10">U-boat commander + rangefinder</text>
+        <text x="565" y="66" font-weight="700" fill="#F4EFE3">Machine estimator</text>
+        <text x="565" y="84" fill="#B9B3A6" font-size="10">Object detector on a drone</text>
+        <text x="200" y="118" font-weight="700" fill="#C08D60" font-size="10.5">Corrupts:</text>
+        <text x="200" y="134" fill="#D9D3C6" font-size="10.5">heading · speed · range</text>
+        <text x="565" y="118" font-weight="700" fill="#C08D60" font-size="10.5">Corrupts:</text>
+        <text x="565" y="134" fill="#D9D3C6" font-size="10.5">class · detection · confidence</text>
+        <text x="200" y="166" font-weight="700" fill="#7FA8B5" font-size="10.5">Beaten by:</text>
+        <text x="200" y="182" fill="#D9D3C6" font-size="10.5">radar</text>
+        <text x="565" y="166" font-weight="700" fill="#7FA8B5" font-size="10.5">Beaten by:</text>
+        <text x="565" y="182" fill="#D9D3C6" font-size="10.5">thermal · humans · retraining</text>
+      </g>
+    </svg>
+    <figcaption>Figure C · The same instinct — concede visibility, corrupt the estimate — aimed at two different cognitive tasks and beaten by two different technologies.</figcaption>
+  </figure>
+</section>
+
+<section id="cost-asymmetry">
+  <h2>5. The Real Story — Cost Asymmetry</h2>
+
+  <p><em class="term">&ldquo;AI adapts, so any advantage is temporary&rdquo; is directionally right and strategically incomplete — because it assumes the adaptation loop is fast, and a U.S. commander says it is not.</em></p>
+
+  <p>The best-sourced evidence in this whole file is not about trucks. From around August 2023, Russia parked strategic bombers with car tires laid on their wings. In September 2024, Schuyler Moore — CENTCOM's first Chief Technology Officer — confirmed on the record that the trick works: put tires on a wing and many computer-vision models stop recognizing the aircraft as a plane. But her operational point was sharper than the trick itself. If it takes six months to retrain the model, the adversary simply changes the pattern the next day and breaks it again — &ldquo;we're spending inordinate amounts of time on computer vision with very little to gain.&rdquo; Her prescription was to push labeling and retraining to the tactical edge so the loop closes in days.</p>
+
+  <p>That reframes the viral hedge. Yes, the model eventually learns the zebra. But &ldquo;eventually&rdquo; is a variable, and the cost of resetting it is a can of paint. Repainting iterates faster and cheaper than a field machine-learning pipeline in any regime where the seeker is vision-only, un-fused, and slowly updated. The correct statement is not &ldquo;AI wins&rdquo; but: <em>AI wins wherever fusion, human oversight, and fast edge-retraining are present; cheap paint can win transiently wherever they are absent.</em></p>
+
+  <figure>
+    <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" font-family="'Source Sans 3',system-ui,sans-serif" role="img" aria-label="Cost asymmetry between repainting a truck and retraining a detector">
+      <rect width="760" height="200" fill="#0F2A44"/>
+      <text x="24" y="28" fill="#F4EFE3" font-size="12" font-weight="700" font-family="'JetBrains Mono',Menlo,monospace" letter-spacing="1">COST ASYMMETRY — WHY THE CHEAP SIDE HOLDS A ROLLING EDGE</text>
+      <text x="40" y="66" font-size="11" font-weight="700" fill="#C08D60">ATTACKER · repaint the truck</text>
+      <rect x="40" y="74" width="46" height="20" fill="#C08D60"/>
+      <text x="98" y="89" font-size="10.5" fill="#D9D3C6">hours · a few dollars · anyone with a brush</text>
+      <text x="40" y="126" font-size="11" font-weight="700" fill="#7FA8B5">DEFENDER · re-learn the pattern</text>
+      <rect x="40" y="134" width="640" height="20" fill="#7FA8B5"/>
+      <text x="40" y="182" font-size="10.5" fill="#D9D3C6">collect field imagery → label → retrain → revalidate → push weights to the edge</text>
+      <text x="670" y="148" font-size="9" fill="#081C30" text-anchor="end" font-family="'JetBrains Mono',Menlo,monospace" font-weight="700">↔ up to 6 months (CENTCOM)</text>
+    </svg>
+    <figcaption>Figure D · The pattern is trivially defeatable in theory; the <em>loop that defeats it</em> is the expensive, slow thing. That is the asymmetry procurement has to buy against.</figcaption>
+  </figure>
+</section>
+
+<section id="procurement">
+  <h2>6. Doctrine and Procurement — for NATO, and Specifically for Canada</h2>
+
+  <p><em class="term">The episode is not a Russian breakthrough; it is a cheap stress-test that Western autonomy would fail in exactly the same way unless it is bought correctly.</em></p>
+
+  <p>Ukrainian operators are publicly unbothered — a regiment commander vowed to burn the trucks &ldquo;whatever they paint themselves as,&rdquo; and Brave1 insists a human authorizes every strike. The pressure driving the Russian experiment is Ukraine's mid-range strike campaign against logistics; the point of the paint is to buy a truck a few more kilometres of road. The strategic lesson travels the other way.</p>
+
+  <p>Canada is scaling loitering munitions and uncrewed systems quickly — Switchblade 300/600 to the Latvia brigade, the Army's Minerva Initiative for uncrewed systems, and the CALM and CADUC deep-strike concepts. Every one of those programs will field seekers that a thirty-dollar paint job is designed to spoof. The buy-side implications are concrete:</p>
+
+  <ol>
+    <li><strong>Require multi-sensor seekers, not vision-only.</strong> Mandate electro-optical plus thermal/IR fusion at acceptance. Visible-spectrum paint is defeated by heat; a vision-only munition is defeated by a brush.</li>
+    <li><strong>Mandate human-on-the-loop authorization</strong> for target confirmation. It is the single most robust counter to physical deception and to the international-humanitarian-law risk of a detector over-trained to strike a pattern.</li>
+    <li><strong>Demand edge-retrainable models and an organic labeling pipeline.</strong> Buy Moore's prescription directly: an update loop measured in days, not the six-month cycle that makes cheap paint a winning bet.</li>
+    <li><strong>Test automatic target recognition against adversarial and out-of-distribution inputs at acceptance.</strong> Dazzle, decoys, tire-tactics, and AI-designed textures belong in the acceptance suite, not in the after-action report.</li>
+    <li><strong>Treat any single-vendor, black-box, slowly-updated recognition system as a liability,</strong> not a feature. A model that cannot be retrained cedes the tempo to the adversary.</li>
+  </ol>
+
+  <aside class="standard">
+    <h4>What would change this assessment</h4>
+    <p>Three signals would move the zebra story from folk art to engineered threat: (1) a controlled test quantifying a confidence drop on a <em>named</em> detector; (2) verified strike footage showing lock-break attributable to paint; (3) either side shifting to thermal-only or fused seekers, or to <em>AI-designed</em> adversarial vehicle textures rather than hand-painted stripes. Watch for the third — it is the tell that the arms race has matured.</p>
+  </aside>
+</section>
+
+<section id="guardrails">
+  <h2>7. Guardrails</h2>
+
+  <p><em class="term">The paper leads with the findings that survive a hostile read, and names the weak links before an opponent can.</em></p>
+
+  <aside class="standard">
+    <h4>Hostile-read weak links, stated plainly</h4>
+    <p>The entire chain rests on social-media imagery plus expert inference; no quantitative field evidence exists. The expert most bullish on the tactic (Humphreys) still calls it short-lived. The most quotable skeptics (Defense Express; Wes O'Donnell) argue the mechanism is misunderstood. Individual photos are largely un-geolocated — treat them as illustrative, and stay alert to recycled or misattributed images, though none here are confirmed fake.</p>
+    <p>The Economist article is paywalled; its wording here is reconstructed from a verbatim republication and a faithful aggregator paraphrase, cross-confirmed by a third outlet. The Hornet munition's degree of autonomy is contested and its unit cost is reported across a wide range — and a human in the loop nullifies the paint regardless. Adversarial-ML results are lab- and simulation-heavy; their transfer to a diving munition against a moving, repainted truck under battlefield lighting is not established and should not be assumed.</p>
+  </aside>
+</section>
+
+<section id="sources">
+  <h2>8. Selected Sources</h2>
+  <ul>
+    <li><strong>The Economist.</strong> &ldquo;How to hide from killer drones.&rdquo; Science &amp; technology, 8 July 2026. <em>Primary anchor; paywalled; unsigned per house style.</em></li>
+    <li><strong>Newdick, Thomas.</strong> &ldquo;Russian Trucks Get 'Dazzle' Paint To Throw Off AI-Enabled Drones.&rdquo; The War Zone, 1 June 2026. <a href="https://www.twz.com/land/russian-trucks-get-dazzle-paint-to-throw-off-ai-enabled-drones">twz.com</a></li>
+    <li><strong>Chapple, Amos.</strong> &ldquo;Zebra Trucks: Why Russia Is Using 'Dazzle Camouflage' In Ukraine.&rdquo; RFE/RL, 4 June 2026. <em>Quotes T. Humphreys, G. De Cubber, Brave1.</em> <a href="https://www.rferl.org/">rferl.org</a></li>
+    <li><strong>France 24.</strong> &ldquo;Why Russian trucks in Ukraine are covered in 'zebra' camouflage.&rdquo; 11 June 2026. <em>Quotes J. Patton Rogers, B. Marijan.</em> <a href="https://www.france24.com/">france24.com</a></li>
+    <li><strong>Defense Express.</strong> &ldquo;Facing Ukrainian AI Drones, russia Experiments with WWI Dazzle Camouflage on KamAZ Trucks, But Misses Point Entirely.&rdquo; ~30 May 2026. <a href="https://en.defence-ua.com/">en.defence-ua.com</a></li>
+    <li><strong>Eykholt, K. et al.</strong> &ldquo;Robust Physical-World Attacks on Deep Learning Visual Classification.&rdquo; CVPR 2018. <em>84.8% field-test misclassification with black/white stickers.</em> <a href="https://arxiv.org/abs/1707.08945">arxiv.org/abs/1707.08945</a></li>
+    <li><strong>Brown, T. et al.</strong> &ldquo;Adversarial Patch.&rdquo; 2017. <a href="https://arxiv.org/abs/1712.09665">arxiv.org/abs/1712.09665</a></li>
+    <li><strong>Thys, S., Van Ranst, W., Goedemé, T.</strong> &ldquo;Fooling automated surveillance cameras: adversarial patches to attack person detection.&rdquo; CVPRW 2019. <a href="https://arxiv.org/abs/1904.08653">arxiv.org/abs/1904.08653</a></li>
+    <li><strong>Wang, D. et al.</strong> &ldquo;FCA: Learning a 3D Full-coverage Vehicle Camouflage for Multi-view Physical Adversarial Attack.&rdquo; AAAI 2022. <em>See also CAMOU; DAS.</em> <a href="https://arxiv.org/abs/2109.07193">arxiv.org/abs/2109.07193</a></li>
+    <li><strong>Moore, Schuyler.</strong> Remarks on adversarial computer vision (the aircraft-tire tactic), CSIS, September 2024. <em>Then CENTCOM CTO — the strongest on-record confirmation.</em> <a href="https://www.csis.org/">csis.org</a></li>
+    <li><strong>Lovell, P.G., Sharman, R.J., Meese, T.S.</strong> &ldquo;Dazzle camouflage: benefits and problems revealed.&rdquo; Royal Society Open Science 11(12):240624, December 2024. <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.240624">royalsocietypublishing.org</a></li>
+    <li><strong>Canadian Army Today / True North Strategic Review.</strong> Minerva Initiative, CALM and CADUC loitering-munition programs, 2025–2026.</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h2>Engage with this Working Paper</h2>
+  <p>Substantive comment, technical critique, and named response are welcomed. The Working Paper is maintained as a public version-controlled document on GitHub; the version above is the editorially-controlled v1.0. This paper distinguishes confirmed fact from inference and speculation throughout; estimates are labeled. It is analysis, not intelligence, and carries no classification.</p>
+  <div class="wp-card-actions">
+    <a class="btn" href="/engage/">Read Engagement Standards</a>
+    <a class="btn btn-bronze" href="mailto:editor@npsi.ca?subject=NPSI%20WP7%20Named%20Commentary">Submit Named Commentary</a>
+    <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site/issues">Open an Issue</a>
+    <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site/pulls">Pull Request</a>
+  </div>
+</section>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

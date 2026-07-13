@@ -3,11 +3,11 @@
   <defs>
     <style>
       .mh-mark { font-family: 'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, serif; font-weight: 600; letter-spacing: 0.22em; }
-      .mh-rule { stroke: #A47148; stroke-width: 0.75; fill: none; }
+      .mh-rule { stroke: #C08D60; stroke-width: 0.75; fill: none; }
     </style>
   </defs>
 
-  <text class="mh-mark" x="40" y="35" fill="#0E2B47" font-size="13">
+  <text class="mh-mark" x="40" y="35" fill="#F4EFE3" font-size="13">
     NORTH PACIFIC STRATEGY INITIATIVE
   </text>
 

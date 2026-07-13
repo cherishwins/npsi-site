@@ -8,90 +8,90 @@
       .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
     </style>
     <marker id="arr-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A47148"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
     </marker>
   </defs>
 
-  <rect width="900" height="540" fill="#FBF8EF"/>
+  <rect width="900" height="540" fill="#133150"/>
 
-  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE C · INDUSTRIAL OFFSET ARCHITECTURE</text>
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE C · INDUSTRIAL OFFSET ARCHITECTURE</text>
 
-  <line x1="40" y1="56" x2="860" y2="56" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
-  <line x1="450" y1="53" x2="450" y2="59" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="860" y1="52" x2="860" y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
 
-  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">Procurement as industrial policy.</text>
-  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">CPSP evaluation grid: 50% sustainment · 20% platform · 15% strategic-economic · 15% financial.</text>
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Procurement as industrial policy.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">CPSP evaluation grid: 50% sustainment · 20% platform · 15% strategic-economic · 15% financial.</text>
 
   <!-- Top: Procurement vehicle -->
   <g transform="translate(40, 144)">
-    <rect x="0" y="0" width="820" height="58" fill="#0E2B47"/>
-    <text x="20" y="22" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">PROCUREMENT VEHICLE</text>
-    <text x="20" y="44" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Canadian Patrol Submarine Project · CAD&#160;100&#160;billion total program · June 2026 decision</text>
-    <text x="800" y="44" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">CPSP · DIA</text>
+    <rect x="0" y="0" width="820" height="58" fill="#F4EFE3"/>
+    <text x="20" y="22" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">PROCUREMENT VEHICLE</text>
+    <text x="20" y="44" class="serif" font-weight="700" font-size="15" fill="#0F2A44">Canadian Patrol Submarine Project · CAD&#160;100&#160;billion total program · June 2026 decision</text>
+    <text x="800" y="44" class="mono" font-size="10" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">CPSP · DIA</text>
   </g>
 
   <!-- Down arrow -->
-  <line x1="450" y1="208" x2="450" y2="232" stroke="#A47148" stroke-width="1" marker-end="url(#arr-c)"/>
+  <line x1="450" y1="208" x2="450" y2="232" stroke="#C08D60" stroke-width="1" marker-end="url(#arr-c)"/>
 
   <!-- Middle: Korean consortium -->
   <g transform="translate(40, 240)">
-    <rect x="0" y="0" width="820" height="48" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="20" y="20" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">KOREAN CONSORTIUM</text>
-    <text x="20" y="38" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Hanwha Ocean &#160;+&#160; HD Hyundai Heavy Industries · KSS-III Batch-I variant</text>
+    <rect x="0" y="0" width="820" height="48" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="20" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">KOREAN CONSORTIUM</text>
+    <text x="20" y="38" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Hanwha Ocean &#160;+&#160; HD Hyundai Heavy Industries · KSS-III Batch-I variant</text>
   </g>
 
   <!-- Down arrow -->
-  <line x1="200" y1="294" x2="200" y2="318" stroke="#A47148" stroke-width="1" marker-end="url(#arr-c)"/>
-  <line x1="450" y1="294" x2="450" y2="318" stroke="#A47148" stroke-width="1" marker-end="url(#arr-c)"/>
-  <line x1="700" y1="294" x2="700" y2="318" stroke="#A47148" stroke-width="1" marker-end="url(#arr-c)"/>
+  <line x1="200" y1="294" x2="200" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#arr-c)"/>
+  <line x1="450" y1="294" x2="450" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#arr-c)"/>
+  <line x1="700" y1="294" x2="700" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#arr-c)"/>
 
-  <text x="450" y="312" class="mono" font-size="9" letter-spacing="1.5" fill="#A47148" text-anchor="middle">CANADIAN INDUSTRIAL DEPLOYMENT</text>
+  <text x="450" y="312" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">CANADIAN INDUSTRIAL DEPLOYMENT</text>
 
   <!-- Three-column offset cells -->
   <g transform="translate(40, 326)">
     <!-- Cell 1: Algoma Steel -->
-    <rect x="0" y="0" width="260" height="118" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="20" y="22" class="mono" font-size="9" letter-spacing="2" fill="#A47148">STEEL</text>
-    <text x="20" y="46" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Algoma Steel</text>
-    <text x="20" y="62" class="serif" font-style="italic" font-size="11" fill="#A47148">Sault Ste. Marie · Anishinaabe territory</text>
-    <line x1="20" y1="72" x2="240" y2="72" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="20" y="90" class="mono" font-size="11" font-weight="500" fill="#0E2B47">USD 250M / CAD 345M</text>
-    <text x="20" y="106" class="serif" font-size="11" fill="#1A1A1A">New beam mill · non-contingent</text>
+    <rect x="0" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="20" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">STEEL</text>
+    <text x="20" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Algoma Steel</text>
+    <text x="20" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Sault Ste. Marie · Anishinaabe territory</text>
+    <line x1="20" y1="72" x2="240" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="90" class="mono" font-size="11" font-weight="500" fill="#F4EFE3">USD 250M / CAD 345M</text>
+    <text x="20" y="106" class="serif" font-size="11" fill="#D9D3C6">New beam mill · non-contingent</text>
 
     <!-- Cell 2: APMA / Vehicles -->
-    <rect x="280" y="0" width="260" height="118" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="300" y="22" class="mono" font-size="9" letter-spacing="2" fill="#A47148">VEHICLES · APMA MOU 28 APR 2026</text>
-    <text x="300" y="46" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Hanwha × APMA</text>
-    <text x="300" y="62" class="serif" font-style="italic" font-size="11" fill="#A47148">Ontario auto-manufacturing centres</text>
-    <line x1="300" y1="72" x2="520" y2="72" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="300" y="90" class="serif" font-size="11" fill="#1A1A1A">K9 Thunder · Chunmoo · K10</text>
-    <text x="300" y="106" class="serif" font-size="11" fill="#1A1A1A">Redback IFV · AGVs</text>
+    <rect x="280" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="300" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">VEHICLES · APMA MOU 28 APR 2026</text>
+    <text x="300" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Hanwha × APMA</text>
+    <text x="300" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Ontario auto-manufacturing centres</text>
+    <line x1="300" y1="72" x2="520" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="300" y="90" class="serif" font-size="11" fill="#D9D3C6">K9 Thunder · Chunmoo · K10</text>
+    <text x="300" y="106" class="serif" font-size="11" fill="#D9D3C6">Redback IFV · AGVs</text>
 
     <!-- Cell 3: Existing partners -->
-    <rect x="560" y="0" width="260" height="118" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="580" y="22" class="mono" font-size="9" letter-spacing="2" fill="#A47148">EXISTING NETWORK · PRE-CPSP</text>
-    <text x="580" y="46" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Canadian-partner MOUs</text>
-    <text x="580" y="62" class="serif" font-style="italic" font-size="11" fill="#A47148">Design · integration · support</text>
-    <line x1="580" y1="72" x2="800" y2="72" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="580" y="90" class="serif" font-size="11" fill="#1A1A1A">CAE Montreal · Gastops Ottawa</text>
-    <text x="580" y="106" class="serif" font-size="11" fill="#1A1A1A">Curtiss-Wright INDAL Mississauga</text>
+    <rect x="560" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="580" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">EXISTING NETWORK · PRE-CPSP</text>
+    <text x="580" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Canadian-partner MOUs</text>
+    <text x="580" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Design · integration · support</text>
+    <line x1="580" y1="72" x2="800" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="580" y="90" class="serif" font-size="11" fill="#D9D3C6">CAE Montreal · Gastops Ottawa</text>
+    <text x="580" y="106" class="serif" font-size="11" fill="#D9D3C6">Curtiss-Wright INDAL Mississauga</text>
   </g>
 
   <!-- Bottom narrative bar -->
   <g transform="translate(40, 472)">
-    <rect x="0" y="0" width="820" height="38" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="20" y="16" class="mono" font-size="9" letter-spacing="2" fill="#A47148">PRECEDENT</text>
-    <text x="20" y="32" class="serif" font-style="italic" font-size="12" fill="#1A1A1A">Hanwha Melbourne factory (2024) · 2-year build · ~1,000 employees · model is replicable in Canada.</text>
+    <rect x="0" y="0" width="820" height="38" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="16" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">PRECEDENT</text>
+    <text x="20" y="32" class="serif" font-style="italic" font-size="12" fill="#D9D3C6">Hanwha Melbourne factory (2024) · 2-year build · ~1,000 employees · model is replicable in Canada.</text>
   </g>
 
   <!-- Footer -->
-  <line x1="40"  y1="520" x2="860" y2="520" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="516" x2="40"  y2="524" stroke="#A47148" stroke-width="1"/>
-  <line x1="450" y1="517" x2="450" y2="523" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="860" y1="516" x2="860" y2="524" stroke="#A47148" stroke-width="1"/>
+  <line x1="40"  y1="520" x2="860" y2="520" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="516" x2="40"  y2="524" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="517" x2="450" y2="523" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="516" x2="860" y2="524" stroke="#C08D60" stroke-width="1"/>
 
-  <text x="40"  y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">SOURCES · CTV NEWS 29 APR 2026 · APMA · HANWHA AEROSPACE</text>
-  <text x="860" y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-003 · §4</text>
+  <text x="40"  y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">SOURCES · CTV NEWS 29 APR 2026 · APMA · HANWHA AEROSPACE</text>
+  <text x="860" y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · §4</text>
 </svg>
