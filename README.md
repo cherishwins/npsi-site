@@ -50,12 +50,14 @@ Full discipline in [`CLAUDE.md`](./CLAUDE.md).
 
 ## Visual identity
 
-| Token | Hex | Role |
-|---|---|---|
-| `--navy`   | `#0E2B47` | **Pacific Navy** &nbsp;·&nbsp; primary ink |
-| `--bronze` | `#A47148` | **Treaty Bronze** &nbsp;·&nbsp; accent only; never used as fill; ≤5% of any composition |
-| `--teal`   | `#3D6A78` | **Maritime Teal** &nbsp;·&nbsp; section markers, monospace metadata |
-| `--cream`  | `#F4EFE3` | **Document Cream** &nbsp;·&nbsp; page background; never pure white |
+Dark-first since July 2026: the same four-colour brand, inverted — Document Cream is the ink, Pacific Navy is the paper. Print re-inverts to the light palette.
+
+| Token | Screen (dark) | Print (light) | Role |
+|---|---|---|---|
+| `--navy`   | `#F4EFE3` | `#0E2B47` | **Primary ink** — wordmark, headings, dominant typography |
+| `--bronze` | `#C08D60` | `#A47148` | **Treaty Bronze** &nbsp;·&nbsp; accent only; never used as fill; ≤5% of any composition |
+| `--teal`   | `#7FA8B5` | `#3D6A78` | **Maritime Teal** &nbsp;·&nbsp; section markers, monospace metadata |
+| `--cream`  | `#081C30` | `#FFFFFF` | **Page background** — deep Pacific Navy on screen |
 
 Three typefaces: **Source Serif 4** (display + body), **JetBrains Mono** (metadata + KPI numbers), **Noto Serif KR / Noto Sans KR** (Korean script).
 

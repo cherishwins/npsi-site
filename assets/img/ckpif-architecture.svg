@@ -2,16 +2,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1700" preserveAspectRatio="xMidYMin meet">
   <defs>
     <style>
-      .bg { fill: #F4EFE3; }
-      .ink { fill: #1A1A1A; }
-      .navy { fill: #0E2B47; }
-      .navy-stroke { stroke: #0E2B47; }
-      .bronze { fill: #A47148; }
-      .bronze-stroke { stroke: #A47148; }
-      .teal { fill: #3D6A78; }
-      .teal-stroke { stroke: #3D6A78; }
-      .paper { fill: #FFFFFF; }
-      .ghost { fill: #E8E0CE; }
+      .bg { fill: #0F2A44; }
+      .ink { fill: #D9D3C6; }
+      .navy { fill: #F4EFE3; }
+      .navy-stroke { stroke: #F4EFE3; }
+      .bronze { fill: #C08D60; }
+      .bronze-stroke { stroke: #C08D60; }
+      .teal { fill: #7FA8B5; }
+      .teal-stroke { stroke: #7FA8B5; }
+      .paper { fill: #133150; }
+      .ghost { fill: #12314F; }
 
       .h-mark { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-weight: 600; letter-spacing: 0.14em; }
       .h-section { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-weight: 600; letter-spacing: 0.1em; }
@@ -20,24 +20,24 @@
       .body-it { font-family: 'Source Serif 4', 'EB Garamond', Georgia, serif; font-style: italic; }
       .mono { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, monospace; }
 
-      .arrow { stroke: #0E2B47; stroke-width: 1.4; fill: none; marker-end: url(#arrowhead); }
-      .arrow-bronze { stroke: #A47148; stroke-width: 1.4; fill: none; marker-end: url(#arrowhead-bronze); }
-      .arrow-teal { stroke: #3D6A78; stroke-width: 1.2; fill: none; stroke-dasharray: 4 3; marker-end: url(#arrowhead-teal); }
+      .arrow { stroke: #F4EFE3; stroke-width: 1.4; fill: none; marker-end: url(#arrowhead); }
+      .arrow-bronze { stroke: #C08D60; stroke-width: 1.4; fill: none; marker-end: url(#arrowhead-bronze); }
+      .arrow-teal { stroke: #7FA8B5; stroke-width: 1.2; fill: none; stroke-dasharray: 4 3; marker-end: url(#arrowhead-teal); }
 
-      .box { fill: #FFFFFF; stroke: #0E2B47; stroke-width: 1.25; }
-      .box-bronze { fill: #FFFFFF; stroke: #A47148; stroke-width: 1.25; }
-      .box-fill-navy { fill: #0E2B47; stroke: #0E2B47; stroke-width: 1.25; }
-      .box-fill-bronze { fill: #A47148; stroke: #A47148; stroke-width: 1.25; }
-      .box-ghost { fill: #FFFFFF; stroke: #C4B79B; stroke-width: 1; stroke-dasharray: 3 2; }
+      .box { fill: #133150; stroke: #F4EFE3; stroke-width: 1.25; }
+      .box-bronze { fill: #133150; stroke: #C08D60; stroke-width: 1.25; }
+      .box-fill-navy { fill: #F4EFE3; stroke: #F4EFE3; stroke-width: 1.25; }
+      .box-fill-bronze { fill: #C08D60; stroke: #C08D60; stroke-width: 1.25; }
+      .box-ghost { fill: #133150; stroke: #2E4A63; stroke-width: 1; stroke-dasharray: 3 2; }
     </style>
     <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0E2B47"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F4EFE3"/>
     </marker>
     <marker id="arrowhead-bronze" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A47148"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
     </marker>
     <marker id="arrowhead-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3D6A78"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7FA8B5"/>
     </marker>
   </defs>
 
@@ -45,64 +45,64 @@
   <rect class="bg" x="0" y="0" width="1400" height="1700"/>
 
   <!-- Masthead -->
-  <text class="h-mark" x="80" y="70" fill="#0E2B47" font-size="13">NORTH PACIFIC STRATEGY INITIATIVE</text>
+  <text class="h-mark" x="80" y="70" fill="#F4EFE3" font-size="13">NORTH PACIFIC STRATEGY INITIATIVE</text>
   <line class="bronze-stroke" x1="80" y1="85" x2="1320" y2="85" stroke-width="0.75"/>
-  <text class="mono" x="1320" y="70" text-anchor="end" fill="#3D6A78" font-size="10">WORKING PAPER NO. 1  ·  FIGURE A  ·  v1.0</text>
+  <text class="mono" x="1320" y="70" text-anchor="end" fill="#7FA8B5" font-size="10">WORKING PAPER NO. 1  ·  FIGURE A  ·  v1.0</text>
 
   <!-- Title -->
-  <text class="h-section" x="80" y="135" fill="#0E2B47" font-size="26">CKPIF — Canada–Korea Pacific Infrastructure Facility</text>
-  <text class="body-it" x="80" y="167" fill="#A47148" font-size="16">A Defensive Bilateral Sovereign Co-Issuance Architecture</text>
+  <text class="h-section" x="80" y="135" fill="#F4EFE3" font-size="26">CKPIF — Canada–Korea Pacific Infrastructure Facility</text>
+  <text class="body-it" x="80" y="167" fill="#C08D60" font-size="16">A Defensive Bilateral Sovereign Co-Issuance Architecture</text>
 
   <!-- ========================== Layer 1: Sovereigns ========================== -->
-  <text class="h-section" x="80" y="220" fill="#3D6A78" font-size="11">I.   SOVEREIGN GUARANTORS</text>
+  <text class="h-section" x="80" y="220" fill="#7FA8B5" font-size="11">I.   SOVEREIGN GUARANTORS</text>
   <line class="teal-stroke" x1="80" y1="232" x2="1320" y2="232" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <!-- Canada -->
   <g transform="translate(180, 260)">
     <rect class="box" x="0" y="0" width="380" height="100" rx="2"/>
-    <text class="h-item" x="20" y="32" fill="#0E2B47" font-size="16">Government of Canada</text>
-    <text class="body" x="20" y="56" fill="#1A1A1A" font-size="12">Several guarantee · 60% indicative weighting</text>
-    <text class="body" x="20" y="74" fill="#1A1A1A" font-size="12">AAA / Aaa  ·  Department of Finance  ·  CIRNAC</text>
-    <text class="mono" x="20" y="92" fill="#A47148" font-size="10">CDS 5Y ~6 BP  ·  REPO ELIGIBLE GLOBALLY</text>
+    <text class="h-item" x="20" y="32" fill="#F4EFE3" font-size="16">Government of Canada</text>
+    <text class="body" x="20" y="56" fill="#D9D3C6" font-size="12">Several guarantee · 60% indicative weighting</text>
+    <text class="body" x="20" y="74" fill="#D9D3C6" font-size="12">AAA / Aaa  ·  Department of Finance  ·  CIRNAC</text>
+    <text class="mono" x="20" y="92" fill="#C08D60" font-size="10">CDS 5Y ~6 BP  ·  REPO ELIGIBLE GLOBALLY</text>
   </g>
 
   <!-- Korea -->
   <g transform="translate(840, 260)">
     <rect class="box" x="0" y="0" width="380" height="100" rx="2"/>
-    <text class="h-item" x="20" y="32" fill="#0E2B47" font-size="16">Republic of Korea</text>
-    <text class="body" x="20" y="56" fill="#1A1A1A" font-size="12">Several guarantee · 40% indicative weighting</text>
-    <text class="body" x="20" y="74" fill="#1A1A1A" font-size="12">Aa2  ·  MOEF  ·  MOTIE</text>
-    <text class="mono" x="20" y="92" fill="#A47148" font-size="10">CDS 5Y ~30 BP  ·  KTB CURVE 30Y</text>
+    <text class="h-item" x="20" y="32" fill="#F4EFE3" font-size="16">Republic of Korea</text>
+    <text class="body" x="20" y="56" fill="#D9D3C6" font-size="12">Several guarantee · 40% indicative weighting</text>
+    <text class="body" x="20" y="74" fill="#D9D3C6" font-size="12">Aa2  ·  MOEF  ·  MOTIE</text>
+    <text class="mono" x="20" y="92" fill="#C08D60" font-size="10">CDS 5Y ~30 BP  ·  KTB CURVE 30Y</text>
   </g>
 
   <!-- BoC-BoK swap line connector -->
   <line class="arrow-bronze" x1="560" y1="310" x2="840" y2="310"/>
   <line class="arrow-bronze" x1="840" y1="310" x2="560" y2="310"/>
   <rect class="bg" x="630" y="298" width="140" height="22"/>
-  <text class="body-it" x="700" y="314" text-anchor="middle" fill="#A47148" font-size="11">BoC–BoK standing swap line  ·  2017, no expiry</text>
+  <text class="body-it" x="700" y="314" text-anchor="middle" fill="#C08D60" font-size="11">BoC–BoK standing swap line  ·  2017, no expiry</text>
 
   <!-- ========================== Layer 2: Issuer ========================== -->
-  <text class="h-section" x="80" y="430" fill="#3D6A78" font-size="11">II.   SUPRANATIONAL ISSUER</text>
+  <text class="h-section" x="80" y="430" fill="#7FA8B5" font-size="11">II.   SUPRANATIONAL ISSUER</text>
   <line class="teal-stroke" x1="80" y1="442" x2="1320" y2="442" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <!-- Down-arrows from sovereigns to issuer -->
   <line class="arrow" x1="370" y1="365" x2="640" y2="475"/>
   <line class="arrow" x1="1030" y1="365" x2="760" y2="475"/>
-  <text class="body-it" x="430" y="425" fill="#0E2B47" font-size="11">treaty contributions · callable guarantees</text>
-  <text class="body-it" x="970" y="425" text-anchor="end" fill="#0E2B47" font-size="11">treaty contributions · callable guarantees</text>
+  <text class="body-it" x="430" y="425" fill="#F4EFE3" font-size="11">treaty contributions · callable guarantees</text>
+  <text class="body-it" x="970" y="425" text-anchor="end" fill="#F4EFE3" font-size="11">treaty contributions · callable guarantees</text>
 
   <!-- CKPIF SPV -->
   <g transform="translate(440, 475)">
     <rect class="box-fill-navy" x="0" y="0" width="520" height="130" rx="2"/>
-    <text class="h-item" x="260" y="35" text-anchor="middle" fill="#F4EFE3" font-size="20">CKPIF</text>
-    <text class="body-it" x="260" y="58" text-anchor="middle" fill="#F4EFE3" font-size="13">Canada–Korea Pacific Infrastructure Facility</text>
-    <line x1="40" y1="72" x2="480" y2="72" stroke="#A47148" stroke-width="0.5"/>
-    <text class="body" x="260" y="94" text-anchor="middle" fill="#F4EFE3" font-size="12">Treaty-based supranational  ·  50/50 ownership  ·  Luxembourg seat</text>
-    <text class="body" x="260" y="112" text-anchor="middle" fill="#F4EFE3" font-size="12">English law  ·  LCIA arbitration  ·  ICMA enhanced CACs</text>
+    <text class="h-item" x="260" y="35" text-anchor="middle" fill="#0F2A44" font-size="20">CKPIF</text>
+    <text class="body-it" x="260" y="58" text-anchor="middle" fill="#0F2A44" font-size="13">Canada–Korea Pacific Infrastructure Facility</text>
+    <line x1="40" y1="72" x2="480" y2="72" stroke="#C08D60" stroke-width="0.5"/>
+    <text class="body" x="260" y="94" text-anchor="middle" fill="#0F2A44" font-size="12">Treaty-based supranational  ·  50/50 ownership  ·  Luxembourg seat</text>
+    <text class="body" x="260" y="112" text-anchor="middle" fill="#0F2A44" font-size="12">English law  ·  LCIA arbitration  ·  ICMA enhanced CACs</text>
   </g>
 
   <!-- ========================== Layer 3: Tranches ========================== -->
-  <text class="h-section" x="80" y="675" fill="#3D6A78" font-size="11">III.   ISSUANCE TRANCHES — INDICATIVE PROGRAMME US$25–40 BN OVER 5–7 YEARS</text>
+  <text class="h-section" x="80" y="675" fill="#7FA8B5" font-size="11">III.   ISSUANCE TRANCHES — INDICATIVE PROGRAMME US$25–40 BN OVER 5–7 YEARS</text>
   <line class="teal-stroke" x1="80" y1="687" x2="1320" y2="687" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <!-- Down-arrow from CKPIF to tranches -->
@@ -112,149 +112,149 @@
   <g transform="translate(80, 715)">
     <rect class="box" x="0" y="0" width="290" height="170" rx="2"/>
     <rect class="box-fill-navy" x="0" y="0" width="290" height="32"/>
-    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#F4EFE3" font-size="13">SERIES A  ·  USD BENCHMARK</text>
-    <text class="body" x="20" y="58" fill="#1A1A1A" font-size="12">30-year fixed coupon</text>
-    <text class="body" x="20" y="78" fill="#1A1A1A" font-size="12">Inaugural US$3–5 bn</text>
-    <text class="body" x="20" y="98" fill="#1A1A1A" font-size="12">Spread: +50 to +80 bp / 30Y UST</text>
-    <text class="body" x="20" y="118" fill="#1A1A1A" font-size="12">English law  ·  LSE listed</text>
-    <text class="body" x="20" y="138" fill="#1A1A1A" font-size="12">Buyers: global SWFs, EU pensions,</text>
-    <text class="body" x="20" y="156" fill="#1A1A1A" font-size="12">life insurers, GCC</text>
+    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#0F2A44" font-size="13">SERIES A  ·  USD BENCHMARK</text>
+    <text class="body" x="20" y="58" fill="#D9D3C6" font-size="12">30-year fixed coupon</text>
+    <text class="body" x="20" y="78" fill="#D9D3C6" font-size="12">Inaugural US$3–5 bn</text>
+    <text class="body" x="20" y="98" fill="#D9D3C6" font-size="12">Spread: +50 to +80 bp / 30Y UST</text>
+    <text class="body" x="20" y="118" fill="#D9D3C6" font-size="12">English law  ·  LSE listed</text>
+    <text class="body" x="20" y="138" fill="#D9D3C6" font-size="12">Buyers: global SWFs, EU pensions,</text>
+    <text class="body" x="20" y="156" fill="#D9D3C6" font-size="12">life insurers, GCC</text>
   </g>
 
   <!-- Tranche B — CAD parallel -->
   <g transform="translate(395, 715)">
     <rect class="box" x="0" y="0" width="290" height="170" rx="2"/>
     <rect class="box-fill-navy" x="0" y="0" width="290" height="32"/>
-    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#F4EFE3" font-size="13">SERIES B  ·  CAD PARALLEL</text>
-    <text class="body" x="20" y="58" fill="#1A1A1A" font-size="12">30-year fixed</text>
-    <text class="body" x="20" y="78" fill="#1A1A1A" font-size="12">Inaugural CAD 1.5–2 bn</text>
-    <text class="body" x="20" y="98" fill="#1A1A1A" font-size="12">Spread: ref. 30Y GoC</text>
-    <text class="body" x="20" y="118" fill="#1A1A1A" font-size="12">English law  ·  TSX cross-listed</text>
-    <text class="body" x="20" y="138" fill="#1A1A1A" font-size="12">Buyers: CPP, Maple 8, life insurers,</text>
-    <text class="body" x="20" y="156" fill="#1A1A1A" font-size="12">domestic ALM matching</text>
+    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#0F2A44" font-size="13">SERIES B  ·  CAD PARALLEL</text>
+    <text class="body" x="20" y="58" fill="#D9D3C6" font-size="12">30-year fixed</text>
+    <text class="body" x="20" y="78" fill="#D9D3C6" font-size="12">Inaugural CAD 1.5–2 bn</text>
+    <text class="body" x="20" y="98" fill="#D9D3C6" font-size="12">Spread: ref. 30Y GoC</text>
+    <text class="body" x="20" y="118" fill="#D9D3C6" font-size="12">English law  ·  TSX cross-listed</text>
+    <text class="body" x="20" y="138" fill="#D9D3C6" font-size="12">Buyers: CPP, Maple 8, life insurers,</text>
+    <text class="body" x="20" y="156" fill="#D9D3C6" font-size="12">domestic ALM matching</text>
   </g>
 
   <!-- Tranche C — KRW parallel -->
   <g transform="translate(710, 715)">
     <rect class="box" x="0" y="0" width="290" height="170" rx="2"/>
     <rect class="box-fill-navy" x="0" y="0" width="290" height="32"/>
-    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#F4EFE3" font-size="13">SERIES C  ·  KRW PARALLEL</text>
-    <text class="body" x="20" y="58" fill="#1A1A1A" font-size="12">30-year fixed</text>
-    <text class="body" x="20" y="78" fill="#1A1A1A" font-size="12">Inaugural KRW 1.5–2 tn</text>
-    <text class="body" x="20" y="98" fill="#1A1A1A" font-size="12">Spread: ref. 30Y KTB</text>
-    <text class="body" x="20" y="118" fill="#1A1A1A" font-size="12">English law  ·  KRX cross-listed</text>
-    <text class="body" x="20" y="138" fill="#1A1A1A" font-size="12">Buyers: NPS, KIC, Korea Post,</text>
-    <text class="body" x="20" y="156" fill="#1A1A1A" font-size="12">life insurers (IFRS 17)</text>
+    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#0F2A44" font-size="13">SERIES C  ·  KRW PARALLEL</text>
+    <text class="body" x="20" y="58" fill="#D9D3C6" font-size="12">30-year fixed</text>
+    <text class="body" x="20" y="78" fill="#D9D3C6" font-size="12">Inaugural KRW 1.5–2 tn</text>
+    <text class="body" x="20" y="98" fill="#D9D3C6" font-size="12">Spread: ref. 30Y KTB</text>
+    <text class="body" x="20" y="118" fill="#D9D3C6" font-size="12">English law  ·  KRX cross-listed</text>
+    <text class="body" x="20" y="138" fill="#D9D3C6" font-size="12">Buyers: NPS, KIC, Korea Post,</text>
+    <text class="body" x="20" y="156" fill="#D9D3C6" font-size="12">life insurers (IFRS 17)</text>
   </g>
 
   <!-- Tranche I — Indigenous -->
   <g transform="translate(1025, 715)">
     <rect class="box-bronze" x="0" y="0" width="290" height="170" rx="2"/>
     <rect class="box-fill-bronze" x="0" y="0" width="290" height="32"/>
-    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#F4EFE3" font-size="13">SERIES I  ·  INDIGENOUS LP</text>
-    <text class="body" x="20" y="58" fill="#1A1A1A" font-size="12">10–15% of programme value</text>
-    <text class="body" x="20" y="78" fill="#1A1A1A" font-size="12">Pari passu coupon &amp; principal</text>
-    <text class="body" x="20" y="98" fill="#1A1A1A" font-size="12">+25 bp ratchet if &lt;10% maintained</text>
-    <text class="body" x="20" y="118" fill="#1A1A1A" font-size="12">90% CIB IEI · 10% own-source / FILGP</text>
-    <text class="body" x="20" y="138" fill="#1A1A1A" font-size="12">Pacific Corridor Indigenous LP</text>
-    <text class="body" x="20" y="156" fill="#1A1A1A" font-size="12">Board: First Nations along corridor</text>
+    <text class="h-item" x="145" y="22" text-anchor="middle" fill="#0F2A44" font-size="13">SERIES I  ·  INDIGENOUS LP</text>
+    <text class="body" x="20" y="58" fill="#D9D3C6" font-size="12">10–15% of programme value</text>
+    <text class="body" x="20" y="78" fill="#D9D3C6" font-size="12">Pari passu coupon &amp; principal</text>
+    <text class="body" x="20" y="98" fill="#D9D3C6" font-size="12">+25 bp ratchet if &lt;10% maintained</text>
+    <text class="body" x="20" y="118" fill="#D9D3C6" font-size="12">90% CIB IEI · 10% own-source / FILGP</text>
+    <text class="body" x="20" y="138" fill="#D9D3C6" font-size="12">Pacific Corridor Indigenous LP</text>
+    <text class="body" x="20" y="156" fill="#D9D3C6" font-size="12">Board: First Nations along corridor</text>
   </g>
 
   <!-- ========================== Layer 4: Derivatives ========================== -->
-  <text class="h-section" x="80" y="950" fill="#3D6A78" font-size="11">IV.   DERIVATIVE OVERLAY  ·  2002 ISDA  ·  ENGLISH-LAW CSA  ·  DAILY-MARGINED</text>
+  <text class="h-section" x="80" y="950" fill="#7FA8B5" font-size="11">IV.   DERIVATIVE OVERLAY  ·  2002 ISDA  ·  ENGLISH-LAW CSA  ·  DAILY-MARGINED</text>
   <line class="teal-stroke" x1="80" y1="962" x2="1320" y2="962" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <g transform="translate(80, 990)">
     <rect class="box-ghost" x="0" y="0" width="1240" height="100" rx="2"/>
-    <text class="h-item" x="30" y="32" fill="#0E2B47" font-size="13">Cross-Currency Swaps</text>
-    <text class="body" x="30" y="52" fill="#1A1A1A" font-size="11">USD ↔ CAD  ·  USD ↔ KRW  ·  CAD ↔ KRW</text>
-    <text class="body" x="30" y="70" fill="#1A1A1A" font-size="11">G-SIB counterparties only</text>
-    <text class="body" x="30" y="86" fill="#1A1A1A" font-size="11">Eligible collateral: UST, Bunds, JGBs, GoC, KTB</text>
+    <text class="h-item" x="30" y="32" fill="#F4EFE3" font-size="13">Cross-Currency Swaps</text>
+    <text class="body" x="30" y="52" fill="#D9D3C6" font-size="11">USD ↔ CAD  ·  USD ↔ KRW  ·  CAD ↔ KRW</text>
+    <text class="body" x="30" y="70" fill="#D9D3C6" font-size="11">G-SIB counterparties only</text>
+    <text class="body" x="30" y="86" fill="#D9D3C6" font-size="11">Eligible collateral: UST, Bunds, JGBs, GoC, KTB</text>
 
     <line class="teal-stroke" x1="320" y1="15" x2="320" y2="85" stroke-width="0.5"/>
 
-    <text class="h-item" x="345" y="32" fill="#0E2B47" font-size="13">Interest-Rate Swaps</text>
-    <text class="body" x="345" y="52" fill="#1A1A1A" font-size="11">SOFR  ·  CORRA  ·  KRW IRS</text>
-    <text class="body" x="345" y="70" fill="#1A1A1A" font-size="11">Fixed-to-floating conversion</text>
-    <text class="body" x="345" y="86" fill="#1A1A1A" font-size="11">Cleared via LCH SwapClear</text>
+    <text class="h-item" x="345" y="32" fill="#F4EFE3" font-size="13">Interest-Rate Swaps</text>
+    <text class="body" x="345" y="52" fill="#D9D3C6" font-size="11">SOFR  ·  CORRA  ·  KRW IRS</text>
+    <text class="body" x="345" y="70" fill="#D9D3C6" font-size="11">Fixed-to-floating conversion</text>
+    <text class="body" x="345" y="86" fill="#D9D3C6" font-size="11">Cleared via LCH SwapClear</text>
 
     <line class="teal-stroke" x1="630" y1="15" x2="630" y2="85" stroke-width="0.5"/>
 
-    <text class="h-item" x="655" y="32" fill="#0E2B47" font-size="13">Basis &amp; Inflation Swaps</text>
-    <text class="body" x="655" y="52" fill="#1A1A1A" font-size="11">SOFR–CORRA basis  ·  SOFR–KRW IRS basis</text>
-    <text class="body" x="655" y="70" fill="#1A1A1A" font-size="11">CAD-CPI  ·  KRW-CPI (optional)</text>
-    <text class="body" x="655" y="86" fill="#1A1A1A" font-size="11">Pension-fund matching tranche</text>
+    <text class="h-item" x="655" y="32" fill="#F4EFE3" font-size="13">Basis &amp; Inflation Swaps</text>
+    <text class="body" x="655" y="52" fill="#D9D3C6" font-size="11">SOFR–CORRA basis  ·  SOFR–KRW IRS basis</text>
+    <text class="body" x="655" y="70" fill="#D9D3C6" font-size="11">CAD-CPI  ·  KRW-CPI (optional)</text>
+    <text class="body" x="655" y="86" fill="#D9D3C6" font-size="11">Pension-fund matching tranche</text>
 
     <line class="teal-stroke" x1="940" y1="15" x2="940" y2="85" stroke-width="0.5"/>
 
-    <text class="h-item" x="965" y="32" fill="#0E2B47" font-size="13">Sovereign CDS</text>
-    <text class="body" x="965" y="52" fill="#1A1A1A" font-size="11">Reference: CKPIF, Canada, Korea</text>
-    <text class="body" x="965" y="70" fill="#1A1A1A" font-size="11">2014 ISDA Credit Definitions</text>
-    <text class="body" x="965" y="86" fill="#1A1A1A" font-size="11">Auction settlement</text>
+    <text class="h-item" x="965" y="32" fill="#F4EFE3" font-size="13">Sovereign CDS</text>
+    <text class="body" x="965" y="52" fill="#D9D3C6" font-size="11">Reference: CKPIF, Canada, Korea</text>
+    <text class="body" x="965" y="70" fill="#D9D3C6" font-size="11">2014 ISDA Credit Definitions</text>
+    <text class="body" x="965" y="86" fill="#D9D3C6" font-size="11">Auction settlement</text>
   </g>
 
   <!-- ========================== Layer 5: KPI Step Coupon ========================== -->
-  <text class="h-section" x="80" y="1155" fill="#3D6A78" font-size="11">V.   KPI-LINKED COUPON ARCHITECTURE  ·  ICMA SLB PRINCIPLES  ·  CAP ±100 BP AGGREGATE</text>
+  <text class="h-section" x="80" y="1155" fill="#7FA8B5" font-size="11">V.   KPI-LINKED COUPON ARCHITECTURE  ·  ICMA SLB PRINCIPLES  ·  CAP ±100 BP AGGREGATE</text>
   <line class="teal-stroke" x1="80" y1="1167" x2="1320" y2="1167" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <g transform="translate(80, 1195)">
     <rect class="box" x="0" y="0" width="1240" height="160" rx="2"/>
-    <line x1="0" y1="36" x2="1240" y2="36" stroke="#0E2B47" stroke-width="0.5"/>
-    <text class="h-item" x="20" y="24" fill="#0E2B47" font-size="11">KPI</text>
-    <text class="h-item" x="500" y="24" fill="#0E2B47" font-size="11">TRIGGER</text>
-    <text class="h-item" x="700" y="24" fill="#0E2B47" font-size="11">VERIFIER</text>
-    <text class="h-item" x="1080" y="24" fill="#0E2B47" font-size="11">COUPON IMPACT</text>
+    <line x1="0" y1="36" x2="1240" y2="36" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text class="h-item" x="20" y="24" fill="#F4EFE3" font-size="11">KPI</text>
+    <text class="h-item" x="500" y="24" fill="#F4EFE3" font-size="11">TRIGGER</text>
+    <text class="h-item" x="700" y="24" fill="#F4EFE3" font-size="11">VERIFIER</text>
+    <text class="h-item" x="1080" y="24" fill="#F4EFE3" font-size="11">COUPON IMPACT</text>
 
-    <text class="body" x="20" y="58" fill="#1A1A1A" font-size="11">Construction milestone — 50% completion</text>
-    <text class="body" x="500" y="58" fill="#1A1A1A" font-size="11">T+3 yr</text>
-    <text class="body" x="700" y="58" fill="#1A1A1A" font-size="11">Independent engineer</text>
-    <text class="mono" x="1080" y="58" fill="#A47148" font-size="11">±15 BP</text>
+    <text class="body" x="20" y="58" fill="#D9D3C6" font-size="11">Construction milestone — 50% completion</text>
+    <text class="body" x="500" y="58" fill="#D9D3C6" font-size="11">T+3 yr</text>
+    <text class="body" x="700" y="58" fill="#D9D3C6" font-size="11">Independent engineer</text>
+    <text class="mono" x="1080" y="58" fill="#C08D60" font-size="11">±15 BP</text>
 
-    <text class="body" x="20" y="78" fill="#1A1A1A" font-size="11">Construction milestone — commercial operation</text>
-    <text class="body" x="500" y="78" fill="#1A1A1A" font-size="11">T+5 yr</text>
-    <text class="body" x="700" y="78" fill="#1A1A1A" font-size="11">Independent engineer + CER</text>
-    <text class="mono" x="1080" y="78" fill="#A47148" font-size="11">±25 BP</text>
+    <text class="body" x="20" y="78" fill="#D9D3C6" font-size="11">Construction milestone — commercial operation</text>
+    <text class="body" x="500" y="78" fill="#D9D3C6" font-size="11">T+5 yr</text>
+    <text class="body" x="700" y="78" fill="#D9D3C6" font-size="11">Independent engineer + CER</text>
+    <text class="mono" x="1080" y="78" fill="#C08D60" font-size="11">±25 BP</text>
 
-    <text class="body" x="20" y="98" fill="#1A1A1A" font-size="11">Throughput target ≥80% utilisation, 12-mo rolling</text>
-    <text class="body" x="500" y="98" fill="#1A1A1A" font-size="11">T+6 yr onward</text>
-    <text class="body" x="700" y="98" fill="#1A1A1A" font-size="11">CER public data</text>
-    <text class="mono" x="1080" y="98" fill="#A47148" font-size="11">±20 BP</text>
+    <text class="body" x="20" y="98" fill="#D9D3C6" font-size="11">Throughput target ≥80% utilisation, 12-mo rolling</text>
+    <text class="body" x="500" y="98" fill="#D9D3C6" font-size="11">T+6 yr onward</text>
+    <text class="body" x="700" y="98" fill="#D9D3C6" font-size="11">CER public data</text>
+    <text class="mono" x="1080" y="98" fill="#C08D60" font-size="11">±20 BP</text>
 
-    <text class="body" x="20" y="118" fill="#1A1A1A" font-size="11">Indigenous equity share ≥10% maintained</text>
-    <text class="body" x="500" y="118" fill="#1A1A1A" font-size="11">continuous</text>
-    <text class="body" x="700" y="118" fill="#1A1A1A" font-size="11">Audited LP / FNMPC</text>
-    <text class="mono" x="1080" y="118" fill="#A47148" font-size="11">±15 BP</text>
+    <text class="body" x="20" y="118" fill="#D9D3C6" font-size="11">Indigenous equity share ≥10% maintained</text>
+    <text class="body" x="500" y="118" fill="#D9D3C6" font-size="11">continuous</text>
+    <text class="body" x="700" y="118" fill="#D9D3C6" font-size="11">Audited LP / FNMPC</text>
+    <text class="mono" x="1080" y="118" fill="#C08D60" font-size="11">±15 BP</text>
 
-    <text class="body" x="20" y="138" fill="#1A1A1A" font-size="11">Verified GHG &amp; methane intensity (declining)</text>
-    <text class="body" x="500" y="138" fill="#1A1A1A" font-size="11">annual T+6 onward</text>
-    <text class="body" x="700" y="138" fill="#1A1A1A" font-size="11">ICMA-aligned reviewer</text>
-    <text class="mono" x="1080" y="138" fill="#A47148" font-size="11">±30 BP</text>
+    <text class="body" x="20" y="138" fill="#D9D3C6" font-size="11">Verified GHG &amp; methane intensity (declining)</text>
+    <text class="body" x="500" y="138" fill="#D9D3C6" font-size="11">annual T+6 onward</text>
+    <text class="body" x="700" y="138" fill="#D9D3C6" font-size="11">ICMA-aligned reviewer</text>
+    <text class="mono" x="1080" y="138" fill="#C08D60" font-size="11">±30 BP</text>
   </g>
 
   <!-- ========================== Layer 6: Settlement & Tokenization ========================== -->
-  <text class="h-section" x="80" y="1420" fill="#3D6A78" font-size="11">VI.   SETTLEMENT  ·  TOKENIZED PILOT TRANCHE  ·  AGORÁ-CLASS RAILS</text>
+  <text class="h-section" x="80" y="1420" fill="#7FA8B5" font-size="11">VI.   SETTLEMENT  ·  TOKENIZED PILOT TRANCHE  ·  AGORÁ-CLASS RAILS</text>
   <line class="teal-stroke" x1="80" y1="1432" x2="1320" y2="1432" stroke-width="0.5" stroke-dasharray="2 3"/>
 
   <g transform="translate(80, 1460)">
     <rect class="box" x="0" y="0" width="600" height="130" rx="2"/>
-    <text class="h-item" x="20" y="28" fill="#0E2B47" font-size="13">Conventional rails (95% of programme)</text>
-    <text class="body" x="20" y="52" fill="#1A1A1A" font-size="12">Euroclear  ·  Clearstream  ·  CDS Clearing  ·  KSD</text>
-    <text class="body" x="20" y="72" fill="#1A1A1A" font-size="12">LCH RepoClear  ·  Eurex Repo  ·  BoC SRF eligible</text>
-    <text class="body" x="20" y="92" fill="#1A1A1A" font-size="12">Index inclusion: Bloomberg Global Aggregate, FTSE WGBI</text>
-    <text class="body" x="20" y="112" fill="#1A1A1A" font-size="12">ECB collateral framework Tier 1 (EUR-tranche, future)</text>
+    <text class="h-item" x="20" y="28" fill="#F4EFE3" font-size="13">Conventional rails (95% of programme)</text>
+    <text class="body" x="20" y="52" fill="#D9D3C6" font-size="12">Euroclear  ·  Clearstream  ·  CDS Clearing  ·  KSD</text>
+    <text class="body" x="20" y="72" fill="#D9D3C6" font-size="12">LCH RepoClear  ·  Eurex Repo  ·  BoC SRF eligible</text>
+    <text class="body" x="20" y="92" fill="#D9D3C6" font-size="12">Index inclusion: Bloomberg Global Aggregate, FTSE WGBI</text>
+    <text class="body" x="20" y="112" fill="#D9D3C6" font-size="12">ECB collateral framework Tier 1 (EUR-tranche, future)</text>
   </g>
 
   <g transform="translate(720, 1460)">
     <rect class="box-bronze" x="0" y="0" width="600" height="130" rx="2"/>
-    <text class="h-item" x="20" y="28" fill="#A47148" font-size="13">Tokenized pilot tranche (US$200–500 m)</text>
-    <text class="body" x="20" y="52" fill="#1A1A1A" font-size="12">HSBC Orion  ·  Goldman GS DAP  ·  HKMA CMU OmniClear-class</text>
-    <text class="body" x="20" y="72" fill="#1A1A1A" font-size="12">BIS Toronto Innovation Centre  ·  Project Agorá rail (BoK in)</text>
-    <text class="body" x="20" y="92" fill="#1A1A1A" font-size="12">Smart contract scope: coupon, KPI ratchet, atomic DvP</text>
-    <text class="body-it" x="20" y="112" fill="#A47148" font-size="11">Code implements; English-law trust deed governs.</text>
+    <text class="h-item" x="20" y="28" fill="#C08D60" font-size="13">Tokenized pilot tranche (US$200–500 m)</text>
+    <text class="body" x="20" y="52" fill="#D9D3C6" font-size="12">HSBC Orion  ·  Goldman GS DAP  ·  HKMA CMU OmniClear-class</text>
+    <text class="body" x="20" y="72" fill="#D9D3C6" font-size="12">BIS Toronto Innovation Centre  ·  Project Agorá rail (BoK in)</text>
+    <text class="body" x="20" y="92" fill="#D9D3C6" font-size="12">Smart contract scope: coupon, KPI ratchet, atomic DvP</text>
+    <text class="body-it" x="20" y="112" fill="#C08D60" font-size="11">Code implements; English-law trust deed governs.</text>
   </g>
 
   <!-- Footer -->
   <line class="bronze-stroke" x1="80" y1="1635" x2="1320" y2="1635" stroke-width="0.5"/>
-  <text class="mono" x="80" y="1660" fill="#3D6A78" font-size="9">NPSI WORKING PAPER NO. 1  ·  FIGURE A: CKPIF ARCHITECTURE  ·  FOR DISCUSSION</text>
-  <text class="mono" x="1320" y="1660" text-anchor="end" fill="#3D6A78" font-size="9">v1.0  ·  APRIL 2026  ·  ALL FIGURES ILLUSTRATIVE</text>
+  <text class="mono" x="80" y="1660" fill="#7FA8B5" font-size="9">NPSI WORKING PAPER NO. 1  ·  FIGURE A: CKPIF ARCHITECTURE  ·  FOR DISCUSSION</text>
+  <text class="mono" x="1320" y="1660" text-anchor="end" fill="#7FA8B5" font-size="9">v1.0  ·  APRIL 2026  ·  ALL FIGURES ILLUSTRATIVE</text>
 </svg>

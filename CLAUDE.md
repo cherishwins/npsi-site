@@ -7,11 +7,11 @@
 The institutional website of the **North Pacific Strategy Initiative (NPSI)** — an independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.
 
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
-**Editor:** Jesse James (`jesse@fitforgov.com`). The institutional aliases `editor@npsi.ca` and `commentary@npsi.ca` are reserved for future activation once forwarding is configured at the registrar (Cloudflare Email Routing or equivalent); until then, all editorial correspondence runs through `jesse@fitforgov.com` to ensure mail actually delivers.
+**Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 12 pages plus a 404 — home, four working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), one special-briefing reading view (SB No. 1 *Zero Secrets*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 13 pages plus a 404 — home, five working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), one special-briefing reading view (SB No. 1 *Zero Secrets*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. The "Working Paper" nav link sitewide points to the current paper, **`/wp4/`**.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — WP5 *Sovereign Compute North* and WP6 remain forthcoming, so the archive carries an intentional gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
 
 ## What this site is *not*
 
@@ -29,24 +29,28 @@ If a proposed change would push the site toward any of the above, stop and flag 
 
 ## Visual identity — the rules
 
+### The dark identity (adopted July 2026)
+
+In July 2026 the imprint adopted a **dark-first identity** at the editor's direction: the same four-colour brand, inverted. Document Cream became the ink; Pacific Navy became the paper. Nothing else changed — same wordmark geometry, same three typefaces, same bronze meridian, same chrome. Token *names* in `site.css` kept their light-era *roles* (`--navy` is still "primary ink", `--cream` is still "page background"); only the values flipped, so every page-scoped component inherits the theme untouched. **Print re-inverts to the light palette** inside `@media print` — the reference document still prints as paper. Figure SVGs, OG cards, and all raster icons were re-rendered in the dark identity.
+
 ### Color tokens (CSS variables in `assets/css/site.css`)
 
-| Token | Hex | Use |
-|---|---|---|
-| `--navy` | `#0E2B47` | Primary ink; wordmark, headings, dominant typography |
-| `--navy-deep` | `#081C30` | Hover states only |
-| `--bronze` | `#A47148` | Accents — meridian rules, italic descriptors, KPI numbers, accent borders. Never used as fill. Maximum ~5% of any composition. |
-| `--teal` | `#3D6A78` | Section markers, classification lines, monospace metadata |
-| `--cream` | `#F4EFE3` | Page background. NEVER use pure white as page background. |
-| `--paper` | `#FBF8EF` | Card and figure backgrounds, slightly lighter than cream |
-| `--ink` | `#1A1A1A` | Body text. NEVER use pure black. |
-| `--rule` | `#C4B79B` | Dashed and thin rules between sections |
+| Token | Hex (screen, dark) | Hex (print, light) | Role |
+|---|---|---|---|
+| `--navy` | `#F4EFE3` | `#0E2B47` | Primary ink; wordmark, headings, dominant typography |
+| `--navy-deep` | `#FFFDF6` | `#081C30` | Hover states only |
+| `--bronze` | `#C08D60` | `#A47148` | Accents — meridian rules, italic descriptors, KPI numbers, accent borders. Never used as large fill. Maximum ~5% of any composition. |
+| `--teal` | `#7FA8B5` | `#3D6A78` | Section markers, classification lines, monospace metadata |
+| `--cream` | `#081C30` | `#FFFFFF` | Page background |
+| `--paper` | `#0F2A44` | `#FBF8EF` | Card and figure backgrounds, lifted one step from the page |
+| `--ink` | `#D9D3C6` | `#1A1A1A` | Body text. NEVER pure white, NEVER pure black. |
+| `--rule` | `#2E4A63` | `#C4B79B` | Dashed and thin rules between sections |
 
 **Restrictions, hard:**
 - Never introduce red. Both the Canadian and Korean flags use red; using it conflates the imprint with national branding.
-- Never introduce a green, purple, or any non-palette accent. The four-color palette is total.
-- Never use pure white (`#FFF`) as a page background. Cream is the paper.
-- Never use pure black (`#000`). `--ink` is the floor.
+- Never introduce a green, purple, or any non-palette accent. The four-color palette is total. (When porting drafts that arrive with rust/green/gold accents, map rust→bronze, green→teal, gold→bronze — precedent: WP7 figures.)
+- Never use pure white (`#FFF`) or pure black (`#000`) for text or grounds on screen. The cream-family inks and navy-family grounds are the range.
+- The masthead backdrop is `rgba(8, 28, 48, 0.92)` with blur — keep it in the navy family.
 
 ### Typography
 
@@ -71,7 +75,7 @@ Three typefaces, loaded from Google Fonts. Do not add a fourth without serious r
 - **Square mark** (in `assets/img/favicon.svg` and the LinkedIn assets): for square/circle constraints — favicon, LinkedIn profile mark, future Slack/social where required. "NP" monogram in Pacific Navy with meridian above and mono volume marker below.
 
 **Wordmark rules, hard:**
-- Never recolor. Pacific Navy on Document Cream. Period.
+- Never recolor outside the brand pair. On screen (dark identity): Document Cream on Pacific Navy. In print and light-era contexts: Pacific Navy on Document Cream. No third combination.
 - Never combine with national flags or symbols.
 - Never pair with an additional icon, symbol, mascot, or graphic mark.
 - Maintain clear-space margin equal to the height of the wordmark on all four sides.
@@ -123,7 +127,7 @@ The meridian rule with three ticks (`<span>` is the middle tick) appears at the 
       <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
       <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
       <div class="colophon-text">
-        Editor: Jesse James  ·  <a href="mailto:jesse@fitforgov.com">jesse@fitforgov.com</a><br>
+        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
         Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
       </div>
     </div>
@@ -161,15 +165,17 @@ npsi-site/
 ├── commentary/index.html            named commentary index, per paper
 ├── colophon/index.html              technical colophon
 ├── wp1/
-│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP4)
+│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP7)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── wp2/
 │   └── index.html                   Working Paper No. 2 — full reading view (previous paper)
 ├── wp3/
 │   └── index.html                   Working Paper No. 3 — full reading view (previous paper)
 ├── wp4/
-│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (CURRENT paper)
+│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP7)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
+├── wp7/
+│   └── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper; no PDF yet)
 ├── tb1/
 │   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
 │   └── technical-briefing.pdf       full PDF release (direct download, no email gate)
@@ -339,6 +345,20 @@ An energy thesis for Canada — the **current** working paper, v1.0 published 15
 - Author: Jesse James; v1.0 published 15 May 2026.
 - PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1).
 
+### Working Paper No. 7 — Dazzle 2.0 (`wp7/index.html`)
+
+The **current** working paper, v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) and WP6 remain forthcoming, so the archive carries an intentional numbering gap. Eight sections plus executive summary. Key facts that should remain consistent:
+
+- **Core assessment:** the viral claim about Russia's "zebra"-painted logistics trucks is *real at its root and inflated at its tip*. Trucks confirmed via imagery since ~31 May 2026 (TWZ, RFE/RL, France 24, Defense Express, Militarnyi); anti-machine-vision intent is analyst consensus; **zero published controlled tests** show an effect on a named detector.
+- **Evidence-tier discipline is the paper's spine:** every load-bearing claim is tagged Confirmed / Plausible / Speculation / Hype in the §2 table. Preserve the tags; they are the register.
+- **Mechanism:** most plausibly out-of-distribution confusion (Humphreys), not an engineered adversarial attack. Proven ceiling: Eykholt et al. CVPR 2018 (84.8% field misclassification); Brown et al. 2017 adversarial patches; Thys/Van Ranst/Goedemé 2019; CAMOU/DAS/FCA vehicle textures. Three gaps separate crude stripes from that ceiling: optimization, physical robustness, transferability.
+- **The durable finding is cost asymmetry**, anchored to Schuyler Moore (then CENTCOM CTO, CSIS, September 2024): the aircraft-tire tactic worked and the retraining loop was up to six months. Paint iterates in hours.
+- **Procurement recommendations (five):** multi-sensor seekers (EO + thermal/IR); human-on-the-loop authorization; edge-retrainable models with organic labeling; adversarial/OOD inputs in acceptance testing; no single-vendor black-box ATR. Canadian pegs: Switchblade 300/600 to Latvia brigade, Minerva Initiative, CALM/CADUC.
+- **Historical frame:** 1917 Wilkinson dazzle attacked *geometric estimation* by a human; 2026 zebra attacks *object classification* by a machine. Analogy, never equivalence (Lovell/Sharman/Meese 2024: ~10° perceptual twist only).
+- Register: hostile-read discipline — the paper concedes weak links before an opponent can (§7 Guardrails). Analysis, not intelligence; no classification.
+- Figures A–D are inline SVGs in the dark palette (out-of-palette draft colours were mapped rust→bronze, green→teal, gold→bronze).
+- Author: Jesse James; v1.0 published 12 July 2026. No PDF released yet — when one lands, add `wp7/working-paper.pdf`, the meta `citation_pdf_url`, the JSON-LD `encoding` block, the download button, and the sitemap entry.
+
 ### Technical Briefing No. 1 — The Verified Sky (`tb1/index.html`)
 
 The first of the **Technical Briefings** — a companion line to the Working Papers addressing the engineering substrate beneath the policy architecture. Document IDs follow `NPSI-TB-NNN`. The reading view uses the standard site chrome (masthead, skip-link, footer verbatim) plus page-scoped, `tb-`-prefixed components in an inline `<style>` block (verification ledger, data tables, KPI row, footnotes, series index, endmark) — all on the four-colour palette and the three site typefaces. Technical briefings do **not** join the four-link nav; they are reached from the home page's "Technical Briefings" section and direct URL. Key facts that should remain consistent:
@@ -361,7 +381,7 @@ The first of the **Briefing Notes** — the imprint's short-form line: a single 
 
 ### Special Briefing No. 1 — Zero Secrets (`sb1/index.html`)
 
-The first of the **Special Briefings** — single-issue strategic assessments published when an exposure demands attention outside the working-paper cycle. Document IDs follow `NPSI-SB-NNN`. Standard site chrome plus page-scoped, `sb-`-prefixed components (the **hollow redaction bar** "NOTHING LEFT TO REDACT" — the signature device, rendered in bronze — executive-summary block, findings list, stat grid, staged recommendations with benchmark lines, caveats, sources). **The source draft arrived in a dark midnight/gold theme set in Inter; it was ported to the four-colour palette and site typefaces per the brand rules — never reintroduce the dark theme, Inter, or gold accents.** Key facts that should remain consistent:
+The first of the **Special Briefings** — single-issue strategic assessments published when an exposure demands attention outside the working-paper cycle. Document IDs follow `NPSI-SB-NNN`. Standard site chrome plus page-scoped, `sb-`-prefixed components (the **hollow redaction bar** "NOTHING LEFT TO REDACT" — the signature device, rendered in bronze — executive-summary block, findings list, stat grid, staged recommendations with benchmark lines, caveats, sources). **The source draft arrived in a midnight/gold theme set in Inter; it was ported to the four-colour palette and site typefaces per the brand rules. (The site later adopted its own dark identity in July 2026 — in the NPSI palette, not the draft's. The ban on Inter and on out-of-palette gold accents stands.)** Key facts that should remain consistent:
 
 - Core claim: data residency is not data sovereignty — under the CLOUD Act (18 U.S.C. §2713) and FISA 702, US jurisdiction follows corporate ownership, not server location; no Canada–US CLOUD Act bilateral exists.
 - Anchor evidence: Microsoft France testimony before the French Senate, 10 June 2025 ("No, I cannot guarantee that"); SSC evaluation (federal Azure use ≈4× AWS); Maven Smart System / Operation Epic Fury (13,000 targets in 38 days) as capability-class indicator; Operation Dunhammer; Duke data-broker study ($0.12/record); Starlink-Crimea; AI Diffusion Rule rescission.

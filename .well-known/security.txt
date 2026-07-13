@@ -1,7 +1,7 @@
 # Security contact for the North Pacific Strategy Initiative website.
 # See RFC 9116 (A File Format to Aid in the Discovery of Information Security Vulnerabilities).
 
-Contact: mailto:jesse@fitforgov.com
+Contact: mailto:editor@npsi.ca
 Expires: 2027-05-22T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://npsi.ca/.well-known/security.txt

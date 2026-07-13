@@ -4,8 +4,8 @@
   "description": "Working Papers on Pacific Sovereignty & Bilateral Architecture",
   "start_url": "/",
   "display": "minimal-ui",
-  "background_color": "#F4EFE3",
-  "theme_color": "#F4EFE3",
+  "background_color": "#081C30",
+  "theme_color": "#081C30",
   "icons": [
     {
       "src": "/assets/img/favicon.svg",

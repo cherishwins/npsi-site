@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <!-- NPSI Special Briefing No. 1 — Open Graph card. 1200×630. -->
-  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Document Cream #F4EFE3 -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Document Cream #081C30 -->
 
   <defs>
     <style>
@@ -11,80 +11,80 @@
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="630" fill="#F4EFE3"/>
+  <rect width="1200" height="630" fill="#081C30"/>
 
   <!-- Top: wordmark + paper marker -->
   <text x="64" y="80" class="serif"
-        font-weight="600" font-size="13" letter-spacing="3.4" fill="#0E2B47">
+        font-weight="600" font-size="13" letter-spacing="3.4" fill="#F4EFE3">
     NORTH PACIFIC STRATEGY INITIATIVE
   </text>
   <text x="1136" y="80" class="mono"
-        font-size="10.5" letter-spacing="2.2" fill="#A47148" text-anchor="end">
+        font-size="10.5" letter-spacing="2.2" fill="#C08D60" text-anchor="end">
     SPECIAL BRIEFING № 1 · v1.0 · MMXXVI
   </text>
 
   <!-- Meridian rule with three ticks (NPSI signature) -->
-  <line x1="64" y1="108" x2="1136" y2="108" stroke="#A47148" stroke-width="0.7"/>
-  <line x1="64"   y1="103.5" x2="64"   y2="112.5" stroke="#A47148" stroke-width="1.1"/>
-  <line x1="600"  y1="105"   x2="600"  y2="111"   stroke="#A47148" stroke-width="1"/>
-  <line x1="1136" y1="103.5" x2="1136" y2="112.5" stroke="#A47148" stroke-width="1.1"/>
+  <line x1="64" y1="108" x2="1136" y2="108" stroke="#C08D60" stroke-width="0.7"/>
+  <line x1="64"   y1="103.5" x2="64"   y2="112.5" stroke="#C08D60" stroke-width="1.1"/>
+  <line x1="600"  y1="105"   x2="600"  y2="111"   stroke="#C08D60" stroke-width="1"/>
+  <line x1="1136" y1="103.5" x2="1136" y2="112.5" stroke="#C08D60" stroke-width="1.1"/>
 
   <!-- Classification line -->
   <text x="64" y="158" class="mono"
-        font-size="10.5" letter-spacing="3" fill="#3D6A78">
+        font-size="10.5" letter-spacing="3" fill="#7FA8B5">
     DATA SOVEREIGNTY · CLOUD ACT · SOVEREIGN COMPUTE
   </text>
 
   <!-- Title (single line — short title) -->
   <text x="64" y="248" class="serif"
-        font-weight="700" font-size="76" fill="#0E2B47" letter-spacing="-0.5">
+        font-weight="700" font-size="76" fill="#F4EFE3" letter-spacing="-0.5">
     Zero Secrets
   </text>
 
   <!-- Subtitle -->
   <text x="64" y="306" class="serif"
-        font-style="italic" font-size="24" fill="#A47148">
+        font-style="italic" font-size="24" fill="#C08D60">
     Canada's data and AI sovereignty crisis.
   </text>
 
   <!-- Three stat blocks separated by thin bronze rules -->
   <g transform="translate(0, 420)">
-    <line x1="64"  y1="0" x2="1136" y2="0" stroke="#C4B79B" stroke-width="0.5"/>
+    <line x1="64"  y1="0" x2="1136" y2="0" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Stat 1: the diagnosis (record clean) -->
     <g transform="translate(64, 36)">
-      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#0E2B47">4×</text>
-      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#A47148">FEDERAL AZURE VS AWS USE</text>
+      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#F4EFE3">4×</text>
+      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#C08D60">FEDERAL AZURE VS AWS USE</text>
     </g>
 
     <!-- Vertical divider -->
-    <line x1="430" y1="12" x2="430" y2="80" stroke="#C4B79B" stroke-width="0.5"/>
+    <line x1="430" y1="12" x2="430" y2="80" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Stat 2: the diagnosis (record CO2 same year) -->
     <g transform="translate(456, 36)">
-      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#0E2B47">13,000</text>
-      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#A47148">TARGETS · 38 DAYS · MAVEN</text>
+      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#F4EFE3">13,000</text>
+      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#C08D60">TARGETS · 38 DAYS · MAVEN</text>
     </g>
 
     <!-- Vertical divider -->
-    <line x1="852" y1="12" x2="852" y2="80" stroke="#C4B79B" stroke-width="0.5"/>
+    <line x1="852" y1="12" x2="852" y2="80" stroke="#2E4A63" stroke-width="0.5"/>
 
     <!-- Stat 3: the Canadian verdict (Pacific export advantage) -->
     <g transform="translate(876, 36)">
-      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#0E2B47">C$19B</text>
-      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#A47148">MICROSOFT COMMITMENT 2023–2027</text>
+      <text x="0" y="0" class="mono" font-weight="500" font-size="44" fill="#F4EFE3">C$19B</text>
+      <text x="0" y="34" class="mono" font-size="10.5" letter-spacing="2.4" fill="#C08D60">MICROSOFT COMMITMENT 2023–2027</text>
     </g>
 
-    <line x1="64" y1="100" x2="1136" y2="100" stroke="#C4B79B" stroke-width="0.5"/>
+    <line x1="64" y1="100" x2="1136" y2="100" stroke="#2E4A63" stroke-width="0.5"/>
   </g>
 
   <!-- Footer -->
   <text x="64" y="580" class="mono"
-        font-size="10.5" letter-spacing="2.2" fill="#3D6A78">
+        font-size="10.5" letter-spacing="2.2" fill="#7FA8B5">
     AUTHOR · JESSE JAMES · VICTORIA, BC
   </text>
   <text x="1136" y="580" class="mono"
-        font-size="10.5" letter-spacing="2.2" fill="#3D6A78" text-anchor="end">
+        font-size="10.5" letter-spacing="2.2" fill="#7FA8B5" text-anchor="end">
     NPSI.CA/SB1/
   </text>
 </svg>

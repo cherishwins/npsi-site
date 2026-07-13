@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="660" viewBox="0 0 720 660">
   <!-- NPSI WP2 · Figure E · Indigenous Series II (Indigenous-Compact) Tranche Structure -->
-  <!-- Palette: Pacific Navy #0E2B47, Treaty Bronze #A47148, Maritime Teal #3D6A78, Cream #F4EFE3, Paper #FBF8EF, Rule #C4B79B -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
 
   <defs>
     <style>
@@ -9,130 +9,130 @@
       .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
     </style>
     <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A47148"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="720" height="660" fill="#FBF8EF"/>
+  <rect width="720" height="660" fill="#133150"/>
 
   <!-- Title bar -->
-  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#A47148">FIGURE E · INDIGENOUS SERIES II TRANCHE — COMPACT-COVERED</text>
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE E · INDIGENOUS SERIES II TRANCHE — COMPACT-COVERED</text>
 
   <!-- Top meridian -->
-  <line x1="40"  y1="56" x2="680" y2="56" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#A47148" stroke-width="1"/>
-  <line x1="360" y1="53" x2="360" y2="59" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="680" y1="52" x2="680" y2="60" stroke="#A47148" stroke-width="1"/>
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
 
   <!-- Subtitle -->
-  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#0E2B47">Designed in at issuance, not retrofitted.</text>
-  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#A47148">Indigenous economic leadership, three-corridor diversification, +25 bp protective ratchet.</text>
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Designed in at issuance, not retrofitted.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">Indigenous economic leadership, three-corridor diversification, +25 bp protective ratchet.</text>
 
   <!-- TIER 1: Institutional Framework (top) -->
   <g transform="translate(40, 144)">
-    <rect x="0" y="0" width="640" height="86" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">INSTITUTIONAL FRAMEWORK · OPERATIONAL CANADIAN VEHICLES</text>
+    <rect x="0" y="0" width="640" height="86" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">INSTITUTIONAL FRAMEWORK · OPERATIONAL CANADIAN VEHICLES</text>
 
-    <text x="20"  y="50" class="serif" font-weight="600" font-size="13" fill="#0E2B47">FNMPC</text>
-    <text x="20"  y="66" class="serif" font-style="italic" font-size="11" fill="#3D6A78">First Nations Major Projects Coalition</text>
-    <text x="20"  y="80" class="serif" font-size="10.5" fill="#1A1A1A">186 nations · 21 projects · ~CAD 45 B</text>
+    <text x="20"  y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">FNMPC</text>
+    <text x="20"  y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">First Nations Major Projects Coalition</text>
+    <text x="20"  y="80" class="serif" font-size="10.5" fill="#D9D3C6">186 nations · 21 projects · ~CAD 45 B</text>
 
-    <text x="240" y="50" class="serif" font-weight="600" font-size="13" fill="#0E2B47">CIB IEI</text>
-    <text x="240" y="66" class="serif" font-style="italic" font-size="11" fill="#3D6A78">CIB Indigenous Equity Initiative</text>
-    <text x="240" y="80" class="serif" font-size="10.5" fill="#1A1A1A">CAD 5–100 M loans · up to 90% equity</text>
+    <text x="240" y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">CIB IEI</text>
+    <text x="240" y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">CIB Indigenous Equity Initiative</text>
+    <text x="240" y="80" class="serif" font-size="10.5" fill="#D9D3C6">CAD 5–100 M loans · up to 90% equity</text>
 
-    <text x="460" y="50" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Loan Guarantee Program</text>
-    <text x="460" y="66" class="serif" font-style="italic" font-size="11" fill="#3D6A78">Federal Indigenous backstop</text>
-    <text x="460" y="80" class="serif" font-size="10.5" fill="#1A1A1A">CAD 5 B · Budget 2024</text>
+    <text x="460" y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Loan Guarantee Program</text>
+    <text x="460" y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Federal Indigenous backstop</text>
+    <text x="460" y="80" class="serif" font-size="10.5" fill="#D9D3C6">CAD 5 B · Budget 2024</text>
   </g>
 
   <!-- Arrow down to Tier 2 -->
-  <line x1="200" y1="238" x2="200" y2="268" stroke="#A47148" stroke-width="1" marker-end="url(#arr)"/>
-  <text x="216" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#A47148">90%</text>
-  <text x="216" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#3D6A78">CIB IEI loans</text>
+  <line x1="200" y1="238" x2="200" y2="268" stroke="#C08D60" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="216" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60">90%</text>
+  <text x="216" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#7FA8B5">CIB IEI loans</text>
 
-  <line x1="520" y1="238" x2="520" y2="268" stroke="#A47148" stroke-width="1" marker-end="url(#arr)"/>
-  <text x="536" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#A47148">10%</text>
-  <text x="536" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#3D6A78">own-source / Loan Guarantee</text>
+  <line x1="520" y1="238" x2="520" y2="268" stroke="#C08D60" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="536" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60">10%</text>
+  <text x="536" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#7FA8B5">own-source / Loan Guarantee</text>
 
   <!-- TIER 2: Three corridor LPs -->
   <g transform="translate(40, 284)">
-    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">THREE CORRIDOR-SPECIFIC INDIGENOUS LIMITED PARTNERSHIPS</text>
+    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">THREE CORRIDOR-SPECIFIC INDIGENOUS LIMITED PARTNERSHIPS</text>
 
     <!-- LP 1 -->
-    <rect x="0" y="6" width="200" height="92" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="14" y="28" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Saguenay LP</text>
-    <text x="14" y="44" class="serif" font-style="italic" font-size="11" fill="#A47148">Côte-Nord corridor (QC)</text>
-    <line x1="14" y1="52" x2="186" y2="52" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="14" y="68" class="serif" font-size="11" fill="#1A1A1A">Cree · Innu nations</text>
-    <text x="14" y="84" class="serif" font-size="11" fill="#1A1A1A">~6,000 MW adjacent hydro</text>
+    <rect x="0" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="14" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Saguenay LP</text>
+    <text x="14" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Côte-Nord corridor (QC)</text>
+    <line x1="14" y1="52" x2="186" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="14" y="68" class="serif" font-size="11" fill="#D9D3C6">Cree · Innu nations</text>
+    <text x="14" y="84" class="serif" font-size="11" fill="#D9D3C6">~6,000 MW adjacent hydro</text>
 
     <!-- LP 2 -->
-    <rect x="220" y="6" width="200" height="92" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="234" y="28" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Peace River LP</text>
-    <text x="234" y="44" class="serif" font-style="italic" font-size="11" fill="#A47148">Bennett corridor (BC)</text>
-    <line x1="234" y1="52" x2="406" y2="52" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="234" y="68" class="serif" font-size="11" fill="#1A1A1A">BC Indigenous Power Coalition</text>
-    <text x="234" y="84" class="serif" font-size="11" fill="#1A1A1A">~4,600 MW adjacent hydro</text>
+    <rect x="220" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="234" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Peace River LP</text>
+    <text x="234" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Bennett corridor (BC)</text>
+    <line x1="234" y1="52" x2="406" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="234" y="68" class="serif" font-size="11" fill="#D9D3C6">BC Indigenous Power Coalition</text>
+    <text x="234" y="84" class="serif" font-size="11" fill="#D9D3C6">~4,600 MW adjacent hydro</text>
 
     <!-- LP 3 -->
-    <rect x="440" y="6" width="200" height="92" fill="#F4EFE3" stroke="#A47148" stroke-width="0.7"/>
-    <text x="454" y="28" class="serif" font-weight="700" font-size="14" fill="#0E2B47">Northern Manitoba LP</text>
-    <text x="454" y="44" class="serif" font-style="italic" font-size="11" fill="#A47148">Limestone / Long Spruce corridor</text>
-    <line x1="454" y1="52" x2="626" y2="52" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="454" y="68" class="serif" font-size="11" fill="#1A1A1A">Cree nations</text>
-    <text x="454" y="84" class="serif" font-size="11" fill="#1A1A1A">~3,500 MW adjacent hydro</text>
+    <rect x="440" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="454" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Northern Manitoba LP</text>
+    <text x="454" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Limestone / Long Spruce corridor</text>
+    <line x1="454" y1="52" x2="626" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="454" y="68" class="serif" font-size="11" fill="#D9D3C6">Cree nations</text>
+    <text x="454" y="84" class="serif" font-size="11" fill="#D9D3C6">~3,500 MW adjacent hydro</text>
   </g>
 
   <!-- Down arrows to Series II -->
-  <line x1="100" y1="394" x2="280" y2="424" stroke="#A47148" stroke-width="1" marker-end="url(#arr)"/>
-  <line x1="360" y1="394" x2="360" y2="424" stroke="#A47148" stroke-width="1" marker-end="url(#arr)"/>
-  <line x1="620" y1="394" x2="440" y2="424" stroke="#A47148" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="100" y1="394" x2="280" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="360" y1="394" x2="360" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="620" y1="394" x2="440" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#arr)"/>
 
-  <text x="360" y="412" class="mono" font-size="9" letter-spacing="1.5" fill="#A47148" text-anchor="middle">SUBSCRIBE TO</text>
+  <text x="360" y="412" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">SUBSCRIBE TO</text>
 
   <!-- TIER 3: Series II tranche -->
   <g transform="translate(40, 432)">
-    <rect x="0" y="0" width="640" height="84" fill="#0E2B47"/>
-    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">SERIES II · INDIGENOUS-COMPACT TRANCHE</text>
-    <text x="20" y="50" class="serif" font-weight="700" font-size="20" fill="#F4EFE3">10–15% of compact capital expenditure</text>
-    <text x="20" y="74" class="serif" font-style="italic" font-size="13" fill="#A47148">Pari passu coupon and principal with senior compact tranches</text>
+    <rect x="0" y="0" width="640" height="84" fill="#F4EFE3"/>
+    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">SERIES II · INDIGENOUS-COMPACT TRANCHE</text>
+    <text x="20" y="50" class="serif" font-weight="700" font-size="20" fill="#0F2A44">10–15% of compact capital expenditure</text>
+    <text x="20" y="74" class="serif" font-style="italic" font-size="13" fill="#C08D60">Pari passu coupon and principal with senior compact tranches</text>
 
-    <text x="620" y="46" class="mono" font-size="22" font-weight="500" fill="#A47148" text-anchor="end">+25 bp</text>
-    <text x="620" y="64" class="mono" font-size="9" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">RATCHET IF EQUITY &lt; 10%</text>
-    <text x="620" y="78" class="mono" font-size="9" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">STRUCTURAL PROTECTION</text>
+    <text x="620" y="46" class="mono" font-size="22" font-weight="500" fill="#C08D60" text-anchor="end">+25 bp</text>
+    <text x="620" y="64" class="mono" font-size="9" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">RATCHET IF EQUITY &lt; 10%</text>
+    <text x="620" y="78" class="mono" font-size="9" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">STRUCTURAL PROTECTION</text>
   </g>
 
   <!-- TIER 4: Rights and economics -->
   <g transform="translate(40, 530)">
-    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#A47148">ECONOMIC AND GOVERNANCE RIGHTS</text>
+    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">ECONOMIC AND GOVERNANCE RIGHTS</text>
 
-    <rect x="0"   y="6" width="200" height="78" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="14" y="26" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Positive carry</text>
-    <text x="14" y="44" class="serif" font-size="11" fill="#1A1A1A">CIB IEI rate &lt; CKPIF</text>
-    <text x="14" y="60" class="serif" font-size="11" fill="#1A1A1A">coupon → spread is</text>
-    <text x="14" y="76" class="serif" font-size="11" fill="#1A1A1A">monetisable own-source revenue</text>
+    <rect x="0"   y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="14" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Positive carry</text>
+    <text x="14" y="44" class="serif" font-size="11" fill="#D9D3C6">CIB IEI rate &lt; CKPIF</text>
+    <text x="14" y="60" class="serif" font-size="11" fill="#D9D3C6">coupon → spread is</text>
+    <text x="14" y="76" class="serif" font-size="11" fill="#D9D3C6">monetisable own-source revenue</text>
 
-    <rect x="220" y="6" width="200" height="78" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="234" y="26" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Governance rights</text>
-    <text x="234" y="44" class="serif" font-size="11" fill="#1A1A1A">Nation-level route consent</text>
-    <text x="234" y="60" class="serif" font-size="11" fill="#1A1A1A">KPI-amendment veto</text>
-    <text x="234" y="76" class="serif" font-size="11" fill="#1A1A1A">Director representation</text>
+    <rect x="220" y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="234" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Governance rights</text>
+    <text x="234" y="44" class="serif" font-size="11" fill="#D9D3C6">Nation-level route consent</text>
+    <text x="234" y="60" class="serif" font-size="11" fill="#D9D3C6">KPI-amendment veto</text>
+    <text x="234" y="76" class="serif" font-size="11" fill="#D9D3C6">Director representation</text>
 
-    <rect x="440" y="6" width="200" height="78" fill="#F4EFE3" stroke="#C4B79B" stroke-width="0.5"/>
-    <text x="454" y="26" class="serif" font-weight="600" font-size="13" fill="#0E2B47">Strategic durability</text>
-    <text x="454" y="44" class="serif" font-size="11" fill="#1A1A1A">Indigenous economic</text>
-    <text x="454" y="60" class="serif" font-size="11" fill="#1A1A1A">leadership (not minority)</text>
-    <text x="454" y="76" class="serif" font-size="11" fill="#1A1A1A">Multi-corridor diversification</text>
+    <rect x="440" y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="454" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Strategic durability</text>
+    <text x="454" y="44" class="serif" font-size="11" fill="#D9D3C6">Indigenous economic</text>
+    <text x="454" y="60" class="serif" font-size="11" fill="#D9D3C6">leadership (not minority)</text>
+    <text x="454" y="76" class="serif" font-size="11" fill="#D9D3C6">Multi-corridor diversification</text>
   </g>
 
   <!-- Footer rule and source -->
-  <line x1="40"  y1="624" x2="680" y2="624" stroke="#A47148" stroke-width="0.6"/>
-  <line x1="40"  y1="620" x2="40"  y2="628" stroke="#A47148" stroke-width="1"/>
-  <line x1="360" y1="621" x2="360" y2="627" stroke="#A47148" stroke-width="0.9"/>
-  <line x1="680" y1="620" x2="680" y2="628" stroke="#A47148" stroke-width="1"/>
+  <line x1="40"  y1="624" x2="680" y2="624" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="620" x2="40"  y2="628" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="621" x2="360" y2="627" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="620" x2="680" y2="628" stroke="#C08D60" stroke-width="1"/>
 
-  <text x="40"  y="642" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78">PRECEDENTS · ATHABASCA INDIGENOUS INVESTMENTS · COASTAL GASLINK · NISGA'A–PRGT · BC IPC</text>
-  <text x="680" y="642" class="mono" font-size="9" letter-spacing="1.5" fill="#3D6A78" text-anchor="end">NPSI-WP-002 · §9</text>
+  <text x="40"  y="642" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">PRECEDENTS · ATHABASCA INDIGENOUS INVESTMENTS · COASTAL GASLINK · NISGA'A–PRGT · BC IPC</text>
+  <text x="680" y="642" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §9</text>
 </svg>
