@@ -9,11 +9,11 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 15 pages plus a 404 — home, six working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North* — PDF-first landing, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors* — PDF-first landing), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 15 pages plus a 404 — home, six working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026 as a PDF-first release — `wp5/working-paper.pdf` is the canonical document; `wp5/index.html` is a landing page carrying the one-page thesis. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — only WP6 remains forthcoming, so the archive carries an intentional single-number gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — only WP6 remains forthcoming, so the archive carries an intentional single-number gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
 
-**PDF-first releases (WP5, SB2):** the PDF is the canonical release document; the landing page carries full metadata (Highwire + JSON-LD with `encoding`), the opener, a thesis/summary section, and the download. A full reading view is a welcome v1.x follow-up, not a release blocker. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
+**PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
 ## What this site is *not*
 
@@ -177,13 +177,13 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP7)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── wp5/
-│   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — PDF-first landing (thesis + metadata)
+│   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — full reading view (PDF canonical)
 │   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
 │   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper)
 │   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
 ├── sb2/
-│   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — PDF-first landing
+│   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — full reading view (PDF canonical)
 │   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
 ├── tb1/
 │   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
