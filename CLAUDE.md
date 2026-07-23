@@ -180,7 +180,8 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — PDF-first landing (thesis + metadata)
 │   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
-│   └── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper; no PDF yet)
+│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper)
+│   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
 ├── sb2/
 │   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — PDF-first landing
 │   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
@@ -365,7 +366,7 @@ The **current** working paper, v1.0 published 12 July 2026 — the first paper i
 - **Historical frame:** 1917 Wilkinson dazzle attacked *geometric estimation* by a human; 2026 zebra attacks *object classification* by a machine. Analogy, never equivalence (Lovell/Sharman/Meese 2024: ~10° perceptual twist only).
 - Register: hostile-read discipline — the paper concedes weak links before an opponent can (§7 Guardrails). Analysis, not intelligence; no classification.
 - Figures A–D are inline SVGs in the dark palette (out-of-palette draft colours were mapped rust→bronze, green→teal, gold→bronze).
-- Author: Jesse James; v1.0 published 12 July 2026. No PDF released yet — when one lands, add `wp7/working-paper.pdf`, the meta `citation_pdf_url`, the JSON-LD `encoding` block, the download button, and the sitemap entry.
+- Author: Jesse James; v1.0 published 12 July 2026. PDF released 23 July 2026 at `wp7/working-paper.pdf` — generated from the reading view via Chromium print-to-PDF (A4, print palette re-inversion, running header/footer, 10 pp.); regenerate the same way after any substantive edit to the reading view.
 
 ### Technical Briefing No. 1 — The Verified Sky (`tb1/index.html`)
 
