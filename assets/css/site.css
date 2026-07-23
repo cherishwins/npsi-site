@@ -36,6 +36,10 @@ html {
   --ink-soft:    #B9B3A6;
   --rule:        #2E4A63;  /* rules on navy */
   --rule-soft:   #23415B;
+  --masthead-bg: rgba(8, 28, 48, 0.92);
+  --shadow-lift: 0 10px 28px rgba(3, 10, 20, 0.45);
+  --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+  color-scheme: dark;
 
   --font-serif:  'Source Serif 4', 'Source Serif Pro', 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans:   'Source Sans 3', 'Source Sans Pro', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
@@ -68,8 +72,35 @@ html {
   --space-opener:  clamp(44px, 6.4vw, 64px);
 }
 
+/* ---------- Light scheme — the light-era palette, for readers whose
+     device prefers light. Same brand, re-inverted; dark remains default. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --navy:        #0E2B47;
+    --navy-deep:   #081C30;
+    --bronze:      #A47148;
+    --bronze-soft: #BC8B62;
+    --teal:        #3D6A78;
+    --cream:       #F4EFE3;
+    --paper:       #FBF8EF;
+    --paper-warm:  #F8F2E2;
+    --ink:         #1A1A1A;
+    --ink-soft:    #3A3A3A;
+    --rule:        #C4B79B;
+    --rule-soft:   #D8CFB6;
+    --masthead-bg: rgba(244, 239, 227, 0.94);
+    --shadow-lift: 0 10px 28px rgba(14, 43, 71, 0.10);
+    color-scheme: light;
+  }
+}
+
 /* ---------- Body ---------- */
 html, body { height: 100%; }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+  -webkit-tap-highlight-color: transparent;
+}
 body {
   font-family: var(--font-serif);
   color: var(--ink);
@@ -128,7 +159,7 @@ body {
 .masthead {
   border-bottom: 0.5px solid var(--bronze);
   padding: 24px var(--pad-x) 14px;
-  background: rgba(8, 28, 48, 0.92);
+  background: var(--masthead-bg);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   position: sticky;
@@ -354,9 +385,15 @@ hr {
   border: 0.75px solid var(--rule);
   padding: 28px 32px;
   margin: 8px 0;
-  transition: border-color 0.18s ease, transform 0.18s ease;
+  transition: border-color 0.28s var(--ease-spring),
+              transform 0.28s var(--ease-spring),
+              box-shadow 0.28s var(--ease-spring);
 }
-.wp-card:hover { border-color: var(--bronze); }
+.wp-card:hover {
+  border-color: var(--bronze);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
 .wp-card-meta {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -402,10 +439,13 @@ hr {
   padding: 8px 16px;
   border: 0.75px solid var(--navy);
   background: transparent;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: background 0.22s var(--ease-spring),
+              color 0.22s var(--ease-spring),
+              transform 0.22s var(--ease-spring);
   letter-spacing: 0.02em;
   cursor: pointer;
 }
+.btn:active { transform: translateY(1px); }
 .btn:hover { background: var(--navy); color: var(--cream); border-bottom-color: var(--navy); }
 .btn.btn-bronze { color: var(--bronze); border-color: var(--bronze); }
 .btn.btn-bronze:hover { background: var(--bronze); color: var(--cream); }
@@ -633,6 +673,38 @@ figure figcaption {
   border-bottom: 0.5px dotted var(--teal);
 }
 
+/* ============ TEXTURE — paper grain ============ */
+/* A fixed, non-interactive grain veil at ~3% — breaks digital flatness and
+   gives the page the tooth of laid paper. Works over both schemes. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* ============ MOTION — scroll entry ============ */
+/* CSS-only, progressive: browsers with scroll-driven animations get a gentle
+   rise as cards and figures enter the viewport; everyone else gets the page
+   exactly as before. Fully disabled under prefers-reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .wp-card, figure, .wp-meta-block, .toc {
+      animation: npsi-rise both var(--ease-spring);
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+    @keyframes npsi-rise {
+      from { opacity: 0.001; transform: translateY(14px); }
+      to   { opacity: 1;     transform: translateY(0); }
+    }
+  }
+}
+
 /* ============ RESPONSIVE ============ */
 /* Type and space scale fluidly via clamp() — this block is layout only. */
 @media (max-width: 820px) {
@@ -666,7 +738,10 @@ figure figcaption {
     --ink-soft:    #3A3A3A;
     --rule:        #C4B79B;
     --rule-soft:   #D8CFB6;
+    color-scheme: light;
   }
+  body::after { display: none; }
+  .wp-card, figure, .wp-meta-block, .toc { animation: none; }
   html { scroll-behavior: auto; }
   .masthead, .site-footer, .nav, .wp-card-actions, .toc { display: none; }
   body {
