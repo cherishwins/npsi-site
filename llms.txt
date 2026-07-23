@@ -11,6 +11,7 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 ## Working Papers
 
 - [WP7 — Dazzle 2.0](https://npsi.ca/wp7/): Russia's "zebra" trucks and the contest between physical camouflage and machine vision — what the viral claim gets right, what it inflates, and the cost-asymmetry lesson for how NATO and Canada buy autonomy. First paper in the NPSI Counter-Autonomy series; the current working paper. v1.0, 12 July 2026.
+- [WP5 — Sovereign Compute North](https://npsi.ca/wp5/): An energy-for-memory swap, signed under Canadian law — a government-owned, allies-financed, Canadian-law-bound compute fabric anchored on surplus Canadian power and Korea-led sovereign capital, extended to the municipal layer. Co-issued with Fit For Gov; companion to SB1. v1.0, 27 May 2026. PDF: https://npsi.ca/wp5/working-paper.pdf
 - [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
 - [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0, May 2026.
 - [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026.
@@ -26,7 +27,8 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 
 ## Special Briefings
 
-- [SB1 — Zero Secrets](https://npsi.ca/sb1/): Canada's data and AI sovereignty crisis — under the CLOUD Act and FISA 702, jurisdiction follows corporate ownership, not server location; an audit of the federal sovereign-AI agenda, four international models, and a three-stage response. Companion to WP5, Sovereign Compute North (forthcoming). v1.0, 11 June 2026. PDF: https://npsi.ca/sb1/special-briefing.pdf
+- [SB2 — The Three Doors](https://npsi.ca/sb2/): Under U.S. defense law, Canada has been a domestic source since 1992 (50 U.S.C. §4552) — a Canadian miner's map to American federal money via DPA Title III, Energy Act §18743, and EXIM's Supply Chain Resiliency Initiative. Ten-panel briefing. v1.0, 2 July 2026. PDF: https://npsi.ca/sb2/special-briefing.pdf
+- [SB1 — Zero Secrets](https://npsi.ca/sb1/): Canada's data and AI sovereignty crisis — under the CLOUD Act and FISA 702, jurisdiction follows corporate ownership, not server location; an audit of the federal sovereign-AI agenda, four international models, and a three-stage response. Companion to WP5, Sovereign Compute North (https://npsi.ca/wp5/). v1.0, 11 June 2026. PDF: https://npsi.ca/sb1/special-briefing.pdf
 
 ## The Imprint
 

@@ -9,9 +9,11 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 13 pages plus a 404 — home, five working-paper reading views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), one special-briefing reading view (SB No. 1 *Zero Secrets*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 15 pages plus a 404 — home, six working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North* — PDF-first landing, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors* — PDF-first landing), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — WP5 *Sovereign Compute North* and WP6 remain forthcoming, so the archive carries an intentional gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026 as a PDF-first release — `wp5/working-paper.pdf` is the canonical document; `wp5/index.html` is a landing page carrying the one-page thesis. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — only WP6 remains forthcoming, so the archive carries an intentional single-number gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
+
+**PDF-first releases (WP5, SB2):** the PDF is the canonical release document; the landing page carries full metadata (Highwire + JSON-LD with `encoding`), the opener, a thesis/summary section, and the download. A full reading view is a welcome v1.x follow-up, not a release blocker. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
 ## What this site is *not*
 
@@ -174,8 +176,14 @@ npsi-site/
 ├── wp4/
 │   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP7)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
+├── wp5/
+│   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — PDF-first landing (thesis + metadata)
+│   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
 │   └── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper; no PDF yet)
+├── sb2/
+│   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — PDF-first landing
+│   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
 ├── tb1/
 │   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
 │   └── technical-briefing.pdf       full PDF release (direct download, no email gate)
@@ -347,7 +355,7 @@ An energy thesis for Canada — the **current** working paper, v1.0 published 15
 
 ### Working Paper No. 7 — Dazzle 2.0 (`wp7/index.html`)
 
-The **current** working paper, v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) and WP6 remain forthcoming, so the archive carries an intentional numbering gap. Eight sections plus executive summary. Key facts that should remain consistent:
+The **current** working paper, v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) published 27 May 2026, so only WP6 remains forthcoming — an intentional single-number gap. Eight sections plus executive summary. Key facts that should remain consistent:
 
 - **Core assessment:** the viral claim about Russia's "zebra"-painted logistics trucks is *real at its root and inflated at its tip*. Trucks confirmed via imagery since ~31 May 2026 (TWZ, RFE/RL, France 24, Defense Express, Militarnyi); anti-machine-vision intent is analyst consensus; **zero published controlled tests** show an effect on a named detector.
 - **Evidence-tier discipline is the paper's spine:** every load-bearing claim is tagged Confirmed / Plausible / Speculation / Hype in the §2 table. Preserve the tags; they are the register.
@@ -387,7 +395,7 @@ The first of the **Special Briefings** — single-issue strategic assessments pu
 - Anchor evidence: Microsoft France testimony before the French Senate, 10 June 2025 ("No, I cannot guarantee that"); SSC evaluation (federal Azure use ≈4× AWS); Maven Smart System / Operation Epic Fury (13,000 targets in 38 days) as capability-class indicator; Operation Dunhammer; Duke data-broker study ($0.12/record); Starlink-Crimea; AI Diffusion Rule rescission.
 - Federal response audited: $2B Sovereign AI Compute Strategy; "AI for All" (June 4, 2026, ~$2.3B); Cohere flagship operated by CoreWeave (the counter-template); Microsoft C$19B commitment vs. its own sworn testimony.
 - Recommendations: control-based definition of sovereign cloud (jurisdictional, operational, cryptographic, audit); classified/Protected B migration; ICA strengthening; Canadian-owned-and-operated SCIP awards; champion retention via the $500M Canadian Tech Growth Fund.
-- Register: caveats section states the strongest counter-cases fairly (cost, Five Eyes, free-riding) and publishes methodological uncertainty. Companion to WP5 *Sovereign Compute North* (forthcoming).
+- Register: caveats section states the strongest counter-cases fairly (cost, Five Eyes, free-riding) and publishes methodological uncertainty. Companion to WP5 *Sovereign Compute North* (published 27 May 2026, `wp5/`).
 - Author: Jesse James; v1.0 published 11 June 2026. PDF: `sb1/special-briefing.pdf` (direct download, no email gate). OG card `assets/img/sb1-og.svg/.png`.
 
 ## Other NPSI projects in scope
