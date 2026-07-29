@@ -299,6 +299,38 @@ March 2026) closed that path retroactive to 2000, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
 
+## Special Briefing No. 3 — The Ledger With One Entry
+
+- ID: NPSI-SB-003 · v1.0 · issued 26 July 2026 (reporting cut-off 22 July 2026); integrated 29 July 2026
+- Canonical: https://npsi.ca/sb3/ · PDF (39 pp., canonical): https://npsi.ca/sb3/special-briefing.pdf
+- Companions: WP9 (counterparty reliability), WP1 (diversification thesis), SB1 (jurisdictional exposure)
+- Keywords: Venezuela, oil revenue, asset custody, sanctions, escrow, accountability, TRIA, Crystallex, oil-for-food, counterparty risk
+
+Abstract: Since United States forces captured Nicolás Maduro on 3 January 2026,
+the American government has controlled the sale of Venezuelan crude oil and the
+disposition of its proceeds. The Financial Times estimates those sales have
+raised more than US$13 billion; Venezuela's own transparency portal records a
+single receipt of $300 million, and no audit has been published. The briefing
+verifies the factual record, prices the gap, explains the legal architecture
+that produced the offshore structure — two traps in American law that would
+have destroyed the funds on arrival — and benchmarks the arrangement against
+the three comparable oil-custody regimes of the past quarter-century. It
+reaches an uncomfortable conclusion: the Venezuela mechanism is the least
+accountable of the four, and the most accountable of them still lost
+$8.8 billion.
+
+Key findings: The offshore structure is not evidence of intent to steal — TRIA
+§201 attachment and the Crystallex alter-ego doctrine (932 F.3d 126) would
+have destroyed the funds on arrival in a U.S. account; the structure built to
+defeat Venezuela's creditors also defeats the United States Congress. Four
+custody regimes benchmarked (Iraq OFF/DFI, Libya, Iran/Qatar 2023, Venezuela):
+Venezuela is the least accountable; Iraq, the most accountable, still lost
+$8.8 billion (SIGIR). The intervention redirected rather than interrupted the
+oil (1.23m b/d April 2026, highest since 2018); Shandong's independent
+refiners were the largest single loser — the Pacific consequence. Every
+material claim confidence-rated; both governments flagged as interested
+parties; four named unclassified documents would settle the accounting.
+
 ## Special Briefing No. 2 — The Three Doors
 
 - ID: NPSI-SB-002 · v1.0 · 2 July 2026
@@ -346,6 +378,7 @@ fairly.
 ## The Imprint
 
 - About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
+- Disclosure: https://npsi.ca/disclosure/ — declaration of interests: who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
 - Commentary: https://npsi.ca/commentary/ — named commentary index, per paper.
 - Colophon: https://npsi.ca/colophon/ — type, palette, infrastructure.
