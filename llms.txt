@@ -37,6 +37,7 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 ## The Imprint
 
 - [About](https://npsi.ca/about/): Mandate, methodology, and editorial standards.
+- [Disclosure](https://npsi.ca/disclosure/): Declaration of interests — who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - [Engage](https://npsi.ca/engage/): Contribution standards for named commentary, corrections, and technical critique.
 - [Commentary](https://npsi.ca/commentary/): Named commentary index, per paper.
 - [Colophon](https://npsi.ca/colophon/): Technical colophon — type, palette, infrastructure.
