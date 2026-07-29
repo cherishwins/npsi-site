@@ -555,6 +555,24 @@ figure figcaption {
 }
 
 /* Sidebar metadata for working paper */
+/* Homepage section jump row — in-page anchors, not navigation */
+.index-jump {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: -8px 0 44px;
+}
+.index-jump a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--rule);
+  padding-bottom: 1px;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+.index-jump a:hover { color: var(--bronze); border-bottom-color: var(--bronze); }
+
 .wp-meta-block {
   background: var(--paper);
   border: 0.5px solid var(--rule);

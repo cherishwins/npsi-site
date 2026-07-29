@@ -23,6 +23,7 @@ Ledger (the monthly Canada–Korea account). Cite the canonical URLs below.
 
 ## The Pacific Ledger
 
+- [Issue index](https://npsi.ca/ledger/): The publication's home — current issue and archive.
 - [№01 — July 2026 (Premier Issue)](https://npsi.ca/pl1/): A monthly account of the Canada–Korea relationship. Premier issue: Canada names TKMS preferred supplier over Hanwha's KSS-III on July 6 — and the relationship keeps posting entries anyway: first LNG Canada cargo to KOGAS, Canadian crude to Korea up 3.3×, NextStar Windsor at full LGES ownership, a joint critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP, Defence Cooperation Agreement negotiations launched, and Kapyong at 75. NPSI-PL-001, issue closed 28 July 2026. PDF: https://npsi.ca/pl1/pacific-ledger.pdf
 
 ## Technical Briefings

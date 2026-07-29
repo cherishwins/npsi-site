@@ -407,6 +407,7 @@ fairly.
 
 ## The Imprint
 
+- The Pacific Ledger: https://npsi.ca/ledger/ — the monthly publication's home; current issue and archive.
 - About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
 - Disclosure: https://npsi.ca/disclosure/ — declaration of interests: who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
