@@ -205,6 +205,7 @@ npsi-site/
 │   ├── index.html                   Special Briefing No. 1 — *Zero Secrets* — full reading view
 │   └── special-briefing.pdf         full PDF release (direct download, no email gate)
 ├── llms.txt                         LLM-crawler index (llms.txt convention): imprint summary + canonical URL and one-line abstract per paper
+├── llms-full.txt                    full-content companion: complete abstracts, key findings, citation metadata per document
 └── assets/
     ├── css/site.css                 shared stylesheet, fully tokenized
     └── img/
@@ -276,6 +277,8 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 - **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar.
 - **`humans.txt`** at site root — editorial/technical credits.
 - **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
+- **`llms-full.txt`** at site root — the full-content companion (added July 2026): complete abstract, key findings, citation metadata, and PDF URL per document, sourced from each page's JSON-LD abstract and this file's canonical-fact lists. Update it in the same commit as `llms.txt` whenever a document is added, retitled, or superseded.
+- **`robots.txt`** — allows all crawling and *explicitly* welcomes the named AI/LLM crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, et al.) with a comment header pointing machine readers at `llms.txt` / `llms-full.txt`. Maximal crawlability is deliberate imprint policy (CC-BY-4.0 text, citation-seeking); never add `Disallow` rules or `noindex` beyond the 404 page without flagging.
 - **`.well-known/security.txt`** — RFC 9116 contact for security researchers. Bump the `Expires:` field annually.
 - **`CITATION.cff`** at repo root — renders GitHub's "Cite this repository" widget for academic reuse.
 

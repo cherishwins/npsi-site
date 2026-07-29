@@ -42,5 +42,6 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 
 ## Optional
 
+- [Full index](https://npsi.ca/llms-full.txt): Complete abstracts, key findings, and citation metadata for every document, in one file.
 - [Sitemap](https://npsi.ca/sitemap.xml)
 - [Repository](https://github.com/cherishwins/npsi-site): Public version-controlled source for the site and papers.
