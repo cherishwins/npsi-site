@@ -103,6 +103,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/ledger/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/pl1/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
