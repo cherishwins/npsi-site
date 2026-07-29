@@ -224,6 +224,9 @@ body {
 /* ============ MAIN ============ */
 main {
   flex: 1;
+  /* long unbroken tokens (URLs, IDs) wrap instead of overflowing; break-word
+     leaves min-content sizing alone, unlike overflow-wrap: anywhere */
+  overflow-wrap: break-word;
   /* border-box sizing means max-width includes --pad-x; add it back so the
      text measure is a true 70ch (≈66–75ch readability band), not ~57ch */
   max-width: calc(var(--max-w) + 2 * var(--pad-x));
