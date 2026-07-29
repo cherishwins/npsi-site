@@ -1,0 +1,353 @@
+# North Pacific Strategy Initiative — full machine-readable index
+
+> An independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress. Edited in Victoria, British Columbia. Working-paper text is licensed CC-BY-4.0; the imprint and wordmark are not licensed.
+
+This file is the full-content companion to https://npsi.ca/llms.txt. It carries
+the complete abstract, key findings, and citation metadata for every document
+the imprint has published. Content is current as of 29 July 2026.
+
+How to cite: "Jesse James, *[Title]*, NPSI Working Paper No. [N] (North Pacific
+Strategy Initiative, [Month Year]), https://npsi.ca/wp[N]/." Substitute
+Technical Briefing / Briefing Note / Special Briefing and the matching URL for
+the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
+(technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
+briefings). Where a PDF exists it is the canonical release document; every
+document also has a full HTML reading view at its canonical URL with Highwire
+citation_* meta tags and Schema.org JSON-LD. Editor: Jesse James
+(editor@npsi.ca). Numbering is the author's: WP6 and WP8 are unreleased, so the
+archive carries intentional gaps at 6 and 8.
+
+## Working Paper No. 11 — Rated AAA by the Issuer
+
+- ID: NPSI-WP-011 · Technical Series · v1.0 · 28 July 2026
+- Canonical: https://npsi.ca/wp11/ · PDF (18 pp.): https://npsi.ca/wp11/working-paper.pdf
+- Status: the current working paper. Supersedes WP10, which remains available unaltered with a correction notice.
+- Keywords: open source AI, credit ratings, quality labels, base rates, forecasting, OSAID, EU AI Act, open weights, certification, capability thresholds
+
+Abstract: There is no enforced definition of open source in artificial
+intelligence. A standards body wrote one and cannot compel anyone to use it; a
+regulator wrote a different one that binds in a single jurisdiction; a
+procurement authority expressed a preference for the thing and never defined it
+at all. In that vacuum, the company that builds a model is the party that
+declares it open — the labeller is the labelled. The closest precedent is not
+open-source software but the credit rating. The paper corrects its predecessor
+(WP-10) in a published correction notice, establishes that the July 2026 policy
+fight is not about whether to ban open-weight models but about who defines
+"sufficiently capable," and applies documented base rates from four other
+markets that ran unenforced quality labels to produce a forecast, with
+probabilities, of how this one resolves.
+
+Key findings: Four itemised corrections to WP10 are published at §1, including
+the framing correction that Anthropic is the most restriction-friendly major
+lab on open weights and has not called for a ban — both halves true. Both camps
+in the July 2026 fight (the 24 July Nvidia-hosted multi-signatory letter and
+Anthropic) reject a categorical ban in writing; the live leverage is in who
+defines the capability threshold, which falls disproportionately on open
+releases because guardrails cannot be reimposed after weights ship. The
+base-rate table covers four label markets — organic (resolved by statute after
+~12 years), Energy Star (certifier hardening after GAO-10-470), credit ratings
+(statute after systemic failure), and "natural" (never resolved) — and the §5
+forecast assigns probabilities with named falsifiers: label decays 45%,
+certifier gets teeth 20%, capability capture 25%, certifier captured 10%.
+Author's disclosure: drafted with assistance from Claude (Anthropic), whose
+statements the paper examines.
+
+## Working Paper No. 9 — The Counterparty Problem
+
+- ID: NPSI-WP-009 · v1.0 · 27 July 2026
+- Canonical: https://npsi.ca/wp9/ · PDF (12 pp.): https://npsi.ca/wp9/working-paper.pdf
+- Companions: WP1 (counterparty-diversification thesis), SB2 (the EXIM SCRI door)
+- Keywords: export credit, EXIM, Memorandum of Understanding, treaty withdrawal, commitment reliability, counterparty risk, sovereign wealth funds, reauthorization, Congress, Public Investment Fund
+
+Abstract: U.S. reliability is not one question but two, and conflating them
+produces bad risk analysis. The United States has a real, documented and
+recently accelerating record of formally exiting binding treaties — roughly
+fifteen significant withdrawals or repudiations since 2001 — but no honest
+failure-to-convert base rate can be computed for non-binding instruments like
+MoUs, because no registry of U.S. MoUs exists. The paper assesses the
+24 July 2026 PIF–EXIM $15 billion MoU against the sharpest available case
+study: EXIM's 2015–2019 board-quorum lapse, which cut the bank's financing by
+almost 85 percent, and a charter that expires again on 31 December 2026 with
+reauthorization still in committee.
+
+Key findings: Formal withdrawals cluster in 2017–2020 and 2025–2026. The
+PIF–EXIM instrument is explicitly non-binding; EXIM's charter expires
+31 December 2026, with the Senate's ten-year extension bill in committee and no
+markup. During the 2015–2019 quorum lapse, financing declined roughly 85
+percent, and each dollar of EXIM financing supports approximately $4.50 of
+exports. The paper's balance is load-bearing: it concedes democratic policy
+alternation, the honoured-commitment record (NATO Article 5, Bretton Woods, the
+Japan and Korea treaties), and that other states have worse records. The
+framing is counterparty-risk pricing, not anti-American critique.
+
+## Working Paper No. 10 — Fair Use for We, IP Theft for Thee
+
+- ID: NPSI-WP-010 · Technical Series · v1.0 · 26 July 2026
+- Canonical: https://npsi.ca/wp10/ · PDF (17 pp., canonical): https://npsi.ca/wp10/working-paper.pdf
+- Status: superseded by WP11 (corrections itemised at its §1); remains available unaltered with a correction notice attached.
+- Keywords: open source AI, OSAID, open weights, model licences, Llama, EU AI Act, fair use, distillation, copyright litigation, procurement, Canada
+
+Abstract: Between 16 and 24 July 2026 the United States government came closer
+to restricting foreign open-weight AI models than at any point in the
+technology's existence — and not one of the statements driving that policy
+rests on an agreed definition of the thing being restricted. The paper reads
+the licences: of eleven major model families surveyed, three satisfy the Open
+Source Initiative's definition, and none of those three operates at frontier
+scale. Llama 4's licence withholds rights from anyone domiciled in the European
+Union, inside a product marketed as open source, in the one jurisdiction that
+offers open-source models a regulatory exemption. And the characterisation now
+driving policy — that training on another party's output is fair use when
+American labs do it and theft when Chinese labs do it — is real at the level of
+framing, weaker than advertised at the level of evidence, and applied to
+conduct that three separate bodies of law treat three separate ways.
+
+Key findings: OSAID v1.0 (October 2024) has been adopted as a binding criterion
+by no regulator or procurement authority located in the survey; of eleven model
+families, three meet the definition (OLMo 2, Pythia/GPT-NeoX, arguably BLOOM),
+none at frontier scale. The paper's spine is a three-category legal separation:
+taking model weights is theft, uncontested; training on scraped outputs is
+contested and litigated; acquiring pirated corpora has been adjudicated against
+the lab (the Bartz v. Anthropic settlement). Every claim is evidence-graded
+VERIFIED / CORROBORATED / ATTRIBUTED / UNDETERMINED. Author's disclosure:
+drafted with assistance from Claude (Anthropic), whose conduct §6 examines.
+Read with WP11's correction notice.
+
+## Working Paper No. 7 — Dazzle 2.0
+
+- ID: NPSI-WP-007 · Counter-Autonomy Series (first paper) · v1.0 · 12 July 2026
+- Canonical: https://npsi.ca/wp7/ · PDF (10 pp.): https://npsi.ca/wp7/working-paper.pdf
+- Companion: TB1 — The Verified Sky (the sensing substrate)
+- Keywords: adversarial machine learning, dazzle camouflage, machine vision, drones, counter-autonomy, loitering munitions, sensor fusion, procurement, NATO, Canada
+
+Abstract: Russian logistics trucks in Ukraine have worn high-contrast dazzle
+paint since late May 2026, and the intent — degrading the machine vision on
+strike drones — is accepted by serious analysts. But no controlled test shows
+the tactic defeating any named detector. The durable finding is cost asymmetry:
+a paint can iterates in an afternoon; a fielded detector re-learns only as fast
+as its slowest update loop. The paper separates confirmed fact from inference
+and hype, and draws the procurement lesson for NATO and Canada: vision-only
+terminal guidance is brittle; sensor fusion, human authorization, and
+edge-retrainable models are the robust answers.
+
+Key findings: Every load-bearing claim is tagged Confirmed / Plausible /
+Speculation / Hype in the §2 evidence table. The most plausible mechanism is
+out-of-distribution confusion, not an engineered adversarial attack; three gaps
+(optimization, physical robustness, transferability) separate crude stripes
+from the academically proven ceiling (Eykholt et al. CVPR 2018; adversarial
+patches; CAMOU-class vehicle textures). The durable finding is cost asymmetry,
+anchored to the CENTCOM aircraft-tire case where the retraining loop ran up to
+six months. Five procurement recommendations: multi-sensor seekers,
+human-on-the-loop authorization, edge-retrainable models with organic
+labeling, adversarial and out-of-distribution inputs in acceptance testing, and
+no single-vendor black-box automatic target recognition.
+
+## Working Paper No. 5 — Sovereign Compute North
+
+- ID: NPSI-WP-005 · v1.0 · 27 May 2026 · Co-issued with Fit For Gov
+- Canonical: https://npsi.ca/wp5/ · PDF (19 pp., canonical): https://npsi.ca/wp5/working-paper.pdf
+- Companion: SB1 — Zero Secrets (the exposure audit)
+- Keywords: data sovereignty, sovereign cloud, Canada, Korea, HBM, hydroelectricity, data centres, CLOUD Act, sovereign compute, municipal infrastructure
+
+Abstract: Canada has the cheapest low-carbon firm electricity in the G7. Korea
+controls the global memory chokepoint on which every modern AI accelerator
+depends. The United States has stated, under oath through Microsoft France in
+June 2025, that it cannot guarantee allied citizens' data against US
+extraterritorial reach. The trade is obvious: Canadian electrons, Korean
+memory, Canadian law, Korean and allied capital — combined into a
+government-owned compute fabric that reaches from the Hydro-Québec switchyard
+to the municipal town hall.
+
+Key findings: An energy-for-memory swap signed under Canadian law — a
+government-owned, allies-financed, Canadian-law-bound compute fabric anchored
+on surplus Canadian power and Korea-led sovereign capital, extended to the
+municipal layer. The paper specifies the control-based sovereignty test
+(jurisdictional, operational, cryptographic, audit), the five Canadian Digital
+Sovereignty Standard clauses, the provincial power inventory, and the capital
+stack. Sits inside the three-rail Pacific architecture with WP1 (financial
+rail) and WP2 (energy/compute rail).
+
+## Working Paper No. 4 — The Addition Paradox
+
+- ID: NPSI-WP-004 · v1.0 · 15 May 2026
+- Canonical: https://npsi.ca/wp4/ · PDF: https://npsi.ca/wp4/working-paper.pdf
+- Keywords: Canada, energy transition, oil sands, hydroelectricity, uranium, critical minerals, clean-energy concentration, Pacific export capacity
+
+Abstract: Why the energy transition did not happen, why that is acceptable, and
+why Canada is uniquely positioned to win the forty years that follow. A record
+year for clean-energy deployment was also a record year for fossil combustion:
+the global system did not transition, it expanded.
+
+Key findings: 2024 saw a record 858 TWh of new clean electricity and record
+fossil combustion; global electricity demand grew 1,172 TWh, so fossil supplied
+the remaining 314 TWh; coal remains the largest single source into the
+mid-2030s. Chokepoint risk migrated from molecules to minerals: clean-tech
+refining and assembly concentrate in a single nation (polysilicon ≈95%, lithium
+cells ≈80%, NdFeB magnets ≈90%) — framed as concentration risk, not as an
+argument against clean energy. Canada holds four assets on one hand: the
+third-largest oil reserves with the lowest-carbon barrel trajectory, the
+largest per-capita clean electricity in the industrial democracies, the
+second-largest high-grade uranium reserves (Athabasca Basin), and the only G7
+position with simultaneous Pacific and Atlantic deepwater export capacity.
+Strategic preface to the three-rail architecture (WP1, WP2, WP3).
+
+## Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor
+
+- ID: NPSI-WP-003 · v1.0.1 · May 2026
+- Canonical: https://npsi.ca/wp3/ · PDF (30 pp.): https://npsi.ca/wp3/working-paper.pdf
+- Keywords: Canada, Korea, CPSP, submarines, KSS-III, Hanwha, defence-industrial, bilateral defence cooperation, CKFTA, SDCP
+
+Abstract: A bilateral defence-industrial architecture pairing the Canadian
+Patrol Submarine Project with the Hanwha–Algoma Steel and Hanwha–APMA
+industrial-offset structures, anchored to the CKFTA institutional foundation,
+the October 2025 SDCP, and the 25 February 2026 Foreign and Defence (2+2)
+Ministerial Joint Statement.
+
+Key findings: The Canadian Patrol Submarine Project (up to 12 boats by 2035;
+Hanwha Ocean and TKMS confirmed as the two qualified suppliers, 19 August 2025)
+read against Korea's offset posture: the binding Hanwha–Algoma MOU
+(26 January 2026) and the conditional Hanwha–APMA MOU (29 April 2026), with the
+30 October 2025 Carney–Lee Security and Defence Cooperation Partnership as the
+institutional anchor. Completes the three-rail Pacific architecture as the
+defence-industrial rail alongside WP1 (financial) and WP2 (energy/compute).
+
+## Working Paper No. 2 — A Canada–United States Energy and Compute Compact
+
+- ID: NPSI-WP-002 · v1.0 · May 2026
+- Canonical: https://npsi.ca/wp2/ · PDF (45 pp.): https://npsi.ca/wp2/working-paper.pdf
+- Keywords: Canada, United States, CUSMA, AI compute, hydroelectricity, ultra-high-voltage transmission, bilateral compact
+
+Abstract: A treaty-grade bilateral architecture pairing Canadian dispatchable
+generation with the U.S. grid through ultra-high-voltage transmission, siting
+AI training workloads on Canadian hydro-electric capacity, and preserving
+inference workloads at the U.S. urban edge. Structurally complementary to
+Working Paper No. 1; financed through the same supranational vehicle.
+
+Key findings: The U.S. faces a structural capacity gap (~44 GW required by 2028
+against ~25 GW deliverable); combined dispatchable Canadian hydro is
+approximately 56,000 MW across Hydro-Québec, BC Hydro, and Manitoba Hydro. AI
+workloads bifurcate — training is latency-agnostic and can sit on Canadian
+hydro, inference stays at the U.S. urban edge — and roughly 80 percent of AI
+critical-IT load is inference by 2030. Three corridor candidates
+(Saguenay/Côte-Nord, Peace River/Bennett, Northern Manitoba), an Indigenous
+Series II tranche of 10–15 percent of compact capex, and survival independent
+of CUSMA renewal.
+
+## Working Paper No. 1 — The Bilateral Foundation
+
+- ID: NPSI-WP-001 · v1.0 · May 2026
+- Canonical: https://npsi.ca/wp1/ · PDF: https://npsi.ca/wp1/working-paper.pdf
+- Keywords: Canada, Korea, sovereign bonds, CKPIF, Pacific architecture, bilateral finance, middle-power policy
+
+Abstract: A thirty-year Canada–Korea co-issued sovereign infrastructure bond —
+assembled from off-the-shelf instruments, priced as a spread over US
+Treasuries, with Indigenous co-ownership embedded at issuance — as the
+architecture of middle-power independence.
+
+Key findings: Proposes the Canada–Korea Pacific Infrastructure Facility
+(CKPIF): a treaty-based supranational issuer with 50/50 ownership, Luxembourg
+seat, English law, and LCIA arbitration; indicative programme size US$25–40
+billion over 5–7 years, priced indicatively +50–80 bp over 30-year US
+Treasuries; several (not joint) sovereign guarantees. An Indigenous Series I
+tranche of 10–15 percent of programme with +25 bp ratchet protection; KPI
+architecture on ICMA Sustainability-Linked Bond Principles; a tokenised pilot
+tranche of US$200–500 million on Project Agorá-class infrastructure. The
+institutional foundation is the Bank of Canada–Bank of Korea standing swap
+line, signed November 2017, with no expiry and no preset limit.
+
+## Technical Briefing No. 1 — The Verified Sky
+
+- ID: NPSI-TB-001 · v1.0 · 11 June 2026
+- Canonical: https://npsi.ca/tb1/ · PDF: https://npsi.ca/tb1/technical-briefing.pdf
+- Keywords: airspace awareness, computer vision, sensor fusion, counter-UAS, Remote ID, verification architecture, edge AI, Canada, Radiocommunication Act, PIPEDA
+
+Abstract: A survey of the 2025–2026 state of the art in computer vision and
+sensing for monitoring a defined volume of airspace; the verification
+architecture that converts a probabilistic detection into a near-certain
+identification; realistic detection-to-action latency; the statutory line
+between lawful and criminal automated response for a private Canadian operator;
+and a deliberately conservative capability forecast at one, two-and-a-half, and
+five years.
+
+Key findings: The signature element is the verification ledger — seven
+conditions (class, size, altitude, kinematics, window, geofence, persistence)
+that must all pass before any action fires, with two-sensor corroboration as
+the standing industry rule. Benchmark honesty: realistic small-and-distant
+detection performance runs at roughly half of headline benchmark performance.
+The Canadian legal line: detection, tracking, evidence, and notification are
+lawful for civil operators; jamming, spoofing, takeover, and physical downing
+are not. Explicitly a technical and regulatory survey, not legal advice.
+
+## Briefing Note No. 1 — The Voter File
+
+- ID: NPSI-BN-001 · v1.0 · 11 June 2026
+- Canonical: https://npsi.ca/bn1/ · PDF: https://npsi.ca/bn1/briefing-note.pdf
+- Keywords: voter files, political parties, privacy law, Canada Elections Act, Bill C-4, PIPEDA, data-driven campaigning, microtargeting
+
+Abstract: Every major Canadian federal political party maintains a database
+with a record on substantially every voter, assembled in five layers: the
+Elections Canada list of electors, canvassing observations, appended public
+records, appended commercial data, and modelled behavioural scores. No layer
+requires consent; no layer grants a right of access. In March 2026, Part 4 of
+Bill C-4 excluded federal parties from provincial and territorial privacy law,
+retroactive to 2000.
+
+Key findings: The five-layer file documented end to end, with the legal
+chronology: PIPEDA never applied; Bill C-76 (2018) required only a published
+privacy policy; BC OIPC Order P22-02 (2022) and the 2024 BC Supreme Court
+judicial review found BC PIPA could apply; Bill C-4 Part 4 (royal assent
+March 2026) closed that path retroactive to 2000, with the Senate's three-year
+sunset amendment rejected. Explicitly non-partisan; the illustrative voter
+record is fictional and labelled as such.
+
+## Special Briefing No. 2 — The Three Doors
+
+- ID: NPSI-SB-002 · v1.0 · 2 July 2026
+- Canonical: https://npsi.ca/sb2/ · PDF (canonical): https://npsi.ca/sb2/special-briefing.pdf
+- Keywords: critical minerals, Defense Production Act, domestic source, Canada, mining finance, DPA Title III, Energy Act 18743, EXIM, supply chain
+
+Abstract: Under U.S. defense law, Canada has been a domestic source since 1992
+(50 U.S.C. §4552). Canadian companies qualify for American defense-industrial
+grants, loans, and loan guarantees on the same footing as a firm in Ohio. This
+briefing maps the three doors — Defense Production Act Title III, Energy Act of
+2020 §18743, and the Export-Import Bank's Supply Chain Resiliency Initiative —
+and the navigation moat that stalls applicants.
+
+Key findings: A ten-panel briefing built around the 1992 domestic-source
+provision and the three federal funding doors it opens for Canadian critical-
+minerals producers, with the navigation moat — not eligibility — identified as
+the binding constraint.
+
+## Special Briefing No. 1 — Zero Secrets
+
+- ID: NPSI-SB-001 · v1.0 · 11 June 2026
+- Canonical: https://npsi.ca/sb1/ · PDF: https://npsi.ca/sb1/special-briefing.pdf
+- Companion: WP5 — Sovereign Compute North (the constructive proposal)
+- Keywords: data sovereignty, CLOUD Act, FISA 702, sovereign AI, sovereign compute, cloud jurisdiction, Investment Canada Act, Canada
+
+Abstract: Canada effectively holds no data secrets from the United States — not
+by choice, but by architecture. The overwhelming majority of Canadian
+government, corporate, and citizen data sits on infrastructure owned by three
+American corporations, and under the US CLOUD Act and FISA Section 702,
+American jurisdiction follows corporate ownership, not server location. This
+briefing audits the exposure, the federal response, and the demonstrated
+capability class, and recommends a three-stage sovereign-infrastructure
+response.
+
+Key findings: Data residency is not data sovereignty — under the CLOUD Act
+(18 U.S.C. §2713) and FISA 702, US jurisdiction follows corporate ownership,
+not server location, and no Canada–US CLOUD Act bilateral exists. Anchor
+evidence includes Microsoft France's sworn testimony before the French Senate
+(10 June 2025). Recommends a control-based definition of sovereign cloud
+(jurisdictional, operational, cryptographic, audit), migration of classified
+and Protected B workloads, and Canadian-owned-and-operated awards. The caveats
+section states the strongest counter-cases (cost, Five Eyes, free-riding)
+fairly.
+
+## The Imprint
+
+- About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
+- Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
+- Commentary: https://npsi.ca/commentary/ — named commentary index, per paper.
+- Colophon: https://npsi.ca/colophon/ — type, palette, infrastructure.
+- Sitemap: https://npsi.ca/sitemap.xml
+- Repository: https://github.com/cherishwins/npsi-site — public version-controlled source for the site and papers, with CITATION.cff for academic reuse.

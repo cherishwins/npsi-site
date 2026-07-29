@@ -11,13 +11,13 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 ## Working Papers
 
 - [WP11 — Rated AAA by the Issuer](https://npsi.ca/wp11/): What "open source" in AI has in common with a credit rating — the party applying the label is the party being labelled — and what documented base rates from four other unenforced quality labels (organic, Energy Star, "natural," credit ratings) say about how the vacuum resolves, forecast with probabilities and named falsifiers. Supersedes WP10 with a published correction notice. Technical Series; the current working paper. v1.0, 28 July 2026. PDF: https://npsi.ca/wp11/working-paper.pdf
-- [WP9 — The Counterparty Problem](https://npsi.ca/wp9/): U.S. commitment reliability assessed as two separate questions — a documented record of roughly fifteen formal treaty exits since 2001, and a memorandum record for which no honest base rate exists. The 24 July 2026 PIF–EXIM $15 billion MoU priced against EXIM's 2015–2019 quorum lapse (financing down ~85%) and a charter expiring 31 December 2026. v1.0, 27 July 2026.
+- [WP9 — The Counterparty Problem](https://npsi.ca/wp9/): U.S. commitment reliability assessed as two separate questions — a documented record of roughly fifteen formal treaty exits since 2001, and a memorandum record for which no honest base rate exists. The 24 July 2026 PIF–EXIM $15 billion MoU priced against EXIM's 2015–2019 quorum lapse (financing down ~85%) and a charter expiring 31 December 2026. v1.0, 27 July 2026. PDF: https://npsi.ca/wp9/working-paper.pdf
 - [WP10 — Fair Use for We, IP Theft for Thee](https://npsi.ca/wp10/): Nobody agrees what "open source" means in AI, and Washington is writing policy inside that vacuum — eleven model families read against the OSI definition (three qualify, none at frontier scale), the EU AI Act exemption, the litigation map, and the three legally distinct acts the debate keeps merging. Technical Series; every claim evidence-graded. Superseded by WP11 (corrections at its §1); remains available unaltered. v1.0, 26 July 2026. PDF (canonical): https://npsi.ca/wp10/working-paper.pdf
 - [WP7 — Dazzle 2.0](https://npsi.ca/wp7/): Russia's "zebra" trucks and the contest between physical camouflage and machine vision — what the viral claim gets right, what it inflates, and the cost-asymmetry lesson for how NATO and Canada buy autonomy. First paper in the NPSI Counter-Autonomy series. v1.0, 12 July 2026.
 - [WP5 — Sovereign Compute North](https://npsi.ca/wp5/): An energy-for-memory swap, signed under Canadian law — a government-owned, allies-financed, Canadian-law-bound compute fabric anchored on surplus Canadian power and Korea-led sovereign capital, extended to the municipal layer. Co-issued with Fit For Gov; companion to SB1. v1.0, 27 May 2026. PDF: https://npsi.ca/wp5/working-paper.pdf
 - [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
-- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0, May 2026.
-- [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026.
+- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0.1, May 2026. PDF: https://npsi.ca/wp3/working-paper.pdf
+- [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026. PDF: https://npsi.ca/wp2/working-paper.pdf
 - [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/): A thirty-year Canada–Korea co-issued sovereign bond as the architecture of middle-power independence. v1.0, May 2026. PDF: https://npsi.ca/wp1/working-paper.pdf
 
 ## Technical Briefings
@@ -44,5 +44,6 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 
 ## Optional
 
+- [Full index](https://npsi.ca/llms-full.txt): Complete abstracts, key findings, and citation metadata for every document, in one file.
 - [Sitemap](https://npsi.ca/sitemap.xml)
 - [Repository](https://github.com/cherishwins/npsi-site): Public version-controlled source for the site and papers.

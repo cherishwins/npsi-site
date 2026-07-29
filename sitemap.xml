@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/wp9/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/wp10/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -134,15 +140,27 @@
   </url>
   <url>
     <loc>https://npsi.ca/wp3/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/wp3/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/wp2/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp2/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp1/</loc>

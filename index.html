@@ -36,26 +36,41 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "North Pacific Strategy Initiative",
-  "alternateName": "NPSI",
-  "url": "https://npsi.ca/",
-  "logo": "https://npsi.ca/assets/img/favicon.svg",
-  "image": "https://npsi.ca/assets/img/og-default.png",
-  "email": "editor@npsi.ca",
-  "description": "An independent research imprint publishing working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.",
-  "foundingDate": "2026",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Victoria, BC, Canada"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Jesse James"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/north-pacific-strategy-initiative/",
-    "https://github.com/cherishwins/npsi-site"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://npsi.ca/#organization",
+      "name": "North Pacific Strategy Initiative",
+      "alternateName": "NPSI",
+      "url": "https://npsi.ca/",
+      "logo": "https://npsi.ca/assets/img/favicon.svg",
+      "image": "https://npsi.ca/assets/img/og-default.png",
+      "email": "editor@npsi.ca",
+      "description": "An independent research imprint publishing working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.",
+      "foundingDate": "2026",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Victoria, BC, Canada"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jesse James"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/north-pacific-strategy-initiative/",
+        "https://github.com/cherishwins/npsi-site"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://npsi.ca/#website",
+      "url": "https://npsi.ca/",
+      "name": "North Pacific Strategy Initiative",
+      "description": "Working papers on Pacific sovereignty and bilateral architecture. Reference-grade, machine-citable: every paper carries Highwire citation metadata, Schema.org JSON-LD, and a canonical URL; site indexes for AI systems at /llms.txt and /llms-full.txt.",
+      "publisher": { "@id": "https://npsi.ca/#organization" },
+      "inLanguage": "en-CA",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
   ]
 }
 </script>
@@ -136,6 +151,7 @@
     <p class="wp-card-summary">&ldquo;U.S. reliability&rdquo; is not one question but two, and conflating them produces bad risk analysis. The United States has a real, documented record of formally exiting binding treaties — roughly fifteen significant withdrawals or repudiations since 2001 — but no honest failure-to-convert base rate exists for non-binding instruments like MoUs, because no registry of U.S. MoUs exists. The paper prices the 24&nbsp;July&nbsp;2026 PIF&ndash;EXIM $15&nbsp;billion framework against the sharpest case study available: EXIM&rsquo;s 2015&ndash;2019 board-quorum lapse, which cut the bank&rsquo;s financing by almost 85&nbsp;per&nbsp;cent, and a charter that expires again on 31&nbsp;December&nbsp;2026 with reauthorization still in committee. Released 27&nbsp;July&nbsp;2026.</p>
     <div class="wp-card-actions">
       <a class="btn" href="/wp9/">Read Working Paper</a>
+      <a class="btn btn-bronze" href="/wp9/working-paper.pdf">Download Full Paper (PDF)</a>
       <a class="btn btn-bronze" href="mailto:editor@npsi.ca?subject=NPSI%20WP9%20Named%20Commentary">Submit Named Commentary</a>
     </div>
   </article>
