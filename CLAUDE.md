@@ -9,7 +9,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 18 pages plus a 404 — home, nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 19 pages plus a 404 — home, nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), three special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
@@ -195,6 +195,9 @@ npsi-site/
 ├── sb2/
 │   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — full reading view (PDF canonical)
 │   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
+├── sb3/
+│   ├── index.html                   Special Briefing No. 3 — *The Ledger With One Entry* — release page (PDF canonical)
+│   └── special-briefing.pdf         canonical v1.0 release (39 pp., direct download; PDF carries the author's serial placeholder, NPSI-SB-003 assigned at site publication)
 ├── tb1/
 │   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
 │   └── technical-briefing.pdf       full PDF release (direct download, no email gate)
@@ -445,9 +448,19 @@ Second paper in the **Technical Series**. v1.0 published 28 July 2026; full read
 - §7 names the jurisdictional cascade as the intended subject of **WP12** (not yet written).
 - Author: Jesse James; v1.0 published 28 July 2026.
 
+### Special Briefing No. 3 — The Ledger With One Entry (`sb3/index.html`)
+
+Accountability audit, integrated 29 July 2026 as a **PDF-first release page** (`sb3/special-briefing.pdf`, 39 pp., is canonical; the PDF carries the author's serial placeholder `NPSI-SB-NNN` — `NPSI-SB-003` was assigned at site publication and the page says so). Key facts that should remain consistent:
+
+- **Core finding:** since the 3 January 2026 capture of Maduro, the U.S. has controlled Venezuelan crude sales — FT-estimated proceeds >$13bn; Venezuela's transparency portal records one $300m receipt (March); zero audits published; at least three mutually inconsistent official accounts of where the money is held.
+- **The legal architecture, stated fairly:** the offshore structure is *not* evidence of intent to steal — two traps in U.S. law (TRIA §201 attachment; the Crystallex alter-ego doctrine, 932 F.3d 126) would have destroyed the funds on arrival. The paper's sharpest line: the structure built to defeat Venezuela's creditors also defeats the United States Congress. Preserve this balance verbatim — it is what keeps the piece on the right side of the no-anti-American-framing rule.
+- **The benchmark:** four custody regimes scored (Iraq OFF/DFI, Libya, Iran/Qatar 2023 — the $6bn moved from restricted accounts *in South Korea* — and Venezuela); Venezuela is the least accountable; the most accountable (Iraq, with UN mandate + monitoring board + published audits) still lost $8.8bn (SIGIR).
+- **The Pacific relevance is the paper's own:** the intervention redirected rather than interrupted the oil (1.23m b/d April 2026, highest since 2018); Shandong's independent refiners were the largest single loser — the paper names this "the Pacific consequence." Do not bolt on additional Korea–Canada framing; the companions row (WP9, WP1, SB1) carries the thesis link.
+- **Method register:** every material claim confidence-rated; both governments flagged as interested parties; corrections appendix on the public commentaries explicitly "not a rebuttal"; four named unclassified documents that would settle the accounting.
+- Author: Jesse James; v1.0 issued 26 July 2026, reporting cut-off 22 July 2026. OG card is the author-supplied PNG (`assets/img/sb3-og.png`, no SVG source).
+
 ## Series pieces in flight (not yet on the site)
 
-- **SB3 — reserved** for *The Ledger With One Entry* (Venezuelan oil revenue under U.S. custody; 39-pp. paper exists off-site, LinkedIn carousel released July 2026 with placeholder ID "NPSI-SB-NNN"). Integrate when the editor supplies the source document; assign `NPSI-SB-003`.
 - **An unnamed Nord Stream accountability piece** — five finished dark-identity figures exist (three courts: Warsaw/Karlsruhe/London; €16.9bn asset cost; MV AfD polling); no document or number yet.
 - **NPSI-X dossier line** — *Follow the Money* (EU revenue, `NPSI-X-2607`, 23 July 2026) uses a separate "open-source investigative dossier" ID scheme (`NPSI-X-NNNN`) and is not part of the working-paper series; no site presence yet and none implied.
 
