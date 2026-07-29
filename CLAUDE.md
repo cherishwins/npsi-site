@@ -13,7 +13,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release, reading view to follow). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
-**Current-slot exception (July 2026, editor's decision):** although WP9 and WP10 are the newest papers by date, **WP7 holds the "Current Working Paper" slot and the sitewide nav link (`/wp7/`)** during the Korea Pro publication window — the KOSPI essay published 29 July 2026 sends Korea-focused readers to the homepage, and the hero flip is deliberately deferred. WP9 and WP10 sit at the top of the home-page archive with day-level dates. Flip the hero and nav when the editor says so; until then this is a known, intentional exception to the papers-ordered-by-date law.
+**Current paper: WP9** (flipped 29 July 2026, editor's direction — the WP7 hold was reversed the same day once the editor saw the Russian-story hero against incoming Korea Pro traffic). The "Working Paper" nav link sitewide points to **`/wp9/`**; WP7 carries the standard previous-paper banner. WP10 (26 July) sits directly below WP9 in the archive with day-level dates, so the 9-above-10 ordering explains itself. Papers are ordered by publication date and nothing else.
 
 **PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
@@ -105,7 +105,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
 </header>
 ```
 
-The "Working Paper" nav link points to the **current** working paper (currently `/wp4/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
+The "Working Paper" nav link points to the **current** working paper (currently `/wp9/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
 
 ### Page opener (every content page)
 
@@ -182,10 +182,10 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — full reading view (PDF canonical)
 │   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
-│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (holds the CURRENT slot; see current-slot exception)
+│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (previous paper; banner points to WP9)
 │   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
 ├── wp9/
-│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (no PDF yet)
+│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (CURRENT paper; no PDF yet)
 ├── wp10/
 │   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical)
 │   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download)
@@ -351,7 +351,7 @@ If new content cites different numbers, structure, or framing for either CKPIF o
 
 ### Working Paper No. 4 — The Addition Paradox (`wp4/index.html`)
 
-An energy thesis for Canada — the **current** working paper, v1.0 published 15 May 2026. Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
+An energy thesis for Canada — v1.0 published 15 May 2026. Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
 
 - **Core thesis:** the global energy transition did not substitute, it *added*. 2024 saw a record 858 TWh of new clean electricity *and* record fossil combustion; global electricity demand grew 1,172 TWh (clean supplied 858, fossil supplied the remaining 314); power-sector CO₂ ≈ 14.6 Gt; coal ≈ 10,613 TWh and forecast largest single source through the mid-2030s; clean-energy investment ≈ US$2 trillion in 2024 (≈2× fossil); upstream oil investment ≈ US$570 bn (highest since 2017).
 - **Chokepoint migration:** clean-tech refining/assembly concentration in a single nation — polysilicon ≈ 95%, lithium cells ≈ 80%, NdFeB magnets ≈ 90%. Framed as concentration risk, **not** anti-clean-energy and **not** named beyond "a single nation / the People's Republic of China" as the paper does.
@@ -363,7 +363,7 @@ An energy thesis for Canada — the **current** working paper, v1.0 published 15
 
 ### Working Paper No. 7 — Dazzle 2.0 (`wp7/index.html`)
 
-The **current** working paper, v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) published 27 May 2026, so only WP6 remains forthcoming — an intentional single-number gap. Eight sections plus executive summary. Key facts that should remain consistent:
+v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) published 27 May 2026, so only WP6 remains forthcoming — an intentional single-number gap. Eight sections plus executive summary. Key facts that should remain consistent:
 
 - **Core assessment:** the viral claim about Russia's "zebra"-painted logistics trucks is *real at its root and inflated at its tip*. Trucks confirmed via imagery since ~31 May 2026 (TWZ, RFE/RL, France 24, Defense Express, Militarnyi); anti-machine-vision intent is analyst consensus; **zero published controlled tests** show an effect on a named detector.
 - **Evidence-tier discipline is the paper's spine:** every load-bearing claim is tagged Confirmed / Plausible / Speculation / Hype in the §2 table. Preserve the tags; they are the register.
