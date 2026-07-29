@@ -743,7 +743,7 @@ body::after {
   body::after { display: none; }
   .wp-card, figure, .wp-meta-block, .toc { animation: none; }
   html { scroll-behavior: auto; }
-  .masthead, .site-footer, .nav, .wp-card-actions, .toc { display: none; }
+  .masthead, .site-footer, .nav, .wp-card-actions, .toc, .screen-only { display: none; }
   body {
     background: #fff;
     color: #000;

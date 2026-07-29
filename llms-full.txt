@@ -55,7 +55,7 @@ statements the paper examines.
 ## Working Paper No. 9 — The Counterparty Problem
 
 - ID: NPSI-WP-009 · v1.0 · 27 July 2026
-- Canonical: https://npsi.ca/wp9/ (reading view; PDF forthcoming)
+- Canonical: https://npsi.ca/wp9/ · PDF (12 pp.): https://npsi.ca/wp9/working-paper.pdf
 - Companions: WP1 (counterparty-diversification thesis), SB2 (the EXIM SCRI door)
 - Keywords: export credit, EXIM, Memorandum of Understanding, treaty withdrawal, commitment reliability, counterparty risk, sovereign wealth funds, reauthorization, Congress, Public Investment Fund
 
@@ -192,8 +192,8 @@ Strategic preface to the three-rail architecture (WP1, WP2, WP3).
 
 ## Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor
 
-- ID: NPSI-WP-003 · v1.0 · May 2026
-- Canonical: https://npsi.ca/wp3/ (reading view; PDF forthcoming)
+- ID: NPSI-WP-003 · v1.0.1 · May 2026
+- Canonical: https://npsi.ca/wp3/ · PDF (30 pp.): https://npsi.ca/wp3/working-paper.pdf
 - Keywords: Canada, Korea, CPSP, submarines, KSS-III, Hanwha, defence-industrial, bilateral defence cooperation, CKFTA, SDCP
 
 Abstract: A bilateral defence-industrial architecture pairing the Canadian
@@ -213,7 +213,7 @@ defence-industrial rail alongside WP1 (financial) and WP2 (energy/compute).
 ## Working Paper No. 2 — A Canada–United States Energy and Compute Compact
 
 - ID: NPSI-WP-002 · v1.0 · May 2026
-- Canonical: https://npsi.ca/wp2/ (reading view; PDF forthcoming)
+- Canonical: https://npsi.ca/wp2/ · PDF (45 pp.): https://npsi.ca/wp2/working-paper.pdf
 - Keywords: Canada, United States, CUSMA, AI compute, hydroelectricity, ultra-high-voltage transmission, bilateral compact
 
 Abstract: A treaty-grade bilateral architecture pairing Canadian dispatchable
