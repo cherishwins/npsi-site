@@ -11,7 +11,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
 **Scope of the site:** 19 pages plus a 404 — home, nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), three special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; `wp9/working-paper.pdf` generated from the reading view 29 July 2026). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
 **Current paper: WP11** (published to the site 29 July 2026; WP9 held the slot for a few hours the same day before WP11 arrived). The "Working Paper" nav link sitewide points to **`/wp11/`**; WP9 and WP7 carry the standard previous-paper banner; WP10 carries a supersession notice instead. The archive runs WP9 (27 Jul) → WP10 (26 Jul) → WP7 (12 Jul) with day-level dates. Papers are ordered by publication date and nothing else.
 
@@ -169,23 +169,26 @@ npsi-site/
 ├── commentary/index.html            named commentary index, per paper
 ├── colophon/index.html              technical colophon
 ├── wp1/
-│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP7)
+│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP11)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── wp2/
-│   └── index.html                   Working Paper No. 2 — full reading view (previous paper)
+│   ├── index.html                   Working Paper No. 2 — full reading view (previous paper)
+│   └── working-paper.pdf            v1.0 PDF (generated from the reading view 29 Jul 2026; 45 pp., direct download)
 ├── wp3/
-│   └── index.html                   Working Paper No. 3 — full reading view (previous paper)
+│   ├── index.html                   Working Paper No. 3 — full reading view (previous paper; v1.0.1)
+│   └── working-paper.pdf            v1.0.1 PDF (generated from the reading view 29 Jul 2026; 30 pp., direct download)
 ├── wp4/
-│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP7)
+│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP11)
 │   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
 ├── wp5/
 │   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — full reading view (PDF canonical)
 │   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
-│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (previous paper; banner points to WP9)
+│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (previous paper; banner points to WP11)
 │   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
 ├── wp9/
-│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (previous paper; banner points to WP11; no PDF yet)
+│   ├── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (previous paper; banner points to WP11)
+│   └── working-paper.pdf            v1.0 PDF (generated from the reading view 29 Jul 2026; 12 pp., direct download)
 ├── wp10/
 │   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical; superseded by WP11, notice attached)
 │   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download, unaltered)
@@ -338,6 +341,7 @@ Proposes the **Compact** — a treaty-grade bilateral architecture pairing Canad
 - Indigenous Series II tranche (parallel to WP1 Series I), 10–15% of compact capex, +25 bp ratchet
 - Three-rail Pacific architecture: financial rail (Korea, WP1) + energy/compute rail (U.S., WP2) + critical-minerals rail (cross-cutting)
 - Author: Jesse James (editor); v1.0 published May 2026
+- `wp2/working-paper.pdf` (45 pp.) generated from the reading view 29 July 2026; stale pre-publication-draft endmatter retired the same day
 
 If new content cites different numbers, structure, or framing for either CKPIF or the Compact without explicit reason, that's a drift to flag.
 
@@ -356,7 +360,7 @@ If new content cites different numbers, structure, or framing for either CKPIF o
   - **Anchor research document:** Julie Kim, *The Future of Canada-ROK Defence Cooperation*, CGAI Policy Perspective, April 2025 (ISBN 978-1-77397-337-1) — substantially out of date for late-2025 / Q1-2026 events; treat as contemporaneous baseline.
   - January 2026 Canada–Korea Industrial Cooperation Committee MOU on co-mining and co-production.
   - FORGE plurilateral framework — Korea-chaired through mid-2026.
-  - Author: Jesse James (editor); v1.0 published May 2026.
+  - Author: Jesse James (editor); v1.0 published May 2026. **v1.0.1 (29 July 2026):** §1 (*The CPSP and the Strategic Window*) was completed from the canonical-fact list above — the v1.0 release had shipped it as a structure-locked placeholder. `wp3/working-paper.pdf` (30 pp.) generated from the reading view the same day.
 
 ### Working Paper No. 4 — The Addition Paradox (`wp4/index.html`)
 
@@ -417,7 +421,7 @@ The first of the **Special Briefings** — single-issue strategic assessments pu
 
 ### Working Paper No. 9 — The Counterparty Problem (`wp9/index.html`)
 
-U.S. commitment reliability assessed as two separate questions. v1.0 published 27 July 2026; reading view only (no PDF release yet). Key facts that should remain consistent:
+U.S. commitment reliability assessed as two separate questions. v1.0 published 27 July 2026; `wp9/working-paper.pdf` (12 pp.) generated from the reading view 29 July 2026. Key facts that should remain consistent:
 
 - **Core finding:** "U.S. reliability" is two questions, not one. Definition A (formal withdrawal/repudiation of binding or quasi-binding commitments): ~15 significant instances since 2001, clustered 2017–2020 and 2025–2026. Definition B (stated intent/MoU that never converted): **no honest base rate exists** — no registry of U.S. MoUs; the paper deliberately declines to state a rate. Never let an edit introduce a fabricated conversion percentage.
 - **The anchor case:** PIF–EXIM MoU, 24 July 2026 — framework of up to $15 billion; explicitly non-binding. EXIM's charter expires **31 December 2026**; S. 3772 (Warner–Cramer, 10-year extension, retains $135B cap per CRS) in committee with no markup; House discussion draft proposes 5 years. The $205 billion cap figure is a sponsor's goal, not enacted text.
