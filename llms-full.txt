@@ -11,7 +11,7 @@ Strategy Initiative, [Month Year]), https://npsi.ca/wp[N]/." Substitute
 Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
-briefings). Where a PDF exists it is the canonical release document; every
+briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account). Where a PDF exists it is the canonical release document; every
 document also has a full HTML reading view at its canonical URL with Highwire
 citation_* meta tags and Schema.org JSON-LD. Editor: Jesse James
 (editor@npsi.ca). Numbering is the author's: WP6 and WP8 are unreleased, so the
@@ -253,6 +253,36 @@ architecture on ICMA Sustainability-Linked Bond Principles; a tokenised pilot
 tranche of US$200–500 million on Project Agorá-class infrastructure. The
 institutional foundation is the Bank of Canada–Bank of Korea standing swap
 line, signed November 2017, with no expiry and no preset limit.
+
+## The Pacific Ledger — №01 · July 2026 (Premier Issue)
+
+- ID: NPSI-PL-001 · The Pacific Ledger (monthly) · issue closed 28 July 2026
+- Canonical: https://npsi.ca/pl1/ · PDF (7 pp.): https://npsi.ca/pl1/pacific-ledger.pdf
+- Series: The Pacific Ledger is the imprint's monthly account of the Canada–Korea relationship — every entry sourced, both sides recorded. Document IDs follow NPSI-PL-NNN.
+- Keywords: Canada, Korea, trade, LNG, crude oil, batteries, critical minerals, submarine procurement, CKFTA, Kapyong, Pacific
+
+Abstract: A monthly account of the Canada–Korea relationship. Premier issue: on
+July 6 Canada named TKMS preferred supplier for the Canadian Patrol Submarine
+Project over Hanwha's KSS-III — and the relationship spent the rest of the
+month posting new entries anyway. The ledger records LNG Canada's first KOGAS
+cargo (Kitimat May 20 → Incheon June 3), a 3.3× expansion of Canadian crude to
+Korea, the NextStar battery plant at full LG Energy Solution ownership, a joint
+critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP
+collaboration, Defence Cooperation Agreement negotiations launched at the
+June 16 G7 bilateral, and Kapyong at 75.
+
+Key entries: Two-way merchandise trade C$25 billion in 2025; Korea is Canada's
+seventh-largest trading partner; Korean FDI stock in Canada C$17.6 billion; 99
+percent duty-free under CKFTA. Korea's Middle East LNG dependence fell from 45
+percent (2022) to 24 percent (2025), projected under 18 percent in 2026; not a
+single Korean LNG carrier was inside the Strait of Hormuz when it closed
+(KOGAS CEO Choi Yeon-hye, June 5). Canadian crude to Korea expands from 4.88
+million barrels (2025) to as much as 16 million (2026) — third-largest buyer
+after the U.S. and China. Debit column recorded honestly: Hanwha's contingent
+armoured-vehicle JV and DAPA equity stake shelved; Hyundai's Project Beaver
+carried as unresolved. Open items published: the Korean masthead subtitle is
+pending native-speaker review; the late-July DPRK troop-deployment figure is a
+claim, not a confirmation.
 
 ## Technical Briefing No. 1 — The Verified Sky
 
