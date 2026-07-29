@@ -9,9 +9,11 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 15 pages plus a 404 — home, six working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0* — the current paper), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 17 pages plus a 404 — home, eight working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series; numbered by the author — only WP6 remains forthcoming, so the archive carries an intentional single-number gap). The "Working Paper" nav link sitewide points to the current paper, **`/wp7/`**.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release, reading view to follow). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
+
+**Current-slot exception (July 2026, editor's decision):** although WP9 and WP10 are the newest papers by date, **WP7 holds the "Current Working Paper" slot and the sitewide nav link (`/wp7/`)** during the Korea Pro publication window — the KOSPI essay published 29 July 2026 sends Korea-focused readers to the homepage, and the hero flip is deliberately deferred. WP9 and WP10 sit at the top of the home-page archive with day-level dates. Flip the hero and nav when the editor says so; until then this is a known, intentional exception to the papers-ordered-by-date law.
 
 **PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
@@ -180,8 +182,13 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — full reading view (PDF canonical)
 │   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
 ├── wp7/
-│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (CURRENT paper)
+│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (holds the CURRENT slot; see current-slot exception)
 │   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
+├── wp9/
+│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (no PDF yet)
+├── wp10/
+│   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical)
+│   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download)
 ├── sb2/
 │   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — full reading view (PDF canonical)
 │   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
@@ -398,6 +405,35 @@ The first of the **Special Briefings** — single-issue strategic assessments pu
 - Recommendations: control-based definition of sovereign cloud (jurisdictional, operational, cryptographic, audit); classified/Protected B migration; ICA strengthening; Canadian-owned-and-operated SCIP awards; champion retention via the $500M Canadian Tech Growth Fund.
 - Register: caveats section states the strongest counter-cases fairly (cost, Five Eyes, free-riding) and publishes methodological uncertainty. Companion to WP5 *Sovereign Compute North* (published 27 May 2026, `wp5/`).
 - Author: Jesse James; v1.0 published 11 June 2026. PDF: `sb1/special-briefing.pdf` (direct download, no email gate). OG card `assets/img/sb1-og.svg/.png`.
+
+### Working Paper No. 9 — The Counterparty Problem (`wp9/index.html`)
+
+U.S. commitment reliability assessed as two separate questions. v1.0 published 27 July 2026; reading view only (no PDF release yet). Key facts that should remain consistent:
+
+- **Core finding:** "U.S. reliability" is two questions, not one. Definition A (formal withdrawal/repudiation of binding or quasi-binding commitments): ~15 significant instances since 2001, clustered 2017–2020 and 2025–2026. Definition B (stated intent/MoU that never converted): **no honest base rate exists** — no registry of U.S. MoUs; the paper deliberately declines to state a rate. Never let an edit introduce a fabricated conversion percentage.
+- **The anchor case:** PIF–EXIM MoU, 24 July 2026 — framework of up to $15 billion; explicitly non-binding. EXIM's charter expires **31 December 2026**; S. 3772 (Warner–Cramer, 10-year extension, retains $135B cap per CRS) in committee with no markup; House discussion draft proposes 5 years. The $205 billion cap figure is a sponsor's goal, not enacted text.
+- **The quantified precedent:** EXIM board-quorum lapse 20 July 2015 – 9 May 2019; financing declined ~85% 2014–2019 (NBER w32019); $1 of EXIM financing ≈ $4.50 of exports; stranded counterparties named (Pemex, Boeing/Ethiopian, GE plant to Canada, $3.5bn Egyptian petrochemical).
+- **Balance is load-bearing:** the fair-reading section concedes democratic policy alternation, the honoured-commitment record (NATO Article 5, Bretton Woods, Japan/Korea treaties), and that other states have worse records. The framing is counterparty-risk pricing, not anti-American critique — this paper sits closest to that line; preserve the concessions verbatim in any edit.
+- Contested figures are reported, not resolved (China export-credit volumes; Senate hearing date discrepancy).
+- Author: Jesse James; v1.0 published 27 July 2026. Companions: WP1 (counterparty-diversification thesis), SB2 (EXIM SCRI door).
+
+### Working Paper No. 10 — Fair Use for We, IP Theft for Thee (`wp10/index.html`)
+
+First working paper published under the **Technical Series** banner. v1.0 published 26 July 2026; **PDF-first release** — `wp10/working-paper.pdf` (17 pp.) is canonical; the site page carries abstract, key findings, method and download; full reading view to follow. Key facts that should remain consistent:
+
+- **Core finding:** "open source" has no enforced meaning in AI. OSAID v1.0 (October 2024) adopted as a binding criterion by no regulator or procurement authority located in the survey; of eleven model families surveyed, three meet the definition (OLMo 2, Pythia/GPT-NeoX, arguably BLOOM) — none at frontier scale.
+- **Licence-text discipline:** the tier table resolves licences **per model version, not per vendor** (Mistral and Qwen mix licences in their own lineups). Llama 4's licence withholds rights from EU-domiciled persons/companies — inside a product marketed as open source, in the jurisdiction offering the open-source exemption (EU AI Act Art. 53(2); exemption partial, evaporates above 10^25 FLOPs).
+- **The three-category separation** (the paper's spine): (1) taking model weights = theft, uncontested; (2) training on scraped outputs = contested, litigated; (3) acquiring pirated corpora = adjudicated against the lab. The $1.5bn Bartz v. Anthropic settlement (final approval 20 July 2026) is category 3; Judge Alsup's June 2025 ruling that training on lawfully acquired books is fair use still stands. Thomson Reuters v. Ross (Bibas J, 11 Feb 2025) is the strongest doctrinal thread: fair use collapses on market substitution.
+- **Evidence-grade system:** VERIFIED / CORROBORATED / ATTRIBUTED / UNDETERMINED. The Sacks public-vs-private allegation is graded ATTRIBUTED and excluded from findings. All podcast revenue figures excluded. Preserve the grades in any edit; they are the register.
+- **Author's disclosure** (in the PDF and noted on the page): drafted with assistance from Claude, made by Anthropic, whose conduct §6 examines. Do not remove.
+- Not anti-American and not anti-Anthropic: the finding is an asymmetry of characterisation, and §9 states every counter-position "unweakened."
+- Author: Jesse James; v1.0 published 26 July 2026.
+
+## Series pieces in flight (not yet on the site)
+
+- **SB3 — reserved** for *The Ledger With One Entry* (Venezuelan oil revenue under U.S. custody; 39-pp. paper exists off-site, LinkedIn carousel released July 2026 with placeholder ID "NPSI-SB-NNN"). Integrate when the editor supplies the source document; assign `NPSI-SB-003`.
+- **An unnamed Nord Stream accountability piece** — five finished dark-identity figures exist (three courts: Warsaw/Karlsruhe/London; €16.9bn asset cost; MV AfD polling); no document or number yet.
+- **NPSI-X dossier line** — *Follow the Money* (EU revenue, `NPSI-X-2607`, 23 July 2026) uses a separate "open-source investigative dossier" ID scheme (`NPSI-X-NNNN`) and is not part of the working-paper series; no site presence yet and none implied.
 
 ## Other NPSI projects in scope
 
