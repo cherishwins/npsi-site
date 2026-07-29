@@ -9,11 +9,11 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 17 pages plus a 404 — home, eight working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 18 pages plus a 404 — home, nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), two special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*), about, engage, commentary index, colophon. Static HTML and CSS, no JavaScript framework.
 
-**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release, reading view to follow). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
+**Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; reading view only, no PDF yet). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
-**Current paper: WP9** (flipped 29 July 2026, editor's direction — the WP7 hold was reversed the same day once the editor saw the Russian-story hero against incoming Korea Pro traffic). The "Working Paper" nav link sitewide points to **`/wp9/`**; WP7 carries the standard previous-paper banner. WP10 (26 July) sits directly below WP9 in the archive with day-level dates, so the 9-above-10 ordering explains itself. Papers are ordered by publication date and nothing else.
+**Current paper: WP11** (published to the site 29 July 2026; WP9 held the slot for a few hours the same day before WP11 arrived). The "Working Paper" nav link sitewide points to **`/wp11/`**; WP9 and WP7 carry the standard previous-paper banner; WP10 carries a supersession notice instead. The archive runs WP9 (27 Jul) → WP10 (26 Jul) → WP7 (12 Jul) with day-level dates. Papers are ordered by publication date and nothing else.
 
 **PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
@@ -105,7 +105,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
 </header>
 ```
 
-The "Working Paper" nav link points to the **current** working paper (currently `/wp9/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
+The "Working Paper" nav link points to the **current** working paper (currently `/wp11/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
 
 ### Page opener (every content page)
 
@@ -185,10 +185,13 @@ npsi-site/
 │   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (previous paper; banner points to WP9)
 │   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
 ├── wp9/
-│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (CURRENT paper; no PDF yet)
+│   └── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (previous paper; banner points to WP11; no PDF yet)
 ├── wp10/
-│   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical)
-│   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download)
+│   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical; superseded by WP11, notice attached)
+│   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download, unaltered)
+├── wp11/
+│   ├── index.html                   Working Paper No. 11 — *Rated AAA by the Issuer* — full reading view (CURRENT paper)
+│   └── working-paper.pdf            canonical v1.0 release (18 pp., direct download)
 ├── sb2/
 │   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — full reading view (PDF canonical)
 │   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
@@ -428,6 +431,19 @@ First working paper published under the **Technical Series** banner. v1.0 publis
 - **Author's disclosure** (in the PDF and noted on the page): drafted with assistance from Claude, made by Anthropic, whose conduct §6 examines. Do not remove.
 - Not anti-American and not anti-Anthropic: the finding is an asymmetry of characterisation, and §9 states every counter-position "unweakened."
 - Author: Jesse James; v1.0 published 26 July 2026.
+
+### Working Paper No. 11 — Rated AAA by the Issuer (`wp11/index.html`)
+
+Second paper in the **Technical Series**. v1.0 published 28 July 2026; full reading view plus `wp11/working-paper.pdf` (18 pp.). **Supersedes WP10** — the supersession is apparatus, not erasure: WP10 stays live and unaltered with a notice. Key facts that should remain consistent:
+
+- **Correction discipline is the paper's identity:** four itemised corrections to WP10 at §1 (53 not 54 objections in Bartz; the "3.75 multiplier" withdrawn as unsourced; the Llama 4 EU exclusion sits in the Acceptable Use Policy, scoped to multimodal models, with an end-user carve-out; and the framing correction). The WP10 finding that survives verbatim: Anthropic's 23 Feb 2026 distillation post contains no instance of "IP theft," "intellectual property," "theft," or "copyright."
+- **The framing correction (most consequential):** WP10 cast Anthropic as driving a restriction push; Amodei's 27 July 2026 position paper states "Anthropic has never advocated for a ban on open-weights models." The honest characterisation the paper lands on: Anthropic is the most restriction-friendly major lab on open weights *and* it has not called for a ban — both halves true, WP10 published only the first.
+- **Core finding:** both camps (the 24 July Nvidia-hosted ~75-signatory letter and Anthropic) reject a categorical ban in writing; the real leverage is in who defines "sufficiently capable" — a capability threshold that falls disproportionately on open releases because guardrails cannot be reimposed after weights ship.
+- **The analogy:** issuer-pays credit ratings (NRSRO regime from 2006, resolved by Dodd-Frank Title IX after systemic failure). Four-market base-rate table: organic (statute, ~12 yrs), Energy Star (certifier hardening after GAO-10-470's gas-powered alarm clock), credit ratings (statute after crisis), "natural" (never resolved; decayed into litigation-magnet marketing).
+- **Forecast with probabilities and named falsifiers** (§5): label decays 45% · certifier gets teeth 20% · capability capture 25% · certifier captured 10%. Each branch names the observable event that moves it; preserve the falsifiers in any edit — a forecast nothing can falsify is not a forecast.
+- **Author's disclosure** (§2 inset): drafted with assistance from Claude (Anthropic), whose statements the paper examines; the §1 framing correction ran *against* Anthropic. Do not remove.
+- §7 names the jurisdictional cascade as the intended subject of **WP12** (not yet written).
+- Author: Jesse James; v1.0 published 28 July 2026.
 
 ## Series pieces in flight (not yet on the site)
 
