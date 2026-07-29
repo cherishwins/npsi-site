@@ -131,4 +131,22 @@ Everything else in Phases 2–3 (the What-we-are-not rewrite shape, per-series g
 
 ---
 
-**Phase 1 ends here. No content page has been edited on this branch. Phase 2 proceeds only on the editor's approval of this audit and receipt of the §8 inputs.**
+**Phase 1 ended here.** The editor approved the audit and supplied the §8 inputs; Phases 2–3 were executed 29 July 2026 (commit 98d077a, merged in PR #38): `/disclosure/` published, `/about/` rewritten disclosure-true, per-paper interest notes added (WP5 co-issuance, SB2, TB1), gates scoped per-series, gap note and editor-section staleness fixed.
+
+## Phase 4 — Verification (run 29 July 2026, post-merge)
+
+**Step 16 — re-read against the corpus.** One contradiction survived the Phase 2 rewrite: the homepage doc-class line "An Independent Research Imprint · Published Occasionally" (`index.html:99`) — the record is fourteen documents in thirteen weeks. Fixed in this commit ("· Victoria, British Columbia"). Sitewide sweep for every claim register in §3 returns nothing else: "not affiliated", "takes no position", "no commercial relationship", "published occasionally" — zero remaining instances.
+
+**Step 17 — adversarial pass** (hostile reader, thirty minutes, target headline: "independent research imprint is a marketing arm for its editor's businesses"). Residual material and why each item is inert:
+
+1. *The Fit For Gov co-issuance* — declared in three registers (WP5 note names editor ownership; /disclosure/ item 1; about lede). A conflict disclosed at this level of specificity supports the opposite headline.
+2. *The Korea advocacy platform* — declared, register-separated, with the falsifiability standard stated. The graduated-system rule holds: described, never named, sitewide.
+3. *The unnamed energy firm* — the one place a reader can push ("why unnamed?"). Defensible: the category, the touching papers (WP4, SB3), and the no-client-overlap statement are all declared; only the identity is withheld, and deal-sensitivity is a recognised reason.
+4. *The public git history containing the pre-remediation purity claims* — usable as "they used to claim purity." Counter on the record: the correction was public, versioned, and self-initiated, consistent with the imprint's WP10/WP11 supersession discipline. The history is the audit trail, not the wound.
+5. *One-person operation on a personal GitHub account* — stated plainly on /disclosure/ ("discipline of voice, not a claim of institutional scale"). Nothing left to reveal.
+
+Nothing usable survives that the site has not already said about itself, with citations. Step 17 returns nothing.
+
+**Step 18 — mechanical.** Every internal link and asset reference on all 21 pages resolves (automated check). The four-link nav is byte-identical across all pages. All 14 documents have PDFs matching their reading views (WP2/WP3/WP9 rendered from the canonical views 29 July, PR #37). Footer carries GITHUB · LINKEDIN · DISCLOSURE · COLOPHON on all 21 pages.
+
+**The remediation is complete.**
