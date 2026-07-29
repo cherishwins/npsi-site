@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rated AAA by the Issuer · NPSI Working Paper No. 11</title>
+<meta name="description" content="What 'open source' in artificial intelligence has in common with a credit rating, and what the base rates say happens next. Supersedes WP-10 with a published correction notice. NPSI Working Paper No. 11, v1.0, July 2026.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="Rated AAA by the Issuer">
+<meta property="og:description" content="What 'open source' in artificial intelligence has in common with a credit rating, and what the base rates say happens next. NPSI Working Paper No. 11.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/wp11/">
+<meta property="og:image" content="https://npsi.ca/assets/img/wp11-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/wp11/">
+<link rel="alternate" type="application/pdf" href="/wp11/working-paper.pdf" title="Working Paper No. 11 (PDF)">
+
+<meta name="citation_title" content="Rated AAA by the Issuer">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/07/28">
+<meta name="citation_journal_title" content="NPSI Working Papers">
+<meta name="citation_issue" content="11">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_pdf_url" content="https://npsi.ca/wp11/working-paper.pdf">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/wp11/">
+<meta name="citation_keywords" content="open source AI; credit ratings; quality labels; base rates; forecasting; OSAID; EU AI Act; open weights; certification; capability thresholds">
+<meta name="dc.identifier" content="NPSI-WP-011">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#081C30">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4EFE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Rated AAA by the Issuer",
+  "alternativeHeadline": "What open source in artificial intelligence has in common with a credit rating, and what the base rates say happens next",
+  "datePublished": "2026-07-28",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/wp11/",
+  "identifier": "NPSI-WP-011",
+  "issueNumber": "11",
+  "image": "https://npsi.ca/assets/img/wp11-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "open source AI, credit ratings, quality labels, base rates, forecasting, OSAID, EU AI Act, open weights, certification, capability thresholds",
+  "abstract": "There is no enforced definition of open source in artificial intelligence. A standards body wrote one and cannot compel anyone to use it; a regulator wrote a different one that binds in a single jurisdiction; a procurement authority expressed a preference for the thing and never defined it at all. In that vacuum, the company that builds a model is the party that declares it open — the labeller is the labelled. The closest precedent is not open-source software but the credit rating. The paper corrects its predecessor (WP-10) in a published correction notice, establishes that the July 2026 policy fight is not about whether to ban open-weight models but about who defines 'sufficiently capable,' and applies documented base rates from four other markets that ran unenforced quality labels to produce a forecast, with probabilities, of how this one resolves.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "editor@npsi.ca",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Working Papers"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://npsi.ca/wp11/working-paper.pdf",
+    "encodingFormat": "application/pdf"
+  }
+}
+</script>
+
+<style>
+  /* Page-scoped components — wp11- prefixed, tokens only. */
+  .wp11-correction {
+    border: 1.5px solid var(--bronze);
+    background: var(--paper);
+    padding: 20px 24px;
+    margin: 0 0 22px;
+  }
+  .wp11-correction .wp11-lbl { margin-bottom: 10px; }
+  .wp11-lbl {
+    display: block;
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze);
+    margin-bottom: 6px;
+  }
+  .wp11-finding {
+    border-left: 2px solid var(--teal);
+    padding: 10px 0 10px 18px;
+    margin: 0 0 14px;
+  }
+  .wp11-finding .wp11-lbl { color: var(--teal); }
+  .wp11-finding.wp11-fix { border-left-color: var(--bronze); }
+  .wp11-finding.wp11-fix .wp11-lbl { color: var(--bronze); }
+  .wp11-quote {
+    border-left: 2px solid var(--rule);
+    background: var(--paper);
+    font-family: var(--font-mono); font-size: 13px; line-height: 1.66;
+    padding: 14px 18px; margin: 0 0 16px;
+    white-space: pre-line; color: var(--ink);
+  }
+  .wp11-quote .wp11-attr {
+    display: block; margin-top: 10px; color: var(--teal);
+    font-size: 11px; letter-spacing: 0.08em; white-space: normal;
+  }
+  .wp11-grade {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.14em; white-space: nowrap; color: var(--teal);
+  }
+  .wp11-grade.b { color: var(--bronze); }
+  .wp11-branch {
+    border: 0.75px solid var(--rule);
+    background: var(--paper);
+    padding: 20px 24px; margin: 0 0 16px;
+  }
+  .wp11-branch .wp11-top {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    border-bottom: 1px solid var(--bronze); padding-bottom: 8px; margin-bottom: 12px;
+  }
+  .wp11-branch .wp11-nm {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--bronze);
+  }
+  .wp11-branch .wp11-pr {
+    font-family: var(--font-mono); font-size: 22px; font-weight: 500;
+    color: var(--navy); line-height: 1;
+  }
+  .wp11-branch ul {
+    margin: 0 0 12px; padding-left: 18px;
+    font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--ink);
+  }
+  .wp11-branch ul li { margin-bottom: 5px; }
+  .wp11-branch .wp11-dec {
+    font-family: var(--font-mono); font-size: 12px; color: var(--teal);
+    border-top: 0.5px solid var(--rule); padding-top: 10px; margin: 4px 0 0;
+  }
+  .wp11-branch .wp11-dec strong { color: var(--navy); font-weight: 500; }
+  .wp11-warn { color: var(--bronze); }
+  .wp11-inset {
+    background: var(--navy); color: var(--cream);
+    padding: 20px 24px; margin: 22px 0;
+  }
+  .wp11-inset p { color: var(--cream); }
+  .wp11-inset h4 { color: var(--cream); margin: 0 0 6px; font-style: normal; }
+  .wp11-inset .wp11-lbl { color: var(--bronze); }
+  .wp11-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.wp11-data { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 640px; }
+  table.wp11-data caption {
+    text-align: left; font-size: 14px; color: var(--ink);
+    padding-bottom: 12px; caption-side: top;
+  }
+  table.wp11-data th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
+    text-align: left; padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--bronze);
+  }
+  table.wp11-data td {
+    padding: 12px 16px 12px 0; vertical-align: top;
+    border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink);
+  }
+  table.wp11-data td.k { color: var(--navy); font-weight: 600; }
+  table.wp11-data tr:last-child td { border-bottom: none; }
+  .wp11-bibitem {
+    display: flex; gap: 12px; padding: 7px 0;
+    border-bottom: 0.5px solid var(--rule);
+    font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--ink);
+  }
+  .wp11-bibitem:last-child { border-bottom: none; }
+  .wp11-bibitem .wp11-n { color: var(--bronze); font-weight: 500; width: 24px; flex: none; }
+  .wp11-bibitem strong { color: var(--navy); font-weight: 500; }
+  @media print {
+    .wp11-correction, .wp11-finding, .wp11-quote, .wp11-branch, .wp11-inset,
+    .wp11-bibitem { break-inside: avoid; page-break-inside: avoid; }
+    table.wp11-data { min-width: 0; }
+    table.wp11-data tr { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/wp11/" class="active">Working Paper</a>
+      <a href="/about/">About</a>
+      <a href="/engage/">Engage</a>
+      <a href="/commentary/">Commentary</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Working Paper No.&nbsp;11  ·  Technical Series  ·  v1.0  ·  28 July 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">SUPERSEDES WP-10</span></div>
+  <h1>Rated AAA by the Issuer</h1>
+  <div class="subtitle">What &ldquo;open source&rdquo; in artificial intelligence has in common with a credit rating, and what the base rates say happens next.</div>
+  <p class="lede">In artificial intelligence, the company that builds a model is the party that declares it open. The labeller is the labelled. Markets have run that arrangement before, and there is a documented record of how it ends. This paper supersedes <a href="/wp10/">Working Paper No.&nbsp;10</a>; the corrections are itemised at §1.</p>
+</div>
+
+<aside class="wp-meta-block" aria-label="Working paper metadata">
+  <dl>
+    <dt>Author</dt>             <dd>Jesse James</dd>
+    <dt>Document ID</dt>        <dd><code>NPSI-WP-011</code></dd>
+    <dt>Version</dt>            <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/wp11/index.html">change log</a></dd>
+    <dt>Series</dt>             <dd>Technical Series</dd>
+    <dt>Released</dt>           <dd>28 July 2026 · Victoria, British Columbia</dd>
+    <dt>Supersedes</dt>         <dd><a href="/wp10/">WP10 — Fair Use for We, IP Theft for Thee</a>, which remains available unaltered with a correction notice attached</dd>
+    <dt>Status</dt>             <dd>Unclassified · Open distribution. All sources open. Editorially controlled. Public version-controlled review open.</dd>
+    <dt>Cite as</dt>            <dd>James, J. (2026). <em>Rated AAA by the Issuer</em> (NPSI Working Paper No.&nbsp;11, v1.0). https://npsi.ca/wp11/</dd>
+  </dl>
+</aside>
+
+<div class="wp-card-actions" style="margin-bottom: 36px;">
+  <a class="btn btn-bronze" href="/wp11/working-paper.pdf">Download Full Paper (PDF)</a>
+  <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
+  <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#correction-notice">Correction Notice</a></li>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#marks">How to Read the Marks</a></li>
+    <li><a href="#s1">What WP-10 Got Wrong</a></li>
+    <li><a href="#s2">The Fight Nobody Is Having</a></li>
+    <li><a href="#s3">Rated AAA by the Issuer</a></li>
+    <li><a href="#s4">What the Base Rates Say</a></li>
+    <li><a href="#s5">Four Ways This Ends</a></li>
+    <li><a href="#s6">What a Fair Reading Concedes</a></li>
+    <li><a href="#s7">What Could Not Be Determined</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="correction-notice">
+  <h2>Correction Notice</h2>
+
+  <div class="wp11-correction">
+    <span class="wp11-lbl">Issued 28 July 2026 · concerning WP-10, published 26 July 2026</span>
+    <p>WP-10, <em>Fair Use for We, IP Theft for Thee</em>, contained four errors. Two were factual. One was a sourcing failure. One was a framing that a primary source published the following day contradicted. All four are itemised in §1 with the corrected position.</p>
+    <p>WP-10 remains available unaltered, with this notice attached. It is not being quietly edited. The paper claimed that every load-bearing statement carried an evidence grade and that corrections would be published. That promise is worth nothing if it is only honoured when convenient.</p>
+  </div>
+
+  <p>The most consequential error was not a number. WP-10 framed Anthropic as the party driving a policy push against open-weight models. On 27 July 2026 — the day after publication — Anthropic&rsquo;s chief executive published a position paper stating the opposite in terms that admit no ambiguity. That is corrected in §1 and it reshapes this entire paper.</p>
+
+  <p>It also produced a better question. If both sides of this fight reject a ban, what exactly are they fighting about? The answer turns out to be more interesting than the fight.</p>
+</section>
+
+<section id="executive-summary">
+  <h2>Executive Summary</h2>
+
+  <p><em class="term">There is no enforced definition of &ldquo;open source&rdquo; in artificial intelligence. A standards body wrote one and cannot compel anyone to use it. A regulator wrote a different one that binds in a single jurisdiction. A procurement authority expressed a preference for the thing and never defined it at all.</em></p>
+
+  <p>In that vacuum, the company that builds a model is the party that declares it open. The labeller is the labelled. Markets have run that arrangement before, and there is a documented record of how it ends.</p>
+
+  <p>The closest precedent is not open-source software. It is the credit rating. From 2006 the ratings industry ran a designation issued by agencies paid by the issuers whose instruments they rated, under a federal recognition regime that made the designation load-bearing for capital requirements. The conflict was visible, disclosed, and discussed for years before it mattered. Then it mattered all at once, and the response was a statute.</p>
+
+  <p>This paper does three things. It corrects WP-10. It establishes that the July 2026 policy fight is not about whether to ban open-weight models — both camps have now said in writing that they oppose a ban — but about who gets to define &ldquo;sufficiently capable,&rdquo; which is where the actual regulatory leverage sits. And it applies the documented base rates from four other markets that ran unenforced quality labels to produce a forecast, with probabilities, of how this one resolves.</p>
+
+  <h3>Key findings</h3>
+  <div class="wp11-finding"><span class="wp11-lbl">01 · The fight is misdescribed</span>Anthropic and the Nvidia-hosted industry letter both reject a categorical ban in writing. The real disagreement is whether openness is net-positive for safety, and whether sufficiently capable models should face mandatory pre-release testing.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">02 · The label has no enforcer</span>OSI published a definition in October 2024. It has no enforcement power, and no regulator or procurement authority has adopted it as a binding qualifying criterion.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">03 · One definition has teeth</span>EU AI Act Article 53(2) is the only definition currently attached to a legal consequence — and it exempts open-source providers from two obligations while leaving the copyright-policy and training-content-summary duties fully in force.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">04 · The base rates are consistent</span>Across organic food, Energy Star, &ldquo;natural,&rdquo; and credit ratings, unenforced labels resolve one of three ways: statutory capture, certifier hardening after a scandal, or decay into contested marketing. None resolves by the labellers agreeing among themselves.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">05 · The commercial stake is measurable</span>Open-weight inference runs roughly 60&ndash;90% cheaper than frontier closed models. That differential, not ideology, is what the coalition defending open weights is defending.</div>
+
+  <h3>What to do with this</h3>
+  <p><strong>If you ship on open weights:</strong> stop writing &ldquo;open source&rdquo; into contracts. Specify the licence by name and version, and list the artifacts you require — weights, training code, data documentation, checkpoints. The label will not survive the decade as a procurement criterion. The licence text will.</p>
+  <p><strong>If you write policy:</strong> the leverage is in the phrase &ldquo;sufficiently capable,&rdquo; not in the word &ldquo;open.&rdquo; Whoever defines the capability threshold defines which models can be released openly, and does so without ever touching the licensing question.</p>
+  <p><strong>If you are watching for the turn:</strong> §5 names the four resolution paths with probabilities and the specific observable events that would move each estimate.</p>
+</section>
+
+<section id="marks">
+  <h2>How to Read the Marks</h2>
+
+  <p>Every load-bearing claim carries an evidence grade. Serif is this paper&rsquo;s argument; monospace is somebody else&rsquo;s words — licence text, quoted statements, docket numbers, figures.</p>
+
+  <div class="wp11-quote">█  VERIFIED       primary source retrieved and quoted directly
+▓  CORROBORATED   two or more independent secondary sources agree
+▒  ATTRIBUTED     on record from one interested party, uncorroborated
+░  UNDETERMINED   could not be established; stated as a gap, never filled</div>
+
+  <p>The forecasts in §5 carry probabilities instead. Each is anchored to a stated historical base rate, each names the assumptions that produce it, and each names the observable event that would move it. A forecast nothing can falsify is not a forecast. Fragile assumptions are marked <span class="wp11-warn">⚠</span>.</p>
+</section>
+
+<section id="s1">
+  <h2>§1 · What WP-10 Got Wrong</h2>
+
+  <p><em class="term">Four corrections. Two factual, one sourcing, one framing. The framing error is the one that mattered.</em></p>
+
+  <div class="wp11-finding wp11-fix"><span class="wp11-lbl">Correction 1 · Factual</span>WP-10 reported that the court overruled <em>54 objections</em> in the Bartz v. Anthropic final approval. The correct figure is <strong>53</strong>. <span class="wp11-grade">▓ CORROBORATED</span></div>
+
+  <div class="wp11-finding wp11-fix"><span class="wp11-lbl">Correction 2 · Sourcing</span>WP-10 attached a <em>&ldquo;multiplier of 3.75&rdquo;</em> to the counsel-fee award. That descriptor could not be located in any primary source and is withdrawn. The underlying figures stand and are confirmed: fees of <strong>$101,561,111</strong> against a request of roughly <strong>$187.5m</strong>. <span class="wp11-grade">█ VERIFIED</span></div>
+
+  <div class="wp11-finding wp11-fix"><span class="wp11-lbl">Correction 3 · Imprecision</span>WP-10&rsquo;s tier table attributed the EU exclusion to the <em>Llama 4 Community Licence</em>. The clause is in the <strong>Acceptable Use Policy</strong>, it is scoped to <strong>multimodal</strong> models, and it carries a carve-out WP-10 omitted: <em>&ldquo;This restriction does not apply to end users of a product or service that incorporates any such multimodal models.&rdquo;</em> Because the Llama 4 collection is natively multimodal throughout, the practical effect on EU-domiciled developers stands — but a paper whose posture is <em>read the licence</em> does not get to paraphrase one. <span class="wp11-grade">█ VERIFIED</span></div>
+
+  <div class="wp11-finding wp11-fix"><span class="wp11-lbl">Correction 4 · Framing</span>WP-10 presented Anthropic as the party driving a restriction on open-weight models. On 27 July 2026 Anthropic&rsquo;s chief executive published a position stating the opposite directly. See §2. <span class="wp11-grade">█ VERIFIED</span></div>
+
+  <h3>What WP-10 got right</h3>
+  <p>One central claim survived a full-text retrieval, and it survived cleanly. WP-10 asserted that Anthropic&rsquo;s 23 February 2026 post on distillation never uses the phrase &ldquo;IP theft.&rdquo; The complete post was retrieved and searched. It contains no instance of <em>IP theft</em>, <em>intellectual property</em>, <em>theft</em>, or <em>copyright</em>. Its vocabulary is <em>illicit</em>, <em>fraudulent</em>, <em>in violation of our terms of service</em>, and the harm framing is national security and export controls. <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <p>That finding is stronger now than when it was published, because it can be stated as an enumeration rather than an impression. It also reads differently in light of §2.</p>
+</section>
+
+<section id="s2">
+  <h2>§2 · The Fight Nobody Is Having</h2>
+
+  <p><em class="term">Both camps oppose a ban. They have each said so in writing, within four days of each other.</em></p>
+
+  <p>On 24 July 2026 an open letter titled <em>Open Weights and American AI Leadership</em> was published, hosted by Nvidia. Its signatory block runs to roughly seventy-five names and includes Nvidia, Microsoft, Meta, IBM, Dell, Palantir, Mistral, Mozilla, The Linux Foundation, Hugging Face, Y Combinator, GitHub, Google and OpenAI. On distillation it says: <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <div class="wp11-quote">"Distillation… is a widely used technique for model improvement… By contrast, unlawful efforts to extract value from closed models raise legitimate concerns. Those concerns should be addressed through targeted legal and commercial frameworks rather than sweeping restrictions on techniques that play an important role in AI innovation."
+  <span class="wp11-attr">Open Weights and American AI Leadership · 24 July 2026</span></div>
+
+  <p>Anthropic did not sign. On 27 July its chief executive published a response, edited again the following day: <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <div class="wp11-quote">"Anthropic has never advocated for a ban on open-weights models."
+
+"Protectionist bans would not address my most serious national security concerns."
+
+"It *would* protect US AI companies from competition, but that has never been my goal."
+  <span class="wp11-attr">Dario Amodei · anthropic.com · 27 July 2026, edited 28 July</span></div>
+
+  <p>Read side by side, the two documents agree on more than the argument suggests. Both reject a categorical ban. Both accept that unlawful extraction from closed models is a real problem. Both propose targeted legal and commercial frameworks as the remedy — the letter&rsquo;s own phrase, echoed almost exactly in Anthropic&rsquo;s post.</p>
+
+  <h3>Where they actually diverge</h3>
+  <p>Two places, and neither is the ban.</p>
+
+  <p>The first is whether openness is net-positive for safety. The letter argues that open weights let outsiders detect failures that closed models hide. Anthropic disputes this directly, arguing the offence-defence balance may favour the attacker — particularly in biology — and that the question should be settled by testing rather than assumed.</p>
+
+  <p>The second is the operative one. Anthropic&rsquo;s third proposed measure is that <em>all sufficiently capable models, open and closed, should go through mandatory safety testing</em>. That is a capability threshold, not a licensing rule. And because guardrails cannot be reimposed after weights are released — a point Anthropic makes repeatedly and correctly — a testing regime falls disproportionately on open releases regardless of how neutrally it is drafted.</p>
+
+  <div class="wp11-finding"><span class="wp11-lbl">The finding</span>The regulatory leverage in this dispute is not in the word <em>open</em>. It is in the phrase <em>sufficiently capable</em>, which no party has defined and which, once defined, determines which models can be released openly without ever touching the licensing question.</div>
+
+  <h3>Testing the denial</h3>
+  <p><span class="wp11-grade">▓ CORROBORATED</span> The claim that Anthropic has never advocated a ban is accurate on the word <em>ban</em> and incomplete on the record of advocating restrictions. In its March 2025 submission to the White House Office of Science and Technology Policy, Anthropic wrote that it recommends the administration <em>&ldquo;implement appropriate export restrictions on certain model weights.&rdquo;</em> It has publicly supported the AI Diffusion Rule, which applies export controls to model weights as well as chips. Neither is a ban. Both are restrictions that bind open releases and not closed ones.</p>
+
+  <p>The honest characterisation is this: Anthropic is the most restriction-friendly of the major laboratories on open weights, and it has not called for a ban. Both halves of that sentence are true, and WP-10 published only the first.</p>
+
+  <div class="wp11-inset">
+    <span class="wp11-lbl">Author&rsquo;s disclosure</span>
+    <h4>On the conflict in this paper</h4>
+    <p>This analysis was researched and drafted with substantial assistance from Claude, a model made by Anthropic — a party whose conduct and public statements this paper examines throughout. Anthropic&rsquo;s position is quoted at length and in its own words, its strongest arguments are stated rather than summarised, and the claim most favourable to it has been adversarially tested in this section rather than accepted. The framing error corrected in §1 ran <em>against</em> Anthropic, not for it. Readers should weight accordingly and check §2 and §4 against the primary sources, all of which are listed.</p>
+  </div>
+</section>
+
+<section id="s3">
+  <h2>§3 · Rated AAA by the Issuer</h2>
+
+  <p><em class="term">The structural problem is not that the definition is contested. It is that the party applying the label is the party being labelled.</em></p>
+
+  <p>The Open Source Initiative published its Open Source AI Definition v1.0 on 28 October 2024 at All Things Open in Raleigh. It requires that a system grant the freedoms to use, study, modify and share, and — the compromise that drew fire — it requires <em>data information</em> sufficient for a skilled person to build a substantially equivalent system, rather than the training corpus itself. <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <p>The Software Freedom Conservancy objected that the definition <em>&ldquo;fails to require reproducibility by the public of the scientific process of building these systems.&rdquo;</em> The Free Software Foundation began work on separate criteria. Meta rejected the definition and continued to market Llama as open source. <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <p>None of that is unusual. Standards bodies produce contested standards constantly. What makes this one different is that OSI has no mechanism to make anyone use it. It cannot decertify. It cannot fine. It cannot exclude a non-compliant product from a market. It publishes an opinion, and the companies it describes are free to disagree in their marketing copy, which is precisely what happened.</p>
+
+  <h3>Three systems, one undefined word</h3>
+  <p>The vacuum is not theoretical. Three separate regimes currently lean on the term.</p>
+
+  <p><strong>The European Union</strong> supplies its own definition in Article 53(2) of the AI Act and attaches a real consequence to it — relief from the technical-documentation and downstream-information obligations. Critically, the copyright-policy duty and the training-content-summary duty survive the exemption entirely, and the whole exemption is lost above the systemic-risk threshold in Article 51. The Commission&rsquo;s July 2025 guidelines state that a licence carrying usage restrictions does not qualify. This is the only definition in the world currently attached to a legal consequence. <span class="wp11-grade">█ VERIFIED</span></p>
+
+  <p><strong>Canada</strong> directs departments, through the Treasury Board Directive on Automated Decision-Making, to prefer software obtained under an open source licence, and supplies no definition of the term and no reference to any external standard. <span class="wp11-grade">░ UNDETERMINED</span> — the directive&rsquo;s exact wording could not be retrieved for this edition and is flagged in §7.</p>
+
+  <p><strong>The United States</strong> has no statutory definition at all, and is now weighing restrictions on a category — &ldquo;open-weight models&rdquo; — that no American instrument defines.</p>
+
+  <div class="wp11-finding"><span class="wp11-lbl">The analogy, stated precisely</span>From 2006, credit ratings ran on a federally recognised designation, issued by agencies paid by the issuers whose instruments they rated, and made load-bearing by regulation that referenced the ratings directly. The conflict was visible and openly discussed for years. It did not resolve through disclosure, industry agreement or better methodology. It resolved through a statute, after a systemic failure, in Title IX of Dodd-Frank.</div>
+
+  <p>The structural parallel is exact in the part that matters. The party that declares a model &ldquo;open source&rdquo; is the party that built it. There is no external assessment, no accreditation, and no consequence for a false claim beyond reputational argument among people who already read licence files.</p>
+</section>
+
+<section id="s4">
+  <h2>§4 · What the Base Rates Say</h2>
+
+  <p><em class="term">Four markets have run unenforced quality labels. None of them resolved by the labellers agreeing among themselves.</em></p>
+
+  <div class="wp11-tablewrap">
+    <table class="wp11-data">
+      <caption>Documented resolution paths for unenforced quality labels. Lag measures the interval from label proliferation to enforced standard, where enforcement arrived at all.</caption>
+      <thead><tr><th>Label</th><th>Vacuum</th><th>Resolved by</th><th>Lag</th><th>Outcome</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Organic (US)</td><td>private claims, competing standards through the 1980s</td><td>statute — Organic Foods Production Act 1990 → USDA National Organic Program</td><td>~12 yrs to implemented rule</td><td>label survived; use without certification became illegal; accredited third-party certifiers</td></tr>
+        <tr><td class="k">Energy Star</td><td>self-certification, no verification</td><td>certifier hardening after GAO covert testing exposed the gap</td><td>~1 yr from report to new regime</td><td>15 of 20 fictitious products certified, incl. a gas-powered alarm clock; third-party lab testing mandated</td></tr>
+        <tr><td class="k">Credit ratings</td><td>issuer-pays conflict, federally recognised designation</td><td>statute after systemic failure — Dodd-Frank Title IX</td><td>~4 yrs from designation to crisis</td><td>label survived; SEC Office of Credit Ratings, mandatory examinations; business model changed only marginally</td></tr>
+        <tr><td class="k">&ldquo;Natural&rdquo; (US food)</td><td>regulator declined to define</td><td>nothing — litigation absorbed the function</td><td>unresolved</td><td>label persists as marketing; became a class-action magnet; ceased to function as a quality signal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><span class="wp11-grade">█ VERIFIED</span> on the organic, Energy Star and credit-rating cases. <span class="wp11-grade">▓ CORROBORATED</span> on the trajectory of &ldquo;natural&rdquo;; the litigation-volume and price-premium data behind it could not be pinned for this edition and are flagged in §7.</p>
+
+  <p>Three observations survive across all four cases.</p>
+
+  <p>The vacuum persists for years, not months. Where enforcement arrived, it took between roughly one and twelve years from the point at which the gap was widely understood — and the fast case, Energy Star, was fast only because an auditor deliberately embarrassed the programme with a gas-powered alarm clock.</p>
+
+  <p>Enforcement never arrived from the labellers. In every case it came from a statute, a regulator, an auditor or a plaintiff. In no case did the firms applying the label converge on a standard and police each other.</p>
+
+  <p>And where no enforcer emerged, the label did not die. It degraded. &ldquo;Natural&rdquo; is still on the packaging. It simply stopped meaning anything, and the buyers who needed a real signal moved to a different one — a certified mark, an ingredient list, a specification.</p>
+</section>
+
+<section id="s5">
+  <h2>§5 · Four Ways This Ends</h2>
+
+  <p><em class="term">Horizon: medium, to 2030, except where stated. Evidence cutoff 28 July 2026. Probabilities are anchored to §4 and each names what would move it.</em></p>
+
+  <div class="wp11-branch">
+    <div class="wp11-top"><span class="wp11-nm">Base case · the label decays</span><span class="wp11-pr">45%</span></div>
+    <p><strong>&ldquo;Open source&rdquo; survives as marketing and stops functioning as a procurement criterion. The &ldquo;natural&rdquo; path.</strong></p>
+    <ul>
+      <li>No US statutory definition of open-source AI is enacted before 2030</li>
+      <li>OSAID remains without enforcement power and without adoption by a major procurement authority</li>
+      <li>EU Article 53(2) remains the only definition attached to a legal consequence</li>
+      <li>Buyers substitute proxies — licence name, weights availability — for the label <span class="wp11-warn">⚠</span></li>
+    </ul>
+    <p>Enterprises and governments write around the term. Contracts specify &ldquo;Apache-2.0 or MIT&rdquo; rather than &ldquo;open source,&rdquo; because the licence name is checkable and the label is not. The EU definition becomes the de facto global reference by default, in the way GDPR did, on the strength of being the only one with a consequence attached. The word remains in every press release and in no serious contract.</p>
+    <p class="wp11-dec"><strong>If this is the future,</strong> stop writing &ldquo;open source&rdquo; into RFPs now and specify licences by name and version. You will be early rather than late, at no cost.</p>
+  </div>
+
+  <div class="wp11-branch">
+    <div class="wp11-top"><span class="wp11-nm">Upside · a certifier gets teeth</span><span class="wp11-pr">20%</span></div>
+    <p><strong>Certification becomes a market gate. The organic and Energy Star path.</strong></p>
+    <ul>
+      <li>An audit or covert-testing event exposes a prominent &ldquo;open source&rdquo; claim as false in a way that embarrasses a large buyer <span class="wp11-warn">⚠</span></li>
+      <li>OSI or a successor body is adopted as a qualifying criterion by a major procurement authority — the European Commission, a US federal schedule, or an enterprise consortium</li>
+      <li>Enforcement attaches to procurement eligibility rather than to statute, which is faster</li>
+    </ul>
+    <p>Model cards become audited artifacts. Licence claims get checked before purchase rather than argued about afterwards. The tier distinctions in this paper stop being analysis and become a compliance schedule. Firms that marketed restricted licences as open source face a re-labelling exercise conducted in public.</p>
+    <p class="wp11-dec"><strong>If this is the future,</strong> audit your own licence position before somebody audits it for you, and be able to name the artifacts you actually received.</p>
+  </div>
+
+  <div class="wp11-branch">
+    <div class="wp11-top"><span class="wp11-nm">Downside · capability capture</span><span class="wp11-pr">25%</span></div>
+    <p><strong>The definitional fight moves from licensing to national security and the licensing question becomes irrelevant.</strong></p>
+    <ul>
+      <li>&ldquo;Sufficiently capable&rdquo; is defined in US policy as a mandatory pre-release testing threshold</li>
+      <li>The threshold is set low enough to capture frontier open releases</li>
+      <li>Compliance cost falls disproportionately on open releases, because guardrails cannot be reimposed after weights ship</li>
+    </ul>
+    <p>Openness stops being a licensing property and becomes a capability classification. Whether a model may be released openly is decided by a testing regime, not by a licence file, and the body that sets the threshold acquires more control over the open ecosystem than OSI ever sought. Frontier open releases become viable only for organisations with a compliance function.</p>
+    <p class="wp11-dec"><strong>If this is the future,</strong> plan against capability ceilings rather than licence terms, and assume frontier open weights become a regulated category rather than a free one. <strong>This branch is also the kill-shot for this paper&rsquo;s thesis:</strong> if the threshold is defined and enforced, the vacuum closes — just not through the route anyone was arguing about.</p>
+  </div>
+
+  <div class="wp11-branch">
+    <div class="wp11-top"><span class="wp11-nm">Tail · the certifier is captured</span><span class="wp11-pr">10%</span></div>
+    <p><strong>Horizon open-ended; trigger could occur in any year through 2032. The credit-rating path, run to completion.</strong></p>
+    <ul>
+      <li>A certifier does emerge and does acquire procurement authority</li>
+      <li>It is funded, directly or through membership, by the laboratories whose models it certifies <span class="wp11-warn">⚠</span><span class="wp11-warn">⚠</span></li>
+      <li>A serious security or safety failure traces to a model that was certified open and audited as safe</li>
+    </ul>
+    <p>This is the uncomfortable one, and it is uncomfortable because it is the branch where everybody behaves reasonably and the outcome is still bad. A certification regime is built in good faith. It is funded the only way such regimes are ever funded. The incentive erodes the standard slowly and invisibly, the way it did at the rating agencies, and nobody notices because the label keeps being applied and nothing goes wrong. Then something goes wrong, and the inquiry discovers that the assurance everyone relied on was purchased by the party being assured. The response is a statute written in the aftermath of a disaster instead of in advance of one, and the entire open ecosystem inherits a compliance regime designed by people who are angry.</p>
+    <p class="wp11-dec"><strong>If this is the future,</strong> keep your own independent record of what you deployed and why. A certification will not protect you, and in this branch it is specifically the thing that fails.</p>
+  </div>
+
+  <h3>What is true across all branches</h3>
+  <div class="wp11-finding"><span class="wp11-lbl">Invariant 1</span>In every branch, &ldquo;open source&rdquo; carries less information in 2030 than it did in 2024. The branches differ on what replaces it, not on whether it degrades.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">Invariant 2</span>In every branch, the licence file — not the label — is the operative document. This is already true and no branch reverses it.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">Invariant 3</span>In every branch, the party that declares a model open is the party that built it, unless an external body acquires enforcement power. Only two of the four branches supply such a body, and in one of those two it is captured.</div>
+
+  <p><strong>Cross-branch decision:</strong> specify licences by name and version, keep your own record of the artifacts you actually received, and treat &ldquo;open source&rdquo; as a claim by a manufacturer rather than a fact about a model. That action is correct in all four futures, which is the strongest thing this paper can say.</p>
+
+  <h3>What would move these numbers</h3>
+  <p>The base case falls below 30% if any major procurement authority adopts a binding definition. The upside rises above 35% on a credible public audit exposing a false open-source claim at a named vendor. The downside rises above 40% the moment any US instrument attaches a numeric capability threshold to a pre-release testing requirement. The tail is not currently observable and will not be until a certifier exists; treat 10% as a deliberate under-weight held at the base rate rather than a measurement.</p>
+</section>
+
+<section id="s6">
+  <h2>§6 · What a Fair Reading Concedes</h2>
+
+  <p><em class="term">The strongest arguments against this paper&rsquo;s framing, stated without weakening.</em></p>
+
+  <p><strong>The gap between MIT weights and full compliance is near zero in practice.</strong> A team self-hosting an Apache-licensed weights file can use, study, modify and share it. The missing training-data documentation matters for reproducibility, auditability and legal certainty. It does not usually matter on a Tuesday, and a paper that treats the distinction as urgent is describing a problem most deployers will never encounter.</p>
+
+  <p><strong>The credit-rating analogy has a real disanalogy.</strong> Ratings were load-bearing for capital requirements by regulation; nothing today makes an &ldquo;open source&rdquo; claim load-bearing for anything comparable outside the EU exemption. The systemic-failure mechanism that produced Dodd-Frank requires a channel through which a false label transmits harm at scale. That channel does not currently exist in AI. If it never forms, the tail branch is materially overweighted.</p>
+
+  <p><strong>Anthropic&rsquo;s safety argument is not obviously self-serving.</strong> It is a coherent position that predates the current commercial fight, appears in the same terms in earlier writing, and turns on an empirical claim about offence-defence balance in biology that is genuinely unresolved. Reading it purely as competitive positioning requires ignoring that the same argument would have been inconvenient for Anthropic to make at several earlier points when it made it anyway.</p>
+
+  <p><strong>And the labellers might converge without being forced.</strong> The base-rate table contains four cases. Four is not many. Open-source software itself is arguably a fifth case that resolved differently — through licence proliferation, then consolidation around a small set of well-understood licences, driven by tooling and corporate legal departments rather than by statute. If AI follows the software path rather than the food-labelling path, this paper&rsquo;s central analogy is the wrong one.</p>
+</section>
+
+<section id="s7">
+  <h2>§7 · What Could Not Be Determined</h2>
+
+  <p><em class="term">Gaps are stated, never filled. This section is longer than an author would like it to be, which is the point of having it.</em></p>
+
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>The Treasury Board Directive on Automated Decision-Making&rsquo;s exact wording on open-source licences, and whether any Canadian instrument defines the term by reference to any external standard.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>The position of the United States Trade Representative on distillation. Reported secondhand; no direct statement located.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>The licence under which Kimi K3&rsquo;s weights were released. WP-10 reported a 27 July release date; the evidence points to mid-July and the licence terms were never established. Both are corrected here to unknown.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>Whether OSAID has been revised since v1.0.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>Litigation volume and price-premium data behind the &ldquo;natural&rdquo; case in §4. The trajectory is corroborated; the magnitudes are not.</div>
+  <div class="wp11-finding"><span class="wp11-lbl">░ Undetermined</span>The jurisdictional cascade. How the EU, China, Korea, Japan, India, the Gulf states and the United Kingdom would respond to a US restriction was not researched to a standard permitting publication, and is deliberately absent rather than speculated. It is the intended subject of WP-12.</div>
+
+  <p>Two notes on method. Every revenue and market-share figure circulating in podcast coverage of this dispute was excluded again this edition; the economic argument here rests on the inference-cost differential, which is separately sourced. And the share of tokens served by Chinese open-weight models is reported across sources as anywhere between the mid-forties and low-sixties percent depending on measurement window; the direction of travel is corroborated, the magnitude is contested, and this paper uses the direction only.</p>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+
+  <p>Primary sources were retrieved directly wherever the mark █ appears. Where a claim rests on secondary reporting the outlet is named in the text.</p>
+
+  <div class="wp11-bibitem"><span class="wp11-n">1</span><span><strong>Anthropic.</strong> &ldquo;Detecting and preventing distillation attacks,&rdquo; 23 February 2026. Full text retrieved and searched. anthropic.com/news/detecting-and-preventing-distillation-attacks</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">2</span><span><strong>Amodei, D.</strong> &ldquo;Our position on open-weights models,&rdquo; Anthropic, 27 July 2026, edited 28 July 2026. anthropic.com/news/position-open-weights-models</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">3</span><span><strong>Open Weights and American AI Leadership,</strong> open letter, 24 July 2026, hosted at images.nvidia.com</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">4</span><span><strong>Anthropic.</strong> Response to OSTP Request for Information on the AI Action Plan, 6 March 2025; position on the AI Diffusion Rule, April 2025.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">5</span><span><strong>Open Source Initiative.</strong> Open Source AI Definition v1.0, 28 October 2024, All Things Open, Raleigh. opensource.org</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">6</span><span><strong>Software Freedom Conservancy;</strong> Free Software Foundation. Published objections to OSAID v1.0, October 2024.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">7</span><span><strong>Regulation (EU) 2024/1689 (AI Act).</strong> Arts. 51, 53(2), 54(6); Recitals 102&ndash;104. European Commission GPAI Guidelines, July 2025.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">8</span><span><strong>Meta.</strong> Llama 4 Acceptable Use Policy and Llama 4 Community License Agreement. llama.com/llama4/use-policy</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">9</span><span><strong>Bartz v. Anthropic PBC.</strong> N.D. Cal. Final approval 20 July 2026, Martínez-Olguín J. Predicate ruling June 2025, Alsup J.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">10</span><span><strong>Thomson Reuters Enterprise Centre GmbH v. Ross Intelligence Inc.</strong> 765 F. Supp. 3d 382 (D. Del. 2025), Bibas J.; §1292(b) certification 23 May 2025; Third Circuit No. 25-2153, argued 11 June 2026, undecided.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">11</span><span><strong>US Government Accountability Office.</strong> GAO-10-470, &ldquo;Energy Star Program: Covert Testing Shows the Certification Process Is Vulnerable to Fraud and Abuse,&rdquo; 5 March 2010.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">12</span><span><strong>Organic Foods Production Act of 1990;</strong> USDA National Organic Program final rule, effective 21 October 2002.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">13</span><span><strong>Dodd-Frank Wall Street Reform and Consumer Protection Act,</strong> Title IX Subtitle C; Credit Rating Agency Reform Act of 2006.</span></div>
+  <div class="wp11-bibitem"><span class="wp11-n">14</span><span><strong>Treasury Board of Canada Secretariat.</strong> Directive on Automated Decision-Making, 2019, amended April 2023.</span></div>
+</section>
+
+<hr>
+
+<section>
+  <h2>Engage with this Working Paper</h2>
+  <p>Substantive comment, technical critique, and named response are welcomed. The Working Paper is maintained as a public version-controlled document; the PDF above is the editorially-controlled v1.0 release. Every claim carries a grade and every forecast names what would move it; corrections that move either will be published — as this paper&rsquo;s own §1 demonstrates.</p>
+  <div class="wp-card-actions">
+    <a class="btn" href="/engage/">Read Engagement Standards</a>
+    <a class="btn btn-bronze" href="mailto:editor@npsi.ca?subject=NPSI%20WP11%20Named%20Commentary">Submit Named Commentary</a>
+    <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site/issues">Open an Issue</a>
+    <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site/pulls">Pull Request</a>
+  </div>
+</section>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
