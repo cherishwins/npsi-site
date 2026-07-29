@@ -574,7 +574,7 @@ figure figcaption {
   text-transform: uppercase;
   padding-top: 2px;
 }
-.wp-meta-block dd { font-size: 14.5px; color: var(--ink); }
+.wp-meta-block dd { font-size: 14.5px; color: var(--ink); min-width: 0; overflow-wrap: anywhere; }
 
 /* Section anchor TOC */
 .toc {
