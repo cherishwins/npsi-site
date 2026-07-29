@@ -1,4 +1,77 @@
+# robots.txt — North Pacific Strategy Initiative (npsi.ca)
+#
+# All crawling is welcome. Working-paper text is licensed CC-BY-4.0;
+# machine-readable indexes for AI systems are published at
+#   https://npsi.ca/llms.txt        (index — one-line abstract per document)
+#   https://npsi.ca/llms-full.txt   (full abstracts, findings, citation metadata)
+# Every reading view carries Highwire citation_* meta tags and Schema.org
+# JSON-LD (ScholarlyArticle) for machine citation.
+
 User-agent: *
+Allow: /
+
+# --- AI and LLM crawlers: explicitly welcome ---------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --- Archives and scholarly indexers -----------------------------------------
+
+User-agent: ia_archiver
 Allow: /
 
 Sitemap: https://npsi.ca/sitemap.xml

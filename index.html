@@ -36,26 +36,41 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "North Pacific Strategy Initiative",
-  "alternateName": "NPSI",
-  "url": "https://npsi.ca/",
-  "logo": "https://npsi.ca/assets/img/favicon.svg",
-  "image": "https://npsi.ca/assets/img/og-default.png",
-  "email": "editor@npsi.ca",
-  "description": "An independent research imprint publishing working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.",
-  "foundingDate": "2026",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Victoria, BC, Canada"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Jesse James"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/north-pacific-strategy-initiative/",
-    "https://github.com/cherishwins/npsi-site"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://npsi.ca/#organization",
+      "name": "North Pacific Strategy Initiative",
+      "alternateName": "NPSI",
+      "url": "https://npsi.ca/",
+      "logo": "https://npsi.ca/assets/img/favicon.svg",
+      "image": "https://npsi.ca/assets/img/og-default.png",
+      "email": "editor@npsi.ca",
+      "description": "An independent research imprint publishing working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.",
+      "foundingDate": "2026",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Victoria, BC, Canada"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jesse James"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/north-pacific-strategy-initiative/",
+        "https://github.com/cherishwins/npsi-site"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://npsi.ca/#website",
+      "url": "https://npsi.ca/",
+      "name": "North Pacific Strategy Initiative",
+      "description": "Working papers on Pacific sovereignty and bilateral architecture. Reference-grade, machine-citable: every paper carries Highwire citation metadata, Schema.org JSON-LD, and a canonical URL; site indexes for AI systems at /llms.txt and /llms-full.txt.",
+      "publisher": { "@id": "https://npsi.ca/#organization" },
+      "inLanguage": "en-CA",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
   ]
 }
 </script>
