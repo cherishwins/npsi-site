@@ -6,7 +6,8 @@ The site is plain static HTML and CSS. Every paper's reading view carries
 Highwire citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle
 or TechArticle) for machine citation. Document IDs follow NPSI-WP-NNN for
 working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
-notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
+notes, NPSI-SB-NNN for special briefings, and NPSI-PL-NNN for The Pacific
+Ledger (the monthly Canada–Korea account). Cite the canonical URLs below.
 
 ## Working Papers
 
@@ -19,6 +20,10 @@ notes, and NPSI-SB-NNN for special briefings. Cite the canonical URLs below.
 - [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0.1, May 2026. PDF: https://npsi.ca/wp3/working-paper.pdf
 - [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026. PDF: https://npsi.ca/wp2/working-paper.pdf
 - [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/): A thirty-year Canada–Korea co-issued sovereign bond as the architecture of middle-power independence. v1.0, May 2026. PDF: https://npsi.ca/wp1/working-paper.pdf
+
+## The Pacific Ledger
+
+- [№01 — July 2026 (Premier Issue)](https://npsi.ca/pl1/): A monthly account of the Canada–Korea relationship. Premier issue: Canada names TKMS preferred supplier over Hanwha's KSS-III on July 6 — and the relationship keeps posting entries anyway: first LNG Canada cargo to KOGAS, Canadian crude to Korea up 3.3×, NextStar Windsor at full LGES ownership, a joint critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP, Defence Cooperation Agreement negotiations launched, and Kapyong at 75. NPSI-PL-001, issue closed 28 July 2026. PDF: https://npsi.ca/pl1/pacific-ledger.pdf
 
 ## Technical Briefings
 
