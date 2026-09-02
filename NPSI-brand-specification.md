@@ -43,6 +43,27 @@ The brand exists to support placement of NPSI working papers with senior fiducia
 - Bronze is a thin accent, never a fill. Maximum 5% of any composition.
 - Charts use Navy as primary series, Bronze as secondary, Teal as tertiary, in that order.
 
+**Two grounds.** The imprint runs on two grounds, and which one applies is
+decided by the artifact, not by taste.
+
+| Ground | Applies to | Ink |
+|---|---|---|
+| Document Cream | Working papers, executive briefs, transmittal letters, every page of npsi.ca | Pacific Navy, Charcoal for body |
+| Pacific Navy | Working-paper covers, released figures, and social cards carrying a figure | Document Cream, Bone for secondary |
+
+The cream ground is the default and the register the imprint is judged by. The
+navy ground exists because covers and figures travel alone, detached from the
+document that explains them, and need to read as one object at thumbnail size.
+Nothing that carries running body text uses the navy ground.
+
+**Series colour on the navy ground.** Navy cannot be a series when it is the
+ground. The ordered ramp inverts to Cream primary, Teal secondary, Deep Teal
+`#2A4F5E` tertiary, preserving the three-step ordering of the rule above.
+Bronze keeps its stated role of rules and KPI accents and is still never a
+fill: as a text-bearing fill it reaches only 3.7:1 against either Cream or
+Navy and fails WCAG AA. Every fill and ink pair in a released figure must
+clear 4.5:1.
+
 ---
 
 ## 4. Typography
@@ -105,7 +126,9 @@ The compact masthead — wordmark with thin bronze rule — appears on:
 - Volume marker ("VOL. I · EST. MMXXVI") in JetBrains Mono, Maritime Teal.
 
 **Usage rules.**
-- Never recolor the wordmark. Pacific Navy on Document Cream only.
+- Never recolor the wordmark. Pacific Navy on Document Cream, or reversed to
+  Document Cream on Pacific Navy where the navy ground applies (see §3, Two
+  grounds). No third treatment, and no other colour in either direction.
 - Never stretch or alter the proportions.
 - Maintain a clear-space margin equal to the height of the wordmark on all four sides.
 - Never combine with national flags, national symbols, or national colors.
