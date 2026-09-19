@@ -2,14 +2,14 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "www.npsi.ca"
         }
       ],
-      "destination": "https://npsi.ca/:path*",
+      "destination": "https://npsi.ca/$1",
       "permanent": true
     }
   ],
