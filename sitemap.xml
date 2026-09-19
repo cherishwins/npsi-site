@@ -1,225 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  npsi.ca sitemap.
+  lastmod is the date of the last commit that changed the file; it is not the
+  publication date. Reading views are listed before the PDF releases.
+  changefreq is omitted deliberately: the imprint states no cadence for the
+  working papers, and Google ignores the field.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Reading views and institutional pages -->
   <url>
     <loc>https://npsi.ca/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp11/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp11/working-paper.pdf</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp9/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp9/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp10/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp10/working-paper.pdf</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp7/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp7/working-paper.pdf</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp5/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp5/working-paper.pdf</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb3/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb3/special-briefing.pdf</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb2/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb2/special-briefing.pdf</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp4/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp4/working-paper.pdf</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/ledger/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/pl1/</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/pl1/pacific-ledger.pdf</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/tb1/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/tb1/technical-briefing.pdf</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/bn1/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/bn1/briefing-note.pdf</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb1/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/sb1/special-briefing.pdf</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp3/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp3/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp2/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://npsi.ca/wp2/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp1/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://npsi.ca/sb3/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb2/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb1/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/tb1/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/bn1/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/ledger/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/pl1/</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://npsi.ca/about/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://npsi.ca/disclosure/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://npsi.ca/engage/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://npsi.ca/commentary/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://npsi.ca/colophon/</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.4</priority>
   </url>
+
+  <!-- PDF releases -->
+  <url>
+    <loc>https://npsi.ca/wp11/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp10/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp9/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp7/working-paper.pdf</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp5/working-paper.pdf</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp4/working-paper.pdf</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp3/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp2/working-paper.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb3/special-briefing.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb2/special-briefing.pdf</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb1/special-briefing.pdf</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/tb1/technical-briefing.pdf</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/bn1/briefing-note.pdf</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/pl1/pacific-ledger.pdf</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
+

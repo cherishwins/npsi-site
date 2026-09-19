@@ -269,7 +269,7 @@ npsi-site/
 9. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
 10. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
 11. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
-12. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`** with the release date as `lastmod`. Bump the previous paper's `<priority>` down a notch and the new paper's up to `0.9`. The home-page `<lastmod>` should be updated to the release date as well.
+12. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`.** `lastmod` is the date the file last *changed*, not the date it was published — take it from `git log -1 --format=%cs -- <path>` so the field stays true after later edits. Reading views are listed before the PDF releases; give the new paper `<priority>0.9</priority>` and demote the previous current paper to `0.7`. PDFs sit at `0.4` so the crawler reaches the HTML first. Do **not** add `changefreq` — Google ignores it, and asserting a cadence contradicts the imprint's own position that the papers have none.
 
 ### Page chrome — three pieces every page carries
 
@@ -293,8 +293,8 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 
 ### Site infrastructure (well-known files)
 
-- **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets). Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
-- **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar.
+- **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets) plus URL canonicalisation: `trailingSlash: true` so `/wp11` redirects to `/wp11/` and the served URL matches `rel="canonical"`, and a 308 from `www.npsi.ca` to the apex so one hostname serves the imprint. Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
+- **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar. `sitemap.xml` carries `<loc>`, `<lastmod>` and `<priority>` only; see the working-paper checklist above for how `lastmod` is derived.
 - **`humans.txt`** at site root — editorial/technical credits.
 - **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
 - **`llms-full.txt`** at site root — the full-content companion (added July 2026): complete abstract, key findings, citation metadata, and PDF URL per document, sourced from each page's JSON-LD abstract and this file's canonical-fact lists. Update it in the same commit as `llms.txt` whenever a document is added, retitled, or superseded.
