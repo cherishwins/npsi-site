@@ -119,5 +119,5 @@
 
   <!-- Footer -->
   <text x="40" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5">CANADA AT THE MERIDIAN · INTERLOCKING THREE-RAIL ARCHITECTURE</text>
-  <text x="860" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · v0.9</text>
+  <text x="860" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · v1.0</text>
 </svg>

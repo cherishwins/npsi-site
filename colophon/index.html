@@ -58,7 +58,7 @@
   <h1>How this is made.</h1>
   <div class="subtitle">Typography, design notes, technical credits.</div>
 
-  <p class="lede">The North Pacific Strategy Initiative website and its working papers are built using open type families, plain HTML and CSS, and a small number of widely-used static-site technologies. This colophon documents the choices for the curious and for anyone wishing to extend or fork the work.</p>
+  <p class="lede">The North Pacific Strategy Initiative website and its working papers are built using open type families, plain HTML and CSS, and a small number of widely used static-site technologies. This colophon documents the choices for the curious and for anyone wishing to extend or fork the work.</p>
 </div>
 
 <section>
@@ -79,13 +79,13 @@
     </div>
     <div>
       <h3>Noto Serif KR  ·  Noto Sans KR</h3>
-      <p>Korean script in headers and body. Part of the Google/Adobe Noto family; pairs well with the Source family and supports the imprint's Korea convention.</p>
+      <p>Korean script in headers and body. Part of the Google/Adobe Noto family; pairs well with the Source family and sets the imprint&rsquo;s Korean-script text.</p>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Color</h2>
+  <h2>Colour</h2>
 
   <div class="grid-2">
     <div>
@@ -112,23 +112,23 @@
 
   <p>The NPSI wordmark sets <em>NORTH PACIFIC STRATEGY INITIATIVE</em> in Source Serif 4, weight 600, with 0.14em letter-spacing, in Document Cream on Pacific Navy on screen — in print the pair re-inverts; there is never a third combination. Above the wordmark, a thin Treaty Bronze meridian carries three small ticks marking a conceptual span: Victoria — mid-Pacific — Busan. Below, the italic descriptor <em>Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</em> sits in Treaty Bronze; further below, the volume identifier <em>VOL. I · EST. MMXXVI</em> sits in JetBrains Mono in Maritime Teal.</p>
 
-  <p>The wordmark appears on document covers, the website masthead, and released figures. The compact masthead — wordmark with thin bronze rule, no descriptor — appears on the top of every page of every document. The wordmark is never recoloured, never combined with national flags or symbols, and never paired with a separate icon, mascot, or symbol mark. The wordmark is the mark.</p>
+  <p>The wordmark appears on document covers, the website masthead, and released figures. The compact masthead — wordmark with thin bronze rule, no descriptor — appears at the top of every page of every document. The wordmark is never recoloured, never combined with national flags or symbols, and never paired with a separate icon, mascot, or symbol mark. The wordmark is the mark.</p>
 </section>
 
 <section>
   <h2>Document standards</h2>
 
-  <p>Each NPSI working paper is identified by a <strong>document ID</strong> of the form <code>NPSI-WP-NNN</code>, a <strong>version number</strong> of the form <code>vM.m[.p]</code>, and a <strong>release date</strong>. Each release is tagged in the corresponding GitHub repository, accompanied by a <code>CHANGELOG.md</code> entry, and made available on the imprint website at a permanent URL.</p>
+  <p>Each NPSI working paper is identified by a <strong>document ID</strong> of the form <code>NPSI-WP-NNN</code>, a <strong>version number</strong> of the form <code>vM.m[.p]</code>, and a <strong>release date</strong>. Each release is made available on the imprint website at a permanent URL, and its change history is public in the commit log of the imprint&rsquo;s <a href="https://github.com/cherishwins/npsi-site/commits/main">GitHub repository</a>.</p>
 
-  <p>Working papers are written in Markdown source, edited under git, and rendered to HTML for the web, to PDF and DOCX for download, and to printable form for institutional submission. The HTML rendering on this website is the canonical reading view.</p>
+  <p>Reading views are hand-authored HTML, edited under git. Each document also has a PDF: some are printed from the reading view, and for PDF-first releases the PDF is the canonical release document.</p>
 </section>
 
 <section>
   <h2>Site technical</h2>
 
-  <p>This site is plain static HTML and CSS, hand-authored, no JavaScript framework. It is served as static files from a content-delivery network. Aggregate visitor analytics are provided by <a href="https://umami.is/">Umami</a> — a cookieless platform that records page views and referrer sources without setting cookies, without fingerprinting, and without collecting personally identifying data. No third-party cookies are set. No advertising is served. The site does not collect personal data; the only personal data the Initiative holds is editorial correspondence sent voluntarily to its email aliases, and any future mailing-list subscriptions explicitly opted into.</p>
+  <p>This site is plain static HTML and CSS, hand-authored, no JavaScript framework. It is served as static files by Vercel, and its typefaces are loaded from Google Fonts, which receives the visitor&rsquo;s IP address with each font request. Aggregate visitor analytics are provided by <a href="https://umami.is/">Umami</a> — a cookieless platform that records page views and referrer sources without setting cookies, without fingerprinting, and without collecting personally identifying data. No third-party cookies are set. No advertising is served. The site does not collect personal data; the only personal data the Initiative holds is editorial correspondence sent voluntarily to its email aliases.</p>
 
-  <p>The full site source — HTML, CSS, working paper Markdown, figures, and build scripts — is available at <a href="https://github.com/cherishwins/npsi-site">github.com/cherishwins/npsi-site</a>. The site is itself released under Creative Commons Attribution 4.0 International (CC-BY-4.0); contributions are welcomed via Pull Request.</p>
+  <p>The full site source — HTML, CSS, PDFs, figures, and the scripts that generate them — is available at <a href="https://github.com/cherishwins/npsi-site">github.com/cherishwins/npsi-site</a>. Contributions are welcomed via Pull Request.</p>
 </section>
 
 <section>
@@ -145,7 +145,7 @@
 <section>
   <h2>Acknowledgements</h2>
 
-  <p>This site is the work of one person, but the work it carries draws on many. Editorial debts will be noted in each working paper's <code>CHANGELOG.md</code> as named contributions arrive.</p>
+  <p>This site is the work of one person, but the work it carries draws on many. Named contributions, when they arrive, will be credited in the version of the paper they shape.</p>
 </section>
 
 </main>

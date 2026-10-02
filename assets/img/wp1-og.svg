@@ -28,15 +28,16 @@
     BILATERAL SOVEREIGN ARCHITECTURE · CKPIF · CANADA–KOREA
   </text>
 
-  <text x="64" y="232" class="serif" font-weight="700" font-size="60" fill="#F4EFE3" letter-spacing="-0.5">
-    A Canada–Korea Pacific
-  </text>
-  <text x="64" y="296" class="serif" font-weight="700" font-size="60" fill="#F4EFE3" letter-spacing="-0.5">
-    Infrastructure Facility
+  <!-- Title (single line — retitled May 2026) -->
+  <text x="64" y="248" class="serif" font-weight="700" font-size="76" fill="#F4EFE3" letter-spacing="-0.5">
+    The Bilateral Foundation
   </text>
 
-  <text x="64" y="346" class="serif" font-style="italic" font-size="22" fill="#C08D60">
-    A defensive bilateral co-issuance architecture for middle-power sovereignty.
+  <text x="64" y="300" class="serif" font-style="italic" font-size="24" fill="#C08D60">
+    A thirty-year Canada–Korea sovereign bond as the architecture
+  </text>
+  <text x="64" y="332" class="serif" font-style="italic" font-size="24" fill="#C08D60">
+    of middle-power independence.
   </text>
 
   <g transform="translate(0, 420)">

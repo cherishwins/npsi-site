@@ -1,9 +1,12 @@
 <p align="center">
-  <img src="./assets/img/npsi-wordmark.svg" alt="North Pacific Strategy Initiative" width="640">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/img/npsi-wordmark.svg">
+    <img src="./assets/img/npsi-wordmark-light.svg" alt="North Pacific Strategy Initiative" width="640">
+  </picture>
 </p>
 
 <p align="center">
-  <em>Working Papers on Pacific Sovereignty & Bilateral Architecture</em>
+  <em>Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</em>
 </p>
 
 <p align="center">
@@ -18,23 +21,25 @@
 
 ---
 
-An independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress.
+An independent research imprint publishing working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress. Written and funded by one person; the editor's outside interests are declared at [npsi.ca/disclosure](https://npsi.ca/disclosure/).
 
-This repository is the source of the website at [`npsi.ca`](https://npsi.ca). Plain static HTML and CSS, hand-authored, no JavaScript framework, no build step. The publication exists to be read, cited, and quietly forwarded — not to be optimised for engagement.
+This repository is the source of [`npsi.ca`](https://npsi.ca): plain static HTML and CSS, hand-authored, no JavaScript framework, no build step. Its commit history is the public record of every change to every document.
 
-## Working papers
+## The publications
 
-| № | Title | Status | Released |
-|---|---|---|---|
-| **No. 1** | [A Canada–Korea Pacific Infrastructure Facility](https://npsi.ca/wp1/) | `v1.0` &nbsp;·&nbsp; For Discussion | April 2026 |
-| **No. 2** | [A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
-| **No. 3** | [A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/) | `v1.0` &nbsp;·&nbsp; For Discussion | May 2026 |
+**Current working paper:** No. 11, [*Rated AAA by the Issuer*](https://npsi.ca/wp11/) (v1.0, 28 July 2026).
 
-> *forthcoming · `NPSI-BN-002` Confederation Mathematics*</p>
+| Line | ID | Where |
+|---|---|---|
+| Working Papers | `NPSI-WP-NNN` | [npsi.ca/#archive](https://npsi.ca/#archive) — Nos. 1–5, 7, 9–11 (6 and 8 unreleased) |
+| Technical Briefings | `NPSI-TB-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
+| Briefing Notes | `NPSI-BN-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
+| Special Briefings | `NPSI-SB-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
+| The Pacific Ledger | `NPSI-PL-NNN` | [npsi.ca/ledger](https://npsi.ca/ledger/) |
+
+The full index, with a one-line abstract per document, is maintained at [npsi.ca/llms.txt](https://npsi.ca/llms.txt); complete abstracts and citation metadata are at [npsi.ca/llms-full.txt](https://npsi.ca/llms-full.txt). Every reading view carries Highwire `citation_*` tags and Schema.org JSON-LD.
 
 ## What this site is — and is not
-
-The constraints below are non-negotiable. They are the brand discipline. Drift on any of them costs the imprint its credibility.
 
 | | |
 |---|---|
@@ -42,15 +47,13 @@ The constraints below are non-negotiable. They are the brand discipline. Drift o
 | Not a personal platform. | The editor signs the work; the imprint hosts it. |
 | Not a content stream. | Working papers publish when substantive material is ready. |
 | Not a consulting page. | No services menu, no rates, no "work with us." |
-| Not a tracking surface. | Cookieless analytics via Umami only; no third-party scripts beyond fonts. |
+| Not a tracking surface. | Cookieless analytics via Umami, the only third-party script; typefaces from Google Fonts. |
 | Not a movement. | No flags, no national symbols, no slogans. Treaty-document register only. |
-| Not a JavaScript framework SPA. | Plain HTML and CSS. No build step. No React, no Vue, no Next.js. |
-
-Full discipline in [`CLAUDE.md`](./CLAUDE.md).
+| Not a JavaScript framework SPA. | Plain HTML and CSS. No build step. |
 
 ## Visual identity
 
-Dark-first since July 2026: the same four-colour brand, inverted — Document Cream is the ink, Pacific Navy is the paper. Print re-inverts to the light palette.
+Dark-first since July 2026: the same four-colour brand, inverted — Document Cream is the ink, Pacific Navy is the paper. Readers whose device prefers light, and every printed page, get the light palette.
 
 | Token | Screen (dark) | Print (light) | Role |
 |---|---|---|---|
@@ -59,60 +62,58 @@ Dark-first since July 2026: the same four-colour brand, inverted — Document Cr
 | `--teal`   | `#7FA8B5` | `#3D6A78` | **Maritime Teal** &nbsp;·&nbsp; section markers, monospace metadata |
 | `--cream`  | `#081C30` | `#FFFFFF` | **Page background** — deep Pacific Navy on screen |
 
-Three typefaces: **Source Serif 4** (display + body), **JetBrains Mono** (metadata + KPI numbers), **Noto Serif KR / Noto Sans KR** (Korean script).
+Typefaces: **Source Serif 4** (display and body), **Source Sans 3** (UI labels), **JetBrains Mono** (metadata and figures); **Noto Serif KR / Noto Sans KR** for Korean script.
 
-Hard rules: no red, no flags, no national symbols, no Inter or Helvetica, no exclamation marks, no first person in working-paper body text, no anti-American framing.
+House rules: no red, no flags, no national symbols, no exclamation marks, no first person in working-paper body text. Framing discipline: counterparty-risk diversification — additive, not antagonistic.
 
 ## Repository structure
 
 ```text
 npsi-site/
-├── CLAUDE.md                  brand discipline + institutional memory
-├── DEPLOYMENT.md              Cloudflare Pages / Netlify / Vercel
-├── README.md                  this file
-├── index.html                 home — current working paper, archive, the imprint
+├── index.html                 home — current paper, the Ledger, archive, briefings
 ├── 404.html
-├── about/index.html           the imprint, methodology, editorial standards
-├── engage/index.html          how to contribute named commentary
-├── commentary/index.html      named-commentary index per paper
-├── colophon/index.html        typography, design, technical credits
-├── wp1/index.html             Working Paper No. 1 — CKPIF
-├── wp2/index.html             Working Paper No. 2 — Energy & Compute Compact
-└── assets/
-    ├── css/site.css           tokenized stylesheet, no build
-    └── img/                   wordmark, favicons, OG cards, paper figures
+├── about/  disclosure/  engage/  commentary/  colophon/  ledger/
+├── wp1/ … wp11/               working papers (no wp6, wp8): index.html + working-paper.pdf
+├── tb1/  bn1/  sb1/  sb2/  sb3/   briefing lines: index.html + PDF
+├── pl1/                       The Pacific Ledger №01: index.html + PDF
+├── assets/
+│   ├── css/site.css           tokenized stylesheet, no build
+│   └── img/                   wordmark, favicons, share cards (SVG source + PNG), figures
+├── llms.txt  llms-full.txt    machine-readable indexes
+├── sitemap.xml  robots.txt  vercel.json  .well-known/security.txt
+└── tools/                     publishing checks and card rendering (not deployed)
 ```
 
 ## Contributing
 
-Substantive editorial commentary, factual corrections, and technical critique are welcomed. Four channels are described on the [Engage](https://npsi.ca/engage/) page.
+Substantive commentary, factual corrections, and technical critique are welcomed. The channels are described on the [Engage](https://npsi.ca/engage/) page.
 
 | | How |
 |---|---|
 | **Named commentary** | 500–1,500 attributed words to [editor@npsi.ca](mailto:editor@npsi.ca) |
-| **Pull requests** | Specific edit proposals against the relevant paper repo |
+| **Pull requests** | Specific edit proposals against this repository, one folder per document |
 | **Issues** | Factual questions, technical critique, general comment |
 | **Citation** | Working papers are CC-BY-4.0; cite, share, build upon |
 
-Selection is based on editorial merit — not on agreement with the thesis. Sharp, well-sourced disagreement is the most editorially valuable form of contribution.
+Selection is based on editorial merit — not on agreement with the thesis.
 
 ## Licensing
 
-| | License |
+| | Licence |
 |---|---|
 | Working paper text | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — share, adapt, build upon, including commercially, with attribution |
 | Site source code | MIT |
 | Figures | CC-BY-4.0 unless otherwise noted on the figure |
-| NPSI wordmark and visual identity | Not licensed. The mark is editorially independent and is not for re-use. |
+| NPSI wordmark and visual identity | Not licensed; not for re-use. |
 
-## Local preview
+## Local preview and checks
 
 ```sh
-python3 -m http.server 8000
-# open http://localhost:8000
+python3 -m http.server 8000      # open http://localhost:8000
+python3 tools/sitecheck.py       # links, chrome, metadata, sitemap — run before every commit
 ```
 
-Production deployment is documented in [`DEPLOYMENT.md`](./DEPLOYMENT.md). The site deploys to Cloudflare Pages as plain static files; no build step.
+The site deploys to Vercel as plain static files (headers and redirects in `vercel.json`); no build step. Deployment notes are in [`DEPLOYMENT.md`](./DEPLOYMENT.md).
 
 ## Editor
 

@@ -4,16 +4,19 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Content is current as of 29 July 2026.
+the imprint has published. Index last revised 2 October 2026; status lines
+describe each document as at its release unless dated otherwise.
 
-How to cite: "Jesse James, *[Title]*, NPSI Working Paper No. [N] (North Pacific
-Strategy Initiative, [Month Year]), https://npsi.ca/wp[N]/." Substitute
+How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
+v[M.m]). North Pacific Strategy Initiative. https://npsi.ca/wp[N]/. Substitute
 Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
-briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account). Where a PDF exists it is the canonical release document; every
-document also has a full HTML reading view at its canonical URL with Highwire
-citation_* meta tags and Schema.org JSON-LD. Editor: Jesse James
+briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account). Every document has an HTML page at its
+canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
+PDF-first releases (WP5, WP10, WP11, SB2, SB3) the PDF is the canonical
+release document; WP10 and SB3 have release pages rather than full reading
+views. Editor: Jesse James
 (editor@npsi.ca). Numbering is the author's: WP6 and WP8 are unreleased, so the
 archive carries intentional gaps at 6 and 8.
 
@@ -68,12 +71,12 @@ MoUs, because no registry of U.S. MoUs exists. The paper assesses the
 24 July 2026 PIF–EXIM $15 billion MoU against the sharpest available case
 study: EXIM's 2015–2019 board-quorum lapse, which cut the bank's financing by
 almost 85 percent, and a charter that expires again on 31 December 2026 with
-reauthorization still in committee.
+reauthorization still in committee (as of 27 July 2026).
 
 Key findings: Formal withdrawals cluster in 2017–2020 and 2025–2026. The
 PIF–EXIM instrument is explicitly non-binding; EXIM's charter expires
 31 December 2026, with the Senate's ten-year extension bill in committee and no
-markup. During the 2015–2019 quorum lapse, financing declined roughly 85
+markup (as of 27 July 2026). During the 2015–2019 quorum lapse, financing declined roughly 85
 percent, and each dollar of EXIM financing supports approximately $4.50 of
 exports. The paper's balance is load-bearing: it concedes democratic policy
 alternation, the honoured-commitment record (NATO Article 5, Bretton Woods, the
@@ -192,7 +195,7 @@ Strategic preface to the three-rail architecture (WP1, WP2, WP3).
 
 ## Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor
 
-- ID: NPSI-WP-003 · v1.0.1 · May 2026
+- ID: NPSI-WP-003 · v1.0.1 · first published May 2026; revised 29 July 2026
 - Canonical: https://npsi.ca/wp3/ · PDF (30 pp.): https://npsi.ca/wp3/working-paper.pdf
 - Keywords: Canada, Korea, CPSP, submarines, KSS-III, Hanwha, defence-industrial, bilateral defence cooperation, CKFTA, SDCP
 
@@ -274,9 +277,9 @@ June 16 G7 bilateral, and Kapyong at 75.
 Key entries: Two-way merchandise trade C$25 billion in 2025; Korea is Canada's
 seventh-largest trading partner; Korean FDI stock in Canada C$17.6 billion; 99
 percent duty-free under CKFTA. Korea's Middle East LNG dependence fell from 45
-percent (2022) to 24 percent (2025), projected under 18 percent in 2026; not a
-single Korean LNG carrier was inside the Strait of Hormuz when it closed
-(KOGAS CEO Choi Yeon-hye, June 5). Canadian crude to Korea expands from 4.88
+percent (2022) to 24 percent (2025), projected under 18 percent in 2026; "not a
+single Korean LNG carrier is trapped inside the Strait of Hormuz" (KOGAS CEO
+Choi Yeon-hye, June 5). Canadian crude to Korea expands from 4.88
 million barrels (2025) to as much as 16 million (2026) — third-largest buyer
 after the U.S. and China. Debit column recorded honestly: Hanwha's contingent
 armoured-vehicle JV and DAPA equity stake shelved; Hyundai's Project Beaver

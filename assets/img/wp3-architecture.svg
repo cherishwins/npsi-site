@@ -124,5 +124,5 @@
 
   <!-- Footer -->
   <text x="40" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5">CANADA AT THE MERIDIAN · KOREAN INDUSTRIAL BASE ANCHORS RAILS 1 + 3 · CRITICAL MINERALS BIND ALL THREE</text>
-  <text x="860" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · v0.9</text>
+  <text x="860" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · v1.0.1</text>
 </svg>

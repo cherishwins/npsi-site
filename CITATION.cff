@@ -3,8 +3,8 @@ title: "North Pacific Strategy Initiative — Working Papers"
 message: >-
   If you cite an individual NPSI working paper, please use the per-paper
   citation metadata embedded in its reading view (the citation_* meta tags
-  consumed by Google Scholar and reference managers), or the GitHub release
-  tag for that paper. For the imprint itself, please use the citation below.
+  consumed by Google Scholar and reference managers). For the imprint
+  itself, please use the citation below.
 type: software
 authors:
   - given-names: Jesse
@@ -26,3 +26,15 @@ keywords:
 url: "https://npsi.ca/"
 repository-code: "https://github.com/cherishwins/npsi-site"
 license: CC-BY-4.0
+preferred-citation:
+  type: report
+  title: "North Pacific Strategy Initiative — Working Papers"
+  authors:
+    - given-names: Jesse
+      family-names: James
+  institution:
+    name: North Pacific Strategy Initiative
+    city: Victoria
+    country: CA
+  year: 2026
+  url: "https://npsi.ca/"

@@ -41,6 +41,6 @@
 
   <!-- Bottom signature line -->
   <line x1="80" y1="560" x2="1120" y2="560" stroke="#C08D60" stroke-width="0.5"/>
-  <text class="vol" x="80" y="588" fill="#7FA8B5" font-size="10">NPSI.CA  ·  GITHUB.COM/NPSI-PACIFIC</text>
+  <text class="vol" x="80" y="588" fill="#7FA8B5" font-size="10">NPSI.CA  ·  VICTORIA, BRITISH COLUMBIA</text>
   <text class="vol" x="1120" y="588" text-anchor="end" fill="#7FA8B5" font-size="10">VOL. I  ·  WORKING PAPERS</text>
 </svg>
