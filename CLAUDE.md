@@ -169,80 +169,19 @@ The site copy and any working-paper prose hosted here follow the same discipline
 
 ```
 npsi-site/
-├── CLAUDE.md                        ← this file
+├── CLAUDE.md                        ← this file (house rules + document index)
 ├── README.md                        institutional landing for the GitHub repo
-├── DEPLOYMENT.md                    deployment instructions for Cloudflare Pages / Netlify / Vercel
-├── index.html                       home — current working paper, archive, the imprint
-├── 404.html                         not-found page
-├── about/index.html                 about NPSI
-├── engage/index.html                contribution standards
-├── commentary/index.html            named commentary index, per paper
-├── disclosure/index.html            declaration of interests (see disclosure regime above)
-├── colophon/index.html              technical colophon
-├── wp1/
-│   ├── index.html                   Working Paper No. 1 — *The Bilateral Foundation* — full reading view (previous paper; banner points to WP11)
-│   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
-├── wp2/
-│   ├── index.html                   Working Paper No. 2 — full reading view (previous paper)
-│   └── working-paper.pdf            v1.0 PDF (generated from the reading view 29 Jul 2026; 45 pp., direct download)
-├── wp3/
-│   ├── index.html                   Working Paper No. 3 — full reading view (previous paper; v1.0.1)
-│   └── working-paper.pdf            v1.0.1 PDF (generated from the reading view 29 Jul 2026; 30 pp., direct download)
-├── wp4/
-│   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP11)
-│   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
-├── wp5/
-│   ├── index.html                   Working Paper No. 5 — *Sovereign Compute North* — full reading view (PDF canonical)
-│   └── working-paper.pdf            canonical v1.0 release (19 pp., direct download)
-├── wp7/
-│   ├── index.html                   Working Paper No. 7 — *Dazzle 2.0* — full reading view (previous paper; banner points to WP11)
-│   └── working-paper.pdf            v1.0 PDF (generated from the reading view; direct download)
-├── wp9/
-│   ├── index.html                   Working Paper No. 9 — *The Counterparty Problem* — full reading view (previous paper; banner points to WP11)
-│   └── working-paper.pdf            v1.0 PDF (generated from the reading view 29 Jul 2026; 12 pp., direct download)
-├── wp10/
-│   ├── index.html                   Working Paper No. 10 — *Fair Use for We, IP Theft for Thee* — release page (PDF canonical; superseded by WP11, notice attached)
-│   └── working-paper.pdf            canonical v1.0 release (17 pp., direct download, unaltered)
-├── wp11/
-│   ├── index.html                   Working Paper No. 11 — *Rated AAA by the Issuer* — full reading view (CURRENT paper)
-│   └── working-paper.pdf            canonical v1.0 release (18 pp., direct download)
-├── sb2/
-│   ├── index.html                   Special Briefing No. 2 — *The Three Doors* — full reading view (PDF canonical)
-│   └── special-briefing.pdf         canonical v1.0 release (10 panels, direct download)
-├── sb3/
-│   ├── index.html                   Special Briefing No. 3 — *The Ledger With One Entry* — release page (PDF canonical)
-│   └── special-briefing.pdf         canonical v1.0 release (39 pp., direct download; PDF carries the author's serial placeholder, NPSI-SB-003 assigned at site publication)
-├── pl1/
-│   ├── index.html                   The Pacific Ledger №01 — July 2026 premier issue — full reading view
-│   └── pacific-ledger.pdf           author-supplied v2 release (7 pp. letter, dark identity; direct download)
-├── tb1/
-│   ├── index.html                   Technical Briefing No. 1 — *The Verified Sky* — full reading view
-│   └── technical-briefing.pdf       full PDF release (direct download, no email gate)
-├── bn1/
-│   ├── index.html                   Briefing Note No. 1 — *The Voter File* — full reading view
-│   └── briefing-note.pdf            full PDF release (direct download, no email gate)
-├── sb1/
-│   ├── index.html                   Special Briefing No. 1 — *Zero Secrets* — full reading view
-│   └── special-briefing.pdf         full PDF release (direct download, no email gate)
-├── llms.txt                         LLM-crawler index (llms.txt convention): imprint summary + canonical URL and one-line abstract per paper
-├── llms-full.txt                    full-content companion: complete abstracts, key findings, citation metadata per document
-└── assets/
-    ├── css/site.css                 shared stylesheet, fully tokenized
-    └── img/
-        ├── npsi-wordmark.svg        full wordmark
-        ├── npsi-masthead.svg        compact masthead
-        ├── favicon.svg              square mark
-        ├── ckpif-architecture.svg   Figure A from WP1
-        ├── wp2-og.svg/.png          WP2 Open Graph share card (1200×630)
-        ├── wp2-architecture.svg     WP2 Figure A — three-rail Pacific architecture
-        ├── wp2-bifurcation.svg      WP2 Figure B — training and inference bifurcation
-        ├── wp2-capacity-gap.svg     WP2 Figure C — U.S. capacity gap by 2028
-        ├── wp2-compact.svg          WP2 Figure D — six-layer compact architecture
-        ├── wp2-indigenous.svg       WP2 Figure E — Series II tranche structure
-        ├── tb1-og.svg/.png          TB1 Open Graph share card (1200×630)
-        ├── bn1-og.svg/.png          BN1 Open Graph share card (1200×630)
-        ├── sb1-og.svg/.png          SB1 Open Graph share card (1200×630)
-        └── og-default.png/.svg      site-wide Open Graph share preview (1200×630)
+├── DEPLOYMENT.md                    deployment notes
+├── index.html  404.html             home (current paper, the Ledger, archive, briefings); not-found page
+├── about/ disclosure/ engage/ commentary/ colophon/ ledger/    institutional pages (ledger/ is the Ledger's issue index)
+├── wp1/ … wp11/  tb1/ bn1/ sb1/ sb2/ sb3/ pl1/                 one folder per document: index.html, its PDF, and CLAUDE.md (canon)
+├── llms.txt  llms-full.txt          machine-readable indexes
+├── sitemap.xml  robots.txt  vercel.json  humans.txt  CITATION.cff  manifest.webmanifest  .well-known/security.txt
+├── assets/css/site.css              shared stylesheet, fully tokenized
+├── assets/img/                      wordmark (dark + light), favicons, share cards (SVG source + PNG), figures
+├── tools/                           sitecheck.py · set_current_paper.py · render-og.sh · fonts/ (not deployed)
+├── figures/                         working figure sources for papers in progress (not deployed)
+└── .claude/skills/                  npsi-publish (publishing procedure) · npsi-korean-translation · fluid-scale
 ```
 
 ## Conventions for changes
@@ -258,18 +197,7 @@ npsi-site/
 
 ### When adding a new working paper
 
-1. Create `wp[N]/index.html`, modeled on `wp1/index.html` (the canonical chrome reference).
-2. **Update the home page's "Current Working Paper" card** with the new paper. Move the previously-current paper's card into the "Previous Working Papers" section on the home page (if it doesn't exist yet, create it directly below the Current card).
-3. **Update the nav `Working Paper` link sitewide** to point to the new paper (`/wp[N]/`). The four-link nav is intentional restraint — *never add a fifth link.* Previous papers remain accessible via direct URL and the home-page archive.
-4. **Add a "previous paper" banner near the top of the prior paper's page**, pointing readers to the current paper. The banner uses the `<aside class="standard">` pattern with an `<h4>` and a one-sentence pointer.
-5. Add a new section to `commentary/index.html` for the new paper's commentary collection (above the previous paper's section). Open for submission.
-6. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
-7. **OG card pipeline.** Hand-code `assets/img/wp[N]-og.svg` (1200×630, NPSI register, three stat blocks, no red, no flags) using `wp1-og.svg` / `wp4-og.svg` as the template. Render to PNG with `npx --yes resvg-cli assets/img/wp[N]-og.svg assets/img/wp[N]-og.png`. The PNG is what `og:image` must reference — social platforms (Twitter, Facebook, LinkedIn) require raster. The SVG is the source of truth; commit both. Build hand-coded SVG figures into `assets/img/` and reference via `<figure><img></figure>` in the paper.
-8. **JSON-LD ScholarlyArticle.** Add a `<script type="application/ld+json">` block to the paper's `<head>`, mirroring the WP1–WP4 pattern (`@type: ScholarlyArticle`, `headline`, `datePublished`, `identifier: NPSI-WP-NNN`, `issueNumber`, `image` pointing to wp[N]-og.png, `license`, `keywords`, `abstract`, `author`, `publisher`, `isPartOf: NPSI Working Papers`, and `encoding` carrying the PDF when released). This is what Google's Knowledge Graph, Bing, and academic crawlers index beyond the Highwire `citation_*` tags.
-9. Update the GitHub repository at `github.com/npsi-pacific/working-paper-[N]` (when the imprint org is provisioned; until then, the working repo is `cherishwins/npsi-site`).
-10. Working paper IDs follow the format `NPSI-WP-NNN` (zero-padded to three digits).
-11. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
-12. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`.** `lastmod` is the date the file last *changed*, not the date it was published — take it from `git log -1 --format=%cs -- <path>` so the field stays true after later edits. Reading views are listed before the PDF releases; give the new paper `<priority>0.9</priority>` and demote the previous current paper to `0.7`. PDFs sit at `0.4` so the crawler reaches the HTML first. Do **not** add `changefreq` — Google ignores it, and asserting a cadence contradicts the imprint's own position that the papers have none.
+Follow the `npsi-publish` skill (`.claude/skills/npsi-publish/SKILL.md`): intake packet, pre-flight review, page build, sitewide updates, share card, gate. It carries the original twelve-step checklist verbatim; three of its steps are now scripts (`tools/set_current_paper.py`, `tools/render-og.sh`, `tools/sitecheck.py --fix-sitemap`).
 
 ### Page chrome — three pieces every page carries
 
@@ -294,10 +222,10 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 ### Site infrastructure (well-known files)
 
 - **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets) plus URL canonicalisation: `trailingSlash: true` so `/wp11` redirects to `/wp11/` and the served URL matches `rel="canonical"`, and a 308 from `www.npsi.ca` to the apex so one hostname serves the imprint. Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
-- **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar. `sitemap.xml` carries `<loc>`, `<lastmod>` and `<priority>` only; see the working-paper checklist above for how `lastmod` is derived.
+- **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar. `sitemap.xml` carries `<loc>`, `<lastmod>` and `<priority>` only; see the `npsi-publish` skill (checklist item 12) for how `lastmod` is derived; `python3 tools/sitecheck.py --fix-sitemap` applies it.
 - **`humans.txt`** at site root — editorial/technical credits.
 - **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
-- **`llms-full.txt`** at site root — the full-content companion (added July 2026): complete abstract, key findings, citation metadata, and PDF URL per document, sourced from each page's JSON-LD abstract and this file's canonical-fact lists. Update it in the same commit as `llms.txt` whenever a document is added, retitled, or superseded.
+- **`llms-full.txt`** at site root — the full-content companion (added July 2026): complete abstract, key findings, citation metadata, and PDF URL per document, sourced from each page's JSON-LD abstract and the per-document canonical-fact files (`<folder>/CLAUDE.md`). Update it in the same commit as `llms.txt` whenever a document is added, retitled, or superseded.
 - **`robots.txt`** — allows all crawling and *explicitly* welcomes the named AI/LLM crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, et al.) with a comment header pointing machine readers at `llms.txt` / `llms-full.txt`. Maximal crawlability is deliberate imprint policy (CC-BY-4.0 text, citation-seeking); never add `Disallow` rules or `noindex` beyond the 404 page without flagging.
 - **`.well-known/security.txt`** — RFC 9116 contact for security researchers. Bump the `Expires:` field annually.
 - **`CITATION.cff`** at repo root — renders GitHub's "Cite this repository" widget for academic reuse.
@@ -318,7 +246,7 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 
 ## Deployment
 
-The site deploys to **Cloudflare Pages** (recommended) as plain static files. No build step. The `DEPLOYMENT.md` file covers DNS, email aliases, and pre-launch checks.
+The site deploys to **Vercel** as plain static files (headers, redirects and the `trailingSlash` rule in `vercel.json`); no build step. `DEPLOYMENT.md` covers DNS, email aliases, and pre-launch checks.
 
 To preview locally:
 ```bash
@@ -326,171 +254,33 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Working-paper substance — canonical references
+## Tools (repository only; never deployed)
 
-### Working Paper No. 1 — A Canada–Korea Pacific Infrastructure Facility (`wp1/index.html`)
+- `python3 tools/sitecheck.py` — the gate. Run before every commit that touches a page; it must report 0 errors. `--external` probes outbound links; `--fix-sitemap` refreshes `<lastmod>` from git just before committing.
+- `python3 tools/set_current_paper.py N --title "…" --version v1.0 --month "Month YYYY"` — makes WP N current: nav link on every page, every previous-paper banner, the demoted paper's banner, sitemap priorities.
+- `tools/render-og.sh assets/img/<card>.svg` — renders a share card against the vendored brand faces in `tools/fonts/` (the bare `resvg-cli` call silently renders fallback fonts in a fresh container).
 
-Proposes the CKPIF — a treaty-based supranational issuer for Pacific corridor infrastructure. Key facts that should remain consistent across any future edits:
+## Document index
 
-- 50/50 Canada–Korea ownership, Luxembourg seat, English law, LCIA arbitration
-- Indicative programme size US$25–40 billion over 5–7 years
-- Indicative pricing +50–80 bp over 30Y UST at launch
-- Several (not joint) sovereign guarantees
-- Indigenous Series I tranche, 10–15% of programme, +25 bp ratchet protection
-- KPI architecture follows ICMA Sustainability-Linked Bond Principles, 25 bp step calibration
-- Tokenised pilot tranche US$200–500 m on Project Agorá-class infrastructure (BoK is a participant)
-- BoC–BoK standing swap line, signed November 2017, no expiry, no preset limit — the institutional foundation
-- Author: Jesse James (editor); v1.0 published April 2026
+Each document's canonical facts, file notes and open review items live in its folder's `CLAUDE.md` (`wp3/CLAUDE.md` and so on), which Claude Code loads automatically when it reads files in that folder. Open one before editing a document, its home card, its llms entries or its share card. The procedure for publishing, making a paper current, and applying errata is the `npsi-publish` skill (`.claude/skills/npsi-publish/SKILL.md`). Remaining review items across the archive are in the editor's private review docket: https://claude.ai/artifact/XL2ZeRwv1onScpBvpNkDzp
 
-### Working Paper No. 2 — A Canada–United States Energy and Compute Compact (`wp2/index.html`)
-
-Proposes the **Compact** — a treaty-grade bilateral architecture pairing Canadian dispatchable generation with the U.S. grid through ultra-high-voltage transmission, siting AI training on Canadian hydro and preserving inference at the U.S. urban edge. Companion to WP1; financed through the same CKPIF supranational vehicle (Phase 2). Key facts:
-
-- Canada–U.S. bilateral, several (not joint) liability, English law, LCIA arbitration; survives CUSMA non-renewal
-- U.S. structural capacity gap: ~44 GW required by 2028 vs ~25 GW deliverable = 19 GW shortfall
-- Combined dispatchable Canadian hydro: Hydro-Québec 37,370 MW + BC Hydro 13,200 MW + Manitoba Hydro 5,500 MW = ~56,000 MW
-- AI training/inference bifurcation: training latency-agnostic (~25% CAGR); inference sub-50 ms latency (~79% CAGR); 80% of total AI critical-IT load is inference by 2030
-- Three corridor candidates: Saguenay/Côte-Nord (QC), Peace River/Bennett (BC), Northern Manitoba
-- CUSMA July 2026 review is the timing peg; v1.0 target pre-1-July-2026
-- Indigenous Series II tranche (parallel to WP1 Series I), 10–15% of compact capex, +25 bp ratchet
-- Three-rail Pacific architecture: financial rail (Korea, WP1) + energy/compute rail (U.S., WP2) + critical-minerals rail (cross-cutting)
-- Author: Jesse James (editor); v1.0 published May 2026
-- `wp2/working-paper.pdf` (45 pp.) generated from the reading view 29 July 2026; stale pre-publication-draft endmatter retired the same day
-
-If new content cites different numbers, structure, or framing for either CKPIF or the Compact without explicit reason, that's a drift to flag.
-
-- **Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor** (`wp3/index.html`, in pre-publication draft as of May 2026) — submarine procurement, industrial offsets, and the third rail of middle-power sovereignty; pairs with WP1 (financial) and WP2 (energy/compute) to complete the three-rail Pacific architecture; v1.0 target pre-23 May 2026.
-
-  Key facts that should remain consistent (revised 6 May 2026 against primary-source memo in `.editor/research/wp-source-memo-2026-05-06.md`):
-  - **CPSP programme size:** envelope not officially published by Government of Canada. Trade-press estimates range CAD 12B–43B (Sault Ste. Marie News Jan 2026; CBC; 19FortyFive Dec 2025; Seoul Economic Daily Mar 2026). Correct framing: *"envelope to be set by the Defence Investment Agency under Canada's Defence Industrial Strategy (17 February 2026)."* **Do not adopt any single figure (CAD 40B, CAD 100B, CAD 60B) as authoritative.** Up to 12 submarines by 2035.
-  - **KSS-III** (Hanwha Ocean Dosan Ahn Chang-ho class), 3,000 t surface / ~3,750 t submerged, diesel-electric AIP, lithium-ion batteries, vertical launch system. **The KSS-III itself has not yet been exported.** Korean export track record to date: Indonesian Type 209 derivatives 2011–2024 (2019 follow-on cancelled by Indonesia in favour of Naval Group's Scorpène). Canadian award would be the first KSS-III export.
-  - **Hanwha bid offsets:** Hanwha-Algoma binding MOU signed 26 January 2026 (USD 250M / CAD 345M aggregate; USD 200M Sault Ste. Marie beam mill + USD 50M CPSP-related steel; binding but conditional on CPSP award; 3.0% Algoma-to-Hanwha-Ocean royalty on beam-mill net sales for 10 years post-commissioning). Hanwha–APMA MOU signed 29 April 2026 in Vaughan, Ontario, at a Martinrea facility (conditional Canadian-majority JV; K9 Thunder, K10, Redback IFV, Chunmoo MLRS, AGVs). **Distinguish binding (Algoma) from conditional (APMA) MOUs.**
-  - **ROK Navy port visit and joint exercise window** (NB: official RCN/DAPA framing is "port visit and combined exercises," not "demonstration" — "demonstration" is NPSI editorial framing): ROKS Dosan Ahn Chang-ho departed Jinhae 25 March 2026; arrives CFB Esquimalt 23 May 2026; combined ASW/MPA exercises with RCN and RCAF in MARPAC area through 2 June; accompanied by ROKS Daejeon (frigate); two RCN submariners embarked at Hawaii via REGULUS programme; en route to RIMPAC 2026.
-  - **HBM market share:** Q3 2025 Counterpoint estimates SK Hynix ~53%, Samsung ~35%, Micron ~11%. **Treat as quarterly research-vendor estimates, not government data.** Defensible formulation: "SK Hynix and Samsung jointly produce more than 75% of global HBM, with SK Hynix in the lead position as of Q3 2025." Pair with Korea Zinc–Lockheed Martin germanium MOU (Aug 2025, USD ~140B KRW Onsan plant) and JEDEC HBM4 specification (April 2025) for technical anchoring.
-  - **CKFTA** in force 1 January 2015 (Bill C-41 Royal Assent 26 November 2014); full implementation 1 January 2032 (99.75% bilateral tariffs eliminated).
-  - **30 October 2025 Carney–Lee Joint Statement** establishing the Security and Defence Cooperation Partnership (SDCP) — first of its kind for Canada in the Indo-Pacific.
-  - **25 February 2026 second 2+2 Ministerial:** Classified Information Protection Agreement signed (not yet in force; track entry-into-force notice); Defence Cooperation Agreement negotiations launched; SDCP Action Plan in development; first Canada-Korea Cyber Policy Consultations March 2026; Canada-Korea Space Security Dialogue committed; next 2+2 in ROK 2028.
-  - **19 August 2025 PSPC release** confirmed Hanwha Ocean and TKMS as the two qualified suppliers; 25 RFI responses received Sep 2024–Feb 2025; first delivery NLT 2035.
-  - **Anchor research document:** Julie Kim, *The Future of Canada-ROK Defence Cooperation*, CGAI Policy Perspective, April 2025 (ISBN 978-1-77397-337-1) — substantially out of date for late-2025 / Q1-2026 events; treat as contemporaneous baseline.
-  - January 2026 Canada–Korea Industrial Cooperation Committee MOU on co-mining and co-production.
-  - FORGE plurilateral framework — Korea-chaired through mid-2026.
-  - Author: Jesse James (editor); v1.0 published May 2026. **v1.0.1 (29 July 2026):** §1 (*The CPSP and the Strategic Window*) was completed from the canonical-fact list above — the v1.0 release had shipped it as a structure-locked placeholder. `wp3/working-paper.pdf` (30 pp.) generated from the reading view the same day.
-
-### Working Paper No. 4 — The Addition Paradox (`wp4/index.html`)
-
-An energy thesis for Canada — v1.0 published 15 May 2026. Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
-
-- **Core thesis:** the global energy transition did not substitute, it *added*. 2024 saw a record 858 TWh of new clean electricity *and* record fossil combustion; global electricity demand grew 1,172 TWh (clean supplied 858, fossil supplied the remaining 314); power-sector CO₂ ≈ 14.6 Gt; coal ≈ 10,613 TWh and forecast largest single source through the mid-2030s; clean-energy investment ≈ US$2 trillion in 2024 (≈2× fossil); upstream oil investment ≈ US$570 bn (highest since 2017).
-- **Chokepoint migration:** clean-tech refining/assembly concentration in a single nation — polysilicon ≈ 95%, lithium cells ≈ 80%, NdFeB magnets ≈ 90%. Framed as concentration risk, **not** anti-clean-energy and **not** named beyond "a single nation / the People's Republic of China" as the paper does.
-- **Four Canadian assets (one hand):** 3rd-largest oil reserves with lowest-carbon barrel (oil-sands intensity −33% since 2009); largest per-capita clean electricity in the industrial democracies (hydro > 380 TWh/yr); 2nd-largest high-grade uranium reserves (Athabasca Basin, 10–100× global mean grade); only G7 nation with simultaneous Pacific and Atlantic deepwater export capacity (Kitimat, Prince Rupert, Vancouver within ~5 sailing days of Yokohama/Busan/Shanghai).
-- Positioned as the strategic preface to the three-rail architecture: WP1 (financial), WP2 (energy/compute), WP3 (defence-industrial).
-- Editorial-voice note: the paper uses sustained funeral/inheritance metaphor ("the casket will remain closed"). Preserve it; it is intentional register, not drift. **No red** in the site rendering even though the source PDF cover uses a maroon accent — the HTML reading view uses the four-colour palette only.
-- Author: Jesse James; v1.0 published 15 May 2026.
-- PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1).
-
-### Working Paper No. 7 — Dazzle 2.0 (`wp7/index.html`)
-
-v1.0 published 12 July 2026 — the first paper in the **NPSI Counter-Autonomy series** (the contest between machine autonomy and its countermeasures). Numbered WP7 by the author; WP5 (*Sovereign Compute North*) published 27 May 2026, so only WP6 remains forthcoming — an intentional single-number gap. Eight sections plus executive summary. Key facts that should remain consistent:
-
-- **Core assessment:** the viral claim about Russia's "zebra"-painted logistics trucks is *real at its root and inflated at its tip*. Trucks confirmed via imagery since ~31 May 2026 (TWZ, RFE/RL, France 24, Defense Express, Militarnyi); anti-machine-vision intent is analyst consensus; **zero published controlled tests** show an effect on a named detector.
-- **Evidence-tier discipline is the paper's spine:** every load-bearing claim is tagged Confirmed / Plausible / Speculation / Hype in the §2 table. Preserve the tags; they are the register.
-- **Mechanism:** most plausibly out-of-distribution confusion (Humphreys), not an engineered adversarial attack. Proven ceiling: Eykholt et al. CVPR 2018 (84.8% field misclassification); Brown et al. 2017 adversarial patches; Thys/Van Ranst/Goedemé 2019; CAMOU/DAS/FCA vehicle textures. Three gaps separate crude stripes from that ceiling: optimization, physical robustness, transferability.
-- **The durable finding is cost asymmetry**, anchored to Schuyler Moore (then CENTCOM CTO, CSIS, September 2024): the aircraft-tire tactic worked and the retraining loop was up to six months. Paint iterates in hours.
-- **Procurement recommendations (five):** multi-sensor seekers (EO + thermal/IR); human-on-the-loop authorization; edge-retrainable models with organic labeling; adversarial/OOD inputs in acceptance testing; no single-vendor black-box ATR. Canadian pegs: Switchblade 300/600 to Latvia brigade, Minerva Initiative, CALM/CADUC.
-- **Historical frame:** 1917 Wilkinson dazzle attacked *geometric estimation* by a human; 2026 zebra attacks *object classification* by a machine. Analogy, never equivalence (Lovell/Sharman/Meese 2024: ~10° perceptual twist only).
-- Register: hostile-read discipline — the paper concedes weak links before an opponent can (§7 Guardrails). Analysis, not intelligence; no classification.
-- Figures A–D are inline SVGs in the dark palette (out-of-palette draft colours were mapped rust→bronze, green→teal, gold→bronze).
-- Author: Jesse James; v1.0 published 12 July 2026. PDF released 23 July 2026 at `wp7/working-paper.pdf` — generated from the reading view via Chromium print-to-PDF (A4, print palette re-inversion, running header/footer, 10 pp.); regenerate the same way after any substantive edit to the reading view.
-
-### Technical Briefing No. 1 — The Verified Sky (`tb1/index.html`)
-
-The first of the **Technical Briefings** — a companion line to the Working Papers addressing the engineering substrate beneath the policy architecture. Document IDs follow `NPSI-TB-NNN`. The reading view uses the standard site chrome (masthead, skip-link, footer verbatim) plus page-scoped, `tb-`-prefixed components in an inline `<style>` block (verification ledger, data tables, KPI row, footnotes, series index, endmark) — all on the four-colour palette and the three site typefaces. Technical briefings do **not** join the four-link nav; they are reached from the home page's "Technical Briefings" section and direct URL. Key facts that should remain consistent:
-
-- Subject: sensing, certainty, and the law of automated airspace awareness — computer-vision and sensor-fusion state of the art 2025–2026 for monitoring a defined airspace volume.
-- Signature element: the **verification ledger** — seven conditions (class, size, altitude, kinematics, window, geofence, persistence) that must all pass before any action fires; two-sensor corroboration as the industry standing rule.
-- Benchmark honesty: Anti-UAV410 state accuracy plateaued in the low-to-mid 60s since 2023; CST Anti-UAV (realistic tiny targets) best method 35.92% — realistic small-and-distant performance is roughly half of headline performance.
-- Legal line (Canada): detection, tracking, evidence, and notification are lawful for civil operators; jamming/spoofing (Radiocommunication Act ss. 4(4), 9(1)(b)), takeover (Criminal Code ss. 342.1–342.2), and physical downing (Aeronautics Act, CARs Part IX) are not. Transport Canada NPA 2026-005 (8 June 2026) proposes mandatory Remote ID on ASTM F3411; comment window to 9 September 2026.
-- Register: technical and regulatory survey, explicitly not legal advice (standing caveat block); no first person; conservative forecast framing ("treat a breakout as upside, never as the plan").
-- Author: Jesse James; v1.0 published 11 June 2026. PDF: `tb1/technical-briefing.pdf` (direct download, no email gate). OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
-
-### Briefing Note No. 1 — The Voter File (`bn1/index.html`)
-
-The first of the **Briefing Notes** — the imprint's short-form line: a single mechanism, documented end to end, in under twenty minutes of reading. Document IDs follow `NPSI-BN-NNN`. Standard site chrome plus page-scoped, `bn-`-prefixed components (the **file card** — an illustrative five-layer voter record — data tables, footnotes, series index, endmark). Briefing notes do not join the four-link nav; reached from the home page's "Briefing Notes" section and direct URL. Key facts that should remain consistent:
-
-- Subject: the five-layer Canadian federal voter file (statutory spine from the Elections Canada list of electors; canvassing layer; public-records layer; commercial layer; modelled scores) and the privacy asymmetry that governs it.
-- Legal chronology: PIPEDA never applied (commercial-activity scope); Bill C-76 (2018) required only a published privacy policy; BC OIPC Order P22-02 (2022) and the 2024 BC Supreme Court judicial review found BC PIPA could apply; **Bill C-4 Part 4 (royal assent March 2026)** replaced the CEA regime and excluded federal parties from provincial/territorial privacy law retroactive to 2000. Senate's three-year sunset amendment rejected; Green Party the sole party opposed.
-- Register: structural survey, explicitly non-partisan (standing caveat block); the illustrative record is fictional and labelled as such.
-- Author: Jesse James; v1.0 published 11 June 2026. PDF: `bn1/briefing-note.pdf`. OG card `assets/img/bn1-og.svg/.png`.
-
-### Special Briefing No. 1 — Zero Secrets (`sb1/index.html`)
-
-The first of the **Special Briefings** — single-issue strategic assessments published when an exposure demands attention outside the working-paper cycle. Document IDs follow `NPSI-SB-NNN`. Standard site chrome plus page-scoped, `sb-`-prefixed components (the **hollow redaction bar** "NOTHING LEFT TO REDACT" — the signature device, rendered in bronze — executive-summary block, findings list, stat grid, staged recommendations with benchmark lines, caveats, sources). **The source draft arrived in a midnight/gold theme set in Inter; it was ported to the four-colour palette and site typefaces per the brand rules. (The site later adopted its own dark identity in July 2026 — in the NPSI palette, not the draft's. The ban on Inter and on out-of-palette gold accents stands.)** Key facts that should remain consistent:
-
-- Core claim: data residency is not data sovereignty — under the CLOUD Act (18 U.S.C. §2713) and FISA 702, US jurisdiction follows corporate ownership, not server location; no Canada–US CLOUD Act bilateral exists.
-- Anchor evidence: Microsoft France testimony before the French Senate, 10 June 2025 ("No, I cannot guarantee that"); SSC evaluation (federal Azure use ≈4× AWS); Maven Smart System / Operation Epic Fury (13,000 targets in 38 days) as capability-class indicator; Operation Dunhammer; Duke data-broker study ($0.12/record); Starlink-Crimea; AI Diffusion Rule rescission.
-- Federal response audited: $2B Sovereign AI Compute Strategy; "AI for All" (June 4, 2026, ~$2.3B); Cohere flagship operated by CoreWeave (the counter-template); Microsoft C$19B commitment vs. its own sworn testimony.
-- Recommendations: control-based definition of sovereign cloud (jurisdictional, operational, cryptographic, audit); classified/Protected B migration; ICA strengthening; Canadian-owned-and-operated SCIP awards; champion retention via the $500M Canadian Tech Growth Fund.
-- Register: caveats section states the strongest counter-cases fairly (cost, Five Eyes, free-riding) and publishes methodological uncertainty. Companion to WP5 *Sovereign Compute North* (published 27 May 2026, `wp5/`).
-- Author: Jesse James; v1.0 published 11 June 2026. PDF: `sb1/special-briefing.pdf` (direct download, no email gate). OG card `assets/img/sb1-og.svg/.png`.
-
-### Working Paper No. 9 — The Counterparty Problem (`wp9/index.html`)
-
-U.S. commitment reliability assessed as two separate questions. v1.0 published 27 July 2026; `wp9/working-paper.pdf` (12 pp.) generated from the reading view 29 July 2026. Key facts that should remain consistent:
-
-- **Core finding:** "U.S. reliability" is two questions, not one. Definition A (formal withdrawal/repudiation of binding or quasi-binding commitments): ~15 significant instances since 2001, clustered 2017–2020 and 2025–2026. Definition B (stated intent/MoU that never converted): **no honest base rate exists** — no registry of U.S. MoUs; the paper deliberately declines to state a rate. Never let an edit introduce a fabricated conversion percentage.
-- **The anchor case:** PIF–EXIM MoU, 24 July 2026 — framework of up to $15 billion; explicitly non-binding. EXIM's charter expires **31 December 2026**; S. 3772 (Warner–Cramer, 10-year extension, retains $135B cap per CRS) in committee with no markup; House discussion draft proposes 5 years. The $205 billion cap figure is a sponsor's goal, not enacted text.
-- **The quantified precedent:** EXIM board-quorum lapse 20 July 2015 – 9 May 2019; financing declined ~85% 2014–2019 (NBER w32019); $1 of EXIM financing ≈ $4.50 of exports; stranded counterparties named (Pemex, Boeing/Ethiopian, GE plant to Canada, $3.5bn Egyptian petrochemical).
-- **Balance is load-bearing:** the fair-reading section concedes democratic policy alternation, the honoured-commitment record (NATO Article 5, Bretton Woods, Japan/Korea treaties), and that other states have worse records. The framing is counterparty-risk pricing, not anti-American critique — this paper sits closest to that line; preserve the concessions verbatim in any edit.
-- Contested figures are reported, not resolved (China export-credit volumes; Senate hearing date discrepancy).
-- Author: Jesse James; v1.0 published 27 July 2026. Companions: WP1 (counterparty-diversification thesis), SB2 (EXIM SCRI door).
-
-### Working Paper No. 10 — Fair Use for We, IP Theft for Thee (`wp10/index.html`)
-
-First working paper published under the **Technical Series** banner. v1.0 published 26 July 2026; **PDF-first release** — `wp10/working-paper.pdf` (17 pp.) is canonical; the site page carries abstract, key findings, method and download; full reading view to follow. Key facts that should remain consistent:
-
-- **Core finding:** "open source" has no enforced meaning in AI. OSAID v1.0 (October 2024) adopted as a binding criterion by no regulator or procurement authority located in the survey; of eleven model families surveyed, three meet the definition (OLMo 2, Pythia/GPT-NeoX, arguably BLOOM) — none at frontier scale.
-- **Licence-text discipline:** the tier table resolves licences **per model version, not per vendor** (Mistral and Qwen mix licences in their own lineups). Llama 4's licence withholds rights from EU-domiciled persons/companies — inside a product marketed as open source, in the jurisdiction offering the open-source exemption (EU AI Act Art. 53(2); exemption partial, evaporates above 10^25 FLOPs).
-- **The three-category separation** (the paper's spine): (1) taking model weights = theft, uncontested; (2) training on scraped outputs = contested, litigated; (3) acquiring pirated corpora = adjudicated against the lab. The $1.5bn Bartz v. Anthropic settlement (final approval 20 July 2026) is category 3; Judge Alsup's June 2025 ruling that training on lawfully acquired books is fair use still stands. Thomson Reuters v. Ross (Bibas J, 11 Feb 2025) is the strongest doctrinal thread: fair use collapses on market substitution.
-- **Evidence-grade system:** VERIFIED / CORROBORATED / ATTRIBUTED / UNDETERMINED. The Sacks public-vs-private allegation is graded ATTRIBUTED and excluded from findings. All podcast revenue figures excluded. Preserve the grades in any edit; they are the register.
-- **Author's disclosure** (in the PDF and noted on the page): drafted with assistance from Claude, made by Anthropic, whose conduct §6 examines. Do not remove.
-- Not anti-American and not anti-Anthropic: the finding is an asymmetry of characterisation, and §9 states every counter-position "unweakened."
-- Author: Jesse James; v1.0 published 26 July 2026.
-
-### Working Paper No. 11 — Rated AAA by the Issuer (`wp11/index.html`)
-
-Second paper in the **Technical Series**. v1.0 published 28 July 2026; full reading view plus `wp11/working-paper.pdf` (18 pp.). **Supersedes WP10** — the supersession is apparatus, not erasure: WP10 stays live and unaltered with a notice. Key facts that should remain consistent:
-
-- **Correction discipline is the paper's identity:** four itemised corrections to WP10 at §1 (53 not 54 objections in Bartz; the "3.75 multiplier" withdrawn as unsourced; the Llama 4 EU exclusion sits in the Acceptable Use Policy, scoped to multimodal models, with an end-user carve-out; and the framing correction). The WP10 finding that survives verbatim: Anthropic's 23 Feb 2026 distillation post contains no instance of "IP theft," "intellectual property," "theft," or "copyright."
-- **The framing correction (most consequential):** WP10 cast Anthropic as driving a restriction push; Amodei's 27 July 2026 position paper states "Anthropic has never advocated for a ban on open-weights models." The honest characterisation the paper lands on: Anthropic is the most restriction-friendly major lab on open weights *and* it has not called for a ban — both halves true, WP10 published only the first.
-- **Core finding:** both camps (the 24 July Nvidia-hosted ~75-signatory letter and Anthropic) reject a categorical ban in writing; the real leverage is in who defines "sufficiently capable" — a capability threshold that falls disproportionately on open releases because guardrails cannot be reimposed after weights ship.
-- **The analogy:** issuer-pays credit ratings (NRSRO regime from 2006, resolved by Dodd-Frank Title IX after systemic failure). Four-market base-rate table: organic (statute, ~12 yrs), Energy Star (certifier hardening after GAO-10-470's gas-powered alarm clock), credit ratings (statute after crisis), "natural" (never resolved; decayed into litigation-magnet marketing).
-- **Forecast with probabilities and named falsifiers** (§5): label decays 45% · certifier gets teeth 20% · capability capture 25% · certifier captured 10%. Each branch names the observable event that moves it; preserve the falsifiers in any edit — a forecast nothing can falsify is not a forecast.
-- **Author's disclosure** (§2 inset): drafted with assistance from Claude (Anthropic), whose statements the paper examines; the §1 framing correction ran *against* Anthropic. Do not remove.
-- §7 names the jurisdictional cascade as the intended subject of **WP12** (not yet written).
-- Author: Jesse James; v1.0 published 28 July 2026.
-
-### Special Briefing No. 3 — The Ledger With One Entry (`sb3/index.html`)
-
-Accountability audit, integrated 29 July 2026 as a **PDF-first release page** (`sb3/special-briefing.pdf`, 39 pp., is canonical; the PDF carries the author's serial placeholder `NPSI-SB-NNN` — `NPSI-SB-003` was assigned at site publication and the page says so). Key facts that should remain consistent:
-
-- **Core finding:** since the 3 January 2026 capture of Maduro, the U.S. has controlled Venezuelan crude sales — FT-estimated proceeds >$13bn; Venezuela's transparency portal records one $300m receipt (March); zero audits published; at least three mutually inconsistent official accounts of where the money is held.
-- **The legal architecture, stated fairly:** the offshore structure is *not* evidence of intent to steal — two traps in U.S. law (TRIA §201 attachment; the Crystallex alter-ego doctrine, 932 F.3d 126) would have destroyed the funds on arrival. The paper's sharpest line: the structure built to defeat Venezuela's creditors also defeats the United States Congress. Preserve this balance verbatim — it is what keeps the piece on the right side of the no-anti-American-framing rule.
-- **The benchmark:** four custody regimes scored (Iraq OFF/DFI, Libya, Iran/Qatar 2023 — the $6bn moved from restricted accounts *in South Korea* — and Venezuela); Venezuela is the least accountable; the most accountable (Iraq, with UN mandate + monitoring board + published audits) still lost $8.8bn (SIGIR).
-- **The Pacific relevance is the paper's own:** the intervention redirected rather than interrupted the oil (1.23m b/d April 2026, highest since 2018); Shandong's independent refiners were the largest single loser — the paper names this "the Pacific consequence." Do not bolt on additional Korea–Canada framing; the companions row (WP9, WP1, SB1) carries the thesis link.
-- **Method register:** every material claim confidence-rated; both governments flagged as interested parties; corrections appendix on the public commentaries explicitly "not a rebuttal"; four named unclassified documents that would settle the accounting.
-- Author: Jesse James; v1.0 issued 26 July 2026, reporting cut-off 22 July 2026. OG card is the author-supplied PNG (`assets/img/sb3-og.png`, no SVG source).
-
-### The Pacific Ledger — №01, July 2026 (`pl1/index.html`)
-
-The imprint's **monthly periodical** — "A monthly account of the Canada–Korea relationship." Document IDs follow `NPSI-PL-NNN`; №01 (premier issue) closed 28 July 2026, integrated 29 July 2026. **The Ledger is the one NPSI product line with a stated cadence** (monthly; "№02 closes late August") — this is a deliberate, editor-directed carve-out from the "not a content stream" rule, which continues to govern the working papers and briefings. The Ledger does not join the four-link nav; it is reached from `/ledger/` (the publication's issue-index home, linked from the footer LEDGER slot sitewide), the home page's "The Pacific Ledger" section (directly below the Canada–Korea Papers band), and direct URL. The homepage also carries an `.index-jump` anchor row (Current Paper · The Ledger · Paper Archive · Briefings) — in-page anchors, deliberately not nav links. Page-scoped `pl-`-prefixed components (masthead with doublerule, stat band, timeline, energy charts as inline SVG on site tokens, the inverted "people card," memorial band, ledger/watch rows). Key facts that should remain consistent:
-
-- **The premier-issue lede:** 6 July 2026, Halifax — TKMS named preferred supplier for the CPSP (program worth up to C$60B over its life) over Hanwha Ocean/HD Hyundai's KSS-III Batch II; Korea named **reserve supplier** (Ottawa retains the right to designate the KSS-III if TKMS negotiations fail). President Lee's 7 July response framed pride, not grievance. The issue's thesis: the relationship kept posting entries after the loss — "that is what structural looks like." (NB: this postdates and resolves WP3's June-2026 decision window; WP3 §1 text stands as written from its May 2026 vantage.)
-- **Ledger entries:** first LNG Canada cargo for KOGAS (Kitimat 20 May → Incheon 3 June; KOGAS 5% stake, ~700kt/yr for 40 years; Phase 2 FID expected by end-2026); Korea's Middle East LNG dependence 45% (2022) → 24% (2025) → <18% projected (2026); Canadian crude to Korea 4.88M bbl (2025) → up to 16M bbl (2026), third-largest buyer; two-way trade C$25B (2025), Korea №7 partner, Korean FDI stock C$17.6B, 99% duty-free under CKFTA; NextStar Windsor grand opening 5 March, LGES full ownership; joint critical-minerals stockpiling plan due end-2026; Candu–KHNP 50 years, C$2.35B in supply-chain POs since 2024; DCA negotiations launched 16 June at the Évian G7 bilateral; Team Canada Trade Mission (30 Mar–2 Apr), 9 agreements.
-- **Debit column (kept honestly):** Hanwha's contingent armoured-vehicle JV and DAPA equity stake shelved; Hyundai Project Beaver "under review," carried as unresolved.
-- **Deep Roots:** Kapyong at 75 (2 PPCLI, Hill 677, US Presidential Unit Citation — only Canadian unit so honoured; 26,000+ served, 516 died; Airdrie's monument stone quarried from Hill 677). №02 teaser: the Canadian veterinarian buried among Korea's independence heroes.
-- **Open items the issue itself declares:** Korean masthead subtitle pending native-speaker review; the late-July DPRK 30,000-troop figure is an unverified claim attributed to Zelensky.
-- The personal LinkedIn URL in the author's PDF masthead is not carried on the web reading view (institutional-alias precedent, PR #24); the PDF is hosted as supplied.
-- Author: Jesse James (editor). OG card `assets/img/pl1-og.svg/.png`.
+| Doc | Folder | Title | Version · released | Release form |
+|---|---|---|---|---|
+| WP1 | `wp1/` | *The Bilateral Foundation* | v1.0 · May 2026 | reading view + author PDF |
+| WP2 | `wp2/` | *A Canada–United States Energy and Compute Compact* | v1.0 · May 2026 | reading view; PDF printed from it (45 pp.) |
+| WP3 | `wp3/` | *A Canada–Korea Pacific Defence-Industrial Corridor* | v1.0.1 · May 2026, rev. 29 Jul | reading view; PDF printed from it (30 pp.) |
+| WP4 | `wp4/` | *The Addition Paradox* | v1.0 · 15 May 2026 | reading view + author PDF |
+| WP5 | `wp5/` | *Sovereign Compute North* | v1.0 · 27 May 2026 | PDF canonical (19 pp.) + full reading view |
+| WP7 | `wp7/` | *Dazzle 2.0* | v1.0 · 12 Jul 2026 | reading view; PDF printed from it |
+| WP9 | `wp9/` | *The Counterparty Problem* | v1.0 · 27 Jul 2026 | reading view; PDF printed from it (12 pp.) |
+| WP10 | `wp10/` | *Fair Use for We, IP Theft for Thee* | v1.0 · 26 Jul 2026 · superseded by WP11 | PDF canonical (17 pp., unaltered); release page |
+| WP11 | `wp11/` | *Rated AAA by the Issuer* | v1.0 · 28 Jul 2026 · **current** | PDF canonical (18 pp.) + full reading view |
+| TB1 | `tb1/` | *The Verified Sky* | v1.0 · 11 Jun 2026 | reading view + PDF |
+| BN1 | `bn1/` | *The Voter File* | v1.0 · 11 Jun 2026 | reading view + PDF |
+| SB1 | `sb1/` | *Zero Secrets* | v1.0 · 11 Jun 2026 | reading view + PDF |
+| SB2 | `sb2/` | *The Three Doors* | v1.0 · 2 Jul 2026 | PDF canonical (10 panels) + full reading view |
+| SB3 | `sb3/` | *The Ledger With One Entry* | v1.0 · 26 Jul 2026 | PDF canonical (39 pp.); release page |
+| PL1 | `pl1/` | *The Pacific Ledger* №01 | July 2026, closed 28 Jul | reading view + author PDF (7 pp.) |
 
 ## Series pieces in flight (not yet on the site)
 
@@ -499,9 +289,9 @@ The imprint's **monthly periodical** — "A monthly account of the Canada–Kore
 
 ## Other NPSI projects in scope
 
-- **Briefing Note No. 1** (`NPSI-BN-001`, Canadian voter files and the privacy asymmetry) — **integrated June 2026** as `bn1/index.html` with `bn1/briefing-note.pdf`; see "Briefing Note No. 1 — The Voter File" above for the canonical-fact list.
+- **Briefing Note No. 1** (`NPSI-BN-001`, Canadian voter files and the privacy asymmetry) — **integrated June 2026** as `bn1/index.html` with `bn1/briefing-note.pdf`; see `bn1/CLAUDE.md` for the canonical-fact list.
 - **Briefing Note No. 2 — Confederation Mathematics** (`NPSI-BN-002`, forthcoming) — empirical constraints on provincial secession in 2026 (Quebec + Alberta), forensic two-part briefing-note format. Source material drafted, not yet integrated. If asked to integrate, create `bn2/index.html` modeled on `wp1/index.html` with briefing-note format. Cited in WP2 §10 as forthcoming.
-- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, v1.0 published May 2026) — see "Working-paper substance" above for canonical-fact list. Released ahead of the 23 May 2026 ROK Navy operational demonstration at CFB Esquimalt and the June 2026 CPSP final-contractor decision.
+- **Working Paper No. 3 — Pacific Defence-Industrial Corridor** (`NPSI-WP-003`, v1.0 published May 2026) — see `wp3/CLAUDE.md` for the canonical-fact list. Released ahead of the 23 May 2026 ROK Navy operational demonstration at CFB Esquimalt and the June 2026 CPSP final-contractor decision.
 - **LinkedIn Company Page** assets exist in a sibling directory (`npsi-linkedin/`). Not part of this repo.
 
 ## What to ask before doing
