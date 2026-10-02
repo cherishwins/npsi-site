@@ -30,6 +30,10 @@
   - Author: Jesse James (editor); v1.0 published May 2026. **v1.0.1 (29 July 2026):** §1 (*The CPSP and the Strategic Window*) was completed from the canonical-fact list above — the v1.0 release had shipped it as a structure-locked placeholder. `wp3/working-paper.pdf` (30 pp.) generated from the reading view the same day.
 
 
+## Status updates since publication
+
+- The Agreement on the Protection of Military and Defence Classified Information (signed at Ottawa, 25 February 2026) entered into force on 12 June 2026 (Canada Treaty Series 2026/16). Defence Cooperation Agreement negotiations were launched by Prime Minister Carney and President Lee at the G7 in Évian on 16 June 2026 (PMO readout); the February 2+2 had agreed to "initiate measures to commence negotiations".
+
 ## Open review items
 
 Before editing this document or enforcing the canon above, read its section of the editor's private review docket: <https://claude.ai/artifact/XL2ZeRwv1onScpBvpNkDzp#wp3>.
