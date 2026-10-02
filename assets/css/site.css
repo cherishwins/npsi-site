@@ -625,6 +625,10 @@ figure figcaption {
   margin-right: 10px;
   letter-spacing: 0.05em;
 }
+/* Front matter (summary, notices, sources) carries no section number, so the
+   counter skips it and the TOC numbers match the § numbers in the headings. */
+.toc li.fm { counter-increment: none; }
+.toc li.fm::before { content: "\00B7\00A0"; }
 .toc a { border-bottom: none; color: var(--navy); }
 .toc a:hover { color: var(--bronze); background: transparent; }
 

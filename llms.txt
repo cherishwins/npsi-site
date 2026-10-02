@@ -2,9 +2,9 @@
 
 > An independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress. Edited in Victoria, British Columbia. Working-paper text is licensed CC-BY-4.0; the imprint and wordmark are not licensed.
 
-The site is plain static HTML and CSS. Every paper's reading view carries
-Highwire citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle
-or TechArticle) for machine citation. Document IDs follow NPSI-WP-NNN for
+The site is plain static HTML and CSS. Every document page carries Highwire
+citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle,
+TechArticle, Report, or PublicationIssue) for machine citation. Document IDs follow NPSI-WP-NNN for
 working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
 notes, NPSI-SB-NNN for special briefings, and NPSI-PL-NNN for The Pacific
 Ledger (the monthly Canada–Korea account). Cite the canonical URLs below.
@@ -14,17 +14,17 @@ Ledger (the monthly Canada–Korea account). Cite the canonical URLs below.
 - [WP11 — Rated AAA by the Issuer](https://npsi.ca/wp11/): What "open source" in AI has in common with a credit rating — the party applying the label is the party being labelled — and what documented base rates from four other unenforced quality labels (organic, Energy Star, "natural," credit ratings) say about how the vacuum resolves, forecast with probabilities and named falsifiers. Supersedes WP10 with a published correction notice. Technical Series; the current working paper. v1.0, 28 July 2026. PDF: https://npsi.ca/wp11/working-paper.pdf
 - [WP9 — The Counterparty Problem](https://npsi.ca/wp9/): U.S. commitment reliability assessed as two separate questions — a documented record of roughly fifteen formal treaty exits since 2001, and a memorandum record for which no honest base rate exists. The 24 July 2026 PIF–EXIM $15 billion MoU priced against EXIM's 2015–2019 quorum lapse (financing down ~85%) and a charter expiring 31 December 2026. v1.0, 27 July 2026. PDF: https://npsi.ca/wp9/working-paper.pdf
 - [WP10 — Fair Use for We, IP Theft for Thee](https://npsi.ca/wp10/): Nobody agrees what "open source" means in AI, and Washington is writing policy inside that vacuum — eleven model families read against the OSI definition (three qualify, none at frontier scale), the EU AI Act exemption, the litigation map, and the three legally distinct acts the debate keeps merging. Technical Series; every claim evidence-graded. Superseded by WP11 (corrections at its §1); remains available unaltered. v1.0, 26 July 2026. PDF (canonical): https://npsi.ca/wp10/working-paper.pdf
-- [WP7 — Dazzle 2.0](https://npsi.ca/wp7/): Russia's "zebra" trucks and the contest between physical camouflage and machine vision — what the viral claim gets right, what it inflates, and the cost-asymmetry lesson for how NATO and Canada buy autonomy. First paper in the NPSI Counter-Autonomy series. v1.0, 12 July 2026.
+- [WP7 — Dazzle 2.0](https://npsi.ca/wp7/): Russia's "zebra" trucks and the contest between physical camouflage and machine vision — what the viral claim gets right, what it inflates, and the cost-asymmetry lesson for how NATO and Canada buy autonomy. First paper in the NPSI Counter-Autonomy series. v1.0, 12 July 2026. PDF: https://npsi.ca/wp7/working-paper.pdf
 - [WP5 — Sovereign Compute North](https://npsi.ca/wp5/): An energy-for-memory swap, signed under Canadian law — a government-owned, allies-financed, Canadian-law-bound compute fabric anchored on surplus Canadian power and Korea-led sovereign capital, extended to the municipal layer. Co-issued with Fit For Gov; companion to SB1. v1.0, 27 May 2026. PDF: https://npsi.ca/wp5/working-paper.pdf
 - [WP4 — The Addition Paradox](https://npsi.ca/wp4/): An energy thesis for Canada. The global energy transition added rather than substituted; chokepoint risk migrated from molecules to minerals; Canada uniquely holds the four assets the next forty years will reward. v1.0, 15 May 2026. PDF: https://npsi.ca/wp4/working-paper.pdf
-- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0.1, May 2026. PDF: https://npsi.ca/wp3/working-paper.pdf
+- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/): Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty. v1.0.1 (first published May 2026; revised 29 July 2026). PDF: https://npsi.ca/wp3/working-paper.pdf
 - [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/): Canadian dispatchable generation paired with the U.S. grid; AI training on Canadian hydro, inference at the U.S. urban edge. v1.0, May 2026. PDF: https://npsi.ca/wp2/working-paper.pdf
 - [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/): A thirty-year Canada–Korea co-issued sovereign bond as the architecture of middle-power independence. v1.0, May 2026. PDF: https://npsi.ca/wp1/working-paper.pdf
 
 ## The Pacific Ledger
 
 - [Issue index](https://npsi.ca/ledger/): The publication's home — current issue and archive.
-- [№01 — July 2026 (Premier Issue)](https://npsi.ca/pl1/): A monthly account of the Canada–Korea relationship. Premier issue: Canada names TKMS preferred supplier over Hanwha's KSS-III on July 6 — and the relationship keeps posting entries anyway: first LNG Canada cargo to KOGAS, Canadian crude to Korea up 3.3×, NextStar Windsor at full LGES ownership, a joint critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP, Defence Cooperation Agreement negotiations launched, and Kapyong at 75. NPSI-PL-001, issue closed 28 July 2026. PDF: https://npsi.ca/pl1/pacific-ledger.pdf
+- [№01 — July 2026 (Premier Issue)](https://npsi.ca/pl1/): A monthly account of the Canada–Korea relationship. Premier issue: Canada names TKMS preferred supplier over Hanwha's KSS-III on July 6 — and the relationship keeps posting entries anyway: LNG Canada's first cargo into KOGAS's Incheon terminal, Canadian crude to Korea planned to rise up to 3.3×, LG Energy Solution's agreed buyout of NextStar Windsor, a joint critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP, Defence Cooperation Agreement negotiations launched, and Kapyong at 75. NPSI-PL-001, issue closed 28 July 2026. PDF: https://npsi.ca/pl1/pacific-ledger.pdf
 
 ## Technical Briefings
 

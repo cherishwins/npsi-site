@@ -107,6 +107,7 @@
   .wp7-tier.confirmed   { color: var(--teal);     border-color: var(--teal); }
   .wp7-tier.plausible   { color: var(--bronze);   border-color: var(--bronze); }
   .wp7-tier.speculation { color: var(--ink-soft); border-color: var(--ink-soft); }
+  .wp7-tier.hype        { color: var(--ink-soft); border-color: var(--ink-soft); border-style: dashed; }
   .wp7-basis { font-size: 13px; color: var(--ink-soft); }
   @media print {
     table.wp7-tiers { min-width: 0; }
@@ -142,7 +143,7 @@
   <p class="lede">What the viral claim gets right, what it inflates, and what it means for how the West buys autonomy. The first paper in the NPSI Counter-Autonomy series.</p>
 </div>
 
-<aside class="standard" style="margin-bottom: 36px;">
+<aside class="standard screen-only" style="margin-bottom: 36px;">
   <h4>You are reading a previous working paper.</h4>
   <p>The current working paper is <a href="/wp11/">Working Paper No.&nbsp;11 — <em>Rated AAA by the Issuer</em></a> (v1.0, July 2026). This paper, <em>Dazzle 2.0</em>, remains the first paper in the NPSI Counter-Autonomy series, with <a href="/tb1/">TB1 — <em>The Verified Sky</em></a> as its sensing companion.</p>
 </aside>
@@ -169,7 +170,7 @@
 <nav class="toc" aria-label="Table of contents">
   <h2>Contents</h2>
   <ol>
-    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li class="fm"><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#the-claim">What the Claim Actually Says</a></li>
     <li><a href="#evidence-tiers">Confirmed, Plausible, or Hype</a></li>
     <li><a href="#engineering">The Engineering</a></li>
@@ -267,7 +268,7 @@
         <tr><td><span class="wp7-tier plausible">Plausible</span></td><td>The trucks' <em>purpose</em> is specifically anti-AI.</td><td class="wp7-basis">Analyst and mil-blogger inference. No Russian MoD statement.</td></tr>
         <tr><td><span class="wp7-tier plausible">Plausible</span></td><td>The paint works by out-of-distribution confusion, not optimized attack.</td><td class="wp7-basis">Theoretically sound (Humphreys); not field-measured on these trucks.</td></tr>
         <tr><td><span class="wp7-tier speculation">Speculation</span></td><td>The paint measurably degrades a real Ukrainian drone's targeting today.</td><td class="wp7-basis">No controlled test; no strike telemetry published. This is the inflated tip.</td></tr>
-        <tr><td><span class="wp7-tier speculation">Hype</span></td><td>Hand-painted stripes act as engineered adversarial examples or a durable counter.</td><td class="wp7-basis">Far more likely fragile out-of-distribution confusion; garish paint makes trucks <em>more</em> visible to eyes and thermal.</td></tr>
+        <tr><td><span class="wp7-tier hype">Hype</span></td><td>Hand-painted stripes act as engineered adversarial examples or a durable counter.</td><td class="wp7-basis">Far more likely fragile out-of-distribution confusion; garish paint makes trucks <em>more</em> visible to eyes and thermal.</td></tr>
       </tbody>
     </table>
   </div>
@@ -458,7 +459,7 @@
 
 <section>
   <h2>Engage with this Working Paper</h2>
-  <p>Substantive comment, technical critique, and named response are welcomed. The Working Paper is maintained as a public version-controlled document on GitHub; the version above is the editorially-controlled v1.0. This paper distinguishes confirmed fact from inference and speculation throughout; estimates are labeled. It is analysis, not intelligence, and carries no classification.</p>
+  <p>Substantive comment, technical critique, and named response are welcomed. The Working Paper is maintained as a public version-controlled document on GitHub; the version above is the editorially controlled v1.0. This paper distinguishes confirmed fact from inference and speculation throughout; estimates are labeled. It is analysis, not intelligence, and carries no classification.</p>
   <div class="wp-card-actions">
     <a class="btn" href="/engage/">Read Engagement Standards</a>
     <a class="btn btn-bronze" href="mailto:editor@npsi.ca?subject=NPSI%20WP7%20Named%20Commentary">Submit Named Commentary</a>

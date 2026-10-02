@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <!-- NPSI Working Paper No. 7 — Open Graph card. 1200×630. -->
+  <!-- NPSI Special Briefing No. 2 — Open Graph card. 1200×630. -->
   <!-- Dark identity: Pacific Navy ground #081C30, Document Cream ink #F4EFE3,
        Treaty Bronze #C08D60, Maritime Teal #7FA8B5 -->
 
@@ -45,7 +45,7 @@
   <!-- Subtitle -->
   <text x="64" y="306" class="serif"
         font-style="italic" font-size="24" fill="#C08D60">
-    A Canadian minerA can of paint against a machine that thinks it can see.#8217;s map to American federal money.
+    A Canadian miner&#8217;s map to American federal money.
   </text>
 
   <!-- Three stat blocks separated by thin bronze rules -->
