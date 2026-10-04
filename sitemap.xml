@@ -11,7 +11,7 @@
   <!-- Reading views and institutional pages -->
   <url>
     <loc>https://npsi.ca/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -60,6 +60,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/sb5/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb4/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/sb3/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
@@ -101,7 +111,7 @@
   </url>
   <url>
     <loc>https://npsi.ca/disclosure/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -111,7 +121,7 @@
   </url>
   <url>
     <loc>https://npsi.ca/commentary/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -164,6 +174,21 @@
   <url>
     <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
     <lastmod>2026-05-17</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb5/special-briefing.pdf</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb5/special-briefing-print.pdf</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb4/special-briefing.pdf</loc>
+    <lastmod>2026-10-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
