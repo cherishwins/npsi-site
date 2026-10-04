@@ -5,7 +5,7 @@ description: Publish a new NPSI document to npsi.ca (working paper, technical br
 
 # Publishing an NPSI document
 
-The site carries fifteen documents and grows. The procedure below keeps each publication cheap: scripts do the sitewide edits, a gate does the checking, and no step requires reading a whole page. One document per session is the default; see **Batches** for more.
+The site carries seventeen documents and grows. The procedure below keeps each publication cheap: scripts do the sitewide edits, a gate does the checking, and no step requires reading a whole page. One document per session is the default; see **Batches** for more.
 
 **Context rules for every step**
 - Never read a full paper page to edit it. Locate with `grep -n`, read with `sed -n 'a,bp'`, change with exact-match replacements that assert their match count.
@@ -91,7 +91,7 @@ python3 tools/sitecheck.py                 # must report 0 errors
 python3 tools/sitecheck.py --external      # new outbound links: 404/410 fail, bot-blocking 403s warn
 ```
 
-Then render the new page at 390px and 1280px. In the cloud container, Playwright's Chromium sends loopback traffic through the egress proxy (every page answers 405), so serve with `python3 -m http.server 8766 --bind "$(hostname -I | awk '{print $1}')"` and pass that address in the proxy `bypass` list. Check that `document.documentElement.scrollWidth` does not exceed the viewport.
+Then render the new page at 390px and 1280px. In the cloud container, Playwright's Chromium sends loopback traffic through the egress proxy (every page answers 405), so serve with `python3 -m http.server 8766 --bind "$(hostname -I | cut -d' ' -f1)"` and pass that address in the proxy `bypass` list. Check that `document.documentElement.scrollWidth` does not exceed the viewport.
 
 ## Errata to a published document
 

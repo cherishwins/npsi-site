@@ -4,7 +4,7 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Index last revised 2 October 2026; status lines
+the imprint has published. Index last revised 4 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
@@ -12,11 +12,13 @@ v[M.m]). North Pacific Strategy Initiative. https://npsi.ca/wp[N]/. Substitute
 Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
-briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account). Every document has an HTML page at its
+briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account);
+Special Briefings Nos. 4 and 5 keep the date-based IDs printed on their
+releases (NPSI-20261003-B, NPSI-20261003-C). Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
-PDF-first releases (WP5, WP10, WP11, SB2, SB3) the PDF is the canonical
-release document; WP10 and SB3 have release pages rather than full reading
-views. Editor: Jesse James
+PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
+canonical release document; WP10, SB3, SB4 and SB5 have release pages rather
+than full reading views. Editor: Jesse James
 (editor@npsi.ca). Numbering is the author's: WP6 and WP8 are unreleased, so the
 archive carries intentional gaps at 6 and 8.
 
@@ -332,6 +334,76 @@ judicial review found BC PIPA could apply; Bill C-4 Part 4 (royal assent
 March 2026) closed that path retroactive to 2000, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
+
+## Special Briefing No. 5 — One Day, Four Names
+
+- ID: NPSI-20261003-C (as printed on the release) · v1.0.1 · issued 3 October 2026; corrected edition 4 October 2026
+- Canonical: https://npsi.ca/sb5/ · PDF (29 pp., canonical, dark edition): https://npsi.ca/sb5/special-briefing.pdf · cream edition for print: https://npsi.ca/sb5/special-briefing-print.pdf
+- Keywords: 15 August 1945, Korea, Japan, 38th parallel, commemoration, official names, liberation, division, Gwangbokjeol, V-J Day, FRUS
+- Notes: written in the first person, with passages of opinion marked as such; carries an interest note (the editor's declared Korean-reunification advocacy, https://npsi.ca/disclosure/) and states its AI drafting assistance in the colophon.
+
+Abstract: The war in the Pacific ended once. It has at least six official
+names, and none of them is neutral. Each name is a sentence with a subject
+removed, and where the subject went is where the policy lives. Japan's
+official name for 15 August, fixed by cabinet decision in 1982, mentions
+neither the war's end nor its loss; Seoul's says the light was restored
+without naming who restored it; Washington's says victory over Japan, and
+Korea is not in the sentence. The briefing reads the names as primary sources
+against the documents of 1945, among them Stalin's message of 16 August
+accepting the order that split Korea, in which he also asked for the northern
+half of Hokkaido, and the three documents behind the legend of the 38th
+parallel. It then reads the speeches of 15 August 2026 against the names, and
+finds that each did what its name predicted.
+
+Key findings: Japan's official name for the day (Day for Mourning the War Dead
+and Praying for Peace, cabinet decision of 13 April 1982) mentions neither the
+war's end nor its loss. On 16 August 1945 Stalin accepted the order that split
+Korea without mentioning Korea and asked for the northern half of Hokkaido;
+Truman declined (FRUS 1945 VI, docs 450, 452). The "two colonels, thirty
+minutes, a National Geographic map" story merges three documents carrying two
+different dates; Dean Rusk's own account in the government record has no
+stopwatch and no map (FRUS 1945 VI, doc 771; Schnabel 1972; Rusk 1990).
+Kim Il-sung reached Korea on 19 September 1945, five weeks after liberation;
+in 2024, 2025 and 2026 his grandson marked the anniversary with wreaths for
+Soviet soldiers. On 15 August 2026 Japan's Emperor spoke of "deep remorse";
+the Prime Minister did not use the word, which appears in two of the fifteen
+addresses from 2012 to 2026 (2012 and 2025). None of the six official names
+says who drew the line across Korea. Germany, through Weizsäcker's address of
+8 May 1985, is the control case.
+
+## Special Briefing No. 4 — The Tollgate Markets
+
+- ID: NPSI-20261003-B (as printed on the release) · v1.0.1 · issued 3 October 2026; corrected edition 4 October 2026
+- Canonical: https://npsi.ca/sb4/ · PDF (24 pp., canonical, dark edition): https://npsi.ca/sb4/special-briefing.pdf
+- Keywords: market manipulation, securities enforcement, collection rates, investment funds, Turkey, Capital Markets Board, effective repentance, emerging markets, regulatory capacity
+- Notes: allegations reported as allegations; no court had ruled on guilt in the Turkish cases as of 4 October 2026. States its AI drafting assistance on the back cover.
+
+Abstract: On 17 September 2026 Turkey's Capital Markets Board ordered 131
+investment funds into liquidation in a single day; inside them sat the savings
+of 455,758 people. In 2025 the same regulator fined 297 people and companies a
+combined TRY 2.69 billion, about 1% of a single money market fund at the
+centre of the collapse, and under Article 107(3) of the Capital Markets Law a
+person accused of transaction-based manipulation who pays twice the benefit
+before an investigation opens faces no penalty at all. The briefing calls such
+a place a tollgate market: one where breaking the rules is a toll you pay, not
+a wall you hit. It rates seventeen markets on enforcement in practice and
+finds that the answer depends less on their laws than on three things the laws
+do not show: the gain nobody measures, the fine nobody collects, and the trial
+that never comes.
+
+Key findings: When a regulator cannot prove the profit, multiples collapse to
+a flat amount (Vietnam: VND 1.5bn, about $57,000, when no gain is
+established). From 2007 to 2012 Canada's provincial regulators collected about
+35.7% of penalties imposed; British Columbia collected 2.9%. Indonesia's OJK
+reported 42 suspected criminal cases under investigation, 32 of them
+manipulation, and five concluded cases with final verdicts (9 February 2026).
+The markets that most resemble pre-collapse Turkey are Indonesia and Vietnam,
+with Thailand close behind and Bangladesh a provisional fourth; severe
+sentences arrive after collapses (40 years in Korea, 36 in Singapore, life in
+Indonesia). The Tollgate Test: five signs (thin floats and fresh listings;
+funds that own each other's trades; "cash" that holds stock; promoters close
+to power; a price on prosecution) and four numbers to demand (collection rate,
+median fine, referrals and convictions, pay-to-close route).
 
 ## Special Briefing No. 3 — The Ledger With One Entry
 

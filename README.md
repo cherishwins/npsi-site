@@ -74,7 +74,7 @@ npsi-site/
 ├── 404.html
 ├── about/  disclosure/  engage/  commentary/  colophon/  ledger/
 ├── wp1/ … wp11/               working papers (no wp6, wp8): index.html + working-paper.pdf
-├── tb1/  bn1/  sb1/  sb2/  sb3/   briefing lines: index.html + PDF
+├── tb1/  bn1/  sb1/ … sb5/    briefing lines: index.html + PDF
 ├── pl1/                       The Pacific Ledger №01: index.html + PDF
 ├── assets/
 │   ├── css/site.css           tokenized stylesheet, no build
