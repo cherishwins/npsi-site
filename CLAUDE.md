@@ -9,15 +9,15 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 24 pages plus a 404 — home, nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), five special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*, SB No. 4 *The Tollgate Markets*, SB No. 5 *One Day, Four Names*), one Pacific Ledger issue (№01, July 2026) plus the `/ledger/` issue index, about, engage, commentary index, disclosure, colophon. Static HTML and CSS, no JavaScript framework.
+**Scope of the site:** 27 pages plus a 404 — home, the three index pages (`/papers/`, `/briefings/`, `/register/`), nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), one technical-briefing reading view (TB No. 1 *The Verified Sky*), one briefing-note reading view (BN No. 1 *The Voter File*), five special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*, SB No. 4 *The Tollgate Markets*, SB No. 5 *One Day, Four Names*), one Pacific Ledger issue (№01, July 2026) plus the `/ledger/` issue index, about, engage, commentary index, disclosure, colophon. Static HTML and CSS, no JavaScript framework. **`registry.json`** at the root is the public register of every published document (see *The register*, below).
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; `wp9/working-paper.pdf` generated from the reading view 29 July 2026). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
-**Current paper: WP11** (published to the site 29 July 2026; WP9 held the slot for a few hours the same day before WP11 arrived). The "Working Paper" nav link sitewide points to **`/wp11/`**; WP9 and WP7 carry the standard previous-paper banner; WP10 carries a supersession notice instead. The archive runs WP9 (27 Jul) → WP10 (26 Jul) → WP7 (12 Jul) with day-level dates. Papers are ordered by publication date and nothing else.
+**Current paper: WP11** (published to the site 29 July 2026; WP9 held the slot for a few hours the same day before WP11 arrived). `registry.json` names it (`"current": "wp11"`), the home page's current card and `/papers/` lead with it; WP9 and WP7 carry the standard previous-paper banner; WP10 carries a supersession notice instead. Since October 2026 the primary nav does not point at the current paper. The archive runs WP9 (27 Jul) → WP10 (26 Jul) → WP7 (12 Jul) with day-level dates. Papers are ordered by publication date and nothing else.
 
 **Disclosure regime (adopted 29 July 2026, editor's direction):** the imprint replaced its purity claims with a standing declaration of interests at **`/disclosure/`** — written in a securities-disclosure register: who writes and funds the imprint (one person), every outside interest touching published subject matter, and which papers each touches. Rules that follow from it:
 
-- `/disclosure/` is linked from the **footer colophon sitewide** (GITHUB · LINKEDIN · LEDGER · DISCLOSURE · COLOPHON) and from `/about/` — **never from the four-link nav**.
+- `/disclosure/` is linked from the **footer colophon sitewide** (GITHUB · LINKEDIN · LEDGER · DISCLOSURE · COLOPHON) and from `/about/` — **never from the primary nav**.
 - Papers touching a declared interest carry their own `aside.standard` note: WP5 (co-issuance with Fit For Gov, the editor's civic-technology practice), SB2 (no engagement sought), TB1 (written independently, no client; adjacent-interest note), SB5 (the Korean-reunification interest; the briefing's first-person voice). Keep these notes when editing those pages.
 - Independence claims on the maintained pages (home, `/about/`, `/engage/`, `/disclosure/`) are scoped to NPSI's own documents. The editor's paid external writing is the declared exception, so never restore an absolute "none has ever been accepted or sought". Dated documents (e.g. SB2's July note) speak as of their date and are not edited for this.
 - `/about/` no longer claims "not affiliated with any commercial entity," "takes no position on questions internal to the Korean peninsula," or an unqualified content-cadence promise — those were replaced 29 July with disclosure-true language. Do not reintroduce purity claims the corpus contradicts.
@@ -27,6 +27,19 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 - Declared interests as first published: Fit For Gov; enterprise software / applied-intelligence work; Western operations for an international energy facilitation firm (never name the firm — deal-sensitive); Korean reunification advocacy (described, unnamed); Sagkeeng (Ojibway) ancestry as standpoint for WP1/WP2's Indigenous co-ownership provisions; external writing (Korea Pro commissioned essay, July 2026 — **paid**; `/disclosure/` §6 corrected 5 Oct 2026 after first saying no compensation had been arranged); AI drafting assistance (Claude), disclosed in-paper where material.
 
 **PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
+
+## The register (adopted October 2026)
+
+Every published document is listed in **`registry.json`** at the site root, extracted from each page's own citation metadata by `tools/registry.py` and checked by the gate: a page that disagrees with the register fails `sitecheck`. The register page **`/register/`** renders it for readers; `/papers/` and `/briefings/` are rendered from it; the home page's two compact lists and every document's breadcrumb and previous/next links are rendered from it.
+
+**Two identifiers, never confused:**
+
+- **Publication serial** — `NPSI-WP-NNN` (and TB, BN, SB, PL). Assigned by the editor alone, at publication, sequential within its line, never reused. **Claude never mints one.** A document the editor has not numbered ships with its accession number and is listed as *serial pending*.
+- **Accession number** — `NPSI-YYYYMMDD-X`. Assigned when a document enters the system, immutable, printed on the release. SB4 (`NPSI-20261003-B`) and SB5 (`NPSI-20261003-C`) carry accession numbers only; their serials are pending the editor's ruling.
+
+Numbers reserved and never released (WP6, WP8) stay on the register as *never issued*. The archive is ordered by publication date; the register by number; both are kept.
+
+**Workflow:** after any change to a document's metadata, its folder, or the current paper: `python3 tools/registry.py --all` (extract, render the three index pages and the home lists, refresh document breadcrumbs, rewrite the nav, check). `tools/set_current_paper.py` runs the relevant parts itself.
 
 ## What this site is *not*
 
@@ -106,17 +119,22 @@ Every page, every document, every figure carries the same chrome. If you're buil
   <div class="masthead-inner">
     <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="/wp4/">Working Paper</a>
-      <a href="/about/">About</a>
-      <a href="/engage/">Engage</a>
+      <a href="/papers/">Papers</a>
+      <a href="/briefings/">Briefings</a>
+      <a href="/ledger/">Ledger</a>
       <a href="/commentary/">Commentary</a>
+      <a href="/about/">About</a>
     </nav>
     <div class="nav-volume">VOL. I  ·  EST. MMXXVI</div>
   </div>
 </header>
 ```
 
-The "Working Paper" nav link points to the **current** working paper (currently `/wp11/`); previous papers remain accessible by direct URL and via the home-page archive. The current page's nav link gets `class="active"` (adds the bronze underline). The masthead is sticky on scroll with a subtle blur backdrop on the cream.
+The five-link nav (adopted October 2026 at the editor's direction, replacing a four-link nav whose first item pointed at the current paper only) is written on every page by `tools/registry.py --nav`; never hand-edit it. The active link follows the section: Papers on `/papers/` and every `wp*` page, Briefings on `/briefings/` and every `tb*`, `bn*`, `sb*` page, Ledger on `/ledger/` and `pl*`, Commentary and About on their own pages; home, engage, disclosure, colophon, register and the 404 have no active link. The masthead is sticky on scroll with a blur backdrop; its padding and the nav size are fluid tokens (`--pad-masthead`, `--fs-nav`), so it is 66px tall at 390px and one row.
+
+### Document navigation (every document page)
+
+Directly inside `<main>`, between `<!-- doc-nav -->` markers, every document carries a breadcrumb (NPSI › line › No. N) and previous/next links ordered by publication date within the line, each carrying number and title. `tools/registry.py --doc-nav` writes and refreshes it; never hand-edit it.
 
 ### Page opener (every content page)
 
@@ -173,14 +191,16 @@ npsi-site/
 ├── CLAUDE.md                        ← this file (house rules + document index)
 ├── README.md                        institutional landing for the GitHub repo
 ├── DEPLOYMENT.md                    deployment notes
-├── index.html  404.html             home (current paper, the Ledger, archive, briefings); not-found page
+├── index.html  404.html             home (current paper, the Ledger, compact archive and briefing lists); not-found page
+├── registry.json                    the public register of every published document (tools/registry.py)
+├── papers/ briefings/ register/     index pages rendered from the registry — never hand-edit
 ├── about/ disclosure/ engage/ commentary/ colophon/ ledger/    institutional pages (ledger/ is the Ledger's issue index)
 ├── wp1/ … wp11/  tb1/ bn1/ sb1/ … sb5/ pl1/                    one folder per document: index.html, its PDF, and CLAUDE.md (canon)
 ├── llms.txt  llms-full.txt          machine-readable indexes
 ├── sitemap.xml  robots.txt  vercel.json  humans.txt  CITATION.cff  manifest.webmanifest  .well-known/security.txt
 ├── assets/css/site.css              shared stylesheet, fully tokenized
 ├── assets/img/                      wordmark (dark + light), favicons, share cards (SVG source + PNG), figures
-├── tools/                           sitecheck.py · set_current_paper.py · render-og.sh · fonts/ (not deployed)
+├── tools/                           sitecheck.py · registry.py · set_current_paper.py · render-og.sh · fonts/ (not deployed)
 ├── figures/                         working figure sources for papers in progress (not deployed)
 └── .claude/skills/                  npsi-publish (publishing procedure) · npsi-korean-translation · fluid-scale
 ```
@@ -191,7 +211,7 @@ npsi-site/
 
 1. **Copy `about/index.html` as the template.** It has the cleanest structure of the existing pages.
 2. Update the `<title>`, meta description, OG tags.
-3. Set the active nav link with `class="active"`.
+3. Run `python3 tools/registry.py --nav` to write the masthead nav (it sets the active link).
 4. Use the existing CSS — do not add new tokens or new components without flagging.
 5. Maintain the page footer verbatim.
 6. Verify mobile rendering at 390px viewport (iPhone-class).
@@ -257,13 +277,16 @@ python3 -m http.server 8000
 
 ## Tools (repository only; never deployed)
 
-- `python3 tools/sitecheck.py` — the gate. Run before every commit that touches a page; it must report 0 errors. `--external` probes outbound links; `--fix-sitemap` refreshes `<lastmod>` from git just before committing.
-- `python3 tools/set_current_paper.py N --title "…" --version v1.0 --month "Month YYYY"` — makes WP N current: nav link on every page, every previous-paper banner, the demoted paper's banner, sitemap priorities.
+- `python3 tools/sitecheck.py` — the gate. Run before every commit that touches a page; it must report 0 errors. `--external` probes outbound links; `--fix-sitemap` refreshes `<lastmod>` from git just before committing. It runs `registry.py --check` as its last step.
+- `python3 tools/registry.py --all` — extract `registry.json` from the document pages, render `/papers/`, `/briefings/`, `/register/` and the home page lists, refresh every document's breadcrumb and previous/next links, write the nav on every page, then check. The steps are also available singly (`--extract`, `--render`, `--doc-nav`, `--nav`, `--check`, `--list`).
+- `python3 tools/set_current_paper.py N --title "…" --version v1.0 --month "Month YYYY"` — makes WP N current: every previous-paper banner, the demoted paper's banner, sitemap priorities, the registry's current paper, and the pages rendered from it. Update the home page's current card first.
 - `tools/render-og.sh assets/img/<card>.svg` — renders a share card against the vendored brand faces in `tools/fonts/` (the bare `resvg-cli` call silently renders fallback fonts in a fresh container).
 
 ## Document index
 
 Each document's canonical facts, file notes and open review items live in its folder's `CLAUDE.md` (`wp3/CLAUDE.md` and so on), which Claude Code loads automatically when it reads files in that folder. Open one before editing a document, its home card, its llms entries or its share card. The procedure for publishing, making a paper current, and applying errata is the `npsi-publish` skill (`.claude/skills/npsi-publish/SKILL.md`). Remaining review items across the archive are in the editor's private review docket: https://claude.ai/artifact/XL2ZeRwv1onScpBvpNkDzp
+
+The same facts, machine-readable and gate-checked, are in `registry.json`; this table is the human summary.
 
 | Doc | Folder | Title | Version · released | Release form |
 |---|---|---|---|---|
@@ -281,8 +304,8 @@ Each document's canonical facts, file notes and open review items live in its fo
 | SB1 | `sb1/` | *Zero Secrets* | v1.0 · 11 Jun 2026 | reading view + PDF |
 | SB2 | `sb2/` | *The Three Doors* | v1.0 · 2 Jul 2026 | PDF canonical (10 panels) + full reading view |
 | SB3 | `sb3/` | *The Ledger With One Entry* | v1.0 · 26 Jul 2026 | PDF canonical (39 pp.); release page |
-| SB4 | `sb4/` | *The Tollgate Markets* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (24 pp.); release page |
-| SB5 | `sb5/` | *One Day, Four Names* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (29 pp., dark; cream print edition); release page |
+| SB4 | `sb4/` | *The Tollgate Markets* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (24 pp.); release page. Accession `NPSI-20261003-B`; serial pending |
+| SB5 | `sb5/` | *One Day, Four Names* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (29 pp., dark; cream print edition); release page. Accession `NPSI-20261003-C`; serial pending |
 | PL1 | `pl1/` | *The Pacific Ledger* №01 | July 2026, closed 28 Jul | reading view + author PDF (7 pp.) |
 
 ## Series pieces in flight (not yet on the site)
@@ -304,7 +327,7 @@ When the request is ambiguous, ask Jesse rather than guess. Specifically:
 - New domain name → confirm before find-and-replace (the kit was built for `npsi.ca`).
 - New visual element → confirm it fits the brand spec.
 - New content section → confirm the editorial register before drafting.
-- New page in the navigation → confirm the addition (the four-link nav is intentional restraint).
+- New page in the navigation → confirm the addition (the five-link nav is intentional restraint; the register, disclosure and colophon live in the footer and the index pages, not the nav).
 
 When the request is concrete and within established patterns (typo fix, copy refinement, new working paper following the established structure), execute without asking.
 

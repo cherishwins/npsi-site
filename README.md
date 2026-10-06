@@ -31,11 +31,13 @@ This repository is the source of [`npsi.ca`](https://npsi.ca): plain static HTML
 
 | Line | ID | Where |
 |---|---|---|
-| Working Papers | `NPSI-WP-NNN` | [npsi.ca/#archive](https://npsi.ca/#archive) — Nos. 1–5, 7, 9–11 (6 and 8 unreleased) |
-| Technical Briefings | `NPSI-TB-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
-| Briefing Notes | `NPSI-BN-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
-| Special Briefings | `NPSI-SB-NNN` | [npsi.ca/#briefings](https://npsi.ca/#briefings) |
+| Working Papers | `NPSI-WP-NNN` | [npsi.ca/papers](https://npsi.ca/papers/) — Nos. 1–5, 7, 9–11 (6 and 8 never issued) |
+| Technical Briefings | `NPSI-TB-NNN` | [npsi.ca/briefings](https://npsi.ca/briefings/) |
+| Briefing Notes | `NPSI-BN-NNN` | [npsi.ca/briefings](https://npsi.ca/briefings/) |
+| Special Briefings | `NPSI-SB-NNN` | [npsi.ca/briefings](https://npsi.ca/briefings/) |
 | The Pacific Ledger | `NPSI-PL-NNN` | [npsi.ca/ledger](https://npsi.ca/ledger/) |
+
+Every identifier the imprint has assigned, by number, is on [the number register](https://npsi.ca/register/); the machine-readable form is [`registry.json`](https://npsi.ca/registry.json). Two identifiers are kept apart: the publication serial above, assigned by the editor at publication, and an accession number (`NPSI-YYYYMMDD-X`) assigned at intake and never changed.
 
 The full index, with a one-line abstract per document, is maintained at [npsi.ca/llms.txt](https://npsi.ca/llms.txt); complete abstracts and citation metadata are at [npsi.ca/llms-full.txt](https://npsi.ca/llms-full.txt). Every reading view carries Highwire `citation_*` tags and Schema.org JSON-LD.
 

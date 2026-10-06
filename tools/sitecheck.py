@@ -12,8 +12,9 @@ Standard library only; no build step, nothing here is deployed (tools/ is in
 WARN lines are judgement calls for the editor; they never fail the gate.
 
 What it checks, per page:
-  chrome    skip-link, <main id="main" tabindex="-1">, the four-link nav
-            pointing at the current paper, the footer matching the home page
+  chrome    skip-link, <main id="main" tabindex="-1">, the five-link nav
+            (Papers · Briefings · Ledger · Commentary · About) with the
+            active link matching the page, the footer matching the home page
   links     every internal href/src resolves to a file; every #fragment
             resolves to an id on the target page
   metadata  <title>, description, canonical (absolute, trailing slash),
@@ -25,7 +26,7 @@ What it checks, per page:
   text      placeholder markers (TODO, TK, lorem, XX) and exclamation marks
             in body text
 Site-wide: links labelled "current paper" point at it, every released PDF is
-linked from the home page, og:image dimensions match the PNG, sitemap.xml lists
+linked from the home page or its line's index page, og:image dimensions match the PNG, sitemap.xml lists
 every page and PDF with each <lastmod> equal to the file's last commit date,
 and llms.txt / llms-full.txt mention every page. Paths in .vercelignore are
 not deployed, so they are not checked.
@@ -67,6 +68,28 @@ SVG_TAGS = {"svg", "g", "path", "rect", "circle", "ellipse", "line",
 
 errors: list[str] = []
 warns: list[str] = []
+
+
+# The primary navigation, shared with tools/registry.py (which writes it).
+NAV = [
+    ("/papers/", "Papers", {"papers", "WP"}),
+    ("/briefings/", "Briefings", {"briefings", "TB", "BN", "SB"}),
+    ("/ledger/", "Ledger", {"ledger", "PL"}),
+    ("/commentary/", "Commentary", {"commentary"}),
+    ("/about/", "About", {"about"}),
+]
+NAV_TEXT = " ".join(label for _, label, _ in NAV)
+DOC_FOLDER = re.compile(r"^(wp|tb|bn|sb|pl)(\d+)$")
+
+
+def nav_key(p: Path) -> str:
+    """Which nav entry a page belongs to: a line code for document pages,
+    the folder name for institutional pages, '' for home and 404."""
+    rel = p.relative_to(ROOT)
+    if len(rel.parts) == 1:
+        return ""
+    m = DOC_FOLDER.match(rel.parts[0])
+    return m.group(1).upper() if m else rel.parts[0]
 
 
 def err(where: str, msg: str) -> None:
@@ -289,9 +312,19 @@ def main() -> int:
 
     home = parsed[ROOT / "index.html"]
     ref_footer = home.captured.get("footer", "")
-    # The home page's nav names the current paper; every page must agree.
-    current_wp = next((a.get("href") for t, a, _ in home.elements
-                       if t == "a" and a.get("href", "").startswith("/wp")), None)
+    # registry.json names the current paper (tools/registry.py keeps it in
+    # step with the home page's current card); every page must agree.
+    try:
+        registry = json.loads((ROOT / "registry.json").read_text(encoding="utf-8"))
+        current_wp = f"/{registry['current']}/" if registry.get("current") else None
+    except (OSError, ValueError) as e:
+        err("registry.json", f"unreadable: {e}")
+        registry, current_wp = {}, None
+    home_wp = next((a.get("href") for t, a, _ in home.elements
+                    if t == "a" and "btn" in a.get("class", "").split()
+                    and a.get("href", "").startswith("/wp")), None)
+    if current_wp and home_wp != current_wp:
+        err("index.html", f"current card reads {home_wp}, registry.json says {current_wp}")
     allowed_hex = palette()
     external: dict[str, list[str]] = {}
 
@@ -309,16 +342,23 @@ def main() -> int:
         nav_text = pg.captured.get("nav")
         if nav_text is None:
             err(where, "missing primary <nav class=\"nav\">")
-        elif nav_text != "Working Paper About Engage Commentary":
-            err(where, f"nav text is '{nav_text}', expected the four-link nav")
-        nav_wp = None
+        elif nav_text != NAV_TEXT:
+            err(where, f"nav text is '{nav_text}', expected '{NAV_TEXT}'")
+        nav_links: list[tuple[str, bool]] = []
         for i, (t, a, _) in enumerate(pg.elements):
             if t == "nav" and "nav" in a.get("class", "").split():
-                nav_wp = next((a2.get("href") for t2, a2, _ in pg.elements[i + 1:]
-                               if t2 == "a"), None)
+                for t2, a2, _ in pg.elements[i + 1:]:
+                    if t2 != "a":
+                        break  # the masthead nav holds only links
+                    nav_links.append((a2.get("href", ""), "active" in a2.get("class", "").split()))
                 break
-        if current_wp and nav_wp != current_wp:
-            err(where, f"nav 'Working Paper' points to {nav_wp}, current paper is {current_wp}")
+        if [h for h, _ in nav_links] != [h for h, _, _ in NAV]:
+            err(where, f"nav links are {[h for h, _ in nav_links]}, expected {[h for h, _, _ in NAV]}")
+        want_active = nav_key(p)
+        got_active = [h for h, act in nav_links if act]
+        exp_active = [h for h, _, keys in NAV if want_active in keys]
+        if got_active != exp_active:
+            err(where, f"nav active link is {got_active}, expected {exp_active}")
         if pg.captured.get("footer") != ref_footer:
             err(where, "footer differs from the home page footer")
 
@@ -448,13 +488,19 @@ def main() -> int:
             if current_wp and m.group(1) not in (current_wp, current_wp.rstrip("/")):
                 err(p.relative_to(ROOT).as_posix(), f"link labelled 'current paper' points to {m.group(1)}, not {current_wp}")
 
-    # every released PDF is reachable from the home page ------------------
-    home_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    # every released PDF is reachable from the home page or its line's index
+    # page (/papers/, /briefings/, /ledger/), and from its own page ---------
+    index_html = "".join((ROOT / f / "index.html").read_text(encoding="utf-8")
+                         for f in ("", "papers", "briefings", "ledger")
+                         if (ROOT / f / "index.html").is_file())
     for pdf in sorted(ROOT.glob("*/*.pdf")):
         if pdf.parent.name in skip:
             continue
-        if url_of(pdf) not in home_html:
-            err("index.html", f"no download link to {url_of(pdf)}")
+        if url_of(pdf) not in index_html:
+            err("index.html", f"no download link to {url_of(pdf)} on the home page or an index page")
+        own = pdf.parent / "index.html"
+        if own.is_file() and url_of(pdf) not in own.read_text(encoding="utf-8"):
+            warn(own.relative_to(ROOT).as_posix(), f"does not link its own release file {pdf.name}")
 
     # sitemap -----------------------------------------------------------
     sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
@@ -519,6 +565,15 @@ def main() -> int:
     if not args.quiet:
         print(f"sitecheck: {len(pages)} pages, {len(entries)} sitemap entries, "
               f"{len(external)} distinct external URLs, current paper {current_wp}")
+    # registry.json must agree with every document page (tools/registry.py).
+    reg_check = subprocess.run([sys.executable, str(ROOT / "tools" / "registry.py"), "--check"],
+                               capture_output=True, text=True)
+    for line in reg_check.stdout.splitlines():
+        if line.startswith("ERROR"):
+            err("registry.json", line[6:])
+    if reg_check.returncode and not any(l.startswith("ERROR") for l in reg_check.stdout.splitlines()):
+        err("registry.json", f"tools/registry.py --check failed: {reg_check.stderr.strip()[-200:]}")
+
     for line in errors + warns:
         print(line)
     print(f"\n{len(errors)} error(s), {len(warns)} warning(s)")

@@ -4,7 +4,7 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Index last revised 4 October 2026; status lines
+the imprint has published. Index last revised 6 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
@@ -484,6 +484,9 @@ fairly.
 ## The Imprint
 
 - The Pacific Ledger: https://npsi.ca/ledger/ — the monthly publication's home; current issue and archive.
+- Working Papers index: https://npsi.ca/papers/ — every working paper by publication date; the current paper, the archive, the numbering.
+- Briefings index: https://npsi.ca/briefings/ — Technical Briefings, Briefing Notes and Special Briefings, by publication date.
+- The Number Register: https://npsi.ca/register/ — every identifier the imprint has assigned: publication serials, accession numbers (NPSI-YYYYMMDD-X, assigned at intake, immutable), and reserved numbers never released. Machine-readable: https://npsi.ca/registry.json
 - About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
 - Disclosure: https://npsi.ca/disclosure/ — declaration of interests: who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
