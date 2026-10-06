@@ -38,18 +38,45 @@ Out of scope for this branch, deliberately: topic pages or filters (house rule a
 | Step | State |
 |---|---|
 | Branch, pull 129 commits, read house rules and tools | done |
-| `tools/registry.py` (extract, check) and `registry.json` | in progress |
-| CSS tokens for doc-nav, register table, compact masthead | pending |
-| `/papers/`, `/briefings/`, `/register/` pages | pending |
-| Nav swap across every deployed page | pending |
-| Breadcrumb and previous/next on 17 document pages | pending |
-| Home page trim | pending |
-| Tooling: `set_current_paper.py`, `sitecheck.py` updated for the new nav | pending |
-| `llms.txt`, `llms-full.txt`, `sitemap.xml` | pending |
-| `CLAUDE.md`, `README.md`, `npsi-publish` skill | pending |
-| Gate: sitecheck 0 errors, 390px and 1280px renders, no horizontal scroll | pending |
-| Commit, push, open PR (not merged) | pending |
+| `tools/registry.py` (extract, check, render, doc-nav, nav) and `registry.json` | done |
+| CSS tokens for doc-nav, register table, compact masthead | done |
+| `/papers/`, `/briefings/`, `/register/` pages | done |
+| Nav swap across every deployed page (25 + 3 new) | done |
+| Breadcrumb and previous/next on 17 document pages | done |
+| Home page trim (18,093px → 6,761px at 390px) | done |
+| Tooling: `set_current_paper.py`, `sitecheck.py` updated for the new nav and registry | done |
+| `llms.txt`, `llms-full.txt`, `sitemap.xml`, 404 | done |
+| `CLAUDE.md`, `README.md`, `npsi-publish` skill | done |
+| Gate: sitecheck 0 errors; renders at 360/390/1280 in dark and light; no horizontal scroll; chains resolve | done |
+| Commit, push, open PR | done, not merged |
+
+## Measured results
+
+| Measure | Before | After |
+|---|---|---|
+| Documents reachable from the nav | 1 | 17 (via Papers, Briefings, Ledger) |
+| Sticky masthead at 390px | 133px, two nav rows | 65px, one row |
+| Home page height at 390px | 18,093px | 6,761px |
+| Index page for working papers | none (404) | `/papers/` |
+| Register of identifiers | none | `/register/` + `registry.json` |
+| Gate errors | 0 | 0 (one pre-existing warning on an inline px size on the home page) |
+
+At 340px the nav wraps to two rows (96px masthead); that width is rarer than 360 and the wrap is clean.
+
+## Left for Jesse
+
+1. Review and merge the PR.
+2. Rule on serials for SB4 and SB5 (currently accession `NPSI-20261003-B` / `-C`, serial pending). If they become `NPSI-SB-004` and `-005`, the printed IDs on the releases and pages change under the errata policy; the register will show both.
+3. The private inventory of unpublished papers (about a dozen on disk, several as Claude artifacts, two serial collisions at WP5 and WP9) is in Claude's memory folder, not in this repo. Each needs a serial from Jesse before it can be published; the accession-number form covers anything unnumbered.
+4. Docket item D3 still stands: this public repo carries internal files (`AUDIT.md`, `reviewfiles.zip`, `.agents/`, `skills-lock.json`). `WORKLOG.md` is in `.vercelignore` but is in the repo; delete it after merge.
 
 ## Log
 
 - 06 Oct · Pulled main at 4352e19 (129 commits behind locally before this). Branched. Read `CLAUDE.md`, `npsi-publish` skill, `sitecheck.py`, `set_current_paper.py`. Dumped metadata from all 17 document pages: identifiers, issue numbers, dates, versions and PDFs are all present in Highwire and JSON-LD tags, so the registry can be extracted rather than typed.
+- 06 Oct · Built `tools/registry.py`; extracted `registry.json` (17 documents, 0 mismatches on round-trip). Current-paper detection first grabbed WP10 via the "supersedes" link in the home card; fixed to read the card's Read button. Series parsing fixed for WP7 (Counter-Autonomy).
+- 06 Oct · Rendered `/papers/`, `/briefings/`, `/register/`; breadcrumbs on 17 pages; nav on 25 pages. Masthead 133 → 66px at 390 through fluid tokens (`--pad-masthead`, `--fs-nav`).
+- 06 Oct · Gate failures and fixes: (a) nav parser read past the register page's masthead into the body, bounded it to anchor tags; (b) WP2, WP3, WP9 never declared their PDFs as `rel=alternate`, so the registry now also accepts the line's conventional filename when the file exists; (c) the "every PDF linked from home" rule widened to the index pages, since the trimmed home no longer lists every file; (d) sitemap lastmod errors are the known pre-commit quirk and clear on commit.
+- 06 Oct · Document-nav insertion was not idempotent (grew a blank line per run); fixed and verified with two consecutive runs producing no diff.
+- 06 Oct · Commit 1: registry, nav, pages, tooling. Gate 0 errors after commit.
+- 06 Oct · 360px test wrapped the nav; nav gap made fluid (`clamp(9px, …, 28px)`), nav size min lowered 13 → 12.5px. One row from 360 up.
+- 06 Oct · Commit 2: house rules, README, publish skill, this log. Pushed; PR opened.

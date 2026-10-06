@@ -9,7 +9,8 @@ The site carries seventeen documents and grows. The procedure below keeps each p
 
 **Context rules for every step**
 - Never read a full paper page to edit it. Locate with `grep -n`, read with `sed -n 'a,bp'`, change with exact-match replacements that assert their match count.
-- Never hand-edit the nav link or previous-paper banners across pages: `tools/set_current_paper.py` does it.
+- Never hand-edit the masthead nav, a document's breadcrumb, the index pages (`/papers/`, `/briefings/`, `/register/`) or the home page's two compact lists: `tools/registry.py` renders them. Never hand-edit previous-paper banners: `tools/set_current_paper.py` does it.
+- Never assign a serial. If the editor has not given one, the document carries its accession number (`NPSI-YYYYMMDD-X`, assigned at intake) in `dc.identifier` and JSON-LD and the register shows *serial pending*.
 - Never eyeball links or metadata: `python3 tools/sitecheck.py` checks them.
 - A document's canonical facts live in its folder's `CLAUDE.md` and load when you open that folder. Read another document's canon only when the new one cites it.
 
@@ -58,7 +59,7 @@ Return findings to the editor before publishing; fix what the editor approves.
 
 ## 2. Build the page
 
-- Classify: IDs are `NPSI-WP-NNN`, `NPSI-TB-NNN`, `NPSI-BN-NNN`, `NPSI-SB-NNN`, `NPSI-PL-NNN`, zero-padded; folder is `wp12/`, `tb2/`, `bn2/`, `sb4/`, `pl2/`. Versions follow `vM.m[.p]`.
+- Classify: serials are `NPSI-WP-NNN`, `NPSI-TB-NNN`, `NPSI-BN-NNN`, `NPSI-SB-NNN`, `NPSI-PL-NNN`, zero-padded, and come from the editor's packet only; without one, the accession number `NPSI-YYYYMMDD-X` goes in `dc.identifier`. Folder is `wp12/`, `tb2/`, `bn2/`, `sb6/`, `pl2/`. Versions follow `vM.m[.p]`.
 - Copy the nearest page of the same line as the template (`wp11/` for a Technical Series paper with corrections apparatus, `wp9/` for a policy paper, `sb3/` for a PDF-first release page, `pl1/` for a Ledger issue). Keep the chrome trio verbatim: skip-link, masthead, footer.
 - Head: title, description, canonical, og:* (og:image is the PNG, with its true width and height), Highwire `citation_*` tags, `rel="alternate"` for the PDF, and the JSON-LD block (checklist item 8 below).
 - Release files go in the folder: `working-paper.pdf` (or the line's equivalent name) and any figures.
@@ -69,11 +70,12 @@ Return findings to the editor before publishing; fix what the editor approves.
 1. **Current paper** (working papers only, and only if the packet says so):
    `python3 tools/set_current_paper.py 12 --title "Title" --version v1.0 --month "October 2026"`
    It moves the nav link on every page, rewrites every previous-paper banner, gives the demoted paper its banner, and sets sitemap priorities. Add a companion sentence to the new banner by hand if the demoted paper needs one.
-2. **Home page** (`index.html`): the current card (title, subtitle, summary, Read · PDF · Submit Named Commentary); the demoted paper's card moves to the top of `#archive`; briefings and Ledger issues go in their own sections, newest first. Every card carries the same three buttons, the commentary button as `btn-mono`.
-3. **Commentary** (`commentary/index.html`): a section for the new document, in home-page order.
-4. **Indexes**: one line in `llms.txt`; a full entry (abstract, key findings, ID, version, URLs, PDF page count) in `llms-full.txt`.
-5. **Sitemap**: add the page, then its PDF (reading views first; PDFs at priority 0.4; no `changefreq`).
-6. **Canon**: create `wp12/CLAUDE.md` with the packet's canonical facts, and add one row to the document index in the root `CLAUDE.md`.
+2. **Home page** (`index.html`): the current card (title, subtitle, summary, Read · PDF · Submit Named Commentary) for a new current paper; a new Ledger issue replaces the Ledger card. The archive and briefing lists are rendered, not edited.
+3. **Registry and index pages**: `python3 tools/registry.py --all` — extracts `registry.json` from the new page's metadata, renders `/papers/`, `/briefings/`, `/register/` and the home lists, refreshes every breadcrumb and previous/next chain, writes the nav on the new page, and checks.
+4. **Commentary** (`commentary/index.html`): a section for the new document, in home-page order.
+5. **Indexes**: one line in `llms.txt`; a full entry (abstract, key findings, ID, version, URLs, PDF page count) in `llms-full.txt`.
+6. **Sitemap**: add the page, then its PDF (reading views first; PDFs at priority 0.4; no `changefreq`).
+7. **Canon**: create `wp12/CLAUDE.md` with the packet's canonical facts, and add one row to the document index in the root `CLAUDE.md`.
 
 ## 4. Share card
 
@@ -105,7 +107,7 @@ For several documents at once, prepare in parallel and integrate once. One subag
 
 1. Create `wp[N]/index.html`, modeled on `wp1/index.html` (the canonical chrome reference).
 2. **Update the home page's "Current Working Paper" card** with the new paper. Move the previously-current paper's card into the "Previous Working Papers" section on the home page (if it doesn't exist yet, create it directly below the Current card).
-3. **Update the nav `Working Paper` link sitewide** to point to the new paper (`/wp[N]/`). The four-link nav is intentional restraint — *never add a fifth link.* Previous papers remain accessible via direct URL and the home-page archive.
+3. ~~Update the nav `Working Paper` link sitewide~~ — retired October 2026: the nav is Papers · Briefings · Ledger · Commentary · About and does not name the current paper. `tools/registry.py --all` renders `/papers/`, which leads with it.
 4. **Add a "previous paper" banner near the top of the prior paper's page**, pointing readers to the current paper. The banner uses the `<aside class="standard">` pattern with an `<h4>` and a one-sentence pointer.
 5. Add a new section to `commentary/index.html` for the new paper's commentary collection (above the previous paper's section). Open for submission.
 6. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
@@ -116,4 +118,4 @@ For several documents at once, prepare in parallel and integrate once. One subag
 11. Versions follow `vM.m[.p]` — major versions for substantive revisions, minor for named-commentary integration, patch for errata. Pre-publication drafts use `v0.x` until v1.0 is released.
 12. **Add `wp[N]/` and `wp[N]/working-paper.pdf` (if released) to `sitemap.xml`.** `lastmod` is the date the file last *changed*, not the date it was published — take it from `git log -1 --format=%cs -- <path>` so the field stays true after later edits. Reading views are listed before the PDF releases; give the new paper `<priority>0.9</priority>` and demote the previous current paper to `0.7`. PDFs sit at `0.4` so the crawler reaches the HTML first. Do **not** add `changefreq` — Google ignores it, and asserting a cadence contradicts the imprint's own position that the papers have none.
 
-Since October 2026, item 3, item 4's banner text and item 12's priorities are done by `tools/set_current_paper.py`; item 7's render is `tools/render-og.sh` (the bare `resvg-cli` call renders fallback fonts in a fresh container); item 12's `lastmod` is `tools/sitecheck.py --fix-sitemap`.
+Since October 2026, item 4's banner text and item 12's priorities are done by `tools/set_current_paper.py` (item 3 is retired); item 7's render is `tools/render-og.sh` (the bare `resvg-cli` call renders fallback fonts in a fresh container); item 12's `lastmod` is `tools/sitecheck.py --fix-sitemap`.

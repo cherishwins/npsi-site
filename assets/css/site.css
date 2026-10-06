@@ -63,7 +63,7 @@ html {
   --fs-h1:        clamp(28px, 1.359rem + 1.739vw, 44px);
   --fs-h1-large:  clamp(32px, 1.511rem + 2.174vw, 52px);
   --fs-mark:      clamp(10px, 0.576rem + 0.217vw, 12px);
-  --fs-nav:       clamp(13px, 0.76rem + 0.11vw, 14px);
+  --fs-nav:       clamp(12.5px, 0.745rem + 0.163vw, 14px);
   --pad-masthead: clamp(12px, 0.4rem + 1.4vw, 24px);
   --fs-h3:        clamp(19px, 1.05rem + 0.85vw, 22px);
   --fs-prose:     clamp(16px, 0.94rem + 0.45vw, 17px);
@@ -193,12 +193,13 @@ body {
 .nav {
   display: flex;
   align-items: baseline;
-  gap: 28px;
+  /* fluid gap: 9px at 360 → 28px at 1280, so five links hold one row on a small phone */
+  gap: clamp(9px, 0.1rem + 2.1vw, 28px);
 }
 .nav a {
   font-family: var(--font-serif);
   font-size: var(--fs-nav);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: var(--ink);
   text-decoration: none;
   position: relative;
@@ -812,7 +813,7 @@ body::after {
     gap: 10px;
   }
   .masthead-inner { gap: 6px; }
-  .nav { gap: 14px; flex-wrap: wrap; }
+  .nav { flex-wrap: wrap; }
   .nav-volume { display: none; }
   .grid-2, .ledger { grid-template-columns: 1fr; }
 }
