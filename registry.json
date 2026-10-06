@@ -1,0 +1,405 @@
+{
+  "imprint": "North Pacific Strategy Initiative",
+  "url": "https://npsi.ca/",
+  "generated": "2026-10-06",
+  "identifiers": {
+    "serial": "Publication serial, assigned by the editor alone at publication; sequential within its line; never reused.",
+    "accession": "Intake number, NPSI-YYYYMMDD-X, assigned when a document enters the system; immutable. A document may carry an accession number before a serial is assigned."
+  },
+  "current": "wp11",
+  "lines": {
+    "WP": {
+      "name": "Working Papers",
+      "singular": "Working Paper",
+      "serial": "NPSI-WP-NNN",
+      "index": "/papers/",
+      "pdf": "working-paper.pdf",
+      "description": "Long-form, sourced, version-numbered documents intended for senior policy, fiduciary and academic readers. Published when substantive material is ready; there is no cadence."
+    },
+    "TB": {
+      "name": "Technical Briefings",
+      "singular": "Technical Briefing",
+      "serial": "NPSI-TB-NNN",
+      "index": "/briefings/",
+      "pdf": "technical-briefing.pdf",
+      "description": "A companion line to the Working Papers, addressing the engineering substrate beneath the policy architecture."
+    },
+    "BN": {
+      "name": "Briefing Notes",
+      "singular": "Briefing Note",
+      "serial": "NPSI-BN-NNN",
+      "index": "/briefings/",
+      "pdf": "briefing-note.pdf",
+      "description": "The imprint’s short-form line: a single mechanism, documented end to end, in under twenty minutes of reading."
+    },
+    "SB": {
+      "name": "Special Briefings",
+      "singular": "Special Briefing",
+      "serial": "NPSI-SB-NNN",
+      "index": "/briefings/",
+      "pdf": "special-briefing.pdf",
+      "description": "Single-issue strategic assessments, published when an exposure demands attention outside the working-paper cycle."
+    },
+    "PL": {
+      "name": "The Pacific Ledger",
+      "singular": "Pacific Ledger issue",
+      "serial": "NPSI-PL-NNN",
+      "index": "/ledger/",
+      "pdf": "pacific-ledger.pdf",
+      "description": "A monthly account of the Canada–Korea relationship. Every entry sourced, both sides of the account kept."
+    }
+  },
+  "never_issued": [
+    {
+      "line": "WP",
+      "number": 6
+    },
+    {
+      "line": "WP",
+      "number": 8
+    }
+  ],
+  "documents": [
+    {
+      "line": "BN",
+      "number": 1,
+      "serial": "NPSI-BN-001",
+      "accession": null,
+      "folder": "bn1",
+      "url": "/bn1/",
+      "title": "The Voter File",
+      "subtitle": "What every federal political party holds on every Canadian voter — and the statute that, as of March 2026, places that file beyond every privacy law in the country, retroactive to the year 2000.",
+      "version": "v1.0",
+      "released": "2026-06-11",
+      "series": null,
+      "status": "published",
+      "pdf": "/bn1/briefing-note.pdf",
+      "files": [
+        "/bn1/briefing-note.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "PL",
+      "number": 1,
+      "serial": "NPSI-PL-001",
+      "accession": null,
+      "folder": "pl1",
+      "url": "/pl1/",
+      "title": "The Pacific Ledger",
+      "subtitle": "A monthly account of the Canada–Korea relationship.",
+      "version": null,
+      "released": "2026-07-28",
+      "series": null,
+      "status": "published",
+      "pdf": "/pl1/pacific-ledger.pdf",
+      "files": [
+        "/pl1/pacific-ledger.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 1,
+      "serial": "NPSI-SB-001",
+      "accession": null,
+      "folder": "sb1",
+      "url": "/sb1/",
+      "title": "Zero Secrets",
+      "subtitle": "Canada's data already answers to American law. The new generation of military AI turns that exposure into a complete intelligence picture. A wake-up call for the people who still think residency is sovereignty.",
+      "version": "v1.0",
+      "released": "2026-06-11",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb1/special-briefing.pdf",
+      "files": [
+        "/sb1/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 2,
+      "serial": "NPSI-SB-002",
+      "accession": null,
+      "folder": "sb2",
+      "url": "/sb2/",
+      "title": "The Three Doors",
+      "subtitle": "Under U.S. defense law, Canada has been domestic since 1992. A Canadian miner's map to American federal money.",
+      "version": "v1.0",
+      "released": "2026-07-02",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb2/special-briefing.pdf",
+      "files": [
+        "/sb2/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 3,
+      "serial": "NPSI-SB-003",
+      "accession": null,
+      "folder": "sb3",
+      "url": "/sb3/",
+      "title": "The Ledger With One Entry",
+      "subtitle": "Venezuelan oil revenue under United States custody: what left, what came back, and the accounting that was never published.",
+      "version": "v1.0",
+      "released": "2026-07-26",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb3/special-briefing.pdf",
+      "files": [
+        "/sb3/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 4,
+      "serial": null,
+      "accession": "NPSI-20261003-B",
+      "folder": "sb4",
+      "url": "/sb4/",
+      "title": "The Tollgate Markets",
+      "subtitle": "Where else does breaking the rules cost a fee instead of a future?",
+      "version": "v1.0.1",
+      "released": "2026-10-03",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb4/special-briefing.pdf",
+      "files": [
+        "/sb4/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 5,
+      "serial": null,
+      "accession": "NPSI-20261003-C",
+      "folder": "sb5",
+      "url": "/sb5/",
+      "title": "One Day, Four Names",
+      "subtitle": "What Tokyo, Seoul, Pyongyang and Washington each decided to call 15 August 1945. And the subject every name leaves out.",
+      "version": "v1.0.1",
+      "released": "2026-10-03",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb5/special-briefing.pdf",
+      "files": [
+        "/sb5/special-briefing-print.pdf",
+        "/sb5/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "TB",
+      "number": 1,
+      "serial": "NPSI-TB-001",
+      "accession": null,
+      "folder": "tb1",
+      "url": "/tb1/",
+      "title": "The Verified Sky",
+      "subtitle": "Sensing, certainty, and the law of automated airspace awareness — the state of the art, what it costs, how fast it acts, and what a Canadian operator may lawfully do with it.",
+      "version": "v1.0",
+      "released": "2026-06-11",
+      "series": null,
+      "status": "published",
+      "pdf": "/tb1/technical-briefing.pdf",
+      "files": [
+        "/tb1/technical-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 1,
+      "serial": "NPSI-WP-001",
+      "accession": null,
+      "folder": "wp1",
+      "url": "/wp1/",
+      "title": "The Bilateral Foundation",
+      "subtitle": "A thirty-year Canada–Korea sovereign bond as the architecture of middle-power independence.",
+      "version": "v1.0",
+      "released": "2026-05",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp1/working-paper.pdf",
+      "files": [
+        "/wp1/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 2,
+      "serial": "NPSI-WP-002",
+      "accession": null,
+      "folder": "wp2",
+      "url": "/wp2/",
+      "title": "A Canada–United States Energy and Compute Compact",
+      "subtitle": "Cooperative leverage in the AI-era continental grid.",
+      "version": "v1.0",
+      "released": "2026-05",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp2/working-paper.pdf",
+      "files": [
+        "/wp2/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 3,
+      "serial": "NPSI-WP-003",
+      "accession": null,
+      "folder": "wp3",
+      "url": "/wp3/",
+      "title": "A Canada–Korea Pacific Defence-Industrial Corridor",
+      "subtitle": "Submarine procurement, industrial offsets, and the third rail of middle-power sovereignty.",
+      "version": "v1.0.1",
+      "released": "2026-05",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp3/working-paper.pdf",
+      "files": [
+        "/wp3/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 4,
+      "serial": "NPSI-WP-004",
+      "accession": null,
+      "folder": "wp4",
+      "url": "/wp4/",
+      "title": "The Addition Paradox",
+      "subtitle": "An energy thesis for Canada.",
+      "version": "v1.0",
+      "released": "2026-05-15",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp4/working-paper.pdf",
+      "files": [
+        "/wp4/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 5,
+      "serial": "NPSI-WP-005",
+      "accession": null,
+      "folder": "wp5",
+      "url": "/wp5/",
+      "title": "Sovereign Compute North",
+      "subtitle": "An energy-for-memory swap, signed under Canadian law.",
+      "version": "v1.0",
+      "released": "2026-05-27",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp5/working-paper.pdf",
+      "files": [
+        "/wp5/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 7,
+      "serial": "NPSI-WP-007",
+      "accession": null,
+      "folder": "wp7",
+      "url": "/wp7/",
+      "title": "Dazzle 2.0",
+      "subtitle": "Russia's “zebra” trucks and the contest between a can of paint and a machine that thinks it can see.",
+      "version": "v1.0",
+      "released": "2026-07-12",
+      "series": "Counter-Autonomy",
+      "status": "published",
+      "pdf": "/wp7/working-paper.pdf",
+      "files": [
+        "/wp7/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 9,
+      "serial": "NPSI-WP-009",
+      "accession": null,
+      "folder": "wp9",
+      "url": "/wp9/",
+      "title": "The Counterparty Problem",
+      "subtitle": "What a $15 billion Memorandum of Understanding is actually worth when the counterparty’s charter expires in five months.",
+      "version": "v1.0",
+      "released": "2026-07-27",
+      "series": null,
+      "status": "published",
+      "pdf": "/wp9/working-paper.pdf",
+      "files": [
+        "/wp9/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "WP",
+      "number": 10,
+      "serial": "NPSI-WP-010",
+      "accession": null,
+      "folder": "wp10",
+      "url": "/wp10/",
+      "title": "Fair Use for We, IP Theft for Thee",
+      "subtitle": "Nobody agrees what “open source” means in artificial intelligence. Washington is now writing policy inside that vacuum.",
+      "version": "v1.0",
+      "released": "2026-07-26",
+      "series": null,
+      "status": "superseded",
+      "pdf": "/wp10/working-paper.pdf",
+      "files": [
+        "/wp10/working-paper.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": "wp11"
+    },
+    {
+      "line": "WP",
+      "number": 11,
+      "serial": "NPSI-WP-011",
+      "accession": null,
+      "folder": "wp11",
+      "url": "/wp11/",
+      "title": "Rated AAA by the Issuer",
+      "subtitle": "What “open source” in artificial intelligence has in common with a credit rating, and what the base rates say happens next.",
+      "version": "v1.0",
+      "released": "2026-07-28",
+      "series": "Technical Series",
+      "status": "current",
+      "pdf": "/wp11/working-paper.pdf",
+      "files": [
+        "/wp11/working-paper.pdf"
+      ],
+      "supersedes": "wp10",
+      "superseded_by": null
+    }
+  ]
+}

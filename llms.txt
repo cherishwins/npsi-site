@@ -8,7 +8,10 @@ TechArticle, Report, or PublicationIssue) for machine citation. Document IDs fol
 working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
 notes, NPSI-SB-NNN for special briefings, and NPSI-PL-NNN for The Pacific
 Ledger (the monthly Canada–Korea account). Special Briefings Nos. 4 and 5 keep
-the date-based IDs printed on their releases (NPSI-20261003-B, NPSI-20261003-C).
+the date-based IDs printed on their releases (NPSI-20261003-B, NPSI-20261003-C):
+these are accession numbers, assigned at intake; a publication serial is
+assigned by the editor alone and is pending for both. The full register of
+identifiers is https://npsi.ca/register/ (machine-readable: https://npsi.ca/registry.json).
 Cite the canonical URLs below.
 
 ## Working Papers
@@ -43,6 +46,12 @@ Cite the canonical URLs below.
 - [SB3 — The Ledger With One Entry](https://npsi.ca/sb3/): Venezuelan oil revenue under United States custody — an estimated $13 billion raised since January 2026 against one documented $300 million receipt and zero published audits; the two traps in American law (TRIA §201, Crystallex alter-ego doctrine) that made an offshore account the rational choice; and a benchmark against the three comparable oil-custody regimes, the most accountable of which still lost $8.8 billion. Accountability audit; every material claim confidence-rated. v1.0, 26 July 2026. PDF (canonical): https://npsi.ca/sb3/special-briefing.pdf
 - [SB2 — The Three Doors](https://npsi.ca/sb2/): Under U.S. defense law, Canada has been a domestic source since 1992 (50 U.S.C. §4552) — a Canadian miner's map to American federal money via DPA Title III, Energy Act §18743, and EXIM's Supply Chain Resiliency Initiative. Ten-panel briefing. v1.0, 2 July 2026. PDF: https://npsi.ca/sb2/special-briefing.pdf
 - [SB1 — Zero Secrets](https://npsi.ca/sb1/): Canada's data and AI sovereignty crisis — under the CLOUD Act and FISA 702, jurisdiction follows corporate ownership, not server location; an audit of the federal sovereign-AI agenda, four international models, and a three-stage response. Companion to WP5, Sovereign Compute North (https://npsi.ca/wp5/). v1.0, 11 June 2026. PDF: https://npsi.ca/sb1/special-briefing.pdf
+
+## Indexes
+
+- [Working Papers](https://npsi.ca/papers/): Every working paper by publication date — the current paper, the archive, and the numbering.
+- [Briefings](https://npsi.ca/briefings/): Technical Briefings, Briefing Notes and Special Briefings, by publication date.
+- [The Number Register](https://npsi.ca/register/): Every identifier the imprint has assigned — publication serials, accession numbers, and reserved numbers never released. Machine-readable form: https://npsi.ca/registry.json
 
 ## The Imprint
 

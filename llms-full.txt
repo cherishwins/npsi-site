@@ -484,6 +484,9 @@ fairly.
 ## The Imprint
 
 - The Pacific Ledger: https://npsi.ca/ledger/ — the monthly publication's home; current issue and archive.
+- Working Papers index: https://npsi.ca/papers/ — every working paper by publication date; the current paper, the archive, the numbering.
+- Briefings index: https://npsi.ca/briefings/ — Technical Briefings, Briefing Notes and Special Briefings, by publication date.
+- The Number Register: https://npsi.ca/register/ — every identifier the imprint has assigned: publication serials, accession numbers (NPSI-YYYYMMDD-X, assigned at intake, immutable), and reserved numbers never released. Machine-readable: https://npsi.ca/registry.json
 - About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
 - Disclosure: https://npsi.ca/disclosure/ — declaration of interests: who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
