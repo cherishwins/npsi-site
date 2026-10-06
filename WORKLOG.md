@@ -13,7 +13,7 @@ Findings that drove the design (measured, not guessed):
 - 17 documents published across 5 lines; the nav exposed exactly one, labelled "Working Paper" but pointing at the latest paper only.
 - No index page for working papers (`/papers/` was a 404); the archive existed only as a home-page anchor roughly 10 phone-screens down a 21-screen page.
 - The published site runs two identifier schemes: SB1 to SB3 carry `NPSI-SB-00N`; SB4 and SB5 carry `NPSI-20261003-B` and `-C`.
-- Serial collisions off-site: WP5 and WP9 were each assigned to two different papers by different sessions.
+- Off-site drafts carried serials assigned by separate sessions without a register, including collisions with published numbers.
 - Sticky masthead at 390px measured 133px tall, 16% of the viewport, permanently.
 
 ## Design (approved by Jesse, 6 October)
@@ -67,7 +67,7 @@ At 340px the nav wraps to two rows (96px masthead); that width is rarer than 360
 
 1. Review and merge the PR.
 2. Rule on serials for SB4 and SB5 (currently accession `NPSI-20261003-B` / `-C`, serial pending). If they become `NPSI-SB-004` and `-005`, the printed IDs on the releases and pages change under the errata policy; the register will show both.
-3. The private inventory of unpublished papers (about a dozen on disk, several as Claude artifacts, two serial collisions at WP5 and WP9) is in Claude's memory folder, not in this repo. Each needs a serial from Jesse before it can be published; the accession-number form covers anything unnumbered.
+3. An inventory of unreleased drafts is held privately in Claude's memory, not in this repo; each needs a serial from the editor before publication.
 4. Docket item D3 still stands: this public repo carries internal files (`AUDIT.md`, `reviewfiles.zip`, `.agents/`, `skills-lock.json`). `WORKLOG.md` is in `.vercelignore` but is in the repo; delete it after merge.
 
 ## Log

@@ -4,7 +4,7 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Index last revised 4 October 2026; status lines
+the imprint has published. Index last revised 6 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
