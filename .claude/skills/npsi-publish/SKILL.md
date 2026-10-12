@@ -103,7 +103,7 @@ The policy is on `/about/`: errata are patch versions (v1.0.1). For each correct
 
 For several documents at once, prepare in parallel and integrate once. One subagent per document builds its folder (page, figures, share card, folder `CLAUDE.md`) and touches no shared file. Then a single pass makes every sitewide update (home, commentary, llms files, sitemap, root index, current paper) and runs the gate. Shared files edited in parallel conflict; folders do not.
 
-## Reference: the working-paper checklist (moved verbatim from CLAUDE.md, October 2026)
+## Reference: the working-paper checklist (moved from CLAUDE.md, October 2026; item 2 since corrected)
 
 1. Create `wp[N]/index.html`, modeled on `wp1/index.html` (the canonical chrome reference).
 2. **Update the home page's "Current Working Paper" card** with the new paper. The Previous Working Papers list is rendered between `<!-- archive-list -->` markers by `tools/registry.py`; do not edit it.

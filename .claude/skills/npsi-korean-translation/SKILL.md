@@ -34,7 +34,7 @@ A note on familiar tempting wrong answers: 해요체 (polite informal, -요 endi
 npsi-site's `CLAUDE.md` governs any Korean that reaches the site. The rules that bite in translation:
 
 - **Canonical titles come from `registry.json`.** Proposed Korean titles are in `references/glossary.md` ("Document titles"); none is published, so each needs the editor's confirmation before it ships.
-- **The Korea convention.** English body text says "Korea" and keeps "Republic of Korea" for matters of protocol. In Korean, choose by meaning: 한국 for the state, its economy and institutions (most NPSI usage), 한반도 when the peninsula as a whole is meant, and 대한민국 in protocol (transmittals, formal correspondence, invitations).
+- **The Korea convention.** In English body text, "Korea" is the geographic and civilizational entity, in academic convention; "Republic of Korea" is reserved for protocol (transmittals, formal correspondence, invitations). That is CLAUDE.md's rule and it governs. In Korean, render by meaning: 한국 by default where the English means Korea in ROK usage, 한반도 when the peninsula as a whole is meant, and 대한민국 in protocol.
 - **No first person in working-paper body text.** In Korean that includes 우리: it is first person, and in Korean policy prose 우리 정부 means the ROK government, which NPSI is not.
 - **No Western framing in Korean text.** Write for a Korean reader, not a Western gloss on Korea: no 극동 for the region, no 일본해, and no carrying over English explanations of Korean terms (an English page glosses 광복절 for its reader; the Korean text just says 광복절).
 - **No anti-American framing** in NPSI voice, in either language. DPRK terms such as 미제 stay inside attributed quotes.
@@ -153,7 +153,7 @@ Do not pad output with explanations Jesse did not request. Korean-only when Kore
 
 ## Working with related skills
 
-- **Voice (Sutter, JPanda, Letters from the Earth)**: voice skills govern the English source. This skill governs the Korean target. The Korean target does not "preserve voice" mechanically — it produces the Korean institutional equivalent of the voice's *content*. Korean does not have a register that maps cleanly to Sutter's dry American sardonic register, so do not try to manufacture one.
+- **Voice (Sutter, JPanda, Letters from the Earth)**: these govern the English source of LinkedIn captions only. For anything on npsi.ca, the house register in CLAUDE.md governs the English (third person, no first person in paper bodies), and no personal voice skill applies. This skill governs the Korean target. The Korean target does not "preserve voice" mechanically — it produces the Korean institutional equivalent of the voice's *content*. Korean does not have a register that maps cleanly to Sutter's dry American sardonic register, so do not try to manufacture one.
 
 - **English-side drafting**: for anything going onto npsi.ca the English document is governed by npsi-site's `CLAUDE.md` and the `npsi-publish` skill. When a deliverable will be bilingual or Korean-only, this skill runs after the English is final, on the finished English.
 
