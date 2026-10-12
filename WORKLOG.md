@@ -68,7 +68,7 @@ At 340px the nav wraps to two rows (96px masthead); that width is rarer than 360
 1. Review and merge the PR.
 2. Rule on serials for SB4 and SB5 (currently accession `NPSI-20261003-B` / `-C`, serial pending). If they become `NPSI-SB-004` and `-005`, the printed IDs on the releases and pages change under the errata policy; the register will show both.
 3. An inventory of unreleased drafts is held privately in Claude's memory, not in this repo; each needs a serial from the editor before publication.
-4. Docket item D3 still stands: this public repo carries internal files (`AUDIT.md`, `reviewfiles.zip`, `.agents/`, `skills-lock.json`). `WORKLOG.md` is in `.vercelignore` but is in the repo; delete it after merge.
+4. Docket item D3, partly done: `.agents/` and `skills-lock.json` were removed on 12 October 2026, with the taste-skill pack's links under `.claude/skills/` (every file is kept in the editor's taste-skill fork). Still standing: `AUDIT.md` and `reviewfiles.zip` are internal files in this public repo, and `WORKLOG.md` is in `.vercelignore` but in the repo; delete it after merge.
 
 ## Log
 
