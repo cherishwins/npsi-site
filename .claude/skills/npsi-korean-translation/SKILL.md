@@ -1,15 +1,15 @@
 ---
 name: npsi-korean-translation
-description: Translate EN ↔ KO for NPSI working papers and LinkedIn captions, and for reading Korean primary sources (Yonhap, KCNA, 조선중앙통신, Chosun, Hankyoreh, JoongAng, Korea Herald, 노동/로동신문). Enforces register (한다체 for papers, 합니다체 for LinkedIn, mirror-source for direct quotes), Sino-Korean academic vocabulary, ROK orthography default with DPRK forms preserved in quotes, canonical NPSI proper nouns (NPS, KIC, KOGAS, 도산안창호함, 에스콰이몰트), and Korean numbering (만/억/조). Trigger on 'translate to Korean', 'Korean version', 'in Korean', 'Korean caption', 'NPSI Korean', '한국어로', 'translate this article', or any Korean source handover. ALSO trigger automatically before publishing any NPSI output with Korean text — institutional readers detect translation tells instantly. Output is publishable target text only; translator notes only when real ambiguity warrants; back-translation gloss only on explicit QA request. NOT for JucheGang brand identity, Cherish/VI Care, Ibrahim Arabic, or Fit For Gov.
+description: Translate EN ↔ KO for NPSI documents, npsi.ca pages and LinkedIn captions, and for reading Korean primary sources (Yonhap, KCNA, 조선중앙통신, Chosun, Hankyoreh, JoongAng, Korea Herald, 노동/로동신문). Enforces register (한다체 for papers, 합니다체 for LinkedIn, mirror-source for direct quotes), Sino-Korean academic vocabulary, ROK orthography default with DPRK forms preserved in quotes, canonical NPSI proper nouns and titles (NPS, KIC, KOGAS, 도산안창호함, 에스콰이몰트), the 가운뎃점 for paired names, and Korean numbering (만/억/조). Trigger on 'translate to Korean', 'Korean version', 'in Korean', 'Korean caption', 'NPSI Korean', '한국어로', 'translate this article', or any Korean source handover. ALSO trigger automatically before publishing any NPSI output with Korean text. Anything going onto npsi.ca is delivered with the bilingual audit table npsi-site CLAUDE.md requires (Korean left, English literal right); LinkedIn and chat get publishable target text only. NPSI only; not for the editor's other brands.
 ---
 
 # NPSI Korean Translation
 
-Reliable Korean ↔ English translation for NPSI working papers and LinkedIn captions. The goal is prose that a Korean institutional reader does not flag as translated.
+Reliable Korean ↔ English translation for NPSI documents, npsi.ca pages and LinkedIn captions. The goal is prose that a Korean institutional reader does not flag as translated, delivered in a form the editor can check without reading Korean.
 
 ## What "professional" means here
 
-NPSI's Korean audience is not general. It includes National Pension Service (NPS) fund managers, Korea Investment Corporation (KIC) executives, Korea Investment PE partners, ROK Navy and intelligence officers, Korea Herald journalists, and the curated JucheGang LinkedIn page audience. They read Korean policy and finance writing daily. Their tolerance for translation tells is zero. A clumsy 가지다 calque or a wrong honorific choice signals immediately that the writer does not actually speak the language, which collapses the credibility the working paper was built to establish.
+NPSI's Korean audience is not general. It includes National Pension Service (NPS) fund managers, Korea Investment Corporation (KIC) executives, Korea Investment PE partners, ROK Navy and intelligence officers, and Korea Herald journalists. They read Korean policy and finance writing daily. Their tolerance for translation tells is zero. A clumsy 가지다 calque or a wrong honorific choice signals immediately that the writer does not actually speak the language, which collapses the credibility the working paper was built to establish.
 
 The bar is therefore not "comprehensible." The bar is "indistinguishable from native Korean institutional writing."
 
@@ -28,6 +28,17 @@ Korean speech and writing levels are not interchangeable. The wrong level reads 
 - **Mixed-register edge case**: when a working paper *contains* a long block-quoted Korean source, the body stays 한다체 and the quote stays in its native register. Use Korean quote marks 「」 or " " to mark the seam.
 
 A note on familiar tempting wrong answers: 해요체 (polite informal, -요 endings) is wrong for both NPSI use cases. It reads as a personal blog or a service-industry interaction. 합쇼체 / -십시오 forms are wrong for written work because they are oratorical. Stay in 한다체 or 합니다체.
+
+## npsi.ca house rules that bind the Korean
+
+npsi-site's `CLAUDE.md` governs any Korean that reaches the site. The rules that bite in translation:
+
+- **Canonical titles come from `registry.json`.** Proposed Korean titles are in `references/glossary.md` ("Document titles"); none is published, so each needs the editor's confirmation before it ships.
+- **The Korea convention.** English body text says "Korea" and keeps "Republic of Korea" for matters of protocol. In Korean, choose by meaning: 한국 for the state, its economy and institutions (most NPSI usage), 한반도 when the peninsula as a whole is meant, and 대한민국 in protocol (transmittals, formal correspondence, invitations).
+- **No first person in working-paper body text.** In Korean that includes 우리: it is first person, and in Korean policy prose 우리 정부 means the ROK government, which NPSI is not.
+- **No Western framing in Korean text.** Write for a Korean reader, not a Western gloss on Korea: no 극동 for the region, no 일본해, and no carrying over English explanations of Korean terms (an English page glosses 광복절 for its reader; the Korean text just says 광복절).
+- **No anti-American framing** in NPSI voice, in either language. DPRK terms such as 미제 stay inside attributed quotes.
+- **Never mint a serial.** Serials are the editor's alone; a document without one carries its accession number (`NPSI-YYYYMMDD-X`) in Korean text too.
 
 ## Step 2: Translate
 
@@ -69,14 +80,35 @@ A note on familiar tempting wrong answers: 해요체 (polite informal, -요 endi
 
 Run `references/qa-checklist.md` against the output. It catches the recurring failure modes (numbering unit errors, register drift, institution name inconsistency, calque tells, quote-integrity violations).
 
-Two checks are non-negotiable before any EN → KO output is delivered:
+Three checks are non-negotiable before any EN → KO output is delivered:
 
 - **Numbers**: every number, unit, and currency in the source appears correctly in the target. 만/억/조 conversions verified.
 - **Proper nouns**: every named institution, place, person, and ship appears in its canonical Korean form per the glossary. If any are not in the glossary, flag them and ask Jesse to confirm before publication.
+- **Destination**: if the Korean is going onto npsi.ca, the bilingual audit table (below) is part of the delivery, and its Korean column matches the shipped text character for character.
 
 ## Output format
 
-Default: **publishable Korean (or English) only**, formatted to match the source's structure (headings remain headings, lists remain lists, paragraph breaks preserved).
+The destination decides the format.
+
+### Anything going onto npsi.ca: the bilingual audit table
+
+A page, a PDF printed from a page, a figure label, alt text, a `lang="ko"` heading, a share card. npsi-site's `CLAUDE.md` requires a bilingual audit table for Korean-language content, Korean left and English literal translation right. Deliver it every time, whether or not QA was asked for:
+
+```markdown
+| Korean (exactly as it will ship) | English (literal) |
+|---|---|
+| 캐나다·한국 관계 월간 브리프 | Canada·Korea relations monthly brief |
+| 광복절 | Day of the restoration of light |
+```
+
+- One row per sentence, or per discrete string (heading, label, alt text, table cell), in document order.
+- The Korean column is the text that ships. Paste from it into the page; never retype.
+- The English column is literal: follow the Korean's words and order as far as English grammar allows, and keep its hedges and particles' force. Do not smooth it back into the source English. It shows the editor what the Korean says, which can differ from what the English said; catching that difference is the table's job.
+- Under the table: one line for each row that needs a note (`Row 4: 대즐 is [VERIFY]`), the delivery note from `references/qa-checklist.md`, and a plain statement of whether a native Korean reader has reviewed the text. The default is "Not native-reviewed".
+
+### LinkedIn captions, chat, and Korean sources read for the editor
+
+**Publishable Korean (or English) only**, formatted to match the source's structure (headings remain headings, lists remain lists, paragraph breaks preserved).
 
 Add a brief **Translator notes** block ONLY when:
 - A deliberate terminology choice was made over a plausible alternative (e.g., chose 자주 over 독립 for "sovereign" because the source connoted self-determination, not separation).
@@ -113,21 +145,19 @@ Do not pad output with explanations Jesse did not request. Korean-only when Kore
 
 ## Reference files — when to consult
 
-- **`references/glossary.md`** — Consult on EVERY EN→KO and KO→EN job before delivering. Contains canonical NPSI translations for institutions (NPS, KIC, KOGAS, Hanwha, NOC Libya), places (Esquimalt, Murzuq Basin, Fort McMurray, Prince Rupert), ships (도산안창호함), policy terms (sovereign bond, Pacific infrastructure facility), and working paper titles (WP01, WP02, WP03, WP04). Flag anything not in the glossary.
+- **`references/glossary.md`** — Consult on EVERY EN→KO and KO→EN job before delivering. Contains canonical NPSI translations for institutions (NPS, KIC, KOGAS, Hanwha), places (Esquimalt, Fort McMurray, Prince Rupert), ships (도산안창호함), policy terms (sovereign bond, the CKPIF instrument), and proposed Korean titles for every published document, keyed to `registry.json`. `references/glossary-supplement-wp3.md` adds WP3's defence and procurement terms. Flag anything not in the glossary.
 
 - **`references/style-guide.md`** — Consult when uncertain about register choice, orthographic conventions (ROK vs DPRK), numbering, punctuation, or how to handle mixed-language content. Contains the full register decision tree, ROK/DPRK orthographic differences, and side-by-side worked examples.
 
-- **`references/qa-checklist.md`** — Run against every output before delivery. Eight-point checklist covering register consistency, numerical accuracy, proper noun consistency, calque detection, quote integrity, slur scan, formatting parity, and length sanity check.
+- **`references/qa-checklist.md`** — Run against every output before delivery. Ten-section checklist covering register consistency, numerical accuracy, proper noun consistency, calque detection, quote integrity, slur scan, formatting parity, length sanity, a final read-through, and the npsi.ca house rules and audit table.
 
 ## Working with related skills
 
 - **Voice (Sutter, JPanda, Letters from the Earth)**: voice skills govern the English source. This skill governs the Korean target. The Korean target does not "preserve voice" mechanically — it produces the Korean institutional equivalent of the voice's *content*. Korean does not have a register that maps cleanly to Sutter's dry American sardonic register, so do not try to manufacture one.
 
-- **Geopolitical briefing, scenario fork, briefing compression**: these govern English-side document architecture. When a deliverable will be bilingual or Korean-only, this skill runs after they do — on the finished English.
+- **English-side drafting**: for anything going onto npsi.ca the English document is governed by npsi-site's `CLAUDE.md` and the `npsi-publish` skill. When a deliverable will be bilingual or Korean-only, this skill runs after the English is final, on the finished English.
 
 - **Red-team-read**: a Korean working paper should be red-teamed in Korean by a Korean reader before publication where possible. This skill cannot substitute for that. When primary-Korean review is not available, run red-team-read on the English source and flag in delivery that the Korean has not been native-reviewed.
-
-- **JucheGang brand kit**: governs visual identity for 주체강 content. Does not govern translation choices. If a JucheGang post needs Korean translation, this skill produces the Korean; juchekang-brand-kit lays it out.
 
 ## When to refuse to translate
 

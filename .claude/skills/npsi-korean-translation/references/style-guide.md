@@ -100,7 +100,7 @@ Korean groups numbers in units of 10,000 (만), not 1,000. Memorize the ladder:
 | 600 million | 600백만 | 6억 |
 | 1 billion | 10억 (NOT 1,000백만) | 10억 |
 | 6 trillion | 6,000십억 | 6조 |
-| 858 + 314 = 1,172 (WP04 stacked) | 858 더하기 314은 1,172 | 858 + 314 = 1,172 (numerals are fine as digits) |
+| 858 + 314 = 1,172 (WP04: 2024 demand growth, clean + fossil) | 858 더하기 314은 1,172 | 858 + 314 = 1,172 (numerals are fine as digits) |
 
 ### Currency notation
 
@@ -161,7 +161,7 @@ The mid-dot · joins paired nouns that share meaning in compound:
 - 비핵·평화 (denuclearization and peace)
 - 에너지·자원 (energy and resources)
 
-Do NOT use a hyphen for this in Korean. The hyphen is reserved for foreign words and compounds within transliterations.
+Do NOT use a hyphen for this in NPSI's Korean. The hyphen is reserved for foreign words, compounds within transliterations, and designations or prefixes (장보고-III, K-방산). The house precedent is published: the Pacific Ledger's Korean strapline reads 캐나다·한국 관계 월간 브리프. ROK government documents often hyphenate pairs (한-캐나다, 인도-태평양); quote a title of record as written, but NPSI's own text uses ·. Check which countries a pair names: 한·미 is Korea–US, so Canada–US is 캐나다·미국 (the WP2 title once carried 한-미 in error).
 
 ### Dashes and ranges
 
@@ -228,15 +228,17 @@ LinkedIn is read primarily on mobile by Korean readers. The caption format that 
 
 ### Example skeleton (illustrative — not for publication)
 
-> 한반도 에너지 안보의 다음 장은 캐나다 서부에서 열립니다.
+> 한국의 에너지 안보는 이미 캐나다 서부와 연결되어 있습니다.
 >
-> 한국가스공사가 LNG 캐나다 지분 5%를 보유하고 있고, 한화는 알고마 스틸에 투자했으며, 작년에는 ROK 잠수함이 빅토리아에 입항했습니다.
+> 한국가스공사는 LNG 캐나다 지분 5%를 보유하고 있으며, 2026년 6월에는 한국가스공사의 첫 LNG 캐나다 화물이 인천에 도착했습니다. 같은 해 5월에는 도산안창호함이 에스콰이몰트 해군기지에 입항했습니다.
 >
-> 협력의 인프라는 이미 구축되어 있습니다. 부족한 것은 자본 구조뿐입니다.
+> 협력의 인프라는 이미 구축되어 있습니다. 부족한 것은 자본 구조입니다.
 >
-> NPSI 연구보고서 04호에서 그 구조를 제안합니다.
+> NPSI 연구보고서 01호는 그 구조로 30년 만기 캐나다·한국 정부보증채권을 제안합니다.
 >
-> #한반도 #에너지안보
+> #에너지안보
+
+Facts in the skeleton are from the site's canon (pl1/CLAUDE.md for the KOGAS stake and the Incheon cargo, wp3/CLAUDE.md for the port visit, wp1/CLAUDE.md and registry.json for the bond). The capital-structure proposal is WP1, *The Bilateral Foundation*, not WP4. The bond is issued by the CKPIF under several sovereign guarantees, so it is 정부보증채권, not 국채 (glossary, "sovereign bond"). Re-check every figure against the canon before reusing any line.
 
 ### What to avoid in Korean LinkedIn
 
@@ -251,24 +253,24 @@ LinkedIn is read primarily on mobile by Korean readers. The caption format that 
 
 ### Example 1: working paper body sentence
 
-**English (Sutter-voice source):**
-> The math is straightforward. Canada has 858 TWh of installable wind and solar capacity on the Pacific corridor; Korea has 314 TWh of dispatchable nuclear that needs a long-tenor offtake partner. Add them. You get 1,172 TWh of stacked clean power.
+**English (source, WP4's figures; canon in wp4/CLAUDE.md):**
+> The arithmetic is plain. In 2024 global electricity demand grew by 1,172 TWh. Clean sources supplied a record 858 TWh of that growth; fossil generation supplied the remaining 314 TWh. The transition added; it did not substitute.
 
 **Korean (한다체, working paper body):**
-> 계산은 단순하다. 캐나다는 태평양 회랑을 따라 설치 가능한 풍력·태양광 용량이 858테라와트시이며, 한국은 장기 수요처가 필요한 디스패처블 원전 용량이 314테라와트시이다. 합치면 1,172테라와트시의 청정전력이 누적된다.
+> 계산은 단순하다. 2024년 세계 전력 수요는 1,172테라와트시 늘었다. 이 증가분 가운데 858테라와트시는 청정전력이 공급해 사상 최대를 기록했고, 나머지 314테라와트시는 화석연료 발전이 메웠다. 전환은 대체가 아니라 추가였다.
 
-**What was preserved:** the numbers, the basic claim, the rhetorical structure (statement → ingredients → addition).
-**What was changed:** "The math is straightforward" → 계산은 단순하다 (not "수학은 직선적이다" which would be a calque). "Add them. You get" → 합치면 ~ 누적된다 (Korean prefers connective endings over English-style staccato sentences in working paper register). The unit became 테라와트시. Native 누적 chosen over English "stacked" calque.
+**What was preserved:** the three numbers and how they relate (858 + 314 = 1,172, the year's demand growth), the claim, and the closing contrast.
+**What was changed:** "The arithmetic is plain" → 계산은 단순하다 (not "산수는 평이하다", a calque). The staccato English sentences joined with the connective -했고, which working-paper Korean prefers. "Record" → 사상 최대. "Added; did not substitute" → 대체가 아니라 추가였다 (the A가 아니라 B frame). TWh is energy, 전력량, never capacity (용량): an earlier version of this example called 858 and 314 TWh "capacity" and assigned them to Canadian renewables and Korean nuclear, which inverts WP4's thesis. Translate the figure the paper states, not a figure that sounds like it.
 
 ### Example 2: LinkedIn caption opening
 
-**English:**
-> Korea spent 75 years divided. The 5,000 years that came before mattered more.
+**English (a WP4 finding):**
+> In 2024 clean power set a record. So did fossil-fuel combustion.
 
 **Korean (합니다체, LinkedIn):**
-> 한반도가 분단된 75년보다, 그 이전의 5,000년이 더 중요합니다.
+> 2024년 청정전력은 사상 최대를 기록했고, 화석연료 연소량도 사상 최대였습니다.
 
-**What changed:** The two English sentences collapsed into one Korean sentence with a comparative structure. Two short English sentences in a caption hook read as Anglo punch; Korean institutional LinkedIn prefers single-sentence comparative grammar for a hook. The numbers carried over directly. 한반도 specified ("the peninsula") rather than "Korea" because Korean ambiguity between 한국 (ROK) and 한반도 (peninsula) would be felt here.
+**What changed:** The two English sentences became one Korean sentence. Two short English sentences in a caption hook read as Anglo punch; Korean institutional LinkedIn prefers one sentence joined by a connective (-했고). The particle 도 carries "So did"; a literal 그리고 화석연료 연소도 그랬습니다 is a calque. The hook states a sourced finding from a published paper, in NPSI's analytical register: no sentiment, no exhortation.
 
 ### Example 3: institutional name on first use
 

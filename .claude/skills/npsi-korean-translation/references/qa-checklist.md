@@ -109,6 +109,20 @@ Scan for the patterns that mark text as translated. (Direction: EN → KO mostly
 
 ---
 
+## 10. npsi.ca house rules and the audit table (Korean going onto the site)
+
+- [ ] The bilingual audit table is delivered: Korean left, English literal right, one row per sentence or discrete string, in document order.
+- [ ] The Korean column matches the text that ships, character for character.
+- [ ] The English column is literal, not the source English pasted back.
+- [ ] Every document title matches `registry.json`, and its Korean form is a glossary proposal confirmed by the editor (none is published yet).
+- [ ] Paired names use the 가운뎃점 (캐나다·한국), and Canada–US is 캐나다·미국, never 한·미. Titles of record keep their owner's punctuation inside quotes.
+- [ ] No 우리 in NPSI voice; no anti-American framing outside attributed quotes; no Western framing (극동, 일본해, English glosses of Korean terms carried into the Korean).
+- [ ] 한국 / 한반도 / 대한민국 chosen by meaning and protocol (SKILL.md, "The Korea convention").
+- [ ] No serial the editor has not assigned; accession numbers stay as printed.
+- [ ] The delivery says whether a native Korean reader has reviewed the text.
+
+---
+
 ## Delivery note template
 
 When delivering a translated document, include this short note (if useful):
@@ -120,4 +134,4 @@ When delivering a translated document, include this short note (if useful):
 > Glossary terms used: [list any [VERIFY] items used so Jesse can confirm]
 > Open items: [any ambiguity in source, any term flagged for verification, any decision Jesse should review]
 
-If nothing in the document required a choice worth flagging, deliver clean target text with no note. Do not pad delivery with translator-process commentary Jesse did not ask for.
+If nothing in the document required a choice worth flagging, deliver clean target text with no note. Do not pad delivery with translator-process commentary Jesse did not ask for. Korean going onto npsi.ca is the exception: it always ships with the audit table and the note (section 10).

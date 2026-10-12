@@ -1,26 +1,51 @@
-/* Canonical reference — shipped :root block from cherishwins/npsi-site.
-   A correct instance of the identity-anchored fluid-scale protocol.
-   Regenerate the numbers per project with scripts/clamp.py; keep the SHAPE. */
+/* Reference: the shipped :root scale block from cherishwins/npsi-site,
+   copied verbatim from assets/css/site.css (lines 49-75, October 2026).
+   When site.css changes, re-copy it; never edit the numbers here.
+
+   Not every token below is an exact instance of the protocol. Checked against
+   the anchors Wmin = 360px, Wmax = 1280px:
+
+   Exact (clamp.py output, rounded to three decimals; floor at 360, ceiling
+   at 1280): --fs-subtitle, --fs-h1, --fs-h1-large, --fs-mark, --fs-nav.
+   Reproduce them with:  python3 scripts/clamp.py --min 28 --max 44 --name fs-h1
+
+   Hand-tuned, older than the generator. Copy the shape, never these numbers:
+     --fs-body      right at both anchors, but reaches 17px by 900px
+     --fs-lede      17.66px at 360 (floor 17); reaches 19px by 604px
+     --fs-h3        19.86px at 360 (floor 19); reaches 22px by 612px
+     --fs-prose     16.66px at 360 (floor 16); reaches 17px by 436px
+     --fs-card-title  as --fs-h3
+     --pad-masthead at its floor up to 400px; reaches 24px by 1257px
+   Regenerating these on npsi.ca is a visible change (--fs-h3 at 768px would
+   go from 22px to 20.3px), so it needs the editor's review first.
+
+   Spacing and container padding (--pad-x, --space-section, --space-opener)
+   are vw-only by design: the rem term is mandatory for type, optional for
+   space (see SKILL.md). */
 
 :root {
-  /* Measure: line length governed in characters, not pixels (~66–75ch ideal) */
-  --max-w:        70ch;
-  --max-w-wide:   1020px;
-  --pad-x:        clamp(24px, 5.2vw, 56px);
+  /* Measure: line length governed in characters, not pixels (≈66–75ch ideal) */
+  --max-w:       70ch;
+  --max-w-wide:  1020px;
+  --pad-x:       clamp(24px, 5.2vw, 56px);
 
-  /* Document proportion — ISO 216, the Lichtenberg √2 ratio */
-  --ratio-a4:     1 / 1.4142;
+  /* Document proportion — the imprint thinks in A4 */
+  --ratio-a4:    1 / 1.4142;
 
   /* Fluid type scale — max = desktop identity, min = small-screen identity.
-     Every clamp keeps a rem term so it scales with user font size. */
-  --fs-body:       clamp(16px, 0.95rem + 0.20vw, 17px);
-  --fs-lede:       clamp(17px, 0.98rem + 0.55vw, 19px);
-  --fs-subtitle:   clamp(18px, 0.95rem + 1.05vw, 22px);
-  --fs-h1:         clamp(32px, 1.55rem + 3.30vw, 44px);
-  --fs-h1-large:   clamp(38px, 1.75rem + 4.30vw, 52px);
-  --fs-h3:         clamp(19px, 1.05rem + 0.85vw, 22px);
-  --fs-prose:      clamp(16px, 0.94rem + 0.45vw, 17px);
-  --fs-card-title: clamp(19px, 1.05rem + 0.85vw, 22px);
+     Small-screen display anchors reduced July 2026 (phone-readability pass):
+     h1 32→28, h1-large 38→32, subtitle 18→17. Desktop identity unchanged. */
+  --fs-body:      clamp(16px, 0.95rem + 0.20vw, 17px);
+  --fs-lede:      clamp(17px, 0.98rem + 0.55vw, 19px);
+  --fs-subtitle:  clamp(17px, 0.940rem + 0.543vw, 22px);
+  --fs-h1:        clamp(28px, 1.359rem + 1.739vw, 44px);
+  --fs-h1-large:  clamp(32px, 1.511rem + 2.174vw, 52px);
+  --fs-mark:      clamp(10px, 0.576rem + 0.217vw, 12px);
+  --fs-nav:       clamp(12.5px, 0.745rem + 0.163vw, 14px);
+  --pad-masthead: clamp(12px, 0.4rem + 1.4vw, 24px);
+  --fs-h3:        clamp(19px, 1.05rem + 0.85vw, 22px);
+  --fs-prose:     clamp(16px, 0.94rem + 0.45vw, 17px);
+  --fs-card-title:clamp(19px, 1.05rem + 0.85vw, 22px);
 
   /* Fluid spacing scale — keeps vertical rhythm proportional at every width */
   --space-section: clamp(40px, 5.2vw, 56px);
