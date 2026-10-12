@@ -14,17 +14,17 @@ These proper nouns appear in WP3 and are NOT in the base `npsi-korean-translatio
 | industrial offset | 산업 상쇄 / 절충교역 | 절충교역 is the ROK MND/DAPA term-of-record for offset procurement. Use 절충교역. |
 | Republic of Korea Navy operational demonstration | 대한민국 해군 작전 시연 | **[VERIFY]** for the May 23 event's official designation |
 | Canadian Forces Base Esquimalt (CFB Esquimalt) | 캐나다군 에스콰이몰트 기지 (CFB Esquimalt) | **[VERIFY]** |
-| Strategic Defence and Cooperation Partnership (SDCP) | 한-캐 안보·국방 협력 동반자 관계 (SDCP) | **[VERIFY]** — propose. Mirror the ROK government's own translation when possible. |
+| Strategic Defence and Cooperation Partnership (SDCP) | 한·캐나다 안보·국방 협력 동반자 관계 (SDCP) | **[VERIFY]** — propose. Mirror the ROK government's own translation when possible. |
 
 ## Bilateral agreements
 
 | English | Korean | Notes |
 |---|---|---|
-| Canada-Korea Free Trade Agreement (CKFTA) | 한-캐 자유무역협정 (CKFTA / 한-캐 FTA) | Use 한-캐 FTA in body; CKFTA in technical/legal references. |
-| Comprehensive Strategic Partnership (CSP, 2022) | 포괄적 전략 동반자 관계 (CSP) | This is the ROK MOFA term-of-record for the upgraded partnership tier. |
-| CSP Action Plan (2024) | 포괄적 전략 동반자 관계 행동계획 | **[VERIFY]** |
-| 2+2 Foreign and Defence Ministerial Meeting | 한-캐 외교·국방 (2+2) 장관회의 | The 2+2 convention is standard in Korean diplomatic press. |
-| Indo-Pacific Strategy (Canada, 2022) | 캐나다 인도-태평양 전략 (2022) | |
+| Canada-Korea Free Trade Agreement (CKFTA) | 한·캐나다 자유무역협정 (CKFTA / 한·캐나다 FTA) | Use 한·캐나다 FTA in body; CKFTA in technical/legal references. ROK government documents often hyphenate (한-캐나다 FTA); quote those as written. |
+| Comprehensive Strategic Partnership (CSP, 2022) | 포괄적 전략적 동반자 관계 (CSP) | **[VERIFY]** against the MOFA release. Korean diplomatic usage for this tier is 전략적, with -적 (as in 한·베트남 포괄적 전략적 동반자 관계); the earlier form here, 포괄적 전략 동반자 관계, dropped it. |
+| CSP Action Plan (2024) | 포괄적 전략적 동반자 관계 행동계획 | **[VERIFY]** |
+| 2+2 Foreign and Defence Ministerial Meeting | 한·캐나다 외교·국방 (2+2) 장관회의 | The 2+2 convention is standard in Korean diplomatic press. |
+| Indo-Pacific Strategy (Canada, 2022) | 캐나다 인도·태평양 전략 (2022) | The ROK government's own strategy document hyphenates (인도-태평양 전략); quote its title as written. |
 | Global Pivotal State Strategy (ROK, 2022) | 글로벌 중추국가 전략 (GPS) | This is the official ROK MOFA term. Use as-is. |
 
 ## Korean institutions (defence/procurement)
@@ -32,7 +32,7 @@ These proper nouns appear in WP3 and are NOT in the base `npsi-korean-translatio
 | English | Korean | Notes |
 |---|---|---|
 | Defense Acquisition Program Administration (DAPA) | 방위사업청 (DAPA) | ROK procurement agency |
-| Korean Defence Industry | 한국 방산 산업 / K-방산 | K-방산 is the Korean-market shorthand; 한국 방산 산업 in formal text. |
+| Korean Defence Industry | 한국 방위산업 / K-방산 | K-방산 is the Korean-market shorthand; 한국 방위산업 in formal text. Never 방산 산업: 방산 already abbreviates 방위산업. |
 | Hanwha Group | 한화그룹 / 한화 | |
 | Hanwha Aerospace | 한화에어로스페이스 | |
 | Hanwha Ocean | 한화오션 | The former DSME, now Hanwha-owned; relevant for KSS-III. |
@@ -45,8 +45,8 @@ These proper nouns appear in WP3 and are NOT in the base `npsi-korean-translatio
 | Canadian Commercial Corporation (CCC) | 캐나다 상업공사 (CCC) | **[VERIFY]** |
 | Automotive Parts Manufacturers' Association (APMA) | 캐나다 자동차부품제조협회 (APMA) | **[VERIFY]** |
 | Algoma Steel | 알고마 스틸 | |
-| Hanwha-Algoma Steel partnership | 한화-알고마 스틸 파트너십 | |
-| Hanwha-APMA structure | 한화-APMA 협력 구조 | **[VERIFY]** |
+| Hanwha-Algoma Steel partnership | 한화·알고마 스틸 파트너십 | |
+| Hanwha-APMA structure | 한화·APMA 협력 구조 | **[VERIFY]** |
 | Public Services and Procurement Canada (PSPC) | 캐나다 공공서비스조달부 (PSPC) | **[VERIFY]** |
 
 ## Technical and supply chain

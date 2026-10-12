@@ -7,7 +7,7 @@ description: >-
   existing small-screen value — so a live, brand-locked product renders
   pixel-identical at both anchor widths and only gains smooth interpolation in
   between (zero visual risk to adopt). Bundles ch-based measure, ISO-216 / A4
-  print, accessibility-safe zoom (mandatory rem term), and palette / zero-JS
+  print, accessibility-safe zoom (mandatory rem term on type), and palette / zero-JS
   guardrails, plus a clamp generator script and a review checklist. Use when
   building or auditing responsive CSS; designing a type or spacing scale; fluid
   typography; viewport / iPhone scaling; clamp(); modular scale; print
@@ -15,7 +15,7 @@ description: >-
 license: Complete terms in LICENSE.txt
 metadata:
   npsi.origin: cherishwins/npsi-site
-  npsi.version: "1.0"
+  npsi.version: "1.1"
 ---
 
 # Fluid Scale — identity-anchored responsive system
@@ -65,16 +65,22 @@ rem term    = (minPx - m * Wmin) / ROOT_PX           # ROOT_PX = 16
 result      = clamp(minPx, <rem>rem + <vw>vw, maxPx)
 ```
 
-**The `rem` term is mandatory.** A `clamp()` whose fluid part is *vw only*
-does not respond to the user's browser font-size and fails WCAG 1.4.4
-(text must scale to 200%). Always keep the `rem` component — it carries the
-user's zoom; `vw` carries the viewport. Never emit a vw-only clamp.
+**The `rem` term is mandatory for type.** A type `clamp()` whose fluid part
+is *vw only* does not respond to the user's browser font-size and fails WCAG
+1.4.4 (text must scale to 200%). Always keep the `rem` component on every
+`--fs-*` token — it carries the user's zoom; `vw` carries the viewport. Never
+emit a vw-only clamp for type.
+
+Spacing and container padding (`--space-*`, `--pad-x`) may be vw-only: WCAG
+1.4.4 concerns text, and a vw-only gutter keeps the layout proportional to the
+viewport. npsi.ca ships them that way. A rem term on spacing is allowed, not
+required; `scripts/clamp.py` always emits one.
 
 Use the bundled generator instead of doing this by hand:
 
 ```
-python3 scripts/clamp.py --min 32 --max 44 --wmin 360 --wmax 1280 --name fs-h1
-# → --fs-h1: clamp(32px, 1.707rem + 1.304vw, 44px);
+python3 scripts/clamp.py --min 28 --max 44 --wmin 360 --wmax 1280 --name fs-h1
+# → --fs-h1: clamp(28px, 1.359rem + 1.739vw, 44px);   (npsi.ca's shipped h1)
 ```
 
 Run it once per size and paste the tokens into `:root`.
@@ -158,7 +164,8 @@ p, .lede { text-wrap: pretty; }
 
 ## Hard guardrails
 
-- **Keep the `rem` term in every clamp.** Vw-only = broken zoom. Non-negotiable.
+- **Keep the `rem` term in every type clamp.** Vw-only type = broken zoom.
+  Non-negotiable. Spacing and padding may be vw-only.
 - **No new colours, no new typefaces, no JavaScript.** This skill is a CSS-only
   transform. If a brand spec defines a palette, the scale must not touch it.
 - **No per-breakpoint `font-size`.** The whole point is one continuous source
@@ -173,7 +180,8 @@ p, .lede { text-wrap: pretty; }
 ## Review checklist
 
 - [ ] Every type/space role is a single `var(--…)` backed by a `clamp()` token.
-- [ ] Every clamp has a `rem` term (zoom-safe) and `px` floor/ceiling.
+- [ ] Every type clamp has a `rem` term (zoom-safe); spacing may be vw-only.
+      Every clamp has a `px` floor/ceiling.
 - [ ] `max` == prior desktop value; `min` == prior small-screen value (spot-check 3).
 - [ ] `@media` block contains layout only — zero `font-size` declarations.
 - [ ] Prose width in `ch`, in the 66–75ch band.
@@ -185,6 +193,13 @@ p, .lede { text-wrap: pretty; }
 
 ## Canonical reference implementation
 
-`reference/npsi-tokens.css` is the production `:root` block from
-`cherishwins/npsi-site` — a correct, shipped instance of this protocol. Use it
-as the shape to emit; regenerate the numbers per project with `scripts/clamp.py`.
+`reference/npsi-tokens.css` is the production `:root` scale block from
+`cherishwins/npsi-site`, copied verbatim from `assets/css/site.css` (re-copy it
+when site.css changes). Use it as the shape to emit; regenerate the numbers per
+project with `scripts/clamp.py`. Its header says which tokens are exact
+generator output at 360/1280 (`--fs-subtitle`, `--fs-h1`, `--fs-h1-large`,
+`--fs-mark`, `--fs-nav`) and which are older hand-tuned values that reach
+their ceilings early; never copy the hand-tuned numbers.
+
+On npsi.ca the anchors are `Wmin = 360`, `Wmax = 1280`. 390px (iPhone-class)
+is the phone check width, not an anchor: there `--fs-h1` is 28.5px, not 28.

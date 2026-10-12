@@ -15,14 +15,30 @@ If a term is needed and not in this file, flag it in the translator notes rather
 | working paper | 워킹페이퍼 / 연구보고서 | 워킹페이퍼 is the standard Korean finance/policy term for the format. 연구보고서 ("research report") is the descriptive Korean term — use when 워킹페이퍼 would feel jargon-heavy. |
 | npsi.ca | npsi.ca | Do not transliterate URLs |
 
-## Working paper titles
+## Document titles
 
-| English | Korean | Notes |
-|---|---|---|
-| WP01 — Canada-Korea Pacific Infrastructure Facility | 한-캐 태평양 인프라 협력기구 (가칭) | **[VERIFY WITH JESSE]**. "가칭" (working/tentative title) is the Korean policy convention for titles not yet finalized. Alternate: 한-캐 태평양 인프라 시설. |
-| WP02 — Canada-US Energy and Compute Compact | 한-미 에너지·컴퓨팅 협정 | **[VERIFY WITH JESSE]**. Korean uses 가운뎃점 · between compound nouns, not hyphens. |
-| WP03 — ROKS Dosan Ahn Chang-ho Esquimalt Visit | 도산안창호함 에스콰이몰트 입항 (NPSI WP03) | **[VERIFY]**. Standard Korean naval term for a visit port call is 입항; for a working visit is 방문. |
-| WP04 — The Addition Paradox | 덧셈의 역설 | **[VERIFY WITH JESSE]** — propose this form. 덧셈 = addition (arithmetic operation); 역설 = paradox. Idiomatic Korean. |
+Canonical English titles are the ones in `registry.json` at the site root; check there before using any row. No Korean title below has been published. Every one is a proposal **[VERIFY WITH JESSE]** before it appears anywhere. Korean titles are noun phrases (style guide §1). Paired names take the 가운뎃점 (style guide §4).
+
+| ID | English (canonical) | Korean (proposed) | Notes |
+|---|---|---|---|
+| NPSI-WP-001 | The Bilateral Foundation | 양자 협력의 토대 | **[VERIFY WITH JESSE]**. Retitled May 2026. The old title, *A Canada–Korea Pacific Infrastructure Facility*, now names the CKPIF *instrument* only (row below), never the paper. Alternate: 양국 관계의 토대. |
+| — | Canada–Korea Pacific Infrastructure Facility (CKPIF; the instrument WP1 proposes) | 캐나다·한국 태평양 인프라 협력기구 (CKPIF, 가칭) | **[VERIFY WITH JESSE]**. "가칭" (working/tentative name) is the Korean policy convention for an instrument not yet established. |
+| NPSI-WP-002 | A Canada–United States Energy and Compute Compact | 캐나다·미국 에너지·컴퓨팅 협정 | **[VERIFY WITH JESSE]**. Canada–United States: never 한·미 or 한-미, which mean Korea–US. |
+| NPSI-WP-003 | A Canada–Korea Pacific Defence-Industrial Corridor | 캐나다·한국 태평양 방위산업 회랑 | **[VERIFY WITH JESSE]**. 회랑 for "corridor" matches the WP3 supplement. |
+| NPSI-WP-004 | The Addition Paradox | 덧셈의 역설 | **[VERIFY WITH JESSE]**. 덧셈 = addition (arithmetic operation); 역설 = paradox. Idiomatic Korean. |
+| NPSI-WP-005 | Sovereign Compute North | 북방의 주권 컴퓨팅 | **[VERIFY WITH JESSE]**. 주권 is the policy-register word; the Korean industry loanword is 소버린 (소버린 AI). Co-issued with Fit For Gov. |
+| NPSI-WP-007 | Dazzle 2.0 | 대즐 2.0 | **[VERIFY WITH JESSE]**. Counter-Autonomy series. Gloss once as 대즐 위장(dazzle camouflage); **[VERIFY]** the transliteration in Korean defence press. |
+| NPSI-WP-009 | The Counterparty Problem | 거래상대방 문제 | **[VERIFY WITH JESSE]**. 거래상대방 matches "counterparty risk" (거래상대방 위험) in the WP3 supplement. |
+| NPSI-WP-010 | Fair Use for We, IP Theft for Thee | 우리에겐 공정이용, 남에겐 지식재산 도용 | **[VERIFY WITH JESSE]**. Technical Series; superseded by WP11. 공정이용 is the Korean copyright-law term for fair use. |
+| NPSI-WP-011 | Rated AAA by the Issuer | 발행자가 매긴 AAA 등급 | **[VERIFY WITH JESSE]**. Technical Series; the current paper. |
+| NPSI-TB-001 | The Verified Sky | 검증된 하늘 | **[VERIFY WITH JESSE]**. |
+| NPSI-BN-001 | The Voter File | 유권자 파일 | **[VERIFY WITH JESSE]**. Canadian parties' voter databases; not 선거인명부 (the official electoral roll, a different thing). |
+| NPSI-SB-001 | Zero Secrets | 비밀 제로 | **[VERIFY WITH JESSE]**. |
+| NPSI-SB-002 | The Three Doors | 세 개의 문 | **[VERIFY WITH JESSE]**. |
+| NPSI-SB-003 | The Ledger With One Entry | 기재가 하나뿐인 장부 | **[VERIFY WITH JESSE]**. |
+| NPSI-20261003-B | The Tollgate Markets | 통행료 시장 | **[VERIFY WITH JESSE]**. Accession number; serial pending (never write NPSI-SB-004). |
+| NPSI-20261003-C | One Day, Four Names | 하루, 네 개의 이름 | **[VERIFY WITH JESSE]**. Accession number; serial pending (never write NPSI-SB-005). The day's two Korean names are published on the page: 광복절 (ROK) and 조국해방의 날 (DPRK; quote as written). |
+| NPSI-PL-001 | The Pacific Ledger | 태평양 원장 | **[VERIFY WITH JESSE]** for the title. The issue's Korean strapline is published on pl1: 캐나다·한국 관계 월간 브리프. Reuse it exactly. |
 
 ## Korean government and institutions
 
@@ -108,9 +124,6 @@ If a term is needed and not in this file, flag it in the translator notes rather
 
 | English | Korean | Notes |
 |---|---|---|
-| Murzuq Basin | 무르주크 분지 | **[VERIFY]** — Korean geological literature transliteration |
-| Libya | 리비아 | |
-| Tripoli | 트리폴리 | |
 | Gulf (region) | 걸프(지역) | |
 | Russia | 러시아 | |
 | Ukraine | 우크라이나 | |
