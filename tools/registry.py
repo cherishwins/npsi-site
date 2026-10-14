@@ -453,7 +453,7 @@ def item_html(d: dict, line: str) -> str:
     sub = f"\n      <p>{esc(d['subtitle'])}</p>" if d["subtitle"] else ""
     return f"""    <div class="ledger-item">
       <div class="wp-card-meta">{esc("  ·  ".join(meta))}</div>
-      <h4><a href="{d["url"]}">{esc(d["title"])}</a></h4>{sub}
+      <h3 class="minor"><a href="{d["url"]}">{esc(d["title"])}</a></h3>{sub}
       <p class="index-files">{" · ".join(files)}</p>
     </div>"""
 
@@ -590,15 +590,15 @@ def render_register(reg: dict) -> str:
 <section id="rules">
   <h2>How numbers are assigned</h2>
   <div class="standard">
-    <h4>Serials are the editor’s alone.</h4>
+    <h3 class="minor">Serials are the editor’s alone.</h3>
     <p>No serial is assigned by anyone or anything other than the editor, and none is assigned before publication. A document released before its serial is assigned carries its accession number and is listed here as <em>serial pending</em> until the editor rules.</p>
   </div>
   <div class="standard">
-    <h4>Accession numbers are permanent.</h4>
+    <h3 class="minor">Accession numbers are permanent.</h3>
     <p>The accession number records the date a document entered the system and distinguishes documents that entered the same day by a letter suffix. It never changes, even after a serial is assigned, and it is printed on the release.</p>
   </div>
   <div class="standard">
-    <h4>Gaps are declared.</h4>
+    <h3 class="minor">Gaps are declared.</h3>
     <p>A number that was reserved and never released stays on the register as such. The archive is ordered by publication date; the register is ordered by number. Both are kept.</p>
   </div>
 </section>
@@ -614,7 +614,7 @@ def compact_item(d: dict) -> str:
     if d["status"] == "superseded":
         meta += "  \u00b7  Superseded"
     return (f'    <div class="ledger-item">\n      <div class="wp-card-meta">{esc(meta)}</div>\n'
-            f'      <h4><a href="{d["url"]}">{esc(d["title"])}</a></h4>\n    </div>')
+            f'      <h3 class="minor"><a href="{d["url"]}">{esc(d["title"])}</a></h3>\n    </div>')
 
 
 def commentary_row(d: dict) -> str:

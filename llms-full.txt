@@ -4,7 +4,7 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Index last revised 6 October 2026; status lines
+the imprint has published. Index last revised 14 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
@@ -12,9 +12,10 @@ v[M.m]). North Pacific Strategy Initiative. https://npsi.ca/wp[N]/. Substitute
 Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
-briefings), NPSI-PL-NNN (The Pacific Ledger, the monthly Canada–Korea account);
-Special Briefings Nos. 4 and 5 keep the date-based IDs printed on their
-releases (NPSI-20261003-B, NPSI-20261003-C). Every document has an HTML page at its
+briefings), NPSI-PL-NNN (The Pacific Ledger, the Canada–Korea account); Special
+Briefings Nos. 4, 5 and 6 and Ledger №02 keep the date-based IDs printed on
+their releases (NPSI-20261003-B, NPSI-20261003-C, NPSI-20261002-A,
+NPSI-20261001-A), accession numbers whose publication serials are pending. Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
 PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
 canonical release document; WP10 and SB3 have release pages rather than full
@@ -198,8 +199,8 @@ Strategic preface to the three-rail architecture (WP1, WP2, WP3).
 
 ## Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor
 
-- ID: NPSI-WP-003 · v1.0.1 · first published May 2026; revised 29 July 2026
-- Canonical: https://npsi.ca/wp3/ · PDF (30 pp.): https://npsi.ca/wp3/working-paper.pdf
+- ID: NPSI-WP-003 · v1.0.2 · first published May 2026; revised 29 July 2026 and 14 October 2026 (errata; editor's note on the 6 July 2026 CPSP decision — TKMS preferred supplier, Hanwha Ocean reserve)
+- Canonical: https://npsi.ca/wp3/ · PDF (32 pp.): https://npsi.ca/wp3/working-paper.pdf
 - Keywords: Canada, Korea, CPSP, submarines, KSS-III, Hanwha, defence-industrial, bilateral defence cooperation, CKFTA, SDCP
 
 Abstract: A bilateral defence-industrial architecture pairing the Canadian
@@ -210,16 +211,16 @@ Ministerial Joint Statement.
 
 Key findings: The Canadian Patrol Submarine Project (up to 12 boats by 2035;
 Hanwha Ocean and TKMS confirmed as the two qualified suppliers, 19 August 2025)
-read against Korea's offset posture: the binding Hanwha–Algoma MOU
-(26 January 2026) and the conditional Hanwha–APMA MOU (29 April 2026), with the
+read against Korea's offset posture: the binding but conditional Hanwha–Algoma MOU (26 January 2026; suspended by
+Algoma 29 July 2026) and the conditional Hanwha–APMA MOU (29 April 2026), with the
 30 October 2025 Carney–Lee Security and Defence Cooperation Partnership as the
 institutional anchor. Completes the three-rail Pacific architecture as the
 defence-industrial rail alongside WP1 (financial) and WP2 (energy/compute).
 
 ## Working Paper No. 2 — A Canada–United States Energy and Compute Compact
 
-- ID: NPSI-WP-002 · v1.0 · May 2026
-- Canonical: https://npsi.ca/wp2/ · PDF (45 pp.): https://npsi.ca/wp2/working-paper.pdf
+- ID: NPSI-WP-002 · v1.0.1 · May 2026; errata 14 October 2026
+- Canonical: https://npsi.ca/wp2/ · PDF (46 pp.): https://npsi.ca/wp2/working-paper.pdf
 - Keywords: Canada, United States, CUSMA, AI compute, hydroelectricity, ultra-high-voltage transmission, bilateral compact
 
 Abstract: A treaty-grade bilateral architecture pairing Canadian dispatchable
@@ -229,19 +230,21 @@ inference workloads at the U.S. urban edge. Structurally complementary to
 Working Paper No. 1; financed through the same supranational vehicle.
 
 Key findings: The U.S. faces a structural capacity gap (~44 GW required by 2028
-against ~25 GW deliverable); combined dispatchable Canadian hydro is
+against ~25 GW deliverable, the paper's own derivation from the LBNL 2028
+demand range); combined dispatchable Canadian hydro is
 approximately 56,000 MW across Hydro-Québec, BC Hydro, and Manitoba Hydro. AI
 workloads bifurcate — training is latency-agnostic and can sit on Canadian
-hydro, inference stays at the U.S. urban edge — and roughly 80 percent of AI
-critical-IT load is inference by 2030. Three corridor candidates
+hydro, inference stays at the U.S. urban edge — and inference, roughly at parity
+with training today, reaches about 60 percent of AI compute capacity by 2030
+(~22% against ~35% CAGR). Three corridor candidates
 (Saguenay/Côte-Nord, Peace River/Bennett, Northern Manitoba), an Indigenous
 Series II tranche of 10–15 percent of compact capex, and survival independent
 of CUSMA renewal.
 
 ## Working Paper No. 1 — The Bilateral Foundation
 
-- ID: NPSI-WP-001 · v1.0 · May 2026
-- Canonical: https://npsi.ca/wp1/ · PDF: https://npsi.ca/wp1/working-paper.pdf
+- ID: NPSI-WP-001 · v1.0.1 · May 2026 (technical specification, April 2026 — the reading view; essay edition PDF, 15 May 2026); errata 14 October 2026
+- Canonical (technical specification): https://npsi.ca/wp1/ · PDF (essay edition, 15 May 2026, 17 pp., stands as issued with its errata declared on the page): https://npsi.ca/wp1/working-paper.pdf
 - Keywords: Canada, Korea, sovereign bonds, CKPIF, Pacific architecture, bilateral finance, middle-power policy
 
 Abstract: A thirty-year Canada–Korea co-issued sovereign infrastructure bond —
@@ -260,32 +263,80 @@ tranche of US$200–500 million on Project Agorá-class infrastructure. The
 institutional foundation is the Bank of Canada–Bank of Korea standing swap
 line, signed November 2017, with no expiry and no preset limit.
 
+## The Pacific Ledger — №02 · October 2026
+
+- ID: NPSI-20261001-A (accession number; publication serial pending) · The Pacific Ledger · issue closed 1 October 2026; published 14 October 2026 with pre-publication corrections applied
+- Canonical: https://npsi.ca/pl2/ · PDF (10 pp., printed from the reading view): https://npsi.ca/pl2/pacific-ledger.pdf
+- Series: The Pacific Ledger is the imprint's account of the Canada–Korea relationship — every entry sourced, both sides recorded. Issues close when the account warrants one (№01 closed 28 July 2026; №02 closed 1 October 2026).
+- Keywords: Canada, Korea, foreign direct investment, Canadian Patrol Submarine Project, Hanwha Ocean, TKMS, Project Beaver, Algoma Steel, NextStar Energy, Ultium CAM, LNG Canada, CUSMA, Pacific
+
+Abstract: The second issue carries one entry: the editor's sorting of every
+Korean commitment made around the Canadian Patrol Submarine Project after
+Ottawa named TKMS preferred supplier on 6 July 2026 and designated Hanwha
+Ocean reserve supplier. Thirteen commitments are tiered by condition: five
+contingent on a Hanwha Ocean award, which have lapsed, been suspended,
+shelved or sit under review; five bid-linked with no stated condition, which
+continue as research, trade and intent; and three independent of the bid,
+the only ones with capital in the ground. NextStar in Windsor and KOGAS's
+5 percent stake in LNG Canada are operating; Ultium CAM in Bécancour is
+scheduled to start production in late October 2026.
+
+Key entries: The Korean bid, led by Hanwha Ocean with HD Hyundai Heavy
+Industries, carried a headline of more than C$70 billion in trade and
+investment (Globe and Mail, 6 July); DAPA said within three weeks that its
+pledge was conditional from the outset. Contingent: DAPA package (lapsed);
+Hanwha Ocean–Algoma binding MOU of 26 January 2026, up to US$250M (about
+C$345M at signing), suspended by Algoma on 29 July 2026 "unless and until
+Hanwha Ocean is selected"; Project Beaver, more than C$3.1B and about 9,000
+jobs from 2030, under review per Hyundai (23 July) after a reported
+withdrawal (9 July); Hanwha–APMA military-vehicle joint venture, shelved;
+Hanwha Ocean–Ontario Shipyards–Mohawk College training hub, stopped.
+Bid-linked, continuing: LIG D&A (formerly LIG Nex1); HD Hyundai Oilbank crude
+("trillions of won over the programme"); HD KSOE research MOU with UBC (8 June
+2026); Cohere's AI collaboration with Hanwha; the envoy's energy expansion
+pitch (LNG Canada stake from about C$1.6B to C$3.2B; 16M barrels of crude in
+2026, up to 20M in 2027). Independent: NextStar (more than C$5B; cells since
+November 2025; Stellantis's 49 percent sold for a nominal US$100, closed
+31 March 2026 per Stellantis's SEC filings); Ultium CAM (POSCO Future M 85
+percent; phase 1 about C$600M; phase 2 on hold indefinitely); KOGAS in LNG
+Canada. Watch: record conditionality as a field; keep metric types apart
+(C$70B trade and investment, >C$120B GDP, C$167B economic activity are not
+FDI); treat contingent pledges as dormant, not dead (Ottawa contracts by
+end-2027 and may designate Hanwha Ocean if talks fail); convert what survives
+through the January 2026 Canada–Korea Industrial Cooperation Committee, with
+the Productivity Mega Deduction announced 15 September 2026 improving the
+standalone arithmetic. Interest note on the three energy entries; AI
+assistance (Claude) stated; open items published (Beaver's status, Ultium
+CAM's start, cathode material under the 22 August US duties).
+
 ## The Pacific Ledger — №01 · July 2026 (Premier Issue)
 
-- ID: NPSI-PL-001 · The Pacific Ledger (monthly) · issue closed 28 July 2026
+- ID: NPSI-PL-001 · The Pacific Ledger · issue closed 28 July 2026 · v1.0.1, corrected 14 October 2026 (author PDF of 28 July stands as issued)
 - Canonical: https://npsi.ca/pl1/ · PDF (7 pp.): https://npsi.ca/pl1/pacific-ledger.pdf
-- Series: The Pacific Ledger is the imprint's monthly account of the Canada–Korea relationship — every entry sourced, both sides recorded. Document IDs follow NPSI-PL-NNN.
+- Series: The Pacific Ledger is the imprint's account of the Canada–Korea relationship — every entry sourced, both sides recorded. Issues close when the account warrants one. Document IDs follow NPSI-PL-NNN.
 - Keywords: Canada, Korea, trade, LNG, crude oil, batteries, critical minerals, submarine procurement, CKFTA, Kapyong, Pacific
 
-Abstract: A monthly account of the Canada–Korea relationship. Premier issue: on
+Abstract: The Canada–Korea account. Premier issue: on
 July 6 Canada named TKMS preferred supplier for the Canadian Patrol Submarine
 Project over Hanwha's KSS-III — and the relationship spent the rest of the
 month posting new entries anyway. The ledger records LNG Canada's first cargo
 into KOGAS's Incheon terminal (Kitimat May 20 → Incheon June 3), a planned rise
-of up to 3.3× in Canadian crude to Korea, LG Energy Solution's agreed buyout of
-the NextStar battery plant (closing scheduled for June 2026), a joint
+of up to 3.3× in Canadian crude to Korea, LG Energy Solution's buyout of the
+NextStar battery plant (agreed 6 February, closed 31 March 2026), a joint
 critical-minerals stockpiling plan due end-2026, fifty years of CANDU–KHNP
 collaboration, Defence Cooperation Agreement negotiations launched at the
 June 16 G7 bilateral, and Kapyong at 75.
 
 Key entries: Two-way merchandise trade C$25 billion in 2025; Korea is Canada's
-seventh-largest trading partner; Korean FDI stock in Canada C$17.6 billion; 99
-percent duty-free under CKFTA. Korea's Middle East LNG dependence fell from 45
-percent (2022) to 24 percent (2025), projected under 18 percent in 2026; "not a
+seventh-largest trading partner; Korean direct investment stock in Canada
+C$17.6 billion at end-2025 by ultimate investor (C$14.4 billion by immediate
+investor); 99 percent of Canadian exports to Korea eligible for duty-free
+access under CKFTA. Korea's Middle East LNG dependence fell from 45
+percent (2022) to 24 percent (2025), with a KOGAS target of 18 percent or less for 2026; "not a
 single Korean LNG carrier is trapped inside the Strait of Hormuz" (KOGAS CEO
 Choi Yeon-hye, June 5). Canadian crude to Korea expands from 4.88
-million barrels (2025) to as much as 16 million (2026) — third-largest buyer
-after the U.S. and China. Debit column recorded honestly: Hanwha's contingent
+million barrels (2025) to as much as 16 million (2026) — at that volume Korea
+would become the third-largest buyer after the U.S. and China. Debit column recorded honestly: Hanwha's contingent
 armoured-vehicle JV and DAPA equity stake shelved; Hyundai's Project Beaver
 carried as unresolved. Open items published: the Korean masthead subtitle is
 pending native-speaker review; the late-July DPRK troop-deployment figure is a
@@ -293,7 +344,7 @@ claim, not a confirmation.
 
 ## Technical Briefing No. 1 — The Verified Sky
 
-- ID: NPSI-TB-001 · v1.0 · 11 June 2026
+- ID: NPSI-TB-001 · v1.0.1 · 11 June 2026 · errata 14 October 2026
 - Canonical: https://npsi.ca/tb1/ · PDF: https://npsi.ca/tb1/technical-briefing.pdf
 - Keywords: airspace awareness, computer vision, sensor fusion, counter-UAS, Remote ID, verification architecture, edge AI, Canada, Radiocommunication Act, PIPEDA
 
@@ -316,7 +367,7 @@ are not. Explicitly a technical and regulatory survey, not legal advice.
 
 ## Briefing Note No. 1 — The Voter File
 
-- ID: NPSI-BN-001 · v1.0 · 11 June 2026
+- ID: NPSI-BN-001 · v1.0.1 · 11 June 2026 · errata 14 October 2026
 - Canonical: https://npsi.ca/bn1/ · PDF: https://npsi.ca/bn1/briefing-note.pdf
 - Keywords: voter files, political parties, privacy law, Canada Elections Act, Bill C-4, PIPEDA, data-driven campaigning, microtargeting
 
@@ -331,10 +382,59 @@ retroactive to 2000.
 Key findings: The five-layer file documented end to end, with the legal
 chronology: PIPEDA never applied; Bill C-76 (2018) required only a published
 privacy policy; BC OIPC Order P22-02 (2022) and the 2024 BC Supreme Court
-judicial review found BC PIPA could apply; Bill C-4 Part 4 (royal assent
-March 2026) closed that path retroactive to 2000, with the Senate's three-year
+judicial review found BC PIPA could apply; Bill C-4 Part 4 (S.C. 2026, c. 2;
+royal assent 12 March 2026) excluded federal parties from provincial and
+territorial privacy law retroactive to 2000, leaving voters no right of access
+or correction, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
+
+## Special Briefing No. 6 — The Walk-Away Price
+
+- ID: NPSI-20261002-A (accession number; publication serial pending) · v1.0 · assessment dated 2 October 2026; published 14 October 2026 with pre-publication corrections applied
+- Canonical: https://npsi.ca/sb6/ (reading view) · PDF (27 pp., printed from the reading view): https://npsi.ca/sb6/special-briefing.pdf
+- Keywords: Korea, United States, Strategic Investment MOU, Alaska LNG, refusal right, Special Act, IEEPA, Section 301, Section 232, tariffs, Hormuz, 123 Agreement
+- Notes: written in the author's voice, with recommendations addressed to Korea's Consultation Committee; carries a declared-interests note (the editor's work for an international energy facilitation firm, Korea Pro's paid commission of July 2026, AI drafting assistance; https://npsi.ca/disclosure/). The page carries eight sections, six figures (one table, five SVG), a dated postscript on the President's remarks of 2 October, 63 numbered sources, and a note listing what the pre-publication source check corrected. The text speaks as of 2 October 2026.
+
+Abstract: Korea wired the first $2.4 billion of its $200 billion US
+strategic-investment commitment on 1 October 2026 and, the same day, protested
+the way Washington had announced the Alaska LNG project. It reads both against
+the texts: the Strategic Investment MOU, whose written price of refusal, a
+diversion of Korea's returns equal to the unfunded amount plus a tariff remedy,
+is rarely quoted whole; the $20 billion annual cap; Korea's Special Act; and
+the Supreme Court's February ruling, which moved any tariff penalty to a
+Section 301 docket or the Section 232 auto rate. It prices a first refusal on
+Alaska and names the disbursement, the reactor advance of up to $10 billion,
+where Seoul's refusal buys something money cannot.
+
+Key findings: The MOU's refusal right (¶9) is written down and real, but the
+MOU itself creates no legally binding rights (¶25); what binds Seoul is its
+own Special Act of 12 March 2026, and the operating agreement that would make
+the $20 billion annual cap and the $200 billion total binding was agreed on
+1 October, not signed. The written price of refusal has two parts: Korea's
+returns on funded projects are diverted until Washington has recovered a sum
+equal to the unfunded amount, and the United States "may also" impose tariffs
+at a rate determined by the President with no stated ceiling; Japan's MOU of
+4 September 2025 (¶8) carries the identical clause, and what Japan lacks is
+the cap, the commercial-reasonableness test and a Korean-chaired Consultation
+Committee. After Learning Resources, Inc. v. Trump (20 February 2026, 6–3,
+IEEPA does not authorise tariffs), a penalty must travel through a Section 301
+docket, slower and reviewable, or the Section 232 auto rate (15 percent from
+1 November 2025), which the ruling left alone; only the reciprocal part of the
+26 January 25-percent threat ran on IEEPA and it was never given effect.
+Alaska LNG is the first test of the clause: Lutnick's "just over $50 billion"
+against $57.7 billion of room if the nuclear framework (up to $120 billion) is
+drawn in full and a Glenfarne whole-project estimate of $44.5–54.5 billion;
+Glenfarne holds 13 of the 16 million tonnes a year it needs under preliminary
+agreements, and KOGAS is not among the buyers. A ten-point tariff rise on
+$122.9 billion of 2025 exports is about $12 billion a year gross, about $49
+billion over four years, a static illustration rather than a forecast. The
+moment to spend the refusal is the advance of up to $10 billion for reactor
+components the two sides agreed to work toward before year-end, set against
+the undated second round of 123 Agreement talks. Postscript: on 2 October, US
+time, the President said "I'll just charge them more" and "double it up", and
+posted an $8.4 billion oil-production project not in the agreement, which
+Seoul has not confirmed.
 
 ## Special Briefing No. 5 — One Day, Four Names
 
@@ -408,7 +508,7 @@ median fine, referrals and convictions, pay-to-close route).
 
 ## Special Briefing No. 3 — The Ledger With One Entry
 
-- ID: NPSI-SB-003 · v1.0 · issued 26 July 2026 (reporting cut-off 22 July 2026); integrated 29 July 2026
+- ID: NPSI-SB-003 · v1.0.1 (page, 14 October 2026) · PDF v1.0 issued 26 July 2026 (reporting cut-off 22 July 2026); integrated 29 July 2026
 - Canonical: https://npsi.ca/sb3/ · PDF (39 pp., canonical): https://npsi.ca/sb3/special-briefing.pdf
 - Companions: WP9 (counterparty reliability), WP1 (diversification thesis), SB1 (jurisdictional exposure)
 - Keywords: Venezuela, oil revenue, asset custody, sanctions, escrow, accountability, TRIA, Crystallex, oil-for-food, counterparty risk
@@ -440,25 +540,33 @@ parties; four named unclassified documents would settle the accounting.
 
 ## Special Briefing No. 2 — The Three Doors
 
-- ID: NPSI-SB-002 · v1.0 · 2 July 2026
+- ID: NPSI-SB-002 · v1.0.1 · 2 July 2026 · corrected 14 October 2026 (PDF v1.0 canonical)
 - Canonical: https://npsi.ca/sb2/ · PDF (canonical): https://npsi.ca/sb2/special-briefing.pdf
-- Keywords: critical minerals, Defense Production Act, domestic source, Canada, mining finance, DPA Title III, Energy Act 18743, EXIM, supply chain
+- Keywords: critical minerals, Defense Production Act, domestic source, Canada, mining finance, DPA Title III, Infrastructure Investment and Jobs Act, 42 U.S.C. 18743, EXIM, supply chain
 
 Abstract: Under U.S. defense law, Canada has been a domestic source since 1992
-(50 U.S.C. §4552). Canadian companies qualify for American defense-industrial
-grants, loans, and loan guarantees on the same footing as a firm in Ohio. This
-briefing maps the three doors — Defense Production Act Title III, Energy Act of
-2020 §18743, and the Export-Import Bank's Supply Chain Resiliency Initiative —
-and the navigation moat that stalls applicants.
+(50 U.S.C. §4552), so Canadian companies apply for Defense Production Act
+Title III money on the same footing as a firm in Ohio. This briefing maps that
+door and two others that do not depend on it: the Department of Energy's
+pilot-project grants under §40210 of the Infrastructure Investment and Jobs Act
+(42 U.S.C. §18743), which require a U.S. site or a U.S. partner that has one,
+and the Export-Import Bank's Supply Chain Resiliency Initiative, which finances
+foreign projects on the strength of U.S. offtake — and the navigation moat that
+stalls applicants.
 
-Key findings: A ten-panel briefing built around the 1992 domestic-source
-provision and the three federal funding doors it opens for Canadian critical-
-minerals producers, with the navigation moat — not eligibility — identified as
-the binding constraint.
+Key findings: A ten-panel briefing on three doors to U.S. federal money for
+Canadian critical-minerals producers. Only Door One, DPA Title III, rests on
+the 1992 domestic-source provision (50 U.S.C. §4552), under which Canadian
+firms apply on Canadian ground; Door Two, the Department of Energy pilot grants
+under §40210 of the Infrastructure Investment and Jobs Act (42 U.S.C. §18743),
+requires a U.S. site or a U.S. partner that has one; Door Three, EXIM's Supply
+Chain Resiliency Initiative, finances foreign projects on the strength of
+long-term offtake with U.S. buyers. The navigation moat — not eligibility — is
+identified as the binding constraint.
 
 ## Special Briefing No. 1 — Zero Secrets
 
-- ID: NPSI-SB-001 · v1.0 · 11 June 2026
+- ID: NPSI-SB-001 · v1.0.1 · 11 June 2026 · errata 14 October 2026
 - Canonical: https://npsi.ca/sb1/ · PDF: https://npsi.ca/sb1/special-briefing.pdf
 - Companion: WP5 — Sovereign Compute North (the constructive proposal)
 - Keywords: data sovereignty, CLOUD Act, FISA 702, sovereign AI, sovereign compute, cloud jurisdiction, Investment Canada Act, Canada
@@ -484,14 +592,14 @@ fairly.
 
 ## The Imprint
 
-- The Pacific Ledger: https://npsi.ca/ledger/ — the monthly publication's home; current issue and archive.
+- The Pacific Ledger: https://npsi.ca/ledger/ — the publication's home; current issue and archive.
 - Working Papers index: https://npsi.ca/papers/ — every working paper by publication date; the current paper, the archive, the numbering.
 - Briefings index: https://npsi.ca/briefings/ — Technical Briefings, Briefing Notes and Special Briefings, by publication date.
 - The Number Register: https://npsi.ca/register/ — every identifier the imprint has assigned: publication serials, accession numbers (NPSI-YYYYMMDD-X, assigned at intake, immutable), and reserved numbers never released. Machine-readable: https://npsi.ca/registry.json
 - About: https://npsi.ca/about/ — mandate, methodology, editorial standards.
 - Disclosure: https://npsi.ca/disclosure/ — declaration of interests: who writes and funds the imprint, every outside interest of the editor's that touches published subject matter, and which papers each interest touches.
 - Engage: https://npsi.ca/engage/ — contribution standards for named commentary, corrections, and technical critique.
-- Commentary: https://npsi.ca/commentary/ — named commentary index, per paper.
+- Commentary: https://npsi.ca/commentary/ — named commentary: one table of every document open for response.
 - Colophon: https://npsi.ca/colophon/ — type, palette, infrastructure.
 - Sitemap: https://npsi.ca/sitemap.xml
 - Repository: https://github.com/cherishwins/npsi-site — public version-controlled source for the site and papers, with CITATION.cff for academic reuse.

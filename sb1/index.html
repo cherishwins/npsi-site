@@ -90,7 +90,7 @@
      avoid colliding with site.css components. */
 
   /* Signature element: the hollow redaction bar — nothing left to redact */
-  .sb-redaction{
+  .sb-redaction {
     display: block;
     width: 220px;
     height: 30px;
@@ -98,7 +98,7 @@
     position: relative;
     margin: 0 0 24px;
   }
-  .sb-redaction::after{
+  .sb-redaction::after {
     content: "NOTHING LEFT TO REDACT";
     position: absolute;
     inset: 0;
@@ -112,14 +112,14 @@
     color: var(--teal);
   }
 
-  .sb-exec{
+  .sb-exec {
     background: var(--paper);
     border: 0.5px solid var(--rule);
     border-left: 2px solid var(--bronze);
     padding: 28px 30px 16px;
     margin: 8px 0 0;
   }
-  .sb-exec .label{
+  .sb-exec .label {
     font-family: var(--font-mono);
     font-size: 10.5px;
     letter-spacing: 0.22em;
@@ -127,19 +127,19 @@
     color: var(--bronze);
     margin-bottom: 18px;
   }
-  .sb-exec p{ font-size: 15.5px; line-height: 1.6; }
-  .sb-exec p:first-of-type{ font-size: 17px; }
+  .sb-exec p { font-size: 15.5px; line-height: 1.6; }
+  .sb-exec p:first-of-type { font-size: 17px; }
 
-  ol.sb-findings{ list-style: none; counter-reset: f; margin: 8px 0 0; }
-  ol.sb-findings li{
+  ol.sb-findings { list-style: none; counter-reset: f; margin: 8px 0 0; }
+  ol.sb-findings li {
     counter-increment: f;
     border-top: 0.5px solid var(--rule);
     padding: 24px 0 24px 58px;
     position: relative;
     margin: 0;
   }
-  ol.sb-findings li:last-child{ border-bottom: 0.5px solid var(--rule); }
-  ol.sb-findings li::before{
+  ol.sb-findings li:last-child { border-bottom: 0.5px solid var(--rule); }
+  ol.sb-findings li::before {
     content: counter(f, decimal-leading-zero);
     position: absolute;
     left: 0;
@@ -149,17 +149,17 @@
     font-weight: 500;
     color: var(--bronze);
   }
-  ol.sb-findings li p{ margin-bottom: 0; }
-  ol.sb-findings .fhead{ display: block; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+  ol.sb-findings li p { margin-bottom: 0; }
+  ol.sb-findings .fhead { display: block; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
 
-  .sb-src{
+  .sb-src {
     font-family: var(--font-mono);
     font-size: 11.5px;
     color: var(--teal);
     letter-spacing: 0;
   }
 
-  .sb-stats{
+  .sb-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 1px;
@@ -167,8 +167,8 @@
     border: 0.5px solid var(--rule);
     margin: 32px 0;
   }
-  .sb-stat{ background: var(--paper); padding: 22px 20px; }
-  .sb-stat .n{
+  .sb-stat { background: var(--paper); padding: 22px 20px; }
+  .sb-stat .n {
     font-family: var(--font-mono);
     font-weight: 500;
     font-size: clamp(22px, 1.228rem + 0.652vw, 28px);
@@ -177,7 +177,7 @@
     line-height: 1.1;
     margin-bottom: 8px;
   }
-  .sb-stat .d{
+  .sb-stat .d {
     font-family: var(--font-sans);
     font-size: 12.5px;
     color: var(--teal);
@@ -185,21 +185,21 @@
     display: block;
   }
 
-  .table-scroll{ overflow-x: auto; margin: 24px 0 28px; }
+  .table-scroll { overflow-x: auto; margin: 24px 0 28px; }
   @media (min-width: 980px){
-    .table-scroll{
+    .table-scroll {
       width: 860px;
       margin-left: calc((100% - 860px) / 2);
     }
   }
-  .sb-table{
+  .sb-table {
     width: 100%;
     min-width: 560px;
     border-collapse: collapse;
     font-family: var(--font-sans);
     font-size: 14.5px;
   }
-  .sb-table caption{
+  .sb-table caption {
     caption-side: top;
     text-align: left;
     font-family: var(--font-mono);
@@ -209,7 +209,7 @@
     text-transform: uppercase;
     padding-bottom: 10px;
   }
-  .sb-table th{
+  .sb-table th {
     text-align: left;
     font-weight: 600;
     color: var(--navy);
@@ -219,21 +219,21 @@
     border-bottom: 1.5px solid var(--navy);
     padding: 8px 14px 8px 0;
   }
-  .sb-table td{
+  .sb-table td {
     border-bottom: 0.5px solid var(--rule);
     padding: 10px 14px 10px 0;
     vertical-align: top;
     color: var(--ink);
   }
-  .sb-table td:last-child, .sb-table th:last-child{ padding-right: 0; }
+  .sb-table td:last-child, .sb-table th:last-child { padding-right: 0; }
 
-  .sb-stage{
+  .sb-stage {
     background: var(--paper);
     border: 0.5px solid var(--rule);
     padding: 26px 28px;
     margin-bottom: 18px;
   }
-  .sb-stage .stage-k{
+  .sb-stage .stage-k {
     font-family: var(--font-mono);
     font-size: 10.5px;
     letter-spacing: 0.18em;
@@ -242,16 +242,16 @@
     display: block;
     margin-bottom: 6px;
   }
-  .sb-stage h3{ margin: 0 0 16px; }
-  .sb-stage ol{ list-style: none; counter-reset: r; margin: 0; }
-  .sb-stage ol li{
+  .sb-stage h3 { margin: 0 0 16px; }
+  .sb-stage ol { list-style: none; counter-reset: r; margin: 0; }
+  .sb-stage ol li {
     counter-increment: r;
     position: relative;
     padding: 0 0 16px 38px;
     margin: 0;
   }
-  .sb-stage ol li:last-child{ padding-bottom: 0; }
-  .sb-stage ol li::before{
+  .sb-stage ol li:last-child { padding-bottom: 0; }
+  .sb-stage ol li::before {
     content: counter(r);
     position: absolute;
     left: 0;
@@ -267,14 +267,14 @@
     font-weight: 500;
     color: var(--bronze);
   }
-  .sb-bench{
+  .sb-bench {
     display: block;
     margin-top: 8px;
     font-family: var(--font-mono);
     font-size: 12px;
     color: var(--teal);
   }
-  .sb-bench::before{
+  .sb-bench::before {
     content: "BENCHMARK → ";
     color: var(--bronze);
     font-weight: 500;
@@ -282,13 +282,13 @@
     font-size: 10px;
   }
 
-  .sb-caveat{ border-top: 0.5px solid var(--rule); padding: 22px 0; }
-  .sb-caveat:last-of-type{ border-bottom: 0.5px solid var(--rule); }
-  .sb-caveat .ch{ font-weight: 600; color: var(--navy); display: block; margin-bottom: 8px; }
-  .sb-caveat p{ margin-bottom: 0; }
+  .sb-caveat { border-top: 0.5px solid var(--rule); padding: 22px 0; }
+  .sb-caveat:last-of-type { border-bottom: 0.5px solid var(--rule); }
+  .sb-caveat .ch { font-weight: 600; color: var(--navy); display: block; margin-bottom: 8px; }
+  .sb-caveat p { margin-bottom: 0; }
 
-  ol.fn{ counter-reset: fnc; list-style: none; margin: 18px 0 0 0; }
-  ol.fn li{
+  ol.fn { counter-reset: fnc; list-style: none; margin: 18px 0 0 0; }
+  ol.fn li {
     counter-increment: fnc;
     font-size: 13.5px;
     line-height: 1.55;
@@ -298,7 +298,7 @@
     padding-left: 34px;
     position: relative;
   }
-  ol.fn li::before{
+  ol.fn li::before {
     content: counter(fnc, decimal-leading-zero);
     font-family: var(--font-mono);
     font-size: 11px;
@@ -308,8 +308,8 @@
     top: 3px;
   }
 
-  .sb-series{ margin-top: 12px; }
-  .sb-series-item{
+  .sb-series { margin-top: 12px; }
+  .sb-series-item {
     display: grid;
     grid-template-columns: 64px 1fr;
     gap: 16px;
@@ -317,18 +317,18 @@
     border-bottom: 0.5px solid var(--rule);
     font-size: 15px;
   }
-  .sb-series-id{
+  .sb-series-id {
     font-family: var(--font-mono);
     font-size: 12px;
     color: var(--teal);
     padding-top: 2px;
   }
-  .sb-series-item.current .sb-series-id{ color: var(--bronze); }
-  .sb-series-item.current div:last-child{ color: var(--navy); font-weight: 600; }
-  .sb-series-item em{ color: var(--bronze); font-weight: 400; }
+  .sb-series-item.current .sb-series-id { color: var(--bronze); }
+  .sb-series-item.current div:last-child { color: var(--navy); font-weight: 600; }
+  .sb-series-item em { color: var(--bronze); font-weight: 400; }
 
-  .endmark{ text-align: center; margin: 64px 0 0; }
-  .endmark .em-line{
+  .endmark { text-align: center; margin: 64px 0 0; }
+  .endmark .em-line {
     font-family: var(--font-mono);
     font-size: 10px;
     letter-spacing: 0.3em;
@@ -336,8 +336,8 @@
     text-transform: uppercase;
     margin-bottom: 26px;
   }
-  .endmark .em-rule{ width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
-  .endmark .em-quote{
+  .endmark .em-rule { width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
+  .endmark .em-quote {
     font-style: italic;
     font-size: 17px;
     color: var(--navy);
@@ -345,7 +345,7 @@
     margin: 0 auto;
     line-height: 1.5;
   }
-  .endmark .em-src{
+  .endmark .em-src {
     font-family: var(--font-mono);
     font-size: 10px;
     letter-spacing: 0.18em;
@@ -355,7 +355,7 @@
   }
 
   @media print{
-    .sb-exec, .sb-stage, .sb-stats, .table-scroll, .sb-redaction{ break-inside: avoid; }
+    .sb-exec, .sb-stage, .sb-stats, .table-scroll, .sb-redaction { break-inside: avoid; }
   }
 </style>
 </head>
@@ -395,12 +395,12 @@
 </div>
 
 <aside class="standard" style="margin-bottom: 36px;">
-  <h4>Interest note.</h4>
+  <h2 class="minor">Interest note.</h2>
   <p>This briefing concerns sovereign cloud and compute. The editor works professionally in enterprise software, data systems and applied-intelligence platforms, and owns Fit For Gov, a civic-technology practice serving municipal governments — a market adjacent to the briefing&rsquo;s municipal sovereign-cloud content. Neither interest commissioned, funded or reviewed this document; both are declared at <a href="/disclosure/">/disclosure/</a>.</p>
 </aside>
 
 <aside class="standard" style="margin-bottom: 36px;">
-  <h4>Erratum, 14 October 2026 (v1.0.1).</h4>
+  <h2 class="minor">Erratum, 14 October 2026 (v1.0.1).</h2>
   <p>Corrections to the text of 11 June 2026, found in review. AWS&rsquo;s Canadian regions are Montréal and Calgary, not Montréal and Toronto. Partners Group and Pantheon are foreign, not U.S., private-markets investors. The $2-billion Sovereign AI Compute Strategy dates from Budget 2024 and is now attributed to Ottawa rather than to the Carney government; the Brock University comment came a week, not five days, after Microsoft&rsquo;s 9 December pledge. The 2024 FISA law is the Reforming Intelligence and Securing America Act (Pub.&nbsp;L. 118-49), and Section 702&rsquo;s status is stated as at 11 June 2026. Under the AI Diffusion Rule Canada sat in the first tier; several NATO allies were placed in the second. Register: the subtitle&rsquo;s last sentence now reads &ldquo;Data residency is not data sovereignty&rdquo;; two first-person pronouns in the executive summary are replaced; the caveat on coercion no longer attributes to one administration examples the briefing itself credits to another and to a company. The series index is dated to the release and includes Working Paper No.&nbsp;5. The PDF of 11 June stands as issued with these corrections attached; where it calls Working Paper No.&nbsp;5 &ldquo;forthcoming&rdquo;, that paper was published on 27 May 2026.</p>
 </aside>
 

@@ -475,6 +475,27 @@ hr {
   margin: 14px 0;
 }
 .standard h4 { margin-top: 0; }
+/* Minor headings: an h2 or h3 that keeps the h4 look. Used where a note or a
+   list item sits directly under an h1 or h2, so the outline never skips a
+   level (W3C heading-order check, October 2026). Keep in step with h4. */
+h2.minor, h3.minor {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--bronze);
+  margin-top: 16px;
+  margin-bottom: 6px;
+  padding: 0;
+  border: 0;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: inherit;
+  text-wrap: initial;
+}
+.standard h2.minor, .standard h3.minor { margin-top: 0; }
+.ledger-item h3.minor { margin-top: 0; margin-bottom: 4px; }
+.wp-prose h3.minor { margin-top: 18px; font-size: 17px; color: var(--bronze); font-style: italic; }
 
 /* Pull quote */
 .pull {
@@ -559,6 +580,7 @@ figure figcaption {
 /* Index lists (/papers/, /briefings/): the ledger grid in one column */
 .ledger.ledger-list { grid-template-columns: 1fr; gap: 22px; }
 .ledger-list .ledger-item h4 { font-size: var(--fs-h3); line-height: 1.2; }
+.ledger-list .ledger-item h3.minor { font-size: var(--fs-h3); line-height: 1.2; }
 .ledger-list .ledger-item p + p { margin-top: 4px; }
 .index-files {
   font-family: var(--font-mono);
