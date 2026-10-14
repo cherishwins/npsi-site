@@ -829,6 +829,7 @@ body::after {
   margin: 18mm 16mm;
 }
 @media print {
+  .doc-nav { display: none; }
   /* Re-invert to the light-era palette: the reference document prints as paper. */
   :root {
     --navy:        #0E2B47;

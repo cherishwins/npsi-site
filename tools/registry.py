@@ -329,18 +329,22 @@ DOC_NAV = re.compile(r'\n?<!-- doc-nav -->.*?<!-- /doc-nav -->\n?', re.S)
 MAIN_OPEN = '<main id="main" tabindex="-1">\n'
 
 
+def nav_label(x: dict) -> str:
+    return f'No. {x["number"]}' if x["line"] != "PL" else f'№ {x["number"]:02d}'
+
+
 def doc_nav_html(d: dict, prev: dict | None, nxt: dict | None) -> str:
     line = LINES[d["line"]]
     crumb_index = f'<a href="{line["index"]}">{esc(line["name"])}</a>'
-    here = f'No. {d["number"]}' if d["line"] != "PL" else f'№ {d["number"]:02d}'
+    here = nav_label(d)
     parts = [f'<div class="doc-nav-crumb"><a href="/">NPSI</a> <span aria-hidden="true">›</span> '
              f'{crumb_index} <span aria-hidden="true">›</span> <span aria-current="page">{here}</span></div>']
     links = []
     if prev:
         links.append(f'<a rel="prev" href="{prev["url"]}"><span aria-hidden="true">←</span> '
-                     f'No. {prev["number"]} · {esc(prev["title"])}</a>')
+                     f'{nav_label(prev)} · {esc(prev["title"])}</a>')
     if nxt:
-        links.append(f'<a rel="next" href="{nxt["url"]}">No. {nxt["number"]} · {esc(nxt["title"])} '
+        links.append(f'<a rel="next" href="{nxt["url"]}">{nav_label(nxt)} · {esc(nxt["title"])} '
                      f'<span aria-hidden="true">→</span></a>')
     if links:
         parts.append('<div class="doc-nav-links">' + "".join(links) + "</div>")

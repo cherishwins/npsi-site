@@ -26,7 +26,7 @@ archive carries intentional gaps at 6 and 8.
 
 ## Working Paper No. 11 — Rated AAA by the Issuer
 
-- ID: NPSI-WP-011 · Technical Series · v1.0 · 28 July 2026
+- ID: NPSI-WP-011 · Technical Series · v1.0.1 (reading view; PDF v1.0) · 28 July 2026 · errata 14 October 2026
 - Canonical: https://npsi.ca/wp11/ · PDF (18 pp.): https://npsi.ca/wp11/working-paper.pdf
 - Status: the current working paper. Supersedes WP10, which remains available unaltered with a correction notice.
 - Keywords: open source AI, credit ratings, quality labels, base rates, forecasting, OSAID, EU AI Act, open weights, certification, capability thresholds
@@ -34,7 +34,7 @@ archive carries intentional gaps at 6 and 8.
 Abstract: There is no enforced definition of open source in artificial
 intelligence. A standards body wrote one and cannot compel anyone to use it; a
 regulator wrote a different one that binds in a single jurisdiction; a
-procurement authority expressed a preference for the thing and never defined it
+procurement authority asked departments to consider the thing and never defined it
 at all. In that vacuum, the company that builds a model is the party that
 declares it open — the labeller is the labelled. The closest precedent is not
 open-source software but the credit rating. The paper corrects its predecessor
@@ -44,7 +44,7 @@ fight is not about whether to ban open-weight models but about who defines
 markets that ran unenforced quality labels to produce a forecast, with
 probabilities, of how this one resolves.
 
-Key findings: Four itemised corrections to WP10 are published at §1, including
+Key findings: Three standing corrections to WP10 are published at §1 (a fourth, on sourcing, was withdrawn by erratum on 14 October 2026; the first is under review against the court's final order), including
 the framing correction that Anthropic is the most restriction-friendly major
 lab on open weights and has not called for a ban — both halves true. Both camps
 in the July 2026 fight (the 24 July Nvidia-hosted multi-signatory letter and
@@ -61,7 +61,7 @@ statements the paper examines.
 
 ## Working Paper No. 9 — The Counterparty Problem
 
-- ID: NPSI-WP-009 · v1.0 · 27 July 2026
+- ID: NPSI-WP-009 · v1.0.1 · 27 July 2026 · errata 14 October 2026
 - Canonical: https://npsi.ca/wp9/ · PDF (12 pp.): https://npsi.ca/wp9/working-paper.pdf
 - Companions: WP1 (counterparty-diversification thesis), SB2 (the EXIM SCRI door)
 - Keywords: export credit, EXIM, Memorandum of Understanding, treaty withdrawal, commitment reliability, counterparty risk, sovereign wealth funds, reauthorization, Congress, Public Investment Fund
@@ -121,8 +121,8 @@ Read with WP11's correction notice.
 
 ## Working Paper No. 7 — Dazzle 2.0
 
-- ID: NPSI-WP-007 · Counter-Autonomy Series (first paper) · v1.0 · 12 July 2026
-- Canonical: https://npsi.ca/wp7/ · PDF (10 pp.): https://npsi.ca/wp7/working-paper.pdf
+- ID: NPSI-WP-007 · Counter-Autonomy Series (first paper) · v1.0.1 · 12 July 2026 · errata 14 October 2026
+- Canonical: https://npsi.ca/wp7/ · PDF (11 pp.): https://npsi.ca/wp7/working-paper.pdf
 - Companion: TB1 — The Verified Sky (the sensing substrate)
 - Keywords: adversarial machine learning, dazzle camouflage, machine vision, drones, counter-autonomy, loitering munitions, sensor fusion, procurement, NATO, Canada
 
@@ -150,16 +150,16 @@ no single-vendor black-box automatic target recognition.
 
 ## Working Paper No. 5 — Sovereign Compute North
 
-- ID: NPSI-WP-005 · v1.0 · 27 May 2026 · Co-issued with Fit For Gov
+- ID: NPSI-WP-005 · v1.0.1 (reading view; PDF v1.0) · 27 May 2026 · errata 14 October 2026 · Co-issued with Fit For Gov
 - Canonical: https://npsi.ca/wp5/ · PDF (19 pp., canonical): https://npsi.ca/wp5/working-paper.pdf
 - Companion: SB1 — Zero Secrets (the exposure audit)
 - Keywords: data sovereignty, sovereign cloud, Canada, Korea, HBM, hydroelectricity, data centres, CLOUD Act, sovereign compute, municipal infrastructure
 
 Abstract: Canada has the cheapest low-carbon firm electricity in the G7. Korea
 controls the global memory chokepoint on which every modern AI accelerator
-depends. The United States has stated, under oath through Microsoft France in
-June 2025, that it cannot guarantee allied citizens' data against US
-extraterritorial reach. The trade is obvious: Canadian electrons, Korean
+depends. Microsoft France has stated under oath (French Senate, 10 June 2025)
+that it cannot guarantee French citizens' data against US extraterritorial
+reach. The trade is obvious: Canadian electrons, Korean
 memory, Canadian law, Korean and allied capital — combined into a
 government-owned compute fabric that reaches from the Hydro-Québec switchyard
 to the municipal town hall.
@@ -175,8 +175,8 @@ rail) and WP2 (energy/compute rail).
 
 ## Working Paper No. 4 — The Addition Paradox
 
-- ID: NPSI-WP-004 · v1.0 · 15 May 2026
-- Canonical: https://npsi.ca/wp4/ · PDF: https://npsi.ca/wp4/working-paper.pdf
+- ID: NPSI-WP-004 · v1.0.1 · 15 May 2026 · errata 14 October 2026
+- Canonical: https://npsi.ca/wp4/ · PDF (9 pp., printed from the reading view): https://npsi.ca/wp4/working-paper.pdf
 - Keywords: Canada, energy transition, oil sands, hydroelectricity, uranium, critical minerals, clean-energy concentration, Pacific export capacity
 
 Abstract: Why the energy transition did not happen, why that is acceptable, and
@@ -191,10 +191,11 @@ mid-2030s. Chokepoint risk migrated from molecules to minerals: clean-tech
 refining and assembly concentrate in a single nation (polysilicon ≈95%, lithium
 cells ≈80%, NdFeB magnets ≈90%) — framed as concentration risk, not as an
 argument against clean energy. Canada holds four assets on one hand: the
-third-largest oil reserves with the lowest-carbon barrel trajectory, the
-largest per-capita clean electricity in the industrial democracies, the
-second-largest high-grade uranium reserves (Athabasca Basin), and the only G7
-position with simultaneous Pacific and Atlantic deepwater export capacity.
+third-largest oil reserves with a barrel among the cleanest of any major
+producer, the largest per-capita clean electricity in the G7, the
+second-largest reserves of high-grade uranium (Athabasca Basin), and Pacific
+and Atlantic deepwater export capacity — a combination no other G7 nation
+holds.
 Strategic preface to the three-rail architecture (WP1, WP2, WP3).
 
 ## Working Paper No. 3 — A Canada–Korea Pacific Defence-Industrial Corridor

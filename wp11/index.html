@@ -87,111 +87,110 @@
 
 <style>
   /* Page-scoped components — wp11- prefixed, tokens only. */
-  .wp11-correction {
+  .wp11-correction  {
     border: 1.5px solid var(--bronze);
     background: var(--paper);
     padding: 20px 24px;
     margin: 0 0 22px;
   }
-  .wp11-correction .wp11-lbl { margin-bottom: 10px; }
-  .wp11-lbl {
+  .wp11-correction .wp11-lbl  { margin-bottom: 10px; }
+  .wp11-lbl  {
     display: block;
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze);
     margin-bottom: 6px;
   }
-  .wp11-finding {
+  .wp11-finding  {
     border-left: 2px solid var(--teal);
     padding: 10px 0 10px 18px;
     margin: 0 0 14px;
   }
-  .wp11-finding .wp11-lbl { color: var(--teal); }
-  .wp11-finding.wp11-fix { border-left-color: var(--bronze); }
-  .wp11-finding.wp11-fix .wp11-lbl { color: var(--bronze); }
-  .wp11-quote {
+  .wp11-finding .wp11-lbl  { color: var(--teal); }
+  .wp11-finding.wp11-fix  { border-left-color: var(--bronze); }
+  .wp11-finding.wp11-fix .wp11-lbl  { color: var(--bronze); }
+  .wp11-quote  {
     border-left: 2px solid var(--rule);
     background: var(--paper);
     font-family: var(--font-mono); font-size: 13px; line-height: 1.66;
     padding: 14px 18px; margin: 0 0 16px;
     white-space: pre-line; color: var(--ink);
   }
-  .wp11-quote .wp11-attr {
+  .wp11-quote .wp11-attr  {
     display: block; margin-top: 10px; color: var(--teal);
     font-size: 11px; letter-spacing: 0.08em; white-space: normal;
   }
-  .wp11-grade {
+  .wp11-grade  {
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     letter-spacing: 0.14em; white-space: nowrap; color: var(--teal);
   }
-  .wp11-grade.b { color: var(--bronze); }
-  .wp11-branch {
+  .wp11-grade.b  { color: var(--bronze); }
+  .wp11-branch  {
     border: 0.75px solid var(--rule);
     background: var(--paper);
     padding: 20px 24px; margin: 0 0 16px;
   }
-  .wp11-branch .wp11-top {
+  .wp11-branch .wp11-top  {
     display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
     border-bottom: 1px solid var(--bronze); padding-bottom: 8px; margin-bottom: 12px;
   }
-  .wp11-branch .wp11-nm {
+  .wp11-branch .wp11-nm  {
     font-family: var(--font-mono); font-size: 11px; font-weight: 500;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--bronze);
   }
-  .wp11-branch .wp11-pr {
+  .wp11-branch .wp11-pr  {
     font-family: var(--font-mono); font-size: 22px; font-weight: 500;
     color: var(--navy); line-height: 1;
   }
-  .wp11-branch ul {
+  .wp11-branch ul  {
     margin: 0 0 12px; padding-left: 18px;
     font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--ink);
   }
-  .wp11-branch ul li { margin-bottom: 5px; }
-  .wp11-branch .wp11-dec {
+  .wp11-branch ul li  { margin-bottom: 5px; }
+  .wp11-branch .wp11-dec  {
     font-family: var(--font-mono); font-size: 12px; color: var(--teal);
     border-top: 0.5px solid var(--rule); padding-top: 10px; margin: 4px 0 0;
   }
-  .wp11-branch .wp11-dec strong { color: var(--navy); font-weight: 500; }
-  .wp11-warn { color: var(--bronze); }
-  .wp11-withdrawn s { text-decoration-color: var(--bronze); }
-  .wp11-erratum { display: block; margin-top: 10px; font-style: italic; }
-  .wp11-inset {
+  .wp11-branch .wp11-dec strong  { color: var(--navy); font-weight: 500; }
+  .wp11-warn  { color: var(--bronze); }
+  .wp11-withdrawn s  { text-decoration-color: var(--bronze); }
+  .wp11-erratum  { display: block; margin-top: 10px; font-style: italic; }
+  .wp11-inset  {
     background: var(--navy); color: var(--cream);
     padding: 20px 24px; margin: 22px 0;
   }
-  .wp11-inset p, .wp11-inset em { color: var(--cream); }
-  .wp11-inset h4 { color: var(--cream); margin: 0 0 6px; font-style: normal; }
-  .wp11-inset .wp11-lbl { color: var(--cream); }
-  .wp11-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.wp11-data { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 640px; }
-  table.wp11-data caption {
+  .wp11-inset p, .wp11-inset em  { color: var(--cream); }.wp11-inset h4, .wp11-inset h3.minor, .wp11-inset h2.minor { color: var(--cream); margin: 0 0 6px; font-style: normal; }
+  .wp11-inset .wp11-lbl  { color: var(--cream); }
+  .wp11-tablewrap  { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.wp11-data  { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 640px; }
+  table.wp11-data caption  {
     text-align: left; font-size: 14px; color: var(--ink);
     padding-bottom: 12px; caption-side: top;
   }
-  table.wp11-data th {
+  table.wp11-data th  {
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
     text-align: left; padding: 8px 16px 8px 0;
     border-bottom: 1px solid var(--bronze);
   }
-  table.wp11-data td {
+  table.wp11-data td  {
     padding: 12px 16px 12px 0; vertical-align: top;
     border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink);
   }
-  table.wp11-data td.k { color: var(--navy); font-weight: 600; }
-  table.wp11-data tr:last-child td { border-bottom: none; }
-  .wp11-bibitem {
+  table.wp11-data td.k  { color: var(--navy); font-weight: 600; }
+  table.wp11-data tr:last-child td  { border-bottom: none; }
+  .wp11-bibitem  {
     display: flex; gap: 12px; padding: 7px 0;
     border-bottom: 0.5px solid var(--rule);
     font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--ink);
   }
-  .wp11-bibitem:last-child { border-bottom: none; }
-  .wp11-bibitem .wp11-n { color: var(--bronze); font-weight: 500; width: 24px; flex: none; }
-  .wp11-bibitem strong { color: var(--navy); font-weight: 500; }
+  .wp11-bibitem:last-child  { border-bottom: none; }
+  .wp11-bibitem .wp11-n  { color: var(--bronze); font-weight: 500; width: 24px; flex: none; }
+  .wp11-bibitem strong  { color: var(--navy); font-weight: 500; }
   @media print {
     .wp11-correction, .wp11-finding, .wp11-quote, .wp11-branch, .wp11-inset,
-    .wp11-bibitem { break-inside: avoid; page-break-inside: avoid; }
-    table.wp11-data { min-width: 0; }
-    table.wp11-data tr { break-inside: avoid; page-break-inside: avoid; }
+    .wp11-bibitem  { break-inside: avoid; page-break-inside: avoid; }
+    table.wp11-data  { min-width: 0; }
+    table.wp11-data tr  { break-inside: avoid; page-break-inside: avoid; }
   }
 </style>
 </head>
@@ -251,7 +250,7 @@
 </div>
 
 <aside class="standard" style="margin-bottom: 36px;" aria-label="Erratum">
-  <h4>Erratum — v1.0.1, 14 October 2026</h4>
+  <h2 class="minor">Erratum — v1.0.1, 14 October 2026</h2>
   <p>This reading view has been corrected. The canonical PDF remains the v1.0 release of 28 July 2026 and is not reissued; where the two differ, this page carries the correction. Changes:</p>
   <ul>
     <li>§1, Correction 2 is withdrawn: the WP-10 text hosted on this site contains no &ldquo;multiplier of 3.75.&rdquo; The correction notice and §1 now count three standing corrections.</li>
