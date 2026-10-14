@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Verified Sky · NPSI Technical Briefing No. 1</title>
-<meta name="description" content="Sensing, certainty, and the law of automated airspace awareness. A reference briefing on the state of the art in computer vision and sensor systems for monitoring defined airspace, the verification architecture that produces near-certainty, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031.">
+<meta name="description" content="Sensing, certainty, and the law of automated airspace awareness. A reference briefing on the state of the art in computer vision and sensor systems for monitoring defined airspace, the verification architecture that produces near-certainty, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031. NPSI Technical Briefing No. 1, v1.0.1, June 2026.">
 <meta name="author" content="North Pacific Strategy Initiative">
 
 <meta property="og:title" content="The Verified Sky">
@@ -55,6 +55,7 @@
   "url": "https://npsi.ca/tb1/",
   "identifier": "NPSI-TB-001",
   "issueNumber": "1",
+  "version": "1.0.1",
   "image": "https://npsi.ca/assets/img/tb1-og.png",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "keywords": "airspace awareness, computer vision, sensor fusion, counter-UAS, Remote ID, verification architecture, edge AI, Canada, Radiocommunication Act, PIPEDA",
@@ -343,7 +344,7 @@
 
 <div class="opener">
   <div class="meridian"><span></span></div>
-  <div class="doc-class">Technical Briefing No.&nbsp;1  ·  v1.0  ·  June 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0 · JUNE 2026</span></div>
+  <div class="doc-class">Technical Briefing No.&nbsp;1  ·  v1.0.1  ·  June 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0.1 · OCTOBER 2026</span></div>
   <h1>The Verified Sky</h1>
   <div class="subtitle">Sensing, certainty, and the law of automated airspace awareness — the state of the art, what it costs, how fast it acts, and what a Canadian operator may lawfully do with it.</div>
 </div>
@@ -353,15 +354,21 @@
   <p>This briefing was written on the editor&rsquo;s initiative, with no client, no commission, and no intended customer. The editor works professionally in adjacent fields — enterprise software and applied-intelligence systems — and that interest is declared at <a href="/disclosure/">/disclosure/</a>.</p>
 </aside>
 
+<aside class="standard" style="margin-bottom: 36px;">
+  <h4>Erratum, 14 October 2026 (v1.0.1).</h4>
+  <p>Two corrections to the text of 11 June 2026, found in review. In §&nbsp;II the Anti-UAV410 plateau was described as the low-to-mid 60s; the figures the sentence gives (67.7 per cent in 2023, 2025 methods between 64 and 67) describe the mid-to-high 60s, and the sentence now says so. In note 6, Grounding DINO 1.5 Edge&rsquo;s 36.2 zero-shot AP was placed on COCO; the paper reports it on LVIS-minival. The series index is now dated to the release and includes Working Paper No.&nbsp;5, which it omitted. The PDF of 11 June stands as issued with these corrections attached.</p>
+</aside>
+
 <aside class="wp-meta-block" aria-label="Technical briefing metadata">
   <dl>
     <dt>Author</dt>        <dd>Jesse James</dd>
     <dt>Document ID</dt>   <dd><code>NPSI-TB-001</code></dd>
-    <dt>Version</dt>       <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/tb1/index.html">change log</a></dd>
+    <dt>Version</dt>       <dd><code>v1.0.1</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/tb1/index.html">change log</a></dd>
     <dt>Series</dt>        <dd>Technical Briefing — a companion line to the Working Papers, addressing the engineering substrate beneath the policy architecture</dd>
     <dt>Released</dt>      <dd>11 June 2026 · Victoria, British Columbia</dd>
+    <dt>Revised</dt>       <dd>v1.0.1 · 14 October 2026 · errata: the Anti-UAV410 plateau restated as the mid-to-high 60s; Grounding DINO 1.5 Edge&rsquo;s 36.2 AP placed on LVIS-minival; the series index dated to release and completed. The PDF of 11 June stands as issued.</dd>
     <dt>Status</dt>        <dd>Unclassified · For public distribution. Editorially controlled. Public version-controlled review open.</dd>
-    <dt>Cite as</dt>       <dd>James, J. (2026). <em>The Verified Sky</em> (NPSI Technical Briefing No.&nbsp;1, v1.0). https://npsi.ca/tb1/</dd>
+    <dt>Cite as</dt>       <dd>James, J. (2026). <em>The Verified Sky</em> (NPSI Technical Briefing No.&nbsp;1, v1.0.1). https://npsi.ca/tb1/</dd>
   </dl>
 </aside>
 
@@ -447,7 +454,7 @@
     <cite>— §II, Certainty Is an Architecture</cite>
   </div>
 
-  <p>It is worth stating plainly what the benchmarks say about the hard case, because this is where reputations in this field go to die. On Anti-UAV410, the standard thermal-infrared drone-tracking benchmark, state accuracy has sat in the low-to-mid 60s for three years — 67.7 per cent in 2023, with 2025 methods clustered between 64 and 67.<sup class="fnref"><a href="#fn-410">[7]</a></sup> When the field built a benchmark that looks like the real world — CST Anti-UAV, 220 thermal sequences, more than 240,000 annotations, tiny targets in complex scenes, 20 state-of-the-art trackers evaluated — the best method achieved 35.92 per cent state accuracy, against 67.69 per cent on Anti-UAV410.<sup class="fnref"><a href="#fn-cst">[8]</a></sup> Performance on realistic small-and-distant targets is roughly half of headline performance. Any system design that does not assume losing and re-acquiring the track is designed for the benchmark, not the sky.</p>
+  <p>It is worth stating plainly what the benchmarks say about the hard case, because this is where reputations in this field go to die. On Anti-UAV410, the standard thermal-infrared drone-tracking benchmark, state accuracy has sat in the mid-to-high 60s for three years — 67.7 per cent in 2023, with 2025 methods clustered between 64 and 67.<sup class="fnref"><a href="#fn-410">[7]</a></sup> When the field built a benchmark that looks like the real world — CST Anti-UAV, 220 thermal sequences, more than 240,000 annotations, tiny targets in complex scenes, 20 state-of-the-art trackers evaluated — the best method achieved 35.92 per cent state accuracy, against 67.69 per cent on Anti-UAV410.<sup class="fnref"><a href="#fn-cst">[8]</a></sup> Performance on realistic small-and-distant targets is roughly half of headline performance. Any system design that does not assume losing and re-acquiring the track is designed for the benchmark, not the sky.</p>
 </section>
 
 <section id="latency">
@@ -573,7 +580,7 @@
     <li id="fn-fusion">On fusion architecture and two-sensor corroboration as the industry false-positive control: vendor technical documentation, Dedrone (Axon) DedroneTracker.AI; DroneShield DroneSentry; Fortem SkyDome; and the counter-UAS trade literature, 2024–2026.</li>
     <li id="fn-visdrone">VisDrone benchmark results, 2024–2025 literature: deployable single-stage models in the high-30s mAP50 (e.g., improved YOLOv8n variants) to approximately 51 per cent mAP50 for heavier 2025 detection-transformer architectures; sliced-inference (SAHI) gains documented in Akyon et al., 2022, and successors.</li>
     <li id="fn-track">Zhang et al., <em>ByteTrack: Multi-Object Tracking by Associating Every Detection Box</em>, ECCV 2022 (80.3 MOTA, 77.3 IDF1, MOT17); Aharon et al., <em>BoT-SORT: Robust Associations Multi-Pedestrian Tracking</em>, 2022 (80.5 MOTA, 80.2 IDF1, MOT17).</li>
-    <li id="fn-ov">Grounding DINO 1.5 Edge (IDEA Research, 2024): 36.2 zero-shot AP on COCO with an edge-optimized backbone; Cheng et al., <em>YOLO-World: Real-Time Open-Vocabulary Object Detection</em>, CVPR 2024: 35.4 AP on LVIS at 52 fps on server-class hardware. Edge deployment of open-vocabulary models above ~10 fps remains an active optimization problem in the 2025 literature.</li>
+    <li id="fn-ov">Grounding DINO 1.5 Edge (IDEA Research, 2024; arXiv:2405.10300): 36.2 zero-shot AP on LVIS-minival with an edge-optimized backbone; Cheng et al., <em>YOLO-World: Real-Time Open-Vocabulary Object Detection</em>, CVPR 2024: 35.4 AP on LVIS at 52 fps on server-class hardware. Edge deployment of open-vocabulary models above ~10 fps remains an active optimization problem in the 2025 literature.</li>
     <li id="fn-410">Anti-UAV410 thermal tracking benchmark: Huang et al., IEEE TPAMI 2023 (SiamDT, 67.7% state accuracy), with 2025 methods reporting 64.0–67.0% — a three-year plateau in the band.</li>
     <li id="fn-cst">Xie, B., Zhang, C., Wang, F., Liu, P., Lu, F., Chen, Z., &amp; Hu, W. (2025). <em>CST Anti-UAV: A Thermal Infrared Benchmark for Tiny UAV Tracking in Complex Scenes.</em> ICCV 2025 Workshops; arXiv:2507.23473. 220 sequences, &gt;240k annotations, 20 trackers evaluated; best method 35.92% state accuracy versus 67.69% on Anti-UAV410.</li>
     <li id="fn-jetson">NVIDIA Jetson Orin Nano Super Developer Kit, announced 17 December 2024: US$249, 67 INT8 TOPS, 102 GB/s memory bandwidth (NVIDIA developer blog and product documentation). Hailo-8 sub-10 ms detector latency per vendor documentation and the Frigate NVR community's published benchmarks.</li>
@@ -586,7 +593,8 @@
 </section>
 
 <section id="series-index" aria-label="Series index">
-  <h2>Series Index</h2>
+  <h2>Series Index at Release, 11 June 2026</h2>
+  <p>The documents the imprint had published when this briefing was released. The current archive is at <a href="/papers/">Papers</a> and <a href="/briefings/">Briefings</a>.</p>
   <div class="tb-series">
     <div class="tb-series-item">
       <div class="tb-series-id">WP-01</div>
@@ -603,6 +611,10 @@
     <div class="tb-series-item">
       <div class="tb-series-id">WP-04</div>
       <div><a href="/wp4/" class="plain">The Addition Paradox</a> — An energy thesis for Canada. <em>(published May 2026)</em></div>
+    </div>
+    <div class="tb-series-item">
+      <div class="tb-series-id">WP-05</div>
+      <div><a href="/wp5/" class="plain">Sovereign Compute North</a> — An energy-for-memory swap, signed under Canadian law. <em>(published 27 May 2026)</em></div>
     </div>
     <div class="tb-series-item current">
       <div class="tb-series-id">TB-01</div>
