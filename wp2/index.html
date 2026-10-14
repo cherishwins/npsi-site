@@ -204,7 +204,128 @@
   </div>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp2-architecture.svg" alt="Figure A — The three-rail Pacific architecture: financial rail (Canada–Korea, Working Paper No. 1) above, energy and compute rail (Canada–United States, this paper) in the middle, and critical-minerals rail (cross-cutting) below. Canada at the meridian, anchoring all three." />
+    <svg id="fig-wp2-architecture" role="img" aria-label="Figure A — The three-rail Pacific architecture: financial rail (Canada–Korea, Working Paper No. 1) above, energy and compute rail (Canada–United States, this paper) in the middle, and critical-minerals rail (cross-cutting) below. Canada at the meridian, anchoring all three." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <!-- NPSI WP2 · Figure A · The Three-Rail Pacific Architecture -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Document Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp2-architecture .serif { font-family: var(--font-serif); }
+      #fig-wp2-architecture .mono { font-family: var(--font-mono); }
+      #fig-wp2-architecture .label { font-size: 10px; letter-spacing: 2.4px; fill: #C08D60; text-transform: uppercase; }
+      #fig-wp2-architecture .endpoint { font-size: 13px; font-weight: 600; fill: #F4EFE3; letter-spacing: 1.5px; }
+      #fig-wp2-architecture .descriptor { font-size: 11px; fill: #D9D3C6; }
+      #fig-wp2-architecture .rail-title { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #7FA8B5; }
+    </style>
+    <!-- Arrow marker -->
+    <marker id="fig-wp2-architecture-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="540" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono label">FIGURE A · THE THREE-RAIL PACIFIC ARCHITECTURE</text>
+
+  <!-- Top meridian rule with three ticks -->
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- ================== RAIL 1: FINANCIAL ================== -->
+  <g transform="translate(0, 90)">
+    <text x="40" y="0" class="mono rail-title">RAIL 1 · FINANCIAL · WORKING PAPER NO. 1</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Korea endpoint -->
+    <text x="64" y="44" class="serif endpoint">KOREA</text>
+    <text x="64" y="68"  class="serif descriptor">National Pension Service · KIC</text>
+    <text x="64" y="84"  class="serif descriptor">Korea Post · Korean life insurers</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">SENIOR BOND PLACEMENT</text>
+
+    <!-- Connector line with arrows -->
+    <line x1="280" y1="68" x2="612" y2="68" stroke="#C08D60" stroke-width="1"
+          marker-start="url(#fig-wp2-architecture-arrowhead)" marker-end="url(#fig-wp2-architecture-arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">CKPIF · LUXEMBOURG SEAT</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">USD · CAD · KRW · ENGLISH LAW</text>
+
+    <!-- Canada endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">CANADA</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">Federal Crown · BoC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">FNMPC · CIB Indigenous Equity</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">SOVEREIGN GUARANTOR</text>
+  </g>
+
+  <!-- ================== RAIL 2: ENERGY & COMPUTE ================== -->
+  <g transform="translate(0, 240)">
+    <text x="40" y="0" class="mono rail-title">RAIL 2 · ENERGY &amp; COMPUTE · WORKING PAPER NO. 2 (THIS PAPER)</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Canada endpoint -->
+    <text x="64" y="44" class="serif endpoint">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor">Hydro-Québec · BC Hydro</text>
+    <text x="64" y="84"  class="serif descriptor">Manitoba Hydro · 56,000 MW dispatchable</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">GENERATION + TRANSMISSION</text>
+
+    <!-- Connector line -->
+    <line x1="320" y1="68" x2="572" y2="68" stroke="#C08D60" stroke-width="1"
+          marker-start="url(#fig-wp2-architecture-arrowhead)" marker-end="url(#fig-wp2-architecture-arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">UHV INTERTIES · TRAINING NODES</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">U.S. URBAN-EDGE INFERENCE PRESERVED</text>
+
+    <!-- US endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">UNITED STATES</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">DOE · LBNL · FERC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">Hyperscale operators · U.S. utilities</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">OFF-TAKE COUNTERPARTY</text>
+  </g>
+
+  <!-- ================== RAIL 3: CRITICAL MINERALS ================== -->
+  <g transform="translate(0, 390)">
+    <text x="40" y="0" class="mono rail-title">RAIL 3 · CRITICAL MINERALS · CROSS-CUTTING</text>
+
+    <rect x="40" y="14" width="820" height="80" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Canada origin -->
+    <text x="64" y="44" class="serif endpoint">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor">Cu · Ni · Co · Li · REE · U</text>
+    <text x="64" y="84"  class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">RAW + PROCESSED FEEDSTOCK</text>
+
+    <!-- Two arrows: to Korea and to United States -->
+    <line x1="320" y1="50" x2="572" y2="50" stroke="#C08D60" stroke-width="1"
+          marker-end="url(#fig-wp2-architecture-arrowhead)"/>
+    <text x="446" y="40" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">HBM · BATTERY CATHODE · SEMICONDUCTOR</text>
+
+    <line x1="320" y1="74" x2="572" y2="74" stroke="#C08D60" stroke-width="1"
+          marker-end="url(#fig-wp2-architecture-arrowhead)"/>
+    <text x="446" y="86" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">EV BATTERY · ADVANCED MFG</text>
+
+    <!-- Dual destination -->
+    <text x="836" y="44" class="serif endpoint" text-anchor="end">KOREA  +  USA</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">Samsung · SK Hynix · LG ES · Hyundai</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end" font-style="italic">downstream U.S. manufacturing</text>
+  </g>
+
+  <!-- Bottom meridian -->
+  <line x1="40" y1="510" x2="860" y2="510" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="506" x2="40"  y2="514" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="507" x2="450" y2="513" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="506" x2="860" y2="514" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Footer -->
+  <text x="40" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5">CANADA AT THE MERIDIAN · INTERLOCKING THREE-RAIL ARCHITECTURE</text>
+  <text x="860" y="530" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · v1.0</text>
+</svg>
     <figcaption>FIGURE A  ·  THE THREE-RAIL PACIFIC ARCHITECTURE  ·  FINANCIAL (KOREA, WP1) + ENERGY &amp; COMPUTE (U.S., WP2) + CRITICAL MINERALS (CROSS-CUTTING)</figcaption>
   </figure>
 </section>
@@ -277,7 +398,107 @@
   <p>A regulatory regime that forces the world's most advanced computing infrastructure to run on diesel is not a stable equilibrium. It is a signal that the grid has reached a hard physical limit and that political authorities have not yet identified a credible domestic path to meeting the next four years of demand at scale.</p>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp2-capacity-gap.svg" alt="Figure C — A bar chart comparing the approximately 44 gigawatts of new U.S. data-centre capacity required by 2028 against the approximately 25 gigawatts the grid is on track to deliver in the same window, with the 19-gigawatt structural shortfall called out." />
+    <svg id="fig-wp2-capacity-gap" role="img" aria-label="Figure C — A bar chart comparing the approximately 44 gigawatts of new U.S. data-centre capacity required by 2028 against the approximately 25 gigawatts the grid is on track to deliver in the same window, with the 19-gigawatt structural shortfall called out." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480">
+  <!-- NPSI WP2 · Figure C · The U.S. Capacity Gap by 2028 -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp2-capacity-gap .serif { font-family: var(--font-serif); }
+      #fig-wp2-capacity-gap .mono { font-family: var(--font-mono); }
+    </style>
+    <pattern id="fig-wp2-capacity-gap-hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#C08D60" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="480" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE C · THE U.S. CAPACITY GAP BY 2028</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92" class="serif" font-size="20" font-weight="600" fill="#F4EFE3">
+    Required vs deliverable U.S. data-centre capacity, 2028
+  </text>
+  <text x="40" y="118" class="serif" font-style="italic" font-size="14" fill="#C08D60">
+    Lawrence Berkeley National Laboratory and FERC interconnection-queue data.
+  </text>
+
+  <!-- Chart area: y axis from 0 (bottom y=380) to 50 GW (top y=140) -->
+  <!-- Scale: 1 GW = 4.8 px; chart height 240 -->
+
+  <!-- Y-axis baseline -->
+  <line x1="80" y1="380" x2="640" y2="380" stroke="#F4EFE3" stroke-width="1"/>
+
+  <!-- Y-axis ticks -->
+  <g class="mono" font-size="10" fill="#7FA8B5" letter-spacing="0.5">
+    <line x1="76" y1="380" x2="80" y2="380" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="383" text-anchor="end">0</text>
+    <line x1="76" y1="332" x2="80" y2="332" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="335" text-anchor="end">10</text>
+    <line x1="76" y1="284" x2="80" y2="284" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="287" text-anchor="end">20</text>
+    <line x1="76" y1="236" x2="80" y2="236" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="239" text-anchor="end">30</text>
+    <line x1="76" y1="188" x2="80" y2="188" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="191" text-anchor="end">40</text>
+    <line x1="76" y1="140" x2="80" y2="140" stroke="#F4EFE3" stroke-width="0.5"/>
+    <text x="72" y="143" text-anchor="end">50</text>
+  </g>
+  <text x="40" y="260" class="mono" font-size="10" letter-spacing="2" fill="#7FA8B5"
+        transform="rotate(-90 40 260)" text-anchor="middle">GIGAWATTS</text>
+
+  <!-- BAR 1: Required (44 GW) — hatched bronze outline -->
+  <g>
+    <rect x="160" y="168" width="120" height="212" fill="url(#fig-wp2-capacity-gap-hatch)" stroke="#C08D60" stroke-width="1.2"/>
+    <text x="220" y="158" class="mono" font-size="22" font-weight="500" fill="#C08D60" text-anchor="middle">44 GW</text>
+    <text x="220" y="402" class="mono" font-size="10" letter-spacing="2" fill="#F4EFE3" text-anchor="middle">REQUIRED</text>
+    <text x="220" y="418" class="serif" font-style="italic" font-size="11" fill="#C08D60" text-anchor="middle">data-centre additions</text>
+    <text x="220" y="434" class="serif" font-style="italic" font-size="11" fill="#C08D60" text-anchor="middle">needed by 2028</text>
+  </g>
+
+  <!-- BAR 2: Deliverable (25 GW) — solid navy -->
+  <g>
+    <rect x="320" y="260" width="120" height="120" fill="#F4EFE3"/>
+    <text x="380" y="250" class="mono" font-size="22" font-weight="500" fill="#F4EFE3" text-anchor="middle">25 GW</text>
+    <text x="380" y="402" class="mono" font-size="10" letter-spacing="2" fill="#F4EFE3" text-anchor="middle">DELIVERABLE</text>
+    <text x="380" y="418" class="serif" font-style="italic" font-size="11" fill="#C08D60" text-anchor="middle">grid expected to add</text>
+    <text x="380" y="434" class="serif" font-style="italic" font-size="11" fill="#C08D60" text-anchor="middle">in same window</text>
+  </g>
+
+  <!-- The gap, called out -->
+  <g>
+    <!-- Bracket -->
+    <line x1="475" y1="168" x2="490" y2="168" stroke="#C08D60" stroke-width="1"/>
+    <line x1="475" y1="260" x2="490" y2="260" stroke="#C08D60" stroke-width="1"/>
+    <line x1="490" y1="168" x2="490" y2="260" stroke="#C08D60" stroke-width="1"/>
+    <!-- Pointer -->
+    <line x1="490" y1="214" x2="510" y2="214" stroke="#C08D60" stroke-width="1"/>
+
+    <!-- Gap label -->
+    <text x="520" y="200" class="mono" font-size="32" font-weight="500" fill="#C08D60">19 GW</text>
+    <text x="520" y="222" class="mono" font-size="10" letter-spacing="2.4" fill="#F4EFE3">SHORTFALL</text>
+    <text x="520" y="244" class="serif" font-style="italic" font-size="11" fill="#C08D60">structural · binding</text>
+    <text x="520" y="258" class="serif" font-style="italic" font-size="11" fill="#C08D60">within four years</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40" y1="452" x2="680" y2="452" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="448" x2="40"  y2="456" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="449" x2="360" y2="455" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="448" x2="680" y2="456" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="470" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">LBNL · PJM 2025 AUCTION · DOE JAN 2026 EMERGENCY ORDER</text>
+  <text x="680" y="470" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §2</text>
+</svg>
     <figcaption>FIGURE C  ·  THE U.S. CAPACITY GAP  ·  REQUIRED 44&nbsp;GW vs DELIVERABLE 25&nbsp;GW BY 2028 — A 19&nbsp;GW STRUCTURAL SHORTFALL</figcaption>
   </figure>
 
@@ -328,7 +549,105 @@
   <p>The United States must offload its training workload to a secure, allied jurisdiction with abundant baseload and stable counterparty risk in order to preserve domestic urban capacity for inference. The choice is not between offload and self-sufficiency. It is between offload and rationing.</p>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp2-bifurcation.svg" alt="Figure B — Two side-by-side panels comparing AI training and AI inference. Training: latency-agnostic, bursty, ~25% CAGR through 2030, sites where baseload is cheap and climate favours natural cooling. Inference: latency-critical, persistent, ~79% CAGR through 2030, must run at the U.S. urban edge by physics. Bottom bar: by 2030, inference will absorb approximately 80% of total AI critical-IT load against 20% for training." />
+    <svg id="fig-wp2-bifurcation" role="img" aria-label="Figure B — Two side-by-side panels comparing AI training and AI inference. Training: latency-agnostic, bursty, ~25% CAGR through 2030, sites where baseload is cheap and climate favours natural cooling. Inference: latency-critical, persistent, ~79% CAGR through 2030, must run at the U.S. urban edge by physics. Bottom bar: by 2030, inference will absorb approximately 80% of total AI critical-IT load against 20% for training." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500">
+  <!-- NPSI WP2 · Figure B · Training and Inference — The Strategic Bifurcation -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp2-bifurcation .serif { font-family: var(--font-serif); }
+      #fig-wp2-bifurcation .mono { font-family: var(--font-mono); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="500" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE B · TRAINING AND INFERENCE — THE STRATEGIC BIFURCATION</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Two phases. Different physics. Different geography.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">Latency budget determines siting. The bifurcation is the compact's analytical hinge.</text>
+
+  <!-- Two panels side by side -->
+
+  <!-- LEFT: TRAINING -->
+  <g transform="translate(40, 148)">
+    <rect x="0" y="0" width="305" height="248" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Header -->
+    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#F4EFE3">TRAINING</text>
+    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#C08D60">LATENCY-AGNOSTIC · BURSTY</text>
+
+    <line x1="20" y1="72" x2="285" y2="72" stroke="#C08D60" stroke-width="0.5"/>
+
+    <!-- Metric -->
+    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#F4EFE3">~22%</text>
+    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CAGR THROUGH 2030 · 23→62 GW</text>
+
+    <!-- Characteristics -->
+    <text x="20" y="172" class="serif" font-size="12" fill="#D9D3C6">— Weeks-to-months per run</text>
+    <text x="20" y="190" class="serif" font-size="12" fill="#D9D3C6">— No human latency budget</text>
+    <text x="20" y="208" class="serif" font-size="12" fill="#D9D3C6">— Tens of MW continuous</text>
+
+    <!-- Bottom: geographic implication -->
+    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Sites where baseload is cheap and climate</text>
+    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">favours natural cooling — Canadian hydro fits.</text>
+  </g>
+
+  <!-- RIGHT: INFERENCE -->
+  <g transform="translate(375, 148)">
+    <rect x="0" y="0" width="305" height="248" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Header -->
+    <text x="20" y="34" class="serif" font-weight="700" font-size="22" fill="#F4EFE3">INFERENCE</text>
+    <text x="20" y="56" class="mono"  font-size="9.5" letter-spacing="2" fill="#C08D60">LATENCY-CRITICAL · PERSISTENT</text>
+
+    <line x1="20" y1="72" x2="285" y2="72" stroke="#C08D60" stroke-width="0.5"/>
+
+    <!-- Metric -->
+    <text x="20" y="116" class="mono" font-size="42" font-weight="500" fill="#F4EFE3">~35%</text>
+    <text x="20" y="138" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CAGR THROUGH 2030 · 21→93 GW</text>
+
+    <!-- Characteristics -->
+    <text x="20" y="172" class="serif" font-size="12" fill="#D9D3C6">— Sub-50&#8239;ms response budget</text>
+    <text x="20" y="190" class="serif" font-size="12" fill="#D9D3C6">— Continuous, concurrent users</text>
+    <text x="20" y="208" class="serif" font-size="12" fill="#D9D3C6">— Bound to user geography</text>
+
+    <!-- Bottom: geographic implication -->
+    <text x="20" y="234" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Must run near the end-user — therefore tied</text>
+    <text x="20" y="248" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">to U.S. urban grid topology by physics, not policy.</text>
+  </g>
+
+  <!-- Bottom callout: today's split, with the trajectory inversion narrative -->
+  <g transform="translate(40, 420)">
+    <text x="0" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CURRENT AI COMPUTE SPLIT · TRAJECTORY INVERTS BEFORE 2030</text>
+
+    <!-- 20% inference (navy) | 80% training (bronze hatch background) -->
+    <rect x="0"   y="10" width="128" height="22" fill="#F4EFE3"/>
+    <rect x="128" y="10" width="512" height="22" fill="#0F2A44" stroke="#C08D60" stroke-width="0.5"/>
+    <line x1="128" y1="10" x2="128" y2="32" stroke="#133150" stroke-width="1"/>
+
+    <text x="64"  y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#0F2A44" text-anchor="middle">~20% INFERENCE</text>
+    <text x="384" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">~80% &#160; TRAINING (TODAY) → INFERENCE BECOMES MAJORITY BY 2030</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40"  y1="472" x2="680" y2="472" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="468" x2="40"  y2="476" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="469" x2="360" y2="475" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="468" x2="680" y2="476" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">SOURCE · McKINSEY AI WORKLOADS &amp; HYPERSCALER STRATEGIES · 2025</text>
+  <text x="680" y="490" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §3</text>
+</svg>
     <figcaption>FIGURE B  ·  TRAINING AND INFERENCE — THE STRATEGIC BIFURCATION  ·  TWO PHASES, DIFFERENT PHYSICS, DIFFERENT GEOGRAPHY</figcaption>
   </figure>
 
@@ -498,7 +817,116 @@
   </ul>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp2-compact.svg" alt="Figure D — A six-layer architectural stack showing the compact's components from foundation upward: Layer 1 Treaty Wrapper (Canada × United States, several-not-joint, financed through CKPIF), Layer 2 Transmission Topology (Pacific NW, Quebec–NYISO, Manitoba–MISO interties), Layer 3 Training-Centre Siting (Saguenay/Côte-Nord, Peace River/Bennett, Northern Manitoba), Layer 4 Off-Take and Commercial Structure (hyperscale direct, U.S. utility intermediation, U.S. federal AI compute), Layer 5 KPI-Linked Coupon Overlay (ICMA SLB Principles, 25 bp step calibration), Layer 6 Governance, Listing, and Settlement (English law, LCIA, Luxembourg, BIS Toronto)." />
+    <svg id="fig-wp2-compact" role="img" aria-label="Figure D — A six-layer architectural stack showing the compact's components from foundation upward: Layer 1 Treaty Wrapper (Canada × United States, several-not-joint, financed through CKPIF), Layer 2 Transmission Topology (Pacific NW, Quebec–NYISO, Manitoba–MISO interties), Layer 3 Training-Centre Siting (Saguenay/Côte-Nord, Peace River/Bennett, Northern Manitoba), Layer 4 Off-Take and Commercial Structure (hyperscale direct, U.S. utility intermediation, U.S. federal AI compute), Layer 5 KPI-Linked Coupon Overlay (ICMA SLB Principles, 25 bp step calibration), Layer 6 Governance, Listing, and Settlement (English law, LCIA, Luxembourg, BIS Toronto)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640">
+  <!-- NPSI WP2 · Figure D · Architecture of the Compact — six layers -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp2-compact .serif { font-family: var(--font-serif); }
+      #fig-wp2-compact .mono { font-family: var(--font-mono); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="640" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE D · ARCHITECTURE OF THE COMPACT — SIX LAYERS</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Six layers, off-the-shelf components.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">The novelty is the bundling. Every component is in liquid form today.</text>
+
+  <!-- Layers -->
+
+  <!-- Layer 6 (top, governance) — sits at top of stack visually -->
+  <g transform="translate(40, 144)">
+    <rect x="0" y="0" width="640" height="68" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 6</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Governance, listing, settlement</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#7FA8B5">English law (bonds) · NY law (off-take) · LCIA + ICDR arbitration</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">LUXEMBOURG · SGX · TOKENISED PILOT</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">EUROCLEAR / CLEARSTREAM</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">BIS TORONTO · PROJECT AGORÁ</text>
+  </g>
+
+  <!-- Layer 5 — KPI overlay -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="640" height="68" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 5</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">KPI-linked coupon overlay</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#7FA8B5">Construction milestones · Throughput · GHG intensity · Indigenous equity ≥10%</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">ICMA SLB PRINCIPLES</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">25 bp STEP CALIBRATION</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">±100 bp AGGREGATE CAP</text>
+  </g>
+
+  <!-- Layer 4 — Off-take / commercial -->
+  <g transform="translate(40, 296)">
+    <rect x="0" y="0" width="640" height="68" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 4</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Off-take and commercial structure</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#7FA8B5">Take-or-pay reserves · Multi-counterparty diversification · TMX precedent</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">HYPERSCALE DIRECT</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">U.S. UTILITY INTERMEDIATION</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">U.S. FEDERAL AI COMPUTE</text>
+  </g>
+
+  <!-- Layer 3 — Training-centre siting -->
+  <g transform="translate(40, 372)">
+    <rect x="0" y="0" width="640" height="68" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 3</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Training-centre siting</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#7FA8B5">Three corridors · Indigenous co-ownership · Major Projects Office FID</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">SAGUENAY / CÔTE-NORD (QC)</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">PEACE RIVER / BENNETT (BC)</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">NORTHERN MANITOBA (MB)</text>
+  </g>
+
+  <!-- Layer 2 — Transmission topology -->
+  <g transform="translate(40, 448)">
+    <rect x="0" y="0" width="640" height="68" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 2</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Transmission topology</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#7FA8B5">Existing 15,000+ MW interties · 10,000–15,000 MW incremental UHV</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">PACIFIC NW · BPA</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">QUEBEC – NYISO · NEISO · CHPE</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#F4EFE3" text-anchor="end">MANITOBA – MISO</text>
+  </g>
+
+  <!-- Layer 1 (foundation) -->
+  <g transform="translate(40, 524)">
+    <rect x="0" y="0" width="640" height="68" fill="#F4EFE3"/>
+    <text x="20" y="26" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">LAYER 1 · FOUNDATION</text>
+    <text x="20" y="48" class="serif" font-weight="700" font-size="15" fill="#0F2A44">Treaty wrapper</text>
+    <text x="20" y="62" class="serif" font-size="11" font-style="italic" fill="#C08D60">Bilateral · Several (not joint) liability · Survives CUSMA non-renewal</text>
+
+    <text x="620" y="32" class="mono" font-size="10" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">CANADA × UNITED STATES</text>
+    <text x="620" y="50" class="mono" font-size="10" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">EIB / NIB PRECEDENT</text>
+    <text x="620" y="64" class="mono" font-size="10" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">FINANCED THROUGH CKPIF (WP1)</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40"  y1="608" x2="680" y2="608" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="604" x2="40"  y2="612" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="605" x2="360" y2="611" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="604" x2="680" y2="612" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="626" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">EVERY COMPONENT IN LIQUID FORM TODAY · THE NOVELTY IS THE BUNDLING</text>
+  <text x="680" y="626" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §5</text>
+</svg>
     <figcaption>FIGURE D  ·  ARCHITECTURE OF THE COMPACT  ·  SIX LAYERS, OFF-THE-SHELF COMPONENTS, FOUNDATION UP</figcaption>
   </figure>
 
@@ -732,7 +1160,143 @@
   </ol>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp2-indigenous.svg" alt="Figure E — The Indigenous Series II tranche structure for the compact. Top: institutional framework (FNMPC, CIB Indigenous Equity Initiative, federal Indigenous Loan Guarantee Program). Middle: three corridor-specific Indigenous limited partnerships — Saguenay/Côte-Nord (Cree, Innu nations), Peace River/Bennett (BC Indigenous Power Coalition), Northern Manitoba (Cree nations) — each subscribed 90% via CIB IEI loans and 10% from own-source revenue. Centre: the Series II tranche, sized at 10–15% of compact capital expenditure, pari passu with senior tranches, with a +25 bp step-up coupon ratchet if Indigenous equity falls below 10%. Bottom: economic and governance rights — positive carry spread, route consent, KPI-amendment veto, director representation, multi-corridor strategic durability." />
+    <svg id="fig-wp2-indigenous" role="img" aria-label="Figure E — The Indigenous Series II tranche structure for the compact. Top: institutional framework (FNMPC, CIB Indigenous Equity Initiative, federal Indigenous Loan Guarantee Program). Middle: three corridor-specific Indigenous limited partnerships — Saguenay/Côte-Nord (Cree, Innu nations), Peace River/Bennett (BC Indigenous Power Coalition), Northern Manitoba (Cree nations) — each subscribed 90% via CIB IEI loans and 10% from own-source revenue. Centre: the Series II tranche, sized at 10–15% of compact capital expenditure, pari passu with senior tranches, with a +25 bp step-up coupon ratchet if Indigenous equity falls below 10%. Bottom: economic and governance rights — positive carry spread, route consent, KPI-amendment veto, director representation, multi-corridor strategic durability." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660">
+  <!-- NPSI WP2 · Figure E · Indigenous Series II (Indigenous-Compact) Tranche Structure -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp2-indigenous .serif { font-family: var(--font-serif); }
+      #fig-wp2-indigenous .mono { font-family: var(--font-mono); }
+    </style>
+    <marker id="fig-wp2-indigenous-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="660" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE E · INDIGENOUS SERIES II TRANCHE — COMPACT-COVERED</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="680" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="53" x2="360" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="52" x2="680" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Designed in at issuance, not retrofitted.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">Indigenous economic leadership, three-corridor diversification, +25 bp protective ratchet.</text>
+
+  <!-- TIER 1: Institutional Framework (top) -->
+  <g transform="translate(40, 144)">
+    <rect x="0" y="0" width="640" height="86" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">INSTITUTIONAL FRAMEWORK · OPERATIONAL CANADIAN VEHICLES</text>
+
+    <text x="20"  y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">FNMPC</text>
+    <text x="20"  y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">First Nations Major Projects Coalition</text>
+    <text x="20"  y="80" class="serif" font-size="10.5" fill="#D9D3C6">186 nations · 21 projects · ~CAD 45 B</text>
+
+    <text x="240" y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">CIB IEI</text>
+    <text x="240" y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">CIB Indigenous Equity Initiative</text>
+    <text x="240" y="80" class="serif" font-size="10.5" fill="#D9D3C6">CAD 5–100 M loans · up to 90% equity</text>
+
+    <text x="460" y="50" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Loan Guarantee Program</text>
+    <text x="460" y="66" class="serif" font-style="italic" font-size="11" fill="#7FA8B5">Federal Indigenous backstop</text>
+    <text x="460" y="80" class="serif" font-size="10.5" fill="#D9D3C6">CAD 5 B · Budget 2024</text>
+  </g>
+
+  <!-- Arrow down to Tier 2 -->
+  <line x1="200" y1="238" x2="200" y2="268" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp2-indigenous-arr)"/>
+  <text x="216" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60">90%</text>
+  <text x="216" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#7FA8B5">CIB IEI loans</text>
+
+  <line x1="520" y1="238" x2="520" y2="268" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp2-indigenous-arr)"/>
+  <text x="536" y="256" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60">10%</text>
+  <text x="536" y="270" class="mono" font-size="8" letter-spacing="1.2" fill="#7FA8B5">own-source / Loan Guarantee</text>
+
+  <!-- TIER 2: Three corridor LPs -->
+  <g transform="translate(40, 284)">
+    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">THREE CORRIDOR-SPECIFIC INDIGENOUS LIMITED PARTNERSHIPS</text>
+
+    <!-- LP 1 -->
+    <rect x="0" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="14" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Saguenay LP</text>
+    <text x="14" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Côte-Nord corridor (QC)</text>
+    <line x1="14" y1="52" x2="186" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="14" y="68" class="serif" font-size="11" fill="#D9D3C6">Cree · Innu nations</text>
+    <text x="14" y="84" class="serif" font-size="11" fill="#D9D3C6">~6,000 MW adjacent hydro</text>
+
+    <!-- LP 2 -->
+    <rect x="220" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="234" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Peace River LP</text>
+    <text x="234" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Bennett corridor (BC)</text>
+    <line x1="234" y1="52" x2="406" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="234" y="68" class="serif" font-size="11" fill="#D9D3C6">BC Indigenous Power Coalition</text>
+    <text x="234" y="84" class="serif" font-size="11" fill="#D9D3C6">~4,600 MW adjacent hydro</text>
+
+    <!-- LP 3 -->
+    <rect x="440" y="6" width="200" height="92" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="454" y="28" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Northern Manitoba LP</text>
+    <text x="454" y="44" class="serif" font-style="italic" font-size="11" fill="#C08D60">Limestone / Long Spruce corridor</text>
+    <line x1="454" y1="52" x2="626" y2="52" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="454" y="68" class="serif" font-size="11" fill="#D9D3C6">Cree nations</text>
+    <text x="454" y="84" class="serif" font-size="11" fill="#D9D3C6">~3,500 MW adjacent hydro</text>
+  </g>
+
+  <!-- Down arrows to Series II -->
+  <line x1="100" y1="394" x2="280" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp2-indigenous-arr)"/>
+  <line x1="360" y1="394" x2="360" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp2-indigenous-arr)"/>
+  <line x1="620" y1="394" x2="440" y2="424" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp2-indigenous-arr)"/>
+
+  <text x="360" y="412" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">SUBSCRIBE TO</text>
+
+  <!-- TIER 3: Series II tranche -->
+  <g transform="translate(40, 432)">
+    <rect x="0" y="0" width="640" height="84" fill="#F4EFE3"/>
+    <text x="20" y="24" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">SERIES II · INDIGENOUS-COMPACT TRANCHE</text>
+    <text x="20" y="50" class="serif" font-weight="700" font-size="20" fill="#0F2A44">10–15% of compact capital expenditure</text>
+    <text x="20" y="74" class="serif" font-style="italic" font-size="13" fill="#C08D60">Pari passu coupon and principal with senior compact tranches</text>
+
+    <text x="620" y="46" class="mono" font-size="22" font-weight="500" fill="#C08D60" text-anchor="end">+25 bp</text>
+    <text x="620" y="64" class="mono" font-size="9" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">RATCHET IF EQUITY &lt; 10%</text>
+    <text x="620" y="78" class="mono" font-size="9" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">STRUCTURAL PROTECTION</text>
+  </g>
+
+  <!-- TIER 4: Rights and economics -->
+  <g transform="translate(40, 530)">
+    <text x="0" y="-4" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">ECONOMIC AND GOVERNANCE RIGHTS</text>
+
+    <rect x="0"   y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="14" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Positive carry</text>
+    <text x="14" y="44" class="serif" font-size="11" fill="#D9D3C6">CIB IEI rate &lt; CKPIF</text>
+    <text x="14" y="60" class="serif" font-size="11" fill="#D9D3C6">coupon → spread is</text>
+    <text x="14" y="76" class="serif" font-size="11" fill="#D9D3C6">monetisable own-source revenue</text>
+
+    <rect x="220" y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="234" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Governance rights</text>
+    <text x="234" y="44" class="serif" font-size="11" fill="#D9D3C6">Nation-level route consent</text>
+    <text x="234" y="60" class="serif" font-size="11" fill="#D9D3C6">KPI-amendment veto</text>
+    <text x="234" y="76" class="serif" font-size="11" fill="#D9D3C6">Director representation</text>
+
+    <rect x="440" y="6" width="200" height="78" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="454" y="26" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Strategic durability</text>
+    <text x="454" y="44" class="serif" font-size="11" fill="#D9D3C6">Indigenous economic</text>
+    <text x="454" y="60" class="serif" font-size="11" fill="#D9D3C6">leadership (not minority)</text>
+    <text x="454" y="76" class="serif" font-size="11" fill="#D9D3C6">Multi-corridor diversification</text>
+  </g>
+
+  <!-- Footer rule and source -->
+  <line x1="40"  y1="624" x2="680" y2="624" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="620" x2="40"  y2="628" stroke="#C08D60" stroke-width="1"/>
+  <line x1="360" y1="621" x2="360" y2="627" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="680" y1="620" x2="680" y2="628" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="642" class="mono" font-size="8" letter-spacing="1.0" fill="#7FA8B5">PRECEDENTS · ATHABASCA INDIGENOUS INVESTMENTS · COASTAL GASLINK · NISGA'A–PRGT · BC IPC</text>
+  <text x="680" y="642" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-002 · §9</text>
+</svg>
     <figcaption>FIGURE E  ·  INDIGENOUS SERIES II TRANCHE  ·  DESIGNED IN AT ISSUANCE, INDIGENOUS ECONOMIC LEADERSHIP, +25 bp PROTECTIVE RATCHET</figcaption>
   </figure>
 

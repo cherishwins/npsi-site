@@ -200,7 +200,133 @@
   </div>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp3-architecture.svg" alt="Figure A — The three-rail Pacific architecture complete: Rail 1 Financial (Korea–Canada, Working Paper No. 1, anchored by Korean institutional capital and Canadian sovereign guarantor); Rail 2 Energy and Compute (Canada–United States, Working Paper No. 2, Canadian dispatchable hydro pairing with U.S. hyperscale operators and federal AI compute); Rail 3 Defence-Industrial (Canada–Korea, this paper, the CPSP procurement and Hanwha-HHI consortium pairing with Canadian Defence Investment Agency, Algoma Steel, APMA, and Major Projects Office). Canada at the meridian; Korean industrial base anchors Rails 1 and 3; critical minerals bind all three." />
+    <svg id="fig-wp3-architecture" role="img" aria-label="Figure A — The three-rail Pacific architecture complete: Rail 1 Financial (Korea–Canada, Working Paper No. 1, anchored by Korean institutional capital and Canadian sovereign guarantor); Rail 2 Energy and Compute (Canada–United States, Working Paper No. 2, Canadian dispatchable hydro pairing with U.S. hyperscale operators and federal AI compute); Rail 3 Defence-Industrial (Canada–Korea, this paper, the CPSP procurement and Hanwha-HHI consortium pairing with Canadian Defence Investment Agency, Algoma Steel, APMA, and Major Projects Office). Canada at the meridian; Korean industrial base anchors Rails 1 and 3; critical minerals bind all three." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580">
+  <!-- NPSI WP3 · Figure A · The Three-Rail Pacific Architecture, Complete -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Document Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp3-architecture .serif { font-family: var(--font-serif); }
+      #fig-wp3-architecture .mono { font-family: var(--font-mono); }
+      #fig-wp3-architecture .label { font-size: 10px; letter-spacing: 2.4px; fill: #C08D60; text-transform: uppercase; }
+      #fig-wp3-architecture .endpoint { font-size: 13px; font-weight: 600; fill: #F4EFE3; letter-spacing: 1.5px; }
+      #fig-wp3-architecture .endpoint-light { font-size: 13px; font-weight: 600; fill: #0F2A44; letter-spacing: 1.5px; }
+      #fig-wp3-architecture .descriptor { font-size: 11px; fill: #D9D3C6; }
+      #fig-wp3-architecture .descriptor-light { font-size: 11px; fill: #0F2A44; }
+      #fig-wp3-architecture .rail-title { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #7FA8B5; }
+      #fig-wp3-architecture .rail-title-bronze { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; fill: #C08D60; }
+    </style>
+    <marker id="fig-wp3-architecture-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
+    </marker>
+    <marker id="fig-wp3-architecture-arrowhead-bronze-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0F2A44"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#133150"/>
+
+  <!-- Title bar -->
+  <text x="40" y="36" class="mono label">FIGURE A · THE THREE-RAIL PACIFIC ARCHITECTURE, COMPLETE</text>
+
+  <!-- Top meridian rule with three ticks -->
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- ================== RAIL 1: FINANCIAL ================== -->
+  <g transform="translate(0, 90)">
+    <text x="40" y="0" class="mono rail-title">RAIL 1 · FINANCIAL · WORKING PAPER NO. 1</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Korea endpoint -->
+    <text x="64" y="44" class="serif endpoint">KOREA</text>
+    <text x="64" y="68"  class="serif descriptor">National Pension Service · KIC</text>
+    <text x="64" y="84"  class="serif descriptor">Korea Post · Korean life insurers</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">SENIOR BOND PLACEMENT</text>
+
+    <!-- Connector line with arrows -->
+    <line x1="280" y1="68" x2="612" y2="68" stroke="#C08D60" stroke-width="1"
+          marker-start="url(#fig-wp3-architecture-arrowhead)" marker-end="url(#fig-wp3-architecture-arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">CKPIF · LUXEMBOURG SEAT</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">USD · CAD · KRW · ENGLISH LAW</text>
+
+    <!-- Canada endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">CANADA</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">Federal Crown · BoC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">FNMPC · CIB Indigenous Equity</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">SOVEREIGN GUARANTOR</text>
+  </g>
+
+  <!-- ================== RAIL 2: ENERGY & COMPUTE ================== -->
+  <g transform="translate(0, 240)">
+    <text x="40" y="0" class="mono rail-title">RAIL 2 · ENERGY &amp; COMPUTE · WORKING PAPER NO. 2</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+
+    <!-- Canada endpoint -->
+    <text x="64" y="44" class="serif endpoint">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor">Hydro-Québec · BC Hydro</text>
+    <text x="64" y="84"  class="serif descriptor">Manitoba Hydro · 56,000 MW dispatchable</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5">GENERATION + TRANSMISSION</text>
+
+    <!-- Connector line -->
+    <line x1="320" y1="68" x2="572" y2="68" stroke="#C08D60" stroke-width="1"
+          marker-start="url(#fig-wp3-architecture-arrowhead)" marker-end="url(#fig-wp3-architecture-arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">UHV INTERTIES · TRAINING NODES</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">U.S. URBAN-EDGE INFERENCE PRESERVED</text>
+
+    <!-- US endpoint -->
+    <text x="836" y="44"  class="serif endpoint" text-anchor="end">UNITED STATES</text>
+    <text x="836" y="68"  class="serif descriptor" text-anchor="end">DOE · LBNL · FERC</text>
+    <text x="836" y="84"  class="serif descriptor" text-anchor="end">Hyperscale operators · U.S. utilities</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">OFF-TAKE COUNTERPARTY</text>
+  </g>
+
+  <!-- ================== RAIL 3: DEFENCE-INDUSTRIAL (THIS PAPER, highlighted) ================== -->
+  <g transform="translate(0, 390)">
+    <text x="40" y="0" class="mono rail-title-bronze">RAIL 3 · DEFENCE-INDUSTRIAL · WORKING PAPER NO. 3 (THIS PAPER)</text>
+
+    <rect x="40" y="14" width="820" height="110" fill="#F4EFE3"/>
+
+    <!-- Canada endpoint -->
+    <text x="64" y="44" class="serif endpoint-light">CANADA</text>
+    <text x="64" y="68"  class="serif descriptor-light">RCN · Defence Investment Agency</text>
+    <text x="64" y="84"  class="serif descriptor-light">Algoma Steel · APMA · MPO</text>
+    <text x="64" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#C08D60">PROCUREMENT + SUSTAINMENT</text>
+
+    <!-- Connector line -->
+    <line x1="290" y1="68" x2="602" y2="68" stroke="#C08D60" stroke-width="1"
+          marker-start="url(#fig-wp3-architecture-arrowhead)" marker-end="url(#fig-wp3-architecture-arrowhead)"/>
+    <text x="446" y="58" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">KSS-III · CPSP · UP TO 12 BY 2035</text>
+    <text x="446" y="84" class="mono" font-size="9" letter-spacing="1.6" fill="#C08D60" text-anchor="middle">DEFENCE COOPERATION AGREEMENT · SDCP · 2+2</text>
+
+    <!-- Korea endpoint -->
+    <text x="836" y="44"  class="serif endpoint-light" text-anchor="end">KOREA</text>
+    <text x="836" y="68"  class="serif descriptor-light" text-anchor="end">Hanwha Ocean · HD Hyundai HI</text>
+    <text x="836" y="84"  class="serif descriptor-light" text-anchor="end">DAPA · K-Defense Strategy</text>
+    <text x="836" y="106" class="mono"
+          font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="end">PLATFORM + INDUSTRIAL CAPACITY</text>
+  </g>
+
+  <!-- Bottom meridian -->
+  <line x1="40" y1="540" x2="860" y2="540" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="536" x2="40"  y2="544" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="537" x2="450" y2="543" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="536" x2="860" y2="544" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Footer -->
+  <text x="40" y="560" class="mono" font-size="9" letter-spacing="1.1" fill="#7FA8B5">CANADA AT THE MERIDIAN · KOREAN INDUSTRIAL BASE ANCHORS RAILS 1 + 3 · CRITICAL MINERALS BIND ALL THREE</text>
+  <text x="860" y="560" class="mono" font-size="9" letter-spacing="1.6" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · v1.0.1</text>
+</svg>
     <figcaption>FIGURE A  ·  THE THREE-RAIL PACIFIC ARCHITECTURE COMPLETE  ·  FINANCIAL (WP1) + ENERGY &amp; COMPUTE (WP2) + DEFENCE-INDUSTRIAL (WP3)</figcaption>
   </figure>
 </section>
@@ -311,7 +437,109 @@
   <p>The 23 May arrival at Esquimalt is the structural inverse of an operational demonstration. It is the demonstration of a structure.</p>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp3-voyage.svg" alt="Figure B — The 14,000-kilometre trans-Pacific voyage of ROKS Dosan Ahn Chang-ho. Four nodes shown along a horizontal timeline: Jinhae (departure, 25 March 2026), Guam (resupply, early April), Pearl Harbor (RCN submariners embark, 2 May 2026), and Esquimalt (joint exercises with RCN, 23 May 2026). Distance markers ~3,300 km / ~6,200 km / ~4,500 km. AIP-at-scale used throughout. Followed by RIMPAC integration in summer 2026." />
+    <svg id="fig-wp3-voyage" role="img" aria-label="Figure B — The 14,000-kilometre trans-Pacific voyage of ROKS Dosan Ahn Chang-ho. Four nodes shown along a horizontal timeline: Jinhae (departure, 25 March 2026), Guam (resupply, early April), Pearl Harbor (RCN submariners embark, 2 May 2026), and Esquimalt (joint exercises with RCN, 23 May 2026). Distance markers ~3,300 km / ~6,200 km / ~4,500 km. AIP-at-scale used throughout. Followed by RIMPAC integration in summer 2026." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <!-- NPSI WP3 · Figure B · Trans-Pacific Voyage of ROKS Dosan Ahn Chang-ho -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Cream #0F2A44, Paper #133150, Rule #2E4A63 -->
+
+  <defs>
+    <style>
+      #fig-wp3-voyage .serif { font-family: var(--font-serif); }
+      #fig-wp3-voyage .mono { font-family: var(--font-mono); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" fill="#133150"/>
+
+  <!-- Title -->
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE B · TRANS-PACIFIC VOYAGE · ROKS DOSAN AHN CHANG-HO</text>
+
+  <!-- Top meridian -->
+  <line x1="40"  y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">14,000 km · 25 March – 23 May 2026</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">First Korean submarine to cross the Pacific independently. AIP-at-scale demonstrated.</text>
+
+  <!-- Voyage path: horizontal line with four nodes -->
+  <!-- Path coordinates: x = 100 (Jinhae), 320 (Guam), 540 (Pearl Harbor), 800 (Esquimalt) -->
+
+  <g transform="translate(0, 250)">
+    <!-- Solid line connector for completed legs -->
+    <line x1="100" y1="0" x2="540" y2="0" stroke="#F4EFE3" stroke-width="2.5"/>
+    <!-- Dashed line for the upcoming leg -->
+    <line x1="540" y1="0" x2="800" y2="0" stroke="#C08D60" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <!-- Node 1: Jinhae -->
+    <circle cx="100" cy="0" r="9" fill="#F4EFE3"/>
+    <text x="100" y="-22" class="serif" font-weight="700" font-size="14" fill="#F4EFE3" text-anchor="middle">JINHAE</text>
+    <text x="100" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">25 MAR</text>
+    <text x="100" y="40" class="serif" font-style="italic" font-size="11" fill="#7FA8B5" text-anchor="middle">Departure</text>
+    <text x="100" y="56" class="serif" font-size="10" fill="#D9D3C6" text-anchor="middle">Republic of Korea</text>
+
+    <!-- Node 2: Guam -->
+    <circle cx="320" cy="0" r="9" fill="#F4EFE3"/>
+    <text x="320" y="-22" class="serif" font-weight="700" font-size="14" fill="#F4EFE3" text-anchor="middle">GUAM</text>
+    <text x="320" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">EARLY APR</text>
+    <text x="320" y="40" class="serif" font-style="italic" font-size="11" fill="#7FA8B5" text-anchor="middle">Maintenance &amp; resupply</text>
+    <text x="320" y="56" class="serif" font-size="10" fill="#D9D3C6" text-anchor="middle">U.S. territory</text>
+
+    <!-- Node 3: Pearl Harbor -->
+    <circle cx="540" cy="0" r="9" fill="#F4EFE3"/>
+    <text x="540" y="-22" class="serif" font-weight="700" font-size="14" fill="#F4EFE3" text-anchor="middle">PEARL HARBOR</text>
+    <text x="540" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">2 MAY</text>
+    <text x="540" y="40" class="serif" font-style="italic" font-size="11" fill="#7FA8B5" text-anchor="middle">RCN submariners embark</text>
+    <text x="540" y="56" class="serif" font-size="10" fill="#D9D3C6" text-anchor="middle">U.S. Hawaii</text>
+
+    <!-- Node 4: Esquimalt (highlighted as upcoming) -->
+    <circle cx="800" cy="0" r="11" fill="#C08D60" stroke="#F4EFE3" stroke-width="2"/>
+    <text x="800" y="-22" class="serif" font-weight="700" font-size="14" fill="#C08D60" text-anchor="middle">ESQUIMALT</text>
+    <text x="800" y="24" class="mono" font-size="10" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">23 MAY</text>
+    <text x="800" y="40" class="serif" font-style="italic" font-size="11" fill="#7FA8B5" text-anchor="middle">Joint exercises with RCN</text>
+    <text x="800" y="56" class="serif" font-size="10" fill="#D9D3C6" text-anchor="middle">Canada · British Columbia</text>
+  </g>
+
+  <!-- Distance labels above the line -->
+  <g transform="translate(0, 195)">
+    <text x="210" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="middle">~3,300 km</text>
+    <text x="430" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="middle">~6,200 km</text>
+    <text x="670" y="0" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="middle">~4,500 km</text>
+  </g>
+
+  <!-- Stage labels above distances -->
+  <g transform="translate(0, 175)">
+    <text x="210" y="0" class="mono" font-size="9" letter-spacing="2" fill="#F4EFE3" text-anchor="middle">LEG 1 · TRANSPACIFIC</text>
+    <text x="430" y="0" class="mono" font-size="9" letter-spacing="2" fill="#F4EFE3" text-anchor="middle">LEG 2 · OPEN OCEAN</text>
+    <text x="670" y="0" class="mono" font-size="9" letter-spacing="2" fill="#C08D60" text-anchor="middle">LEG 3 · APPROACH</text>
+  </g>
+
+  <!-- AIP indicator strip -->
+  <g transform="translate(0, 360)">
+    <text x="40" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">EXTENSIVE AIR-INDEPENDENT PROPULSION (AIP) USE THROUGHOUT</text>
+
+    <rect x="40"  y="10" width="760" height="14" fill="#F4EFE3"/>
+    <text x="420" y="22" class="mono" font-size="9.5" letter-spacing="1.5" fill="#0F2A44" text-anchor="middle">SUSTAINED SUBMERGED OPERATION · BLUE-WATER ENDURANCE DEMONSTRATED</text>
+  </g>
+
+  <!-- After Esquimalt: RIMPAC integration -->
+  <g transform="translate(0, 410)">
+    <line x1="40"  y1="0" x2="860" y2="0" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="40" y="20" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">23 MAY – 2 JUNE · ESQUIMALT JOINT EXERCISES WITH RCN AND RCAF</text>
+    <text x="860" y="20" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">SUMMER 2026 · RIMPAC INTEGRATION</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40"  y1="450" x2="860" y2="450" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="446" x2="40"  y2="454" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="447" x2="450" y2="453" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="446" x2="860" y2="454" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="468" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">SOURCE · ROK NAVY · ASIA TODAY/UPI 5 MAY 2026</text>
+  <text x="860" y="468" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · §3</text>
+</svg>
     <figcaption>FIGURE B  ·  TRANS-PACIFIC VOYAGE OF ROKS <em>DOSAN AHN CHANG-HO</em>  ·  25 MARCH – 23 MAY 2026 · 14,000 KM</figcaption>
   </figure>
 </section>
@@ -370,7 +598,102 @@
   <p>That structural design — that 80 percent of the procurement decision is made on non-platform criteria — is itself the corridor architecture in operational form. The submarine is the symbol. The offset architecture is the substance. The June 2026 decision selects a corridor, not just a boat.</p>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp3-offsets.svg" alt="Figure C — The industrial offset architecture. Top: CPSP procurement vehicle (up to 12 submarines by 2035, June 2026 final-contractor decision). Middle: Korean consortium (Hanwha Ocean + HD Hyundai Heavy Industries, KSS-III Batch-I variant). Bottom three cells: Algoma Steel structural arrangement (USD 250M / CAD 345M, Sault Ste. Marie beam mill, non-contingent); Hanwha × APMA MOU 28 April 2026 (K9 Thunder, Chunmoo MLRS, K10, Redback IFV, AGVs); existing Canadian-partner MOUs (CAE Montreal, Gastops Ottawa, Curtiss-Wright INDAL Mississauga). Footer: Hanwha Melbourne factory 2024 precedent — replicable in Canada." />
+    <svg id="fig-wp3-offsets" role="img" aria-label="Figure C — The industrial offset architecture. Top: CPSP procurement vehicle (up to 12 submarines by 2035, June 2026 final-contractor decision). Middle: Korean consortium (Hanwha Ocean + HD Hyundai Heavy Industries, KSS-III Batch-I variant). Bottom three cells: Algoma Steel structural arrangement (USD 250M / CAD 345M, Sault Ste. Marie beam mill, non-contingent); Hanwha × APMA MOU 28 April 2026 (K9 Thunder, Chunmoo MLRS, K10, Redback IFV, AGVs); existing Canadian-partner MOUs (CAE Montreal, Gastops Ottawa, Curtiss-Wright INDAL Mississauga). Footer: Hanwha Melbourne factory 2024 precedent — replicable in Canada." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <!-- NPSI WP3 · Figure C · Industrial Offset Architecture -->
+
+  <defs>
+    <style>
+      #fig-wp3-offsets .serif { font-family: var(--font-serif); }
+      #fig-wp3-offsets .mono { font-family: var(--font-mono); }
+    </style>
+    <marker id="fig-wp3-offsets-arr-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C08D60"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="540" fill="#133150"/>
+
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE C · INDUSTRIAL OFFSET ARCHITECTURE</text>
+
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">Procurement as industrial policy.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">CPSP evaluation grid: 50% sustainment · 20% platform · 15% strategic-economic · 15% financial.</text>
+
+  <!-- Top: Procurement vehicle -->
+  <g transform="translate(40, 144)">
+    <rect x="0" y="0" width="820" height="58" fill="#F4EFE3"/>
+    <text x="20" y="22" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">PROCUREMENT VEHICLE</text>
+    <text x="20" y="44" class="serif" font-weight="700" font-size="15" fill="#0F2A44">Canadian Patrol Submarine Project · CAD&#160;100&#160;billion total program · June 2026 decision</text>
+    <text x="800" y="44" class="mono" font-size="10" letter-spacing="1.5" fill="#0F2A44" text-anchor="end">CPSP · DIA</text>
+  </g>
+
+  <!-- Down arrow -->
+  <line x1="450" y1="208" x2="450" y2="232" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp3-offsets-arr-c)"/>
+
+  <!-- Middle: Korean consortium -->
+  <g transform="translate(40, 240)">
+    <rect x="0" y="0" width="820" height="48" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="20" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">KOREAN CONSORTIUM</text>
+    <text x="20" y="38" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Hanwha Ocean &#160;+&#160; HD Hyundai Heavy Industries · KSS-III Batch-I variant</text>
+  </g>
+
+  <!-- Down arrow -->
+  <line x1="200" y1="294" x2="200" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp3-offsets-arr-c)"/>
+  <line x1="450" y1="294" x2="450" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp3-offsets-arr-c)"/>
+  <line x1="700" y1="294" x2="700" y2="318" stroke="#C08D60" stroke-width="1" marker-end="url(#fig-wp3-offsets-arr-c)"/>
+
+  <text x="450" y="312" class="mono" font-size="9" letter-spacing="1.5" fill="#C08D60" text-anchor="middle">CANADIAN INDUSTRIAL DEPLOYMENT</text>
+
+  <!-- Three-column offset cells -->
+  <g transform="translate(40, 326)">
+    <!-- Cell 1: Algoma Steel -->
+    <rect x="0" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="20" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">STEEL</text>
+    <text x="20" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Algoma Steel</text>
+    <text x="20" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Sault Ste. Marie · Anishinaabe territory</text>
+    <line x1="20" y1="72" x2="240" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="90" class="mono" font-size="11" font-weight="500" fill="#F4EFE3">USD 250M / CAD 345M</text>
+    <text x="20" y="106" class="serif" font-size="11" fill="#D9D3C6">New beam mill · non-contingent</text>
+
+    <!-- Cell 2: APMA / Vehicles -->
+    <rect x="280" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="300" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">VEHICLES · APMA MOU 28 APR 2026</text>
+    <text x="300" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Hanwha × APMA</text>
+    <text x="300" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Ontario auto-manufacturing centres</text>
+    <line x1="300" y1="72" x2="520" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="300" y="90" class="serif" font-size="11" fill="#D9D3C6">K9 Thunder · Chunmoo · K10</text>
+    <text x="300" y="106" class="serif" font-size="11" fill="#D9D3C6">Redback IFV · AGVs</text>
+
+    <!-- Cell 3: Existing partners -->
+    <rect x="560" y="0" width="260" height="118" fill="#0F2A44" stroke="#C08D60" stroke-width="0.7"/>
+    <text x="580" y="22" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">EXISTING NETWORK · PRE-CPSP</text>
+    <text x="580" y="46" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Canadian-partner MOUs</text>
+    <text x="580" y="62" class="serif" font-style="italic" font-size="11" fill="#C08D60">Design · integration · support</text>
+    <line x1="580" y1="72" x2="800" y2="72" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="580" y="90" class="serif" font-size="11" fill="#D9D3C6">CAE Montreal · Gastops Ottawa</text>
+    <text x="580" y="106" class="serif" font-size="11" fill="#D9D3C6">Curtiss-Wright INDAL Mississauga</text>
+  </g>
+
+  <!-- Bottom narrative bar -->
+  <g transform="translate(40, 472)">
+    <rect x="0" y="0" width="820" height="38" fill="#0F2A44" stroke="#2E4A63" stroke-width="0.5"/>
+    <text x="20" y="16" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">PRECEDENT</text>
+    <text x="20" y="32" class="serif" font-style="italic" font-size="12" fill="#D9D3C6">Hanwha Melbourne factory (2024) · 2-year build · ~1,000 employees · model is replicable in Canada.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40"  y1="520" x2="860" y2="520" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="516" x2="40"  y2="524" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="517" x2="450" y2="523" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="516" x2="860" y2="524" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5">SOURCES · CTV NEWS 29 APR 2026 · APMA · HANWHA AEROSPACE</text>
+  <text x="860" y="538" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" text-anchor="end">NPSI-WP-003 · §4</text>
+</svg>
     <figcaption>FIGURE C  ·  INDUSTRIAL OFFSET ARCHITECTURE  ·  PROCUREMENT-AS-INDUSTRIAL-POLICY UNDER THE 50/20/15/15 EVALUATION GRID</figcaption>
   </figure>
 </section>
@@ -504,7 +827,108 @@
   <p>What it requires is the bundling of these existing institutional layers into a coherent corridor framing — and the political will to convert that bundling into a CPSP procurement decision in June 2026. The institutional plumbing is in place. The decision is the only remaining variable.</p>
 
   <figure>
-    <img loading="lazy" decoding="async" src="/assets/img/wp3-institutional.svg" alt="Figure D — Twelve-year vertical timeline of Canada-Korea institutional plumbing. 2015: CKFTA enters into force. 2022: Comprehensive Strategic Partnership signed September; Defence Materiel Cooperation MoU renewed December. 2024: CSP Action Plan operationalised; CCC × DAPA MoU June; inaugural 2+2 Foreign and Defence Ministerial November. 2025: SDCP launched October — Canada's first Indo-Pacific bilateral defence roadmap. 2026: Second 2+2 Ministerial 25 February signs Classified Information Agreement and initiates Defence Cooperation Agreement negotiations; ROKS Dosan Ahn Chang-ho arrives Esquimalt 23 May with CPSP decision in June. Footer: continuous institutional deepening; no new architecture required." />
+    <svg id="fig-wp3-institutional" role="img" aria-label="Figure D — Twelve-year vertical timeline of Canada-Korea institutional plumbing. 2015: CKFTA enters into force. 2022: Comprehensive Strategic Partnership signed September; Defence Materiel Cooperation MoU renewed December. 2024: CSP Action Plan operationalised; CCC × DAPA MoU June; inaugural 2+2 Foreign and Defence Ministerial November. 2025: SDCP launched October — Canada's first Indo-Pacific bilateral defence roadmap. 2026: Second 2+2 Ministerial 25 February signs Classified Information Agreement and initiates Defence Cooperation Agreement negotiations; ROKS Dosan Ahn Chang-ho arrives Esquimalt 23 May with CPSP decision in June. Footer: continuous institutional deepening; no new architecture required." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640">
+  <!-- NPSI WP3 · Figure D · CKFTA → SDCP → 2+2 Institutional Timeline (vertical) -->
+
+  <defs>
+    <style>
+      #fig-wp3-institutional .serif { font-family: var(--font-serif); }
+      #fig-wp3-institutional .mono { font-family: var(--font-mono); }
+    </style>
+  </defs>
+
+  <rect width="900" height="640" fill="#133150"/>
+
+  <text x="40" y="36" class="mono" font-size="10" letter-spacing="2.4" fill="#C08D60">FIGURE D · CANADA–KOREA INSTITUTIONAL PLUMBING · 2015 → 2026</text>
+
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="52" x2="40"  y2="60" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="53" x2="450" y2="59" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="52" x2="860" y2="60" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40" y="92"  class="serif" font-size="20" font-weight="600" fill="#F4EFE3">From episodic engagement to sustained strategic alignment.</text>
+  <text x="40" y="116" class="serif" font-style="italic" font-size="14" fill="#C08D60">Twelve years of treaty-grade and treaty-adjacent agreements. Defence Cooperation Agreement now in negotiation.</text>
+
+  <!-- Vertical timeline rail -->
+  <line x1="160" y1="156" x2="160" y2="568" stroke="#F4EFE3" stroke-width="1.5"/>
+
+  <!-- Epoch 1: Trade Foundation -->
+  <g transform="translate(0, 168)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#7FA8B5" text-anchor="end">2015</text>
+    <circle cx="160" cy="0" r="7" fill="#C08D60"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">CKFTA enters into force</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">1 January 2015 · Canada's first comprehensive Asia-Pacific FTA</text>
+  </g>
+
+  <g transform="translate(0, 222)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#7FA8B5" text-anchor="end">2022</text>
+    <circle cx="160" cy="0" r="7" fill="#C08D60"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">Comprehensive Strategic Partnership (CSP)</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">September 2022 · five pillars including security and defence</text>
+  </g>
+
+  <g transform="translate(0, 262)">
+    <circle cx="160" cy="0" r="5" fill="#F4EFE3"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Defence Materiel Cooperation MoU renewed</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">December 2022 · first signed 2009</text>
+  </g>
+
+  <!-- Epoch 2: Materiel layer -->
+  <g transform="translate(0, 312)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#7FA8B5" text-anchor="end">2024</text>
+    <circle cx="160" cy="0" r="7" fill="#C08D60"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#F4EFE3">CSP Action Plan operationalised</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">2024 · classified information sharing, defence R&amp;D, cyber/maritime/space</text>
+  </g>
+
+  <g transform="translate(0, 352)">
+    <circle cx="160" cy="0" r="5" fill="#F4EFE3"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">CCC × DAPA Defence Industry &amp; Procurement MoU</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">June 2024 · government-to-government procurement framework</text>
+  </g>
+
+  <g transform="translate(0, 392)">
+    <circle cx="160" cy="0" r="5" fill="#F4EFE3"/>
+    <text x="180" y="-4" class="serif" font-weight="600" font-size="13" fill="#F4EFE3">Inaugural 2+2 Foreign and Defence Ministerial</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">November 2024 · the 2+2 mechanism extended to Canada</text>
+  </g>
+
+  <!-- Epoch 3: Security architecture -->
+  <g transform="translate(0, 442)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#7FA8B5" text-anchor="end">2025</text>
+    <circle cx="160" cy="0" r="9" fill="#F4EFE3"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Security and Defence Cooperation Partnership (SDCP)</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">October 2025 · Canada's first Indo-Pacific bilateral defence roadmap</text>
+  </g>
+
+  <g transform="translate(0, 492)">
+    <text x="60" y="6" class="mono" font-weight="500" font-size="13" fill="#7FA8B5" text-anchor="end">2026</text>
+    <circle cx="160" cy="0" r="9" fill="#F4EFE3"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="15" fill="#F4EFE3">Second 2+2 Ministerial · twin treaty-grade instruments</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">25 February 2026 · Classified Information Agreement signed; Defence Cooperation Agreement negotiations initiated</text>
+  </g>
+
+  <g transform="translate(0, 540)">
+    <circle cx="160" cy="0" r="7" fill="#C08D60"/>
+    <text x="180" y="-4" class="serif" font-weight="700" font-size="14" fill="#C08D60">ROKS Dosan Ahn Chang-ho arrives Esquimalt</text>
+    <text x="180" y="14" class="serif" font-style="italic" font-size="11.5" fill="#C08D60">23 May 2026 · operational demonstration; CPSP decision in June</text>
+  </g>
+
+  <!-- Footer narrative bar -->
+  <g transform="translate(40, 580)">
+    <rect x="0" y="0" width="820" height="36" fill="#F4EFE3"/>
+    <text x="20" y="14" class="mono" font-size="9" letter-spacing="2" fill="#C08D60">CONTINUOUS INSTITUTIONAL DEEPENING</text>
+    <text x="20" y="30" class="serif" font-style="italic" font-size="11.5" fill="#0F2A44">No new architecture required for the corridor — only the bundling of existing layers + the June 2026 CPSP decision.</text>
+  </g>
+
+  <!-- Footer rule -->
+  <line x1="40"  y1="624" x2="860" y2="624" stroke="#C08D60" stroke-width="0.6"/>
+  <line x1="40"  y1="620" x2="40"  y2="628" stroke="#C08D60" stroke-width="1"/>
+  <line x1="450" y1="621" x2="450" y2="627" stroke="#C08D60" stroke-width="0.9"/>
+  <line x1="860" y1="620" x2="860" y2="628" stroke="#C08D60" stroke-width="1"/>
+
+  <text x="40"  y="638" class="mono" font-size="9" letter-spacing="1.5" fill="#7FA8B5" style="display:none;">SOURCES · GAC · APF CANADA · 2+2 JOINT STATEMENTS</text>
+</svg>
     <figcaption>FIGURE D  ·  CANADA–KOREA INSTITUTIONAL TIMELINE  ·  CKFTA (2015) → DEFENCE COOPERATION AGREEMENT (UNDER NEGOTIATION)</figcaption>
   </figure>
 </section>
