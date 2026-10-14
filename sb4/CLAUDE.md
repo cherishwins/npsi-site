@@ -6,7 +6,7 @@
 
 ```
 ├── sb4/
-│   ├── index.html                   Special Briefing No. 4 — *The Tollgate Markets* — release page (PDF canonical)
+│   ├── index.html                   Special Briefing No. 4 — *The Tollgate Markets* — full reading view (PDF canonical)
 │   └── special-briefing.pdf         canonical v1.0.1 release (24 pp., dark edition only; corrections on p. 23, AI note on the back cover)
 ```
 
@@ -16,7 +16,7 @@ Share card: `assets/img/sb4-og.svg` → `sb4-og.png` (render with `tools/render-
 
 ## Special Briefing No. 4 — The Tollgate Markets (`sb4/index.html`)
 
-Market-enforcement briefing, integrated 4 October 2026 as a **PDF-first release page**. Key facts that should remain consistent:
+Market-enforcement briefing, integrated 4 October 2026 as a PDF-first release page; the **full reading view** was ported from the v1.0.1 PDF on 14 October 2026 (all eleven sections, the fourteen figures redrawn as inline SVG in the four-colour palette with tokens, the ladder as a table, the Tollgate Test, the signed author's note, open items, sources and corrections; the back cover's "Also from NPSI" panel is not on the page because neither document is on the site). Page-scoped styles are `sb4-` prefixed in the page head. Key facts that should remain consistent:
 
 - **Identity:** the document ID is the one printed on the release, `NPSI-20261003-B` (not `NPSI-SB-004`); on this site it is Special Briefing No. 4. v1.0 was issued 3 October 2026 and circulated on LinkedIn; v1.0.1 of 4 October 2026, corrected after a source check, is the release hosted here. The analysis and the ladder's ratings did not change between them.
 - **Turkey, the case:** 131 funds ordered into liquidation on 17 September 2026 (SPK Bulletins 2026/60 and 2026/61); 455,758 investors (MKK, via Reuters); Tera Portföy's TP2 held TRY 224.4bn on 16 September; fund-size estimates run from $16.5bn to more than $20bn by source and date. By 30 September prosecutors had named 217 suspects and jailed 56; the justice minister spoke of "Ponzi-like methods." No court had ruled on guilt as of 4 October 2026: report every allegation as an allegation.

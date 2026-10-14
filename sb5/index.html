@@ -45,6 +45,58 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
 
+<style>
+  /* Page-scoped components — sb5- prefixed, tokens only. */
+  .sb5-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.sb5-t { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; min-width: 540px; }
+  table.sb5-t th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
+    text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--bronze);
+  }
+  table.sb5-t td { padding: 11px 12px 11px 0; vertical-align: top; border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink); }
+  table.sb5-t tr:last-child td { border-bottom: none; }
+  table.sb5-t td strong { color: var(--navy); font-weight: 600; }
+  table.sb5-t td small { display: block; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 2px; }
+  table.sb5-t td .orig { font-family: var(--font-kr); font-size: 15px; color: var(--navy); display: block; }
+  table.sb5-t td .rom { font-style: italic; color: var(--ink-soft); display: block; font-size: 12.5px; }
+  .sb5-route { font-size: 14.5px; line-height: 1.5; margin: 0 0 12px; }
+  .sb5-src { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--ink-soft); margin: 14px 0 0; letter-spacing: 0; }
+  .sb5-side { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; margin: 22px 0; }
+  .sb5-side > div, .sb5-note { background: var(--paper); border: 0.5px solid var(--rule); padding: 16px 20px; }
+  .sb5-note { margin: 22px 0; }
+  .sb5-side .k, .sb5-note .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
+  .sb5-side p, .sb5-note p { font-size: 14.5px; line-height: 1.5; margin: 0 0 8px; }
+  .sb5-side p:last-child, .sb5-note p:last-child { margin-bottom: 0; }
+  .sb5-side .big { font-family: var(--font-mono); font-size: 26px; color: var(--bronze); margin: 0 0 4px; line-height: 1.1; }
+  .sb5-side .big small { font-size: 11px; letter-spacing: 0.16em; color: var(--ink-soft); margin-left: 6px; }
+  ol.sb5-list { list-style: none; margin: 20px 0 0; padding: 0; counter-reset: fb; }
+  ol.sb5-list li { counter-increment: fb; position: relative; border-top: 0.5px solid var(--rule); padding: 14px 0 14px 48px; margin: 0; font-size: 15px; line-height: 1.55; }
+  ol.sb5-list li:last-child { border-bottom: 0.5px solid var(--rule); }
+  ol.sb5-list li::before { content: counter(fb, decimal-leading-zero); position: absolute; left: 0; top: 15px; font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--bronze); }
+  .sb5-view { border-left: 2px solid var(--bronze); padding: 4px 0 4px 18px; margin: 22px 0; font-style: italic; color: var(--navy); }
+  .sb5-view p { font-size: 16px; line-height: 1.55; margin: 0; }
+  .sb5-sig { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bronze); margin: 18px 0 0; }
+  .sb5-fig svg {
+    --head: var(--navy); --body: var(--ink); --muted: var(--ink-soft); --label: var(--teal);
+    --hair: var(--rule); --panel2: var(--paper-warm); --bone: var(--ink-soft);
+    --ink-base: var(--teal); --ink-hot: var(--bronze); --land: var(--rule-soft); --land2: var(--paper-warm);
+    font-family: var(--font-serif);
+  }
+  .sb5-fig svg .m { font-family: var(--font-mono); }
+  .sb5-fig svg .s { font-family: var(--font-kr); }
+  .sb5-fig .fig-title { font-family: var(--font-serif); font-size: 15px; font-weight: 600; color: var(--navy); margin: 0 0 4px; line-height: 1.35; }
+  .sb5-fig .fig-sub { font-size: 13px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.45; }
+  .sb5-fig .fig-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
+  @media (max-width: 820px) {
+    .sb5-side { grid-template-columns: 1fr; }
+  }
+  @media print {
+    table.sb5-t { min-width: 0; }
+    table.sb5-t tr, .sb5-side > div, .sb5-note, ol.sb5-list li { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -127,7 +179,7 @@
   <div class="doc-class">Special Briefing No.&nbsp;5  ·  Commemoration and the Record  ·  v1.0.1  ·  3 October 2026, corrected 4 October  ·  Unclassified — Open Source</div>
   <h1>One Day, Four Names</h1>
   <div class="subtitle">What Tokyo, Seoul, Pyongyang and Washington each decided to call 15 August 1945. And the subject every name leaves out.</div>
-  <p class="lede">The PDF below is the canonical release: twenty-nine pages, in a dark edition for distribution and a cream edition for print, corrected on 4&nbsp;October 2026 after a check of its claims against their sources, with the corrections listed on its page&nbsp;28. This page carries the abstract, the four names, the reading rule the briefing proposes, and the direct downloads.</p>
+  <p class="lede">The war in the Pacific ended once. It has at least six official names, and none of them is neutral. Each is a sentence with a subject removed, and where the subject went is where the policy lives. This briefing reads the names as primary sources against the cables of August 1945, takes the legend of the 38th parallel apart document by document, and reads the speeches of 15&nbsp;August 2026 against the names. The full text follows; the PDF, corrected on 4&nbsp;October 2026, is the canonical release, in a dark edition for distribution and a cream edition for print.</p>
 </div>
 
 <aside class="standard" style="margin-bottom: 36px;">
@@ -157,16 +209,10 @@
 
 <article class="wp-prose">
 
-<section id="abstract">
-  <h2>Abstract</h2>
-
-  <p>The war in the Pacific ended once. It has at least six official names, and none of them is neutral. Each name is a sentence with a subject removed, and where the subject went is where the policy lives. Japan&rsquo;s official name for 15&nbsp;August, fixed by cabinet decision on 13&nbsp;April 1982, is the Day for Mourning the War Dead and Praying for Peace: it mentions neither the war&rsquo;s end nor its loss. Seoul&rsquo;s name says the light was restored without naming who restored it. Washington&rsquo;s says victory over Japan, and Korea is not in the sentence.</p>
-
-  <p>The briefing reads the names as primary sources against the documents of 1945. On 16&nbsp;August Stalin accepted the order that split Korea without mentioning Korea, and in the same message asked for the northern half of Hokkaido. Truman declined. Japan stayed whole; Korea was divided. The familiar story of two colonels, thirty minutes and a National Geographic map turns out to merge three documents carrying two different dates. The briefing then reads the speeches of 15&nbsp;August 2026 against the names, and finds that each did what its name predicted. The grammar fixed in 1945, 1949, 1963 and 1982 still predicts the quarrels of August 2026.</p>
-</section>
-
-<section id="names">
-  <h2>The Four Names</h2>
+<section id="brief">
+  <h2>00 · The Brief</h2>
+  <h3>The war in the Pacific ended once. It has at least six official names, and none of them is neutral.</h3>
+  <p>Each name is a sentence with a subject removed. Where the subject went is where the policy lives, and the grammar fixed in 1945, 1949, 1963 and 1982 still predicts the quarrels of August 2026.</p>
 
   <div class="ledger" style="margin: 24px 0;">
     <div class="ledger-item">
@@ -187,58 +233,779 @@
     </div>
   </div>
 
-  <p>Moscow&rsquo;s name, set by federal law in June 2023, and Beijing&rsquo;s, made statutory by the National People&rsquo;s Congress Standing Committee in February 2014, complete the six. None of the six says who drew the line across Korea.</p>
-</section>
-
-<section id="findings">
-  <h2>Key Findings</h2>
-
-  <ol>
-    <li>Japan&rsquo;s official name for the day mentions neither the war&rsquo;s end nor its loss. <span class="ledger-num">[Cabinet decision, 1982]</span></li>
-    <li>On 16&nbsp;August 1945 Stalin accepted the order that split Korea without mentioning Korea. In the same message he asked for the northern half of Hokkaido, and Truman declined. <span class="ledger-num">[FRUS 1945 VI, docs 450, 452]</span></li>
-    <li>The &ldquo;two colonels, thirty minutes, a National Geographic map&rdquo; story merges three documents carrying two different dates. Dean Rusk&rsquo;s own account in the government record has no stopwatch and no map. <span class="ledger-num">[FRUS doc 771; Schnabel; Rusk]</span></li>
-    <li>Kim Il-sung reached Korea on 19&nbsp;September 1945, five weeks after liberation. In 2024, 2025 and 2026 his grandson marked the anniversary by laying wreaths for Soviet soldiers. <span class="ledger-num">[Rodong Sinmun, via NK News]</span></li>
-    <li>On 15&nbsp;August 2026 Japan&rsquo;s Emperor spoke of &ldquo;deep remorse.&rdquo; The Prime Minister did not use the word. A year earlier her predecessor had put it back after twelve years without it. <span class="ledger-num">[Kantei, 2012&ndash;2026; Kyodo]</span></li>
+  <ol class="sb5-list">
+    <li>Japan&rsquo;s official name for the day mentions neither the war&rsquo;s end nor its loss. The cabinet decision of 13&nbsp;April 1982 calls it the Day for Mourning the War Dead and Praying for Peace. <span class="ledger-num">[Cabinet decision, 13 Apr 1982; MHLW]</span></li>
+    <li>On 16&nbsp;August 1945 Stalin accepted the order that split Korea without mentioning Korea. In the same message he asked for the northern half of Hokkaido. Truman declined. Japan stayed whole; Korea was divided. <span class="ledger-num">[FRUS 1945 VI, docs 450, 452]</span></li>
+    <li>The &ldquo;two colonels, thirty minutes, a National Geographic map&rdquo; story merges three documents carrying two different dates. Dean Rusk&rsquo;s own account in the government record has no stopwatch and no map. <span class="ledger-num">[FRUS 1945 VI, doc 771; Schnabel 1972; Rusk 1990]</span></li>
+    <li>Kim Il-sung reached Korea on 19&nbsp;September 1945, five weeks after liberation. In 2024, 2025 and 2026 his grandson marked the anniversary by laying wreaths for Soviet soldiers. <span class="ledger-num">[Rodong Sinmun, via NK News, 15 Aug 2026]</span></li>
+    <li>On 15&nbsp;August 2026 Japan&rsquo;s Emperor spoke of &ldquo;deep remorse.&rdquo; The Prime Minister did not use the word. A year earlier her predecessor had put it back after twelve years without it. <span class="ledger-num">[Prime Minister&rsquo;s Office, addresses 2012&ndash;2026; Kyodo, 15 Aug 2026]</span></li>
   </ol>
 
-  <aside class="standard">
-    <h4>The reading rule</h4>
-    <p>01 &nbsp;Read the official name of the day before the speech. &nbsp;·&nbsp; 02 &nbsp;Ask which subject it removes: who acted, who lost, who is not in the sentence. &nbsp;·&nbsp; 03 &nbsp;Read the speech. See whether the subject came back.</p>
+  <aside class="standard" style="margin-top: 24px;">
+    <h4>What to do with this</h4>
+    <p>Treat the official name of a commemoration as a primary source. Read it before the speech. The names tell you what each state needs its citizens to carry out of the room, and the 2026 speeches in <a href="#august">Section X</a> bear the reading out.</p>
   </aside>
 </section>
 
-<section id="method">
-  <h2>Method</h2>
+<nav class="toc" aria-label="Contents">
+  <h2>The route</h2>
+  <p class="sb5-route">Five capitals, one noon. A line that was drawn and a line that was refused. Then the paper trail behind a legend, a control case from Bonn, and what the names did on 15&nbsp;August 2026.</p>
+  <ol>
+    <li class="fm"><a href="#noon">I · Noon</a> — a voice nobody had heard, and the two words it did not say</li>
+    <li class="fm"><a href="#tokyo">II · Tokyo: a day with no loser</a> — how a 1982 cabinet decision removed both the war and the defeat</li>
+    <li class="fm"><a href="#seoul">III · Seoul: the vote that picked a word</a> — why &ldquo;Independence Day&rdquo; lost, and why the Republic has two birthdays</li>
+    <li class="fm"><a href="#pyongyang">IV · Pyongyang: the month between the liberation and the liberator</a> — what the record says about 1945, and who gets the wreaths in 2026</li>
+    <li class="fm"><a href="#washington">V · Washington and Moscow: a victory without a colony</a> — two dates for V-J Day, and an adjective Russia added in 2023</li>
+    <li class="fm"><a href="#line">VI · The line they drew, and the one they did not</a> — Stalin&rsquo;s message of 16 August 1945, read closely</li>
+    <li class="fm"><a href="#legend">VII · Three sources, two dates</a> — taking the 38th-parallel legend apart, document by document</li>
+    <li class="fm"><a href="#bonn">VIII · Bonn, 8 May 1985: the man who kept both words</a> — the control case</li>
+    <li class="fm"><a href="#textbooks">IX · 1982: the headline was wrong. The practice was real.</a> — a citation chain, and the screening results of March 2026</li>
+    <li class="fm"><a href="#august">X · 15 August 2026</a> — what the names did this year</li>
+    <li class="fm"><a href="#verification">Sources and verification</a> — open items are published, not hidden · <a href="#corrections">Corrections</a></li>
+  </ol>
+</nav>
 
-  <p>Dated claims trace to named documents, among them the cables of August 1945 in <em>Foreign Relations of the United States</em>. Where a widely repeated claim rested on a single or erroneous origin, the chain is shown rather than the claim repeated. Germany is the control case: Richard von Weizs&auml;cker&rsquo;s address of 8&nbsp;May 1985 held both defeat and liberation in one sentence. The briefing publishes its open items, among them Rusk&rsquo;s two dates for the night the line was drawn and a pending native-speaker review of its Korean and Japanese lines.</p>
+<section id="noon">
+  <h2>I · Noon</h2>
+  <h3>A voice nobody had heard, and the two words it did not say</h3>
+  <p>At noon on 15&nbsp;August 1945, a voice came out of Japan&rsquo;s radios that almost nobody listening had heard before. It belonged to the Emperor.</p>
+  <p>He read a rescript. The Empire, it said, &ldquo;accepts the provisions of their Joint Declaration.&rdquo; The war situation, it said, had developed &ldquo;not necessarily to Japan&rsquo;s advantage.&rdquo; The text does not contain the word for surrender, <span lang="ja">降伏</span>, or the word for defeat, <span lang="ja">敗戦</span>. <span class="ledger-num">[Imperial Rescript on the Termination of the War, 14 Aug 1945, broadcast 15 Aug]</span></p>
+  <p>Across the strait, in a colony that had been Japanese for thirty-five years, the same noon had a different name before the day was out. In Seoul it became <span lang="ko">광복</span>, the light restored. In the north, where Soviet troops had crossed the border a week earlier, the word that stuck was <span lang="ko">해방</span>, liberation. In Washington it was still Tuesday night, and the headline writers were already calling it V-J Day.</p>
+  <p>Eighty-one years later those names are still on the calendar. I started lining them up because I wanted a clean comparison of how four school systems teach the same date. The comparison turned out to be unnecessary. You do not need the textbooks. The names already contain the lesson.</p>
+  <h3>Every name for 15 August is a sentence with the subject taken out.</h3>
+  <p>Japan&rsquo;s war ended. Korea&rsquo;s light was restored. The fatherland was liberated. America won. Read them as grammar and each one tells you who is allowed to act, who is allowed to be blamed, and who is not in the sentence at all. I came to call it the missing subject, and once you see it you cannot stop seeing it, in cabinet decisions, in speeches, in a Russian law passed in 2023.</p>
 
-  <aside class="standard">
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 01</p>
+    <p class="fig-title">One ending, six names. Each one assigns the verb to somebody, or to nobody.</p>
+    <p class="fig-sub">The official or dominant name for the end of the Pacific war in each capital, its literal sense, and who the sentence lets act.</p>
+    <div class="sb5-tablewrap">
+      <table class="sb5-t">
+        <colgroup><col style="width:20%"><col style="width:26%"><col style="width:30%"><col style="width:24%"></colgroup>
+        <thead><tr><th>State</th><th>Name</th><th>Literal sense</th><th>Who acts</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Japan</strong><small>cabinet decision · 1982</small></td><td><span class="orig" lang="ja">戦没者を追悼し平和を祈念する日</span><span class="rom">senbotsusha o tsuit&#333; shi heiwa o kinen suru hi</span></td><td>Day for mourning the war dead and praying for peace. Common usage: <span lang="ja">終戦の日</span>, the day the war ended.</td><td>No one. The war ends on its own.</td></tr>
+          <tr><td><strong>South Korea</strong><small>statute · 1 Oct 1949</small></td><td><span class="orig" lang="ko">광복절</span><span class="rom">Gwangbokjeol</span></td><td>The festival of restored light. Marks both liberation in 1945 and the founding of the government in 1948.</td><td>Unstated. Light returns; the returner is not named.</td></tr>
+          <tr><td><strong>North Korea</strong><small>state calendar</small></td><td><span class="orig" lang="ko">조국해방의 날</span><span class="rom">Choguk haebang-&#365;i nal</span></td><td>Day of the liberation of the fatherland.</td><td>Kim Il-sung&rsquo;s guerrillas, in the official history. Since 2024, Soviet soldiers too.</td></tr>
+          <tr><td><strong>United States</strong><small>usage · proclamation 1945</small></td><td><span class="orig">V-J Day</span><span class="rom">14 or 15 Aug; 2 Sep by proclamation</span></td><td>Victory over Japan. Rhode Island still keeps &ldquo;Victory Day&rdquo; as a legal holiday on the second Monday of August.</td><td>The United States. Korea is not in the sentence.</td></tr>
+          <tr><td><strong>Russia</strong><small>federal law · 24 Jun 2023</small></td><td><span class="orig" lang="ru">День Победы над милитаристской Японией</span><span class="rom">3 September</span></td><td>Day of victory over militaristic Japan and the end of the Second World War. The adjective was added in 2023.</td><td>The Soviet army. Japan is named and characterised.</td></tr>
+          <tr><td><strong>China</strong><small>statutory · 2014</small></td><td><span class="orig" lang="zh">中国人民抗日战争胜利纪念日</span><span class="rom">3 September</span></td><td>Victory day of the Chinese people&rsquo;s war of resistance against Japan. The official English adds &ldquo;aggression&rdquo;.</td><td>The Chinese people. Japan is named.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Sources: MHLW (Japan), <span lang="ko">국경일에 관한 법률</span> (ROK, 1949), KCNA usage (DPRK), Truman radio address of 1 Sep 1945, Kremlin (24 Jun 2023), NPC Standing Committee (27 Feb 2014). Germany, the control case, appears in Section VIII.</figcaption>
+  </figure>
+
+  <p>What follows is the paper trail: who chose each name, when, and what they left out. Halfway through, the names stop being a matter of grammar and become a matter of territory, because the same week the names were being coined, two lines were being discussed on two maps. One was drawn. One was refused. The difference is the whole story of the peninsula.</p>
+</section>
+
+<section id="tokyo">
+  <h2>II · Tokyo</h2>
+  <h3>A day with no loser</h3>
+  <p>For eighteen years after the broadcast, Japan had no official day for the end of the war; its first national memorial services, in 1952 and 1959, fell on other dates. It had a date everyone half-remembered and a government that had not decided what to call it.</p>
+  <p>The first fix came from the Ikeda cabinet on 14&nbsp;May 1963, which set the state-hosted National Memorial Ceremony for the War Dead on 15&nbsp;August. The ceremony moved into the Nippon Budokan in 1965. Before 1963, the Nikkan Kogyo Shimbun notes, the public was &ldquo;not necessarily&rdquo; aware which day counted as the war&rsquo;s end. <span class="ledger-num">[Cabinet decision, 14 May 1963; Nikkan Kogyo Shimbun, <span lang="ja">産業春秋</span> column; Nikkei, 15 Aug 2023]</span></p>
+  <p>The name came nineteen years after that. On 13&nbsp;April 1982 the Suzuki cabinet designated 15&nbsp;August as <span lang="ja">戦没者を追悼し平和を祈念する日</span>, the Day for Mourning the War Dead and Praying for Peace. The Ministry of Health, Labour and Welfare, which runs the ceremony, describes its purpose as mourning the roughly 3.1&nbsp;million Japanese dead of the war. <span class="ledger-num">[Cabinet decision, 13 Apr 1982; MHLW]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">Correction on the record</p>
+      <p>English-language Wikipedia states that &ldquo;the National Diet enacted a law&rdquo; in 1982 fixing the day. It did not. The 1982 designation was a cabinet decision, <span lang="ja">閣議決定</span>, not a statute. The error travels widely. Do not repeat it.</p>
+    </div>
+    <div>
+      <p class="k">The dead the name counts</p>
+      <p class="big">3.1 <small>MILLION</small></p>
+      <p>Japanese war dead mourned at the ceremony, by the former Health and Welfare Ministry&rsquo;s 1977 tally: about 2.3&nbsp;million military personnel and civilian employees of the forces, and about 800,000 civilians. <span class="ledger-num">[MHLW; Nikkei, 15 Aug 2023]</span></p>
+    </div>
+  </div>
+  <p>Read the name as a sentence. It contains four nouns: the war dead, mourning, peace, prayer. It does not contain <span lang="ja">終戦</span>, the war&rsquo;s ending, which is what everyone calls the day in conversation. It does not contain <span lang="ja">敗戦</span>, defeat, which is what the day&rsquo;s critics on the left call it. It does not contain aggression, colony, or any country at all.</p>
+  <p>The everyday word does its own quiet work. <em>Sh&#363;sen</em> is intransitive. The war ended, the way weather ends. <em>Haisen</em> has a loser in it. Japan&rsquo;s government chose neither. It chose a name in which the only people present are the Japanese dead.</p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 02</p>
+    <p class="fig-title">What the official name holds, and what it does not</p>
+    <p class="fig-sub">The 1982 designation parsed into its four nouns, beside the words that an ending-of-war name could carry and this one does not.</p>
+    <svg role="img" aria-label="The 1982 name parsed into four nouns, the war dead, mourn, peace and pray, beside five words not in the name: the war's ending, defeat, aggression, colony, Korea; with a timeline from the 1945 broadcast to the 1982 naming" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--bronze)"/></marker></defs>
+      <!-- the name -->
+      <text x="0" y="34" class="s" font-size="26" fill="var(--head)">戦没者を追悼し平和を祈念する日</text>
+      <line x1="0" y1="48" x2="398" y2="48" stroke="var(--bronze)" stroke-width="1"/>
+      <!-- four nouns -->
+      <g font-size="12" fill="var(--body)">
+        <rect x="0" y="70" width="92" height="88" fill="var(--panel2)"/>
+        <text x="12" y="98" class="s" font-size="22" fill="var(--head)">戦没者</text><text x="12" y="120" fill="var(--head)" font-weight="600">the war dead</text><text x="12" y="140">present</text>
+        <rect x="102" y="70" width="92" height="88" fill="var(--panel2)"/>
+        <text x="114" y="98" class="s" font-size="22" fill="var(--head)">追悼</text><text x="114" y="120" fill="var(--head)" font-weight="600">mourn</text><text x="114" y="140">present</text>
+        <rect x="204" y="70" width="92" height="88" fill="var(--panel2)"/>
+        <text x="216" y="98" class="s" font-size="22" fill="var(--head)">平和</text><text x="216" y="120" fill="var(--head)" font-weight="600">peace</text><text x="216" y="140">present</text>
+        <rect x="306" y="70" width="92" height="88" fill="var(--panel2)"/>
+        <text x="318" y="98" class="s" font-size="22" fill="var(--head)">祈念</text><text x="318" y="120" fill="var(--head)" font-weight="600">pray</text><text x="318" y="140">present</text>
+      </g>
+      <!-- absent column -->
+      <text x="440" y="84" class="m" font-size="9.5" letter-spacing="1.4" fill="var(--label)">NOT IN THE NAME</text>
+      <g font-size="12" fill="var(--body)">
+        <text x="440" y="110" class="s" font-size="18" fill="var(--head)">終戦</text><text x="490" y="110">the war's ending</text>
+        <text x="440" y="136" class="s" font-size="18" fill="var(--head)">敗戦</text><text x="490" y="136">defeat</text>
+        <text x="440" y="162" class="s" font-size="18" fill="var(--head)">侵略</text><text x="490" y="162">aggression</text>
+        <text x="440" y="188" class="s" font-size="18" fill="var(--head)">植民地</text><text x="505" y="188">colony</text>
+        <text x="440" y="214" class="s" font-size="18" fill="var(--head)">朝鮮</text><text x="490" y="214">Korea</text>
+      </g>
+      <line x1="440" y1="226" x2="640" y2="226" stroke="var(--hair)" stroke-width="1"/>
+      <text x="440" y="246" font-size="11.5" fill="var(--body)">No country appears in it.</text>
+      <text x="440" y="263" font-size="11.5" fill="var(--body)">No verb has an object outside Japan.</text>
+      <!-- timeline strip -->
+      <g class="m" font-size="9.5" fill="var(--body)">
+        <line x1="0" y1="200" x2="398" y2="200" stroke="var(--hair)"/>
+        <circle cx="20" cy="200" r="4" fill="var(--ink-base)"/><text x="4" y="222">15 AUG 1945</text><text x="4" y="236" fill="var(--muted)">broadcast</text>
+        <circle cx="170" cy="200" r="4" fill="var(--ink-base)"/><text x="140" y="222">14 MAY 1963</text><text x="140" y="236" fill="var(--muted)">ceremony fixed</text>
+        <circle cx="300" cy="200" r="4" fill="var(--ink-base)"/><text x="275" y="222">1965</text><text x="275" y="236" fill="var(--muted)">Budokan</text>
+        <circle cx="380" cy="200" r="5" fill="var(--ink-hot)"/><text x="398" y="258" text-anchor="end" fill="var(--bronze)">13 APR 1982 · named</text>
+      </g>
+    </svg>
+    <figcaption>Sources: Cabinet decisions of 14 May 1963 and 13 Apr 1982; Ministry of Health, Labour and Welfare, <span lang="ja">全国戦没者追悼式</span>.</figcaption>
+  </figure>
+
+  <p>The habit is older than the name. A 1967 statute on special payments to repatriates already refers to 15&nbsp;August as <span lang="ja">終戦日</span>, the war&rsquo;s-end day. The official vocabulary had settled on the intransitive long before the cabinet acted; in 1982 it went one step further and dropped the ending from the name altogether. <span class="ledger-num">[Act on special payments to repatriates, 1967]</span></p>
+  <p>I will come back to Tokyo at the end, because on 15&nbsp;August 2026 the Emperor and the Prime Minister stood on the same Budokan stage and used two different grammars. Hold that. In Bonn in 1985, a West German president showed that a defeated state can say its defeat out loud in an official sentence and survive it. Japan&rsquo;s name for the day has never tried. Section VIII is his.</p>
+  <p>First, the colony. Seoul had to name the same noon, and it put the question to a vote.</p>
+</section>
+
+<section id="seoul">
+  <h2>III · Seoul</h2>
+  <h3>The vote that picked a word</h3>
+  <p>On 24&nbsp;May 1949 the cabinet of the Republic of Korea, whose government was nine months old, voted for a national holiday on 15&nbsp;August and called it Independence Day, <span lang="ko">독립기념일</span>. The National Assembly threw the name out.</p>
+  <p>The Assembly&rsquo;s Legislation and Judiciary Committee replaced it with <span lang="ko">광복절</span>, Gwangbokjeol, and the Act on National Holidays was promulgated on 1&nbsp;October 1949 with that word in it. <span lang="ko">광복</span> means the restoration of light. The Encyclopedia of Korean Culture defines the holiday as marking two things at once: the recovery of sovereignty on 15&nbsp;August 1945 and the establishment of the government on 15&nbsp;August 1948. <span class="ledger-num">[Dong-A Ilbo, 27 May 1949; <span lang="ko">국경일에 관한 법률</span>, 1 Oct 1949; Encyclopedia of Korean Culture, AKS]</span></p>
+  <p>The grammar is restorative. Something that already existed, the nation&rsquo;s sovereignty, came back. The name does not say who brought it. The word the cabinet wanted, independence, is closer to a founding. Read as grammar, the Assembly chose recovery over birth, and in doing so it handed the Republic a question it has been arguing about for seventy-seven years.</p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">The year on the paper</p>
+      <p class="big">30<small>TH YEAR</small></p>
+      <p>Two 1948 speeches by the new government&rsquo;s leaders were dated <span lang="ko">대한민국 30년</span>, Year 30 of the Republic of Korea, counting from 1919. The 1948 Constitution itself used the Dangun calendar. <span class="ledger-num">[Seoul Shinmun, 18 Aug 2016]</span></p>
+    </div>
+    <div>
+      <p class="k">A disputed claim</p>
+      <p>Historian Han Si-jun of Dankook University told Seoul Shinmun that the word <span lang="ko">건국</span>, founding, &ldquo;does not even exist in the stenographic records of the Constituent Assembly&rdquo; of 1948. The record does contain it, in a telegram read into the session of 3&nbsp;June 1948. <span class="ledger-num">[Seoul Shinmun, 18 Aug 2016; Constituent Assembly record]</span></p>
+    </div>
+  </div>
+  <p>When does the Republic of Korea begin? Conservatives and the historians of the New Right answer 15&nbsp;August 1948, when the government was formed, and have campaigned to rename the day <span lang="ko">건국절</span>, Founding Day. Progressives and the independence-movement associations answer 1919, when the Provisional Government was proclaimed in Shanghai after the March First uprising. They point to the Constitution&rsquo;s preamble, which speaks of &ldquo;upholding the cause of the Provisional Republic of Korea Government born of the March First Independence Movement of 1919.&rdquo;</p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 03</p>
+    <p class="fig-title">Where does the Republic begin? One holiday, two birthdays, three dates.</p>
+    <p class="fig-sub">The three anchors in the founding dispute, and which camp fastens the Republic to which.</p>
+    <svg role="img" aria-label="Timeline with three dates: 11 April 1919 Provisional Government, where progressives place the founding; 15 August 1945 liberation; 15 August 1948 government established, where the New Right places the founding. Gwangbokjeol marks both 1945 and 1948" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="120" x2="630" y2="120" stroke="var(--hair)" stroke-width="1"/>
+      <!-- 1919 -->
+      <circle cx="80" cy="120" r="7" fill="var(--ink-base)"/>
+      <text x="80" y="92" text-anchor="middle" class="m" font-size="13" font-weight="500" fill="var(--head)">11 APR 1919</text>
+      <text x="80" y="150" text-anchor="middle" font-size="12" fill="var(--body)">Provisional Government</text>
+      <text x="80" y="166" text-anchor="middle" font-size="12" fill="var(--body)">proclaimed in Shanghai</text>
+      <text x="80" y="182" text-anchor="middle" font-size="11" fill="var(--muted)">after the March First uprising</text>
+      <!-- 1945 -->
+      <circle cx="355" cy="120" r="9" fill="var(--ink-hot)"/>
+      <text x="355" y="92" text-anchor="middle" class="m" font-size="13" font-weight="500" fill="var(--head)">15 AUG 1945</text>
+      <text x="355" y="150" text-anchor="middle" font-size="12" fill="var(--body)">Liberation</text>
+      <text x="355" y="166" text-anchor="middle" font-size="12" fill="var(--body)">Sovereignty recovered</text>
+      <text x="355" y="182" text-anchor="middle" font-size="11" fill="var(--muted)">the "light restored"</text>
+      <!-- 1948 -->
+      <circle cx="580" cy="120" r="7" fill="var(--ink-base)"/>
+      <text x="580" y="92" text-anchor="middle" class="m" font-size="13" font-weight="500" fill="var(--head)">15 AUG 1948</text>
+      <text x="580" y="150" text-anchor="middle" font-size="12" fill="var(--body)">Government of the</text>
+      <text x="580" y="166" text-anchor="middle" font-size="12" fill="var(--body)">Republic established</text>
+      <text x="580" y="182" text-anchor="middle" font-size="11" fill="var(--muted)">documents dated "Year 30"</text>
+      <!-- camps -->
+      <path d="M355 40 Q 467 14 580 40" fill="none" stroke="var(--bronze)" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="467" y="22" text-anchor="middle" class="m" font-size="9.5" letter-spacing="1.4" fill="var(--label)">광복절 · MARKS BOTH 1945 AND 1948</text>
+      <g class="m" font-size="9.5" letter-spacing="1.2" fill="var(--body)">
+        <text x="80" y="214" text-anchor="middle">PROGRESSIVES: FOUNDED HERE</text>
+        <text x="580" y="214" text-anchor="middle">NEW RIGHT: FOUNDED HERE</text>
+      </g>
+    </svg>
+    <figcaption>Sources: Constitution of the Republic of Korea, preamble; Encyclopedia of Korean Culture (AKS); Seoul Shinmun, 18 Aug 2016.</figcaption>
+  </figure>
+
+  <p>The fight has a legislative history. Representative Chung Kap-yoon of the Grand National Party filed a bill in the 17th National Assembly to rename the holiday Founding Day; it lapsed, was refiled in July 2008 and was then withdrawn. In 2008 the Lee Myung-bak government marked &ldquo;sixty years since founding,&rdquo; and fourteen historical associations, including the Korean Modern and Contemporary History Association, issued a statement against the rename. The dispute flared again in 2024 over the appointment of a new director at the Independence Hall, when independence-activist groups boycotted the official ceremony. <span class="ledger-num">[Hankyoreh, 12 Sep 2008; Hankook Ilbo, 13 Aug 2008; JoongAng Daily, 15 Aug 2024]</span></p>
+  <p>None of this is a quarrel about 1945. Everyone in Seoul agrees the light came back that day. The quarrel is about the sentence&rsquo;s missing subject: whether the Republic is the thing that was restored, or the thing that was built afterwards on American-administered ground. That question points north, where the other half of the peninsula answered it with a single name and a single man.</p>
+</section>
+
+<section id="pyongyang">
+  <h2>IV · Pyongyang</h2>
+  <h3>The month between the liberation and the liberator</h3>
+  <p>North Korea&rsquo;s name for the day has a verb with an object in it. <span lang="ko">조국해방의 날</span>: the day of the liberation of the fatherland. Somebody liberated somebody. The official history says who.</p>
+  <p>In the DPRK account, the Korean People&rsquo;s Revolutionary Army under Kim Il-sung played the leading role in the country&rsquo;s liberation, with the Soviet army in a secondary one. <span class="ledger-num">[Official DPRK historiography, as summarised by HRNK, 2021]</span></p>
+  <p>The record runs on a different clock. The Soviet Union declared war on Japan on 8&nbsp;August 1945. The 25th Army under Colonel General Ivan Chistyakov moved into northern Korea. Soviet landing forces took Wonsan on 21&nbsp;August. Airborne troops came down at Hamh&#365;ng and Pyongyang on 24&nbsp;August (some histories give the 25th), and 25th Army headquarters was set up in Pyongyang on 26&nbsp;August. <span class="ledger-num">[University of Washington, study of Kim Il Sung and the DPRK-USSR-PRC triangle]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">The gap</p>
+      <p class="big">35 <small>DAYS</small></p>
+      <p>From Japan&rsquo;s surrender broadcast on 15&nbsp;August 1945 to Kim Il-sung&rsquo;s landing at Wonsan on 19&nbsp;September. Soviet troops had held Pyongyang for 26 of those days.</p>
+    </div>
+    <div>
+      <p class="k">What HRNK records</p>
+      <p>&ldquo;Kim Il-sung and his guerilla units did not participate in the final offensive for the liberation of the country.&rdquo; <span class="ledger-num">[HRNK Insider, Apr 2021]</span></p>
+    </div>
+  </div>
+  <p>Kim Il-sung was not there for any of it. Since 1942 he had been a captain in the Red Army&rsquo;s 88th Separate Rifle Brigade near Khabarovsk. He landed at Wonsan on 19&nbsp;September 1945, aboard a Soviet ship, with several dozen other Korean officers of the brigade. His first public appearance was a mass rally in Pyongyang on 14&nbsp;October. <span class="ledger-num">[University of Washington; HRNK]</span></p>
+  <p>That is a fact about September 1945, not a verdict on the man. Kim&rsquo;s guerrilla record against the Japanese in Manchuria in the 1930s is real; it is how he came to be in a Soviet brigade in the first place. The point is narrower. The liberation and the liberator were five weeks apart, and the name closes the gap.</p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 04</p>
+    <p class="fig-title">Sixty-seven days in 1945: when the north was liberated, and when the liberator arrived</p>
+    <p class="fig-sub">Dated events from the Soviet declaration of war to Kim Il-sung&rsquo;s first public appearance. One bronze mark carries the story.</p>
+    <svg role="img" aria-label="Timeline of 1945 from 8 August to 14 October: Soviet operations above the axis, Korea below; 35 days from the surrender broadcast to Kim Il-sung's landing at Wonsan on 19 September" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- scale: 8 Aug = x40, 14 Oct = x620, 8.657 px/day; axis y=160 -->
+      <text x="620" y="14" text-anchor="end" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--muted)">ABOVE THE LINE · SOVIET 25TH ARMY</text>
+      <text x="620" y="292" text-anchor="end" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--muted)">BELOW THE LINE · KOREA</text>
+      <line x1="40" y1="160" x2="620" y2="160" stroke="var(--bone)" stroke-opacity=".55"/>
+      <g class="m" font-size="9" fill="var(--muted)">
+        <line x1="247.8" y1="156" x2="247.8" y2="164" stroke="var(--bone)" stroke-opacity=".55"/><text x="247.8" y="177" text-anchor="middle">SEP 1</text>
+        <line x1="507.5" y1="156" x2="507.5" y2="164" stroke="var(--bone)" stroke-opacity=".55"/><text x="507.5" y="177" text-anchor="middle">OCT 1</text>
+      </g>
+      <!-- upper lane: Soviet -->
+      <g stroke="var(--bone)" stroke-opacity=".45"><line x1="40" y1="86" x2="40" y2="154"/><line x1="152.5" y1="138" x2="152.5" y2="154"/><line x1="187.2" y1="86" x2="187.2" y2="154"/></g>
+      <g font-size="11.5" fill="var(--body)">
+        <text x="40" y="38" class="m" font-size="10" fill="var(--head)">8 AUG</text><text x="40" y="55">USSR declares</text><text x="40" y="70">war on Japan</text>
+        <text x="148" y="106" text-anchor="end" class="m" font-size="10" fill="var(--head)">21 AUG</text><text x="148" y="121" text-anchor="end">Soviet landing</text><text x="148" y="137" text-anchor="end">at Wonsan</text>
+        <text x="187.2" y="38" class="m" font-size="10" fill="var(--head)">24–26 AUG</text><text x="187.2" y="55">Airborne at Hamhŭng and Pyongyang;</text><text x="187.2" y="70">25th Army HQ set up in Pyongyang</text>
+      </g>
+      <path d="M187.2 132 L187.2 126 L403.6 126 L403.6 132" fill="none" stroke="var(--bone)" stroke-opacity=".7"/>
+      <text x="295.4" y="118" text-anchor="middle" class="m" font-size="10" fill="var(--head)">26 DAYS IN SOVIET HANDS</text>
+      <circle cx="40" cy="160" r="5" fill="var(--ink-base)"/><circle cx="152.5" cy="160" r="5" fill="var(--ink-base)"/>
+      <circle cx="178.5" cy="160" r="4" fill="var(--ink-base)"/><circle cx="187.2" cy="160" r="4" fill="var(--ink-base)"/><circle cx="195.8" cy="160" r="4" fill="var(--ink-base)"/>
+      <!-- lower lane: Korea -->
+      <g stroke="var(--bone)" stroke-opacity=".45"><line x1="100.6" y1="166" x2="100.6" y2="226"/><line x1="403.6" y1="168" x2="403.6" y2="226"/><line x1="620" y1="166" x2="620" y2="226"/></g>
+      <path d="M100.6 190 L100.6 196 L403.6 196 L403.6 190" fill="none" stroke="var(--bronze)" stroke-width="1.2"/>
+      <text x="252" y="212" text-anchor="middle" class="m" font-size="10.5" font-weight="500" fill="var(--bronze)">35 DAYS</text>
+      <g font-size="11.5" fill="var(--body)">
+        <text x="94" y="244" class="m" font-size="10" fill="var(--head)">15 AUG</text><text x="94" y="260">Surrender broadcast.</text><text x="94" y="275">Liberation Day.</text>
+        <text x="403.6" y="244" text-anchor="middle" class="m" font-size="10" fill="var(--bronze)">19 SEP</text><text x="403.6" y="260" text-anchor="middle" font-weight="600" fill="var(--head)">Kim Il-sung lands at Wonsan</text><text x="403.6" y="275" text-anchor="middle">a Red Army captain, 88th Brigade</text>
+        <text x="620" y="244" text-anchor="end" class="m" font-size="10" fill="var(--head)">14 OCT</text><text x="620" y="260" text-anchor="end">First public</text><text x="620" y="275" text-anchor="end">appearance</text>
+      </g>
+      <circle cx="100.6" cy="160" r="6" fill="var(--ink-base)"/>
+      <circle cx="403.6" cy="160" r="8" fill="var(--ink-hot)"/>
+      <circle cx="620" cy="160" r="5" fill="var(--ink-base)"/>
+    </svg>
+    <figcaption>Sources: University of Washington study of Kim Il-sung and the DPRK-USSR-PRC triangle; HRNK Insider (2021). Days to scale. Above the axis: Soviet operations. Below it: Korea.</figcaption>
+  </figure>
+
+  <p>Then, in 2024, the liturgy moved. On or around 15&nbsp;August that year, and again in 2025 and 2026, Kim Jong Un laid wreaths at the Liberation Tower in Pyongyang, the monument to Soviet soldiers. In 2026 his wife and daughter stood beside him. Putin&rsquo;s message that day, as Reuters reported it, said the two countries&rsquo; bond was forged as Soviet soldiers fought against Japan, and the Russian training ship Pallada was tied up at Wonsan for the holiday. <span class="ledger-num">[Rodong Sinmun, via NK News, 15 Aug 2026; KCNA, via Reuters, 15 Aug 2026; SBS, Aug 2026]</span></p>
+  <div class="sb5-view">
+    <p>My reading, and it is a reading: with North Korean troops in Russia&rsquo;s war, sharing the credit for 1945 has become useful, and for the first time in decades the regime&rsquo;s own ceremony gives the Soviet liberator a place of honour next to the Korean one, though Kim also honoured the first-generation revolutionaries at Daesongsan. The name has not changed. The subject standing beside it has.</p>
+  </div>
+</section>
+
+<section id="washington">
+  <h2>V · Washington and Moscow</h2>
+  <h3>A victory without a colony</h3>
+  <p>The American name is the only one of the six that cannot agree with itself about the date.</p>
+  <p>V-J Day is 14&nbsp;August 1945 in Washington, the Tuesday evening Truman announced Japan&rsquo;s acceptance. It is 15&nbsp;August in Asia. And it is 2&nbsp;September, when the Instrument of Surrender was signed on the deck of USS <em>Missouri</em>; Truman&rsquo;s radio address of 1&nbsp;September proclaimed that date the official one. Rhode Island, alone among the states, still keeps a legal holiday called Victory Day on the second Monday of August. <span class="ledger-num">[Truman, radio address, 1 Sep 1945; Rhode Island General Laws]</span></p>
+  <p>Whatever the date, the grammar is the same. Victory over Japan has a winner and a loser, named, in that order. It has no third party. Korea, whose liberation was the practical result of the victory for nearly twenty-six million people, is not in the sentence. That absence will matter in the next section.</p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">Years late</p>
+      <p class="big">78 <small>YEARS</small></p>
+      <p>Between the end of the war and the adjective. Russia&rsquo;s is the only one of the six names that, in its own language, carries a word of moral characterisation, and it was added in 2023 for reasons that had nothing to do with 1945.</p>
+    </div>
+    <div>
+      <p class="k">Beijing&rsquo;s date</p>
+      <p>China marks 3&nbsp;September, the day after the <em>Missouri</em> signing, as the Victory Day of the Chinese People&rsquo;s War of Resistance against Japan; the official English adds &ldquo;aggression&rdquo;. The Standing Committee of the National People&rsquo;s Congress made it statutory on 27&nbsp;February 2014.</p>
+    </div>
+  </div>
+  <p>Moscow&rsquo;s name is younger than it looks. In 2020 Russia moved its Day of Military Glory from 2&nbsp;September to 3&nbsp;September as the Day of the End of the Second World War. Then, on 24&nbsp;June 2023, Putin signed a law renaming it the Day of Victory over Militaristic Japan and the End of the Second World War. The bill&rsquo;s explanatory note called it a response to the &ldquo;unfriendly campaign&rdquo; Tokyo had &ldquo;unleashed&rdquo; against Russia &ldquo;in coordination with the collective West&rdquo; after February 2022. Japan&rsquo;s Chief Cabinet Secretary, Hirokazu Matsuno, called the change &ldquo;extremely regrettable.&rdquo; <span class="ledger-num">[Federal Law 126-FZ, 24 Apr 2020; Kremlin, 24 Jun 2023; the bill&rsquo;s explanatory note, via RFE/RL; Malay Mail, 26 Jun 2023]</span></p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 05</p>
+    <p class="fig-title">Four dates for one ending</p>
+    <p class="fig-sub">Which day each capital marks, and what it calls it. The proclaimed American date is outlined.</p>
+    <svg role="img" aria-label="Grid of which day each capital marks: Japan, South Korea and North Korea on 15 August; the United States 14 August in usage and 2 September by proclamation; Russia and China on 3 September" viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+      <text x="130" y="18" class="m" font-size="11" font-weight="500" fill="var(--head)">14 AUG</text><text x="130" y="34" font-size="10.5" fill="var(--muted)">Washington time</text>
+      <text x="252" y="18" class="m" font-size="11" font-weight="500" fill="var(--head)">15 AUG</text><text x="252" y="34" font-size="10.5" fill="var(--muted)">broadcast, Asia time</text>
+      <text x="430" y="18" class="m" font-size="11" font-weight="500" fill="var(--head)">2 SEP</text><text x="430" y="34" font-size="10.5" fill="var(--muted)">Missouri signing</text>
+      <text x="552" y="18" class="m" font-size="11" font-weight="500" fill="var(--head)">3 SEP</text><text x="552" y="34" font-size="10.5" fill="var(--muted)">day after</text>
+      <line x1="0" y1="46" x2="660" y2="46" stroke="var(--bronze)"/>
+      <text x="0" y="80" font-size="12.5" font-weight="600" fill="var(--head)">Japan</text>
+      <rect x="246" y="62" width="168" height="28" fill="var(--panel2)"/>
+      <text x="254" y="80" font-size="12" fill="var(--head)" >Mourning the war dead</text>
+      <line x1="0" y1="96" x2="660" y2="96" stroke="var(--hair)"/>
+      <text x="0" y="120" font-size="12.5" font-weight="600" fill="var(--head)">South Korea</text>
+      <rect x="246" y="102" width="168" height="28" fill="var(--panel2)"/>
+      <text x="254" y="120" font-size="12" fill="var(--head)" >Gwangbokjeol</text>
+      <line x1="0" y1="136" x2="660" y2="136" stroke="var(--hair)"/>
+      <text x="0" y="160" font-size="12.5" font-weight="600" fill="var(--head)">North Korea</text>
+      <rect x="246" y="142" width="168" height="28" fill="var(--panel2)"/>
+      <text x="254" y="160" font-size="12" fill="var(--head)" >Liberation of the fatherland</text>
+      <line x1="0" y1="176" x2="660" y2="176" stroke="var(--hair)"/>
+      <text x="0" y="200" font-size="12.5" font-weight="600" fill="var(--head)">United States</text>
+      <rect x="124" y="182" width="112" height="28" fill="var(--panel2)"/>
+      <text x="132" y="200" font-size="12" fill="var(--head)" >V-J Day, usage</text>
+      <rect x="424" y="182" width="112" height="28" fill="none" stroke="var(--bronze)" stroke-width="1.6"/>
+      <text x="432" y="200" font-size="12" fill="var(--head)" font-weight="600">V-J Day, proclaimed</text>
+      <line x1="0" y1="216" x2="660" y2="216" stroke="var(--hair)"/>
+      <text x="0" y="240" font-size="12.5" font-weight="600" fill="var(--head)">Russia</text>
+      <rect x="546" y="222" width="108" height="42" fill="var(--panel2)"/>
+      <text x="554" y="240" font-size="12" fill="var(--head)" >Victory over</text>
+      <text x="554" y="255" font-size="12" fill="var(--head)" >militaristic Japan</text>
+      <line x1="0" y1="270" x2="660" y2="270" stroke="var(--hair)"/>
+      <text x="0" y="294" font-size="12.5" font-weight="600" fill="var(--head)">China</text>
+      <rect x="546" y="276" width="108" height="28" fill="var(--panel2)"/>
+      <text x="554" y="294" font-size="12" fill="var(--head)" >Victory Day</text>
+      <line x1="0" y1="310" x2="660" y2="310" stroke="var(--hair)"/>
+      <text x="0" y="332" font-size="11.5" fill="var(--body)">Japan and both Koreas keep the day of the broadcast. Washington marks 2 September; Moscow and Beijing, the 3rd.</text>
+      </svg>
+    <figcaption>Sources: Truman radio address, 1 Sep 1945; Rhode Island General Laws; Kremlin, 24 Jun 2023; NPC Standing Committee, 27 Feb 2014. Federal Law 126-FZ of 24 Apr 2020 moved Russia&rsquo;s date from 2 to 3 September.</figcaption>
+  </figure>
+
+  <p>The American and Russian names also settle, by assertion, a question historians have not settled: what ended the war. Tsuyoshi Hasegawa&rsquo;s <em>Racing the Enemy</em> argues that the Soviet declaration of 8&nbsp;August shocked Tokyo into surrender more than the two bombs did; Sadao Asada and Richard Frank argue the bombs were decisive. Washington&rsquo;s name centres the victory, Moscow&rsquo;s centres the Soviet army, and Tokyo&rsquo;s official name declines to say what ended anything. The names took sides decades before the archives opened. <span class="ledger-num">[Hasegawa, <em>Racing the Enemy</em>, 2005; Asada, <em>Pacific Historical Review</em>, 1998; Frank, <em>Downfall</em>, 1999]</span></p>
+  <p>Six names, then, and one thing none of them says. Nobody&rsquo;s name for the end of the war in Asia mentions what happened to the land in between the winner and the loser. For that you have to leave the calendars and go to the cables, and in particular to one message Stalin sent on 16&nbsp;August 1945, the day after the broadcast, about two islands at once.</p>
+</section>
+
+<section id="line">
+  <h2>VI · The Line They Drew, and the One They Did Not</h2>
+  <h3>Stalin&rsquo;s message of 16 August 1945, read closely</h3>
+  <p>&ldquo;Principally I have no objection against the contents of the order keeping in view that the Liaotung Peninsula is a composite part of Manchuria.&rdquo; That is Stalin to Truman, the day after the broadcast, accepting General Order No.&nbsp;1. The order put the 38th parallel on the map of Korea. The message does not mention Korea.</p>
+  <p>It mentions two other things. First, the Kuril Islands, which Stalin wanted included in the Soviet surrender zone. Second, Hokkaido. He asked that the Soviet zone take in &ldquo;the Northern part of the Island Hokkaido,&rdquo; with a demarcation line &ldquo;leading from the city Kushiro on the Eastern coast of the island to the city Rumoe [Rumoi] on the Western coast,&rdquo; both cities on the Soviet side. <span class="ledger-num">[FRUS 1945 VI, doc 450]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">The line that was refused</p>
+      <p>Kushiro to Rumoi, cutting Hokkaido roughly in half. Sapporo would have been south of it, Soviet troops north of it, and Japan would have had a 38th parallel of its own.</p>
+    </div>
+    <div>
+      <p class="k">The line that was drawn</p>
+      <p>The 38th parallel north, named in paragraph 1 of General Order No.&nbsp;1 as the boundary between Japanese forces surrendering to the Soviets and to the Americans. MacArthur&rsquo;s Proclamation No.&nbsp;1 then established &ldquo;military control over Korea south of 38 degrees north latitude.&rdquo; <span class="ledger-num">[FRUS 1945 VI, doc 776]</span></p>
+    </div>
+  </div>
+  <p>He gave a reason, and the reason is worth reading because it is a sentence with a subject in it. &ldquo;The Japanese in 1919&ndash;1921 held under occupation of their troops the whole Soviet Far East. The Russian public opinion would be seriously offended if the Russian troops would not have an occupation region in some part of the Japanese proper territory.&rdquo; <span class="ledger-num">[FRUS 1945 VI, doc 450]</span></p>
+  <p>Truman&rsquo;s reply, filed on 17&nbsp;August and dated the 18th in Stalin&rsquo;s response, gave him the Kurils, with a request for an air base there, but not Hokkaido: &ldquo;[A]rrangements have been made for the surrender of Japanese forces on all the islands of Japan proper, Hokkaido, Honshu, Shekoku [sic], and Kyushu, to General MacArthur.&rdquo; Stalin wrote back on 22&nbsp;August that he understood this as a refusal. Byrnes later noted that the Hokkaido passage &ldquo;was written at the White House.&rdquo; <span class="ledger-num">[FRUS 1945 VI, docs 452, 470, 476]</span></p>
+  <p>So in one exchange of cables the question of partitioning the defeated power was raised, argued on the merits of history and public feeling, and refused. In the same exchange, the partition of the defeated power&rsquo;s colony was accepted without a word.</p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 06</p>
+    <p class="fig-title">Two lines proposed in the same week of August 1945. The one on the aggressor was refused. The one on the colony was accepted without comment.</p>
+    <p class="fig-sub">Left: the Kushiro&ndash;Rumoi line Stalin requested across Hokkaido on 16 August, and the cables that refused it. Right: the 38th parallel in General Order No.&nbsp;1, which Stalin accepted in the same message.</p>
+    <svg role="img" aria-label="Two maps: Hokkaido with the Kushiro to Rumoi line Stalin requested and was refused, and Korea with the 38th parallel accepted in General Order No. 1, with the three cables summarised" viewBox="0 0 660 640" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="ch"><rect x="0" y="0" width="480" height="409.6"/></clipPath>
+        <clipPath id="ck"><rect x="0" y="0" width="480" height="765.3"/></clipPath>
+      </defs>
+      <text x="0" y="14" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">HOKKAIDO · REQUESTED · REFUSED</text>
+      <text x="334" y="14" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">KOREA · GENERAL ORDER No. 1 · ACCEPTED</text>
+      <!-- HOKKAIDO PANEL -->
+      <g transform="translate(0,30) scale(0.625)">
+        <rect x="0" y="0" width="480" height="409.6" fill="none" stroke="var(--hair)" vector-effect="non-scaling-stroke"/>
+        <g clip-path="url(#ch)">
+          <path d="M446.5 212.8 L450.4 212.9 L451.2 215.5 L448.0 216.1ZM475.7 198.7 L472.9 198.2 L472.0 197.8 L474.3 195.9 L476.8 196.6 L477.4 198.2ZM456.8 217.2 L456.5 216.1 L457.8 214.9 L460.3 213.6 L461.1 214.4ZM296.8 -26.1 L295.7 -18.8 L294.5 -14.8 L292.5 -11.2 L291.8 -26.1ZM215.3 -16.5 L211.6 -8.7 L207.0 -1.5 L199.7 -9.9 L197.7 -16.4 L196.3 -26.1 L217.8 -26.1ZM497.9 190.3 L493.2 188.2 L493.5 183.3 L494.0 181.9 L498.9 180.3 L498.9 189.0ZM477.2 128.6 L490.6 127.2 L487.3 132.9 L482.3 132.8 L473.4 141.1 L465.7 142.2 L461.8 144.1 L449.3 156.5 L447.6 161.4 L440.0 170.7 L428.6 179.1 L426.7 194.8 L419.3 188.5 L418.5 182.1 L420.7 176.8 L433.7 165.6 L438.8 159.3 L440.4 154.3 L445.4 148.7 L447.8 143.9 L451.0 141.8 L461.8 122.0 L467.8 122.2Z" fill="var(--land2)" stroke="var(--hair)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <path d="M141.1 55.0 L137.8 46.7 L137.2 37.9 L139.1 37.9 L142.5 39.3 L143.4 43.6 L143.5 49.4ZM153.2 68.6 L148.1 65.0 L147.5 60.5 L151.2 56.8 L154.9 58.2 L159.7 65.3 L157.6 68.0ZM41.6 333.3 L40.1 332.5 L38.6 325.9 L39.9 322.5 L43.9 320.0 L47.9 319.4 L44.5 331.5ZM325.2 155.8 L328.8 155.4 L334.8 156.7 L358.9 170.0 L366.1 171.6 L373.6 171.8 L378.9 170.8 L383.5 167.1 L398.0 151.1 L413.2 136.5 L414.9 137.0 L414.9 141.1 L413.8 145.5 L407.1 158.9 L399.6 177.0 L398.0 186.1 L400.4 195.0 L405.1 202.3 L413.1 226.3 L419.1 228.1 L422.4 228.3 L428.4 224.1 L434.1 218.8 L439.0 218.2 L444.2 219.1 L437.4 222.8 L431.0 227.3 L425.5 235.9 L423.5 237.5 L413.5 237.3 L406.1 240.9 L399.6 245.0 L393.4 250.0 L386.6 252.6 L379.4 253.3 L368.3 257.3 L361.0 257.6 L347.5 254.1 L340.9 255.0 L326.5 263.0 L313.4 274.7 L302.0 287.7 L292.4 303.3 L288.5 311.5 L286.2 320.6 L285.1 332.5 L282.9 336.6 L280.2 339.8 L272.3 337.9 L259.3 329.5 L234.2 317.4 L207.7 298.7 L192.7 289.4 L164.6 292.2 L138.1 310.0 L135.7 308.5 L125.5 296.3 L120.6 291.4 L114.7 290.1 L106.1 291.1 L100.1 297.4 L97.9 301.9 L95.7 310.7 L96.4 314.3 L102.1 322.4 L109.1 328.4 L112.3 329.5 L119.0 329.1 L122.1 329.7 L133.4 341.8 L145.8 353.1 L148.5 356.8 L143.9 360.8 L138.9 362.7 L133.1 362.2 L127.4 360.7 L117.5 355.9 L113.2 360.0 L106.7 368.4 L103.1 377.6 L100.1 381.7 L92.8 387.3 L85.2 390.1 L81.2 389.2 L78.1 385.7 L76.4 381.6 L75.5 376.8 L77.1 366.4 L81.1 357.0 L82.6 347.4 L79.4 334.0 L77.3 331.2 L69.2 323.3 L65.4 315.6 L64.5 306.1 L67.0 289.2 L68.9 283.3 L72.7 281.3 L76.7 280.2 L83.0 276.0 L96.5 264.3 L103.1 256.7 L106.5 248.4 L100.9 238.1 L99.7 232.0 L100.6 226.3 L106.5 223.2 L112.7 225.5 L125.1 234.0 L127.5 234.8 L136.0 235.2 L147.7 237.0 L154.4 236.6 L157.7 235.3 L162.6 228.3 L165.0 219.5 L164.1 208.1 L164.1 196.7 L167.2 187.5 L176.9 172.6 L179.7 163.9 L180.7 142.6 L187.0 123.5 L188.4 103.1 L184.4 83.6 L175.8 64.8 L176.4 56.1 L180.2 48.0 L180.3 45.6 L181.1 43.5 L188.1 41.9 L191.3 40.2 L194.4 36.3 L198.2 34.0 L200.9 36.3 L203.1 40.3 L212.9 50.1 L228.4 67.5 L246.6 94.2 L258.0 107.2 L270.0 119.0 L283.5 131.0 L297.6 141.4 L306.6 146.3 L313.2 154.1 L317.3 155.4ZM155.9 396.2 L167.7 391.7 L165.5 405.1 L164.2 418.6 L164.9 435.7 L148.2 435.7 L150.5 433.6 L153.2 428.0 L155.5 418.0 L154.4 409.1 L151.6 405.8 L148.7 406.4 L146.2 408.8 L143.4 410.2 L126.4 414.9 L126.4 404.9 L130.1 389.9 L132.1 385.2 L135.0 382.9 L145.6 387.3ZM95.1 435.7 L97.5 426.5 L95.7 413.0 L97.5 409.3 L100.2 407.0 L103.7 408.7 L107.2 409.1 L111.4 408.5 L115.4 410.0 L118.6 435.7ZM131.1 433.1 L134.9 432.2 L142.9 435.7 L130.1 435.7Z" fill="var(--land)" stroke="var(--body)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <line x1="0" y1="165.6" x2="480" y2="165.6" stroke="var(--hair)" stroke-dasharray="2 5" vector-effect="non-scaling-stroke"/>
+          <line x1="0" y1="252.7" x2="480" y2="252.7" stroke="var(--hair)" stroke-dasharray="2 5" vector-effect="non-scaling-stroke"/>
+          <line x1="352.4" y1="254.5" x2="179.4" y2="170.8" stroke="var(--bronze)" stroke-width="2.4" stroke-dasharray="7 6" vector-effect="non-scaling-stroke"/>
+          <circle cx="352.4" cy="254.5" r="6" fill="var(--bronze)"/>
+          <circle cx="179.4" cy="170.8" r="6" fill="var(--bronze)"/>
+          <circle cx="161.1" cy="247.5" r="4.5" fill="var(--head)"/>
+        </g>
+      </g>
+      <g font-size="11" fill="var(--body)">
+        <text x="103.1" y="130.7" text-anchor="end" font-weight="600" fill="var(--head)">Rumoi</text>
+        <text x="229.3" y="205.0" font-weight="600" fill="var(--head)">Kushiro</text>
+        <text x="90.7" y="202.7">Sapporo</text>
+        <text x="8" y="50" class="m" font-size="9" fill="var(--muted)">SAKHALIN AND KURILS</text>
+        <text x="8" y="62" class="m" font-size="9" fill="var(--muted)">GO TO THE USSR</text>
+      </g>
+      <!-- the cables -->
+      <text x="0" y="318" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">THE CABLES</text>
+      <line x1="6" y1="336" x2="6" y2="536" stroke="var(--bone)" stroke-opacity=".45"/>
+      <g font-size="11.5" fill="var(--body)">
+        <circle cx="6" cy="342" r="4.5" fill="var(--ink-hot)"/>
+        <text x="22" y="346" class="m" font-size="10" fill="var(--bronze)">16 AUG · STALIN TO TRUMAN</text>
+        <text x="22" y="363">Accepts General Order No. 1.</text>
+        <text x="22" y="378">Asks for Hokkaido north of Kushiro–Rumoi.</text>
+        <text x="22" y="393" fill="var(--head)" font-weight="600">Does not mention Korea.</text>
+        <circle cx="6" cy="420" r="4.5" fill="var(--ink-base)"/>
+        <text x="22" y="424" class="m" font-size="10" fill="var(--head)">17–18 AUG · TRUMAN TO STALIN</text>
+        <text x="22" y="441">The Kurils, yes. All of Hokkaido</text>
+        <text x="22" y="456">surrenders to MacArthur.</text>
+        <circle cx="6" cy="482" r="4.5" fill="var(--ink-base)"/>
+        <text x="22" y="486" class="m" font-size="10" fill="var(--head)">22 AUG · STALIN TO TRUMAN</text>
+        <text x="22" y="503">Reads it as: "you refuse."</text>
+        <text x="22" y="518">Hokkaido stays whole.</text>
+      </g>
+      <!-- KOREA PANEL -->
+      <g transform="translate(334,30) scale(0.679)">
+        <rect x="0" y="0" width="480" height="765.3" fill="none" stroke="var(--hair)" vector-effect="non-scaling-stroke"/>
+        <g clip-path="url(#ck)">
+          <path d="M438.1 -22.1 L438.5 -7.8 L442.1 -5.1 L443.1 -2.4 L442.8 1.6 L438.1 19.0 L432.9 26.6 L432.8 32.7 L431.9 36.6 L428.3 38.0 L424.6 40.3 L420.4 39.5 L416.6 40.0 L403.5 43.3 L396.3 47.4 L394.7 49.5 L394.4 51.5 L395.5 52.6 L400.2 53.4 L403.5 57.2 L403.9 61.3 L400.6 63.6 L398.9 61.0 L396.2 60.2 L391.0 56.6 L387.2 52.6 L384.4 48.2 L384.5 38.8 L384.0 37.4 L378.9 35.5 L377.3 32.7 L374.9 31.3 L371.4 32.2 L368.8 31.3 L366.7 29.8 L364.2 29.6 L362.1 32.0 L361.0 37.2 L357.4 45.9 L357.0 51.1 L353.9 68.1 L352.6 70.0 L347.2 70.9 L345.1 74.2 L342.6 74.7 L336.8 70.9 L333.4 70.7 L330.4 72.6 L324.9 80.0 L323.6 86.9 L320.0 90.6 L316.8 92.5 L307.9 100.2 L297.8 100.0 L290.7 101.5 L279.2 102.2 L272.3 101.1 L263.7 102.2 L257.1 103.9 L256.1 106.6 L256.4 110.5 L265.0 125.1 L269.4 128.4 L271.2 131.9 L271.3 135.2 L266.0 144.8 L263.1 148.1 L260.9 148.0 L257.5 146.0 L255.2 143.6 L249.8 142.7 L236.4 144.2 L229.7 143.2 L226.5 141.2 L220.9 141.0 L212.3 138.4 L207.0 137.5 L204.5 135.8 L204.1 131.9 L201.6 129.2 L200.2 126.0 L197.0 122.0 L194.0 120.0 L191.0 119.1 L184.3 123.8 L181.8 123.3 L180.5 123.9 L179.1 125.7 L173.6 129.4 L170.0 140.1 L168.5 147.6 L167.2 150.3 L164.9 150.7 L162.6 153.0 L153.5 166.5 L147.2 170.9 L144.2 174.9 L142.7 178.5 L138.2 183.6 L123.1 186.4 L120.8 188.5 L118.3 192.9 L115.3 192.9 L105.1 201.6 L99.1 202.8 L85.2 209.9 L82.5 211.7 L80.8 216.0 L74.6 216.4 L67.8 222.0 L64.3 226.7 L51.0 236.8 L45.5 242.5 L44.1 249.9 L43.4 249.4 L38.6 255.8 L29.2 261.9 L9.3 263.3 L2.9 258.9 L0.6 261.9 L-1.1 265.9 L-6.4 267.3 L-14.6 267.7 L-17.3 269.3 L-17.3 -22.1Z" fill="var(--land2)" stroke="var(--hair)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <path d="M408.2 78.9 L407.8 75.6 L402.2 68.1 L400.6 63.6 L403.9 61.3 L403.5 57.2 L400.2 53.4 L395.5 52.6 L394.4 51.5 L394.7 49.5 L398.6 45.7 L403.5 43.3 L416.6 40.0 L420.4 39.5 L424.6 40.3 L428.3 38.0 L431.9 36.6 L432.8 32.7 L432.9 26.6 L438.1 19.0 L442.8 1.6 L443.1 -2.4 L442.1 -5.1 L438.5 -7.8 L438.1 -22.1 L497.3 -22.1 L497.3 12.9 L487.4 20.7 L482.7 22.4 L478.1 22.4 L479.9 16.9 L486.5 8.8 L482.3 7.2 L473.9 10.7 L469.7 14.5 L457.8 29.7 L450.7 42.5 L444.9 46.2 L442.1 51.7 L437.1 57.0 L429.4 55.5 L424.8 56.4 L413.8 53.5 L411.1 54.7 L418.4 64.5 L412.3 79.1 L409.9 80.8Z" fill="var(--land2)" stroke="var(--hair)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <path d="M324.7 685.7 L323.1 681.1 L324.7 668.2 L331.8 670.8 L331.7 674.8 L328.5 682.7ZM333.4 669.3 L329.5 666.8 L327.7 664.5 L331.3 653.3 L331.1 647.1 L338.4 641.2 L339.6 642.3 L340.1 644.0 L339.4 646.5 L339.8 652.0 L334.3 661.1 L334.6 665.7ZM295.2 783.2 L301.1 781.8 L303.0 782.8 L305.1 787.4 L292.3 787.4 L292.9 781.2ZM315.3 777.9 L313.4 771.3 L312.1 768.9 L314.3 767.6 L318.6 755.6 L319.4 760.4 L321.1 765.1 L322.8 765.8 L321.2 769.3 L318.7 770.6 L316.7 777.1ZM336.7 752.4 L333.7 752.4 L336.4 748.3 L339.0 741.0 L345.2 738.8 L341.7 744.4 L340.7 748.9ZM354.3 713.3 L351.3 710.9 L353.8 702.2 L357.2 704.3 L358.3 710.2ZM445.8 723.2 L449.1 723.3 L452.2 722.3 L461.7 717.3 L465.1 718.4 L468.2 721.0 L469.8 724.6 L469.0 728.4 L463.5 736.5 L459.0 745.2 L469.4 746.8 L479.8 746.6 L477.4 752.0 L477.0 756.6 L480.2 758.9 L482.9 761.9 L480.6 767.3 L486.3 771.3 L485.9 774.0 L484.4 776.8 L476.3 787.4 L401.2 787.4 L403.1 784.9 L401.8 777.7 L395.6 768.9 L392.2 758.5 L383.9 752.3 L377.5 757.6 L380.1 764.4 L380.2 776.3 L383.0 776.6 L386.3 775.1 L389.0 776.2 L390.6 779.3 L391.0 783.3 L389.8 787.3 L381.9 787.4 L378.9 783.9 L373.2 782.2 L367.3 785.8 L366.0 787.4 L359.8 787.4 L360.1 785.5 L357.7 781.4 L352.2 774.5 L350.9 770.5 L350.6 765.7 L351.6 760.9 L357.3 766.4 L360.2 773.2 L364.4 776.2 L369.6 776.3 L364.2 763.7 L358.5 759.2 L350.7 751.6 L345.8 747.9 L347.6 740.0 L350.5 738.5 L361.1 741.7 L361.9 737.7 L360.0 733.2 L365.4 729.8 L374.3 726.9 L376.1 725.6 L377.7 722.8 L379.8 721.3 L386.0 721.4 L391.2 718.6 L395.5 711.3 L398.1 703.9 L408.8 698.0 L411.5 697.1 L418.7 697.8 L425.2 701.2 L431.3 715.8 L438.0 721.0ZM490.7 740.3 L487.7 740.3 L492.4 736.3 L497.3 733.6 L497.3 737.0ZM495.0 695.9 L494.3 703.6 L491.0 702.4 L470.8 687.9 L455.5 690.3 L451.5 691.5 L446.6 694.3 L441.4 695.6 L436.6 693.5 L432.1 690.2 L427.7 691.2 L423.3 693.5 L421.5 672.5 L422.4 669.7 L428.2 662.9 L435.6 661.8 L443.1 662.8 L448.4 661.3 L453.0 657.2 L457.7 651.3 L463.1 646.5 L477.5 638.3 L489.5 625.5 L497.3 618.9 L497.3 689.7Z" fill="var(--land2)" stroke="var(--hair)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <path d="M274.1 352.7 L270.6 358.8 L267.4 366.7 L264.2 370.9 L260.6 373.3 L256.7 374.7 L249.0 375.3 L242.0 374.7 L239.7 373.9 L227.4 374.9 L213.6 374.3 L206.4 375.0 L201.9 376.5 L197.2 379.7 L182.4 398.9 L177.4 403.5 L177.2 412.1 L175.5 413.4 L174.8 412.8 L171.9 412.3 L160.2 406.3 L150.5 410.0 L148.1 414.8 L145.5 416.3 L141.7 407.0 L135.4 406.7 L125.4 398.5 L121.2 400.1 L120.1 403.4 L114.6 411.0 L106.9 417.2 L104.5 418.1 L101.7 417.6 L102.1 415.9 L98.9 408.9 L86.9 406.1 L82.5 403.1 L80.3 402.4 L92.1 394.6 L95.2 393.2 L92.9 391.4 L90.4 390.5 L80.7 391.7 L75.6 389.1 L68.2 389.9 L63.1 387.9 L73.7 380.2 L74.1 372.2 L79.4 362.1 L84.9 356.4 L98.9 348.4 L105.0 347.3 L109.4 347.6 L113.0 346.9 L109.2 343.8 L105.5 342.4 L98.3 342.7 L90.7 338.1 L90.1 333.3 L104.7 302.6 L104.9 299.8 L102.6 292.3 L101.8 285.0 L91.4 280.9 L86.8 280.4 L73.3 272.2 L68.0 268.0 L65.9 269.2 L65.5 275.8 L63.6 277.3 L60.0 278.5 L58.3 271.0 L55.4 265.6 L46.5 260.1 L43.3 257.1 L44.8 250.5 L44.1 249.9 L45.5 242.5 L51.0 236.8 L64.3 226.7 L67.8 222.0 L74.6 216.4 L80.8 216.0 L82.5 211.7 L85.2 209.9 L99.1 202.8 L105.1 201.6 L115.3 192.9 L118.3 192.9 L120.8 188.5 L123.1 186.4 L138.2 183.6 L142.7 178.5 L144.2 174.9 L147.2 170.9 L153.5 166.5 L162.6 153.0 L164.9 150.7 L167.2 150.3 L168.5 147.6 L170.0 140.1 L173.6 129.4 L179.1 125.7 L180.5 123.9 L181.8 123.3 L184.3 123.8 L191.0 119.1 L194.0 120.0 L197.0 122.0 L200.2 126.0 L201.6 129.2 L204.1 131.9 L204.5 135.8 L207.0 137.5 L212.3 138.4 L220.9 141.0 L226.5 141.2 L229.7 143.2 L236.4 144.2 L249.8 142.7 L255.2 143.6 L257.5 146.0 L260.9 148.0 L263.1 148.1 L266.0 144.8 L271.3 135.2 L271.2 131.9 L269.4 128.4 L265.0 125.1 L256.4 110.5 L256.1 106.6 L257.1 103.9 L263.7 102.2 L272.3 101.1 L279.2 102.2 L290.7 101.5 L297.8 100.0 L307.9 100.2 L316.8 92.5 L320.0 90.6 L323.6 86.9 L324.9 80.0 L330.4 72.6 L333.4 70.7 L336.8 70.9 L342.6 74.7 L345.1 74.2 L347.2 70.9 L352.6 70.0 L353.9 68.1 L357.0 51.1 L357.4 45.9 L361.0 37.2 L362.1 32.0 L364.2 29.6 L366.7 29.8 L368.8 31.3 L371.4 32.2 L374.9 31.3 L377.3 32.7 L378.9 35.5 L384.0 37.4 L384.5 38.8 L384.4 48.2 L387.2 52.6 L391.0 56.6 L396.2 60.2 L398.9 61.0 L400.6 63.6 L402.2 68.1 L407.8 75.6 L408.2 78.9 L409.9 80.8 L406.9 82.8 L403.0 81.6 L396.6 80.8 L388.3 87.3 L383.8 89.5 L380.5 95.9 L374.1 99.7 L370.5 103.7 L366.0 110.6 L363.0 117.3 L356.0 124.2 L352.0 132.8 L351.8 140.2 L356.2 147.8 L356.6 154.3 L353.5 167.5 L355.2 181.6 L353.3 187.1 L332.0 196.8 L326.5 201.6 L318.6 214.1 L309.1 218.7 L303.2 223.8 L295.0 226.8 L289.8 235.6 L284.0 240.6 L277.2 243.7 L272.1 247.6 L260.6 247.8 L252.5 250.5 L246.8 257.9 L229.5 266.3 L227.1 272.6 L228.3 282.4 L228.4 289.9 L226.9 296.0 L223.1 294.3 L221.0 296.3 L218.8 302.0 L219.4 308.5 L225.4 310.6 L230.2 313.3 L237.0 314.6 L242.1 317.6 L252.8 331.3 L261.6 337.3 L263.9 339.5 L268.9 342.5 L273.5 347.3 L276.1 351.5ZM72.2 286.4 L72.1 282.7 L74.6 279.5 L77.2 279.1 L75.5 284.3Z" fill="var(--land)" stroke="var(--body)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <path d="M177.2 412.1 L177.4 403.5 L182.4 398.9 L197.2 379.7 L201.9 376.5 L206.4 375.0 L213.6 374.3 L227.4 374.9 L239.7 373.9 L242.0 374.7 L249.0 375.3 L256.7 374.7 L260.6 373.3 L264.2 370.9 L267.4 366.7 L270.6 358.8 L274.1 352.7 L276.1 351.5 L290.2 384.4 L303.8 405.7 L315.3 421.1 L331.7 450.8 L336.5 466.6 L336.9 476.5 L339.7 490.0 L337.3 497.7 L338.0 509.9 L337.0 516.2 L335.0 520.8 L335.6 540.7 L336.9 543.2 L338.8 544.1 L341.8 541.8 L345.4 540.8 L344.8 548.4 L336.5 581.5 L331.3 593.7 L324.7 604.8 L316.7 609.1 L311.1 610.7 L300.5 611.2 L291.6 609.4 L284.0 610.7 L281.0 613.0 L278.7 617.0 L280.3 623.2 L280.1 627.7 L276.9 627.3 L270.4 624.7 L263.3 624.3 L259.9 623.0 L256.6 616.5 L253.1 616.8 L247.1 620.6 L238.0 621.5 L234.7 623.6 L233.6 626.3 L234.9 629.7 L239.5 634.2 L238.0 638.7 L233.2 641.0 L229.3 635.4 L226.9 629.9 L224.2 629.6 L220.0 631.2 L219.2 637.1 L224.3 645.7 L219.8 651.1 L218.6 654.9 L215.4 657.7 L206.7 651.6 L207.9 647.2 L211.7 643.1 L212.2 638.7 L210.9 636.2 L198.4 647.1 L190.7 659.5 L186.6 658.6 L184.9 655.4 L182.4 654.1 L174.1 662.1 L172.6 668.4 L169.5 668.6 L168.2 665.9 L168.1 660.2 L166.7 655.4 L158.0 648.4 L154.1 642.2 L156.2 638.8 L163.4 640.6 L169.1 640.4 L168.0 637.5 L166.1 636.1 L169.9 634.4 L173.1 631.1 L170.5 630.2 L166.5 632.1 L163.1 631.2 L161.8 623.1 L157.7 614.8 L155.6 606.8 L159.6 602.2 L165.4 584.6 L167.3 581.3 L172.5 578.8 L174.3 576.1 L166.9 573.5 L167.0 570.5 L170.1 568.9 L173.6 565.6 L180.3 561.6 L182.3 554.0 L180.4 552.1 L176.2 550.3 L177.2 546.4 L178.9 543.5 L178.3 541.8 L173.3 536.8 L170.0 532.3 L171.0 527.2 L170.3 519.5 L170.5 509.4 L168.1 501.5 L167.0 493.5 L163.8 494.7 L161.3 496.6 L152.1 493.8 L149.3 493.7 L148.1 487.8 L151.4 480.5 L159.1 474.1 L163.6 473.3 L167.0 470.4 L172.2 469.5 L178.5 473.9 L184.2 474.8 L187.3 482.3 L189.2 483.9 L189.6 481.1 L194.2 477.9 L195.3 475.4 L194.3 474.1 L189.0 472.8 L184.3 463.4 L183.7 459.3 L182.0 456.7 L184.5 449.3 L179.1 440.8 L176.4 438.1 L176.8 430.4 L172.3 422.9 L171.4 418.2 L172.2 416.2 L174.7 415.4 L175.5 413.4ZM291.9 637.5 L284.5 631.4 L282.8 628.1 L288.3 623.1 L293.1 617.5 L296.2 617.2 L297.3 633.0ZM257.6 639.6 L253.5 640.0 L251.1 635.4 L248.5 637.6 L247.1 637.7 L245.1 631.9 L244.8 627.4 L249.6 624.0 L252.5 626.0 L256.7 627.1 L258.3 632.4ZM148.6 665.6 L146.5 663.1 L145.1 662.4 L145.9 659.1 L151.9 652.5 L153.1 650.3 L158.7 651.6 L160.8 655.1 L158.2 660.4 L152.3 664.5ZM168.6 426.5 L163.3 425.1 L162.3 423.2 L160.2 414.2 L162.6 410.4 L167.3 413.4 L168.9 416.8ZM183.3 669.9 L178.6 669.3 L176.2 665.9 L176.5 663.0 L179.3 662.6 L182.3 666.4ZM242.2 648.8 L239.3 645.3 L242.1 641.5 L242.8 646.5ZM162.1 513.1 L158.3 509.9 L157.2 499.5 L161.2 502.5 L162.9 508.3ZM148.0 639.7 L145.5 639.2 L142.9 634.1 L141.8 630.1 L139.2 627.9 L143.3 624.4 L148.5 630.7 L148.7 637.9ZM420.5 438.0 L417.4 435.8 L417.0 433.5 L418.6 431.4 L422.4 430.2 L424.2 432.0 L423.1 435.8ZM155.1 750.5 L152.0 748.8 L149.1 744.5 L148.4 742.4 L150.3 738.3 L158.3 731.5 L179.0 724.9 L182.7 724.6 L190.9 727.4 L192.7 732.7 L191.2 737.2 L189.3 740.2 L179.8 745.3 L172.4 747.8 L157.7 748.9Z" fill="var(--land)" stroke="var(--body)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <g stroke="var(--hair)" stroke-dasharray="2 5" vector-effect="non-scaling-stroke">
+            <line x1="0" y1="544.6" x2="480" y2="544.6"/><line x1="0" y1="250.2" x2="480" y2="250.2"/><line x1="0" y1="103.0" x2="480" y2="103.0"/><line x1="0" y1="691.7" x2="480" y2="691.7"/>
+          </g>
+          <line x1="0" y1="397.4" x2="480" y2="397.4" stroke="var(--bronze)" stroke-width="2.6" vector-effect="non-scaling-stroke"/>
+          <circle cx="195.5" cy="429.0" r="5" fill="var(--head)"/>
+          <circle cx="124.3" cy="321.6" r="5" fill="var(--head)"/>
+          <circle cx="222.1" cy="312.8" r="4" fill="var(--head)"/>
+        </g>
+      </g>
+      <g font-size="11" fill="var(--body)">
+        <text x="475.7" y="326.3" font-weight="600" fill="var(--head)">Seoul</text>
+        <text x="344.4" y="240.4" font-weight="600" fill="var(--head)">Pyongyang</text>
+        <text x="493.8" y="246.4">Wonsan</text>
+        <text x="621.9" y="293.8" class="m" font-size="10" fill="var(--bronze)">38° N</text>
+        <text x="342" y="48" class="m" font-size="9" fill="var(--muted)">CHINA</text>
+        <text x="616" y="48" class="m" font-size="9" fill="var(--muted)" text-anchor="end">USSR</text>
+      </g>
+      <g font-size="11.5" fill="var(--body)">
+        <text x="334" y="574">Soviets take the surrender north of 38°,</text>
+        <text x="334" y="590">Americans south. No Korean was consulted.</text>
+        <text x="334" y="610" class="m" font-size="9.5" fill="var(--muted)">Coastlines: Natural Earth 1:50m</text>
+      </g>
+    </svg>
+    <figcaption>Sources: FRUS 1945 VI, docs 450, 452, 470; General Order No. 1. Equirectangular; panels are not to a common scale. Coastlines: Natural Earth 1:50m.</figcaption>
+  </figure>
+
+  <h3>In Europe they divided the aggressor. In Asia they divided the colony.</h3>
+  <p>That sentence needs its qualifiers stated plainly, so that nobody can knock it down with them. Germany&rsquo;s division was not decided in a week; it hardened out of four occupation zones over four years. Japan did lose territory: southern Sakhalin and the Kurils to the Soviet Union, and Okinawa to American administration until 1972. Austria, part of the Reich, was occupied in four zones and left whole in 1955. Nor was the 38th parallel meant as a punishment: by Rusk&rsquo;s own account it was drawn to keep the surrender of Seoul in American hands. <span class="ledger-num">[Austrian State Treaty, 15 May 1955; Okinawa Reversion Agreement, 1971]</span></p>
+  <p>None of that changes the ledger. The home islands of the state that ran the empire were never cut into zones. The peninsula the empire had held for thirty-five years was cut on a line no Korean had been asked about, and the division has held, with one war across it, for eighty-one years. <span class="ledger-num">[Cumings, <em>The Origins of the Korean War</em>, vol. 1]</span></p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 07</p>
+    <p class="fig-title">The partition ledger, 1945 to the present</p>
+    <p class="fig-sub">Who was the aggressor, who was the colony, and whose territory was cut.</p>
+    <div class="sb5-tablewrap">
+      <table class="sb5-t">
+        <colgroup><col style="width:18%"><col style="width:22%"><col style="width:60%"></colgroup>
+        <thead><tr><th>Country</th><th>Role in 1945</th><th>Outcome</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Germany</strong></td><td>Aggressor</td><td>Four occupation zones. Two states from 1949. Reunified 1990.</td></tr>
+          <tr><td><strong>Austria</strong></td><td>Annexed participant</td><td>Four zones, one government. Sovereign by the State Treaty of 1955.</td></tr>
+          <tr><td><strong>Japan</strong></td><td>Aggressor</td><td>Home islands never partitioned. US-led occupation 1945 to 1952. Lost southern Sakhalin and the Kurils (the southern four disputed). Okinawa under US administration to 1972.</td></tr>
+          <tr><td><strong>Korea</strong></td><td>Colony</td><td>Divided at 38&deg;&nbsp;N in August 1945. Two states from 1948. War 1950 to 1953. Still divided.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Sources: FRUS 1945 VI; Austrian State Treaty (1955); Okinawa Reversion Agreement (1971); Treaty of San Francisco (1951).</figcaption>
+  </figure>
+
+  <p>Six states named the day. The one country partitioned by the day&rsquo;s settlement is in none of the six names except its own two, and even those do not say who drew the line. The line was drawn by two American colonels in a room in Washington, and most of what you have heard about that night is assembled from three documents that do not agree.</p>
+</section>
+
+<section id="legend">
+  <h2>VII · Three Sources, Two Dates</h2>
+  <h3>Taking the legend apart, document by document</h3>
+  <p>The version everyone repeats goes like this: two colonels, Dean Rusk and Charles Bonesteel, were given thirty minutes, late on the night of 10&nbsp;August 1945, found a National Geographic map, and picked the 38th parallel. Every element in that sentence is sourced. No single source contains all of them.</p>
+  <p>Document one is Rusk&rsquo;s memorandum of 12&nbsp;July 1950, written for the State Department&rsquo;s historian and printed in the <em>Foreign Relations</em> series. He places the meeting in John McCloy&rsquo;s office &ldquo;on, I believe, the night of August 10&ndash;11.&rdquo; McCloy asked Bonesteel and him &ldquo;to retire to an adjoining room and come up with a proposal which would harmonize the political desire to have U.S. forces receive the surrender as far north as possible and the obvious limitations on the ability of the U.S. forces to reach the area.&rdquo; They chose the 38th parallel, &ldquo;even though it was further north than could be realistically reached by U.S. forces in the event of Soviet disagreement,&rdquo; because it kept Seoul on the American side. Rusk was &ldquo;somewhat surprised that the Soviet accepted.&rdquo; There is no time limit in the memorandum and no map. Rusk adds a line most retellings drop: &ldquo;The above is based on memory and not on documents.&rdquo; <span class="ledger-num">[FRUS 1945 VI, doc 771, editorial note quoting Rusk to Noble, 12 Jul 1950]</span></p>
+  <div class="sb5-note">
+    <p class="k">Where each piece comes from</p>
+    <p><strong>August 10&ndash;11.</strong> Rusk, 1950, in FRUS. &nbsp;·&nbsp; <strong>An adjoining room, the capital kept south.</strong> Rusk, 1950, in FRUS. &nbsp;·&nbsp; <strong>A National Geographic map.</strong> Rusk, 1990 memoir, which dates the night 14&nbsp;August. &nbsp;·&nbsp; <strong>Thirty minutes.</strong> Schnabel, US Army official history, 1972, about Bonesteel alone. &nbsp;·&nbsp; <strong>A 1904 National Geographic map.</strong> No reliable source. Hobbyist forums. Drop it.</p>
+  </div>
+  <p>Document two is Rusk&rsquo;s memoir, forty years later. &ldquo;During a meeting on August 14, 1945,&rdquo; he writes, Bonesteel and he &ldquo;retired to an adjacent room late at night and studied intently a map of the Korean peninsula.&rdquo; Then: &ldquo;Using a National Geographic map, we looked just north of Seoul for a convenient dividing line but could not find a natural geographical line. We saw instead the thirty-eighth parallel.&rdquo; The map arrives here, and so does a date three or four days later than the one in the government record. <span class="ledger-num">[Rusk, <em>As I Saw It</em>, 1990, as quoted by National Geographic, 2013]</span></p>
+  <p>Document three is the US Army&rsquo;s official history of the Korean War&rsquo;s first year, written by James Schnabel and published in 1972. Here is the stopwatch. Bonesteel &ldquo;had thirty minutes in which to dictate Paragraph 1 to a secretary.&rdquo; Work began &ldquo;late at night on 10 August.&rdquo; Schnabel says &ldquo;the only map he had in his office was hardly adequate,&rdquo; and does not name a publisher. The draft reached the Joint Planners &ldquo;in the pre-dawn hours of 11 August,&rdquo; where Admiral M. B. Gardner proposed the 39th parallel instead and was overruled by Brigadier General Lincoln and Assistant Secretary Dunn, who held to the 38th. <span class="ledger-num">[Schnabel, <em>Policy and Direction: The First Year</em>, CMH 1972, pp. 9&ndash;10]</span></p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 08</p>
+    <p class="fig-title">Anatomy of a legend: three documents, one composite sentence</p>
+    <p class="fig-sub">Each clause of the familiar version traced to the document that supplies it. The two dates are both Rusk&rsquo;s.</p>
+    <svg role="img" aria-label="Three document cards, the Rusk memorandum of 1950, the Rusk memoir of 1990 and Schnabel 1972, above the composite sentence everyone repeats, with superscripts naming the document behind each clause" viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg">
+              <!-- three cards -->
+      <g font-size="11.5" fill="var(--body)">
+        <rect x="0" y="0" width="200" height="118" fill="var(--panel2)"/>
+        <text x="12" y="20" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">DOC 1 · FRUS 1945 VI, 771</text>
+        <text x="12" y="40" fill="var(--head)" font-weight="600">Rusk memorandum, 12 Jul 1950</text>
+        <text x="12" y="60">"the night of August 10–11"</text>
+        <text x="12" y="76">"an adjoining room"</text>
+        <text x="12" y="92">capital kept south of the line</text>
+        <text x="12" y="108" fill="var(--muted)">no time limit · no map</text>
+        <rect x="230" y="0" width="200" height="118" fill="var(--panel2)"/>
+        <text x="242" y="20" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">DOC 2 · RUSK MEMOIR, 1990</text>
+        <text x="242" y="40" fill="var(--head)" font-weight="600">As I Saw It</text>
+        <text x="242" y="60">"a meeting on August 14, 1945"</text>
+        <text x="242" y="76">"Using a National Geographic map"</text>
+        <text x="242" y="92">"We saw instead the</text>
+        <text x="242" y="108">thirty-eighth parallel."</text>
+        <rect x="460" y="0" width="200" height="118" fill="var(--panel2)"/>
+        <text x="472" y="20" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">DOC 3 · SCHNABEL, CMH 1972</text>
+        <text x="472" y="40" fill="var(--head)" font-weight="600">Policy and Direction</text>
+        <text x="472" y="60">"thirty minutes in which to</text>
+        <text x="472" y="76">dictate Paragraph 1"</text>
+        <text x="472" y="92">"late at night on 10 August"</text>
+        <text x="472" y="108" fill="var(--muted)">map "hardly adequate," unnamed</text>
+      </g>
+      <!-- composite sentence -->
+      <rect x="0" y="146" width="660" height="92" fill="none" stroke="var(--bronze)" stroke-width="1"/>
+      <text x="16" y="166" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">THE COMPOSITE EVERYONE REPEATS</text>
+      <g class="s" font-size="16" fill="var(--head)">
+        <text x="16" y="194">Two colonels, given <tspan fill="var(--bronze)">thirty minutes</tspan><tspan font-size="10" dy="-7" fill="var(--label)">3</tspan><tspan dy="7"> late on </tspan><tspan fill="var(--bronze)">10 August 1945</tspan><tspan font-size="10" dy="-7" fill="var(--label)">1 3</tspan><tspan dy="7">,</tspan></text>
+        <text x="16" y="220">found <tspan fill="var(--bronze)">a National Geographic map</tspan><tspan font-size="10" dy="-7" fill="var(--label)">2</tspan><tspan dy="7"> and chose the 38th parallel.</tspan></text>
+      </g>
+      <text x="16" y="252" font-size="11" fill="var(--muted)">Superscripts name the document behind each bronze clause. Rusk's two accounts differ by three or four days.</text>
+    </svg>
+    <figcaption>Sources: FRUS 1945 VI, doc 771; Rusk, As I Saw It (1990); Schnabel, Policy and Direction (1972). A Review of Korean Studies article argues the line was conceived around 25 July at Potsdam; noted as scholarly dissent.</figcaption>
+  </figure>
+
+  <p>Tell it in three attributed pieces and it is still a remarkable story. Tell it as one sentence and a hostile reader can take the sentence apart in an afternoon. The missing subject of the legend is the archive itself, and it is there to be read.</p>
+</section>
+
+<section id="bonn">
+  <h2>VIII · Bonn, 8 May 1985</h2>
+  <h3>The man who kept both words</h3>
+  <p>Forty years after the German surrender, the Federal President stood in the Bundestag and did something no Japanese government has put into the name of 15&nbsp;August. He said the word for defeat out loud, and then he added a second word without removing the first.</p>
+  <p>Early in the speech, Richard von Weizs&auml;cker refused celebration: &ldquo;Der 8. Mai ist f&uuml;r uns Deutsche kein Tag zum Feiern.&rdquo; May 8 is not a day of celebration for us Germans. He named the pain of &ldquo;the complete defeat of their own fatherland,&rdquo; <em>die vollst&auml;ndige Niederlage</em>. And then the sentence the speech is remembered for: &ldquo;Der 8. Mai war ein Tag der Befreiung. Er hat uns alle befreit von dem menschenverachtenden System der nationalsozialistischen Gewaltherrschaft.&rdquo; May 8 was a day of liberation. It freed us all from the inhuman system of National Socialist tyranny. <span class="ledger-num">[Weizs&auml;cker, Bundestag address, 8 May 1985, official text]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">Three words, one speech</p>
+      <p><em>Niederlage</em>, defeat. Kept. &nbsp;·&nbsp; <em>Befreiung</em>, liberation. Added, with Germans among the liberated. &nbsp;·&nbsp; <em>Schuld</em>, guilt. Made personal, which is to say, given a subject.</p>
+    </div>
+    <div>
+      <p class="k">The asymmetry</p>
+      <p>In Europe the aggressor&rsquo;s liberation was from its own regime, at home. In Asia the liberation that 15&nbsp;August names happened in somebody else&rsquo;s country, which the aggressor had colonised. There is no Japanese &ldquo;Befreiung&rdquo; to add, because the thing liberated was Korea.</p>
+    </div>
+  </div>
+  <p>He did one more thing with grammar. &ldquo;Schuld oder Unschuld eines ganzen Volkes gibt es nicht. Schuld ist, wie Unschuld, nicht kollektiv, sondern pers&ouml;nlich.&rdquo; There is no guilt or innocence of a whole people. Guilt, like innocence, is personal. The subject of that sentence is each German, individually, and none of them is let out of it. <span class="ledger-num">[Weizs&auml;cker, 8 May 1985]</span></p>
+  <p>Two cautions, both on the record. Weizs&auml;cker did not coin &ldquo;Tag der Befreiung.&rdquo; East Germany had used it officially for decades, and West German figures had used versions of it before him. His contribution was to carry the phrase into the Federal Republic&rsquo;s mainstream from the presidency. And the speech came three days after Chancellor Kohl and President Reagan laid a wreath at the Bitburg military cemetery, a visit that, as the Institut f&uuml;r Zeitgeschichte puts it in presenting its edition of the 1985 foreign-policy files, caused indignation above all in the United States, while Weizs&auml;cker&rsquo;s speech was acclaimed internationally. <span class="ledger-num">[Institut f&uuml;r Zeitgeschichte, on <em>Akten zur Ausw&auml;rtigen Politik der Bundesrepublik Deutschland 1985</em>]</span></p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 09</p>
+    <p class="fig-title">Two words at once, or neither</p>
+    <p class="fig-sub">What the two aggressor states&rsquo; official memory of the war&rsquo;s end contains. Bonn, from 1985, keeps the defeat and adds the liberation. Tokyo&rsquo;s 1982 name removes the ending and the defeat and substitutes mourning.</p>
+    <svg role="img" aria-label="Two columns: Germany, where Weizsäcker kept defeat and added liberation and personal guilt, all present; Japan, whose 1982 name has mourning and peace present and ending and defeat absent" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+      <g class="m" font-size="9.5" letter-spacing="1.4" fill="var(--label)">
+        <text x="0" y="14">GERMANY · WEIZSÄCKER, 8 MAY 1985</text>
+        <text x="340" y="14">JAPAN · CABINET DECISION, 13 APR 1982</text>
+      </g>
+      <line x1="0" y1="24" x2="310" y2="24" stroke="var(--bronze)"/><line x1="340" y1="24" x2="660" y2="24" stroke="var(--bronze)"/>
+      <g font-size="12.5" fill="var(--body)">
+        <rect x="0" y="40" width="310" height="70" fill="var(--panel2)"/>
+        <text x="16" y="70" class="s" font-size="21" fill="var(--head)">Niederlage</text><text x="16" y="92">defeat · named, kept</text>
+        <text x="294" y="82" text-anchor="end" font-size="20" fill="var(--head)">●</text>
+        <rect x="340" y="40" width="320" height="70" fill="var(--panel2)"/>
+        <text x="356" y="70" class="s" font-size="21" fill="var(--head)">終戦 · 敗戦</text><text x="356" y="92">ending · defeat · both absent from the name</text>
+        <text x="644" y="82" text-anchor="end" font-size="20" fill="var(--muted)">○</text>
+        <rect x="0" y="120" width="310" height="70" fill="var(--panel2)"/>
+        <text x="16" y="150" class="s" font-size="21" fill="var(--head)">Befreiung</text><text x="16" y="172">liberation · added, Germans included</text>
+        <text x="294" y="162" text-anchor="end" font-size="20" fill="var(--bronze)">●</text>
+        <rect x="340" y="120" width="320" height="70" fill="var(--panel2)"/>
+        <text x="356" y="150" class="s" font-size="21" fill="var(--head)">追悼</text><text x="356" y="172">mourning · present, of Japan's own dead</text>
+        <text x="644" y="162" text-anchor="end" font-size="20" fill="var(--head)">●</text>
+        <rect x="0" y="200" width="310" height="70" fill="var(--panel2)"/>
+        <text x="16" y="230" class="s" font-size="21" fill="var(--head)">Schuld</text><text x="16" y="252">guilt · personal, never collective</text>
+        <text x="294" y="242" text-anchor="end" font-size="20" fill="var(--head)">●</text>
+        <rect x="340" y="200" width="320" height="70" fill="var(--panel2)"/>
+        <text x="356" y="230" class="s" font-size="21" fill="var(--head)">平和</text><text x="356" y="252">peace · present, as a prayer, with no object</text>
+        <text x="644" y="242" text-anchor="end" font-size="20" fill="var(--head)">●</text>
+      </g>
+      <g font-size="12" fill="var(--body)">
+        <text x="0" y="302">Both words held at once.</text><text x="0" y="319">The subject of guilt is each person.</text>
+        <text x="340" y="302">Neither word present.</text><text x="340" y="319">The only people in the name are the dead.</text>
+        <text x="0" y="352" class="m" font-size="9.5" fill="var(--muted)">● present   ○ absent   bronze: the word added in 1985</text>
+      </g>
+    </svg>
+    <figcaption>Sources: Bundestag, official text of the 8 May 1985 address; Cabinet decision of 13 Apr 1982 (MHLW).</figcaption>
+  </figure>
+
+  <p>I am not arguing that Japan should have copied Bonn. The two cases are different in the way the aside above describes, and a German sentence does not translate into a Japanese one by swapping the nouns. I am making a smaller point. Weizs&auml;cker proved that a defeated state can put both the defeat and the liberation into one official sentence and survive it politically. Japan&rsquo;s official name, three years earlier, had chosen to put neither.</p>
+  <p>That choice was made in April 1982. Ten weeks later, the textbooks blew up.</p>
+</section>
+
+<section id="textbooks">
+  <h2>IX · 1982</h2>
+  <h3>The headline was wrong. The practice was real.</h3>
+  <p>On 26&nbsp;June 1982 Japan&rsquo;s major papers, Asahi among them, reported that the Ministry of Education had forced a high-school history textbook to change Japan&rsquo;s &ldquo;invasion&rdquo; of North China, <span lang="ja">侵略</span>, to an &ldquo;advance,&rdquo; <span lang="ja">進出</span>. Seoul and Beijing protested. The story is still told that way, and it is half true.</p>
+  <p>On 28&nbsp;July the Sankei Shimbun reported that the passage had read <span lang="ja">日本軍が華北に進出すると</span> before screening as well, and on 30&nbsp;July the ministry told the Diet it could find no case where a manuscript&rsquo;s <span lang="ja">華北侵略</span> had been changed to <span lang="ja">華北進出</span> in screening. On 7&nbsp;September Sankei printed a front-page correction and apology. On 19&nbsp;September Asahi defended its reporting overall but wrote that &ldquo;even if only in part, we must apologize to our readers for having made a mistake,&rdquo; and asked whether the essence did not lie in the ministry&rsquo;s screening stance. <span class="ledger-num">[Sankei, 28 Jul, 7 Sep; Diet, 30 Jul; Asahi, 19 Sep 1982; Shoji 2018]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">How both sides cite it</p>
+      <p>The journalist Sakurai Yoshiko wrote in April 2001 that only Sankei corrected the story. Asahi&rsquo;s partial apology of 19&nbsp;September 1982 says otherwise.</p>
+      <p>In March 2001 Education Minister Machimura Nobutaka called the 1982 report <span lang="ja">天下の大誤報</span>, a colossal misreport, in the Diet. True for the China example; not for Southeast Asia, as the ministry itself told the Diet that May, or for the March First Movement. <span class="ledger-num">[Diet record, 23 May 2001]</span></p>
+    </div>
+    <div>
+      <p class="k">The usable sentence</p>
+      <p>The headline example was wrong. The practice was real. Neither &ldquo;it was a hoax&rdquo; nor &ldquo;Japan rewrote invasion as advance in 1982&rdquo; survives cross-examination on its own.</p>
+    </div>
+  </div>
+  <p>Here is the half that was right. The media scholars Sat&#333; Takumi and Fukuma Yoshiaki conclude that the report was mistaken for the China front specifically. Fukuma adds that &ldquo;invasion&rdquo; became &ldquo;advance&rdquo; for Southeast Asia in the same cycle, and that the March First Movement of 1919, Korea&rsquo;s independence uprising, was rewritten as a &ldquo;riot,&rdquo; <span lang="ja">暴動</span>. Asahi&rsquo;s larger claim was that the ministry had been pushing <span lang="ja">侵略</span> out of textbooks since around 1955, the practice the Ienaga lawsuits contested. <span class="ledger-num">[Sat&#333;; Fukuma]</span></p>
+  <p>The consequences did not wait for the correction. On 26&nbsp;August 1982 Chief Cabinet Secretary Miyazawa Kiichi issued a statement acknowledging that Japan&rsquo;s actions had &ldquo;caused tremendous suffering and damage&rdquo; to the peoples of Asia, and a Neighbouring Countries Clause was written into the screening standards. The response followed a report whose headline example was wrong, about a practice that was real. <span class="ledger-num">[Miyazawa statement, 26 Aug 1982; MOFA Diplomatic Bluebook 1983]</span></p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 10</p>
+    <p class="fig-title">The 1982 chain: a report, a correction, and the policy that followed</p>
+    <p class="fig-sub">Dated steps from the first headline to the Neighbouring Countries Clause.</p>
+    <svg role="img" aria-label="Timeline of 1982: the report on 26 June, Sankei's check on 28 July, the Miyazawa statement on 26 August, Sankei's correction on 7 September, the Neighbouring Countries Clause in November" viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg">
+      <line x1="30" y1="60" x2="630" y2="60" stroke="var(--hair)"/>
+      <g font-size="11" fill="var(--body)">
+        <circle cx="50" cy="60" r="6" fill="var(--ink-base)"/><text x="50" y="30" text-anchor="middle" class="m" font-size="10" fill="var(--head)">26 JUN</text><text x="50" y="86" text-anchor="middle" font-weight="600" fill="var(--head)">The report</text><text x="50" y="102" text-anchor="middle">"invasion" to</text><text x="50" y="117" text-anchor="middle">"advance," N. China</text>
+        <circle cx="190" cy="60" r="6" fill="var(--ink-base)"/><text x="190" y="30" text-anchor="middle" class="m" font-size="10" fill="var(--head)">28 JUL</text><text x="190" y="86" text-anchor="middle" font-weight="600" fill="var(--head)">Sankei checks</text><text x="190" y="102" text-anchor="middle">text read "advance"</text><text x="190" y="117" text-anchor="middle">before screening too</text>
+        <circle cx="330" cy="60" r="7" fill="var(--ink-hot)"/><text x="330" y="30" text-anchor="middle" class="m" font-size="10" fill="var(--bronze)">26 AUG</text><text x="330" y="86" text-anchor="middle" font-weight="600" fill="var(--head)">Miyazawa statement</text><text x="330" y="102" text-anchor="middle">"tremendous suffering</text><text x="330" y="117" text-anchor="middle">and damage"</text>
+        <circle cx="470" cy="60" r="6" fill="var(--ink-base)"/><text x="470" y="30" text-anchor="middle" class="m" font-size="10" fill="var(--head)">7 SEP</text><text x="470" y="86" text-anchor="middle" font-weight="600" fill="var(--head)">Sankei corrects</text><text x="470" y="102" text-anchor="middle">front-page apology;</text><text x="470" y="117" text-anchor="middle">Asahi in part, 19 Sep</text>
+        <circle cx="610" cy="60" r="6" fill="var(--ink-base)"/><text x="610" y="30" text-anchor="middle" class="m" font-size="10" fill="var(--head)">NOV 1982</text><text x="610" y="86" text-anchor="middle" font-weight="600" fill="var(--head)">The clause</text><text x="610" y="102" text-anchor="middle">Neighbouring</text><text x="610" y="117" text-anchor="middle">Countries Clause</text>
+      </g>
+      <!-- what was true -->
+      <rect x="30" y="146" width="600" height="90" fill="var(--panel2)"/>
+      <text x="46" y="168" class="m" font-size="9.5" letter-spacing="1.3" fill="var(--label)">WHAT THE RECORD SUPPORTS</text>
+      <text x="46" y="188" font-size="11.5" fill="var(--body)">The North China example was wrong. Changes of "invasion" to "advance" were made for</text>
+      <text x="46" y="205" font-size="11.5" fill="var(--body)">Southeast Asia in the same cycle, and the March First Movement was rewritten as a "riot."</text>
+      <text x="46" y="222" font-size="11.5" fill="var(--body)">Miyazawa\'s statement preceded the correction.</text>
+    </svg>
+    <figcaption>Sources: Sankei Shimbun (28 Jul, 7 Sep 1982); Diet record (30 Jul 1982); Asahi Shimbun (19 Sep 1982); Sat&#333; Takumi and Fukuma Yoshiaki; MOFA Diplomatic Bluebook 1983; Shoji, Japan Review (2018).</figcaption>
+  </figure>
+
+  <p>The practice has not stopped; it has changed vocabulary. On 24&nbsp;March 2026 the Ministry of Education approved the high-school textbooks that will be used from 2027. Most politics and geography texts carry the claim to Dokdo, which Japan calls Takeshima; a geography text from Ninomiya Shoten, approved the year before, already describes Korea&rsquo;s &ldquo;illegal occupation.&rdquo; Kyodo reported that the government&rsquo;s positions &ldquo;appear to have permeated&rdquo; the books without any screening comment requiring them, which is a description of self-censorship. On wartime labour, a cabinet-approved written answer of 27&nbsp;April 2021 called <span lang="ja">強制連行</span>, forced taking, &ldquo;not appropriate&rdquo; and <span lang="ja">徴用</span>, requisition, the suitable term; the books have followed it. Seoul summoned Japan&rsquo;s deputy chief of mission, Matsuo Hirotaka, protested strongly and expressed &ldquo;strong regret.&rdquo; <span class="ledger-num">[MEXT, 24 Mar 2026; Kyodo; Seoul Shinmun, 24 Mar 2026; Seoul Economic Daily, 24&ndash;25 Mar 2026; ROK MOFA]</span></p>
+  <p>Which brings the names up to the present, and to the one day a year when four of them are spoken aloud.</p>
+</section>
+
+<section id="august">
+  <h2>X · 15 August 2026</h2>
+  <h3>What the names did this year</h3>
+  <p>At the Budokan, Prime Minister Sanae Takaichi spoke first, and the word was not there. After the noon silence, Emperor Naruhito spoke again of &ldquo;deep remorse.&rdquo;</p>
+  <p>Her address did not mention aggression or colonial rule. It described Japan as &ldquo;a nation that values peace,&rdquo; the Abe and Suga wording; Kishida and Ishiba had said &ldquo;peaceful nation.&rdquo; A year earlier, on the eightieth anniversary, Shigeru Ishiba had used <span lang="ja">反省</span>, remorse, in the address, the first prime minister to do so since 2012. Under Abe, from 2013, remorse and the acknowledgement of harm done to Asian countries both disappeared from the speech. In 2026 the word lasted one year. <span class="ledger-num">[Prime Minister&rsquo;s Office, addresses of 2012, 2025 and 2026; Kyodo, 15 Aug 2026]</span></p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">Four ministers</p>
+      <p>Jiji, Kyodo and NHK named four ministers who visited Yasukuni on 15&nbsp;August 2026, which Jiji called &ldquo;the first time in six years&rdquo;: Koizumi; Kikawada Hitoshi, minister for Okinawa and the Northern Territories; Kiuchi Minoru; and Onoda Kimi.</p>
+    </div>
+    <div>
+      <p class="k">&ldquo;Skipped Yasukuni&rdquo;</p>
+      <p>Incomplete. The Prime Minister sent an offering and, by two wire services&rsquo; accounts, performed worship from a distance. The headline and the record are not the same sentence.</p>
+    </div>
+  </div>
+  <p>Takaichi did not go to Yasukuni. She sent a privately funded <em>tamagushi</em> offering as president of the Liberal Democratic Party, and Jiji and Kyodo reported that she bowed toward the shrine from the Budokan&rsquo;s car park. Four ministers went in person, among them her defence minister, Shinjir&#333; Koizumi, the first sitting defence minister to do so on 15&nbsp;August since 2024. At least one cabinet minister has now visited on the day every year since 2020. The last prime minister to visit on 15&nbsp;August was Koizumi&rsquo;s father, in 2006. Seoul said it &ldquo;cannot but deplore&rdquo; the &ldquo;anachronistic acts that have forgotten history.&rdquo; Beijing protested. <span class="ledger-num">[Jiji; Kyodo; Aju News, 15 Aug 2026; Manila Bulletin, 16 Aug 2026]</span></p>
+  <p>Read it as grammar. The Emperor&rsquo;s sentence had a subject that felt remorse. The Prime Minister&rsquo;s sentence had a nation that valued peace, which is the 1982 name restated as a speech: no defeat, and no victims outside Japan.</p>
+
+  <figure class="sb5-fig">
+    <p class="fig-label">Fig. 11</p>
+    <p class="fig-title">The word &ldquo;remorse&rdquo; in the Prime Minister&rsquo;s 15 August address, 2012 to 2026</p>
+    <p class="fig-sub">Whether <span lang="ja">反省</span> appeared in the address to the National Memorial Ceremony. Two addresses in fifteen: 2012 and 2025.</p>
+    <svg role="img" aria-label="Fifteen blocks for the Prime Minister's addresses from 2012 to 2026; 2012 and 2025 filled for the word remorse, the rest empty" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+      <text x="36" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">2012</text>
+      <rect x="17" y="32" width="38" height="84" fill="var(--ink-base)"/>
+      <text x="78" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">13</text>
+      <rect x="59" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="120" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">14</text>
+      <rect x="101" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="162" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">15</text>
+      <rect x="143" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="204" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">16</text>
+      <rect x="185" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="246" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">17</text>
+      <rect x="227" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="288" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">18</text>
+      <rect x="269" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="330" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">19</text>
+      <rect x="311" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="372" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">20</text>
+      <rect x="353" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="414" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">21</text>
+      <rect x="395" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="456" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">22</text>
+      <rect x="437" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="498" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">23</text>
+      <rect x="479" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="540" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">24</text>
+      <rect x="521" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <text x="582" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">25</text>
+      <rect x="563" y="32" width="38" height="84" fill="var(--ink-base)"/><rect x="560" y="29" width="44" height="90" fill="none" stroke="var(--bronze)" stroke-width="2"/>
+      <text x="624" y="20" text-anchor="middle" class="m" font-size="10" fill="var(--muted)">2026</text>
+      <rect x="605" y="32" width="38" height="84" fill="var(--panel2)"/>
+      <line x1="59" y1="132" x2="391" y2="132" stroke="var(--hair)"/><line x1="437" y1="132" x2="559" y2="132" stroke="var(--hair)"/>
+      <g font-size="11.5" fill="var(--body)">
+        <text x="36" y="150" text-anchor="middle">Noda</text>
+        <text x="225" y="150" text-anchor="middle">Abe · 2013 to 2020</text>
+        <text x="414" y="150" text-anchor="middle">Suga</text>
+        <text x="498" y="150" text-anchor="middle">Kishida</text>
+        <text x="582" y="150" text-anchor="middle" fill="var(--head)" font-weight="600">Ishiba</text>
+        <text x="624" y="150" text-anchor="middle">Takaichi</text>
+      </g>
+      <g font-size="12" fill="var(--body)">
+        <text x="17" y="190">Filled: the word is present. Empty: absent. Outlined: 2025, restored on the eightieth anniversary.</text>
+        <text x="17" y="210">On the same stage in 2025 and 2026, the Emperor spoke of "deep remorse" both years.</text>
+      </g>
+      </svg>
+    <figcaption>Sources: Prime Minister&rsquo;s Office (kantei.go.jp), addresses to the National Memorial Ceremony for the War Dead; Kyodo (15 Aug 2026) on the 2013 to 2024 record. Legible in grayscale by fill and outline.</figcaption>
+  </figure>
+
+  <p>In Seoul the same day, President Lee Jae-myung proposed talks to formally end the Korean War and replace the 1953 armistice with a peace regime, among the two Koreas and the United States, or those three and China, and called for &ldquo;a new sixty years&rdquo; with Japan. A year earlier he had pledged no absorption and no hostile acts toward the North, and called the day &ldquo;the day we reclaimed the freedom and the right to determine our own future.&rdquo; <span class="ledger-num">[Korea.net; JoongAng Daily; Japan Times, 15 Aug 2026; Korea Herald, 15 Aug 2025]</span></p>
+  <p>In Pyongyang, Kim Jong Un laid his third consecutive wreath at the Liberation Tower, Putin&rsquo;s message, as Reuters reported it, tied the bond to the Soviet soldiers who fought Japan, and the Pallada sat in Wonsan harbour, the port where Kim Il-sung had come ashore eighty-one years earlier. <span class="ledger-num">[NK News; Reuters, 15 Aug 2026]</span></p>
+
+  <h3>Three capitals, one anniversary, and each speech did what its name predicted.</h3>
+  <p>Tokyo mourned its own dead and prayed for a peace with no object, which is the 1982 designation read aloud. Seoul turned to the business the restoration never settled: how the war across the line ends. Pyongyang said liberation and, for the third year, pointed at the Soviet soldiers who did it. Washington was not on any of these stages; V-J Day names the victory over Japan, and Korea is not in it.</p>
+  <div class="sb5-side">
+    <div>
+      <p class="k">The reading rule</p>
+      <p>01 &nbsp;Read the official name of the day before the speech.</p>
+      <p>02 &nbsp;Ask which subject it removes: who acted, who lost, who is not in the sentence.</p>
+      <p>03 &nbsp;Read the speech. See whether the subject came back.</p>
+    </div>
+    <div>
+      <p class="k">The count</p>
+      <p class="big">0 <small>OF SIX</small></p>
+      <p>Official names for the end of the Pacific war that say who drew the line across Korea.</p>
+    </div>
+  </div>
+  <p>This is what the missing subject is for. A commemoration&rsquo;s official name is not a label on a date. It is the shortest policy document a state publishes, and it is republished every year, rarely amended. Japan&rsquo;s official name has never had a loser in it. Russia&rsquo;s acquired an adjective in 2023. Korea&rsquo;s two names have carried the same two gaps since 1949: who restored the light, and who drew the line through it.</p>
+  <p>Hence the reading rule above. In 2025 a subject came back into the Japanese address, for one year. In 2026 it left again, on the same stage, in front of the same Emperor who had kept it.</p>
+  <div class="sb5-view">
+    <p>My own view, and it is a view: the only names that put Korea in the sentence are Korea&rsquo;s own, and neither says who did the liberating or who did the dividing. Until a Korean name for the day can hold both subjects at once, the way Weizs&auml;cker&rsquo;s one sentence held both defeat and liberation, the peninsula&rsquo;s calendar will keep telling its people half of what happened to them.</p>
+  </div>
+  <p>The war ended at noon. Who ended it, who was freed, and who was cut in half are three different sentences, and eighty-one years on, no state has agreed to say all three.</p>
+  <p class="sb5-sig">J.J. · Victoria, British Columbia · 3 October 2026</p>
+
+  <aside class="standard" style="margin-top: 28px;">
     <h4>Claims this briefing does not make</h4>
-    <p>That Kim Il-sung &ldquo;won the Second World War&rdquo;: the DPRK claims the leading role in Korea&rsquo;s liberation, not the war. That Japan &ldquo;rewrote invasion as advance&rdquo; in 1982 as a blanket fact, or that the episode was a hoax. That the 38th parallel was drawn on a 1904 map, or in thirty minutes by both colonels. That the Prime Minister &ldquo;skipped&rdquo; Yasukuni in 2026.</p>
+    <p>That Kim Il-sung &ldquo;won the Second World War&rdquo;: the DPRK claims the leading role in Korea&rsquo;s liberation, not the war. That Japan &ldquo;rewrote invasion as advance&rdquo; in 1982 as a blanket fact, or that the episode was a hoax. That the 38th parallel was drawn on a 1904 map, or in thirty minutes by both colonels. That the Prime Minister &ldquo;skipped&rdquo; Yasukuni in 2026. Each of these circulates. None survives the documents.</p>
   </aside>
+</section>
 
-  <aside class="standard">
-    <h4>In the briefing</h4>
-    <p>I &nbsp;Noon &nbsp;·&nbsp; II &nbsp;Tokyo: a day with no loser &nbsp;·&nbsp; III &nbsp;Seoul: the vote that picked a word &nbsp;·&nbsp; IV &nbsp;Pyongyang: the month between the liberation and the liberator &nbsp;·&nbsp; V &nbsp;Washington and Moscow: a victory without a colony &nbsp;·&nbsp; VI &nbsp;The line they drew, and the one they did not &nbsp;·&nbsp; VII &nbsp;Three sources, two dates &nbsp;·&nbsp; VIII &nbsp;Bonn, 8 May 1985: the man who kept both words &nbsp;·&nbsp; IX &nbsp;1982: the headline was wrong; the practice was real &nbsp;·&nbsp; X &nbsp;15 August 2026 &nbsp;·&nbsp; Sources and verification · Corrections</p>
-  </aside>
+<section id="verification">
+  <h2>Sources and Verification</h2>
+  <h3>Open items are published, not hidden</h3>
+  <p>Dated claims in this briefing trace to the documents named below. Where the record is thin, in conflict, or still awaiting a primary source, it is listed here rather than smoothed over in the text.</p>
+  <ol class="sb5-list">
+    <li><strong>Rusk&rsquo;s two dates.</strong> The 1950 memorandum in FRUS says &ldquo;the night of August 10&ndash;11&rdquo;; the 1990 memoir says 14&nbsp;August. Both are Rusk. The text presents both and prefers neither.</li>
+    <li><strong>Kim Il-sung&rsquo;s ship.</strong> Widely named in secondary literature as the <em>Pugachev</em>. No source consulted for this briefing names it, so the text does not.</li>
+    <li><strong>DPRK textbook revisions since 2024.</strong> Reunification content has visibly been removed from monuments, agencies and the anthem. No primary or monitoring document confirming specific textbook changes about 1945 or &ldquo;one nation&rdquo; was obtained. The briefing makes no claim about them.</li>
+    <li><strong>Yasukuni headcount, 15 August 2026.</strong> Resolved: Jiji, Kyodo and NHK name four ministers.</li>
+    <li><strong>Truman&rsquo;s proclamation of 2 September.</strong> Resolved: Public Papers No.&nbsp;122, 1&nbsp;September 1945.</li>
+    <li><strong>Weizs&auml;cker and &ldquo;Tag der Befreiung.&rdquo;</strong> He did not coin the phrase; the GDR used it officially. The text credits him with carrying it into the Federal Republic&rsquo;s mainstream, nothing more.</li>
+    <li><strong>Korean and Japanese lines.</strong> Native-speaker review of all original-script terms is pending. Standing rule for this imprint.</li>
+    <li><strong>Russian and Chinese designation dates.</strong> Resolved: Federal Law 126-FZ of 24&nbsp;April 2020, and the NPC Standing Committee decision of 27&nbsp;February 2014.</li>
+    <li><strong>Soviet entry into Pyongyang.</strong> The study cited gives 24&nbsp;August; some histories give the 25th.</li>
+    <li><strong>Sankei, July and September 1982.</strong> The paper&rsquo;s 1982 archive is not online; the Diet record of 30&nbsp;July 1982 confirms the substance.</li>
+    <li><strong>Rusk&rsquo;s memoir.</strong> Quoted at second hand, through National Geographic (2013); the passage has not been checked against the book.</li>
+  </ol>
+
+  <h3>Primary documents</h3>
+  <p class="sb5-src"><strong>FRUS</strong> <em>Foreign Relations of the United States</em>, 1945, vol. VI: <a href="https://history.state.gov/historicaldocuments/frus1945v06/d450">doc 450</a> (Stalin to Truman, 16 Aug 1945); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d452">doc 452</a> (Truman to Stalin, 17/18 Aug); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d470">doc 470</a> (Stalin to Truman, 22 Aug); doc 476 (Byrnes&rsquo;s draft, 25 Aug); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d771">doc 771</a> (editorial note quoting Rusk to Noble, 12 Jul 1950); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d776">doc 776</a> (MacArthur, Proclamation No.&nbsp;1). history.state.gov.<br>
+  <strong>Schnabel</strong> James F. Schnabel, <em>Policy and Direction: The First Year</em> (US Army Center of Military History, 1972), pp. 9&ndash;10. apps.dtic.mil.<br>
+  <strong>Rusk</strong> Dean Rusk, <em>As I Saw It</em> (Norton, 1990), as quoted by National Geographic (5 Aug 2013) and NK News (2012).<br>
+  <strong>Japan</strong> Cabinet decisions of 14 May 1963 and 13 Apr 1982; <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/senbotsusha/index.html">Ministry of Health, Labour and Welfare, <span lang="ja">全国戦没者追悼式</span></a>; Imperial Rescript on the Termination of the War (14 Aug 1945); Chief Cabinet Secretary Miyazawa statement (26 Aug 1982), MOFA Diplomatic Bluebook 1983; cabinet-approved written answer on terminology (27 Apr 2021); MEXT textbook screening results (24 Mar 2026); Diet records of 30 Jul 1982 and 23 May 2001; Prime Minister&rsquo;s addresses of 2012, 2025 and 2026 (kantei.go.jp).<br>
+  <strong>ROK</strong> <span lang="ko">국경일에 관한 법률</span> (Act on National Holidays, promulgated 1 Oct 1949); Constitution of the Republic of Korea, preamble; Encyclopedia of Korean Culture (AKS), <span lang="ko">광복절</span>; Dong-A Ilbo (27 May 1949); Constituent Assembly record (3 Jun 1948).<br>
+  <strong>DPRK / Russia</strong> Rodong Sinmun and KCNA, 14&ndash;15 Aug 2024, 2025, 2026, as carried by NK News and Reuters; <a href="http://en.kremlin.ru/acts/news/71506">Kremlin, law of 24 Jun 2023</a>; the bill&rsquo;s explanatory note, as reported by RFE/RL; Federal Law 126-FZ (24 Apr 2020).<br>
+  <strong>Germany</strong> Richard von Weizs&auml;cker, address to the Bundestag, 8 May 1985, official text (bundestag.de); Institut f&uuml;r Zeitgeschichte, description of its edition, <em>Akten zur Ausw&auml;rtigen Politik der Bundesrepublik Deutschland 1985</em>.<br>
+  <strong>US</strong> Harry S. Truman, <a href="https://www.trumanlibrary.gov/library/public-papers/122/radio-address-american-people-after-signing-terms-unconditional-surrender">radio address of 1 Sep 1945</a> (Public Papers No.&nbsp;122); General Order No.&nbsp;1; Rhode Island General Laws, Victory Day.<br>
+  <strong>Treaties</strong> Treaty of San Francisco (1951); Austrian State Treaty (15 May 1955); Okinawa Reversion Agreement (1971).</p>
+
+  <h3>Scholarship and reporting</h3>
+  <p class="sb5-src">Bruce Cumings, <em>The Origins of the Korean War</em>, vol. 1 (Princeton, 1981). Tsuyoshi Hasegawa, <em>Racing the Enemy</em> (Harvard, 2005), with the counter-arguments of Sadao Asada (<em>Pacific Historical Review</em>, 1998) and Richard B. Frank (<em>Downfall</em>, 1999) on the Soviet entry versus the bombs. Gi-Wook Shin and Daniel C. Sneider, eds., <em>History Textbooks and the Wars in Asia: Divided Memories</em> (Routledge). Andrei Lankov, <em>From Stalin to Kim Il Sung</em> (Hurst, 2002), on the 88th Brigade.<br>
+  Sat&#333; Takumi and Fukuma Yoshiaki on the 1982 reporting; Shoji Jun&rsquo;ichir&#333;, <em>Japan Review</em> 2(1), JIIA, 2018. University of Washington, <em>Kim Il Sung and the DPRK-USSR-PRC Triangle</em>. HRNK Insider, Apr 2021. <em>Review of Korean Studies</em> 16(1) on the July 1945 origin of the line.<br>
+  Aju News (15 Aug 2026); Kyodo, Jiji and NHK (15 Aug 2026); Manila Bulletin (16 Aug 2026); Korea.net, JoongAng Daily, Japan Times (15 Aug 2026); SBS (Aug 2026); Korea Herald (15 Aug 2025, full text of the Liberation Day address); JoongAng Daily (15 Aug 2024); Seoul Shinmun (18 Aug 2016; 24 Mar 2026); Seoul Economic Daily (24&ndash;25 Mar 2026); Hankyoreh (12 Sep 2008); Hankook Ilbo (13 Aug 2008); Asahi Shimbun (19 Sep 1982); Sakurai Yoshiko, GQ Japan (Apr 2001); Nikkan Kogyo Shimbun, <span lang="ja">産業春秋</span> column; Nikkei (15 Aug 2023); Malay Mail (26 Jun 2023).</p>
 </section>
 
 <section id="corrections">
   <h2>Corrections</h2>
-
-  <p>The first edition, v1.0 of 3&nbsp;October 2026, is superseded by the corrected v1.0.1 of 4&nbsp;October hosted here, issued after a check of its claims against their sources. The argument is unchanged; quotations, dates and two figures are corrected. Among the corrections: Stalin&rsquo;s 16&nbsp;August sentence is now quoted whole, with its condition on the Liaotung Peninsula; a line attributed to President Putin is Reuters&rsquo; paraphrase, not a quotation; President Lee proposed talks among the two Koreas and the United States, or those three and China; &ldquo;remorse&rdquo; appears in two of fifteen 15&nbsp;August addresses, 2012 and 2025; and the figure tracing the 38th-parallel legend now names the document behind each clause. Two sentences about Washington are softened. The full list is on page&nbsp;28 of the release.</p>
-</section>
-
-<section id="sources">
-  <h2>Selected sources</h2>
-
-  <p>The release carries the full source list. The primary documents behind the 1945 sections:</p>
-  <ul>
-    <li><em>Foreign Relations of the United States</em>, 1945, vol. VI: <a href="https://history.state.gov/historicaldocuments/frus1945v06/d450">doc 450</a> (Stalin to Truman, 16 August 1945); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d452">doc 452</a> (Truman to Stalin, 17/18 August); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d470">doc 470</a> (Stalin to Truman, 22 August); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d771">doc 771</a> (editorial note quoting Rusk, 12 July 1950); <a href="https://history.state.gov/historicaldocuments/frus1945v06/d776">doc 776</a> (MacArthur, Proclamation No.&nbsp;1).</li>
-    <li>Harry S. Truman, <a href="https://www.trumanlibrary.gov/library/public-papers/122/radio-address-american-people-after-signing-terms-unconditional-surrender">radio address of 1 September 1945</a> (Public Papers No.&nbsp;122).</li>
-    <li>Ministry of Health, Labour and Welfare (Japan), <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/senbotsusha/index.html">national memorial service for the war dead</a>.</li>
-    <li>President of Russia, <a href="http://en.kremlin.ru/acts/news/71506">September 3, Day of Military Glory, declared Day of Victory over Militaristic Japan and the End of World War II (1945)</a>, 24 June 2023.</li>
-  </ul>
+  <h3>What this edition corrects</h3>
+  <p>This is v1.0.1 of 4&nbsp;October 2026. It corrects the first edition of 3&nbsp;October after a check of its claims against their sources. The argument is unchanged; quotations, dates and two figures are corrected.</p>
+  <ol class="sb5-list">
+    <li><strong>Quotations.</strong> Stalin&rsquo;s 16&nbsp;August sentence is now quoted whole, with its Liaotung condition (p.&nbsp;14). His 22&nbsp;August cable says &ldquo;you refuse&rdquo;, not &ldquo;refusal&rdquo;, and is FRUS doc 470 (pp.&nbsp;14&ndash;15). The Putin line is Reuters&rsquo; paraphrase, not a quotation (pp.&nbsp;11, 24). The Korean preamble is quoted verbatim (p.&nbsp;8). Seoul said in 2026 that it &ldquo;cannot but deplore&rdquo; the Yasukuni visits; &ldquo;deep regret&rdquo; was the 2025 wording (p.&nbsp;23).</li>
+    <li><strong>Fig. 08.</strong> The arrows pointed the 1950 memorandum at &ldquo;thirty minutes&rdquo; and the memoir at &ldquo;10 August&rdquo;. Superscripts now name the document behind each clause (p.&nbsp;18).</li>
+    <li><strong>President Lee.</strong> He proposed talks among the two Koreas and the United States, or those three and China, not a peace regime &ldquo;negotiated with Washington and Beijing&rdquo; (p.&nbsp;24).</li>
+    <li><strong>The 15 August addresses.</strong> From 2013 they dropped remorse and the acknowledgement of harm to Asian countries; the 2012 address did not say &ldquo;aggression&rdquo; either. &ldquo;Remorse&rdquo; appears in two addresses of fifteen, 2012 and 2025 (Fig.&nbsp;11). The Prime Minister spoke before the Emperor. The 2025 address is no longer used as 2026 evidence (pp.&nbsp;23&ndash;25).</li>
+    <li><strong>China&rsquo;s name.</strong> It contains no word for aggression; the official English adds it. The NPC Standing Committee, not the full Congress, made it statutory (Fig.&nbsp;01, p.&nbsp;12).</li>
+    <li><strong>Bitburg.</strong> The quoted assessment is the Institut f&uuml;r Zeitgeschichte&rsquo;s description of its edition, not the edition itself, and it places the indignation above all in the United States (p.&nbsp;19).</li>
+    <li><strong>Also corrected.</strong> Fig.&nbsp;05&rsquo;s dates; the 1982 chain dated and re-attributed, Asahi&rsquo;s line given as the question it was, Sakurai and Machimura dated; the Ninomiya text moved to the 2025 screening; Seoul&rsquo;s 2026 textbook response; four Yasukuni ministers named; Truman&rsquo;s reply on the Kurils; Pyongyang&rsquo;s date and the day counts; the 1949 vote, the Year 30 speeches and Han Si-jun&rsquo;s claim; Chung&rsquo;s bill withdrawn; Austria and the Kurils in Fig.&nbsp;07; Fig.&nbsp;03&rsquo;s arc; a teaching guide dropped as a source; open items 04, 05 and 08 closed; sources completed.</li>
+    <li><strong>House notes.</strong> Two sentences about Washington are softened (pp.&nbsp;2, 25); the thesis line is unchanged. The colophon now says the author writes in the first person, and discloses AI assistance.</li>
+  </ol>
+  <p>Page references are to the release PDF. Readers who find a further error can write to <a href="mailto:editor@npsi.ca">editor@npsi.ca</a>. Corrections are credited.</p>
+  <div class="wp-card-actions" style="margin-top: 24px;">
+    <a class="btn btn-bronze" href="/sb5/special-briefing.pdf">Download the Briefing (PDF, 29 pp.)</a>
+    <a class="btn" href="/sb5/special-briefing-print.pdf">Print Edition (PDF)</a>
+  </div>
 </section>
 
 <hr>
@@ -255,6 +1022,7 @@
 </section>
 
 </article>
+
 
 </main>
 

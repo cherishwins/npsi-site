@@ -6,7 +6,7 @@
 
 ```
 ├── sb5/
-│   ├── index.html                   Special Briefing No. 5 — *One Day, Four Names* — release page (PDF canonical)
+│   ├── index.html                   Special Briefing No. 5 — *One Day, Four Names* — full reading view (PDF canonical)
 │   ├── special-briefing.pdf         canonical v1.0.1 release, dark edition for distribution (29 pp.; corrections p. 28, colophon p. 29)
 │   └── special-briefing-print.pdf   the same text, cream edition for print (linked from the release page and the home card)
 ```
@@ -17,7 +17,7 @@ Share card: `assets/img/sb5-og.svg` → `sb5-og.png` (render with `tools/render-
 
 ## Special Briefing No. 5 — One Day, Four Names (`sb5/index.html`)
 
-Commemoration-and-record briefing, integrated 4 October 2026 as a **PDF-first release page**. Key facts that should remain consistent:
+Commemoration-and-record briefing, integrated 4 October 2026 as a PDF-first release page; the **full reading view** was ported on 14 October 2026 from the v1.0.1 PDF (text authority) with the author's source HTML supplying the nine SVG figures (Figs. 02–06, 08–11; Figs. 01 and 07 are tables). The source HTML was the uncorrected first edition, so the figures were brought up to v1.0.1 on port: Fig. 02's closing line, Fig. 03's arc (1945–1948), Fig. 04's 26 days, Fig. 05's footer, Fig. 06's "you refuse", Fig. 08's superscripts in place of arrows, Fig. 10's dates and the Miyazawa quotation. The figures keep the source's variable names, mapped to site tokens by `.sb5-fig svg` in the page head; page-scoped styles are `sb5-` prefixed. Key facts that should remain consistent:
 
 - **Identity:** the document ID is the one printed on the release, `NPSI-20261003-C` (not `NPSI-SB-005`); on this site it is Special Briefing No. 5. v1.0 issued 3 October 2026; v1.0.1 of 4 October 2026, corrected after a source check, is the release hosted here. In v1.0.1 the "Claims this briefing does not make" box sits at the foot of p. 25, below the essay's close, because the corrected source list filled p. 27.
 - **Thesis:** the war in the Pacific ended once; it has at least six official names, and none is neutral; each is a sentence with a subject removed. The line "In Europe they divided the aggressor. In Asia they divided the colony." stays verbatim (editor's decision, 4 October 2026). Two side sentences about Washington were softened in v1.0.1 (pp. 2, 25) under the no-anti-American-framing rule; do not re-harden them.

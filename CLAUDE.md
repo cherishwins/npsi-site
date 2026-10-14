@@ -26,7 +26,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 - The public numbering note (gaps at 6 and 8, nothing withdrawn, git history as audit trail) lives on `/about/` and `/disclosure/`.
 - Declared interests as first published: Fit For Gov; enterprise software / applied-intelligence work; Western operations for an international energy facilitation firm (never name the firm — deal-sensitive); Korean reunification advocacy (described, unnamed); Sagkeeng (Ojibway) ancestry as standpoint for WP1/WP2's Indigenous co-ownership provisions; external writing (Korea Pro commissioned essay, July 2026 — **paid**; `/disclosure/` §6 corrected 5 Oct 2026 after first saying no compensation had been arranged); AI drafting assistance (Claude), disclosed in-paper where material.
 
-**PDF-first releases (WP5, SB2):** the PDF is the canonical release document; each page also carries a **full reading view** (ported July 2026 from the release PDFs) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
+**PDF-first releases (WP5, SB2, SB4, SB5):** the PDF is the canonical release document; each page also carries a **full reading view** (WP5 and SB2 ported July 2026 from the release PDFs; SB4 and SB5 ported 14 October 2026 from their corrected v1.0.1 releases, with figures as inline SVG on site tokens) plus complete metadata (Highwire + JSON-LD with `encoding`) and the direct download. When porting from an author's HTML source, check its edition against the release PDF first: the SB5 source was the uncorrected v1.0, and the PDF is the text authority. **Korean rollout kit:** the `npsi-korean-translation` skill is installed at `.claude/skills/npsi-korean-translation/` (register rules, glossary + WP3 supplement, QA checklist) — consult it before publishing any Korean text.
 
 ## The register (adopted October 2026)
 
@@ -305,8 +305,8 @@ The same facts, machine-readable and gate-checked, are in `registry.json`; this 
 | SB1 | `sb1/` | *Zero Secrets* | v1.0 · 11 Jun 2026 | reading view + PDF |
 | SB2 | `sb2/` | *The Three Doors* | v1.0 · 2 Jul 2026 | PDF canonical (10 panels) + full reading view |
 | SB3 | `sb3/` | *The Ledger With One Entry* | v1.0 · 26 Jul 2026 | PDF canonical (39 pp.); release page |
-| SB4 | `sb4/` | *The Tollgate Markets* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (24 pp.); release page. Accession `NPSI-20261003-B`; serial pending |
-| SB5 | `sb5/` | *One Day, Four Names* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (29 pp., dark; cream print edition); release page. Accession `NPSI-20261003-C`; serial pending |
+| SB4 | `sb4/` | *The Tollgate Markets* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (24 pp.) + full reading view (ported 14 Oct). Accession `NPSI-20261003-B`; serial pending |
+| SB5 | `sb5/` | *One Day, Four Names* | v1.0.1 · 3 Oct 2026, corrected 4 Oct | PDF canonical (29 pp., dark; cream print edition) + full reading view (ported 14 Oct). Accession `NPSI-20261003-C`; serial pending |
 | PL1 | `pl1/` | *The Pacific Ledger* №01 | July 2026, closed 28 Jul | reading view + author PDF (7 pp.) |
 
 ## Series pieces in flight (not yet on the site)

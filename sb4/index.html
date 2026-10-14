@@ -45,6 +45,65 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
 
+<style>
+  /* Page-scoped components — sb4- prefixed, tokens only. */
+  .sb4-cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 28px; margin: 24px 0; }
+  .sb4-cols3 > div h4 { margin: 0 0 6px; font-style: normal; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); }
+  .sb4-cols3 > div h5 { margin: 0 0 8px; font-family: var(--font-serif); font-size: 17px; font-weight: 600; color: var(--navy); line-height: 1.3; }
+  .sb4-cols3 > div p { font-size: 15px; line-height: 1.5; margin: 0; }
+  .sb4-tl { list-style: none; margin: 20px 0 24px; padding: 0; }
+  .sb4-tl li { display: grid; grid-template-columns: 110px 1fr; gap: 0 18px; padding: 10px 0; border-top: 0.5px solid var(--rule); font-size: 15px; line-height: 1.5; }
+  .sb4-tl li:last-child { border-bottom: 0.5px solid var(--rule); }
+  .sb4-tl li > span:first-child { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; color: var(--bronze); padding-top: 3px; }
+  .sb4-tl li .ledger-num { font-size: 12.5px; }
+  .sb4-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.sb4-t { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; min-width: 600px; }
+  table.sb4-t th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
+    text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--bronze);
+  }
+  table.sb4-t td { padding: 10px 10px 10px 0; vertical-align: top; border-bottom: 0.5px solid var(--rule); line-height: 1.45; color: var(--ink); }
+  table.sb4-t tr:last-child td { border-bottom: none; }
+  table.sb4-t td strong { color: var(--navy); font-weight: 600; }
+  table.sb4-t td small { display: block; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 2px; }
+  table.sb4-t td.n { font-family: var(--font-mono); font-size: 11px; color: var(--bronze); }
+  table.sb4-t td.r { font-family: var(--font-mono); font-size: 11px; color: var(--navy); letter-spacing: 0.04em; white-space: nowrap; }
+  .sb4-src { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--ink-soft); margin: 14px 0 0; letter-spacing: 0; }
+  .sb4-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; margin: 24px 0; }
+  .sb4-card { background: var(--paper); border: 0.5px solid var(--rule); padding: 18px 20px; }
+  .sb4-card .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
+  .sb4-card h4 { margin: 0 0 2px; font-style: normal; font-size: 19px; color: var(--navy); font-weight: 600; }
+  .sb4-card .big { font-family: var(--font-mono); font-size: 13px; color: var(--bronze); margin: 0 0 10px; }
+  .sb4-card p { font-size: 14.5px; line-height: 1.5; margin: 0 0 8px; }
+  .sb4-card p:last-child { margin-bottom: 0; }
+  .sb4-card .ledger-num { font-size: 12px; }
+  ol.sb4-test { list-style: none; margin: 20px 0 0; padding: 0; counter-reset: tt; }
+  ol.sb4-test li { counter-increment: tt; position: relative; border-top: 0.5px solid var(--rule); padding: 18px 0 18px 54px; margin: 0; }
+  ol.sb4-test li:last-child { border-bottom: 0.5px solid var(--rule); }
+  ol.sb4-test li::before { content: counter(tt); position: absolute; left: 0; top: 18px; font-family: var(--font-mono); font-size: 22px; font-weight: 500; color: var(--bronze); }
+  ol.sb4-test h4 { margin: 0 0 6px; font-style: normal; font-size: 17px; color: var(--navy); font-weight: 600; }
+  ol.sb4-test p { margin: 0; font-size: 15px; }
+  ol.sb4-test p + p { margin-top: 4px; font-size: 14px; color: var(--ink-soft); }
+  .sb4-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bronze); margin-left: 8px; }
+  .sb4-open { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px 18px; margin: 18px 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; color: var(--ink); }
+  .sb4-author { background: var(--paper); border: 0.5px solid var(--rule); padding: 26px 28px; margin: 28px 0; }
+  .sb4-author .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 12px; }
+  .sb4-author p { font-size: 15.5px; }
+  .sb4-author .sig { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bronze); margin: 18px 0 0; }
+  figure svg text { font-family: var(--font-mono); }
+  figure svg text.s { font-family: var(--font-serif); }
+  @media (max-width: 820px) {
+    .sb4-cols3, .sb4-cards { grid-template-columns: 1fr; }
+    .sb4-open { grid-template-columns: repeat(3, 1fr); }
+    .sb4-tl li { grid-template-columns: 1fr; gap: 2px; }
+  }
+  @media print {
+    table.sb4-t { min-width: 0; }
+    table.sb4-t tr, .sb4-card, ol.sb4-test li, .sb4-tl li { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,7 +177,7 @@
   <div class="doc-class">Special Briefing No.&nbsp;4  ·  Market Enforcement  ·  v1.0.1  ·  3 October 2026, corrected 4 October  ·  Unclassified — Open Source</div>
   <h1>The Tollgate Markets</h1>
   <div class="subtitle">Where else does breaking the rules cost a fee instead of a future?</div>
-  <p class="lede">The PDF below is the canonical release: twenty-four pages, corrected on 4&nbsp;October 2026 after a check of its claims against their sources, with the corrections listed on its page&nbsp;23. This page carries the abstract, the key numbers, the test the briefing proposes, and the direct download.</p>
+  <p class="lede">Turkey froze 131 funds holding the savings of 455,758 people. Its regulator&rsquo;s fines for all of 2025 came to about 1% of a single one of them. This briefing gives such a place a name, a tollgate market, rates seventeen markets on enforcement in practice rather than on their statutes, and ends with a five-sign test anyone can run. The full text follows; the PDF, corrected on 4&nbsp;October 2026, is the canonical release.</p>
 </div>
 
 <aside class="wp-meta-block" aria-label="Special briefing metadata">
@@ -142,98 +201,869 @@
 
 <article class="wp-prose">
 
-<section id="abstract">
-  <h2>Abstract</h2>
+<nav class="toc" aria-label="Contents">
+  <h2>In the briefing</h2>
+  <ol>
+    <li class="fm"><a href="#froze">I · The day the cash froze</a></li>
+    <li class="fm"><a href="#bottom-line">The bottom line</a></li>
+    <li class="fm"><a href="#cash">II · The cash that wasn&rsquo;t</a></li>
+    <li class="fm"><a href="#warnings">III · The warnings were on the record</a></li>
+    <li class="fm"><a href="#price-list">IV · The price list</a></li>
+    <li class="fm"><a href="#paper-teeth">V · Paper teeth</a></li>
+    <li class="fm"><a href="#ladder">VI · The ladder</a></li>
+    <li class="fm"><a href="#markets">VII · Seventeen markets up close</a></li>
+    <li class="fm"><a href="#after">VIII · After the damage</a></li>
+    <li class="fm"><a href="#elsewhere">IX · The cash that wasn&rsquo;t, elsewhere</a></li>
+    <li class="fm"><a href="#now">X · Who looks like Turkey now</a></li>
+    <li class="fm"><a href="#test">The Tollgate Test</a></li>
+    <li class="fm"><a href="#watch">XI · What to watch</a></li>
+    <li class="fm"><a href="#author">From the author</a> · <a href="#verification">Sources and verification</a> · <a href="#corrections">Corrections</a></li>
+  </ol>
+</nav>
 
-  <p>On 17&nbsp;September 2026, Turkey&rsquo;s Capital Markets Board ordered 131 investment funds into liquidation in a single day. Inside them sat the savings of 455,758 people. In 2025 the same regulator had fined 297 people and companies a combined TRY&nbsp;2.69&nbsp;billion, about $65 to 70&nbsp;million: roughly 1% of a single money market fund at the centre of the collapse. And under Article&nbsp;107(3) of the Capital Markets Law, a person accused of transaction-based manipulation who pays the Treasury twice the benefit before an investigation opens faces no penalty at all.</p>
+<figure>
+  <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two circles drawn to scale: one money market fund, TRY 224.4 billion, beside every fine the regulator imposed in 2025, TRY 2.69 billion">
+    <rect width="660" height="300" fill="var(--paper)"/>
+    <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 01 · DRAWN TO SCALE</text>
+    <circle cx="200" cy="160" r="118" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+    <text class="s" x="200" y="150" text-anchor="middle" font-size="30" fill="var(--navy)">TRY 224.4bn</text>
+    <text x="200" y="174" text-anchor="middle" font-size="10" letter-spacing="1.2" fill="var(--ink-soft)">ONE MONEY MARKET FUND</text>
+    <circle cx="352" cy="266" r="13" fill="var(--bronze)"/>
+    <text class="s" x="376" y="262" font-size="16" fill="var(--bronze)">TRY 2.69bn</text>
+    <text x="376" y="278" font-size="9.5" letter-spacing="1.2" fill="var(--ink-soft)">A FULL YEAR OF FINES</text>
+    <g font-size="11.5" fill="var(--ink)">
+      <text x="380" y="72" font-weight="600" fill="var(--navy)">The large circle</text>
+      <text x="380" y="90">One money market fund.</text>
+      <text x="380" y="106">Tera Portföy&rsquo;s TP2 held</text>
+      <text x="380" y="122">TRY 224.4bn on 16 September 2026.</text>
+      <text x="380" y="154" font-weight="600" fill="var(--navy)">The bronze circle</text>
+      <text x="380" y="172">Every fine Turkey&rsquo;s market regulator</text>
+      <text x="380" y="188">imposed in 2025, on all 297 people</text>
+      <text x="380" y="204">and companies it sanctioned: TRY 2.69bn.</text>
+    </g>
+  </svg>
+  <figcaption>Fig. 01 · Drawn to scale. Areas proportional. TEFAS data via yatirimci.ai; Legal500, 2026.</figcaption>
+</figure>
 
-  <p>The briefing gives such a place a name. <em>A tollgate market is a market where breaking the rules is a toll you pay, not a wall you hit.</em> It then asks how many other markets work the same way, and rates seventeen of them on enforcement in practice rather than on their statutes. Most write tough laws. The weakness lives in three places the statute books do not show: the gain nobody measures, the fine nobody collects, and the trial that never comes.</p>
+<section id="froze">
+  <h2>I · The Day the Cash Froze</h2>
+  <h3>They thought they were holding cash.</h3>
+  <p>On 17&nbsp;September 2026, Turkey&rsquo;s Capital Markets Board ordered 131 investment funds into liquidation in a single day. Inside them sat the savings of 455,758 people. <span class="ledger-num">[SPK Bulletins 2026/60 and 2026/61, 17 Sep 2026 · MKK investor count, via Reuters]</span></p>
+  <p>Many of those savers owned money market funds, the product people treat like a bank account. One of the largest, Tera Portf&ouml;y&rsquo;s TP2, held about 63% of its assets in repo deals. Reuters reports that it returned 123% over a period when inflation ran at 60%, without giving the dates. <span class="ledger-num">[TEFAS fund data via yatirimci.ai, 16 Sep 2026 · Reuters explainer, 2 Oct 2026]</span></p>
+  <h3>Cash does not do that.</h3>
+  <p>By 30&nbsp;September, prosecutors had named 217 suspects and jailed 56. The justice minister had said the proceedings targeted people and structures alleged to have used &ldquo;Ponzi-like methods.&rdquo; No court has ruled on guilt in any of it, and nothing in this briefing is a finding of guilt. <span class="ledger-num">[Justice ministry figures via Reuters, 2 Oct 2026 · Justice minister&rsquo;s statement, 18 Sep 2026]</span></p>
+  <h3>The arrests are the loud part of the story. The quiet part is the price list that came before them.</h3>
+  <p>In 2025, Turkey&rsquo;s regulator fined 297 people and companies a combined TRY&nbsp;2.69&nbsp;billion, about $65 to 70&nbsp;million. That is roughly 1% of a single money market fund at the centre of the collapse. And under Article&nbsp;107(3) of the Capital Markets Law, a person accused of transaction-based manipulation who pays the Treasury twice the benefit, at least TRY&nbsp;500,000, before an investigation opens faces no penalty at all. The regulator&rsquo;s 2026 complaints give 15 days to pay. <span class="ledger-num">[Legal500, 2026 · Capital Markets Law Art. 107(3) · SPK criminal-complaint bulletins, 2026]</span></p>
 
-  <p>The arrests in Turkey are the loud part of the story; by 30&nbsp;September prosecutors had named 217 suspects and jailed 56. No court has ruled on guilt in any of it, and nothing in the briefing is a finding of guilt. Its subject is the price list that came before the arrests.</p>
-</section>
-
-<section id="numbers">
-  <h2>The Numbers</h2>
+  <div class="pull">
+    A tollgate market is a market where breaking the rules is a toll you pay, not a wall you hit.
+    <cite>The term this briefing introduces</cite>
+  </div>
+  <p>This briefing asks how many other markets work the same way. The answer depends less on their laws than on three things their laws do not show.</p>
 
   <div class="ledger" style="margin: 24px 0;">
     <div class="ledger-item">
       <h4>131</h4>
-      <p>Investment funds ordered into liquidation on 17&nbsp;September 2026, holding the savings of 455,758 people. <span class="ledger-num">[SPK; MKK, via Reuters]</span></p>
+      <p>funds ordered into liquidation, 17&nbsp;Sep 2026</p>
     </div>
     <div class="ledger-item">
-      <h4>TRY&nbsp;2.69bn</h4>
-      <p>Every fine the regulator imposed in 2025, on 297 people and companies. One money market fund, Tera Portf&ouml;y&rsquo;s TP2, held TRY&nbsp;224.4bn on 16&nbsp;September. <span class="ledger-num">[Legal500; TEFAS data]</span></p>
+      <h4>455,758</h4>
+      <p>unique investors inside them (MKK)</p>
     </div>
     <div class="ledger-item">
-      <h4>35.7%</h4>
-      <p>Share of penalties imposed that Canada&rsquo;s provincial regulators collected from 2007 to 2012. British Columbia collected 2.9%. <span class="ledger-num">[CBC analysis, via Case IQ]</span></p>
+      <h4>$16.5&ndash;20bn</h4>
+      <p>in assets, depending on source and date</p>
     </div>
     <div class="ledger-item">
-      <h4>42 / 5</h4>
-      <p>Indonesia: suspected criminal cases under investigation, 32 of them manipulation, and concluded cases with final verdicts. <span class="ledger-num">[OJK, 9 Feb 2026]</span></p>
+      <h4>217 / 56</h4>
+      <p>suspects named / jailed by 30&nbsp;Sep 2026</p>
+    </div>
+  </div>
+</section>
+
+<section id="bottom-line">
+  <h2>The Bottom Line</h2>
+  <h3>Most markets write tough laws. The tollgates open afterwards.</h3>
+  <p>Many markets in this study let regulators fine manipulators a multiple of the gain. The weakness lives in three places the statute books do not show.</p>
+  <div class="sb4-cols3">
+    <div>
+      <h4>01</h4>
+      <h5>The gain nobody measures</h5>
+      <p>When a regulator cannot prove the profit, multiples collapse to a flat amount. Vietnam&rsquo;s fine for an unproven gain is VND&nbsp;1.5bn, about $57,000.</p>
+    </div>
+    <div>
+      <h4>02</h4>
+      <h5>The fine nobody collects</h5>
+      <p>From 2007 to 2012, Canada&rsquo;s provincial regulators collected about 35.7% of penalties imposed. British Columbia collected 2.9%.</p>
+    </div>
+    <div>
+      <h4>03</h4>
+      <h5>The trial that never comes</h5>
+      <p>Indonesia has 42 suspected market crimes under investigation and 5 final verdicts. In Turkey, an early payment means no penalty.</p>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div>
+      <h4>Where it matters now</h4>
+      <p>The markets that most resemble pre-collapse Turkey today are Indonesia and Vietnam, with Thailand close behind and Bangladesh a provisional fourth. Severe sentences arrive after collapses: 40 years in Korea, 36 in Singapore, life in Indonesia.</p>
+    </div>
+    <div>
+      <h4>What to do with it</h4>
+      <p>Read a market&rsquo;s collection rate before its penalty code. Screen any market with <a href="#test">the Tollgate Test</a>: five signs, four numbers. Treat Turkish fund values as unproven until liquidation recoveries are known, and watch MSCI&rsquo;s November 2026 review.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cash">
+  <h2>II · The Cash That Wasn&rsquo;t</h2>
+  <h3>How a savings fund came to lean on stocks that barely trade</h3>
+  <p>On 21&nbsp;August 2026, by the TEFAS data the analyst Hilmi G&uuml;venal examined, Tera&rsquo;s money market fund held TRY&nbsp;203&nbsp;billion. Sixty-two percent of it sat in reverse repo. <span class="ledger-num">[H. G&uuml;venal, &ldquo;The Devil Takes the Hindmost,&rdquo; Substack, 18 Sep 2026]</span></p>
+  <p>A reverse repo is a short loan with a deposit attached. The fund hands over cash, the borrower hands over securities, and the deal unwinds days later. With government bonds as the deposit, it is about as dull as finance gets.</p>
+  <p>The trouble starts when the deposit is a share that barely trades. Investors call that a thin float: only a sliver of the company&rsquo;s stock ever changes hands, so a few determined buyers can move the price. And the price is what everyone uses to value the fund.</p>
+  <p>That is the allegation at the centre of the Turkish case. Regulators and the press describe funds buying thinly traded Borsa Istanbul stocks and lifting their own valuations, with money market funds financing the chain through repo. The regulator has cited unsecured borrowing between related parties. <span class="ledger-num">[Reuters explainer, 2 Oct 2026 · SPK statements, Sep 2026 · Business Standard, 18 Sep 2026]</span></p>
+
+  <figure>
+    <svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The loop, as alleged: six steps in a circle, from savers buying a cash fund to huge returns pulling in new savers">
+      <rect width="660" height="400" fill="var(--paper)"/>
+      <defs><marker id="sb4arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--bronze)"/></marker></defs>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 02 · THE LOOP, AS ALLEGED</text>
+      <circle cx="330" cy="212" r="132" fill="none" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 5"/>
+      <text class="s" x="330" y="208" text-anchor="middle" font-size="14" font-style="italic" fill="var(--bronze)">The loop needs</text>
+      <text class="s" x="330" y="228" text-anchor="middle" font-size="14" font-style="italic" fill="var(--bronze)">new money to turn</text>
+      <g fill="none" stroke="var(--bronze)" stroke-width="1.2" marker-end="url(#sb4arr)">
+        <path d="M372 80 A132 132 0 0 1 444 136"/>
+        <path d="M460 192 A132 132 0 0 1 460 232"/>
+        <path d="M444 288 A132 132 0 0 1 372 344"/>
+        <path d="M288 344 A132 132 0 0 1 216 288"/>
+        <path d="M200 232 A132 132 0 0 1 200 192"/>
+        <path d="M216 136 A132 132 0 0 1 288 80"/>
+      </g>
+      <g font-size="11.5" fill="var(--ink)" text-anchor="middle">
+        <g transform="translate(330,66)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">01</text><text y="-28" fill="var(--navy)" font-weight="600">Savers buy a</text><text y="-14" fill="var(--navy)" font-weight="600">&ldquo;cash&rdquo; fund</text></g>
+        <g transform="translate(456,140)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">02</text><text x="72" y="-4" fill="var(--navy)" font-weight="600">The fund lends</text><text x="72" y="10" fill="var(--navy)" font-weight="600">through repo</text></g>
+        <g transform="translate(456,284)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">03</text><text x="74" y="-4" fill="var(--navy)" font-weight="600">Borrowers buy</text><text x="74" y="10" fill="var(--navy)" font-weight="600">thin-float shares</text></g>
+        <g transform="translate(330,358)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">04</text><text y="32" fill="var(--navy)" font-weight="600">Related funds bid prices up</text></g>
+        <g transform="translate(204,284)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">05</text><text x="-76" y="-4" fill="var(--navy)" font-weight="600">Fund values and</text><text x="-76" y="10" fill="var(--navy)" font-weight="600">collateral rise</text></g>
+        <g transform="translate(204,140)"><circle r="18" fill="var(--paper-warm)" stroke="var(--rule)"/><text y="4" font-size="12" fill="var(--bronze)">06</text><text x="-76" y="-4" fill="var(--navy)" font-weight="600">Huge returns pull</text><text x="-76" y="10" fill="var(--navy)" font-weight="600">in new savers</text></g>
+      </g>
+    </svg>
+    <figcaption>Fig. 02 · Six steps that turn savings into fuel for rising share prices. Mechanism as described by regulators and press reports; these are allegations, not court findings. NPSI schematic from Reuters, 2 Oct 2026; SPK statements, Sep 2026; G&uuml;venal, Substack, 2026.</figcaption>
+  </figure>
+
+  <h3>Returns no cash product earns</h3>
+  <figure>
+    <svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Left, a ring showing 63.17% of the TP2 fund in reverse repo. Right, two bars: the fund returned 123% over a period when inflation ran at 60%">
+      <rect width="660" height="250" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 03 · WHAT THE &ldquo;CASH&rdquo; FUND HELD</text>
+      <text x="350" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 04 · WHAT IT PAID</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Tera TP2 on 16 Sep 2026: TRY 224.4bn, 169,234 investors.</text>
+      <text x="350" y="34" font-size="11" fill="var(--ink-soft)">Return, percent. Period undated by Reuters.</text>
+      <circle cx="90" cy="150" r="58" fill="none" stroke="var(--rule)" stroke-width="22"/>
+      <circle cx="90" cy="150" r="58" fill="none" stroke="var(--bronze)" stroke-width="22" stroke-dasharray="230.2 134.2" transform="rotate(-90 90 150)"/>
+      <text class="s" x="90" y="156" text-anchor="middle" font-size="19" fill="var(--navy)">63.17%</text>
+      <g font-size="11.5" fill="var(--ink)">
+        <text x="170" y="138" fill="var(--bronze)" font-weight="600">reverse repo</text>
+        <text x="170" y="156">Bronze: share of assets in reverse</text>
+        <text x="170" y="172">repo. A true money market fund</text>
+        <text x="170" y="188">holds short, liquid paper.</text>
+      </g>
+      <text x="0" y="236" font-size="10" fill="var(--ink-soft)">TEFAS data via yatirimci.ai, 16 Sep 2026.</text>
+      <rect x="400" y="60" width="70" height="150" fill="var(--bronze)"/>
+      <rect x="520" y="137" width="70" height="73" fill="var(--rule)"/>
+      <text x="435" y="52" text-anchor="middle" font-size="13" fill="var(--navy)" font-weight="600">123%</text>
+      <text x="555" y="129" text-anchor="middle" font-size="13" fill="var(--navy)" font-weight="600">60%</text>
+      <line x1="390" y1="210" x2="600" y2="210" stroke="var(--rule)"/>
+      <g font-size="10.5" fill="var(--ink)" text-anchor="middle">
+        <text x="435" y="226">TP2 money</text><text x="435" y="239">market fund</text>
+        <text x="555" y="226">Inflation, same</text><text x="555" y="239">period</text>
+      </g>
+    </svg>
+    <figcaption>Figs. 03 and 04 · What the &ldquo;cash&rdquo; fund held, and what it paid. TEFAS via yatirimci.ai, 16 Sep 2026; Reuters explainer, 2 Oct 2026.</figcaption>
+  </figure>
+
+  <figure>
+    <svg viewBox="0 0 660 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two bars on one scale: one Tera fund returned 4,233% in calendar 2025; the BIST index returned 14.6%">
+      <rect width="660" height="150" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 05 · 2025: ONE TERA FUND AGAINST THE WHOLE MARKET</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Calendar-year return, percent. Bars start at zero and share one scale.</text>
+      <text x="0" y="66" font-size="12" fill="var(--navy)" font-weight="600">One Tera fund</text>
+      <text x="0" y="80" font-size="10" fill="var(--ink-soft)">2025 calendar year</text>
+      <rect x="150" y="54" width="440" height="22" fill="var(--bronze)"/>
+      <text x="598" y="70" font-size="12" fill="var(--navy)" font-weight="600">+4,233%</text>
+      <text x="0" y="106" font-size="12" fill="var(--navy)" font-weight="600">BIST index</text>
+      <text x="0" y="120" font-size="10" fill="var(--ink-soft)">2025 calendar year</text>
+      <rect x="150" y="94" width="2" height="22" fill="var(--teal)"/>
+      <text x="160" y="110" font-size="12" fill="var(--navy)" font-weight="600">+14.6%</text>
+      <text x="0" y="142" font-size="10" fill="var(--ink-soft)">Bianet, 2026.</text>
+    </svg>
+    <figcaption>Fig. 05 · One Tera fund against the whole market, 2025 calendar-year returns. Bianet, 2026.</figcaption>
+  </figure>
+
+  <p>The figures depend on the window, and every window points the same way. Bloomberg reported on 18&nbsp;September that Tera&rsquo;s flagship fund had risen more than 17,000% since the start of 2025. Reuters reports that Tera&rsquo;s TLY hedge fund made 747% from January to July 2025, when it had fewer than 200 investors, then passed 15,000% by September, after opening to 102,616 investors and growing to $5&nbsp;billion of assets. <span class="ledger-num">[Bloomberg, 18 Sep 2026, as summarised by T24 · Reuters explainer, 2 Oct 2026]</span></p>
+
+  <figure>
+    <svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bars: funds ordered into liquidation by manager. Pardus 42, Hedef 31, Atlas 16, Bulls 15, Pusula 12, A1 Capital 9, Tera 6">
+      <rect width="660" height="250" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 06 · WHO RAN THE 131 FUNDS</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Funds ordered into liquidation on 17 Sep 2026, by manager. Tera ran the fewest.</text>
+      <g font-size="12" fill="var(--navy)">
+        <text x="0" y="62">Pardus</text><rect x="90" y="50" width="500" height="16" fill="var(--teal)"/><text x="598" y="62" font-weight="600">42</text>
+        <text x="0" y="88">Hedef</text><rect x="90" y="76" width="369" height="16" fill="var(--teal)"/><text x="467" y="88" font-weight="600">31</text>
+        <text x="0" y="114">Atlas</text><rect x="90" y="102" width="190" height="16" fill="var(--teal)"/><text x="288" y="114" font-weight="600">16</text>
+        <text x="0" y="140">Bulls</text><rect x="90" y="128" width="179" height="16" fill="var(--teal)"/><text x="277" y="140" font-weight="600">15</text>
+        <text x="0" y="166">Pusula</text><rect x="90" y="154" width="143" height="16" fill="var(--teal)"/><text x="241" y="166" font-weight="600">12</text>
+        <text x="0" y="192">A1 Capital</text><rect x="90" y="180" width="107" height="16" fill="var(--teal)"/><text x="205" y="192" font-weight="600">9</text>
+        <text x="0" y="218">Tera</text><rect x="90" y="206" width="71" height="16" fill="var(--bronze)"/><text x="169" y="218" font-weight="600">6</text>
+      </g>
+      <text x="0" y="242" font-size="10" fill="var(--ink-soft)">SPK Bulletin 2026/61. The counts sum to 131.</text>
+    </svg>
+    <figcaption>Fig. 06 · Who ran the 131 funds. Tera ran the fewest; its money market fund alone held TRY 224.4bn. SPK Bulletin 2026/61.</figcaption>
+  </figure>
+
+  <p>Pusula defaulted first. Its funds on TEFAS, Turkey&rsquo;s fund platform, shrank from TRY&nbsp;115&nbsp;billion to under TRY&nbsp;8&nbsp;billion. Then Tera defaulted on redemptions in its equity fund and its money market fund. <span class="ledger-num">[H. G&uuml;venal, &ldquo;The Devil Takes the Hindmost,&rdquo; Substack, 18 Sep 2026 · Tera Portf&ouml;y KAP filing, 16 Sep 2026]</span></p>
+</section>
+
+<section id="warnings">
+  <h2>III · The Warnings Were on the Record</h2>
+  <h3>Most of a year before the main rules</h3>
+  <p>The regulator says it saw prices defy fundamentals from the fourth quarter of 2025. It raised the bar for qualified investors in December and added a valuation rule in July 2026. Its main rules on concentration, repo and related-party lending arrived on 28&nbsp;August. Twenty days later it was ordering liquidations. <span class="ledger-num">[SPK statement, 18 Sep 2026, via CNBC-e]</span></p>
+  <ul class="sb4-tl">
+    <li><span>Jul 2025</span><span>Ramazan Ba&#351;ak, a former MASAK deputy head, petitions the authorities about Tera Yat&#305;r&#305;m. In November he is detained on a complaint by Tera and Tezmen, and indicted. <span class="ledger-num">[Cumhuriyet, via T24, 2026]</span></span></li>
+    <li><span>Q4 2025</span><span>By its own account, the SPK sees share prices moving in ways that defy fundamentals. <span class="ledger-num">[SPK statements, Sep 2026]</span></span></li>
+    <li><span>Nov 2025</span><span>Finance Minister Mehmet &#350;im&#351;ek: &ldquo;We know that these manipulations are being carried out particularly through certain funds.&rdquo; <span class="ledger-num">[Reuters explainer, 2 Oct 2026]</span></span></li>
+    <li><span>Jan 2026</span><span>Ba&#351;ak files a criminal complaint on 5&nbsp;January. A chief adviser to President Erdo&#287;an leaves Tera Portf&ouml;y&rsquo;s board. <span class="ledger-num">[Cumhuriyet, via T24 · Middle East Eye, 2026]</span></span></li>
+    <li><span>Jun 2026</span><span>MSCI flags coordinated trading, fund holdings that inflate free float, and opaque ownership. Without progress by its November review, it may open a consultation. <span class="ledger-num">[MSCI, 23 Jun 2026]</span></span></li>
+    <li><span>Jul 2026</span><span>Destek Finans, a company Tera took public and its funds held, reaches a market value of TRY&nbsp;1.3&nbsp;trillion ($27.9bn). <span class="ledger-num">[Bloomberg via ThePrint, 2026]</span></span></li>
+    <li><span>28 Aug 2026</span><span>The rules arrive. SPK issues limits on concentration, repo and related-party lending. <span class="ledger-num">[SPK; H. G&uuml;venal, Substack]</span></span></li>
+    <li><span>Sep 2026</span><span>Pusula defaults, then Tera. <span class="ledger-num">[H. G&uuml;venal, 18 Sep 2026 · Tera Portf&ouml;y KAP filing, 16 Sep 2026]</span></span></li>
+    <li><span>17 Sep 2026</span><span>131 funds ordered into liquidation. &#304;&#351; Bankas&#305; takes Tera&rsquo;s funds; Ziraat Bankas&#305; the rest. <span class="ledger-num">[SPK Bulletins 2026/60&ndash;61]</span></span></li>
+    <li><span>23 Sep 2026</span><span>Emre Tezmen and four others are remanded in custody. <span class="ledger-num">[Euronews, 23 Sep 2026]</span></span></li>
+    <li><span>30 Sep 2026</span><span>217 suspects, 56 jailed, per the justice minister. Prosecutors cite aggravated fraud and market fraud by an alleged criminal organisation; the SPK&rsquo;s complaints cite Art. 107(1). <span class="ledger-num">[Reuters explainer, 2 Oct 2026 · Yeni &#350;afak · SPK bulletins]</span></span></li>
+    <li><span>Nov 2026</span><span>MSCI review: a possible consultation on Turkish securities. <span class="ledger-num">[MSCI, 23 Jun 2026]</span></span></li>
+  </ul>
+</section>
+
+<section id="price-list">
+  <h2>IV · The Price List</h2>
+  <h3>What manipulation cost in Turkey before the collapse</h3>
+  <p>On paper, Turkish law is strict. Where a benefit is shown, administrative fines must be at least twice it, and companies can be fined up to the higher of 1% of revenue or 20% of pre-tax profit. In practice, the 2025 fine book looked like this. <span class="ledger-num">[Capital Markets Law Arts. 103&ndash;104; Legal500, 2026]</span></p>
+  <div class="ledger" style="margin: 24px 0;">
+    <div class="ledger-item">
+      <h4>2.69bn</h4>
+      <p>TRY in total fines on 297 people and companies, 2025</p>
+    </div>
+    <div class="ledger-item">
+      <h4>79%</h4>
+      <p>of it, TRY&nbsp;2.12bn, for order-based manipulation, across 35 infringements</p>
+    </div>
+    <div class="ledger-item">
+      <h4>362.1m</h4>
+      <p>TRY, the largest single fine, about $9&nbsp;million</p>
+    </div>
+    <div class="ledger-item">
+      <h4>2.2m</h4>
+      <p>TRY, the average of 88 fines for manipulation by communication, about $55,000</p>
+    </div>
+  </div>
+  <p class="sb4-src">Legal500, &ldquo;Administrative Monetary Fines of the Capital Markets Board of T&uuml;rkiye in 2025,&rdquo; 2026.</p>
+
+  <figure>
+    <svg viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four bars on one scale, billions of lira: Destek Finans market value 1,300; Tera TP2 fund assets 224.4; all SPK fines in 2025, 2.69; largest single fine 0.36">
+      <rect width="660" height="230" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 07 · DRAWN TO SCALE: THE FINE BOOK AGAINST WHAT IT POLICED</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Billions of lira, one scale for every bar; the two smallest are drawn at a minimum length.</text>
+      <g font-size="12" fill="var(--navy)">
+        <text x="0" y="66" font-weight="600">Destek Finans</text><text x="0" y="80" font-size="10" fill="var(--ink-soft)">market value, Jul 2026</text>
+        <rect x="150" y="56" width="440" height="18" fill="var(--teal)"/><text x="598" y="70" font-weight="600">1,300</text>
+        <text x="0" y="106" font-weight="600">Tera TP2 fund</text><text x="0" y="120" font-size="10" fill="var(--ink-soft)">assets, 16 Sep 2026</text>
+        <rect x="150" y="96" width="76" height="18" fill="var(--teal)"/><text x="234" y="110" font-weight="600">224.4</text>
+        <text x="0" y="146" font-weight="600">All SPK fines</text><text x="0" y="160" font-size="10" fill="var(--ink-soft)">full year 2025</text>
+        <rect x="150" y="136" width="3" height="18" fill="var(--bronze)"/><text x="161" y="150" font-weight="600">2.69</text>
+        <text x="0" y="186" font-weight="600">Largest single fine</text><text x="0" y="200" font-size="10" fill="var(--ink-soft)">2025</text>
+        <rect x="150" y="176" width="3" height="18" fill="var(--bronze)"/><text x="161" y="190" font-weight="600">0.36</text>
+      </g>
+      <text x="0" y="222" font-size="10" fill="var(--ink-soft)">Bloomberg via ThePrint, 2026; TEFAS via yatirimci.ai, 16 Sep 2026; Legal500, 2026.</text>
+    </svg>
+    <figcaption>Fig. 07 · Drawn to scale: the fine book against what it policed. The bronze bars are a full year of fines, and the largest one in it.</figcaption>
+  </figure>
+
+  <div class="grid-2">
+    <div>
+      <p>Bloomberg reports that shares in Tera&rsquo;s own brokerage rose almost 40,000% after their 2022 listing. In the same market, the regulator penalised 35 instances of order-based manipulation in 2025. <span class="ledger-num">[Bloomberg, 2026 · Legal500, 2026]</span></p>
+    </div>
+    <div>
+      <p>An administrative rule narrows one form of market abuse: misleading statements count only if the person also placed orders or traded around them. The criminal offence, Art.&nbsp;107(2), requires that the person obtained a benefit. <span class="ledger-num">[SPK Communiqu&eacute; VI-104.1, via Legal500, 2026 · Capital Markets Law Art. 107(2)]</span></p>
     </div>
   </div>
 
-  <p>The briefing&rsquo;s bottom line: most markets write tough laws, and the tollgates open afterwards. When a regulator cannot prove the profit, a fine set as a multiple of the gain collapses to a flat amount; Vietnam&rsquo;s fine for an unproven gain is VND&nbsp;1.5bn, about $57,000. A fine imposed is not a fine collected. And where a payment can close a case, as in Turkey, the trial never comes.</p>
+  <h3>Article 107(3): the clause that turns a crime into a price</h3>
+  <p>Transaction-based market fraud carries three to five years in prison. Then the law offers a way out, priced by timing. Under Article&nbsp;107(3), a person who pays the Treasury twice the benefit, at least TRY&nbsp;500,000, before an investigation opens faces no penalty. Paying during the investigation halves the sentence; paying at trial cuts it by a third. The regulator&rsquo;s 2026 criminal-complaint bulletins give 15 days to pay. <span class="ledger-num">[Capital Markets Law Art. 107(1) and (3), mevzuat.gov.tr · SPK bulletins, 2026]</span></p>
+  <p>Even the September bulletins are complaints, not penalties, as G&uuml;venal points out, and each one carries the same footnote about this effective-repentance route. <span class="ledger-num">[H. G&uuml;venal, &ldquo;Fonzide Ara Bilan&ccedil;o,&rdquo; Substack, 2026]</span></p>
+
+  <figure>
+    <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line chart: expected cost of the two-times payment as a multiple of the gain, rising with the chance of being caught; it crosses the gain at a 50% chance">
+      <rect width="660" height="300" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 08 · THE TOLLGATE ARITHMETIC</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Expected cost of the 2x payment, as a multiple of the gain, against the chance of being caught.</text>
+      <g font-size="10" fill="var(--ink-soft)">
+        <line x1="60" y1="60" x2="620" y2="60" stroke="var(--rule)" stroke-dasharray="2 4"/><text x="52" y="64" text-anchor="end">2&times;</text>
+        <line x1="60" y1="105" x2="620" y2="105" stroke="var(--rule)" stroke-dasharray="2 4"/><text x="52" y="109" text-anchor="end">1.5&times;</text>
+        <line x1="60" y1="150" x2="620" y2="150" stroke="var(--rule)"/><text x="52" y="154" text-anchor="end">1&times;</text>
+        <line x1="60" y1="195" x2="620" y2="195" stroke="var(--rule)" stroke-dasharray="2 4"/><text x="52" y="199" text-anchor="end">0.5&times;</text>
+        <line x1="60" y1="240" x2="620" y2="240" stroke="var(--rule)"/><text x="52" y="244" text-anchor="end">0&times;</text>
+        <text x="60" y="258" text-anchor="middle">0%</text><text x="200" y="258" text-anchor="middle">25%</text><text x="340" y="258" text-anchor="middle">50%</text><text x="480" y="258" text-anchor="middle">75%</text><text x="620" y="258" text-anchor="middle">100%</text>
+        <text x="340" y="276" text-anchor="middle" letter-spacing="1" fill="var(--ink)">CHANCE OF BEING CAUGHT AND MADE TO PAY</text>
+      </g>
+      <path d="M60 240 L340 150 L340 240 Z" fill="var(--bronze)" fill-opacity="0.18"/>
+      <line x1="60" y1="240" x2="620" y2="60" stroke="var(--bronze)" stroke-width="2"/>
+      <line x1="340" y1="150" x2="340" y2="240" stroke="var(--navy)" stroke-dasharray="3 3"/>
+      <circle cx="340" cy="150" r="4" fill="var(--navy)"/>
+      <text x="348" y="146" font-size="10.5" fill="var(--navy)">break-even: 50%</text>
+      <text x="612" y="142" text-anchor="end" font-size="10.5" fill="var(--navy)">The gain (1&times;)</text>
+      <text x="200" y="100" font-size="10.5" fill="var(--bronze)">Expected toll = 2 &times; gain &times; chance</text>
+      <text x="150" y="212" font-size="10.5" fill="var(--bronze)">Toll cheaper</text><text x="150" y="226" font-size="10.5" fill="var(--bronze)">than the gain</text>
+    </svg>
+    <figcaption>Fig. 08 · The tollgate arithmetic. NPSI sketch. Assumes payment within the SPK&rsquo;s window, before an investigation opens, so the 2x payment is the only cost once caught. Fines, civil claims and reputation raise the real cost.</figcaption>
+  </figure>
+
+  <aside class="standard">
+    <h4>Who sat where, as reported</h4>
+    <p>A chief adviser to President Erdo&#287;an sat on Tera Portf&ouml;y&rsquo;s board until January 2026. <span class="ledger-num">[Middle East Eye, 2026]</span></p>
+    <p>Emre Tezmen sat on the board of MKK, Turkey&rsquo;s central securities depository. <span class="ledger-num">[Middle East Eye, 29 Sep 2026]</span> AKP deputy chair Fatma Bet&uuml;l Sayan Kaya resigned after an opposition politician&rsquo;s allegations about trading in &Ouml;zata Denizcilik shares; Reuters says she took political responsibility while they were examined. <span class="ledger-num">[Reuters explainer, 2 Oct 2026]</span></p>
+    <p>Tezmen blamed &ldquo;a planned, deliberate and organised speculative attack&rdquo; by &ldquo;notorious malevolent forces,&rdquo; stressed Tera&rsquo;s domestic credentials and voiced support for President Erdo&#287;an. <span class="ledger-num">[Reuters, on his statement of 16 Sep 2026]</span></p>
+    <p><em>Positions and allegations as reported. None is a court finding against the people named.</em></p>
+  </aside>
+</section>
+
+<section id="paper-teeth">
+  <h2>V · Paper Teeth</h2>
+  <h3>Turkey&rsquo;s statute was not the problem. Neither is anyone else&rsquo;s.</h3>
+  <p>Turkey, Korea, China, Thailand, Singapore and Australia all let fines reach multiples of the gain on paper. The tollgates open in three places the statute books do not show.</p>
+  <div class="sb4-cols3">
+    <div>
+      <h4>01 · Measure</h4>
+      <h5>The gain nobody measures</h5>
+      <p>A multiple needs a number to multiply. When the regulator cannot prove the profit, the fine falls back to a flat amount.</p>
+    </div>
+    <div>
+      <h4>02 · Collect</h4>
+      <h5>The fine nobody collects</h5>
+      <p>A penalty ordered and never paid is a press release. Few regulators publish their collection rates.</p>
+    </div>
+    <div>
+      <h4>03 · Prosecute</h4>
+      <h5>The trial that never comes</h5>
+      <p>Settlements, repentance clauses and slow courts turn crimes into negotiations.</p>
+    </div>
+  </div>
+
+  <h3>Exhibit 01: one chairman, two fines</h3>
+  <figure>
+    <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A grid of ten thousand squares, each one dong of the undisclosed sale; a ringed bronze sliver of fewer than two squares at the top left is the fine">
+      <rect width="660" height="300" fill="var(--paper)"/>
+      <defs>
+        <pattern id="sb4waffle" width="2.7" height="2.7" patternUnits="userSpaceOnUse"><rect width="2.1" height="2.1" fill="var(--rule)"/></pattern>
+      </defs>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 09 · VND 10,000 OF SALE PROCEEDS</text>
+      <rect x="0" y="30" width="270" height="270" fill="url(#sb4waffle)"/>
+      <rect x="0" y="30" width="4.3" height="2.1" fill="var(--bronze)"/>
+      <circle cx="2.4" cy="31" r="9" fill="none" stroke="var(--bronze)" stroke-width="1.5"/>
+      <g font-size="11.5" fill="var(--ink)">
+        <text x="300" y="52" fill="var(--navy)" font-weight="600">Each square is one dong from the undisclosed sale.</text>
+        <text x="300" y="70">The ringed bronze sliver, top left, is the fine.</text>
+        <text x="300" y="104">Fine VND 65m against about VND 400bn of proceeds:</text>
+        <text x="300" y="120">1.6 dong per 10,000, or 0.016%.</text>
+        <text x="300" y="150" fill="var(--bronze)">The first tollgate: the gain nobody measures.</text>
+        <text x="300" y="286" font-size="10" fill="var(--ink-soft)">Gi&aacute;o d&#7909;c, 14 Dec 2017; VIR.</text>
+      </g>
+    </svg>
+    <figcaption>Fig. 09 · VND 10,000 of sale proceeds. Gi&aacute;o d&#7909;c, 14 Dec 2017; Vietnam Investment Review.</figcaption>
+  </figure>
+  <p>In 2017, Vietnam fined FLC Group chairman Trinh Van Quyet VND&nbsp;65&nbsp;million for an undisclosed sale of 57&nbsp;million shares. The sale brought in about VND&nbsp;400&nbsp;billion. <span class="ledger-num">[Gi&aacute;o d&#7909;c, 14 Dec 2017 · Vietnam Investment Review]</span></p>
+  <p>In January 2022 the regulator fined him again, VND&nbsp;1.5&nbsp;billion, about $65,600 at the time, for an undisclosed sale of 74.8&nbsp;million shares. It called that the heaviest penalty its rules allowed for the breach. <span class="ledger-num">[VietnamPlus · The Vietnamese, 2025]</span></p>
+  <p>Manipulation is fined at ten times the gain, but in several published cases the regulator recorded the gain as not determined. Then the multiple has nothing to multiply, and the fine is a fixed VND&nbsp;1.5&nbsp;billion. <span class="ledger-num">[Decree 156/2020, Art. 36, as amended · VietnamFinance]</span></p>
+  <div class="ledger" style="margin: 24px 0;">
+    <div class="ledger-item">
+      <h4>THB 0.5&ndash;2m</h4>
+      <p>Thailand&rsquo;s fallback fine when the gain cannot be calculated</p>
+    </div>
+    <div class="ledger-item">
+      <h4>&yen;550,000</h4>
+      <p>A Japanese manipulation surcharge, June 2025</p>
+    </div>
+    <div class="ledger-item">
+      <h4>KRW 4bn</h4>
+      <p>Korea&rsquo;s ceiling since 2024 when the gain cannot be calculated</p>
+    </div>
+  </div>
+  <p class="sb4-src">TDRI, Apr 2025 · FSA/SESC, Aug 2025 · FSC Korea.</p>
+
+  <h3>The fine nobody collects</h3>
+  <p>Canada has no national securities regulator. It has 13 provincial and territorial commissions and one self-regulator, CIRO. They impose large penalties, mostly on small-cap fraudsters. The cheques are another matter.</p>
+  <figure>
+    <svg viewBox="0 0 660 242" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bars, share of imposed penalties actually collected in Canada: CIRO from firms 94 to 100 percent; provincial regulators 35.7 percent 2007 to 2012; IIROC from individuals under 20 percent; CIRO from individuals 15 percent; BC Securities Commission 2.9 percent">
+      <rect width="660" height="230" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 10 · SHARE OF IMPOSED PENALTIES ACTUALLY COLLECTED, CANADA</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Percent. Firms pay. Individuals mostly do not.</text>
+      <g font-size="12" fill="var(--navy)">
+        <text x="0" y="60" font-weight="600">CIRO, from firms</text><text x="0" y="73" font-size="10" fill="var(--ink-soft)">FY22 to FY24</text>
+        <rect x="190" y="50" width="388" height="16" fill="var(--teal)"/><text x="586" y="62" font-weight="600">94&ndash;100%</text>
+        <text x="0" y="94" font-weight="600">Provincial regulators</text><text x="0" y="107" font-size="10" fill="var(--ink-soft)">2007 to 2012</text>
+        <rect x="190" y="84" width="143" height="16" fill="var(--bronze)"/><text x="341" y="96" font-weight="600">35.7%</text>
+        <text x="0" y="128" font-weight="600">IIROC, from individuals</text><text x="0" y="141" font-size="10" fill="var(--ink-soft)">since 2008</text>
+        <rect x="190" y="118" width="80" height="16" fill="var(--teal)"/><text x="278" y="130" font-weight="600">under 20%</text>
+        <text x="0" y="162" font-weight="600">CIRO, from individuals</text><text x="0" y="175" font-size="10" fill="var(--ink-soft)">FY24</text>
+        <rect x="190" y="152" width="60" height="16" fill="var(--teal)"/><text x="258" y="164" font-weight="600">15%</text>
+        <text x="0" y="196" font-weight="600">BC Securities Commission</text><text x="0" y="209" font-size="10" fill="var(--ink-soft)">2007 to 2012</text>
+        <rect x="190" y="186" width="12" height="16" fill="var(--bronze)"/><text x="210" y="198" font-weight="600">2.9%</text>
+      </g>
+      <text x="0" y="224" font-size="10" fill="var(--ink-soft)">CBC analysis of 2007&ndash;12, via Case IQ; CIRO Enforcement Report 2023&ndash;24; Globe and Mail, 2017.</text>
+      <text x="0" y="236" font-size="10" fill="var(--ink-soft)">CIRO firm range shown at midpoint.</text>
+    </svg>
+    <figcaption>Fig. 10 · Share of imposed penalties actually collected, Canada. CBC analysis of 2007&ndash;12, via Case IQ; CIRO Enforcement Report 2023&ndash;24; Globe and Mail, 2017.</figcaption>
+  </figure>
+  <p>The Globe and Mail counted C$1.1&nbsp;billion in unpaid fines in 2017. British Columbia&rsquo;s commission is owed about C$430&nbsp;million by more than 400 parties, collected C$12.7&nbsp;million over six fiscal years, and expects about C$130&nbsp;million never to come back. <span class="ledger-num">[Globe and Mail, 2017 · CBC, Mar 2024]</span></p>
+  <p>India shows the same gap at larger scale. SEBI lists &#8377;77,800 crore of dues as difficult to recover in its 2024&ndash;25 annual report, up from &#8377;76,293 crore a year earlier. More than &#8377;61,200 crore of that sits before court-appointed committees, much of it tied to two cases, Sahara and PACL. <span class="ledger-num">[SEBI annual reports via Business Standard, Aug 2024 and Aug 2025]</span></p>
+  <figure>
+    <svg viewBox="0 0 660 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three bars, US SEC fiscal 2025 in billions of dollars: headline relief 17.9; excluding the legacy Stanford judgment about 2.7; returned to investors about 0.26">
+      <rect width="660" height="170" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 11 · EVEN AT THE STRONG END, THE HEADLINE IS NOT THE CHEQUE</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">US SEC, fiscal 2025, $bn. Distributions lag orders; the last bar shows scale, not a rate.</text>
+      <g font-size="12" fill="var(--navy)">
+        <text x="0" y="60" font-weight="600">Headline relief</text><text x="0" y="73" font-size="10" fill="var(--ink-soft)">as announced</text>
+        <rect x="170" y="50" width="400" height="16" fill="var(--teal)"/><text x="578" y="62" font-weight="600">$17.9bn</text>
+        <text x="0" y="94" font-weight="600">Excluding legacy</text><text x="0" y="107" font-size="10" fill="var(--ink-soft)">minus 2009 Stanford judgment</text>
+        <rect x="170" y="84" width="60" height="16" fill="var(--teal)"/><text x="238" y="96" font-weight="600">about $2.7bn</text>
+        <text x="0" y="128" font-weight="600">Returned to investors</text><text x="0" y="141" font-size="10" fill="var(--ink-soft)">paid out in FY2025</text>
+        <rect x="170" y="118" width="6" height="16" fill="var(--bronze)"/><text x="184" y="130" font-weight="600">about $0.26bn</text>
+      </g>
+      <text x="0" y="164" font-size="10" fill="var(--ink-soft)">SEC press release 2026-34, 7 Apr 2026; Sidley analysis of FY2025 results.</text>
+    </svg>
+    <figcaption>Fig. 11 · Even at the strong end, the headline is not the cheque. SEC press release 2026-34, 7 Apr 2026; Sidley analysis of FY2025 results.</figcaption>
+  </figure>
 </section>
 
 <section id="ladder">
-  <h2>The Ladder</h2>
+  <h2>VI · The Ladder</h2>
+  <h3>Seventeen markets, softest to strongest</h3>
+  <p>Ratings judge enforcement in practice and are NPSI&rsquo;s assessment from the sourced data in this briefing. &ldquo;Very high&rdquo; means the expected penalty sits clearly below the expected gain for a well-resourced manipulator.</p>
+  <div class="sb4-tablewrap">
+    <table class="sb4-t">
+      <colgroup><col style="width:5%"><col style="width:16%"><col style="width:29%"><col style="width:21%"><col style="width:14%"><col style="width:15%"></colgroup>
+      <thead><tr><th>#</th><th>Market</th><th>What a penalty looks like in practice</th><th>Prison reality</th><th>Collection</th><th>Toll risk</th></tr></thead>
+      <tbody>
+        <tr><td class="n">01</td><td><strong>Turkey</strong><small>pre-Sept 2026</small></td><td>2025 fine book TRY&nbsp;2.69bn across 297 people and companies; comms-manipulation fines average about $55k</td><td>Pay 2x the benefit before an investigation opens: no penalty</td><td>Not published</td><td class="r">Very high</td></tr>
+        <tr><td class="n">02</td><td><strong>Vietnam</strong></td><td>10x the gain; VND&nbsp;1.5bn (about $57k) if no gain is shown</td><td>FLC manipulation term dropped on appeal, 2025</td><td>Not published</td><td class="r">Very high</td></tr>
+        <tr><td class="n">03</td><td><strong>Bangladesh</strong><small>provisional; under review</small></td><td>Fines below gains; up to 90% after 2025 reform (Daily Star)</td><td>Rare</td><td>Regulator has sued to collect</td><td class="r">Very high</td></tr>
+        <tr><td class="n">04</td><td><strong>Indonesia</strong></td><td>About Rp1.6bn (about $100k) per sanctioned party, 2022 to Jan 2026</td><td>42 under investigation; 5 concluded</td><td>Not published</td><td class="r">High</td></tr>
+        <tr><td class="n">05</td><td><strong>Thailand</strong></td><td>2x gain, or THB&nbsp;0.5&ndash;2m if the gain cannot be calculated</td><td>Rare; civil-fine cases average 2,050 days</td><td>Not published</td><td class="r">High</td></tr>
+        <tr><td class="n">06</td><td><strong>Canada</strong></td><td>Up to about C$1m per violation plus disgorgement</td><td>Criminal convictions rare</td><td>About 35.7% in 2007&ndash;12; BC 2.9%</td><td class="r">High</td></tr>
+        <tr><td class="n">07</td><td><strong>Brazil</strong></td><td>R$832m on 186 people in 2023; settlements dominate</td><td>First criminal convictions around 2011</td><td>Low capacity to collect</td><td class="r">High</td></tr>
+        <tr><td class="n">08</td><td><strong>Japan</strong></td><td>Surcharges from &yen;550,000 to &yen;220m</td><td>Few criminal referrals a year</td><td>High</td><td class="r">Moderate&ndash;high</td></tr>
+        <tr><td class="n">09</td><td><strong>India</strong></td><td>Up to &#8377;25 crore or 3x profit</td><td>Rare and slow</td><td>&#8377;77,800 crore hard to recover</td><td class="r">Moderate&ndash;high</td></tr>
+        <tr><td class="n">10</td><td><strong>South Korea</strong></td><td>Since Jan 2024, surcharge up to 2x the gain</td><td>Severe after scandals: 30 to 40 years</td><td>First 2x surcharge, Sept 2025</td><td class="r">Moderate</td></tr>
+        <tr><td class="n">11</td><td><strong>China</strong></td><td>RMB&nbsp;15.5bn across 661 decisions, 2025</td><td>172 criminal referrals, 2025</td><td>Not published</td><td class="r">Moderate</td></tr>
+        <tr><td class="n">12</td><td><strong>EU / Germany</strong></td><td>Minimum maximums of &euro;5m (people) and &euro;15m or 15% of turnover (firms)</td><td>Criminal regime under MAD</td><td>n/a</td><td class="r">Low&ndash;moderate</td></tr>
+        <tr><td class="n">13</td><td><strong>United Kingdom</strong></td><td>Unlimited fines</td><td>Up to 10 years since Nov 2021</td><td>n/a</td><td class="r">Low&ndash;moderate</td></tr>
+        <tr><td class="n">14</td><td><strong>Hong Kong</strong></td><td>HK$10m and 10 years</td><td>Record 6 yrs 8 mths, 2024</td><td>n/a</td><td class="r">Low</td></tr>
+        <tr><td class="n">15</td><td><strong>Australia</strong></td><td>Civil: greater of A$1.82m or 3x the benefit</td><td>Up to 15 years; regular</td><td>n/a</td><td class="r">Low</td></tr>
+        <tr><td class="n">16</td><td><strong>Singapore</strong></td><td>Up to 3x profit or S$2m</td><td>36 years, upheld Mar 2026</td><td>n/a</td><td class="r">Low</td></tr>
+        <tr><td class="n">17</td><td><strong>United States</strong></td><td>Disgorgement plus civil penalties</td><td>Routine parallel DOJ cases; 20-year maximum</td><td>Headline far above cheque</td><td class="r">Lowest</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sb4-src">Not rated · Pakistan, Nigeria, Egypt, Mexico, Argentina, South Africa, the Philippines, Malaysia, Saudi Arabia, the UAE, Russia, Kazakhstan, Cayman, the BVI and Luxembourg. Absence from the ladder is not a clean bill of health.<br>Sources per market in Section VII and the source list. Ratings: NPSI assessment, 3 Oct 2026; facts corrected 4 Oct 2026, ratings unchanged.</p>
+</section>
 
-  <p>Seventeen markets are rated from softest to strongest on four observed signals: the typical penalty against the typical gain, the reality of criminal prosecution, published collection rates, and whether a payment can close a case. Turkey before September 2026 sits at the soft end, with Vietnam, Bangladesh (rated provisionally and under review) and Indonesia; the United States sits at the strong end. &ldquo;Very high&rdquo; toll risk means the expected penalty sits clearly below the expected gain for a well-resourced manipulator.</p>
+<section id="markets">
+  <h2>VII · Seventeen Markets Up Close</h2>
+  <h3>Where the toll is cheapest</h3>
+  <p>Where the expected penalty sits furthest below the gain.</p>
+  <div class="sb4-cards">
+    <div class="sb4-card">
+      <p class="k">Rank 02 · Fails at: measure</p>
+      <h4>Vietnam</h4>
+      <p class="big">VND 1.5bn floor</p>
+      <p>When no gain is established, a manipulation fine is fixed at VND&nbsp;1.5bn. On appeal in June 2025, FLC&rsquo;s chairman saw his three-year manipulation term removed, leaving a VND&nbsp;4bn ($153k) fine on that count. His remaining seven-year sentence is for fraudulent appropriation, cut after more than VND&nbsp;2.46&nbsp;trillion in restitution.</p>
+      <p><span class="ledger-num">[Decree 156/2020, as amended; Malay Mail, 26 Jun 2025; VietnamPlus]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 04 · Fails at: prosecute</p>
+      <h4>Indonesia</h4>
+      <p class="big">Rp240.65bn, 151 parties</p>
+      <p>OJK&rsquo;s manipulation fines from 2022 to January 2026 average about Rp1.6bn (about $100,000) per party. OJK cited one case it had referred to prosecutors and 42 suspected criminal cases under investigation, 32 of them manipulation. Five concluded cases have final verdicts.</p>
+      <p>The big cases went through corruption courts instead: a life sentence for Benny Tjokrosaputro over Jiwasraya, and an order to repay about $370&nbsp;million over Asabri.</p>
+      <p><span class="ledger-num">[OJK, 9 Feb 2026, via Indonesia Business Post; Reuters; CNN Indonesia, 13 Jan 2023]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 05 · Fails at: prosecute</p>
+      <h4>Thailand</h4>
+      <p class="big">2,050 days</p>
+      <p>Cases settled through civil fines took 2,050 days on average, up from 519 in 2018. Some offenders paid fines of THB&nbsp;500,000.</p>
+      <p>At Stark Corporation, at least THB&nbsp;15.6bn of irregular transactions preceded a share collapse of more than 90%. The ex-chairman fled to the UAE, was returned in June 2024 and indicted; THB&nbsp;2.54bn of his assets were seized.</p>
+      <p><span class="ledger-num">[TDRI, Apr 2025; Nation Thailand; ACGA; Bloomberg, Feb 2024; Khaosod English, 23 Jun 2024]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 03 · Provisional</p>
+      <h4>Bangladesh</h4>
+      <p class="big">Under review</p>
+      <p>The Daily Star has reported that penalties below illegal gains kept manipulation profitable. In August 2025 it reported that fines now cover up to 90% of illicit gains, against about 20% before. The regulator has had to sue to collect unpaid fines.</p>
+      <p>The evidence now points both ways. Bangladesh stays on the ladder provisionally, its rating under review.</p>
+      <p><span class="ledger-num">[Daily Star, 12 Aug 2025; TBS, 27 Oct 2024]</span></p>
+    </div>
+  </div>
 
-  <p>The markets that most resemble pre-collapse Turkey today are Indonesia and Vietnam, with Thailand close behind and Bangladesh a provisional fourth. Severe sentences arrive after collapses: 40 years in Korea, 36 in Singapore, life in Indonesia. Fifteen further markets are listed as unrated; absence from the ladder is not clearance.</p>
+  <figure>
+    <svg viewBox="0 0 660 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three bars in US dollars: Indonesia about 100,000 average manipulation fine per party; Vietnam about 57,000 fixed fine when no gain is established; Turkey about 55,000 average fine for manipulation by communication">
+      <rect width="660" height="170" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 12 · THE TOLL, IN DOLLARS</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Typical or fixed sanctions in the softest markets, US dollars.</text>
+      <g font-size="12" fill="var(--navy)">
+        <text x="0" y="60" font-weight="600">Indonesia</text><text x="0" y="73" font-size="10" fill="var(--ink-soft)">average manipulation fine per party</text>
+        <rect x="200" y="50" width="340" height="16" fill="var(--teal)"/><text x="548" y="62" font-weight="600">about $100,000</text>
+        <text x="0" y="94" font-weight="600">Vietnam</text><text x="0" y="107" font-size="10" fill="var(--ink-soft)">fixed fine when no gain is established</text>
+        <rect x="200" y="84" width="194" height="16" fill="var(--teal)"/><text x="402" y="96" font-weight="600">about $57,000</text>
+        <text x="0" y="128" font-weight="600">Turkey</text><text x="0" y="141" font-size="10" fill="var(--ink-soft)">average fine, manipulation by communication</text>
+        <rect x="200" y="118" width="187" height="16" fill="var(--bronze)"/><text x="395" y="130" font-weight="600">about $55,000</text>
+      </g>
+      <text x="0" y="164" font-size="10" fill="var(--ink-soft)">OJK, 9 Feb 2026; Decree 156/2020, as amended; Legal500, 2026; Reuters, 2 Oct 2026.</text>
+    </svg>
+    <figcaption>Fig. 12 · The toll, in dollars. For scale, Tera&rsquo;s TLY fund alone held about $5 billion by September. Conversions approximate, at 2026 rates.</figcaption>
+  </figure>
+
+  <h3>Real fines, missing cheques</h3>
+  <p>Real penalties on paper, and a gap at the cashier or the courtroom door.</p>
+  <div class="sb4-cards">
+    <div class="sb4-card">
+      <p class="k">Rank 06 · Fails at: collect</p>
+      <h4>Canada</h4>
+      <p class="big">C$1.1bn unpaid</p>
+      <p>Thirteen commissions and no national regulator. CIRO collected 94&ndash;100% of fines from firms and 10&ndash;38% from individuals over FY22 to FY24.</p>
+      <p>In <em>Poonian</em> (2024), the Supreme Court of Canada held that bankruptcy wipes out administrative penalties, while disgorgement orders survive.</p>
+      <p><span class="ledger-num">[CIRO Enforcement Reports; Globe and Mail, 2017; CBC, Mar 2024; 2024 SCC 28]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 09 · Fails at: collect</p>
+      <h4>India</h4>
+      <p class="big">807 of 3,871</p>
+      <p>Of SEBI&rsquo;s recovery certificates, 807 of 3,871 were classed as difficult to recover by March 2024. Sahara and PACL account for &#8377;63,206 crore, 61.5% of the &#8377;1,02,830.75 crore due.</p>
+      <p>The statute allows up to &#8377;25 crore or three times the profit. Criminal convictions are rare and slow.</p>
+      <p><span class="ledger-num">[SEBI FY24 annual report via Business Standard, Aug 2024]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 07 · Fails at: prosecute</p>
+      <h4>Brazil</h4>
+      <p class="big">R$832m, 186 people</p>
+      <p>The penalties the CVM imposed in 2023. Most cases end in settlements (<em>termos de compromisso</em>) with no admission of guilt.</p>
+      <p>One ABN Amro executive settled with the CVM for R$238,000; the criminal case against him was conditionally suspended. Scholars describe a severe penalty with a notoriously low chance of being enforced.</p>
+      <p><span class="ledger-num">[Anu&aacute;rio da Justi&ccedil;a, via JuriNews; Global Investigations Review; Migalhas]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 08 · Fails at: measure</p>
+      <h4>Japan</h4>
+      <p class="big">One recommendation</p>
+      <p>The SESC recommended a single manipulation surcharge in FY2024. Surcharges track the gain by formula: FY2024&rsquo;s one manipulation surcharge was &yen;21.76m, and 2025 surcharges have ranged from &yen;550,000 to &yen;8.25m. Japan leans on reputation and gatekeepers, not fine size.</p>
+      <p><span class="ledger-num">[FSA/SESC, Aug 2025; SESC Annual Report 2024/25; Finance Magnates]</span></p>
+    </div>
+  </div>
+
+  <h4>Fig. 13 · Where each market fails first</h4>
+  <p>Primary failure point per soft market; most fail at more than one.</p>
+  <div class="sb4-cols3">
+    <div>
+      <h4>01 · Measure</h4>
+      <h5>The gain nobody measures</h5>
+      <p>Vietnam<br>Japan</p>
+    </div>
+    <div>
+      <h4>02 · Collect</h4>
+      <h5>The fine nobody collects</h5>
+      <p>Canada<br>India<br>Bangladesh*</p>
+    </div>
+    <div>
+      <h4>03 · Prosecute</h4>
+      <h5>The trial that never comes</h5>
+      <p><strong>Turkey</strong><br>Indonesia<br>Thailand<br>Brazil</p>
+    </div>
+  </div>
+  <p class="sb4-src">NPSI assessment from the sourced data in Sections IV to VII. *Bangladesh provisional.</p>
+
+  <h3>Where the wall is real, and where it came late</h3>
+  <div class="sb4-cards">
+    <div class="sb4-card">
+      <p class="k">Rank 10 · Moving up</p>
+      <h4>South Korea</h4>
+      <p class="big">Since 19 Jan 2024</p>
+      <p>Until then, manipulation and insider trading could only be punished criminally, which the FSC says usually took a long time. The reform added surcharges up to twice the gain (KRW&nbsp;4bn if the gain cannot be calculated), a statutory way to compute the gain, and 50&ndash;100% leniency for self-reporters. The first such surcharge came in September 2025. A later revision added bans of up to five years on trading and on serving as a listed-company executive.</p>
+      <p>Whether this narrows the &ldquo;Korea discount&rdquo; is not established here.</p>
+      <p><span class="ledger-num">[FSC press releases; Kim &amp; Chang]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Rank 11 · Heavy, and directed</p>
+      <h4>China</h4>
+      <p class="big">RMB 15.5bn, 2025</p>
+      <p>661 penalty decisions and 172 criminal referrals in 2025, after 592 decisions and RMB&nbsp;15.3bn in 2024.</p>
+      <p>It did not always deter. Tang Hanbo was fined RMB&nbsp;39m in 2014 and RMB&nbsp;15m in 2015 before a RMB&nbsp;1.17bn order in 2017. Small fines first, then escalation once they failed.</p>
+      <p><span class="ledger-num">[Caixin, 20 Apr 2026; Caixin, 2017; Bloomberg, Mar 2017]</span></p>
+    </div>
+  </div>
+
+  <aside class="standard">
+    <h4>Ranks 12&ndash;17 · The strong end</h4>
+    <p><strong>United States.</strong> 456 actions in FY2025; routine parallel criminal cases; a 20-year maximum. <span class="ledger-num">[SEC, 7 Apr 2026]</span><br>
+    <strong>United Kingdom.</strong> Insider dealing maximum rose to 10 years on 1&nbsp;Nov 2021, from 7. <span class="ledger-num">[FCA]</span><br>
+    <strong>EU under MAR.</strong> Sets minimum maximums, not caps: at least &euro;5m for people, &euro;15m or 15% of turnover for firms. <span class="ledger-num">[Regulation 596/2014]</span><br>
+    <strong>Australia.</strong> Raised the prison maximum to 15 years in 2019 and added civil penalties of up to three times the benefit. <span class="ledger-num">[ASIC]</span><br>
+    <strong>Hong Kong.</strong> Record manipulation sentence of 6 years 8 months in 2024, still under the 10-year cap. <span class="ledger-num">[Sidley, Jul 2024]</span><br>
+    <strong>Singapore.</strong> 36 years for the 2013 penny-stock crash that erased more than S$8bn, upheld in March 2026. <span class="ledger-num">[Malay Mail, 18 Mar 2026]</span></p>
+  </aside>
+  <div class="pull">
+    Even at the strong end, what is ordered and what is paid are not the same number. The difference is in how fast the wall goes up.
+  </div>
+</section>
+
+<section id="after">
+  <h2>VIII · After the Damage</h2>
+  <h3>The harshest sentences arrive after the money is gone</h3>
+  <p>Prison terms in fund and manipulation scandals can be enormous. Look at when they land.</p>
+  <figure>
+    <svg viewBox="0 0 660 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bars, years of prison handed down after collapses: Benny Tjokrosaputro life; Kim Jae-hyun 40 years; Soh 36; Kim Bong-hyun 30; Quah 20; Lee Jong-pil 20; Trinh Van Quyet 7">
+      <rect width="660" height="290" fill="var(--paper)"/>
+      <text x="0" y="16" font-size="10" letter-spacing="1.6" fill="var(--teal)">FIG. 14 · SENTENCES HANDED DOWN AFTER COLLAPSES</text>
+      <text x="0" y="34" font-size="11" fill="var(--ink-soft)">Years of prison. Every case here followed losses that had already landed on investors.</text>
+      <g font-size="10" fill="var(--ink-soft)">
+        <line x1="190" y1="50" x2="190" y2="238" stroke="var(--rule)"/><line x1="290" y1="50" x2="290" y2="238" stroke="var(--rule)" stroke-dasharray="2 4"/><line x1="390" y1="50" x2="390" y2="238" stroke="var(--rule)" stroke-dasharray="2 4"/><line x1="490" y1="50" x2="490" y2="238" stroke="var(--rule)" stroke-dasharray="2 4"/><line x1="590" y1="50" x2="590" y2="238" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <text x="190" y="252" text-anchor="middle">0 yrs</text><text x="290" y="252" text-anchor="middle">10 yrs</text><text x="390" y="252" text-anchor="middle">20 yrs</text><text x="490" y="252" text-anchor="middle">30 yrs</text><text x="590" y="252" text-anchor="middle">40 yrs</text>
+      </g>
+      <g font-size="11.5" fill="var(--navy)">
+        <text x="0" y="62" font-weight="600">Benny Tjokrosaputro</text><text x="0" y="74" font-size="9.5" fill="var(--ink-soft)">Indonesia · Jiwasraya</text>
+        <rect x="190" y="54" width="430" height="14" fill="var(--bronze)"/><rect x="606" y="54" width="14" height="14" fill="var(--paper)"/><text x="628" y="65" font-weight="600">life</text>
+        <text x="0" y="90" font-weight="600">Kim Jae-hyun</text><text x="0" y="102" font-size="9.5" fill="var(--ink-soft)">South Korea · Optimus, final Jul 2022</text>
+        <rect x="190" y="82" width="400" height="14" fill="var(--teal)"/><text x="598" y="93" font-weight="600">40 yrs</text>
+        <text x="0" y="118" font-weight="600">Soh</text><text x="0" y="130" font-size="9.5" fill="var(--ink-soft)">Singapore · 2013 crash, upheld Mar 2026</text>
+        <rect x="190" y="110" width="360" height="14" fill="var(--teal)"/><text x="558" y="121" font-weight="600">36 yrs</text>
+        <text x="0" y="146" font-weight="600">Kim Bong-hyun</text><text x="0" y="158" font-size="9.5" fill="var(--ink-soft)">South Korea · Lime, upheld Dec 2023</text>
+        <rect x="190" y="138" width="300" height="14" fill="var(--teal)"/><text x="498" y="149" font-weight="600">30 yrs</text>
+        <text x="0" y="174" font-weight="600">Quah</text><text x="0" y="186" font-size="9.5" fill="var(--ink-soft)">Singapore · 2013 crash</text>
+        <rect x="190" y="166" width="200" height="14" fill="var(--teal)"/><text x="398" y="177" font-weight="600">20 yrs</text>
+        <text x="0" y="202" font-weight="600">Lee Jong-pil</text><text x="0" y="214" font-size="9.5" fill="var(--ink-soft)">South Korea · Lime</text>
+        <rect x="190" y="194" width="200" height="14" fill="var(--teal)"/><text x="398" y="205" font-weight="600">20 yrs</text>
+        <text x="0" y="230" font-weight="600">Trinh Van Quyet</text><text x="0" y="242" font-size="9.5" fill="var(--ink-soft)">Vietnam · FLC, fraud count only</text>
+        <rect x="190" y="222" width="70" height="14" fill="var(--teal)"/><text x="268" y="233" font-weight="600">7 yrs</text>
+      </g>
+      <text x="0" y="272" font-size="10" fill="var(--ink-soft)">Korea Times and Korea Herald, Jul 2022; Segye Ilbo, 23 Jun 2022; Asia Business Daily, Dec 2023;</text>
+      <text x="0" y="284" font-size="10" fill="var(--ink-soft)">Malay Mail, 18 Mar 2026; Reuters and Jakarta Post, Jan 2023; VietnamPlus; Sidley, Jul 2024.</text>
+    </svg>
+    <figcaption>Fig. 14 · Sentences handed down after collapses. The life sentence runs off the scale.</figcaption>
+  </figure>
+  <div class="grid-2">
+    <div>
+      <p>Optimus&rsquo;s chief executive raised more than KRW&nbsp;1.3&nbsp;trillion with promises of public-sector-backed assets. Kim Bong-hyun, the Lime scandal&rsquo;s central figure, drew 30 years. In Indonesia, prosecutors had sought death for Benny Tjokrosaputro. <span class="ledger-num">[Korea Herald; Asia Business Daily; Jakarta Post]</span></p>
+    </div>
+    <div>
+      <p>Before the collapses, the same markets moved slowly. Korea could only punish manipulation through criminal courts until 2024, which its regulator says usually took a long time. Even after Jiwasraya and Asabri, Indonesia&rsquo;s OJK fines from 2022 to January 2026 averaged about $100,000 a party. <span class="ledger-num">[FSC; OJK, 9 Feb 2026]</span></p>
+    </div>
+  </div>
+  <div class="pull">
+    A forty-year sentence tells the next manipulator what happens after a collapse. It says little about the years before it, when the fines were small and the funds were growing.
+    <cite>NPSI assessment, drawn from the cases above</cite>
+  </div>
+</section>
+
+<section id="elsewhere">
+  <h2>IX · The Cash That Wasn&rsquo;t, Elsewhere</h2>
+  <h3>Turkey&rsquo;s savers were not the first to be sold liquidity that wasn&rsquo;t there</h3>
+  <p>The Turkish pattern has a family tree: products sold as safe or redeemable that sat on assets that could not be sold at the price on the statement, and positions so concentrated that the price was whatever their owner paid.</p>
+  <div class="sb4-cards">
+    <div class="sb4-card">
+      <p class="k">Korea · 2019&ndash;20</p>
+      <h4>Lime</h4>
+      <p class="big">KRW 1.6 trillion suspended</p>
+      <p>The FSS found Lime sold open-ended funds, redeemable at any time, while holding illiquid assets. Leverage came through about KRW&nbsp;670bn of total return swaps with three brokers.</p>
+      <p><span class="ledger-num">[FSS findings, via Korea Herald]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">Korea · 2020</p>
+      <h4>Optimus</h4>
+      <p class="big">KRW 1.3 trillion raised</p>
+      <p>Marketed as low-risk public-sector receivables. The money went into risky assets or paid earlier investors. Its CEO&rsquo;s 40-year term was finalised in July 2022.</p>
+      <p><span class="ledger-num">[Korea Herald; Korea Times, Jul 2022]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">United States · 2021</p>
+      <h4>Archegos</h4>
+      <p class="big">Concentration behind swaps</p>
+      <p>Bill Hwang built concentrated positions in a few names through swaps that kept them off public disclosure. The same own-the-float dynamic, at prime-broker scale. He was convicted of fraud in 2024 and sentenced to 18 years.</p>
+      <p><span class="ledger-num">[US v. Hwang, SDNY, 2024]</span></p>
+    </div>
+    <div class="sb4-card">
+      <p class="k">India · 2018 and 2020</p>
+      <h4>IL&amp;FS, Franklin Templeton</h4>
+      <p class="big">Debt funds closed</p>
+      <p>Short-term and credit funds turned out to hold illiquid paper. Detailed figures were not re-verified for this briefing.</p>
+      <p><span class="ledger-num">[Flagged in verification notes]</span></p>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div>
+      <h4>Also in the family</h4>
+      <p>China&rsquo;s wealth management products and trust defaults, where savers treated bank-sold products as deposits. Bernie Cornfeld&rsquo;s Investors Overseas Services, the 1960s fund of funds that became the archetype of self-dealing. Neither re-verified here.</p>
+    </div>
+    <div>
+      <h4>What Turkey added</h4>
+      <p>Money market funds with more than 60% in repo, financing related parties and illiquid shares. The SPK cites unsecured related-party borrowing. Interim payouts are to begin with the Tera, Pusula, Atlas and Hedef funds.</p>
+    </div>
+  </div>
+  <p class="sb4-src">Reuters explainer, 2 Oct 2026 · SPK statements · SPK decision 64/1775, 30 Sep 2026 · H. G&uuml;venal, Substack.</p>
+  <p>So where could the next one come from? Start with the markets that already show the signs.</p>
+</section>
+
+<section id="now">
+  <h2>X · Who Looks Like Turkey Now</h2>
+  <h3>Four markets share the pre-collapse profile</h3>
+  <p>None of them is Turkey. Each shows enough of the same signs to deserve the same questions.</p>
+  <ol class="sb4-test">
+    <li>
+      <h4>Indonesia <span class="sb4-tag">Closest match</span></h4>
+      <p>An index-provider warning: MSCI froze Indonesian index changes in January 2026 and warned in June that it may consult on moving Indonesia to Frontier status if progress is not evident by November. Widely reported &ldquo;fried stock&rdquo; (<em>saham gorengan</em>) pump-and-dumps. Per-party fines around $100,000. A precedent of institutional money pushed into inflated, illiquid stocks at Jiwasraya and Asabri.</p>
+    </li>
+    <li>
+      <h4>Vietnam <span class="sb4-tag">Close</span></h4>
+      <p>A fixed fine of about $57,000 whenever no gain is established, a retail-dominated market, and a manipulation term dropped on appeal in the FLC case.</p>
+    </li>
+    <li>
+      <h4>Thailand <span class="sb4-tag">Close</span></h4>
+      <p>A low fallback fine when gains cannot be measured, enforcement lags measured in years, and a major accounting fraud whose chairman fled abroad before being returned to face charges.</p>
+    </li>
+    <li>
+      <h4>Bangladesh <span class="sb4-tag">Provisional</span></h4>
+      <p>Press reports of penalties below gains and repeat offenders, now set against a 2025 reform that lifted fines toward the gains. Under review.</p>
+    </li>
+  </ol>
+  <p class="sb4-src">MSCI, Jan and Jun 2026; OJK, 9 Feb 2026; VietnamPlus; TDRI; Nation Thailand; Khaosod English; Daily Star.</p>
+  <aside class="standard">
+    <h4>The Turkish signature, in five parts</h4>
+    <p>1 &nbsp;Concentrated, low-float listings &nbsp;·&nbsp; 2 &nbsp;Related-party fund chains &nbsp;·&nbsp; 3 &nbsp;&ldquo;Cash&rdquo; products holding repo against those shares &nbsp;·&nbsp; 4 &nbsp;Promoters close to political power &nbsp;·&nbsp; 5 &nbsp;A legal route that puts a price on the crime</p>
+  </aside>
+  <p>The test below turns these five parts into a test anyone can run on any market, with four numbers to demand from its regulator.</p>
 </section>
 
 <section id="test">
   <h2>The Tollgate Test</h2>
-
-  <p>Five signs that breaking the rules has a price in a market, and four numbers to ask its regulator for. Three or more signs, and the penalty code is the wrong document to read.</p>
-
-  <ol>
-    <li><strong>Thin floats, fresh listings.</strong> Are recent listings tightly held, with a small share of stock that actually trades? <em>Check:</em> free float of the last 24 months of IPOs; index-provider float adjustments.</li>
-    <li><strong>Funds that own each other&rsquo;s trades.</strong> Do fund managers, brokers and the companies they list sit in the same group? <em>Check:</em> underwriter, broker and fund manager under one roof.</li>
-    <li><strong>&ldquo;Cash&rdquo; that holds stock.</strong> Do money market or short-term funds hold heavy repo, and against what collateral? <em>Check:</em> repo share of assets; returns far above the policy rate.</li>
-    <li><strong>Promoters close to power.</strong> Do fund promoters or board members sit near government or market infrastructure? <em>Check:</em> board seats at depositories, exchanges, advisory posts.</li>
-    <li><strong>A price on prosecution.</strong> Can a payment or a settlement close a criminal case without a trial? <em>Check:</em> effective-repentance clauses; settlement share of sanctions.</li>
+  <h3>Five signs that breaking the rules has a price in a market, and four numbers to ask its regulator for.</h3>
+  <p>Three or more signs, and the penalty code is the wrong document to read.</p>
+  <ol class="sb4-test">
+    <li><h4>Thin floats, fresh listings</h4><p>Are recent listings tightly held, with a small share of stock that actually trades?</p><p>Check: free float of the last 24 months of IPOs; index-provider float adjustments.</p></li>
+    <li><h4>Funds that own each other&rsquo;s trades</h4><p>Do fund managers, brokers and the companies they list sit in the same group?</p><p>Check: underwriter, broker and fund manager under one roof.</p></li>
+    <li><h4>&ldquo;Cash&rdquo; that holds stock</h4><p>Do money market or short-term funds hold heavy repo, and against what collateral?</p><p>Check: repo share of assets; returns far above the policy rate.</p></li>
+    <li><h4>Promoters close to power</h4><p>Do fund promoters or board members sit near government or market infrastructure?</p><p>Check: board seats at depositories, exchanges, advisory posts.</p></li>
+    <li><h4>A price on prosecution</h4><p>Can a payment or a settlement close a criminal case without a trial?</p><p>Check: effective-repentance clauses; settlement share of sanctions.</p></li>
   </ol>
-
-  <aside class="standard">
-    <h4>Four numbers to demand</h4>
-    <p><em>Collection rate:</em> the share of imposed fines actually paid, by firms and by individuals. &nbsp;·&nbsp; <em>Median fine:</em> not the statutory maximum, the middle fine actually imposed. &nbsp;·&nbsp; <em>Referrals and convictions:</em> criminal referrals per year, and how many end in a verdict. &nbsp;·&nbsp; <em>Pay-to-close route:</em> whether one exists, and how often it is used.</p>
-  </aside>
+  <h4>Four numbers to demand</h4>
+  <div class="ledger ledger-list" style="margin: 16px 0 24px;">
+    <div class="ledger-item"><p><strong>Collection rate.</strong> Share of imposed fines actually paid, by firms and by individuals.</p></div>
+    <div class="ledger-item"><p><strong>Median fine.</strong> Not the statutory maximum. The middle fine actually imposed.</p></div>
+    <div class="ledger-item"><p><strong>Referrals and convictions.</strong> Criminal referrals per year, and how many end in a verdict.</p></div>
+    <div class="ledger-item"><p><strong>Pay-to-close route.</strong> Whether one exists, and how often it is used.</p></div>
+  </div>
 </section>
 
-<section id="method">
-  <h2>Method</h2>
+<section id="watch">
+  <h2>XI · What to Watch</h2>
+  <h3>The next six months will price the damage</h3>
+  <p>Published fund values are claims until the liquidators sell. Four dates and processes will turn them into numbers.</p>
+  <ul class="sb4-tl">
+    <li><span>Nov 2026</span><span><strong>MSCI review.</strong> MSCI may open a consultation on Turkish securities, after its June review flagged coordinated trading and free-float distortion. Indonesia faces the same review. <span class="ledger-num">[MSCI, 23 Jun 2026]</span></span></li>
+    <li><span>To mid-Mar 2027</span><span><strong>Liquidation window.</strong> The SPK first allowed up to three months for asset sales, then extended it to six on 21&nbsp;September, so sales should finish by about mid-March 2027. <span class="ledger-num">[SPK Bulletin 2026/61; Euronews]</span></span></li>
+    <li><span>Ongoing</span><span><strong>Interim payouts.</strong> Up to TRY&nbsp;1&nbsp;million per investor in each Tera, Pusula, Atlas and Hedef fund, set against the final payout, plus a voluntary return of &ldquo;excessive gains&rdquo; through the deposit insurance fund, TMSF. <span class="ledger-num">[SPK decision 64/1775, 30 Sep 2026; Reuters]</span></span></li>
+    <li><span>Ongoing</span><span><strong>The court phase.</strong> 217 suspects and 56 jailed as of 30&nbsp;September; 85 jailed across related market probes by 3&nbsp;October. No court has ruled on guilt. The verdicts will test whether the toll was ever collected. <span class="ledger-num">[Reuters, 2 Oct 2026; Cumhuriyet, via Turkish Minute, 3 Oct 2026]</span></span></li>
+  </ul>
+  <h3>The open files</h3>
+  <p>Fifteen markets were in scope and could not be rated on sourced data. Each is a question this briefing could not yet answer. The first stop for every one of them is the IMF&rsquo;s Financial Sector Assessment and the IOSCO assessment report.</p>
+  <div class="sb4-open">
+    <span>Pakistan</span><span>Nigeria</span><span>Egypt</span><span>Mexico</span><span>Argentina</span>
+    <span>South Africa</span><span>Philippines</span><span>Malaysia</span><span>Saudi Arabia</span><span>UAE</span>
+    <span>Russia</span><span>Kazakhstan</span><span>Cayman</span><span>BVI</span><span>Luxembourg</span>
+  </div>
+  <p>Readers who hold primary enforcement data for any of these markets, such as collection rates, referral counts or median fines, can write to <a href="mailto:editor@npsi.ca">editor@npsi.ca</a>. Data received is credited.</p>
+</section>
 
-  <p>Ratings judge enforcement in practice and are an assessment from the sourced data in the briefing, not a measurement; they are published so they can be checked. Evidence comes from regulator reports, court outcomes and press reporting, each dated in the source list. The briefing publishes its own weak points as open items, among them a fund-size range that runs from $16.5bn to more than $20bn depending on source and date, a provisional rating for Bangladesh, and figures for older episodes that were not re-verified.</p>
+<section id="author">
+  <h2>From the Author</h2>
+  <div class="sb4-author">
+    <p class="k">Signed editorial · First-person register</p>
+    <h3 style="margin-top: 0;">The price list</h3>
+    <p>I came to this through Patrick Boyle&rsquo;s video on the Tera collapse. His framing was simple: weak institutions and tiny fines let bad actors drive out honest businesses. I wanted to know where else that was true, so I went looking for the fine that is smaller than the profit.</p>
+    <p>I expected to find weak laws. I didn&rsquo;t. Turkey, Korea, China, Thailand, Singapore and Australia all let fines run to multiples of the gain. On paper, the lawmakers did their jobs.</p>
+    <p>What I found was everything that happens after the law. Vietnam&rsquo;s regulator often recorded no measurable profit, so the fine fell to a fixed fee. Canada&rsquo;s regulators collected about a third of what they imposed between 2007 and 2012, and British Columbia, where NPSI is based, collected 2.9%. Turkey wrote the exit into the statute itself: pay twice the benefit before an investigation opens and no penalty follows.</p>
+    <p>Then the sentences. Forty years in Korea. Thirty-six in Singapore. Life in Indonesia. Every one of them handed down after the money was gone.</p>
+    <aside class="standard" style="margin: 22px 0;">
+      <h4>My view, and mine alone</h4>
+      <p>A penalty nobody collects is a toll, and a toll that costs less than the gain is a business model.</p>
+      <p>The people who lost money in Turkey were not careless. They bought the product their market sold them as cash.</p>
+      <p>I would read a market&rsquo;s collection rate before I read its penalty code. The Tollgate Test above is how I now screen one: five signs, four numbers. Use it, argue with it, sharpen it.</p>
+      <p>Turkey did not lack laws. It had a price list. Every market has one somewhere. The tollgate markets are the ones where somebody read it before the regulator did.</p>
+    </aside>
+    <p class="sig">J.J. · Jesse James · Founding Editor, NPSI · Victoria, British Columbia</p>
+  </div>
+</section>
 
+<section id="verification">
+  <h2>Sources and Verification</h2>
+  <h3>Open items, published rather than hidden</h3>
+  <p>A briefing that rates other people&rsquo;s enforcement should show its own weak points. These are the claims that carry a caveat.</p>
+  <ul>
+    <li><strong>Fund size.</strong> Estimates run from $16.5bn (G&uuml;venal&rsquo;s conversion of TRY&nbsp;830bn) through $17bn (FT Alphaville, Middle East Eye) and $18.3bn (Finance Minister &#350;im&#351;ek, via Euronews) to more than $20bn (Reuters).</li>
+    <li><strong>Flagship fund return.</strong> The text uses Bloomberg&rsquo;s 18&nbsp;September figure, via T24. A widely repeated 66,000% figure could not be traced to Bloomberg and is no longer used.</li>
+    <li><strong>&ldquo;Goldman Sachs of Turkey.&rdquo;</strong> Bloomberg (18&nbsp;September) reports Tera executives stating the aim. Not used in the text.</li>
+    <li><strong>Overseas transfers.</strong> Leaked prosecution claims about transfers by Pusula-linked individuals could not be verified and are excluded.</li>
+    <li><strong>Prison range, Art. 107/1.</strong> Resolved: three to five years since Law 7222 (2020).</li>
+    <li><strong>Liquidation timetable.</strong> Resolved: three months, extended to six on 21&nbsp;September.</li>
+    <li><strong>Fund counts by manager.</strong> Resolved: the counts match SPK Bulletin 2026/61.</li>
+    <li><strong>Turkish conviction statistics.</strong> None found for prior manipulation cases.</li>
+    <li><strong>Erkan&rsquo;s Field Diary.</strong> An AI-assisted roundup. The first edition relied on it twice; both items are now sourced elsewhere.</li>
+    <li><strong>Bangladesh.</strong> Rated provisionally and under review: a 2025 report says fines now cover up to 90% of illicit gains.</li>
+    <li><strong>IL&amp;FS, Franklin Templeton, China WMPs, IOS.</strong> Figures not re-verified for this briefing.</li>
+    <li><strong>Academic framing.</strong> La Porta, Lopez-de-Silanes and Shleifer (2006) and Jackson and Roe (2009) informed the analysis via secondary summary and were not re-reviewed.</li>
+    <li><strong>Currency conversions.</strong> Approximate, at 2026 rates unless marked &ldquo;at the time&rdquo;.</li>
+    <li><strong>Fifteen markets unrated.</strong> Listed under <a href="#watch">What to watch</a>. Absence is not clearance.</li>
+  </ul>
   <aside class="standard">
-    <h4>In the briefing</h4>
-    <p>I &nbsp;The day the cash froze &nbsp;·&nbsp; II &nbsp;The cash that wasn&rsquo;t &nbsp;·&nbsp; III &nbsp;The warnings were on the record &nbsp;·&nbsp; IV &nbsp;The price list &nbsp;·&nbsp; V &nbsp;Paper teeth &nbsp;·&nbsp; VI &nbsp;The ladder &nbsp;·&nbsp; VII &nbsp;Seventeen markets up close &nbsp;·&nbsp; VIII &nbsp;After the damage &nbsp;·&nbsp; IX &nbsp;The cash that wasn&rsquo;t, elsewhere &nbsp;·&nbsp; X &nbsp;Who looks like Turkey now &nbsp;·&nbsp; The Tollgate Test &nbsp;·&nbsp; XI &nbsp;What to watch · From the author · Sources · Corrections</p>
+    <h4>How the ladder was built</h4>
+    <p>Each market was scored on four observed signals rather than its statute: the typical penalty against the typical gain, the reality of criminal prosecution, published collection rates, and whether a payment can close a case. Evidence comes from regulator reports, court outcomes and press reporting, each dated in the source list. The result is an assessment, not a measurement, and it is published so it can be checked.</p>
   </aside>
+  <p><em>Every allegation in this briefing is reported as an allegation. No court had ruled on guilt in the Turkish cases as of 4&nbsp;October 2026. Corrections are published and credited; this edition&rsquo;s are listed below.</em></p>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <h4>Turkey</h4>
+  <p class="sb4-src">Reuters (explainer). How Turkey&rsquo;s investment fund bubble burst, 2 Oct 2026 · MSCI. <a href="https://app2.msci.com/webapp/index_ann/DocGet?pub_key=ZPma4fa7hJo%3D&amp;lang=en&amp;format=html">Announcement on the treatment of T&uuml;rkiye securities</a>, 23 Jun 2026 · Euronews. Turkey arrests Tera chairman as $18bn fund scandal widens, 23 Sep 2026 · FT Alphaville. &lsquo;Ponzi-like schemes&rsquo;, 2026 · Middle East Eye. Turkey&rsquo;s $17bn fund scandal becomes a political crisis for Erdogan, 2026 · Yeni &#350;afak. Fon y&ouml;neticilerine &ouml;rg&uuml;t su&ccedil;lamas&#305;, 2026 · Business Standard. Inside Turkey&rsquo;s stock market scandal, 18 Sep 2026 · Legal500. <a href="https://www.legal500.com/developments/thought-leadership/administrative-monetary-fines-of-the-capital-markets-board-of-turkiye-in-2025-key-types-of-breaches/">Administrative Monetary Fines of the Capital Markets Board of T&uuml;rkiye in 2025</a> · H. G&uuml;venal, Substack. The Devil Takes the Hindmost, 18 Sep 2026; also Update on Investment Funds Crisis in T&uuml;rkiye; Fonzide Ara Bilan&ccedil;o; Ordinary Bank Run or a Ponzi? · yatirimci.ai. TP2 fund data (TEFAS), 16 Sep 2026 · T24, citing Cumhuriyet. Former MASAK deputy head Ba&#351;ak on Tera Yat&#305;r&#305;m, 2026 · D&uuml;nya. On SPK decision 64/1775 and interim payouts, 30 Sep 2026 · Turkish Minute. Turkey jails 20 more in fund probes, bringing total to 85, 3 Oct 2026 · ThePrint (Bloomberg). Norway wealth fund owned Turkish stocks swept up in probe, 2026 · Karar. The justice minister&rsquo;s statement on the funds, 18 Sep 2026 · CNBC-e. The SPK on the preparation of its fund rules, 18 Sep 2026 · SPK. <a href="https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf">Bulletin 2026/61</a>, 17 Sep 2026 · Capital Markets Law No.&nbsp;6362. <a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6362.pdf">Arts. 103, 104 and 107, as amended</a> · Also cited. SPK Bulletin 2026/60 and decision 64/1775; Tera Portf&ouml;y KAP filing, 16 Sep 2026; Bloomberg, 18 Sep 2026, via T24; Bianet; Reuters on Tezmen&rsquo;s statement, 16 Sep 2026; SPK Communiqu&eacute; VI-104.1.</p>
+  <h4>Cross-market</h4>
+  <p class="sb4-src">CBC. BC Securities Commission fines unpaid, Mar 2024 · Globe and Mail. Canada&rsquo;s $1.1-billion problem, 2017 · CIRO. <a href="https://www.ciro.ca/sites/default/files/2024-07/CIRO-Enforcement-Report-2024.pdf">Enforcement Report 2023&ndash;2024</a> · Business Standard. SEBI difficult-to-recover dues, FY25 · SEC. Press release 2026-34, FY2025 enforcement results · VietnamPlus. FLC ex-chairman&rsquo;s sentence reduced to 7 years · Gi&aacute;o d&#7909;c Vi&#7879;t Nam. The 2017 FLC non-disclosure fine and sale proceeds, 14 Dec 2017 · Indonesia Business Post. <a href="https://indonesiabusinesspost.com/6062/financial-crimes/ojk-imposes-rp542-49b-in-fines-on-3-418-parties-flags-32-stock-manipulation-cases">OJK fines and 32 manipulation cases under investigation</a>, 9 Feb 2026 · Jakarta Post. Businessman fined over $370 million, Jan 2023 · TDRI. <a href="https://tdri.or.th/en/2025/04/get-tough-on-stock-market-misconduct/">Get tough on stock market misconduct</a>, Apr 2025 · Nation Thailand. How the wheels came off Stark · Global Investigations Review. Brazil chapter · FSA / SESC. Latest Topics No.&nbsp;106, Aug 2025 · FSC Korea. Administrative penalties for market abuse · Korea Herald. 40-yr term finalised for Optimus CEO · Asia Business Daily. Kim Bong-hyun sentenced to 30 years, Dec 2023 · Caixin Global. Crackdown yields $2.2 billion in penalties, 20 Apr 2026 · Sidley. Hong Kong landmark criminal sentence, Jul 2024 · Malay Mail. Singapore apex court upholds jail terms, 18 Mar 2026 · ASIC. Fines and penalties · Also cited. FCA releases; EU Regulation 596/2014; Kim &amp; Chang; Korea Times; Segye Ilbo, 23 Jun 2022; Daily Star, 12 Aug 2025; TBS, 27 Oct 2024; CNN Indonesia, 13 Jan 2023; Case IQ, reporting CBC&rsquo;s 2012 analysis; Poonian, 2024 SCC 28; Anu&aacute;rio da Justi&ccedil;a, via JuriNews; Migalhas; Khaosod English, 23 Jun 2024; Malay Mail, 26 Jun 2025; Vietnam Decrees 156/2020 and 128/2021; VietnamFinance; VIR; ACGA; Caixin, 2017; Bloomberg, Mar 2017; SESC Annual Report 2024/25; Finance Magnates; US v. Hwang, SDNY, 2024; Sidley on SEC FY2025; Patrick Boyle, video on the Tera collapse.</p>
 </section>
 
 <section id="corrections">
   <h2>Corrections</h2>
-
-  <p>The first edition, v1.0 of 3&nbsp;October 2026, circulated before this page was published. The release hosted here is v1.0.1 of 4&nbsp;October, which corrects it after a check of its claims against their sources. The analysis and the ladder&rsquo;s ratings are unchanged; the facts under them are corrected. Among the corrections: Article&nbsp;107(3) removes the penalty only if payment comes before an investigation opens, while later payment reduces the sentence; an Indonesian supervisor described as sentenced was acquitted by the Supreme Court in 2022, and the line is withdrawn; Vietnam&rsquo;s VND&nbsp;1.5bn is the fixed fine when no gain is established, not a ceiling; Canada&rsquo;s collection rates cover 2007 to 2012; and a Korean sentence is 20 years, not 15. The full list is on page&nbsp;23 of the release.</p>
-</section>
-
-<section id="sources">
-  <h2>Selected sources</h2>
-
-  <p>The release carries the full source list, dated. The primary documents behind the Turkish figures, and a sample of the regulator and research sources behind the ladder:</p>
+  <h3>What this edition corrects</h3>
+  <p>This is v1.0.1 of 4&nbsp;October 2026. It corrects the first edition of 3&nbsp;October after a check of its claims against their sources. The analysis and the ladder&rsquo;s ratings are unchanged; the facts under them are corrected. The first edition circulated before this page was published; the release hosted here is the corrected one.</p>
   <ul>
-    <li>Capital Markets Board of T&uuml;rkiye (SPK), <a href="https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf">Bulletin 2026/61</a>, 17 September 2026.</li>
-    <li>Capital Markets Law No.&nbsp;6362, <a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6362.pdf">consolidated text</a> (Arts. 103, 104 and 107, as amended).</li>
-    <li>Legal500, <a href="https://www.legal500.com/developments/thought-leadership/administrative-monetary-fines-of-the-capital-markets-board-of-turkiye-in-2025-key-types-of-breaches/">Administrative Monetary Fines of the Capital Markets Board of T&uuml;rkiye in 2025</a>.</li>
-    <li>MSCI, <a href="https://app2.msci.com/webapp/index_ann/DocGet?pub_key=ZPma4fa7hJo%3D&amp;lang=en&amp;format=html">announcement on the treatment of T&uuml;rkiye securities</a>, 23 June 2026.</li>
-    <li>Canadian Investment Regulatory Organization, <a href="https://www.ciro.ca/sites/default/files/2024-07/CIRO-Enforcement-Report-2024.pdf">Enforcement Report 2023&ndash;2024</a>.</li>
-    <li>Indonesia Business Post, <a href="https://indonesiabusinesspost.com/6062/financial-crimes/ojk-imposes-rp542-49b-in-fines-on-3-418-parties-flags-32-stock-manipulation-cases">OJK fines and manipulation cases under investigation</a>, 9 February 2026.</li>
-    <li>Thailand Development Research Institute, <a href="https://tdri.or.th/en/2025/04/get-tough-on-stock-market-misconduct/">Get tough on stock market misconduct</a>, April 2025.</li>
+    <li><strong>Article 107(3), pp. 2, 3, 8, 11, 20.</strong> The first edition said paying twice the benefit within 15 days closes the criminal case. The statute removes the penalty only if payment comes before an investigation opens; later payment halves the sentence or cuts it by a third. The 15 days is the SPK&rsquo;s deadline.</li>
+    <li><strong>Indonesia, an acquitted official, p. 15.</strong> The first edition said an OJK supervisor drew 8 years for negligence. He was convicted of corruption and acquitted by the Supreme Court in 2022. The line is withdrawn.</li>
+    <li><strong>Vietnam, pp. 3, 9, 11, 12, 17.</strong> VND&nbsp;1.5bn is the fixed fine when no gain is established, not a ceiling; manipulation is otherwise fined at ten times the gain. Both FLC fines were for undisclosed sales, and VND&nbsp;400bn was sale proceeds. A disclosure fine described as manipulation is removed. The FLC appeal was in June 2025.</li>
+    <li><strong>Canada, pp. 3, 10, 11, 20.</strong> The 35.7% and 2.9% collection rates cover 2007 to 2012, not 2007 to the present. Fig.&nbsp;10 is re-dated and an unsourced bar removed. The Supreme Court&rsquo;s 2024 <em>Poonian</em> holding is now stated.</li>
+    <li><strong>Indonesia, prosecutions, pp. 3, 11, 12.</strong> OJK reports 42 suspected crimes under investigation and five concluded cases with final verdicts, not five verdicts in 42 cases.</li>
+    <li><strong>Thailand, pp. 11, 12, 17.</strong> The 2,050-day average is for cases settled through civil fines. Stark&rsquo;s former chairman was returned from the UAE and indicted in June 2024.</li>
+    <li><strong>Turkey, quotations and sources, pp. 2, 4&ndash;8.</strong> The justice minister spoke of &ldquo;Ponzi-like methods.&rdquo; The charges, the Ba&#351;ak entries and the 123% figure (Reuters, for an undated period) are re-sourced. The narrowing rule is administrative, not a 2017 amendment. The Kaya entry adds Reuters&rsquo; context.</li>
+    <li><strong>Korea, Fig. 14.</strong> Lee Jong-pil&rsquo;s sentence is 20 years, not 15.</li>
+    <li><strong>Brazil, pp. 11, 13.</strong> The CVM imposed R$832m in penalties on 186 people in 2023; the R$100,000 average is withdrawn. The ABN Amro executive&rsquo;s criminal case was suspended without conviction.</li>
+    <li><strong>Also corrected.</strong> Fund sizes and counts attributed; a three-year return figure replaced with Bloomberg&rsquo;s dated one; the prison range stated as three to five years; the liquidation period, MSCI&rsquo;s November review and the interim payouts restated as the SPK and MSCI give them; Australia&rsquo;s 2019 changes; Korea&rsquo;s first surcharge; Japan&rsquo;s surcharge range; an unsourced India figure removed; Bangladesh placed under review; the source list corrected and completed; figures renumbered in page order.</li>
+    <li><strong>House note.</strong> The back cover now discloses AI assistance in research and drafting.</li>
   </ul>
+  <p>Page references are to the release PDF. Readers who find a further error can write to <a href="mailto:editor@npsi.ca">editor@npsi.ca</a>. Corrections are credited.</p>
+  <div class="wp-card-actions" style="margin-top: 24px;">
+    <a class="btn btn-bronze" href="/sb4/special-briefing.pdf">Download the Briefing (PDF, 24 pp.)</a>
+  </div>
 </section>
 
 <hr>
@@ -250,6 +1080,7 @@
 </section>
 
 </article>
+
 
 </main>
 
