@@ -130,7 +130,7 @@ Every page, every document, every figure carries the same chrome. If you're buil
 </header>
 ```
 
-The five-link nav (adopted October 2026 at the editor's direction, replacing a four-link nav whose first item pointed at the current paper only) is written on every page by `tools/registry.py --nav`; never hand-edit it. The active link follows the section: Papers on `/papers/` and every `wp*` page, Briefings on `/briefings/` and every `tb*`, `bn*`, `sb*` page, Ledger on `/ledger/` and `pl*`, Commentary and About on their own pages; home, engage, disclosure, colophon, register and the 404 have no active link. The masthead is sticky on scroll with a blur backdrop; its padding and the nav size are fluid tokens (`--pad-masthead`, `--fs-nav`), so it is 66px tall at 390px and one row.
+The five-link nav (adopted October 2026 at the editor's direction, replacing a four-link nav whose first item pointed at the current paper only) is written on every page by `tools/registry.py --nav`; never hand-edit it. The active link follows the section: Papers on `/papers/` and every `wp*` page, Briefings on `/briefings/` and every `tb*`, `bn*`, `sb*` page, Ledger on `/ledger/` and `pl*`, Commentary and About on their own pages; home, engage, disclosure, colophon, register and the 404 have no active link. The masthead is sticky on scroll with a blur backdrop; its padding and the nav size are fluid tokens (`--pad-masthead`, `--fs-nav`), so it is 62px tall at 390px and one row; when a reader's large-text setting forces the five links onto two rows, the wrapped nav stays compact (no row gap, 1.3 leading) and the masthead holds near 100px.
 
 ### Document navigation (every document page)
 
