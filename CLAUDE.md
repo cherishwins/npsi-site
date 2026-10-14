@@ -82,7 +82,7 @@ In July 2026 the imprint adopted a **dark-first identity** at the editor's direc
 
 ### Typography
 
-Three typefaces, loaded from Google Fonts. Do not add a fourth without serious reason.
+Three typefaces, **self-hosted** from `assets/fonts/` since 14 October 2026: the exact variable woff2 files Google Fonts serves, vendored by `tools/vendor-fonts.py` into `assets/css/fonts.css` (latin and latin-ext slices of the three Latin faces, plus only the Noto Serif KR slices covering Hangul set on the site, each with its original `unicode-range` so a slice downloads only when a page uses its glyphs). Every page links `/assets/css/fonts.css` once and preloads the serif roman and mono latin files; no page links Google, and the CSP allows fonts and styles from `'self'` only. Re-run the tool to add a face or weight. Do not add a fourth face without serious reason.
 
 | Family | Use |
 |---|---|
@@ -200,8 +200,9 @@ npsi-site/
 ├── llms.txt  llms-full.txt          machine-readable indexes
 ├── sitemap.xml  robots.txt  vercel.json  humans.txt  CITATION.cff  manifest.webmanifest  .well-known/security.txt
 ├── assets/css/site.css              shared stylesheet, fully tokenized
+├── assets/css/fonts.css  assets/fonts/   self-hosted @font-face rules and woff2 files (tools/vendor-fonts.py; OFL.txt alongside)
 ├── assets/img/                      wordmark (dark + light), favicons, share cards (SVG source + PNG), figures
-├── tools/                           sitecheck.py · registry.py · set_current_paper.py · render-og.sh · fonts/ (not deployed)
+├── tools/                           sitecheck.py · registry.py · set_current_paper.py · vendor-fonts.py · archive-sources.py · render-og.sh · fonts/ (not deployed)
 ├── figures/                         working figure sources for papers in progress (not deployed)
 └── .claude/skills/                  npsi-publish (publishing procedure) · npsi-korean-translation · fluid-scale
 ```
@@ -243,7 +244,7 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 
 ### Site infrastructure (well-known files)
 
-- **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets) plus URL canonicalisation: `trailingSlash: true` so `/wp11` redirects to `/wp11/` and the served URL matches `rel="canonical"`, and a 308 from `www.npsi.ca` to the apex so one hostname serves the imprint. Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script.
+- **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets) plus URL canonicalisation: `trailingSlash: true` so `/wp11` redirects to `/wp11/` and the served URL matches `rel="canonical"`, and a 308 from `www.npsi.ca` to the apex so one hostname serves the imprint. Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script. Fonts and stylesheets are `'self'` only (self-hosted fonts since 14 October 2026).
 - **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar. `sitemap.xml` carries `<loc>`, `<lastmod>` and `<priority>` only; see the `npsi-publish` skill (checklist item 12) for how `lastmod` is derived; `python3 tools/sitecheck.py --fix-sitemap` applies it.
 - **`humans.txt`** at site root — editorial/technical credits.
 - **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
@@ -282,6 +283,7 @@ python3 -m http.server 8000
 - `python3 tools/registry.py --all` — extract `registry.json` from the document pages, render `/papers/`, `/briefings/`, `/register/` and the home page lists, refresh every document's breadcrumb and previous/next links, write the nav on every page, then check. The steps are also available singly (`--extract`, `--render`, `--doc-nav`, `--nav`, `--check`, `--list`).
 - `python3 tools/set_current_paper.py N --title "…" --version v1.0 --month "Month YYYY"` — makes WP N current: every previous-paper banner, the demoted paper's banner, sitemap priorities, the registry's current paper, and the pages rendered from it. Update the home page's current card first.
 - `python3 tools/archive-sources.py --check | --save | --report [--self]` — keeps every cited source in the Wayback Machine so a citation outlives its URL. `--check` looks up snapshots for all external hrefs on the site, `--save` asks Save Page Now to capture the ones without, `--self` adds the site's own pages from `sitemap.xml`; results go to `tools/archive-manifest.json` (a record, never deployed). No page is modified. `.github/workflows/archive-sources.yml` runs it weekly and commits the manifest; run `--save` from a network that can reach `web.archive.org`.
+- `python3 tools/vendor-fonts.py` — refreshes `assets/fonts/*.woff2` and `assets/css/fonts.css` from Google Fonts (see *Typography*). Run it after adding a face or weight to its `FAMILIES`, or when new Korean text needs slices the site does not yet carry (the tool scans every page for Hangul).
 - `tools/render-og.sh assets/img/<card>.svg` — renders a share card against the vendored brand faces in `tools/fonts/` (the bare `resvg-cli` call silently renders fallback fonts in a fresh container).
 
 ## Document index
