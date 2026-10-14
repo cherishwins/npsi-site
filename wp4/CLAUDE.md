@@ -7,22 +7,22 @@
 ```
 ├── wp4/
 │   ├── index.html                   Working Paper No. 4 — *The Addition Paradox* — full reading view (previous paper; banner points to WP11)
-│   └── working-paper.pdf            full PDF release (present; direct download, no email gate)
+│   └── working-paper.pdf            v1.0.1 PDF printed from the reading view 14 Oct 2026 (9 pp., direct download, no email gate)
 ```
 
 ## Canonical facts
 
 ## Working Paper No. 4 — The Addition Paradox (`wp4/index.html`)
 
-An energy thesis for Canada — v1.0 published 15 May 2026. Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
+An energy thesis for Canada — v1.0 published 15 May 2026; **v1.0.1** (errata, 14 October 2026). Four parts plus executive summary: The Diagnosis, The Chokepoint Migration, The Canadian Thesis, The Verdict. Key facts that should remain consistent across any future edits:
 
-- **Core thesis:** the global energy transition did not substitute, it *added*. 2024 saw a record 858 TWh of new clean electricity *and* record fossil combustion; global electricity demand grew 1,172 TWh (clean supplied 858, fossil supplied the remaining 314); power-sector CO₂ ≈ 14.6 Gt; coal ≈ 10,613 TWh and forecast largest single source through the mid-2030s; clean-energy investment ≈ US$2 trillion in 2024 (≈2× fossil); upstream oil investment ≈ US$570 bn (highest since 2017).
+- **Core thesis:** the global energy transition did not substitute, it *added*. 2024 saw a record 858 TWh of new clean electricity *and* record fossil combustion; global electricity demand grew 1,172 TWh (clean supplied 858, fossil supplied the remaining 314); power-sector CO₂ ≈ 14.6 Gt ("billion tonnes of carbon dioxide", never "of carbon"); coal ≈ 10,613 TWh and forecast largest single source through the mid-2030s; clean-energy investment ≈ US$2 trillion in 2024 (≈2× fossil); upstream oil investment ≈ US$570 bn (highest since 2017).
 - **Chokepoint migration:** clean-tech refining/assembly concentration in a single nation — polysilicon ≈ 95%, lithium cells ≈ 80%, NdFeB magnets ≈ 90%. Framed as concentration risk, **not** anti-clean-energy and **not** named beyond "a single nation / the People's Republic of China" as the paper does.
-- **Four Canadian assets (one hand):** 3rd-largest oil reserves with lowest-carbon barrel (oil-sands intensity −33% since 2009); largest per-capita clean electricity in the industrial democracies (hydro > 380 TWh/yr); 2nd-largest high-grade uranium reserves (Athabasca Basin, 10–100× global mean grade); only G7 nation with simultaneous Pacific and Atlantic deepwater export capacity (Kitimat, Prince Rupert, Vancouver within ~5 sailing days of Yokohama/Busan/Shanghai).
+- **Four Canadian assets (one hand):** 3rd-largest oil reserves with a barrel *among the cleanest* of any major producer (never "the lowest-carbon"; oil-sands intensity −33% since 2009 in the text, while the S&P Global source added at v1.0.1 gives 31% for 2009–2025); largest per-capita clean electricity **in the G7** (never "in the industrial democracies": Norway and Iceland exceed Canada; hydro > 380 TWh/yr); 2nd-largest reserves of **high-grade** uranium (Athabasca Basin, 10–100× global mean grade); Pacific and Atlantic deepwater export capacity (Kitimat, Prince Rupert, Vancouver within **about ten** sailing days of Yokohama/Busan/Shanghai). Uniqueness belongs to the four assets *together* ("no other G7 nation holds this combination"), never to the two-coast capacity alone — the United States has both coasts.
 - Positioned as the strategic preface to the three-rail architecture: WP1 (financial), WP2 (energy/compute), WP3 (defence-industrial).
 - Editorial-voice note: the paper uses sustained funeral/inheritance metaphor ("the casket will remain closed"). Preserve it; it is intentional register, not drift. **No red** in the site rendering even though the source PDF cover uses a maroon accent — the HTML reading view uses the four-colour palette only.
-- Author: Jesse James; v1.0 published 15 May 2026.
-- PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1).
+- Author: Jesse James; v1.0 published 15 May 2026; v1.0.1 errata 14 October 2026 (WP4-1 to WP4-7), with a Sources section (one line per section; §2 unsourced and the gaps stated).
+- PDF: `wp4/working-paper.pdf` — direct download, no email gate (matches WP1). Since v1.0.1 it is **printed from the reading view** (`node tools/print-pdf.mjs wp4/ wp4/working-paper.pdf`; A4, 9 pp.); regenerate it after any edit to the reading view. The earlier, longer author PDF (other sections, a series index, "LNG Canada, commissioned in 2024", McArthur River "scheduled for staged restart") is preserved in git history only.
 
 
 ## Open review items
