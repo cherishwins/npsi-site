@@ -617,6 +617,45 @@ def compact_item(d: dict) -> str:
             f'      <h4><a href="{d["url"]}">{esc(d["title"])}</a></h4>\n    </div>')
 
 
+def commentary_row(d: dict) -> str:
+    """One row of the commentary table: document, release, version, status."""
+    tag = {"WP": "WP No.", "TB": "TB No.", "BN": "BN No.", "SB": "SB No.", "PL": "Ledger \u2116"}[d["line"]]
+    label = f"{tag} {d['number']}"
+    version = f"<code>{esc(d['version'])}</code>" if d["version"] else "\u2014"
+    if d["status"] == "superseded" and d["superseded_by"]:
+        status = f"Collected under {esc(d['superseded_by'].upper())}"
+    else:
+        status = "Open for submission"
+    return (f'      <tr>\n        <td class="num">{esc(label)}</td>\n'
+            f'        <td><a href="{d["url"]}">{esc(d["title"])}</a></td>\n'
+            f'        <td>{esc(nice_date(d["released"]))}</td>\n'
+            f'        <td>{version}</td>\n'
+            f'        <td>{status}</td>\n      </tr>')
+
+
+def render_commentary_table(reg: dict) -> int:
+    """Refresh the single table on /commentary/ between its markers: every
+    document in home-page order (working papers by date, then the briefings
+    and the Ledger), with its version and whether commentary is open."""
+    p = ROOT / "commentary" / "index.html"
+    s = p.read_text(encoding="utf-8")
+    docs = reg["documents"]
+    order = (by_date(d for d in docs if d["line"] == "WP")
+             + by_date(d for d in docs if d["line"] in ("SB", "TB", "BN"))
+             + by_date(d for d in docs if d["line"] == "PL"))
+    body = ('  <div class="register-wrap">\n    <table class="register commentary">\n      <thead>\n'
+            '        <tr><th>Document</th><th>Title</th><th>Released</th><th>Version</th><th>Commentary</th></tr>\n'
+            '      </thead>\n      <tbody>\n' + "\n".join(commentary_row(d) for d in order)
+            + '\n      </tbody>\n    </table>\n  </div>')
+    rx = re.compile(r"<!-- commentary-table -->.*?<!-- /commentary-table -->", re.S)
+    s, k = rx.subn(lambda m: f"<!-- commentary-table -->\n{body}\n<!-- /commentary-table -->", s, count=1)
+    if k != 1:
+        print("WARN commentary/index.html: commentary-table markers not found")
+    p.write_text(s, encoding="utf-8")
+    print(f"commentary: table refreshed ({len(order)} rows)")
+    return 0
+
+
 def render_home_lists(reg: dict) -> int:
     """Refresh the two compact lists on the home page between their markers:
     previous working papers (all but the current one) and all briefings."""
@@ -644,6 +683,7 @@ def render_home_lists(reg: dict) -> int:
 def render() -> int:
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     render_home_lists(reg)
+    render_commentary_table(reg)
     pages = {
         "papers": ("/papers/", "Working Papers",
                    "Every NPSI working paper, by publication date: the current paper, the archive, and the numbering.",

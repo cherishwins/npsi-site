@@ -72,7 +72,7 @@ Return findings to the editor before publishing; fix what the editor approves.
    It rewrites every previous-paper banner, gives the demoted paper its banner, and sets sitemap priorities. Add a companion sentence to the new banner by hand if the demoted paper needs one.
 2. **Home page** (`index.html`): the current card (title, subtitle, summary, Read · PDF · Submit Named Commentary) for a new current paper; a new Ledger issue replaces the Ledger card. The archive and briefing lists are rendered, not edited.
 3. **Registry and index pages**: `python3 tools/registry.py --all` — extracts `registry.json` from the new page's metadata, renders `/papers/`, `/briefings/`, `/register/` and the home lists, refreshes every breadcrumb and previous/next chain, writes the nav on the new page, and checks.
-4. **Commentary** (`commentary/index.html`): a section for the new document, in home-page order.
+4. **Commentary** (`commentary/index.html`): nothing to write — since October 2026 the page carries one table rendered by `registry.py --render` from the register (document, title, release, version, whether commentary is open); the fourteen per-document cards it replaced are in git history.
 5. **Indexes**: one line in `llms.txt`; a full entry (abstract, key findings, ID, version, URLs, PDF page count) in `llms-full.txt`.
 6. **Sitemap**: add the page, then its PDF (reading views first; PDFs at priority 0.4; no `changefreq`).
 7. **Canon**: create `wp12/CLAUDE.md` with the packet's canonical facts, and add one row to the document index in the root `CLAUDE.md`.
@@ -97,7 +97,7 @@ Then render the new page at 390px and 1280px. In the cloud container, Playwright
 
 ## Errata to a published document
 
-The policy is on `/about/`: errata are patch versions (v1.0.1). For each corrected document: fix the text, bump the version everywhere it appears (doc-class line, meta block, meta description, JSON-LD, llms entries, home card, commentary subtitle), add one dated revision line to the meta block, and regenerate the PDF if it is printed from the reading view. A PDF-first document whose PDF is not reissued gets an on-page erratum note instead. WP10 is never edited; corrections to it live in WP11.
+The policy is on `/about/`: errata are patch versions (v1.0.1). For each corrected document: fix the text, bump the version everywhere it appears (doc-class line, meta block, meta description, JSON-LD, llms entries, home card; the commentary table and the index pages take it from the register), add one dated revision line to the meta block, and regenerate the PDF if it is printed from the reading view. A PDF-first document whose PDF is not reissued gets an on-page erratum note instead. WP10 is never edited; corrections to it live in WP11.
 
 ## Batches
 
@@ -109,7 +109,7 @@ For several documents at once, prepare in parallel and integrate once. One subag
 2. **Update the home page's "Current Working Paper" card** with the new paper. The Previous Working Papers list is rendered between `<!-- archive-list -->` markers by `tools/registry.py`; do not edit it.
 3. ~~Update the nav `Working Paper` link sitewide~~ — retired October 2026: the nav is Papers · Briefings · Ledger · Commentary · About and does not name the current paper. `tools/registry.py --all` renders `/papers/`, which leads with it.
 4. **Add a "previous paper" banner near the top of the prior paper's page**, pointing readers to the current paper. The banner uses the `<aside class="standard">` pattern with an `<h4>` and a one-sentence pointer.
-5. Add a new section to `commentary/index.html` for the new paper's commentary collection (above the previous paper's section). Open for submission.
+5. ~~Add a new section to `commentary/index.html`~~ — retired October 2026: the commentary table is rendered from the register.
 6. Drop release files into `wp[N]/` (`working-paper.pdf`, `executive-brief.pdf`, figure files).
 7. **OG card pipeline.** Hand-code `assets/img/wp[N]-og.svg` (1200×630, NPSI register, three stat blocks, no red, no flags) using `wp1-og.svg` / `wp4-og.svg` as the template. Render to PNG with `npx --yes resvg-cli assets/img/wp[N]-og.svg assets/img/wp[N]-og.png`. The PNG is what `og:image` must reference — social platforms (Twitter, Facebook, LinkedIn) require raster. The SVG is the source of truth; commit both. Build hand-coded SVG figures into `assets/img/` and reference via `<figure><img></figure>` in the paper.
 8. **JSON-LD ScholarlyArticle.** Add a `<script type="application/ld+json">` block to the paper's `<head>`, mirroring the WP1–WP4 pattern (`@type: ScholarlyArticle`, `headline`, `datePublished`, `identifier: NPSI-WP-NNN`, `issueNumber`, `image` pointing to wp[N]-og.png, `license`, `keywords`, `abstract`, `author`, `publisher`, `isPartOf: NPSI Working Papers`, and `encoding` carrying the PDF when released). This is what Google's Knowledge Graph, Bing, and academic crawlers index beyond the Highwire `citation_*` tags.

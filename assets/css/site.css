@@ -624,6 +624,7 @@ figure figcaption {
 .register td.num { font-family: var(--font-mono); color: var(--navy); font-weight: 500; }
 .register td code { font-size: 12.5px; white-space: nowrap; }
 .register tr.never td { color: var(--ink-soft); font-style: italic; }
+.register.commentary td.num { white-space: nowrap; }
 .register .pending { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--bronze); white-space: nowrap; }
 .register tr.never td code { font-style: normal; }
 

@@ -30,7 +30,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** â€
 
 ## The register (adopted October 2026)
 
-Every published document is listed in **`registry.json`** at the site root, extracted from each page's own citation metadata by `tools/registry.py` and checked by the gate: a page that disagrees with the register fails `sitecheck`. The register page **`/register/`** renders it for readers; `/papers/` and `/briefings/` are rendered from it; the home page's two compact lists and every document's breadcrumb and previous/next links are rendered from it.
+Every published document is listed in **`registry.json`** at the site root, extracted from each page's own citation metadata by `tools/registry.py` and checked by the gate: a page that disagrees with the register fails `sitecheck`. The register page **`/register/`** renders it for readers; `/papers/` and `/briefings/` are rendered from it; the home page's two compact lists, the commentary table on `/commentary/` and every document's breadcrumb and previous/next links are rendered from it.
 
 **Two identifiers, never confused:**
 
