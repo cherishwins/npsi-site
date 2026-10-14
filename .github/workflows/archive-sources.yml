@@ -1,0 +1,34 @@
+name: Archive cited sources
+
+# Every cited URL on the site gets a Wayback Machine snapshot, so a citation
+# outlives its URL. Runs weekly and on demand; commits the manifest in tools/
+# (never deployed, .vercelignore excludes tools/ and .github/).
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check snapshots and capture the missing ones
+        run: |
+          python3 tools/archive-sources.py --check --self --delay 1
+          python3 tools/archive-sources.py --save --self --delay 6
+          python3 tools/archive-sources.py --report --self
+      - name: Commit the manifest
+        run: |
+          git config user.name "npsi-site archive tool"
+          git config user.email "editor@npsi.ca"
+          git add tools/archive-manifest.json
+          git diff --cached --quiet || git commit -m "Archive manifest: refresh Wayback snapshots of cited sources"
+          git push
