@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sovereign Compute North · NPSI Working Paper No. 5</title>
-<meta name="description" content="An energy-for-memory swap, signed under Canadian law: Canadian electrons, Korean memory, Canadian law, Korean and allied capital — a government-owned compute fabric from the Hydro-Québec switchyard to the municipal town hall. NPSI Working Paper No. 5, v1.0, 27 May 2026.">
+<meta name="description" content="An energy-for-memory swap, signed under Canadian law: Canadian electrons, Korean memory, Canadian law, Korean and allied capital — a government-owned compute fabric from the Hydro-Québec switchyard to the municipal town hall. NPSI Working Paper No. 5, v1.0.1, 27 May 2026.">
 <meta name="author" content="North Pacific Strategy Initiative">
 
 <meta property="og:title" content="Sovereign Compute North">
@@ -46,39 +46,40 @@
 
 <style>
   /* Page-scoped components — wp5- prefixed, tokens only. */
-  .wp5-tablewrap  { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.wp5-t  { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13.5px; min-width: 440px; }
-  table.wp5-t th  {
+  .wp5-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.wp5-t { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13.5px; min-width: 440px; }
+  table.wp5-t th {
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
     text-align: left; padding: 8px 14px 8px 0;
     border-bottom: 1px solid var(--bronze);
   }
-  table.wp5-t td  {
+  table.wp5-t td {
     padding: 11px 14px 11px 0; vertical-align: top;
     border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink);
   }
-  table.wp5-t tr:last-child td  { border-bottom: none; }
-  table.wp5-t td strong  { color: var(--navy); }
-  .wp5-src  {
+  table.wp5-t tr:last-child td { border-bottom: none; }
+  table.wp5-t td strong { color: var(--navy); }
+  .wp5-src {
     font-family: var(--font-mono); font-size: 11px; line-height: 1.6;
     color: var(--ink-soft); margin: 14px 0 0; letter-spacing: 0;
   }
-  ol.wp5-clauses  { list-style: none; margin: 20px 0 0; counter-reset: cl; }
-  ol.wp5-clauses li  {
+  ol.wp5-clauses { list-style: none; margin: 20px 0 0; counter-reset: cl; }
+  ol.wp5-clauses li {
     counter-increment: cl; position: relative;
     border-top: 0.5px solid var(--rule); padding: 20px 0 20px 54px; margin: 0;
   }
-  ol.wp5-clauses li:last-child  { border-bottom: 0.5px solid var(--rule); }
-  ol.wp5-clauses li::before  {
+  ol.wp5-clauses li:last-child { border-bottom: 0.5px solid var(--rule); }
+  ol.wp5-clauses li::before {
     content: counter(cl, decimal-leading-zero);
     position: absolute; left: 0; top: 22px;
     font-family: var(--font-mono); font-size: 14px; font-weight: 500; color: var(--bronze);
-  }ol.wp5-clauses h4, ol.wp5-clauses h3.minor, ol.wp5-clauses h2.minor { margin: 0 0 6px; }
-  ol.wp5-clauses p  { margin: 0; font-size: 15px; }
+  }
+  ol.wp5-clauses h4 { margin: 0 0 6px; }
+  ol.wp5-clauses p { margin: 0; font-size: 15px; }
   @media print {
-    table.wp5-t  { min-width: 0; }
-    table.wp5-t tr, ol.wp5-clauses li  { break-inside: avoid; page-break-inside: avoid; }
+    table.wp5-t { min-width: 0; }
+    table.wp5-t tr, ol.wp5-clauses li { break-inside: avoid; page-break-inside: avoid; }
   }
 </style>
 
@@ -89,6 +90,8 @@
   "headline": "Sovereign Compute North",
   "alternativeHeadline": "An energy-for-memory swap, signed under Canadian law",
   "datePublished": "2026-05-27",
+  "dateModified": "2026-10-14",
+  "version": "1.0.1",
   "inLanguage": "en",
   "url": "https://npsi.ca/wp5/",
   "identifier": "NPSI-WP-005",
@@ -96,7 +99,7 @@
   "image": "https://npsi.ca/assets/img/wp5-og.png",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "keywords": "data sovereignty, sovereign cloud, Canada, Korea, HBM, hydroelectricity, data centres, CLOUD Act, sovereign compute, municipal infrastructure",
-  "abstract": "Canada has the cheapest low-carbon firm electricity in the G7. Korea controls the global memory chokepoint on which every modern AI accelerator depends. The United States has stated, under oath through Microsoft France in June 2025, that it cannot guarantee allied citizens' data against US extraterritorial reach. The trade is obvious: Canadian electrons, Korean memory, Canadian law, Korean and allied capital — combined into a government-owned compute fabric that reaches from the Hydro-Québec switchyard to the municipal town hall.",
+  "abstract": "Canada has the cheapest low-carbon firm electricity in the G7. Korea controls the global memory chokepoint on which every modern AI accelerator depends. Microsoft France has stated under oath (French Senate, 10 June 2025) that it cannot guarantee French citizens' data against US extraterritorial reach. The trade is obvious: Canadian electrons, Korean memory, Canadian law, Korean and allied capital — combined into a government-owned compute fabric that reaches from the Hydro-Québec switchyard to the municipal town hall.",
   "author": {
     "@type": "Person",
     "name": "Jesse James",
@@ -150,19 +153,19 @@
 
 <div class="opener">
   <div class="meridian"><span></span></div>
-  <div class="doc-class">Working Paper No.&nbsp;5  ·  v1.0  ·  May 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0 · MAY 2026</span></div>
+  <div class="doc-class">Working Paper No.&nbsp;5  ·  v1.0.1  ·  May 2026  ·  For Discussion <span class="status-badge" style="margin-left: 14px;">v1.0.1 · OCTOBER 2026</span></div>
   <h1>Sovereign Compute North</h1>
   <div class="subtitle">An energy-for-memory swap, signed under Canadian law.</div>
   <p class="lede">A sovereignty proposal for the Korea–Canada–allies decade: a government-owned data substrate anchored on surplus Canadian power, capitalised through a Korea-led consortium of Asian sovereign capital, governed by a new Canadian Data Sovereignty Standard — and extended down to every Canadian municipality that needs a substrate that does not export its citizens' data to a foreign court order.</p>
 </div>
 
 <aside class="standard screen-only" style="margin-bottom: 36px;">
-  <h2 class="minor">You are reading a previous working paper.</h2>
-  <p>The current working paper is <a href="/wp11/">Working Paper No.&nbsp;11 — <em>Rated AAA by the Issuer</em></a> (v1.0, July 2026). This paper is the sovereign-compute pillar of the Pacific Sovereignty track; its exposure assessment is <a href="/sb1/">Special Briefing No.&nbsp;1 — <em>Zero Secrets</em></a>.</p>
+  <h4>You are reading a previous working paper.</h4>
+  <p>The current working paper is <a href="/wp11/">Working Paper No.&nbsp;11 — <em>Rated AAA by the Issuer</em></a> (v1.0.1, July 2026). This paper is the sovereign-compute pillar of the Pacific Sovereignty track; its exposure assessment is <a href="/sb1/">Special Briefing No.&nbsp;1 — <em>Zero Secrets</em></a>.</p>
 </aside>
 
 <aside class="standard" style="margin-bottom: 36px;">
-  <h2 class="minor">Co-issuance disclosure.</h2>
+  <h4>Co-issuance disclosure.</h4>
   <p>This paper was co-issued with <strong>Fit For Gov</strong>, a civic-technology practice owned and operated by the editor, which serves Canadian municipal governments. The paper&rsquo;s recommendations extend sovereign compute to the municipal layer — a market in which the co-issuer operates. The relationship, and every other declared interest of the editor&rsquo;s, is recorded at <a href="/disclosure/">/disclosure/</a>. No compensation was received in connection with this paper.</p>
 </aside>
 
@@ -170,13 +173,14 @@
   <dl>
     <dt>Author</dt>             <dd>Jesse James</dd>
     <dt>Document ID</dt>        <dd><code>NPSI-WP-005</code></dd>
-    <dt>Version</dt>            <dd><code>v1.0</code></dd>
+    <dt>Version</dt>            <dd><code>v1.0.1</code> (this reading view; the canonical PDF remains v1.0 and is not reissued) &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/wp5/index.html">change log</a></dd>
     <dt>Series</dt>             <dd>NPSI Working Paper · Pacific Sovereignty track</dd>
     <dt>Co-issue</dt>           <dd>Fit For Gov — municipal application layer</dd>
     <dt>Released</dt>           <dd>27 May 2026 · Victoria, British Columbia</dd>
+    <dt>Revised</dt>            <dd>v1.0.1 · 14 October 2026 · errata to the reading view, listed in the erratum note below</dd>
     <dt>Audience</dt>           <dd>Federal ministers · Premiers · Municipal CAOs · Sovereign wealth</dd>
     <dt>Status</dt>             <dd>Unclassified · Public · Not paywalled · Not sponsored</dd>
-    <dt>Cite as</dt>            <dd>James, J. (2026). <em>Sovereign Compute North</em> (NPSI Working Paper No.&nbsp;5, v1.0). https://npsi.ca/wp5/</dd>
+    <dt>Cite as</dt>            <dd>James, J. (2026). <em>Sovereign Compute North</em> (NPSI Working Paper No.&nbsp;5, v1.0.1). https://npsi.ca/wp5/</dd>
     <dt>Companions</dt>         <dd><a href="/sb1/">SB1 — Zero Secrets</a> (the exposure this paper answers)<br><a href="/wp2/">WP2 — Canada–U.S. Energy and Compute Compact</a> (the continental rail)</dd>
   </dl>
 </aside>
@@ -186,6 +190,19 @@
   <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
   <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
 </div>
+
+<aside class="standard" style="margin-bottom: 36px;" aria-label="Erratum">
+  <h4>Erratum — v1.0.1, 14 October 2026</h4>
+  <p>This reading view has been corrected. The canonical PDF remains the v1.0 release of 27 May 2026 and is not reissued; where the two differ on the points below, this page carries the correction. Changes:</p>
+  <ul>
+    <li>Abstract and opening figures: the Senate testimony is attributed to Microsoft France, not to the United States, and its consequence is stated as a US-parented provider&rsquo;s inability to guarantee data.</li>
+    <li>§8 and §9: Loi 25 is enforced by the Commission d&rsquo;accès à l&rsquo;information du Québec (CAI), not the Office québécois de la langue française.</li>
+    <li>§4: Hydro-Québec&rsquo;s projected growth from roughly 200&nbsp;MW to 1,000&nbsp;MW is fivefold, not sevenfold; the 158&nbsp;GW figure is total installed capacity, not 2025 additions; the unsourced BC export-surplus figure is removed; the Manitoba passage no longer calls exports stranded or a subsidy to American load, since the paper&rsquo;s own evidence is that export revenue lowers Manitoban rates.</li>
+    <li>§3 and §10: Korea&rsquo;s combined HBM share is stated as more than 75 percent throughout; the K-Semiconductor Strategy is dated to the Moon administration (May 2021).</li>
+    <li>§6: LNG Canada exports began in June 2025, not 2024; the ROKS <em>Dosan Ahn Chang-ho</em> port visit and combined exercises ran 23 May–2 June 2026.</li>
+    <li>§2, §3 and §9: a KEPCO clause, a pull quotation and the co-issuer&rsquo;s name (&ldquo;Fit For Gov and peers&rdquo;) that the July port omitted are restored from the PDF.</li>
+  </ul>
+</aside>
 
 <nav class="toc" aria-label="Table of contents">
   <h2>Contents</h2>
@@ -208,7 +225,7 @@
 <section id="thesis">
   <h2>The Thesis — One Page</h2>
 
-  <p>Every modern AI accelerator that ships from Santa Clara contains memory stacked by a Korean fab. Every Korean fab is fed by Korean electricity its national utility cannot keep affordable. Every Canadian province between the Manitoba border and the Atlantic operates a surplus of firm low-carbon power it currently exports to United States wholesale markets at prices that subsidise American load. These three facts have not been combined into a Canadian industrial strategy. They should be.</p>
+  <p>Every modern AI accelerator that ships from Santa Clara contains memory stacked by a Korean fab. Every Korean fab is fed by Korean electricity its national utility cannot keep affordable. Every Canadian province between the Manitoba border and the Atlantic operates a surplus of firm low-carbon power it currently exports to United States wholesale markets. These three facts have not been combined into a Canadian industrial strategy. They should be.</p>
 
   <p>The Carney government has already opened the door. On 11 September 2025 in Edmonton, the Prime Minister directed the Major Projects Office to develop a Canadian Sovereign Cloud. On 13 November 2025 in Terrace, he named data sovereignty one of four nation-building strategies, alongside energy, critical minerals and trade corridors. On 30 October 2025 in Gyeongju, he signed the Canada–Korea Security and Defence Cooperation Partnership — the first of its kind for Canada in the Indo-Pacific. What has not yet been done is to fuse these decisions into a single, financeable architecture.</p>
 
@@ -216,20 +233,20 @@
 
   <div class="ledger" style="margin: 24px 0;">
     <div class="ledger-item">
-      <h3 class="minor">~950 TWh</h3>
+      <h4>~950 TWh</h4>
       <p>IEA projected global data-centre electricity demand by 2030. The compute bottleneck is electricity, not silicon.</p>
     </div>
     <div class="ledger-item">
-      <h3 class="minor">~75–80%</h3>
+      <h4>&gt;75%</h4>
       <p>Combined Korean (SK Hynix + Samsung) share of high-bandwidth memory — the chokepoint every modern accelerator depends on.</p>
     </div>
     <div class="ledger-item">
-      <h3 class="minor">CAD $0.036/kWh</h3>
+      <h4>CAD $0.036/kWh</h4>
       <p>Hydro-Québec framework rate for flexible long-term loads — the cheapest low-carbon firm electricity in the G7.</p>
     </div>
     <div class="ledger-item">
-      <h3 class="minor">&ldquo;Non, je ne peux pas&rdquo;</h3>
-      <p>Microsoft France before the French Senate, sworn, 10 June 2025 — the United States cannot guarantee allied citizens' data against its own extraterritorial reach.</p>
+      <h4>&ldquo;Non, je ne peux pas&rdquo;</h4>
+      <p>Microsoft France before the French Senate, sworn, 10 June 2025 — a US-parented provider cannot guarantee allied citizens' data against US extraterritorial reach.</p>
     </div>
   </div>
 
@@ -256,7 +273,7 @@
   <p>American grid expansion is not keeping pace with American AI capex. New interconnections in PJM, ERCOT and SPP now run two-to-five years behind hyperscaler requirements. The Stargate joint venture itself — per Bloomberg reporting in August 2025 and The Information in February 2026 — had hired no staff and was renegotiating its three-way structure six months after announcement; original timelines slipped; Oracle and OpenAI moved toward a two-way deal. The capital exists. The compute design exists. The electrons do not.</p>
 
   <h3>Why Korea cannot solve this at home</h3>
-  <p>Korea Electric Power Corporation carried approximately 206 trillion won (US$139 billion) in accumulated debt as of mid-2025. Industrial tariffs were raised 9.7 percent in October 2024 to roughly 182.7 won per kilowatt-hour for the largest users; rates were frozen in Q4 2025 and Q1 2026 on government instruction. Korean business power runs near KRW 173.982 per kilowatt-hour (~USD 13.2¢) against Hydro-Québec's framework rate for qualifying flexible loads near CAD $0.036 (~USD 2.6¢). Korean industrial expansion of compute is therefore a fiscal impossibility for the utility and a fiduciary problem for the chaebol.</p>
+  <p>Korea Electric Power Corporation carried approximately 206 trillion won (US$139 billion) in accumulated debt as of mid-2025. Industrial tariffs were raised 9.7 percent in October 2024 to roughly 182.7 won per kilowatt-hour for the largest users; rates were frozen in Q4 2025 and Q1 2026 on government instruction — KEPCO would otherwise have been forced to cut to negative 13 won per kilowatt-hour given falling fuel costs. Korean business power runs near KRW 173.982 per kilowatt-hour (~USD 13.2¢) against Hydro-Québec's framework rate for qualifying flexible loads near CAD $0.036 (~USD 2.6¢). Korean industrial expansion of compute is therefore a fiscal impossibility for the utility and a fiduciary problem for the chaebol.</p>
   <p class="wp5-src">Sources: IEA, Energy and AI, 10 Apr 2025; Key Questions on Energy and AI, 16 Apr 2026 · OpenAI Stargate announcements, 21 Jan and 23 Sep 2025 · MIT Technology Review, 20 May 2025 · Bloomberg, Aug 2025; The Information, Feb 2026 · Korea Herald, Dec 2025; S&amp;P Global, Oct 2024.</p>
 </section>
 
@@ -281,10 +298,15 @@
     </table>
   </div>
 
-  <p>Counterpoint Research's measures of Korean HBM share blend bit-shipment and revenue methodologies; the combined Korean position consistently lands between 75 and 80 percent of the global market. HBM capacity is sold out across all three suppliers through 2026. Micron projects the HBM total-addressable market rising from approximately US$35 billion (2025) toward US$100 billion by 2028.</p>
+  <p>Counterpoint Research's measures of Korean HBM share blend bit-shipment and revenue methodologies; the combined Korean position consistently lands above 75 percent of the global market. HBM capacity is sold out across all three suppliers through 2026. Micron projects the HBM total-addressable market rising from approximately US$35 billion (2025) toward US$100 billion by 2028.</p>
 
   <h3>The structural vulnerability Korea has admitted</h3>
-  <p>Korea's semiconductor sector is now so concentrated that it has become a national-economic risk in its own right — The Diplomat in November 2025: South Korea's &ldquo;semiconductor dependence is becoming a structural economic risk.&rdquo; The Lee administration has responded with the largest semiconductor industrial policy in Korean history — the K-Semiconductor Strategy targeting roughly US$450 billion in private investment and US$260 billion in tax incentives, the K-Semiconductor Belt cluster, the Yongin mega-cluster, the K-Cloud Strategy and the 4th Basic Plan for Cloud Computing (2025–2027). On 10 December 2025 President Lee chaired &ldquo;K-Semiconductor Vision and Promotion Strategy in the AI Era,&rdquo; committing 4.5 trillion won in public-private investment toward a mutual-growth foundry and a defence-semiconductor self-reliance project.</p>
+  <p>Korea's semiconductor sector is now so concentrated that it has become a national-economic risk in its own right — The Diplomat in November 2025: South Korea's &ldquo;semiconductor dependence is becoming a structural economic risk.&rdquo; Korea has responded with the largest semiconductor industrial policy in its history — the K-Semiconductor Strategy, announced under the Moon administration in May 2021, targeting roughly US$450 billion in private investment and US$260 billion in tax incentives, the K-Semiconductor Belt cluster, the Yongin mega-cluster, the K-Cloud Strategy and the 4th Basic Plan for Cloud Computing (2025–2027). The Lee administration has extended it: on 10 December 2025 President Lee chaired &ldquo;K-Semiconductor Vision and Promotion Strategy in the AI Era,&rdquo; committing 4.5 trillion won in public-private investment toward a mutual-growth foundry and a defence-semiconductor self-reliance project.</p>
+
+  <div class="pull">
+    &ldquo;Our greatest strength has, in a structural sense, become our greatest fragility.&rdquo;
+    <cite>— Paraphrased thesis from The Diplomat, November 2025, on Korean semiconductor concentration</cite>
+  </div>
 
   <h3>Why Korea benefits from a Canadian compute partner</h3>
   <p>Three reasons, in increasing weight. First, Korean ESG-conscious sovereign capital — National Pension Service, Korea Investment Corporation, Korea Investment PE — is now bound by global disclosure standards that make Canadian hydro-powered compute the highest-rated jurisdiction available for AI training emissions. Second, every gigawatt of Korean memory whose downstream offtake is captured inside the United States is a gigawatt of Korean exposure to American export controls, tariff drift and political volatility — diversifying Korean offtake to a jurisdiction with a Canada-Korea Free Trade Agreement (in force since 2015) and a Comprehensive Strategic Partnership (2022) reduces that exposure. Third, the United States already has Stargate. Canada offers Korea what no American site can: equity in a sovereign vehicle, anchor offtake in a CLOUD-Act-free jurisdiction, and a defence-industrial track that runs from submarines to memory to data centres on one continuous strategic line.</p>
@@ -296,7 +318,7 @@
 
   <p><em class="term">The only G7 country with the electrons and the trust profile.</em></p>
 
-  <p>Canada installed approximately 158 gigawatts of generation capacity in 2025, with hydropower at 55 to 60 percent of generation, nuclear at roughly 13.5 percent, and 78 percent of all generation non-emitting. Canada is the world's third-largest hydro producer and second-largest uranium producer. The provincial picture is what matters.</p>
+  <p>Canada&rsquo;s installed generation capacity stood at approximately 158 gigawatts in 2025, with hydropower at 55 to 60 percent of generation, nuclear at roughly 13.5 percent, and 78 percent of all generation non-emitting. Canada is the world's third-largest hydro producer and second-largest uranium producer. The provincial picture is what matters.</p>
 
   <div class="wp5-tablewrap">
     <table class="wp5-t">
@@ -306,7 +328,7 @@
       <tbody>
         <tr><td><strong>Quebec</strong> · Hydro-Québec</td><td>~38 GW · 99% renewable</td><td>CAD $0.036/kWh (framework) · CAD $0.13/kWh DC tariff filed 18 Feb 2026</td><td>~30 g CO₂/kWh</td></tr>
         <tr><td><strong>Ontario</strong> · IESO / OPG / Bruce</td><td>12,844 MW nuclear · +4,800 MW Bruce C pre-development · +1,200 MW Darlington SMR</td><td>~CAD 11–13¢/kWh</td><td>~40 g CO₂/kWh</td></tr>
-        <tr><td><strong>BC</strong> · BC Hydro</td><td>+1,100 MW Site C (FY2026) · ~8,000 GWh/yr export surplus</td><td>CAD ~7¢/kWh industrial · Schedule 1894 DC discount</td><td>~15 g CO₂/kWh</td></tr>
+        <tr><td><strong>BC</strong> · BC Hydro</td><td>+1,100 MW Site C (FY2026)</td><td>CAD ~7¢/kWh industrial · Schedule 1894 DC discount</td><td>~15 g CO₂/kWh</td></tr>
         <tr><td><strong>Manitoba</strong> · Manitoba Hydro</td><td>~8,000 GWh/yr surplus currently exported to US</td><td>Among lowest in N. America</td><td>~5 g CO₂/kWh</td></tr>
         <tr><td><strong>Alberta</strong> · ENMAX / TransAlta</td><td>23,164 MW · coal phased out Jun 2024 · 26% gas cogen · 25% wind</td><td>Market-based</td><td>~300+ g CO₂/kWh</td></tr>
       </tbody>
@@ -314,7 +336,7 @@
   </div>
 
   <h3>Hydro-Québec, the anchor</h3>
-  <p>On 18 February 2026 Hydro-Québec filed a formal new data-centre tariff at CAD 13 cents per kilowatt-hour for facilities above 5 MW, with a separate 19.5-cent rate for blockchain operations and a five-year transition period for existing large-power customers. Hydro-Québec projects sevenfold data-centre growth in the province — from roughly 200 MW today to approximately 1,000 MW by 2035. The framework offering to flexible long-term industrial loads sits near CAD $0.036/kWh, materially below Korean industrial rates and roughly one-third of US PJM industrial.</p>
+  <p>On 18 February 2026 Hydro-Québec filed a formal new data-centre tariff at CAD 13 cents per kilowatt-hour for facilities above 5 MW, with a separate 19.5-cent rate for blockchain operations and a five-year transition period for existing large-power customers. Hydro-Québec projects fivefold data-centre growth in the province — from roughly 200 MW today to approximately 1,000 MW by 2035. The framework offering to flexible long-term industrial loads sits near CAD $0.036/kWh, materially below Korean industrial rates and roughly one-third of US PJM industrial.</p>
 
   <div class="pull">
     These rate adjustments will promote responsible electricity use and ensure we fully realize the value of our energy, taking into account prices elsewhere in North America.
@@ -324,8 +346,8 @@
   <h3>Ontario's nuclear position</h3>
   <p>Ontario operates 12,844 MW of installed nuclear capacity across Bruce, Darlington and Pickering. Bruce Unit 6 returned from refurbishment in September 2023. The Bruce C impact-assessment notice of commencement issued in August 2025 covers up to 4,800 MW of new nuclear. The Darlington SMR programme targets 1,200 MW by 2036, with the BWRX-300 lead unit under construction. The Pickering B refurbishment received approval in January 2024, and OPG initiated environmental review at Wesleyville / Port Hope in January 2026 for up to 10,000 MW of additional nuclear capacity.</p>
 
-  <h3>BC and Manitoba — the stranded surplus</h3>
-  <p>Site C entered service in fiscal 2026 at 1,100 MW and 5.1 TWh per year. BC Hydro's Schedule 1894 — the Clean Industry and Innovation Rate — offers data-centre and clean-fuel customers a transmission-service discount through March 31, 2030, with a 1,500 GWh per year allocation. Manitoba Hydro operates a Surplus Energy Program and exports approximately 8,000 GWh per year to United States wholesale markets at depressed prices — a stranded asset by any reasonable accounting, since Manitoba Hydro itself states publicly that export revenue keeps Manitoban rates roughly 20 percent lower than they would otherwise be. Manitoban electrons are currently subsidising American load. They should be powering Canadian compute instead.</p>
+  <h3>BC and Manitoba — the exported surplus</h3>
+  <p>Site C entered service in fiscal 2026 at 1,100 MW and 5.1 TWh per year. BC Hydro's Schedule 1894 — the Clean Industry and Innovation Rate — offers data-centre and clean-fuel customers a transmission-service discount through March 31, 2030, with a 1,500 GWh per year allocation. Manitoba Hydro operates a Surplus Energy Program and exports approximately 8,000 GWh per year to United States wholesale markets. The exports earn their keep — Manitoba Hydro itself states publicly that export revenue keeps Manitoban rates roughly 20 percent lower than they would otherwise be — but the electrons, and the industrial load they could anchor, leave the country. They should be powering Canadian compute instead.</p>
 
   <div class="pull">
     Canada is the only country in the G7 that combines surplus low-carbon firm electricity, a Korea-trusted political risk profile, and a federal mandate to build sovereign infrastructure. The window in which this combination remains exclusive is short.
@@ -393,8 +415,8 @@
         <tr><td><strong>Security and Defence Cooperation Partnership</strong></td><td>Signed 30 October 2025 · Gyeongju · &ldquo;first of its kind for Canada in the Indo-Pacific&rdquo;</td></tr>
         <tr><td><strong>Classified Information Agreement</strong></td><td>Signed February 2026 · Anand &amp; Cho</td></tr>
         <tr><td><strong>Hanwha Ocean · Algoma Steel MOU</strong></td><td>26 January 2026 · CAD $345 M · Sault Ste. Marie structural-steel mill</td></tr>
-        <tr><td><strong>KOGAS · LNG Canada</strong></td><td>5% stake retained · 700,000 tpy offtake from 2024</td></tr>
-        <tr><td><strong>ROKS Dosan Ahn Chang-ho</strong></td><td>CFB Esquimalt visit 23–24 May 2026 · joint ASW exercises with RCN</td></tr>
+        <tr><td><strong>KOGAS · LNG Canada</strong></td><td>5% stake retained · 700,000 tpy offtake · exports began June 2025</td></tr>
+        <tr><td><strong>ROKS Dosan Ahn Chang-ho</strong></td><td>CFB Esquimalt port visit and combined exercises with the RCN, 23 May–2 June 2026</td></tr>
       </tbody>
     </table>
   </div>
@@ -460,27 +482,27 @@
 
   <p><em class="term">What the standard says, in plain language a council can adopt.</em></p>
 
-  <p>The Canadian Data Sovereignty Standard (CDSS) is the regulatory instrument that makes Sovereign Compute North enforceable rather than aspirational. It can be jointly owned by the Communications Security Establishment and its Canadian Centre for Cyber Security, Treasury Board Secretariat, the Office of the Privacy Commissioner of Canada, the Office québécois de la langue française (for Loi 25 alignment), and the First Nations Information Governance Centre (for OCAP® and Indigenous data sovereignty). It can be exported to Korea, Japan, the European Union, the United Kingdom, Australia, New Zealand and India — countries already moving from data-residency to vendor-domicile rules.</p>
+  <p>The Canadian Data Sovereignty Standard (CDSS) is the regulatory instrument that makes Sovereign Compute North enforceable rather than aspirational. It can be jointly owned by the Communications Security Establishment and its Canadian Centre for Cyber Security, Treasury Board Secretariat, the Office of the Privacy Commissioner of Canada, the Commission d&rsquo;accès à l&rsquo;information du Québec (CAI, for Loi 25 alignment), and the First Nations Information Governance Centre (for OCAP® and Indigenous data sovereignty). It can be exported to Korea, Japan, the European Union, the United Kingdom, Australia, New Zealand and India — countries already moving from data-residency to vendor-domicile rules.</p>
 
   <ol class="wp5-clauses">
     <li>
-      <h3 class="minor">Vendor Domicile.</h3>
+      <h4>Vendor Domicile.</h4>
       <p>For Tier-A data — Crown, citizen, Indigenous, health, electoral, judicial, municipal — the controlling parent entity of the cloud, software-as-a-service, or infrastructure vendor must not be subject to the United States CLOUD Act or any equivalent extraterritorial production-order regime. Place-of-business in Canada is necessary but not sufficient.</p>
     </li>
     <li>
-      <h3 class="minor">Key Custody.</h3>
+      <h4>Key Custody.</h4>
       <p>Encryption keys protecting Tier-A workloads must be held in hardware-security modules physically located in Canada and operated by entities outside CLOUD-Act-equivalent jurisdiction. Split-key and threshold custody between Crown agencies are required for the highest tier. No vendor escrow.</p>
     </li>
     <li>
-      <h3 class="minor">Operations Residency.</h3>
+      <h4>Operations Residency.</h4>
       <p>24/7 site-reliability and administrative operations for Tier-A systems must be staffed by personnel cleared under Canadian law, working from Canadian territory. &ldquo;Follow-the-sun&rdquo; support that exits Canadian jurisdiction is prohibited for Tier-A workloads. The human at the console answers to a Canadian court.</p>
     </li>
     <li>
-      <h3 class="minor">Foreign-Process Notification &amp; Audit.</h3>
+      <h4>Foreign-Process Notification &amp; Audit.</h4>
       <p>The vendor is bound to notify the Canadian customer of any foreign-state legal process directed at the customer's data, to the maximum extent permitted by that foreign law, and to provide a quarterly transparency report. Independent Canadian audit rights are conferred on the Office of the Privacy Commissioner and the Canadian Centre for Cyber Security.</p>
     </li>
     <li>
-      <h3 class="minor">Indigenous Data Sovereignty.</h3>
+      <h4>Indigenous Data Sovereignty.</h4>
       <p>Tier-A data concerning First Nations, Métis or Inuit communities is governed under OCAP® principles (Ownership, Control, Access, Possession) as maintained by the First Nations Information Governance Centre, and under CARE principles (Collective Benefit, Authority to Control, Responsibility, Ethics). Indigenous communities determine their own residency, custody and access regimes; the Crown sovereign cloud accommodates rather than overrides.</p>
     </li>
   </ol>
@@ -496,7 +518,7 @@
 
   <h3>For the Minister of Innovation, Science and Industry &amp; the Minister of AI and Digital Innovation</h3>
   <ol>
-    <li><strong>Publish the Canadian Data Sovereignty Standard (CDSS) in Q3 2026</strong>, drafted jointly with CSE/Cyber Centre, TBS, OPC, FNIGC and OQLF, binding Tier-A federal procurement to non-CLOUD-Act-jurisdiction vendors with explicit vendor-domicile, key-custody and operations-residency clauses.</li>
+    <li><strong>Publish the Canadian Data Sovereignty Standard (CDSS) in Q3 2026</strong>, drafted jointly with CSE/Cyber Centre, TBS, OPC, FNIGC and the CAI, binding Tier-A federal procurement to non-CLOUD-Act-jurisdiction vendors with explicit vendor-domicile, key-custody and operations-residency clauses.</li>
     <li><strong>Direct the Major Projects Office to designate a flagship Sovereign Compute Campus</strong> and run an open RFP under the CDSS for a Korea-led, Canadian-controlled consortium.</li>
     <li><strong>Use the existing $2 billion Sovereign AI Compute Strategy budget to anchor a first 200 MW phase by FY 2027</strong>, with a defined trigger to expand to 1 GW once Korean HBM4/HBM4E offtake is secured and Canadian-domiciled inference-grade silicon partners are identified.</li>
   </ol>
@@ -514,7 +536,7 @@
   <ol>
     <li><strong>Run a Hamilton stress test within 90 days:</strong> catalogue every workload whose loss or exfiltration would exceed CAD $5 million to recover, and identify which are hosted on CLOUD-Act-jurisdiction vendors.</li>
     <li><strong>Insist that the federal CDSS include a municipal procurement schedule.</strong> Without it, municipalities will continue procuring CLOUD-Act-exposed platforms because Buy Canadian alone does not forbid it.</li>
-    <li><strong>Treat Canadian-domiciled application vendors as the default candidate stack</strong> for citizen-facing workflows once a CDSS-compliant Canadian Sovereign Cloud is operational.</li>
+    <li><strong>Treat Canadian-domiciled application vendors (Fit For Gov and peers) as the default candidate stack</strong> for citizen-facing workflows once a CDSS-compliant Canadian Sovereign Cloud is operational.</li>
   </ol>
 
   <h3>For sovereign wealth and pension counterparts — NPS, KIC, KIPE, CPPIB, CDPQ, BCI, Alberta Heritage, GPIF, Future Fund</h3>
@@ -531,22 +553,22 @@
 
   <p>A working paper that does not name its own load-bearing assumptions is not a working paper; it is a press release. The following caveats are the points at which this thesis is most exposed to disconfirmation.</p>
 
-  <h3 class="minor">A · The 13¢/kWh tariff is not yet approved</h3>
+  <h4>A · The 13¢/kWh tariff is not yet approved</h4>
   <p>Hydro-Québec's data-centre tariff was filed on 18 February 2026 and is pending Régie de l'énergie approval. Existing customers face a five-year transition. The CAD $0.036/kWh framework rate cited throughout this paper is Hydro-Québec's framework offering to qualifying flexible long-term industrial loads; it is not the published standard industrial tariff and qualification is non-trivial. If the Régie modifies or rejects the filing, the Quebec anchor case weakens.</p>
 
-  <h3 class="minor">B · HBM share figures are methodology-sensitive</h3>
-  <p>Counterpoint Research's HBM share measures shift between bit-shipment and revenue methodologies. The combined Korean position (~75–80%) is robust across methodologies; the SK Hynix vs. Samsung split within that range is not. The &ldquo;~95% Korean HBM&rdquo; figure that circulates in some advocacy material is not supported by current data and should not be used.</p>
+  <h4>B · HBM share figures are methodology-sensitive</h4>
+  <p>Counterpoint Research's HBM share measures shift between bit-shipment and revenue methodologies. The combined Korean position (more than 75 percent) is robust across methodologies; the SK Hynix vs. Samsung split within that range is not. The &ldquo;~95% Korean HBM&rdquo; figure that circulates in some advocacy material is not supported by current data and should not be used.</p>
 
-  <h3 class="minor">C · Stargate execution risk is real but cuts both ways</h3>
+  <h4>C · Stargate execution risk is real but cuts both ways</h4>
   <p>The reported staffing and structural difficulties at Stargate (Bloomberg, August 2025; The Information, February 2026) are real and ongoing. This is good news for the Sovereign Compute North case — US compute is harder to build than announced — but does not change the underlying fact that ~7 GW and $400 billion-plus of US compute has been committed and is breaking ground. Do not assume Stargate disappears.</p>
 
-  <h3 class="minor">D · &ldquo;Outside US dependence&rdquo; is partial, not total</h3>
+  <h4>D · &ldquo;Outside US dependence&rdquo; is partial, not total</h4>
   <p>Nvidia and AMD GPUs, ASML EUV lithography, and large portions of the cloud-software stack remain US-or-allied-controlled. Sovereign Compute North reduces jurisdictional exposure (CLOUD Act, Section 702 FISA, export-control reach) and power-cost exposure. It does not eliminate technology supply-chain exposure to the United States. The honest framing is &ldquo;additionally sovereign,&rdquo; not &ldquo;decoupled.&rdquo;</p>
 
-  <h3 class="minor">E · The Carniaux testimony is narrow</h3>
+  <h4>E · The Carniaux testimony is narrow</h4>
   <p>Microsoft France's 10 June 2025 admission was on the specific question of whether French data could be guaranteed against US lawful process. Microsoft has stated separately that it litigates and minimises such requests. The legal point — that CLOUD Act jurisdiction reaches data held by US-parent entities regardless of physical location — is uncontested by Microsoft, AWS or Google, and was effectively reiterated by AWS in its July 2025 &ldquo;Five Facts&rdquo; response. Treat the testimony as load-bearing for vendor-domicile arguments; do not extend it beyond its actual scope.</p>
 
-  <h3 class="minor">F · The municipal sovereignty case is normative</h3>
+  <h4>F · The municipal sovereignty case is normative</h4>
   <p>The City of Hamilton's $18.3 million ransomware recovery is fact. The inference that a Crown-anchored sovereign cloud would have prevented or cheapened that recovery is an argument, not a proof. The evidentiary anchor is that Hamilton's insurer denied coverage on a control deficiency (incomplete MFA deployment) and that the affected workloads ran on commodity infrastructure under foreign jurisdiction. The argument extrapolates from there.</p>
 </section>
 
@@ -554,7 +576,7 @@
 
 <section>
   <h2>Engage with this Working Paper</h2>
-  <p>Substantive comment, technical critique, and named response are welcomed. The PDF above is the canonical v1.0 release; this reading view carries the full text. The author commits to public correction of any factual error within seventy-two hours of notification.</p>
+  <p>Substantive comment, technical critique, and named response are welcomed. The PDF above is the canonical v1.0 release; this reading view carries the full text with the v1.0.1 errata listed above. Apart from those errata and minor editorial changes, the PDF governs. The author commits to public correction of any factual error within seventy-two hours of notification.</p>
   <div class="wp-card-actions">
     <a class="btn" href="/engage/">Read Engagement Standards</a>
     <a class="btn btn-bronze" href="mailto:editor@npsi.ca?subject=NPSI%20WP5%20Named%20Commentary">Submit Named Commentary</a>
