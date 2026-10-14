@@ -7,9 +7,9 @@ citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle,
 TechArticle, Report, or PublicationIssue) for machine citation. Document IDs follow NPSI-WP-NNN for
 working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
 notes, NPSI-SB-NNN for special briefings, and NPSI-PL-NNN for The Pacific
-Ledger (the Canada–Korea account). Special Briefings Nos. 4, 5 and 6 and Ledger
-№02 keep the date-based IDs printed on their releases (NPSI-20261003-B,
-NPSI-20261003-C, NPSI-20261002-A, NPSI-20261001-A): these are accession numbers,
+Ledger (the Canada–Korea account). Special Briefings Nos. 4, 5, 6 and 8 and
+Ledger №02 keep the date-based IDs printed on their releases (NPSI-20261003-B,
+NPSI-20261003-C, NPSI-20261002-A, NPSI-20260920-B, NPSI-20261001-A): these are accession numbers,
 assigned at intake; a publication serial is assigned by the editor alone and is
 pending for each. The full register of
 identifiers is https://npsi.ca/register/ (machine-readable: https://npsi.ca/registry.json).
@@ -43,6 +43,7 @@ Cite the canonical URLs below.
 
 ## Special Briefings
 
+- [SB8 — The Authored State](https://npsi.ca/sb8/): A testimony in seven exhibits, on institutions written by foreigners and defended by locals — Lebanon's 1932 census and its banks; Iraq, Bosnia, Northern Ireland, Cyprus and Rwanda on the same blueprint; France audited as an author (the Seversk loop in its fuel cycle, its pensions, its ratings); three of the author's own claims withdrawn against the documents; Hormuz and Bab al-Mandeb in 2026; Radcliffe's line and the Indus; and the reader's own inflation target, pension and reserve currency. ID NPSI-20260920-B (accession; serial pending). v1.0, dated 19 September 2026, released 14 October 2026 with pre-publication corrections applied. PDF (printed from the reading view, 43 pp.): https://npsi.ca/sb8/special-briefing.pdf
 - [SB6 — The Walk-Away Price](https://npsi.ca/sb6/): What Seoul's right to refuse a project in its $200 billion US strategic-investment commitment is worth, and what Alaska LNG will charge for it — the MOU's funding clause quoted whole (the refusal right, the claw-back of Korea's returns equal to the unfunded amount, and an uncapped tariff remedy), the $20 billion annual cap and Korea's Special Act, the Supreme Court's February 2026 ruling that moved any tariff penalty from a presidential post to a Section 301 docket or the Section 232 auto rate, and the reactor advance of up to $10 billion as the one moment where a refusal buys something money cannot. Accession NPSI-20261002-A (serial pending). v1.0, dated 2 October 2026, published 14 October 2026 with pre-publication corrections applied. PDF (printed from the reading view, 27 pp.): https://npsi.ca/sb6/special-briefing.pdf
 - [SB5 — One Day, Four Names](https://npsi.ca/sb5/): What Tokyo, Seoul, Pyongyang and Washington each decided to call 15 August 1945, and the subject every name leaves out — six official names for one ending, each a sentence with a subject removed, read against the documents of 1945 (Stalin's message of 16 August accepting the order that split Korea, the refused line across Hokkaido, the three documents behind the 38th-parallel legend) and the speeches of 15 August 2026. ID NPSI-20261003-C. v1.0.1, 3 October 2026 (corrected 4 October). PDF (canonical, dark edition): https://npsi.ca/sb5/special-briefing.pdf · cream edition for print: https://npsi.ca/sb5/special-briefing-print.pdf
 - [SB4 — The Tollgate Markets](https://npsi.ca/sb4/): Where breaking the rules costs a fee instead of a future — Turkey's 131 liquidated funds and 455,758 investors against a 2025 fine book of TRY 2.69 billion (about 1% of one fund), a seventeen-market ladder of enforcement in practice (the gain nobody measures, the fine nobody collects, the trial that never comes), and the Tollgate Test: five signs and four numbers to ask any regulator for. ID NPSI-20261003-B. v1.0.1, 3 October 2026 (corrected 4 October). PDF (canonical): https://npsi.ca/sb4/special-briefing.pdf

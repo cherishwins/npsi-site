@@ -242,6 +242,26 @@
       "superseded_by": null
     },
     {
+      "line": "SB",
+      "number": 8,
+      "serial": null,
+      "accession": "NPSI-20260920-B",
+      "folder": "sb8",
+      "url": "/sb8/",
+      "title": "The Authored State",
+      "subtitle": "A testimony in seven exhibits, on institutions written by foreigners and defended by locals.",
+      "version": "v1.0",
+      "released": "2026-10-14",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb8/special-briefing.pdf",
+      "files": [
+        "/sb8/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
       "line": "TB",
       "number": 1,
       "serial": "NPSI-TB-001",

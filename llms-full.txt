@@ -13,9 +13,10 @@ Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
 briefings), NPSI-PL-NNN (The Pacific Ledger, the Canada–Korea account); Special
-Briefings Nos. 4, 5 and 6 and Ledger №02 keep the date-based IDs printed on
-their releases (NPSI-20261003-B, NPSI-20261003-C, NPSI-20261002-A,
-NPSI-20261001-A), accession numbers whose publication serials are pending. Every document has an HTML page at its
+Briefings Nos. 4, 5, 6 and 8 and Ledger №02 keep the date-based IDs printed
+on their releases (NPSI-20261003-B, NPSI-20261003-C, NPSI-20261002-A,
+NPSI-20260920-B, NPSI-20261001-A), accession numbers whose publication
+serials are pending. Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
 PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
 canonical release document; WP10 and SB3 have release pages rather than full
@@ -389,6 +390,45 @@ territorial privacy law retroactive to 2000, leaving voters no right of access
 or correction, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
+
+## Special Briefing No. 8 — The Authored State
+
+- ID: NPSI-20260920-B (accession number; serial pending the editor's ruling) · v1.0 · dated 19 September 2026; released 14 October 2026 with pre-publication corrections applied
+- Canonical: https://npsi.ca/sb8/ (reading view) · PDF (43 pp., printed from the reading view): https://npsi.ca/sb8/special-briefing.pdf
+- Keywords: authored institutions, consociationalism, Lebanon, Iraq, Bosnia, Northern Ireland, Cyprus, Rwanda, France, nuclear fuel cycle, Rosatom, Strait of Hormuz, Bab al-Mandeb, Indus Waters Treaty, Radcliffe Line, Social Security, reserve currency, inflation targeting
+- Notes: a signed briefing written in the first person, with judgements marked as the author's; carries an interest note for the editor's declared energy-sector work (https://npsi.ca/disclosure/) and states its AI drafting assistance in the metadata block. Four inline figures (a table of the six settlements and two controls; IEA's August 2026 Hormuz count; France's "Unspecified" uranium line 2019–2024; VLCC earnings, September 2026). The page lists the corrections applied before release and the claims not re-verified. No. 7 in this line is reserved for a document whose source has not arrived.
+
+Abstract: An outside power writes the rules by which a country governs
+itself and goes home; the formula hardens because a local class finds that
+the broken system guarantees its position. The evidence is set out as
+testimony in seven exhibits: Lebanon's 1932 census and its banks; Iraq,
+Bosnia, Northern Ireland, Cyprus and Rwanda; France audited as an author,
+from its nuclear fuel cycle to its pensions; three of the author's claims
+withdrawn; Hormuz and Bab al-Mandeb in 2026; Radcliffe's line and the Indus;
+and the reader's own inflation target, pension and reserve currency. The
+finding is narrow: fix identity into the distribution of power and you
+manufacture a class that defends the formula after it has stopped defending
+anyone else.
+
+Key findings: Lebanon has not counted itself since 1932; the 1926
+constitution came first and the census supplied the ratios; financial losses
+exceed $72 billion, more than three times 2021 GDP, and were never allocated;
+the central bank holds about $11.7 billion in foreign currency against a
+draft law that would repay $22 billion to small depositors. Iraq, Bosnia,
+Northern Ireland, Cyprus and Rwanda had identity written into their rules by
+an outside author (fixed ratios, ethnic offices, an unwritten quota, a
+community designation, a card); Iraq took 382 days to form a government in
+2022 and Northern Ireland's Executive had spent 41.5 percent of its
+existence collapsed by July 2023; Germany and Japan, the controls, count
+citizens. France's reprocessed uranium is re-enriched at scale only at
+Seversk; the EU left nuclear fuel out of sanctions with French support;
+Russia supplied 26 to 31 percent of EU utilities' enrichment services in
+2020–22. Three of the author's claims are withdrawn: there was no 1974
+petrodollar treaty; the IEA puts Gulf output shut in near 10 million barrels
+a day, with Hormuz flows at 7.6 million in August 2026; France's
+"Unspecified" uranium import line existed from 2020. Houthi forces took
+Mocha and Perim Island on 10–11 September 2026, and the Baltic Exchange's
+VLCC Gulf-to-China assessment reached $1.21 million a day on 17 September.
 
 ## Special Briefing No. 6 — The Walk-Away Price
 
