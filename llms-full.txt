@@ -17,8 +17,9 @@ Special Briefings Nos. 4 and 5 keep the date-based IDs printed on their
 releases (NPSI-20261003-B, NPSI-20261003-C). Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
 PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
-canonical release document; WP10, SB3, SB4 and SB5 have release pages rather
-than full reading views. Editor: Jesse James
+canonical release document; WP10 and SB3 have release pages rather than full
+reading views; SB4 and SB5 carry full reading views ported from their corrected
+releases on 14 October 2026. Editor: Jesse James
 (editor@npsi.ca). Numbering is the author's: WP6 and WP8 are unreleased, so the
 archive carries intentional gaps at 6 and 8.
 
@@ -340,7 +341,7 @@ record is fictional and labelled as such.
 - ID: NPSI-20261003-C (as printed on the release) · v1.0.1 · issued 3 October 2026; corrected edition 4 October 2026
 - Canonical: https://npsi.ca/sb5/ · PDF (29 pp., canonical, dark edition): https://npsi.ca/sb5/special-briefing.pdf · cream edition for print: https://npsi.ca/sb5/special-briefing-print.pdf
 - Keywords: 15 August 1945, Korea, Japan, 38th parallel, commemoration, official names, liberation, division, Gwangbokjeol, V-J Day, FRUS
-- Notes: written in the first person, with passages of opinion marked as such; carries an interest note (the editor's declared Korean-reunification advocacy, https://npsi.ca/disclosure/) and states its AI drafting assistance in the colophon.
+- Notes: written in the first person, with passages of opinion marked as such; carries an interest note (the editor's declared Korean-reunification advocacy, https://npsi.ca/disclosure/) and states its AI drafting assistance in the colophon. The page carries the full reading view (ten sections, eleven figures, open items, sources and corrections), ported from the v1.0.1 release on 14 October 2026; the PDF remains the canonical release.
 
 Abstract: The war in the Pacific ended once. It has at least six official
 names, and none of them is neutral. Each name is a sentence with a subject
@@ -376,7 +377,7 @@ says who drew the line across Korea. Germany, through Weizsäcker's address of
 - ID: NPSI-20261003-B (as printed on the release) · v1.0.1 · issued 3 October 2026; corrected edition 4 October 2026
 - Canonical: https://npsi.ca/sb4/ · PDF (24 pp., canonical, dark edition): https://npsi.ca/sb4/special-briefing.pdf
 - Keywords: market manipulation, securities enforcement, collection rates, investment funds, Turkey, Capital Markets Board, effective repentance, emerging markets, regulatory capacity
-- Notes: allegations reported as allegations; no court had ruled on guilt in the Turkish cases as of 4 October 2026. States its AI drafting assistance on the back cover.
+- Notes: allegations reported as allegations; no court had ruled on guilt in the Turkish cases as of 4 October 2026. States its AI drafting assistance on the back cover. The page carries the full reading view (eleven sections, fourteen figures, the ladder, the Tollgate Test, the author's signed note, open items, sources and corrections), ported from the v1.0.1 release on 14 October 2026; the PDF remains the canonical release.
 
 Abstract: On 17 September 2026 Turkey's Capital Markets Board ordered 131
 investment funds into liquidation in a single day; inside them sat the savings
