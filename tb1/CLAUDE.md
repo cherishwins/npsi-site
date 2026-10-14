@@ -18,10 +18,10 @@ The first of the **Technical Briefings** — a companion line to the Working Pap
 
 - Subject: sensing, certainty, and the law of automated airspace awareness — computer-vision and sensor-fusion state of the art 2025–2026 for monitoring a defined airspace volume.
 - Signature element: the **verification ledger** — seven conditions (class, size, altitude, kinematics, window, geofence, persistence) that must all pass before any action fires; two-sensor corroboration as the industry standing rule.
-- Benchmark honesty: Anti-UAV410 state accuracy plateaued in the low-to-mid 60s since 2023; CST Anti-UAV (realistic tiny targets) best method 35.92% — realistic small-and-distant performance is roughly half of headline performance.
+- Benchmark honesty: Anti-UAV410 state accuracy plateaued in the mid-to-high 60s since 2023 (67.7% in 2023; 2025 methods 64–67%; corrected from "low-to-mid 60s" in v1.0.1); CST Anti-UAV (realistic tiny targets) best method 35.92% — realistic small-and-distant performance is roughly half of headline performance. Note 6 places Grounding DINO 1.5 Edge's 36.2 zero-shot AP on LVIS-minival (not COCO).
 - Legal line (Canada): detection, tracking, evidence, and notification are lawful for civil operators; jamming/spoofing (Radiocommunication Act ss. 4(4), 9(1)(b)), takeover (Criminal Code ss. 342.1–342.2), and physical downing (Aeronautics Act, CARs Part IX) are not. Transport Canada NPA 2026-005 (8 June 2026) proposes mandatory Remote ID on ASTM F3411; comment window to 9 September 2026.
 - Register: technical and regulatory survey, explicitly not legal advice (standing caveat block); no first person; conservative forecast framing ("treat a breakout as upside, never as the plan").
-- Author: Jesse James; v1.0 published 11 June 2026. PDF: `tb1/technical-briefing.pdf` (direct download, no email gate). OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
+- Author: Jesse James; v1.0 published 11 June 2026; **v1.0.1, 14 October 2026** (errata: the plateau phrase, note 6's benchmark, the series index retitled "Series Index at Release, 11 June 2026" with WP5 added and a link to the archive). PDF: `tb1/technical-briefing.pdf` is author-supplied (pypdf producer) and stands as issued at v1.0; the page carries a dated erratum note. OG card `assets/img/tb1-og.svg/.png` follows the WP pipeline.
 
 
 ## Open review items

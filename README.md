@@ -103,8 +103,8 @@ Selection is based on editorial merit — not on agreement with the thesis.
 
 | | Licence |
 |---|---|
-| Working paper text | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — share, adapt, build upon, including commercially, with attribution |
-| Site source code | MIT |
+| Working paper text | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — share, adapt, build upon, including commercially, with attribution (see [CONTENT-LICENSE.md](CONTENT-LICENSE.md)) |
+| Site source code | [MIT](LICENSE) |
 | Figures | CC-BY-4.0 unless otherwise noted on the figure |
 | NPSI wordmark and visual identity | Not licensed; not for re-use. |
 

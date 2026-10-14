@@ -78,15 +78,15 @@
 
   <!-- Bottom callout: today's split, with the trajectory inversion narrative -->
   <g transform="translate(40, 420)">
-    <text x="0" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CURRENT AI COMPUTE SPLIT · TRAJECTORY INVERTS BEFORE 2030</text>
+    <text x="0" y="0" class="mono" font-size="9.5" letter-spacing="2" fill="#C08D60">CURRENT AI COMPUTE SPLIT · INFERENCE PASSES TRAINING BEFORE 2030</text>
 
-    <!-- 20% inference (navy) | 80% training (bronze hatch background) -->
-    <rect x="0"   y="10" width="128" height="22" fill="#F4EFE3"/>
-    <rect x="128" y="10" width="512" height="22" fill="#0F2A44" stroke="#C08D60" stroke-width="0.5"/>
-    <line x1="128" y1="10" x2="128" y2="32" stroke="#133150" stroke-width="1"/>
+    <!-- ~48% inference (cream) | ~52% training (navy); 23 GW training to 21 GW inference baseline -->
+    <rect x="0"   y="10" width="307" height="22" fill="#F4EFE3"/>
+    <rect x="307" y="10" width="333" height="22" fill="#0F2A44" stroke="#C08D60" stroke-width="0.5"/>
+    <line x1="307" y1="10" x2="307" y2="32" stroke="#133150" stroke-width="1"/>
 
-    <text x="64"  y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#0F2A44" text-anchor="middle">~20% INFERENCE</text>
-    <text x="384" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">~80% &#160; TRAINING (TODAY) → INFERENCE BECOMES MAJORITY BY 2030</text>
+    <text x="153" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#0F2A44" text-anchor="middle">~48% INFERENCE (TODAY)</text>
+    <text x="473" y="26" class="mono" font-size="11" letter-spacing="1.5" fill="#F4EFE3" text-anchor="middle">~52% TRAINING → INFERENCE ≈60% BY 2030</text>
   </g>
 
   <!-- Footer rule and source -->

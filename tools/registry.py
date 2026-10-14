@@ -329,18 +329,22 @@ DOC_NAV = re.compile(r'\n?<!-- doc-nav -->.*?<!-- /doc-nav -->\n?', re.S)
 MAIN_OPEN = '<main id="main" tabindex="-1">\n'
 
 
+def nav_label(x: dict) -> str:
+    return f'No. {x["number"]}' if x["line"] != "PL" else f'№ {x["number"]:02d}'
+
+
 def doc_nav_html(d: dict, prev: dict | None, nxt: dict | None) -> str:
     line = LINES[d["line"]]
     crumb_index = f'<a href="{line["index"]}">{esc(line["name"])}</a>'
-    here = f'No. {d["number"]}' if d["line"] != "PL" else f'№ {d["number"]:02d}'
+    here = nav_label(d)
     parts = [f'<div class="doc-nav-crumb"><a href="/">NPSI</a> <span aria-hidden="true">›</span> '
              f'{crumb_index} <span aria-hidden="true">›</span> <span aria-current="page">{here}</span></div>']
     links = []
     if prev:
         links.append(f'<a rel="prev" href="{prev["url"]}"><span aria-hidden="true">←</span> '
-                     f'No. {prev["number"]} · {esc(prev["title"])}</a>')
+                     f'{nav_label(prev)} · {esc(prev["title"])}</a>')
     if nxt:
-        links.append(f'<a rel="next" href="{nxt["url"]}">No. {nxt["number"]} · {esc(nxt["title"])} '
+        links.append(f'<a rel="next" href="{nxt["url"]}">{nav_label(nxt)} · {esc(nxt["title"])} '
                      f'<span aria-hidden="true">→</span></a>')
     if links:
         parts.append('<div class="doc-nav-links">' + "".join(links) + "</div>")
@@ -453,7 +457,7 @@ def item_html(d: dict, line: str) -> str:
     sub = f"\n      <p>{esc(d['subtitle'])}</p>" if d["subtitle"] else ""
     return f"""    <div class="ledger-item">
       <div class="wp-card-meta">{esc("  ·  ".join(meta))}</div>
-      <h4><a href="{d["url"]}">{esc(d["title"])}</a></h4>{sub}
+      <h3 class="minor"><a href="{d["url"]}">{esc(d["title"])}</a></h3>{sub}
       <p class="index-files">{" · ".join(files)}</p>
     </div>"""
 
@@ -590,15 +594,15 @@ def render_register(reg: dict) -> str:
 <section id="rules">
   <h2>How numbers are assigned</h2>
   <div class="standard">
-    <h4>Serials are the editor’s alone.</h4>
+    <h3 class="minor">Serials are the editor’s alone.</h3>
     <p>No serial is assigned by anyone or anything other than the editor, and none is assigned before publication. A document released before its serial is assigned carries its accession number and is listed here as <em>serial pending</em> until the editor rules.</p>
   </div>
   <div class="standard">
-    <h4>Accession numbers are permanent.</h4>
+    <h3 class="minor">Accession numbers are permanent.</h3>
     <p>The accession number records the date a document entered the system and distinguishes documents that entered the same day by a letter suffix. It never changes, even after a serial is assigned, and it is printed on the release.</p>
   </div>
   <div class="standard">
-    <h4>Gaps are declared.</h4>
+    <h3 class="minor">Gaps are declared.</h3>
     <p>A number that was reserved and never released stays on the register as such. The archive is ordered by publication date; the register is ordered by number. Both are kept.</p>
   </div>
 </section>
@@ -614,7 +618,46 @@ def compact_item(d: dict) -> str:
     if d["status"] == "superseded":
         meta += "  \u00b7  Superseded"
     return (f'    <div class="ledger-item">\n      <div class="wp-card-meta">{esc(meta)}</div>\n'
-            f'      <h4><a href="{d["url"]}">{esc(d["title"])}</a></h4>\n    </div>')
+            f'      <h3 class="minor"><a href="{d["url"]}">{esc(d["title"])}</a></h3>\n    </div>')
+
+
+def commentary_row(d: dict) -> str:
+    """One row of the commentary table: document, release, version, status."""
+    tag = {"WP": "WP No.", "TB": "TB No.", "BN": "BN No.", "SB": "SB No.", "PL": "Ledger \u2116"}[d["line"]]
+    label = f"{tag} {d['number']}"
+    version = f"<code>{esc(d['version'])}</code>" if d["version"] else "\u2014"
+    if d["status"] == "superseded" and d["superseded_by"]:
+        status = f"Collected under {esc(d['superseded_by'].upper())}"
+    else:
+        status = "Open for submission"
+    return (f'      <tr>\n        <td class="num">{esc(label)}</td>\n'
+            f'        <td><a href="{d["url"]}">{esc(d["title"])}</a></td>\n'
+            f'        <td>{esc(nice_date(d["released"]))}</td>\n'
+            f'        <td>{version}</td>\n'
+            f'        <td>{status}</td>\n      </tr>')
+
+
+def render_commentary_table(reg: dict) -> int:
+    """Refresh the single table on /commentary/ between its markers: every
+    document in home-page order (working papers by date, then the briefings
+    and the Ledger), with its version and whether commentary is open."""
+    p = ROOT / "commentary" / "index.html"
+    s = p.read_text(encoding="utf-8")
+    docs = reg["documents"]
+    order = (by_date(d for d in docs if d["line"] == "WP")
+             + by_date(d for d in docs if d["line"] in ("SB", "TB", "BN"))
+             + by_date(d for d in docs if d["line"] == "PL"))
+    body = ('  <div class="register-wrap">\n    <table class="register commentary">\n      <thead>\n'
+            '        <tr><th>Document</th><th>Title</th><th>Released</th><th>Version</th><th>Commentary</th></tr>\n'
+            '      </thead>\n      <tbody>\n' + "\n".join(commentary_row(d) for d in order)
+            + '\n      </tbody>\n    </table>\n  </div>')
+    rx = re.compile(r"<!-- commentary-table -->.*?<!-- /commentary-table -->", re.S)
+    s, k = rx.subn(lambda m: f"<!-- commentary-table -->\n{body}\n<!-- /commentary-table -->", s, count=1)
+    if k != 1:
+        print("WARN commentary/index.html: commentary-table markers not found")
+    p.write_text(s, encoding="utf-8")
+    print(f"commentary: table refreshed ({len(order)} rows)")
+    return 0
 
 
 def render_home_lists(reg: dict) -> int:
@@ -644,6 +687,7 @@ def render_home_lists(reg: dict) -> int:
 def render() -> int:
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     render_home_lists(reg)
+    render_commentary_table(reg)
     pages = {
         "papers": ("/papers/", "Working Papers",
                    "Every NPSI working paper, by publication date: the current paper, the archive, and the numbering.",

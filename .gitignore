@@ -14,3 +14,6 @@
 # Node (defensive — we don't ship a build, but if a future tool adds one)
 node_modules/
 .vercel
+
+# Agent worktrees (session-local)
+.claude/worktrees/

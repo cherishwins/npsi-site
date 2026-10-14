@@ -7,7 +7,7 @@
 ```
 ├── sb3/
 │   ├── index.html                   Special Briefing No. 3 — *The Ledger With One Entry* — release page (PDF canonical)
-│   └── special-briefing.pdf         canonical v1.0 release (39 pp., direct download; PDF carries the author's serial placeholder, NPSI-SB-003 assigned at site publication)
+│   └── special-briefing.pdf         canonical v1.0 release (39 pp., direct download; PDF carries the author's serial placeholder, NPSI-SB-003 assigned at site publication; stands as issued under page v1.0.1)
 ```
 
 ## Canonical facts
@@ -21,7 +21,8 @@ Accountability audit, integrated 29 July 2026 as a **PDF-first release page** (`
 - **The benchmark:** four custody regimes scored (Iraq OFF/DFI, Libya, Iran/Qatar 2023 — the $6bn moved from restricted accounts *in South Korea* — and Venezuela); Venezuela is the least accountable; the most accountable (Iraq, with UN mandate + monitoring board + published audits) still lost $8.8bn (SIGIR).
 - **The Pacific relevance is the paper's own:** the intervention redirected rather than interrupted the oil (1.23m b/d April 2026, highest since 2018); Shandong's independent refiners were the largest single loser — the paper names this "the Pacific consequence." Do not bolt on additional Korea–Canada framing; the companions row (WP9, WP1, SB1) carries the thesis link.
 - **Method register:** every material claim confidence-rated; both governments flagged as interested parties; corrections appendix on the public commentaries explicitly "not a rebuttal"; four named unclassified documents that would settle the accounting.
-- Author: Jesse James; v1.0 issued 26 July 2026, reporting cut-off 22 July 2026. OG card is the author-supplied PNG (`assets/img/sb3-og.png`, no SVG source).
+- Author: Jesse James; v1.0 issued 26 July 2026, reporting cut-off 22 July 2026; **page v1.0.1, 14 October 2026** (share card rebuilt; interest note added; text and PDF unchanged). OG card: `assets/img/sb3-og.svg` (source, built 14 October 2026 on the sb2-og.svg template, 1200×630) rendered to `assets/img/sb3-og.png` with `tools/render-og.sh`; it carries `NPSI-SB-003` and "~$13bn estimated". The earlier author-supplied PNG (2400×1260, serial placeholder, "$13,000m collected") is retired.
+- Declared interest (D9, October 2026): the page carries an `aside.standard` interest note — the editor's energy-facilitation work touches the subject (oil custody); the firm is never named. Keep the note when editing the page.
 
 
 ## Open review items

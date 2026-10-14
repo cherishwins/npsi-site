@@ -46,53 +46,53 @@
 
 <style>
   /* Page-scoped components — sb5- prefixed, tokens only. */
-  .sb5-tablewrap { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.sb5-t { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; min-width: 540px; }
-  table.sb5-t th {
+  .sb5-tablewrap  { margin: 24px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.sb5-t  { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; min-width: 540px; }
+  table.sb5-t th  {
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal);
     text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--bronze);
   }
-  table.sb5-t td { padding: 11px 12px 11px 0; vertical-align: top; border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink); }
-  table.sb5-t tr:last-child td { border-bottom: none; }
-  table.sb5-t td strong { color: var(--navy); font-weight: 600; }
-  table.sb5-t td small { display: block; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 2px; }
-  table.sb5-t td .orig { font-family: var(--font-kr); font-size: 15px; color: var(--navy); display: block; }
-  table.sb5-t td .rom { font-style: italic; color: var(--ink-soft); display: block; font-size: 12.5px; }
-  .sb5-route { font-size: 14.5px; line-height: 1.5; margin: 0 0 12px; }
-  .sb5-src { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--ink-soft); margin: 14px 0 0; letter-spacing: 0; }
-  .sb5-side { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; margin: 22px 0; }
-  .sb5-side > div, .sb5-note { background: var(--paper); border: 0.5px solid var(--rule); padding: 16px 20px; }
-  .sb5-note { margin: 22px 0; }
-  .sb5-side .k, .sb5-note .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
-  .sb5-side p, .sb5-note p { font-size: 14.5px; line-height: 1.5; margin: 0 0 8px; }
-  .sb5-side p:last-child, .sb5-note p:last-child { margin-bottom: 0; }
-  .sb5-side .big { font-family: var(--font-mono); font-size: 26px; color: var(--bronze); margin: 0 0 4px; line-height: 1.1; }
-  .sb5-side .big small { font-size: 11px; letter-spacing: 0.16em; color: var(--ink-soft); margin-left: 6px; }
-  ol.sb5-list { list-style: none; margin: 20px 0 0; padding: 0; counter-reset: fb; }
-  ol.sb5-list li { counter-increment: fb; position: relative; border-top: 0.5px solid var(--rule); padding: 14px 0 14px 48px; margin: 0; font-size: 15px; line-height: 1.55; }
-  ol.sb5-list li:last-child { border-bottom: 0.5px solid var(--rule); }
-  ol.sb5-list li::before { content: counter(fb, decimal-leading-zero); position: absolute; left: 0; top: 15px; font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--bronze); }
-  .sb5-view { border-left: 2px solid var(--bronze); padding: 4px 0 4px 18px; margin: 22px 0; font-style: italic; color: var(--navy); }
-  .sb5-view p { font-size: 16px; line-height: 1.55; margin: 0; }
-  .sb5-sig { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bronze); margin: 18px 0 0; }
-  .sb5-fig svg {
+  table.sb5-t td  { padding: 11px 12px 11px 0; vertical-align: top; border-bottom: 0.5px solid var(--rule); line-height: 1.5; color: var(--ink); }
+  table.sb5-t tr:last-child td  { border-bottom: none; }
+  table.sb5-t td strong  { color: var(--navy); font-weight: 600; }
+  table.sb5-t td small  { display: block; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 2px; }
+  table.sb5-t td .orig  { font-family: var(--font-kr); font-size: 15px; color: var(--navy); display: block; }
+  table.sb5-t td .rom  { font-style: italic; color: var(--ink-soft); display: block; font-size: 12.5px; }
+  .sb5-route  { font-size: 14.5px; line-height: 1.5; margin: 0 0 12px; }
+  .sb5-src  { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--ink-soft); margin: 14px 0 0; letter-spacing: 0; }
+  .sb5-side  { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; margin: 22px 0; }
+  .sb5-side > div, .sb5-note  { background: var(--paper); border: 0.5px solid var(--rule); padding: 16px 20px; }
+  .sb5-note  { margin: 22px 0; }
+  .sb5-side .k, .sb5-note .k  { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
+  .sb5-side p, .sb5-note p  { font-size: 14.5px; line-height: 1.5; margin: 0 0 8px; }
+  .sb5-side p:last-child, .sb5-note p:last-child  { margin-bottom: 0; }
+  .sb5-side .big  { font-family: var(--font-mono); font-size: 26px; color: var(--bronze); margin: 0 0 4px; line-height: 1.1; }
+  .sb5-side .big small  { font-size: 11px; letter-spacing: 0.16em; color: var(--ink-soft); margin-left: 6px; }
+  ol.sb5-list  { list-style: none; margin: 20px 0 0; padding: 0; counter-reset: fb; }
+  ol.sb5-list li  { counter-increment: fb; position: relative; border-top: 0.5px solid var(--rule); padding: 14px 0 14px 48px; margin: 0; font-size: 15px; line-height: 1.55; }
+  ol.sb5-list li:last-child  { border-bottom: 0.5px solid var(--rule); }
+  ol.sb5-list li::before  { content: counter(fb, decimal-leading-zero); position: absolute; left: 0; top: 15px; font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--bronze); }
+  .sb5-view  { border-left: 2px solid var(--bronze); padding: 4px 0 4px 18px; margin: 22px 0; font-style: italic; color: var(--navy); }
+  .sb5-view p  { font-size: 16px; line-height: 1.55; margin: 0; }
+  .sb5-sig  { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bronze); margin: 18px 0 0; }
+  .sb5-fig svg  {
     --head: var(--navy); --body: var(--ink); --muted: var(--ink-soft); --label: var(--teal);
     --hair: var(--rule); --panel2: var(--paper-warm); --bone: var(--ink-soft);
     --ink-base: var(--teal); --ink-hot: var(--bronze); --land: var(--rule-soft); --land2: var(--paper-warm);
     font-family: var(--font-serif);
   }
-  .sb5-fig svg .m { font-family: var(--font-mono); }
-  .sb5-fig svg .s { font-family: var(--font-kr); }
-  .sb5-fig .fig-title { font-family: var(--font-serif); font-size: 15px; font-weight: 600; color: var(--navy); margin: 0 0 4px; line-height: 1.35; }
-  .sb5-fig .fig-sub { font-size: 13px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.45; }
-  .sb5-fig .fig-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
+  .sb5-fig svg .m  { font-family: var(--font-mono); }
+  .sb5-fig svg .s  { font-family: var(--font-kr); }
+  .sb5-fig .fig-title  { font-family: var(--font-serif); font-size: 15px; font-weight: 600; color: var(--navy); margin: 0 0 4px; line-height: 1.35; }
+  .sb5-fig .fig-sub  { font-size: 13px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.45; }
+  .sb5-fig .fig-label  { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin: 0 0 8px; }
   @media (max-width: 820px) {
-    .sb5-side { grid-template-columns: 1fr; }
+    .sb5-side  { grid-template-columns: 1fr; }
   }
   @media print {
-    table.sb5-t { min-width: 0; }
-    table.sb5-t tr, .sb5-side > div, .sb5-note, ol.sb5-list li { break-inside: avoid; page-break-inside: avoid; }
+    table.sb5-t  { min-width: 0; }
+    table.sb5-t tr, .sb5-side > div, .sb5-note, ol.sb5-list li  { break-inside: avoid; page-break-inside: avoid; }
   }
 </style>
 
@@ -169,7 +169,7 @@
 <!-- doc-nav -->
 <nav class="doc-nav" aria-label="Document navigation">
   <div class="doc-nav-crumb"><a href="/">NPSI</a> <span aria-hidden="true">›</span> <a href="/briefings/">Special Briefings</a> <span aria-hidden="true">›</span> <span aria-current="page">No. 5</span></div>
-  <div class="doc-nav-links"><a rel="prev" href="/sb4/"><span aria-hidden="true">←</span> No. 4 · The Tollgate Markets</a></div>
+  <div class="doc-nav-links"><a rel="prev" href="/sb4/"><span aria-hidden="true">←</span> No. 4 · The Tollgate Markets</a><a rel="next" href="/sb6/">No. 6 · The Walk-Away Price <span aria-hidden="true">→</span></a></div>
 </nav>
 <!-- /doc-nav -->
 
@@ -182,7 +182,7 @@
 </div>
 
 <aside class="standard" style="margin-bottom: 36px;">
-  <h4>Interest note.</h4>
+  <h2 class="minor">Interest note.</h2>
   <p>This briefing concerns how the end of the Pacific war, and the division of Korea that followed it, are named and commemorated. The editor separately maintains a public advocacy platform concerning Korean reunification, kept apart from this imprint; that interest is declared at <a href="/disclosure/">/disclosure/</a>. The briefing is written in the first person, and its passages of opinion are marked as such in the text.</p>
 </aside>
 

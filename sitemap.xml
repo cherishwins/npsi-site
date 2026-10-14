@@ -65,6 +65,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/sb8/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb6/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/pl2/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/sb4/</loc>
     <lastmod>2026-10-14</lastmod>
     <priority>0.7</priority>
@@ -158,12 +173,12 @@
   </url>
   <url>
     <loc>https://npsi.ca/wp9/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp7/working-paper.pdf</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
@@ -173,22 +188,37 @@
   </url>
   <url>
     <loc>https://npsi.ca/wp4/working-paper.pdf</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp3/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp2/working-paper.pdf</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
     <lastmod>2026-05-17</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb8/special-briefing.pdf</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb6/special-briefing.pdf</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/pl2/pacific-ledger.pdf</loc>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
