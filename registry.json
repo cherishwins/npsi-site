@@ -262,6 +262,26 @@
       "superseded_by": null
     },
     {
+      "line": "SB",
+      "number": 9,
+      "serial": null,
+      "accession": "NPSI-20261016",
+      "folder": "sb9",
+      "url": "/sb9/",
+      "title": "Settled in Cash",
+      "subtitle": "The AI build was priced like a futures contract. A data centre only settles one way: physical delivery of power.",
+      "version": "v1.0",
+      "released": "2026-10-17",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb9/special-briefing.pdf",
+      "files": [
+        "/sb9/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
       "line": "TB",
       "number": 1,
       "serial": "NPSI-TB-001",
@@ -290,7 +310,7 @@
       "url": "/tb2/",
       "title": "Running Silent",
       "subtitle": "What ambient signal mapping can and cannot find. A claim-by-claim technical assessment of “passive multi-domain over-the-horizon target fusion.”",
-      "version": "v1.0",
+      "version": "v1.0.1",
       "released": "2026-10-17",
       "series": null,
       "status": "published",

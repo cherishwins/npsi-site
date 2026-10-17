@@ -60,6 +60,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/sb9/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/tb2/</loc>
     <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
@@ -71,7 +76,7 @@
   </url>
   <url>
     <loc>https://npsi.ca/sb8/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -209,6 +214,11 @@
   <url>
     <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
     <lastmod>2026-05-17</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb9/special-briefing.pdf</loc>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.4</priority>
   </url>
   <url>

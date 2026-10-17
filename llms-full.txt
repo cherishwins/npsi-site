@@ -13,9 +13,9 @@ Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
 briefings), NPSI-PL-NNN (The Pacific Ledger, the Canada–Korea account); Special
-Briefings Nos. 4, 5, 6 and 8, Technical Briefing No. 2 and Ledger №02 keep
+Briefings Nos. 4, 5, 6, 8 and 9, Technical Briefing No. 2 and Ledger №02 keep
 the date-based IDs printed on their releases (NPSI-20261003-B, NPSI-20261003-C,
-NPSI-20261002-A, NPSI-20260920-B, NPSI-20261014, NPSI-20261001-A), accession
+NPSI-20261002-A, NPSI-20260920-B, NPSI-20261016, NPSI-20261014, NPSI-20261001-A), accession
 numbers whose publication serials are pending. Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
 PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
@@ -346,10 +346,10 @@ claim, not a confirmation.
 
 ## Technical Briefing No. 2 — Running Silent
 
-- ID: NPSI-20261014 (accession number; publication serial pending) · v1.0 · dated 14 October 2026; published 17 October 2026
-- Canonical: https://npsi.ca/tb2/ (reading view, set from the author's Markdown record) · PDF (23 pp., dark edition): https://npsi.ca/tb2/technical-briefing.pdf · print edition (23 pp., cream): https://npsi.ca/tb2/technical-briefing-print.pdf
+- ID: NPSI-20261014 (accession number; publication serial pending) · v1.0.1 · dated 14 October 2026; published 17 October 2026 and corrected the same day
+- Canonical: https://npsi.ca/tb2/ (reading view, set from the author's Markdown record) · PDF (23 pp., dark edition, reissued at v1.0.1): https://npsi.ca/tb2/technical-briefing.pdf · print edition (23 pp., cream): https://npsi.ca/tb2/technical-briefing-print.pdf
 - Keywords: over-the-horizon targeting, passive radar, VLF, skin depth, submarine detection, magnetic anomaly detection, undersea surveillance, distributed acoustic sensing, AIS, dark vessels, GNSS spoofing, sensor fusion, Maven Smart System, emission control, cognitive electronic warfare
-- Notes: grades every claim (a) established, (b) demonstrated, (c) speculative or (d) wrong; eighteen claims in a verification ledger, ten figures, nine chapters, sources grouped by chapter. Carries an interest note (the editor's enterprise-software and applied-intelligence work; https://npsi.ca/disclosure/). Classified capability is neither claimed nor assessed.
+- Notes: grades every claim (a) established, (b) demonstrated, (c) speculative or (d) wrong; eighteen claims in a verification ledger, ten figures, nine chapters, sources grouped by chapter. Carries an interest note (the editor's enterprise-software and applied-intelligence work; https://npsi.ca/disclosure/) and states its AI drafting assistance. v1.0.1 corrects the hull-to-wavelength ratio and Rayleigh estimate, the depth at which seawater ends the VLF story, the Paolo et al. quotation (vessel activity), the Hensoldt and Diehl passive-radar figures, the Feinberg memo, the G-Cloud 14 description of Gaia, and several attributions; drops a withdrawn preprint; and links the sources. Classified capability is neither claimed nor assessed.
 
 Abstract: A claim-by-claim technical assessment of a widely circulated
 AI-generated text claiming that ambient radio, commercial transponder feeds and
@@ -368,7 +368,7 @@ running silent insufficient on its own.
 Key findings: Eighteen claims graded: five established, one demonstrated, seven
 speculative, four wrong as written and one between speculative and wrong.
 Seawater's skin depth at 20 kHz is about 1.8 m, so a submarine at 100 m sits
-roughly 480 dB below the surface field. Radar matched to AIS finds that 72–76%
+nearly 490 dB below the surface field. Radar matched to AIS finds that 72–76%
 of the world's industrial fishing vessels are not publicly tracked (Paolo et
 al., Nature, 2024). Satellite-illuminated passive radar reaches kilometres, not
 oceans. The real over-the-horizon chain against carriers is active and
@@ -427,6 +427,34 @@ territorial privacy law retroactive to 2000, leaving voters no right of access
 or correction, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
+
+## Special Briefing No. 9 — Settled in Cash
+
+- ID: NPSI-20261016 (accession number; publication serial pending) · v1.0 · dated 16 October 2026; published 17 October 2026
+- Canonical: https://npsi.ca/sb9/ (reading view, set from the author's HTML) · PDF (11 pp.): https://npsi.ca/sb9/special-briefing.pdf
+- Keywords: AI infrastructure, data centres, power delivery, CoreWeave, credit, gold, COMEX, futures, Treasury market, Federal Reserve, passive investing, ERCOT, Dominion Energy, PJM, KOSPI
+- Notes: a signed briefing in the first person; six figures; a fifteen-claim verification ledger; sources grouped and linked. Carries an interest note for the editor's declared energy-sector work and the adjacent applied-intelligence work, and states its AI drafting assistance (https://npsi.ca/disclosure/). Released with pre-publication corrections applied, listed at the foot of the page. No. 7 in this line remains reserved.
+
+Abstract: The AI build was priced like a futures contract. A data centre only
+settles one way: physical delivery of power. In mid-October 2026 the S&P 500
+sat less than 1% below its record while the assets closest to the data centre
+fell hardest: Korea's KOSPI lost 7.57% in a session and CoreWeave's 9% notes
+traded at 80.75, a yield near 15.3%. Dominion Energy has about 54 GW of
+data-centre capacity under contract against a 4.8 GW data-centre billing peak; gold's paper on COMEX runs
+about 2.7 times registered metal. Gold, crude, the October credit scare and the
+money loop are checked against the record, claim by claim.
+
+Key findings: The S&P 500 closed 15 October 0.96% below its 6 October record;
+the assets closest to the data centre fell hardest (KOSPI −7.57% in a session;
+CoreWeave's 9% notes due 2031 at 80.75, default insurance past 1,000 bp). Claims
+run ahead of delivery: COMEX open interest about 2.7 times registered gold,
+Dominion about 54 GW of data-centre capacity contracted against a 4.8 GW
+data-centre billing peak, Texas about 474 GW seeking to connect against a 91 GW
+record peak. Gold at $4,147 on 15 October sat 26% below its January record and 3 to 4%
+below its level a month earlier; the larger flight to quality went into
+Treasuries. Exposure is structural: the ten largest stocks are about 38% of the
+S&P 500 and index funds hold about 54% of US long-term mutual fund and ETF
+assets.
 
 ## Special Briefing No. 8 — The Authored State
 
