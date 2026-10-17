@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Running Silent · NPSI Technical Briefing No. 2</title>
+<meta name="description" content="What ambient signal mapping can and cannot find at sea: eighteen claims about passive over-the-horizon target fusion, graded against open physics.">
+<meta name="author" content="North Pacific Strategy Initiative">
+
+<meta property="og:title" content="Running Silent">
+<meta property="og:description" content="What ambient signal mapping can and cannot find. Eighteen claims about passive, over-the-horizon target fusion, graded against open physics. NPSI Technical Briefing No. 2.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://npsi.ca/tb2/">
+<meta property="og:image" content="https://npsi.ca/assets/img/tb2-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="North Pacific Strategy Initiative">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://npsi.ca/tb2/">
+<link rel="alternate" type="application/pdf" href="/tb2/technical-briefing.pdf" title="Technical Briefing No. 2 (PDF)">
+
+<meta name="citation_title" content="Running Silent: What Ambient Signal Mapping Can and Cannot Find">
+<meta name="citation_author" content="James, Jesse">
+<meta name="citation_publication_date" content="2026/10/17">
+<meta name="citation_journal_title" content="NPSI Technical Briefings">
+<meta name="citation_issue" content="2">
+<meta name="citation_publisher" content="North Pacific Strategy Initiative">
+<meta name="citation_pdf_url" content="https://npsi.ca/tb2/technical-briefing.pdf">
+<meta name="citation_abstract_html_url" content="https://npsi.ca/tb2/">
+<meta name="citation_keywords" content="over-the-horizon targeting; passive radar; VLF; skin depth; submarine detection; magnetic anomaly detection; undersea surveillance; distributed acoustic sensing; AIS; dark vessels; GNSS spoofing; sensor fusion; Maven Smart System; emission control; cognitive electronic warfare">
+<meta name="dc.identifier" content="NPSI-20261014">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#081C30">
+<link rel="preconnect" href="https://cloud.umami.is" crossorigin>
+<link rel="preload" href="/assets/fonts/source-serif-4-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jetbrains-mono-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="46eb01bb-d447-4798-a026-584cc1f9a3c0"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Running Silent",
+  "alternativeHeadline": "What Ambient Signal Mapping Can and Cannot Find",
+  "datePublished": "2026-10-17",
+  "dateCreated": "2026-10-14",
+  "inLanguage": "en",
+  "url": "https://npsi.ca/tb2/",
+  "identifier": "NPSI-20261014",
+  "issueNumber": "2",
+  "version": "1.0",
+  "image": "https://npsi.ca/assets/img/tb2-og.png",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "over-the-horizon targeting, passive radar, VLF, skin depth, submarine detection, magnetic anomaly detection, undersea surveillance, distributed acoustic sensing, AIS, dark vessels, GNSS spoofing, sensor fusion, Maven Smart System, emission control, cognitive electronic warfare",
+  "abstract": "A claim-by-claim technical assessment of a widely circulated AI-generated text claiming that ambient radio, commercial transponder feeds and machine learning can be fused into a real-time global map of hidden submarines and carrier groups. Eighteen claims are graded against open physics, peer-reviewed research and programme records. Multi-sensor fusion is eroding concealment at sea, but the three mechanisms the text relies on fail: seawater extinguishes a VLF field within metres, a ship that is not broadcasting is absent from an AIS feed rather than revealed by subtracting it, and no published mechanism turns micro-variance in background satellite signal strength into a carrier track. What works is narrower, more expensive and more active: satellite radar matched against AIS, satellite geolocation of ships that still emit, seabed and towed acoustic arrays, skywave over-the-horizon radar cued to imaging satellites, and fusion software at scale. None of it makes running silent obsolete; it makes running silent insufficient on its own.",
+  "author": {
+    "@type": "Person",
+    "name": "Jesse James",
+    "email": "editor@npsi.ca",
+    "affiliation": "North Pacific Strategy Initiative"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "North Pacific Strategy Initiative",
+    "url": "https://npsi.ca/",
+    "logo": "https://npsi.ca/assets/img/favicon.svg"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "NPSI Technical Briefings"
+  },
+  "encoding": [
+    {
+      "@type": "MediaObject",
+      "contentUrl": "https://npsi.ca/tb2/technical-briefing.pdf",
+      "encodingFormat": "application/pdf",
+      "description": "Dark edition, 23 pp."
+    },
+    {
+      "@type": "MediaObject",
+      "contentUrl": "https://npsi.ca/tb2/technical-briefing-print.pdf",
+      "encodingFormat": "application/pdf",
+      "description": "Cream print edition, 23 pp."
+    }
+  ]
+}
+</script>
+
+<style>
+  /* Page-scoped components for Technical Briefing No. 2, ported from the
+     author's press plate. Palette and type are the site tokens only;
+     classes are tb2-prefixed to avoid colliding with site.css components. */
+
+  .tb2-thesis { font-family: var(--font-serif); font-size: var(--fs-lede); line-height: 1.5; color: var(--navy); }
+
+  .tb2-callout {
+    background: var(--paper);
+    border-left: 2px solid var(--bronze);
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+  .tb2-box {
+    background: var(--paper);
+    border: 0.5px solid var(--rule);
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+  .tb2-callout p:last-child, .tb2-box p:last-child { margin-bottom: 0; }
+
+  .tb2-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+  .tb2-cards-3 { grid-template-columns: repeat(3, 1fr); }
+  .tb2-card { background: var(--paper); border: 0.5px solid var(--rule); padding: 16px 18px; }
+  .tb2-card .k {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    color: var(--bronze);
+    margin: 0 0 8px;
+  }
+  .tb2-card .t { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.3; margin: 0 0 8px; }
+  .tb2-card p { font-size: 14.5px; line-height: 1.5; margin: 0; }
+
+  .tb2-src { font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); letter-spacing: 0; }
+  .tb2-num { font-family: var(--font-mono); color: var(--bronze); }
+
+  .tb2-kpi-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    border-top: 0.5px solid var(--rule);
+    border-bottom: 0.5px solid var(--rule);
+    padding: 22px 0;
+  }
+  .tb2-kpi { min-width: 150px; flex: 1; }
+  .tb2-kpi .n { font-family: var(--font-mono); font-size: 26px; color: var(--navy); font-weight: 500; line-height: 1.1; }
+  .tb2-kpi .n.hl { color: var(--bronze); }
+  .tb2-kpi .l { font-family: var(--font-sans); font-size: 13px; color: var(--ink-soft); margin-top: 6px; line-height: 1.45; }
+
+  /* Signature element: the graded ledger (key findings, verification, conclusions) */
+  ol.tb2-ledger { list-style: none; margin: 24px 0 28px; padding: 0; }
+  ol.tb2-ledger li {
+    display: grid;
+    grid-template-columns: 48px 1fr 92px;
+    gap: 14px;
+    padding: 12px 0;
+    margin: 0;
+    border-top: 0.5px solid var(--rule);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    align-items: baseline;
+  }
+  ol.tb2-ledger li:last-child { border-bottom: 0.5px solid var(--rule); }
+  ol.tb2-ledger .n { font-family: var(--font-mono); font-size: 12px; color: var(--bronze); }
+  ol.tb2-ledger .c strong { color: var(--navy); font-weight: 600; }
+  ol.tb2-ledger .g { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--teal); text-align: right; }
+  ol.tb2-ledger .g.d { color: var(--bronze); font-weight: 600; }
+
+  .table-scroll { overflow-x: auto; margin: 24px 0 28px; }
+  /* On wide viewports, data tables and three-card rows breathe beyond the reading measure */
+  @media (min-width: 980px){
+    .table-scroll, .tb2-cards-3 { width: 860px; margin-left: calc((100% - 860px) / 2); }
+  }
+  .tb2-table { width: 100%; min-width: 560px; border-collapse: collapse; font-family: var(--font-sans); font-size: 14px; }
+  .tb2-table th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    color: var(--teal);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--bronze);
+    padding: 8px 14px 8px 0;
+  }
+  .tb2-table td { border-bottom: 0.5px solid var(--rule); padding: 10px 14px 10px 0; vertical-align: top; color: var(--ink); line-height: 1.45; }
+  .tb2-table td.mono { font-family: var(--font-mono); font-size: 12.5px; color: var(--navy); white-space: nowrap; }
+  .tb2-table td:last-child, .tb2-table th:last-child { padding-right: 0; }
+
+  .tb2-fig .fig-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze); margin: 0 0 6px; }
+  .tb2-fig .fig-title { font-family: var(--font-serif); font-size: 17px; font-weight: 600; color: var(--navy); margin: 0 0 4px; line-height: 1.3; }
+  .tb2-fig .fig-sub { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.45; }
+  .tb2-fig figcaption { text-transform: none; letter-spacing: 0.02em; font-size: 11px; line-height: 1.55; color: var(--ink-soft); }
+  /* On phones the figures keep a legible label size and scroll sideways, as the tables do */
+  .tb2-fig-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tb2-fig svg text { font-family: var(--font-sans); }
+  .tb2-fig svg .mn { font-family: var(--font-mono); }
+  .tb2-fig svg .lbl { fill: var(--navy); }
+  .tb2-fig svg .sub { fill: var(--ink-soft); }
+  .tb2-fig svg .base { fill: var(--teal); }
+  .tb2-fig svg .hl { fill: var(--bronze); }
+  .tb2-fig svg .ontl { fill: var(--cream); }
+  .tb2-fig svg .ax, .tb2-fig svg .ax line { stroke: var(--rule); stroke-width: 1; }
+
+  .tb2-sources .row { padding: 10px 0; border-top: 0.5px solid var(--rule); }
+  .tb2-sources .row:last-child { border-bottom: 0.5px solid var(--rule); }
+  .tb2-sources .k { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; color: var(--bronze); margin: 0 0 4px; }
+  .tb2-sources .row p:last-child { font-size: 14px; line-height: 1.55; margin: 0; }
+
+  .endmark { text-align: center; margin: 64px 0 0; }
+  .endmark .em-line { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.3em; color: var(--bronze); text-transform: uppercase; margin-bottom: 26px; }
+  .endmark .em-rule { width: 60px; height: 1px; background: var(--bronze); margin: 0 auto 26px; }
+  .endmark .em-quote { font-style: italic; font-size: 17px; color: var(--navy); max-width: 480px; margin: 0 auto; line-height: 1.5; }
+  .endmark .em-src { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; color: var(--teal); margin-top: 22px; text-transform: uppercase; }
+
+  /* Layout-only adjustments at small widths */
+  @media (max-width: 820px){
+    .tb2-cards, .tb2-cards-3 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px){
+    .tb2-fig-scroll svg { min-width: 540px; }
+    ol.tb2-ledger li { grid-template-columns: 40px 1fr; }
+    ol.tb2-ledger .g { grid-column: 2; text-align: left; }
+  }
+  @media print{
+    .tb2-callout, .tb2-box, .tb2-card, .tb2-kpi-row, ol.tb2-ledger li, .table-scroll { break-inside: avoid; page-break-inside: avoid; }
+    .table-scroll { width: auto; margin-left: 0; }
+    .tb2-table { min-width: 0; }
+    .tb2-fig-scroll { overflow: visible; }
+    .tb2-fig-scroll svg { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-mark">NORTH PACIFIC STRATEGY INITIATIVE</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/papers/">Papers</a>
+      <a href="/briefings/" class="active">Briefings</a>
+      <a href="/ledger/">Ledger</a>
+      <a href="/commentary/">Commentary</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="nav-volume">VOL.&nbsp;I  ·  EST.&nbsp;MMXXVI</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- doc-nav -->
+<nav class="doc-nav" aria-label="Document navigation">
+  <div class="doc-nav-crumb"><a href="/">NPSI</a> <span aria-hidden="true">›</span> <a href="/briefings/">Technical Briefings</a> <span aria-hidden="true">›</span> <span aria-current="page">No. 2</span></div>
+  <div class="doc-nav-links"><a rel="prev" href="/tb1/"><span aria-hidden="true">←</span> No. 1 · The Verified Sky</a></div>
+</nav>
+<!-- /doc-nav -->
+
+<div class="opener">
+  <div class="meridian"><span></span></div>
+  <div class="doc-class">Technical Briefing No.&nbsp;2  ·  v1.0  ·  Dated 14 October 2026, released 17 October  ·  Unclassified — Open Source</div>
+  <h1>Running Silent</h1>
+  <div class="subtitle">What ambient signal mapping can and cannot find. A claim-by-claim technical assessment of &ldquo;passive multi-domain over-the-horizon target fusion.&rdquo;</div>
+</div>
+
+<aside class="standard" style="margin-bottom: 36px;">
+  <h2 class="minor">Interest note.</h2>
+  <p>This briefing assesses fusion software sold to defence customers, among it Palantir&rsquo;s Gotham and its Gaia map application and the Maven Smart System. The editor works professionally as a systems architect in enterprise software, data systems and applied-intelligence platforms, and that interest is declared at <a href="/disclosure/">/disclosure/</a>.</p>
+</aside>
+
+<aside class="wp-meta-block" aria-label="Technical briefing metadata">
+  <dl>
+    <dt>Author</dt>              <dd>Jesse James</dd>
+    <dt>Document ID</dt>         <dd><code>NPSI-20261014</code> — accession number, as printed on the release; second in this site&rsquo;s Technical Briefing series; publication serial pending the editor&rsquo;s ruling</dd>
+    <dt>Version</dt>             <dd><code>v1.0</code> &nbsp;·&nbsp; <a href="https://github.com/cherishwins/npsi-site/commits/main/tb2">change log</a></dd>
+    <dt>Series</dt>              <dd>Technical Briefing — a companion line to the Working Papers, addressing the engineering substrate beneath the policy architecture</dd>
+    <dt>Issued</dt>              <dd>Dated 14 October 2026; released 17 October 2026 · Victoria, British Columbia</dd>
+    <dt>Canonical release</dt>   <dd>This reading view, set from the author&rsquo;s Markdown record. <a href="/tb2/technical-briefing.pdf">technical-briefing.pdf</a> (23&nbsp;pp., dark edition) and <a href="/tb2/technical-briefing-print.pdf">technical-briefing-print.pdf</a> (23&nbsp;pp., cream edition for print) are the author&rsquo;s PDF copies of the same text and stand as issued.</dd>
+    <dt>Status</dt>              <dd>Unclassified · Open source. Every source is open and listed. Classified capability is neither claimed nor assessed.</dd>
+    <dt>Cite as</dt>             <dd>James, J. (2026). <em>Running Silent: What Ambient Signal Mapping Can and Cannot Find</em> (NPSI Technical Briefing No.&nbsp;2, v1.0). https://npsi.ca/tb2/</dd>
+  </dl>
+</aside>
+
+<div class="wp-card-actions" style="margin-bottom: 36px;">
+  <a class="btn btn-bronze" href="/tb2/technical-briefing.pdf">Download Briefing (PDF)</a>
+  <a class="btn" href="/tb2/technical-briefing-print.pdf">Print Edition (PDF)</a>
+  <a class="btn btn-mono" href="https://github.com/cherishwins/npsi-site">GitHub</a>
+  <a class="btn btn-mono" href="/commentary/">Named Commentary</a>
+</div>
+
+<div class="tb2-kpi-row" aria-label="The briefing in three numbers">
+  <div class="tb2-kpi"><div class="n">18</div><div class="l">claims graded against open-source physics and program evidence</div></div>
+  <div class="tb2-kpi"><div class="n hl">4</div><div class="l">claims that are physically or technically wrong as written</div></div>
+  <div class="tb2-kpi"><div class="n">1.8 m</div><div class="l">electromagnetic skin depth of seawater at 20 kHz, the number that ends the VLF story</div></div>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li class="fm"><a href="#bottom-line">Bottom Line</a></li>
+    <li class="fm"><a href="#key-findings">Key Findings</a></li>
+    <li class="fm"><a href="#scope">Scope and Method</a></li>
+    <li><a href="#ch1">VLF physics and real non-acoustic detection</a></li>
+    <li><a href="#ch2">Passive acoustic networks</a></li>
+    <li><a href="#ch3">AIS, ADS-B and dark-vessel analytics</a></li>
+    <li><a href="#ch4">Passive radar and signals of opportunity</a></li>
+    <li><a href="#ch5">Skywave radar and space-based persistence</a></li>
+    <li><a href="#ch6">Pattern of life, anomaly detection and fusion software</a></li>
+    <li><a href="#ch7">Emission control and counter-detection</a></li>
+    <li><a href="#ch8">Cognitive electronic warfare and decoys</a></li>
+    <li><a href="#ch9">Assessment</a></li>
+    <li class="fm"><a href="#ledger">Verification Ledger</a></li>
+    <li class="fm"><a href="#conclusions">Conclusions and Implications</a></li>
+    <li class="fm"><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
+
+<article class="wp-prose">
+
+<section id="bottom-line">
+  <h2>Bottom Line</h2>
+  <h3>The direction is right. The physics is wrong.</h3>
+  <p class="tb2-thesis">A widely circulated AI-generated text claims that ambient radio, commercial transponder feeds and machine learning can be fused into a real-time global map of hidden submarines and carrier groups, with no decryption required. This briefing tested each assertion against open physics, peer-reviewed research and programme records.</p>
+  <div class="tb2-callout">
+    <p><strong>Finding.</strong> Multi-sensor fusion is eroding concealment at sea. That much is true. But the three mechanisms the text relies on do not survive contact with the evidence. Submarines cannot be located by watching very low frequency (VLF) radio waves “warp” around their hulls; seawater extinguishes the field within metres. Dark vessels cannot be found by subtracting declared traffic from a transponder feed; a ship that is not broadcasting is simply absent. And no published mechanism turns “micro-variance in background satellite signal strength” into a carrier track.</p>
+  </div>
+  <p>What actually works is narrower, more expensive and more active than the text implies: satellite radar matched against AIS, satellite geolocation of ships that still emit, seabed and towed acoustic arrays, skywave over-the-horizon radar cued to imaging satellites, and fusion software now used by more than a hundred thousand US personnel. None of it makes running silent obsolete. It makes running silent insufficient on its own.</p>
+  <h4>How every claim was graded</h4>
+  <div class="tb2-cards">
+    <div class="tb2-card"><p class="k">(a) ESTABLISHED</p><p>Documented in open sources as fielded or routinely demonstrated.</p></div>
+    <div class="tb2-card"><p class="k">(b) DEMONSTRATED</p><p>Shown in research or limited trials, not operational at scale.</p></div>
+    <div class="tb2-card"><p class="k">(c) SPECULATIVE</p><p>No documented demonstration; possible in principle, unsupported in practice.</p></div>
+    <div class="tb2-card"><p class="k">(d) WRONG</p><p>Contradicted by physics or by how the named systems actually work.</p></div>
+  </div>
+</section>
+
+<section id="key-findings">
+  <h2>Key Findings</h2>
+  <h3>Eight judgments, with confidence stated</h3>
+  <ol class="tb2-ledger">
+    <li><span class="n">01</span><div class="c"><strong>The VLF submarine mechanism is wrong.</strong> Seawater conducts. VLF fields fall by about 5 dB per metre of depth and a hull is a thousandth of a wavelength. Any scattered field sits hundreds of decibels below lightning noise. Submarines receive VLF; shore stations transmit it.</div><span class="g">HIGH</span></li>
+    <li><span class="n">02</span><div class="c"><strong>Real non-acoustic submarine detection is short-range or experimental.</strong> Magnetic anomaly detection works at hundreds of metres to low kilometres. Chinese magnetometer advances reported through the South China Morning Post are genuine laboratory results, not wide-area search capabilities.</div><span class="g">MOD–HIGH</span></li>
+    <li><span class="n">03</span><div class="c"><strong>Passive acoustics is the one mature “passive” layer.</strong> The US undersea surveillance system, SURTASS and TRAPS are real and funded. China’s “Underwater Great Wall” is partly deployed. Telecom cables now detect ships through distributed acoustic sensing in peer-reviewed trials.</div><span class="g">HIGH</span></li>
+    <li><span class="n">04</span><div class="c"><strong>Dark-vessel analytics are mature, but the text’s logic is inverted.</strong> Detection needs an independent sensor first. Warships are generally not required to broadcast AIS, and Russian AIS and GNSS spoofing is now routine enough that fourteen European states issued a joint warning in January 2026.</div><span class="g">HIGH</span></li>
+    <li><span class="n">05</span><div class="c"><strong>Passive radar is real and range-limited.</strong> Broadcast-illuminated systems track aircraft to a few hundred kilometres near transmitter-rich land. Starlink- and GNSS-illuminated passive radar reaches single-digit kilometres in the literature.</div><span class="g">HIGH</span></li>
+    <li><span class="n">06</span><div class="c"><strong>The real over-the-horizon threat to carriers is active and dedicated.</strong> Skywave radar cues coarsely at long range; imaging and electronic-intelligence satellites refine the fix. Western analysts still describe the full Chinese anti-ship missile chain as untested against a defended, manoeuvring carrier.</div><span class="g">MOD–HIGH</span></li>
+    <li><span class="n">07</span><div class="c"><strong>Fusion software is scaling fast; a real-time global “glass map” is not here.</strong> The Maven Smart System ceiling is about $1.3 billion through 2029. It fuses existing intelligence feeds. Palantir’s “Gaia” is a map interface, not a detection engine.</div><span class="g">HIGH</span></li>
+    <li><span class="n">08</span><div class="c"><strong>“Running silent is no longer a defense” is overstated.</strong> Emission control plus dispersion and deception still impose large search costs. Both the US and its competitors keep investing in counter-surveillance, which is what you do when concealment still pays.</div><span class="g">MODERATE</span></li>
+  </ol>
+</section>
+
+<section id="scope">
+  <h2>Scope and Method</h2>
+  <h3>Two very different things share one phrase</h3>
+  <p class="tb2-thesis">“Over-the-horizon target fusion” names a genuine military capability and a largely fictional one. This briefing keeps them apart.</p>
+  <div class="tb2-cards">
+    <div class="tb2-card"><p class="k">THE REAL ONE</p><p class="t">Active radar plus satellites</p><p>High-frequency skywave radar and satellite cueing used to target ships beyond line of sight. Dedicated sensors, decades of engineering, known limits.</p></div>
+    <div class="tb2-card"><p class="k">THE IMAGINED ONE</p><p class="t">Ambient signals inverted by AI</p><p>Broadcast radio, satellite downlinks and commercial traffic behaviour supposedly revealing non-emitting assets anywhere on Earth. No sensor, no signal budget, no demonstration.</p></div>
+  </div>
+  <div class="tb2-kpi-row">
+    <div class="tb2-kpi"><div class="n hl">72–76%</div><div class="l">of the world’s industrial fishing vessels are not publicly tracked, found by matching radar imagery to AIS</div></div>
+    <div class="tb2-kpi"><div class="n">300 km</div><div class="l">longest passive-radar air track claimed in a NATO trial, over land and coast, by the manufacturer</div></div>
+    <div class="tb2-kpi"><div class="n">100,000+</div><div class="l">US personnel on the Maven Smart System by September 2026, up from about 50,000 in January</div></div>
+  </div>
+  <h4>Sources and their weight</h4>
+  <p>Peer-reviewed literature (Nature, JASA, IEEE, IET, Sensors, arXiv), US government records (NRO releases, DARPA programme pages, Navy budget exhibits, Naval History and Heritage Command), Palantir’s own technical documentation, and established defence press (C4ISRNET, Defense News, Breaking Defense, DefenseScoop, The War Zone, SpaceNews). Chinese claims are attributed to their reporting outlet, usually the South China Morning Post summarising Chinese-language journals, and are treated as claims.</p>
+  <div class="tb2-box">
+    <p><strong>Three honesty rules governed the write-up.</strong> Classified capability is neither claimed nor assessed. Absence of open evidence is not evidence of absence, and it is also not evidence for the text. Where a requested item could not be traced to a primary document in this research cycle, the briefing says so rather than quoting a number it cannot stand behind.</p>
+  </div>
+  <p>The original text opens by congratulating its reader for having “independently architected” a classified programme. That flattery is set aside. The technical substance is judged on its merits, sentence by sentence, in the verification ledger at the end of this document.</p>
+</section>
+
+<section id="ch1">
+  <h2>Chapter 1 · VLF physics and real non-acoustic detection</h2>
+  <h3>Why seawater ends the VLF story in two metres</h3>
+  <p class="tb2-thesis">The claim: passive sensors watch VLF waves “warp or deflect around a massive metallic object under the water” and locate a submarine that never transmits. Grade (d), wrong, high confidence.</p>
+  <p><strong>Who transmits.</strong> VLF, 3 to 30 kHz, is a one-way broadcast from very large shore stations to submarines, which receive it near the surface through towed wire or buoy antennas. The premise that submarines “use VLF to communicate” is true only in the receive direction.</p>
+  <p><strong>Wavelength against hull.</strong> At the 10 to 30 kHz used for submarine broadcasts, wavelengths run 10 to 30 km. A Virginia-class hull is about 115 m long; an Ohio-class about 170 m. The hull is one hundredth to one two-hundred-and-fiftieth of a wavelength, deep in the Rayleigh regime, where the scattered field scales as the cube of the size ratio: about 95 dB below the incident field at the hull itself, even with the hull floating in air.</p>
+  <figure class="tb2-fig" id="fig-01">
+  <p class="fig-label">Fig. 01</p>
+  <p class="fig-title">The ocean is a conducting mirror to VLF</p>
+  <p class="fig-sub">Attenuation of a 20 kHz field with depth in seawater (4 S/m), decibels below the surface field</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Bar chart: a 20 kHz field in seawater loses about 5 dB at 1 m depth, 25 dB at 5 m, 49 dB at 10 m, 98 dB at 20 m, 245 dB at 50 m and 490 dB at 100 m. Skin depth about 1.8 m; loss about 4.9 dB per metre, each way." viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" style="max-height:190px">
+        <line class="ax" x1="70" y1="20" x2="70" y2="190"/>
+        <line class="ax" x1="70" y1="190" x2="620" y2="190"/>
+        <g>
+          <rect class="base" x="95" y="188.4" width="60" height="1.6"/>
+          <rect class="base" x="180" y="182" width="60" height="8"/>
+          <rect class="base" x="265" y="174" width="60" height="16"/>
+          <rect class="base" x="350" y="158" width="60" height="32"/>
+          <rect class="base" x="435" y="109" width="60" height="81"/>
+          <rect class="hl" x="520" y="28" width="60" height="162"/>
+        </g>
+        <g class="mn" font-size="11" text-anchor="middle">
+          <text class="lbl" x="125" y="180">−5 dB</text>
+          <text class="lbl" x="210" y="176">−25 dB</text>
+          <text class="lbl" x="295" y="168">−49 dB</text>
+          <text class="lbl" x="380" y="152">−98 dB</text>
+          <text class="lbl" x="465" y="103">−245 dB</text>
+          <text class="lbl" x="550" y="22">−490 dB</text>
+        </g>
+        <g font-size="12" text-anchor="middle">
+          <text class="sub" x="125" y="208">1 m</text>
+          <text class="sub" x="210" y="208">5 m</text>
+          <text class="sub" x="295" y="208">10 m</text>
+          <text class="sub" x="380" y="208">20 m</text>
+          <text class="sub" x="465" y="208">50 m</text>
+          <text class="sub" x="550" y="208">100 m depth</text>
+        </g>
+        <text class="sub" x="12" y="110" font-size="11" transform="rotate(-90 12 110)" text-anchor="middle">loss, dB</text>
+        <text class="sub" x="620" y="226" font-size="11" text-anchor="end">skin depth δ ≈ 1.8 m · loss ≈ 4.9 dB per metre, each way</text>
+      </svg></div>
+  <figcaption>Computed: δ = 1/√(πfμσ) with f = 20 kHz, σ = 4 S/m. A hull at 100 m sits about 55 skin depths down.</figcaption>
+</figure>
+  <p><strong>Skin depth.</strong> Seawater conducts at about 4 S/m. The skin depth at 20 kHz is about 1.8 m, so the field loses about 4.9 dB per metre. A submarine at 100 m sits roughly 480 dB below the surface field, and any scattered energy suffers the same loss again coming back up. To VLF, the sea surface is a mirror.</p>
+  <p><strong>Noise floor.</strong> VLF ambient noise is dominated by global lightning. The hypothesised signal sits hundreds of decibels below it, and no machine-learning integration recovers a signal that is absent at the sensor. VLF methods do locate conductive bodies, but on land, to tens of metres, with the sensor almost on top of the target.</p>
+  <h3>What non-acoustic detection actually looks like</h3>
+  <div class="table-scroll">
+    <table class="tb2-table">
+    <thead><tr><th style="width: 23%">Method</th><th style="width: 30%">Physical basis</th><th>Realistic status</th><th style="width: 9%">Grade</th></tr></thead>
+    <tbody>
+      <tr><td>Magnetic anomaly detection (MAD)</td><td>Hull’s induced and permanent magnetic field disturbing Earth’s field</td><td>Fielded on P-8, P-3 and helicopters; hundreds of metres to 1–2 km; localisation, not search</td><td class="mono">(a)</td></tr>
+      <tr><td>Underwater electric potential, ELF electromagnetics</td><td>Corrosion and cathodic-protection currents around the hull</td><td>Known signature, managed by degaussing; short-range, mostly mines and barriers</td><td class="mono">(a)/(b)</td></tr>
+      <tr><td>Radar imaging of wakes and internal waves</td><td>Surface expression of a moving submerged body</td><td>Research-grade for shallow, fast bodies; deep, slow submarines largely immune</td><td class="mono">(b)/(c)</td></tr>
+      <tr><td>Thermal scar, bioluminescence, chemical traces</td><td>Wake mixing and disturbance</td><td>Long studied, repeatedly hyped; no open evidence of wide-area use</td><td class="mono">(c)</td></tr>
+      <tr><td>Quantum and atomic magnetometers</td><td>Higher-sensitivity MAD</td><td>Real sensor progress; range still bounded by inverse-cube field decay</td><td class="mono">(b)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h4>Chinese claims, read against their own papers: headlines (c), papers (b)</h4>
+  <div class="tb2-cards tb2-cards-3">
+    <div class="tb2-card"><p class="k">MAGNETIC WAKE · NPU, Dec 2024</p><p>Wang Honglei’s team modelled the weak field from seawater ions moving through Earth’s field in a Kelvin wake. Real physics, model-only study. Asia Times’ read: MAD is “more suitable for short-range confirmation rather than long-range detection.” Phenomenon (b); capability (c). <span class="tb2-src">[Source: Journal of Harbin Engineering University, as reported by SCMP, 7 Feb 2025; Asia Times, Feb 2025]</span></p></div>
+    <div class="tb2-card"><p class="k">DRONE-MOUNTED CPT MAGNETOMETER · Apr 2025</p><p>Wang Xuefeng’s group reports accuracy improving from 2.517 nT raw to 0.849 nT corrected, sensor on a 20 m tether beneath a rotor drone. A credible step toward cheaper, distributed MAD, not a range breakthrough. Grade (b). <span class="tb2-src">[Source: Chinese Journal of Scientific Instrument, as reported by SCMP and The Quantum Insider, Apr 2025]</span></p></div>
+    <div class="tb2-card"><p class="k">HANDHELD MAGNETOMETER · USTC, Sep 2026</p><p>Peng Xinhua’s pencil-sized, 5 W device tracked a subway train beneath a city street. Miniaturisation, not ocean-scale detection. Grade (b). <span class="tb2-src">[Source: Acta Physica Sinica, 14 Sep 2026, as reported by SCMP, 25 Sep 2026]</span></p></div>
+    </div>
+</section>
+
+<section id="ch2">
+  <h2>Chapter 2 · Passive acoustic networks</h2>
+  <h3>The layer that is real, and the one the text left out</h3>
+  <p class="tb2-thesis">Seabed and towed hydrophone arrays are the mature passive sensor. Distributed acoustic sensing on telecom cables is the genuinely new one, and it does not appear in the original text at all.</p>
+  <p><strong>United States and allies.</strong> The Cold War SOSUS seabed hydrophone system, now the Integrated Undersea Surveillance System, is the canonical “passive sea-floor chokepoint” network. SURTASS ships tow long passive and low-frequency active arrays. TRAPS, the Transformational Reliable Acoustic Path System, is a fixed passive node that exploits the deep-water reliable acoustic path from the seafloor. It began in DARPA’s Distributed Agile Submarine Hunting programme, with SAIC prototypes around 2013 and Leidos development from 2014. <span class="tb2-src">[Source: UPI, 28 Aug 2013; Military &amp; Aerospace Electronics]</span></p>
+  <div class="tb2-callout">
+    <p>In June 2019 NAVWAR awarded Leidos a <span class="tb2-num">$72.8M</span> sole-source follow-on for “up to forty-five” TRAPS units. The Department of Defense announcement said TRAPS “complements fixed surveillance systems and the surveillance towed array sensor system.” Navy budget exhibits show Congressional adds of <span class="tb2-num">$33.766M</span> (FY2019) and <span class="tb2-num">$15M</span> (FY2020) for additional units. <span class="tb2-src">[Source: NAVWAR solicitation N0003919R0022; Navy RDT&amp;E budget exhibit, Integrated Surveillance System]</span></p>
+  </div>
+  <p><strong>DARPA Ocean of Things.</strong> DARPA describes “thousands of low-cost, environmentally friendly, intelligent floats,” more than 3,000 deployed in Phase 2, with analytics that “automatically detect, track, and identify nearby vessels.” The 2018 solicitation set a ceiling of $500 per float in lots of 50,000, and the programme manager spoke of 50,000 floats covering a million square kilometres. Treat the latter as a planning figure, not a deployed one. Grade (b). <span class="tb2-src">[Source: DARPA programme page; BAA HR0011-18-S-0013]</span></p>
+  <p><strong>China.</strong> China State Shipbuilding Corporation publicly proposed an “Underwater Great Wall” of submarine detectors in 2015–16. In January 2018 the Chinese Academy of Sciences disclosed two deep-sea acoustic sensors between Guam and the South China Sea, operating since 2016. Existence (a); effective coverage and integration with fleet operations (c), not knowable from open sources. <span class="tb2-src">[Source: SCMP, as reported by The War Zone, Jan 2018; National Maritime Foundation]</span></p>
+  <h3>Cables that listen</h3>
+  <p>A 2026 study in the Journal of the Acoustical Society of America used a trenched telecom cable in Norway’s Trondheimsfjord to detect and localise ships automatically, including “an unidentified ship without active AIS recording.” Chinese researchers connected distributed acoustic sensing to a 69 km optoelectronic cable off Hainan for AI-enabled vessel detection, citing “potential for detecting dark ships.” Real-time sensing has been demonstrated on 148 to 171 km of fibre without inline amplification. <span class="tb2-src">[Source: JASA 159(5), 2026; ResearchGate 396960937; arXiv 2509.11614]</span></p>
+  <p>Grade (b), moving toward (a) in coastal and littoral zones. Range from the cable is kilometres, and coverage follows cable routes, not the open ocean. The text’s “covert spy vessel dragging a sonar array” is broadly right about acoustics: surface survey and intelligence ships are mechanically noisy, run navigation radar and are large radar targets. Its “localised power signature” has no defined technical meaning.</p>
+  <figure class="tb2-fig" id="fig-02">
+  <p class="fig-label">Fig. 02</p>
+  <p class="fig-title">Detection reach by method, on a log scale</p>
+  <p class="fig-sub">Order-of-magnitude range at which each sensor class plausibly detects its target, from open literature and manufacturer claims</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Log-scale range chart from 100 m to 10,000 km: VLF hull scatter has no signal at any range; magnetic anomaly detection reaches about 100 m to 2 km; cable acoustic sensing kilometres from the cable; Starlink and GNSS passive radar about 1 to 15 km; seabed arrays and TRAPS about 1 to 150 km; broadcast passive radar for aircraft about 10 to 300 km; skywave over-the-horizon radar about 1,000 to 3,000 km; imaging and ELINT satellites global by revisit." viewBox="0 0 664 300" xmlns="http://www.w3.org/2000/svg">
+        <g class="ax">
+          <line x1="174" y1="20" x2="174" y2="258"/><line x1="264" y1="20" x2="264" y2="258"/><line x1="354" y1="20" x2="354" y2="258"/><line x1="444" y1="20" x2="444" y2="258"/><line x1="534" y1="20" x2="534" y2="258"/><line x1="624" y1="20" x2="624" y2="258"/>
+        </g>
+        <g class="mn sub" font-size="10.5" text-anchor="middle">
+          <text x="174" y="275">100 m</text><text x="264" y="275">1 km</text><text x="354" y="275">10 km</text><text x="444" y="275">100 km</text><text x="534" y="275">1,000 km</text><text x="624" y="275">10,000 km</text>
+        </g>
+        <g font-size="12.5">
+          <text class="lbl" x="10" y="42">VLF hull scatter</text><rect class="hl" x="174" y="32" width="2" height="14"/><text class="sub mn" x="184" y="43" font-size="10.5">no signal at any range</text>
+          <text class="lbl" x="10" y="74">MAD, atomic magnetometers</text><rect class="base" x="174" y="64" width="110" height="14"/>
+          <text class="lbl" x="10" y="106">Cable DAS (from the cable)</text><rect class="base" x="224" y="96" width="110" height="14"/>
+          <text class="lbl" x="10" y="138">Starlink / GNSS passive radar</text><rect class="base" x="264" y="128" width="110" height="14"/>
+          <text class="lbl" x="10" y="170">Seabed arrays, TRAPS</text><rect class="base" x="264" y="160" width="200" height="14"/>
+          <text class="lbl" x="10" y="202">Broadcast passive radar (air)</text><rect class="base" x="354" y="192" width="130" height="14"/>
+          <text class="lbl" x="10" y="234">Skywave OTH radar</text><rect class="base" x="534" y="224" width="40" height="14"/>
+          <text class="lbl" x="10" y="258" font-size="12.5">Imaging / ELINT satellites</text><rect class="hl" x="174" y="248" width="450" height="6"/>
+        </g>
+      </svg></div>
+  <figcaption>Bars show typical reach, not maximum stated. Satellite row is global by revisit, not by range. Sources: Ch. 1–5 of this briefing.</figcaption>
+</figure>
+</section>
+
+<section id="ch3">
+  <h2>Chapter 3 · AIS, ADS-B and dark-vessel analytics</h2>
+  <h3>You cannot subtract a ship that was never there</h3>
+  <p class="tb2-thesis">AIS and ADS-B are cooperative systems. They contain only what transmitters choose to broadcast. Removing declared traffic from a transponder feed leaves an empty set, not a map of ghosts. Grade as written: (d). Corrected version: (a).</p>
+  <figure class="tb2-fig" id="fig-03">
+  <p class="fig-label">Fig. 03</p>
+  <p class="fig-title">Where dark vessels actually come from</p>
+  <p class="fig-sub">The text’s logic against the method that produces results</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Two equations. As written: AIS feed minus declared ships equals nothing, because non-broadcasters are absent. As practised: independent SAR, RF and optical detections minus matched AIS tracks equals dark vessels, 72 to 76 per cent of the industrial fishing fleet." viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12.5">
+          <text class="sub mn" x="20" y="24" font-size="10.5" letter-spacing="1">AS WRITTEN</text>
+          <rect x="20" y="36" width="150" height="46" rx="4" fill="none" stroke="var(--ink-soft)"/><text class="lbl" x="95" y="56" text-anchor="middle">AIS feed</text><text class="sub" x="95" y="72" text-anchor="middle" font-size="11">declared ships only</text>
+          <text class="lbl mn" x="186" y="64" font-size="16">−</text>
+          <rect x="206" y="36" width="150" height="46" rx="4" fill="none" stroke="var(--ink-soft)"/><text class="lbl" x="281" y="56" text-anchor="middle">declared ships</text><text class="sub" x="281" y="72" text-anchor="middle" font-size="11">the same AIS feed</text>
+          <text class="lbl mn" x="372" y="64" font-size="16">=</text>
+          <rect x="392" y="36" width="150" height="46" rx="4" fill="none" stroke="var(--bronze)"/><text class="hl" x="467" y="56" text-anchor="middle">∅ nothing</text><text class="sub" x="467" y="72" text-anchor="middle" font-size="11">non-broadcasters absent</text>
+          <text class="sub mn" x="20" y="124" font-size="10.5" letter-spacing="1">AS PRACTISED</text>
+          <rect x="20" y="136" width="150" height="46" rx="4" fill="var(--teal)"/><text class="ontl" x="95" y="156" text-anchor="middle">SAR · RF · optical</text><text class="ontl" x="95" y="172" text-anchor="middle" font-size="11">independent detections</text>
+          <text class="lbl mn" x="186" y="164" font-size="16">−</text>
+          <rect x="206" y="136" width="150" height="46" rx="4" fill="none" stroke="var(--ink-soft)"/><text class="lbl" x="281" y="156" text-anchor="middle">matched AIS tracks</text><text class="sub" x="281" y="172" text-anchor="middle" font-size="11">within tolerance</text>
+          <text class="lbl mn" x="372" y="164" font-size="16">=</text>
+          <rect x="392" y="136" width="150" height="46" rx="4" fill="var(--bronze)"/><text x="467" y="156" text-anchor="middle" fill="var(--cream)">dark vessels</text><text x="467" y="172" text-anchor="middle" font-size="11" fill="var(--cream)">72–76% of fishing fleet</text>
+        </g>
+      </svg></div>
+  <figcaption>Source: Paolo et al., Nature 625, Jan 2024 (Global Fishing Watch, Duke, UCSB, UW–Madison, SkyTruth).</figcaption>
+</figure>
+  <p><strong>Radar matched to AIS.</strong> Paolo and colleagues processed about two petabytes of Sentinel-1 imagery from 2017 to 2021 with deep learning and found that “72–76% of the world’s industrial fishing vessels are not publicly tracked,” along with 21–30% of transport and energy vessels. This is the gold-standard public demonstration. It is coastal-weighted, and revisit latency is days, not seconds. Grade (a). <span class="tb2-src">[Source: Nature 625, 2024; PMC10764273]</span></p>
+  <p><strong>Radio geolocation from orbit.</strong> HawkEye 360 geolocates “marine radar, VHF radio, satellite communications, and emergency beacons” and flags geolocations with no matching AIS as “DarkRF.” Published cases include the tanker Romina going dark after Suez in 2020 and a cargo ship’s week-long AIS gap off Syria in 2021, resolved through VHF to a call at Tartus. Unseenlabs offers comparable service. Grade (a). The limit is structural: a ship with radar and radios off defeats radio geolocation entirely. Only imagery catches it. <span class="tb2-src">[Source: HawkEye 360, Apr 2022; Via Satellite, Jan 2021]</span></p>
+  <h3>The feed is already poisoned</h3>
+  <p class="tb2-thesis">Any fusion architecture that trusts AIS inherits whatever deception is in it, and in 2026 that is a lot.</p>
+  <div class="tb2-callout">
+    <p>On 26 January 2026 Belgium, Denmark, Estonia, Finland, France, Germany, Latvia, Lithuania, the Netherlands, Norway, Poland, Sweden, the United Kingdom and Iceland published an open letter stating that “these disturbances, originating from the Russian Federation, degrade the safety of international shipping,” and warning that AIS falsification “severely hampers rescue operations.” <span class="tb2-src">[Source: joint open letter of fourteen European states, 26 Jan 2026]</span></p>
+  </div>
+  <p>The Royal Institute of Navigation’s report of 23 January 2026, drawing on more than 100 sector experts and 300 masters, records that “in 2025, at least two collisions and groundings were reported in mainstream media linked to GNSS interference in regions such as the Baltics, Straits of Hormuz and the Red Sea.” Windward reported that “more than 1,650 vessels experienced GPS and AIS interference across the Middle East Gulf on March 7 [2026], up 55% from a week ago.” Academic tools such as SeaSpoofFinder now infer spoofing from AIS itself. <span class="tb2-src">[Source: RIN, Impacts of GNSS Interference on Maritime Safety, 23 Jan 2026; Windward, Mar 2026; arXiv 2602.16257]</span></p>
+  <h4>Aviation</h4>
+  <p>Military transports, tankers and surveillance aircraft often fly with Mode S and ADS-B on in peacetime for airspace deconfliction. Unfiltered aggregators such as ADS-B Exchange, and multilateration of Mode S returns, let open-source communities follow them. Combat and stealth aircraft on operations turn transponders off. The Hensoldt “F-35 tracking” episode of 2018 involved aircraft reportedly flying with radar reflectors and ADS-B on.</p>
+  <div class="tb2-cards">
+    <div class="tb2-card"><p class="k">(a) ESTABLISHED</p><p>Open-source tracking of cooperative military aircraft through their own transponders.</p></div>
+    <div class="tb2-card"><p class="k">(d) WRONG</p><p>Finding non-cooperative stealth aircraft by subtracting declared ADS-B traffic from the feed.</p></div>
+  </div>
+</section>
+
+<section id="ch4">
+  <h2>Chapter 4 · Passive radar and signals of opportunity</h2>
+  <h3>Borrowed light reaches kilometres, not oceans</h3>
+  <p class="tb2-thesis">Passive coherent location correlates a broadcast transmitter’s direct signal against its echoes to get bistatic range and Doppler. It is mature for aircraft near transmitter-rich land, and small-scale for everything else.</p>
+  <div class="table-scroll">
+    <table class="tb2-table">
+    <thead><tr><th style="width: 27%">System or study</th><th style="width: 15%">Illuminator</th><th>Reported performance</th><th style="width: 8%">Grade</th></tr></thead>
+    <tbody>
+      <tr><td>Hensoldt TwInvis</td><td>FM, DAB, DVB-T</td><td>“Ranges over the Baltic Sea coast were up to 300 km” in a NATO STO campaign; more than 180 objects to 250 km in a 2018 German Air Force demonstration. Manufacturer and partner figures. <span class="tb2-src">[Hensoldt; Defense News, Aug 2023]</span></td><td class="mono">(a)</td></tr>
+      <tr><td>Hensoldt F-35 claim, ILA 2018</td><td>FM, DVB</td><td>Two F-35s tracked for 150 km; aircraft reportedly carried reflectors and ADS-B. Unverified. <span class="tb2-src">[C4ISRNET, 30 Sep 2019; Association of Old Crows]</span></td><td class="mono">(b)</td></tr>
+      <tr><td>ERA VERA-NG, Czechia</td><td>none: emitter location</td><td>To 400 km, 500 tracks, 50 MHz–18 GHz. Requires the target to emit. Irrelevant to a silent target. <span class="tb2-src">[ERA data sheet]</span></td><td class="mono">(a)</td></tr>
+      <tr><td>China DWL002, YLC-20</td><td>none: emitter location</td><td>400 km against fighters, 600 km against AEW&amp;C, per CETC; CETC staff conceded detection depends on the stealth fighter’s own radar or jammer being active. <span class="tb2-src">[CASI/BluePath, Mar 2025]</span></td><td class="mono">(a)/(c)</td></tr>
+      <tr><td>China YLC-29</td><td>FM broadcast</td><td>Marketed as anti-stealth; no range published. <span class="tb2-src">[Global Times, 2017]</span></td><td class="mono">(b)</td></tr>
+      <tr><td>Silentium Defence, Australia</td><td>FM</td><td>Small drones at 3–7 km, aircraft to 20 km; MAVERICK units delivered to Lockheed Martin Australia for AIR6500, 2024. <span class="tb2-src">[National Defense, 2023; Lockheed Martin Australia]</span></td><td class="mono">(a)/(b)</td></tr>
+      <tr><td>Starlink passive radar, Birmingham 2019</td><td>Starlink Ku-band</td><td>About 10 km for a 10 m² air target with coherent integration; 2 km worst case. Theoretical. <span class="tb2-src">[EasyChair preprint 900]</span></td><td class="mono">(b)</td></tr>
+      <tr><td>LEO broadband passive radar</td><td>Starlink, OneWeb</td><td>1 m² target to about 1.9 km at Pd 0.9, Pfa 10⁻⁴ with a 39 dBi antenna. <span class="tb2-src">[IET Radar, Sonar &amp; Navigation, 2023]</span></td><td class="mono">(b)</td></tr>
+      <tr><td>GNSS passive radar for ships</td><td>GNSS</td><td>27 dBm² ship detected to about 5 km with 40 s dwell. <span class="tb2-src">[Sensors 20(3), 2020]</span></td><td class="mono">(b)</td></tr>
+      <tr><td>Chinese Starlink forward-scatter test</td><td>Starlink</td><td>Detected a DJI Phantom 4 drone off Guangdong; no range reported. <span class="tb2-src">[SCMP, Sep 2024]</span></td><td class="mono">(b)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3>The “micro-variance” mechanism does not exist in the literature</h3>
+  <p>A carrier does reflect satellite signals; that is the basis of GNSS- and Starlink-illuminated passive radar. Exploiting it requires a coherent bistatic receiver near the target, with ranges of a few kilometres, because satellite signals at the surface are weak and high signal-to-noise comes only with narrow beams or long integration. No published study shows a carrier group modulating received satellite signal strength over an ocean block in a way detectable by distributed receivers. Grade (c) bordering on (d), moderate to high confidence. Over the open Pacific there are no FM or television towers to borrow.</p>
+  <div class="tb2-cards">
+    <div class="tb2-card"><p class="k">GNSS REFLECTOMETRY</p><p class="t">Built for wind, not warships</p><p>TechDemoSat-1 (July 2014) and NASA’s eight-satellite CYGNSS constellation (2016) measure ocean winds, sea state and soil moisture. Ship detection from them is research-grade, limited to large targets in specific geometries, with kilometre-scale footprints. Grade (b). <span class="tb2-src">[Source: Geophysical Research Letters, 2015; TDS-1 backscatter studies]</span></p></div>
+    <div class="tb2-card"><p class="k">WI-FI SENSING</p><p class="t">The near-field analogue, and its limit</p><p>Channel-state sensing detects people through walls at metres. It illustrates the principle, that targets perturb ambient radio, and the constraint: the target must be close to both transmitter and receiver. Grade (a) at room scale; irrelevant at ocean scale.</p></div>
+  </div>
+  <div class="tb2-box">
+    <p><strong>Reading the table.</strong> Every operational row is an air-surveillance system near a coast or a land mass with broadcast transmitters, or an emitter-location system that needs the target to talk. The space-illuminated rows are peer-reviewed and honest about their numbers, and those numbers are kilometres. A hostile analyst should ask of any passive-radar claim: what illuminator, what bistatic geometry, what integration time, what false-alarm rate. The original text answers none of the four.</p>
+  </div>
+</section>
+
+<section id="ch5">
+  <h2>Chapter 5 · Skywave radar and space-based persistence</h2>
+  <h3>What over-the-horizon targeting really is</h3>
+  <p class="tb2-thesis">Skywave radar bounces high-frequency energy off the ionosphere to illuminate targets 1,000 to 3,000 km away. It is active, it is coarse, and it is the real first link in the chain the text imagines.</p>
+  <p>Australia’s JORN, the US Navy’s AN/FPS-71 ROTHR, Russia’s Konteyner and Chinese systems all work this way. Ship detection is far harder than aircraft detection: ships move slowly, and their echoes sit inside powerful sea clutter in Doppler. A US patent citing Abramovich (2014) notes that skywave ship detection “is significantly more challenging than the equivalent task for aircraft.” Resolution cells run from kilometres to tens of kilometres, and ionospheric registration error dominates position uncertainty. Skywave radar can say a large surface group is roughly there. It cannot target it alone. Grade (a). <span class="tb2-src">[Source: US Patent 11,953,580; Naval Applications of HF OTH Radar, ResearchGate]</span></p>
+  <figure class="tb2-fig" id="fig-04">
+  <p class="fig-label">Fig. 04</p>
+  <p class="fig-title">The real anti-ship kill chain, and where it is untested</p>
+  <p class="fig-sub">Open-source description of the Chinese DF-21D / DF-26 targeting sequence</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Kill-chain diagram: skywave over-the-horizon radar gives a coarse cue at 1,000 to 3,000 km; Yaogan ELINT and SAR satellites refine the fix; aircraft and UAVs confirm identity and position; DF-21D (about 1,500 km) or DF-26 launch; the terminal seeker must find a moving ship. Each link can be broken; no open source documents an end-to-end test against a defended, manoeuvring carrier." viewBox="0 0 640 188" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12">
+          <rect x="10" y="30" width="112" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="66" y="52" text-anchor="middle" font-weight="600">Skywave OTH</text><text class="ontl" x="66" y="68" text-anchor="middle" font-size="11">coarse cue</text><text class="ontl" x="66" y="82" text-anchor="middle" font-size="11">1,000–3,000 km</text>
+          <path d="M122 60 L142 60" stroke="var(--ink)" stroke-width="1.5"/><path d="M138 55 L144 60 L138 65" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+          <rect x="146" y="30" width="112" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="202" y="52" text-anchor="middle" font-weight="600">Yaogan ELINT</text><text class="ontl" x="202" y="68" text-anchor="middle" font-size="11">and SAR satellites</text><text class="ontl" x="202" y="82" text-anchor="middle" font-size="11">refine the fix</text>
+          <path d="M258 60 L278 60" stroke="var(--ink)" stroke-width="1.5"/><path d="M274 55 L280 60 L274 65" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+          <rect x="282" y="30" width="112" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="338" y="52" text-anchor="middle" font-weight="600">Aircraft, UAVs</text><text class="ontl" x="338" y="68" text-anchor="middle" font-size="11">confirm identity</text><text class="ontl" x="338" y="82" text-anchor="middle" font-size="11">and position</text>
+          <path d="M394 60 L414 60" stroke="var(--ink)" stroke-width="1.5"/><path d="M410 55 L416 60 L410 65" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+          <rect x="418" y="30" width="112" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="474" y="52" text-anchor="middle" font-weight="600">Launch</text><text class="ontl" x="474" y="68" text-anchor="middle" font-size="11">DF-21D ~1,500 km</text><text class="ontl" x="474" y="82" text-anchor="middle" font-size="11">DF-26 longer</text>
+          <path d="M530 60 L550 60" stroke="var(--ink)" stroke-width="1.5"/><path d="M546 55 L552 60 L546 65" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+          <rect x="554" y="30" width="80" height="60" rx="4" fill="none" stroke="var(--bronze)" stroke-width="1.5"/><text x="594" y="52" text-anchor="middle" font-weight="600" fill="var(--bronze)">Terminal</text><text x="594" y="68" text-anchor="middle" font-size="11" fill="var(--bronze)">seeker finds a</text><text x="594" y="82" text-anchor="middle" font-size="11" fill="var(--bronze)">moving ship</text>
+          <line x1="10" y1="118" x2="634" y2="118" stroke="var(--bronze)" stroke-dasharray="4 4"/>
+          <text class="sub mn" x="10" y="140" font-size="10.5">Each link can be broken: jamming against OTH radar, decoys, emission control, counter-space.</text>
+          <text class="sub mn" x="10" y="158" font-size="10.5">No open source documents an end-to-end test against a defended, manoeuvring carrier.</text><text class="sub mn" x="10" y="176" font-size="10.5">Architecture (a); demonstrated performance (c).</text>
+        </g>
+      </svg></div>
+  <figcaption>Source: Air Force Magazine, Dec 2013 (Barry Watts); DF-21 and DF-26 open literature; China-Arms, Jun 2026.</figcaption>
+</figure>
+  <p>Barry Watts judged in 2013 that “the Chinese have yet to conduct an end-to-end test of it against a moving target at sea,” and no open source has since documented one against a defended carrier. This chain is the real-world version of “over-the-horizon target fusion.” It is built from dedicated active and imaging sensors. <span class="tb2-src">[Source: Air &amp; Space Forces Magazine, Dec 2013]</span></p>
+  <h3>Persistence from orbit is what actually erodes concealment</h3>
+  <div class="tb2-kpi-row">
+    <div class="tb2-kpi"><div class="n">14</div><div class="l">launches of the NRO’s multi-phenomenology proliferated architecture by NROL-179, 19 June 2026</div></div>
+    <div class="tb2-kpi"><div class="n hl">hundreds</div><div class="l">of NRO satellites on orbit, by the agency’s own statement, with launches continuing through 2029</div></div>
+    <div class="tb2-kpi"><div class="n">21</div><div class="l">Tranche 1 Transport Layer satellites deployed by Northrop Grumman for the SDA on 10 October 2026</div></div>
+  </div>
+  <p><strong>National Reconnaissance Office.</strong> NROL-179 was “the fourteenth overall launch of the NRO’s multi-phenomenology proliferated architecture.” The NRO states it has “hundreds of NRO satellites on orbit,” that the architecture includes electro-optical, radar and relay satellites with support to ground moving target indication, and that it is “exceeding expectations.” Existence (a); performance (c), classified. <span class="tb2-src">[Source: NRO Release 5-26; NRO proliferated architecture press kit, Jan 2026; Spaceflight Now, May 2026]</span></p>
+  <figure class="tb2-fig" id="fig-05">
+  <p class="fig-label">Fig. 05</p>
+  <p class="fig-title">Fourteen proliferated-architecture launches in twenty-five months</p>
+  <p class="fig-sub">NRO proliferated architecture missions by calendar year, May 2024 to 19 June 2026</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Bar chart of NRO proliferated-architecture launches: six in 2024 from May, five in 2025, three in 2026 to 19 June, NROL-179 the fourteenth overall." viewBox="0 0 640 106" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12.5">
+          <text class="lbl" x="10" y="30">2024, from May</text><rect class="base" x="150" y="18" width="240" height="16"/><text class="lbl mn" x="398" y="31">6 launches</text>
+          <text class="lbl" x="10" y="64">2025</text><rect class="base" x="150" y="52" width="200" height="16"/><text class="lbl mn" x="358" y="65">5 launches</text>
+          <text class="lbl" x="10" y="98">2026, to 19 June</text><rect class="hl" x="150" y="86" width="120" height="16"/><text class="lbl mn" x="278" y="99">3 launches, NROL-179 the fourteenth overall</text>
+        </g>
+      </svg></div>
+  <figcaption>Sources: NRO Release 5-26 (NROL-179, “fourteenth overall launch”); NRO mission releases NROL-146 through NROL-48, 2024–25; ExecutiveGov, NROL-172.</figcaption>
+</figure>
+  <p><strong>Space Development Agency.</strong> The Proliferated Warfighter Space Architecture’s Tracking Layer is aimed at missiles, not ships. Golden Dome and Space Force commercial-imagery budget lines were not traced to primary documents and are not quoted. <span class="tb2-src">[Source: Northrop Grumman, 10 Oct 2026]</span></p>
+  <div class="tb2-callout">
+    <p><strong>Interpretation.</strong> Revisit over priority areas is moving from hours toward minutes. This, not ambient physics, shortens the time a surface fleet can stay unlocated: wide-area radar, optical and electronic-intelligence imaging, with fusion behind it. China’s Yaogan constellation plays the same role on the other side.</p>
+  </div>
+</section>
+
+<section id="ch6">
+  <h2>Chapter 6 · Pattern of life, anomaly detection and fusion software</h2>
+  <h3>Palantir Gaia is a map, not a sensor</h3>
+  <p class="tb2-thesis">The text names “Palantir Gaia” as the platform built to execute ambient signal mapping. Gaia exists. It is the geospatial command-and-control application inside Palantir Gotham. Grade for the text’s description: (d).</p>
+  <p>Palantir’s own documentation describes Gaia as Gotham’s map application: users load “Gaia maps,” add Foundry ontology data and create objects by drawing on the map. Its UK G-Cloud 14 service definition calls Gaia “a collaborative geospatial command and control application” that contextualises “artificial intelligence (AI) detections” from other sources. It organises fused data; it does not detect submarines. Palantir is, accurately, a central fusion vendor to the US military. <span class="tb2-src">[Source: Palantir Foundry and Gotham documentation; UK Digital Marketplace G-Cloud 14 service definition, Nov 2024]</span></p>
+  <figure class="tb2-fig" id="fig-06">
+  <p class="fig-label">Fig. 06</p>
+  <p class="fig-title">Fusion at scale: Maven Smart System, 2024 to 2026</p>
+  <p class="fig-sub">Contract ceiling in US dollars and reported active users</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Bar chart: Maven Smart System contract ceiling of $480 million in May 2024, raised to $1.3 billion in May 2025 through 2029; active users of more than 20,000 in May 2025, about 50,000 in January 2026 and more than 100,000 in September 2026." viewBox="0 0 710 220" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12">
+          <text class="sub mn" x="20" y="22" font-size="10.5" letter-spacing="1">CONTRACT CEILING</text>
+          <rect class="base" x="20" y="36" width="104" height="22"/><text class="lbl mn" x="132" y="52" font-size="12">$480M · May 2024 IDIQ, five years</text>
+          <rect class="hl" x="20" y="66" width="280" height="22"/><text class="lbl mn" x="308" y="82" font-size="12">$1.3B · ceiling raised by $795M, May 2025, through 2029</text>
+          <text class="sub mn" x="20" y="126" font-size="10.5" letter-spacing="1">ACTIVE USERS</text>
+          <rect class="base" x="20" y="140" width="52" height="22"/><text class="lbl mn" x="80" y="156" font-size="12">20,000+ · May 2025, across 35+ tools, three security domains</text>
+          <rect class="base" x="20" y="170" width="130" height="22"/><text class="lbl mn" x="158" y="186" font-size="12">~50,000 · January 2026</text>
+          <rect class="hl" x="20" y="200" width="260" height="14"/><text class="lbl mn" x="288" y="212" font-size="12">100,000+ · September 2026, after Operation Epic Fury</text>
+        </g>
+      </svg></div>
+  <figcaption>Sources: SpaceNews, May 2025; Breaking Defense, May 2025 (Vice Adm. Frank Whitworth); DefenseScoop, 15 Apr 2026 and 22 Sep 2026 (James Mazol at DefenseTalks).</figcaption>
+</figure>
+  <p>James Mazol, deputy under secretary of defense for research and engineering, at DefenseTalks on 22 September 2026: “In January of this year, we had about 50,000 people using Maven. Then [Operation] Epic Fury kicks off, and now we’re up to over 100,000.” A March 2026 Feinberg memo made Maven a programme of record under the Chief Digital and AI Office; NATO bought its own instance in March 2025. Fusion at scale is (a). It ingests radar, optical, signals and video detections. It does not replace them. <span class="tb2-src">[Source: DefenseScoop, 22 Sep 2026; DefenseScoop, 15 Apr 2026]</span></p>
+  <h3>Three reasons the carrier inference fails</h3>
+  <p class="tb2-thesis">The text’s trigger: three merchants altering course by two degrees without a weather reason, plus a satellite-signal “micro-variance,” means a carrier group under emission control. Grade (c), high confidence.</p>
+  <div class="tb2-cards tb2-cards-3">
+    <div class="tb2-card"><p class="k">1 · NO CAUSAL LINK</p><p>Merchant ships do not know where a silent carrier is and have no reason to deviate for it. Exercise areas are visible through their declared NAVAREA closures, not through inference.</p></div>
+    <div class="tb2-card"><p class="k">2 · BASE RATES</p><p>Thousands of ships make small course changes daily for weather routing, traffic separation and commercial instruction. Even a 99%-specific detector flags many false carriers for every true one.</p></div>
+    <div class="tb2-card"><p class="k">3 · ADVERSARIAL DATA</p><p>AIS is spoofed at state scale (Chapter 3). The “signal variance” input does not exist (Chapter 4). A model trained on both learns the deception and the noise.</p></div>
+  </div>
+  <figure class="tb2-fig" id="fig-07">
+  <p class="fig-label">Fig. 07</p>
+  <p class="fig-title">The base-rate problem, drawn to scale</p>
+  <p class="fig-sub">A detector with 99% specificity scanning 5,000 ships in one ocean region, one true carrier group present</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="One bronze mark for the single true carrier group beside fifty teal marks for false alarms: a 99 per cent specific detector scanning 5,000 ships flags 50 ordinary merchants on every pass." viewBox="0 0 640 112" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <rect class="hl" x="10" y="18" width="10" height="26"/>
+          <text class="lbl" x="30" y="36" font-size="12.5">1 true carrier group flagged</text>
+          <g class="base">
+            <rect x="10" y="60" width="10" height="26"/><rect x="22" y="60" width="10" height="26"/><rect x="34" y="60" width="10" height="26"/><rect x="46" y="60" width="10" height="26"/><rect x="58" y="60" width="10" height="26"/><rect x="70" y="60" width="10" height="26"/><rect x="82" y="60" width="10" height="26"/><rect x="94" y="60" width="10" height="26"/><rect x="106" y="60" width="10" height="26"/><rect x="118" y="60" width="10" height="26"/>
+            <rect x="130" y="60" width="10" height="26"/><rect x="142" y="60" width="10" height="26"/><rect x="154" y="60" width="10" height="26"/><rect x="166" y="60" width="10" height="26"/><rect x="178" y="60" width="10" height="26"/><rect x="190" y="60" width="10" height="26"/><rect x="202" y="60" width="10" height="26"/><rect x="214" y="60" width="10" height="26"/><rect x="226" y="60" width="10" height="26"/><rect x="238" y="60" width="10" height="26"/>
+            <rect x="250" y="60" width="10" height="26"/><rect x="262" y="60" width="10" height="26"/><rect x="274" y="60" width="10" height="26"/><rect x="286" y="60" width="10" height="26"/><rect x="298" y="60" width="10" height="26"/><rect x="310" y="60" width="10" height="26"/><rect x="322" y="60" width="10" height="26"/><rect x="334" y="60" width="10" height="26"/><rect x="346" y="60" width="10" height="26"/><rect x="358" y="60" width="10" height="26"/>
+            <rect x="370" y="60" width="10" height="26"/><rect x="382" y="60" width="10" height="26"/><rect x="394" y="60" width="10" height="26"/><rect x="406" y="60" width="10" height="26"/><rect x="418" y="60" width="10" height="26"/><rect x="430" y="60" width="10" height="26"/><rect x="442" y="60" width="10" height="26"/><rect x="454" y="60" width="10" height="26"/><rect x="466" y="60" width="10" height="26"/><rect x="478" y="60" width="10" height="26"/>
+            <rect x="490" y="60" width="10" height="26"/><rect x="502" y="60" width="10" height="26"/><rect x="514" y="60" width="10" height="26"/><rect x="526" y="60" width="10" height="26"/><rect x="538" y="60" width="10" height="26"/><rect x="550" y="60" width="10" height="26"/><rect x="562" y="60" width="10" height="26"/><rect x="574" y="60" width="10" height="26"/><rect x="586" y="60" width="10" height="26"/><rect x="598" y="60" width="10" height="26"/>
+          </g>
+          <text class="lbl" x="10" y="108" font-size="12.5">50 false carriers flagged from ordinary merchant course changes, every pass</text>
+        </g>
+      </svg></div>
+  <figcaption>Illustrative arithmetic: 1% of 5,000 non-carrier ships = 50 false alarms per sweep. Sensitivity assumed perfect; a real detector does worse.</figcaption>
+</figure>
+  <p>Anomaly detection is mature for cooperative traffic: AIS gaps, loitering, rendezvous, spoofing jumps. Anduril Lattice, Project Linchpin, CJADC2, Project Overmatch and DARPA’s Mosaic Warfare are real programmes for networking sensors to shooters; their budget lines were not traced to primary documents, so none are quoted.</p>
+  <div class="tb2-box">
+    <p><strong>Where the “glass map” actually stands.</strong> A near-real-time map of cooperative or emitting traffic, with periodic radar checks of priority areas, is roughly today’s reality. A real-time global map of non-emitting assets is a decade and several sensor generations away, if achievable at all.</p>
+  </div>
+</section>
+
+<section id="ch7">
+  <h2>Chapter 7 · Emission control and counter-detection</h2>
+  <h3>How long a carrier stays hidden, on the record</h3>
+  <p class="tb2-thesis">Emission control is not invisibility. A carrier is a 330 m steel ship visible to radar and optical satellites in clear weather. What EMCON, dispersion and deception degrade is identification and targeting-quality tracking, which is what a long-range missile needs.</p>
+  <figure class="tb2-fig" id="fig-08">
+  <p class="fig-label">Fig. 08</p>
+  <p class="fig-title">Measured concealment in exercises and trials</p>
+  <p class="fig-sub">Time a carrier force remained unlocated or survived, as recorded in official and participant accounts</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Bar chart of time a carrier force stayed unlocated or survived: Haystack trials, under 2 hours before and 8 to 15 hours with emission control and dispersion; NORPAC 1982 Midway group, 4 days under strict EMCON by a participant account; UPTIDE series, about 5.5 days on average against cruise-missile submarines." viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12.5">
+          <text class="lbl" x="10" y="40">Haystack, before (1956–72 trials)</text><rect class="base" x="300" y="28" width="5" height="16"/><text class="lbl mn" x="314" y="41" font-size="11">under 2 hours</text>
+          <text class="lbl" x="10" y="80">Haystack, with EMCON and dispersion</text><rect class="base" x="300" y="68" width="36" height="16"/><text class="lbl mn" x="344" y="81" font-size="11">8–15 hours</text>
+          <text class="lbl" x="10" y="120">NORPAC 1982, Midway group</text><rect class="base" x="300" y="108" width="230" height="16"/><text class="lbl mn" x="300" y="138" font-size="11">4 days under strict EMCON, participant account</text>
+          <text class="lbl" x="10" y="180">UPTIDE series, average</text><rect class="hl" x="300" y="168" width="317" height="16"/><text class="lbl mn" x="300" y="200" font-size="11">about 5.5 days against cruise-missile submarines</text>
+        </g>
+      </svg></div>
+  <figcaption>Sources: Naval War College Review, 2011, “Hiding in Plain Sight”; NavWeaps, “How to Hide a Task Force”; Naval History and Heritage Command, Enterprise (CVAN-65) 1981–85.</figcaption>
+</figure>
+  <p><strong>NORPAC 1982.</strong> The Navy’s official history records that Enterprise “proved the subject of extensive Soviet air, surface, and subsurface surveillance,” including “unprecedented use of Backfire bombers.” A participant’s account says the Midway group, under strict EMCON and dispersion, flew mirror-image strikes for four days without detection while Soviet regiments raided the openly operating Enterprise. The participant account is not independently confirmed in detail. <span class="tb2-src">[Source: NHHC, Enterprise VIII; NavWeaps]</span></p>
+  <p><strong>Earlier trials.</strong> The Haystack experiments raised simulated carrier survival in a nuclear exchange from under two hours to eight to fifteen hours, and the UPTIDE series averaged about five and a half days against cruise-missile submarines. Diesel-electric boats have repeatedly penetrated carrier screens in exercises; the often-cited 2005 Gotland encounter with Ronald Reagan was not traced to a primary source here. <span class="tb2-src">[Source: Naval War College Review, 2011]</span></p>
+  <p>“Running silent is no longer a defense” is therefore (c): overstated, moderate confidence. The defensible statement is that running silent alone is increasingly insufficient against a peer with proliferated space surveillance.</p>
+</section>
+
+<section id="ch8">
+  <h2>Chapter 8 · Cognitive electronic warfare and decoys</h2>
+  <h3>Phantom fleets are a programme, not a thought experiment</h3>
+  <p class="tb2-thesis">The text closes by offering to explore “cognitive EW generating realistic electronic background noise” against passive mapping. Against the text’s fictional sensors the question is moot. Against real passive sensing it is an active research line. Grade (b).</p>
+  <div class="tb2-cards">
+    <div class="tb2-card"><p class="k">DARPA BLADE AND ARC</p><p class="t">Where cognitive EW began</p><p>BLADE (from 2010, against communications) and ARC (from 2012, against adaptive radars) sense an unknown emitter, learn its behaviour and synthesise countermeasures in real time. BLADE flew with Lockheed Martin and Raytheon; ARC performers included BAE Systems, Leidos and Exelis. DARPA’s 2016 testimony cited transitions to the F-18, F-35, Next Generation Jammer and the Army’s multi-function EW programme. Grade (a). <span class="tb2-src">[Source: DARPA SASC testimony, 1 Apr 2016; Defense News, Aug 2016]</span></p></div>
+    <div class="tb2-card"><p class="k">NAVY NEMESIS</p><p class="t">Netted emulation against many sensors at once</p><p>First visible in FY2014 budget documents as a “System of Systems able to coordinate distributed EW resources against many adversary surveillance and targeting sensors simultaneously,” and reported as a means of projecting phantom fleets across radar, electronic-support and acoustic sensors. Long-endurance decoys and Nulka’s combat use are the visible pieces. Programme (a); full capability (c), classified. <span class="tb2-src">[Source: The War Zone; Navy FY2014 budget exhibits]</span></p></div>
+  </div>
+  <p>Chinese doctrine, described in Western analysis as “system destruction warfare,” treats sensor networks and kill chains as the primary target, with counter-space as a central tool. Primary PLA texts were not obtained in this cycle; this summary reflects standard Western analysis, grade (b), moderate confidence. The Russian spoofing campaign in Chapter 3 is a crude state-level example of synthetic signatures at scale.</p>
+  <div class="tb2-callout">
+    <p><strong>The inference that matters.</strong> Both the United States and its competitors keep spending on deception, decoys and counter-surveillance. Nobody funds a decoy programme against a sensor that cannot be fooled. The investment pattern is itself evidence that concealment still pays.</p>
+  </div>
+</section>
+
+<section id="ch9">
+  <h2>Chapter 9 · Assessment</h2>
+  <h3>Each layer, sorted into what is mature and what is fiction</h3>
+  <figure class="tb2-fig" id="fig-09">
+  <p class="fig-label">Fig. 09</p>
+  <p class="fig-title">The maturity matrix</p>
+  <p class="fig-sub">The text’s three layers against the open record</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Matrix of the text's three layers. Layer 1, passive RF and acoustic: mature components are seabed and towed arrays, cable sensing, radio geolocation of emitters and broadcast passive radar for aircraft; fictional components are VLF hull-scattering detection and a localised power signature. Layer 2, AIS and ADS-B: mature is radar, RF and optical detections matched against AIS and open-source tracking of cooperative aircraft; fictional is subtracting AIS to find ghosts and finding stealth aircraft by ADS-B subtraction. Layer 3, machine-learning pattern of life: mature is cooperative-traffic anomaly detection and fusion platforms at 100,000-plus users; fictional is carrier inference from satellite micro-variance and two-degree deviations." viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12">
+          <text class="sub mn" x="150" y="18" font-size="10.5" letter-spacing="1">MATURE COMPONENT</text>
+          <text class="sub mn" x="400" y="18" font-size="10.5" letter-spacing="1">FICTIONAL COMPONENT</text>
+          <text class="lbl" x="10" y="58" font-weight="600">Layer 1</text><text class="sub" x="10" y="74" font-size="11">passive RF, acoustic</text>
+          <rect x="150" y="34" width="236" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="162" y="54">Seabed and towed arrays; cable DAS;</text><text class="ontl" x="162" y="70">radio geolocation of emitters; broadcast</text><text class="ontl" x="162" y="86">passive radar for aircraft</text>
+          <rect x="400" y="34" width="230" height="60" rx="4" fill="none" stroke="var(--bronze)"/><text x="412" y="58" fill="var(--bronze)">VLF hull-scattering detection</text><text x="412" y="76" fill="var(--bronze)" font-size="11">“localised power signature”</text>
+          <text class="lbl" x="10" y="130" font-weight="600">Layer 2</text><text class="sub" x="10" y="146" font-size="11">AIS, ADS-B</text>
+          <rect x="150" y="106" width="236" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="162" y="126">Radar, RF and optical detections</text><text class="ontl" x="162" y="142">matched against AIS; open-source</text><text class="ontl" x="162" y="158">tracking of cooperative aircraft</text>
+          <rect x="400" y="106" width="230" height="60" rx="4" fill="none" stroke="var(--bronze)"/><text x="412" y="130" fill="var(--bronze)">“Subtract AIS to find ghosts”</text><text x="412" y="148" fill="var(--bronze)" font-size="11">stealth aircraft by ADS-B subtraction</text>
+          <text class="lbl" x="10" y="202" font-weight="600">Layer 3</text><text class="sub" x="10" y="218" font-size="11">ML pattern of life</text>
+          <rect x="150" y="178" width="236" height="60" rx="4" fill="var(--teal)"/><text class="ontl" x="162" y="198">Cooperative-traffic anomaly detection;</text><text class="ontl" x="162" y="214">fusion platforms (Maven, Gotham)</text><text class="ontl" x="162" y="230">at 100,000+ users</text>
+          <rect x="400" y="178" width="230" height="60" rx="4" fill="none" stroke="var(--bronze)"/><text x="412" y="202" fill="var(--bronze)">Carrier inference from satellite</text><text x="412" y="220" fill="var(--bronze)">“micro-variance” and 2° deviations</text>
+        </g>
+      </svg></div>
+  <figcaption>Teal: established or demonstrated in open sources. Bronze outline: no documented mechanism, or contradicted by physics.</figcaption>
+</figure>
+  <h4>The limits that bind every layer</h4>
+  <p>Revisit and latency: hours to days for radar imagery over most of the ocean. Coverage: acoustic networks follow chokepoints and cable routes, not the open sea. False alarms: base rates punish any anomaly detector working on the whole merchant fleet. Adversarial contamination: spoofing and decoys are already in the data. And seawater, which blocks every electromagnetic method beyond metres.</p>
+  <h4>Figures this briefing stands behind</h4>
+  <p>Maven Smart System ceiling about <span class="tb2-num">$1.3B</span> through 2029. TRAPS follow-on <span class="tb2-num">$72.8M</span> (2019) plus Congressional adds of <span class="tb2-num">$33.766M</span> (FY2019) and <span class="tb2-num">$15M</span> (FY2020). Comprehensive FY2025 to FY2027 lines for the other programmes were not verified and are not asserted.</p>
+</section>
+
+<section id="ledger">
+  <h2>Verification Ledger</h2>
+  <h3>Every sentence, graded</h3>
+  <ol class="tb2-ledger">
+    <li><span class="n">01</span><div class="c"><strong>A capability called “Passive Multi-Domain OTH Target Fusion,” “Ambient Signal Mapping” or “Passive Global Surveillance.”</strong> Not a recognised programme or doctrinal term. OTH targeting is real and active-radar based.</div><span class="g">(c)</span></li>
+    <li><span class="n">02</span><div class="c"><strong>Physics, metadata and ML can render a real-time global map of hidden assets.</strong> Fusion is real; global real-time coverage of non-emitters is undemonstrated. Maven, NRO; Paolo et al. latency.</div><span class="g">(c)</span></li>
+    <li><span class="n">03</span><div class="c"><strong>Submarines use VLF to communicate while submerged.</strong> They receive shore-transmitted VLF near the surface; they do not transmit it. Qualified.</div><span class="g">(a)</span></li>
+    <li><span class="n">04</span><div class="c"><strong>Passive sensors map a submarine via VLF “warping” around its hull.</strong> Skin depth about 1.8 m at 20 kHz; hull far smaller than wavelength; scattered field far below lightning noise. Chapter 1.</div><span class="g d">(d)</span></li>
+    <li><span class="n">05</span><div class="c"><strong>AI locates the submarine from “environmental displacement of the background wave.”</strong> No signal reaches the sensor; machine learning cannot recover absent information.</div><span class="g d">(d)</span></li>
+    <li><span class="n">06</span><div class="c"><strong>A spy vessel towing an array cannot hide its engine acoustics.</strong> Surface ships are noisy; detected by arrays and cable DAS. IUSS; JASA 2026.</div><span class="g">(a)</span></li>
+    <li><span class="n">07</span><div class="c"><strong>Nor its “localised power signature.”</strong> Undefined term; no documented sensor.</div><span class="g">(c)</span></li>
+    <li><span class="n">08</span><div class="c"><strong>Sea-floor passive sonar at chokepoints tracks these deviations.</strong> SOSUS/IUSS, TRAPS, Chinese seabed sensors. Leidos/NAVWAR 2019; The War Zone 2018.</div><span class="g">(a)</span></li>
+    <li><span class="n">09</span><div class="c"><strong>The system pulls live global AIS and ADS-B.</strong> Commercial feeds are widely available. Spire, HawkEye 360, ADS-B Exchange.</div><span class="g">(a)</span></li>
+    <li><span class="n">10</span><div class="c"><strong>Filtering out declared traffic leaves “ghost signatures.”</strong> Non-broadcasters are absent from AIS; detection needs radar, RF or optical first. Paolo et al., Nature 2024.</div><span class="g d">(d)</span></li>
+        <li><span class="n">11</span><div class="c"><strong>Corrected: radar and RF detections unmatched to AIS reveal dark vessels.</strong> 72–76% of industrial fishing vessels not publicly tracked. Paolo et al. 2024; HawkEye 360 DarkRF.</div><span class="g">(a)</span></li>
+    <li><span class="n">12</span><div class="c"><strong>Micro-variance in background satellite signal strength over a region reveals a hidden group.</strong> No documented mechanism; satellite-illuminated passive radar reaches kilometres. IET RSN 2023; Birmingham 2019.</div><span class="g d">(c)/(d)</span></li>
+    <li><span class="n">13</span><div class="c"><strong>Merchants deviating 2° without a weather reason signal an EMCON carrier.</strong> No causal mechanism; base-rate false alarms; spoofed AIS. RIN; fourteen-state letter; Chapter 6.</div><span class="g">(c)</span></li>
+    <li><span class="n">14</span><div class="c"><strong>AI infers the carrier group and renders a high-probability estimate.</strong> Real carrier targeting uses OTH radar plus satellites and is still judged untested at sea. Air Force Magazine 2013.</div><span class="g">(c)</span></li>
+    <li><span class="n">15</span><div class="c"><strong>Palantir Gaia is built to execute this.</strong> Gaia is Gotham’s geospatial command-and-control map; it displays data, it does not sense. Palantir docs; UK G-Cloud 14.</div><span class="g d">(d)</span></li>
+    <li><span class="n">16</span><div class="c"><strong>Western SIGINT clouds are built to execute this.</strong> Fusion clouds exist (Maven); no evidence of the described mechanisms. DefenseScoop 2025–26.</div><span class="g">(c)</span></li>
+    <li><span class="n">17</span><div class="c"><strong>“Running silent is no longer a defense.”</strong> Overstated; EMCON still raises search costs; both sides fund deception. Naval War College Review 2011; NHHC; NEMESIS.</div><span class="g">(c)</span></li>
+    <li><span class="n">18</span><div class="c"><strong>Cognitive EW generating realistic background noise is deployed against passive mapping.</strong> Cognitive EW and multi-sensor deception are real; framing against fictional sensors is moot. DARPA BLADE/ARC; NEMESIS.</div><span class="g">(b)</span></li>
+  </ol>
+  <figure class="tb2-fig" id="fig-10">
+  <p class="fig-label">Fig. 10</p>
+  <p class="fig-title">Where the eighteen claims land</p>
+  <p class="fig-sub">Count of claims by evidence grade</p>
+  <div class="tb2-fig-scroll"><svg role="img" aria-label="Bar chart of the eighteen claims by grade: five established, one demonstrated, seven speculative, five wrong including one graded (c)/(d)." viewBox="0 0 640 104" xmlns="http://www.w3.org/2000/svg">
+        <g font-size="12">
+          <rect class="base" x="150" y="12" width="150" height="16"/><text class="lbl" x="10" y="25">(a) established</text><text class="lbl mn" x="308" y="25">5</text>
+          <rect class="base" x="150" y="36" width="30" height="16"/><text class="lbl" x="10" y="49">(b) demonstrated</text><text class="lbl mn" x="188" y="49">1</text>
+          <rect class="base" x="150" y="60" width="210" height="16"/><text class="lbl" x="10" y="73">(c) speculative</text><text class="lbl mn" x="368" y="73">7</text>
+          <rect class="hl" x="150" y="84" width="150" height="16"/><text class="lbl" x="10" y="97">(d) wrong, incl. one (c)/(d)</text><text class="lbl mn" x="308" y="97">5</text>
+        </g>
+      </svg></div>
+  <figcaption>One claim (12) is graded (c)/(d) and counted with (d). The five established claims include one qualified (03).</figcaption>
+</figure>
+</section>
+
+<section id="conclusions">
+  <h2>Conclusions and Implications</h2>
+  <h3>Four judgments and three things to do about them</h3>
+  <ol class="tb2-ledger">
+    <li><span class="n">KJ-1</span><div class="c"><strong>The text’s three most specific mechanisms are wrong or unsupported.</strong> VLF hull scattering, AIS subtraction and satellite-signal micro-variance. Its general thesis, that fusion is eroding concealment, is directionally correct.</div><span class="g">HIGH</span></li>
+    <li><span class="n">KJ-2</span><div class="c"><strong>Surface-fleet concealment is being eroded by proliferated space imaging and electronic intelligence, commercial radio geolocation, and fusion software at scale.</strong> Not by passive “ambient” physics.</div><span class="g">HIGH</span></li>
+    <li><span class="n">KJ-3</span><div class="c"><strong>Submarines remain far harder to find than surface ships.</strong> The credible threats are expanding acoustic networks in chokepoints and littoral bastions, plus incremental magnetic-detection gains. Regional and short-range, not global.</div><span class="g">MODERATE</span></li>
+    <li><span class="n">KJ-4</span><div class="c"><strong>Deception and emission control retain significant value,</strong> especially against long-range kill chains that need targeting-quality tracks rather than mere detection.</div><span class="g">MODERATE</span></li>
+  </ol>
+  <div class="tb2-cards tb2-cards-3">
+    <div class="tb2-card"><p class="k">FOR ANALYSTS</p><p>Demand a stated signal, a signal-to-noise ratio at the sensor, a range and a false-alarm rate. The VLF claim fails the first test. AI cannot create a signal that physics removes before it reaches the sensor.</p></div>
+    <div class="tb2-card"><p class="k">FOR NAVAL PLANNERS</p><p>Assume persistent surface detection in priority theatres within this decade. Invest in identification and targeting denial: decoys, signature emulation, dispersion, electronic attack on radar and space sensors. Not in invisibility.</p></div>
+    <div class="tb2-card"><p class="k">FOR POLICY</p><p>AIS and GNSS integrity is now a security problem. The European response to Russian spoofing shows that cooperative maritime data cannot be treated as ground truth in any fusion architecture.</p></div>
+  </div>
+  <h4>Caveats</h4>
+  <p>Classified capability (undersea surveillance performance, NRO sensor specifics, Chinese seabed coverage) cannot be assessed from open sources; this briefing grades only what is publicly evidenced. Several requested items were not traced to primary documents in this cycle: FY2025 to FY2027 budget lines for Overmatch, Linchpin, Golden Dome and commercial imagery; Japanese, British and Norwegian arrays; the 2005 Gotland encounter; primary PLA doctrinal texts. Passive-radar figures are mostly manufacturer or partner claims. Chinese research is often reachable only through SCMP summaries, whose headlines overstate the papers beneath them.</p>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <h3>Open sources consulted</h3>
+
+  <p>Grouped by chapter. Chained citations are declared as such in the text.</p>
+  <div class="tb2-sources">
+    <div class="row"><p class="k">CH. 1 · PHYSICS AND MAGNETICS</p><p>SCMP, “China can detect US Seawolf-class submarine with magnetic wake tracking,” 7 Feb 2025 · Asia Times, “China’s magnetic tech can detect US stealth subs,” Feb 2025 · The Quantum Insider, drone-mounted quantum sensor, 27 Apr 2025 · SCMP, handheld submarine detector, 25 Sep 2026</p></div>
+    <div class="row"><p class="k">CH. 2 · ACOUSTICS</p><p>UPI, SAIC deep ocean acoustic sensors, 28 Aug 2013 · NAVWAR solicitation N0003919R0022 (GovTribe) · Military &amp; Aerospace Electronics, TRAPS prototypes · Naval Technology, Leidos TRAPS · Navy RDT&amp;E exhibit, Integrated Surveillance System · DARPA, Ocean of Things · The War Zone, Jan 2018 · National Maritime Foundation, Undersea Great Wall · Maritime Executive · JASA 159(5), 2026 · ResearchGate 396960937 · arXiv 2509.11614</p></div>
+    <div class="row"><p class="k">CH. 3 · DARK VESSELS AND SPOOFING</p><p>Paolo et al., Nature 625, Jan 2024 (PMC10764273) · Global Fishing Watch press release · HawkEye 360 Maritime Association, Apr 2022 (SatNews) · Via Satellite, 28 Jan 2021 · Geospatial World, dark ships · Joint open letter of fourteen European states, 26 Jan 2026 · Royal Institute of Navigation, 23 Jan 2026 · Windward, Mar 2026 · arXiv 2602.16257</p></div>
+    <div class="row"><p class="k">CH. 4 · PASSIVE RADAR</p><p>Hensoldt, NATO measurement campaign · Defense News, 10 Aug 2023 · C4ISRNET, 30 Sep 2019 · Association of Old Crows · ERA VERA-NG data sheet · CASI/BluePath Labs, China’s Air Defense Radar Industrial Base, Mar 2025 · Global Times, 20 Jul 2017 · National Defense, 28 Mar 2023 · Lockheed Martin Australia, AIR6500 · EasyChair preprint 900 · IET Radar, Sonar &amp; Navigation, rsn2.12446 · Sensors 20(3):599, 2020 · Geophysical Research Letters, 2015GL064204</p></div>
+    <div class="row"><p class="k">CH. 5 · OTH RADAR AND SPACE</p><p>US Patent 11,953,580 · “Naval Applications of HF Over-the-Horizon Radar” (ResearchGate) · Air &amp; Space Forces Magazine, Dec 2013 · China-Arms, Jun 2026 · NRO Release 5-26 · NRO proliferated architecture press kit, 7 Jan 2026 · Spaceflight Now, 11 May 2026 · ExecutiveGov, NROL-172 and NROL-179 · Northrop Grumman, 10 Oct 2026</p></div>
+    <div class="row"><p class="k">CH. 6–8 · FUSION, EMCON, EW</p><p>Palantir Foundry and Gotham documentation (Gaia) · UK Digital Marketplace, G-Cloud 14 Gotham service definition, Nov 2024 · SpaceNews, Maven expansion · Breaking Defense, May 2025 · DefenseScoop, 15 Apr 2026 and 22 Sep 2026 · NHHC, Enterprise (CVAN-65) 1981–85 · NavWeaps, “How to Hide a Task Force” · Naval War College Review, “Hiding in Plain Sight,” 2011 · DARPA SASC testimony, 1 Apr 2016 · Defense News, 29 Aug 2016 · Military &amp; Aerospace Electronics, AI in EW · The War Zone, NEMESIS; Nulka</p></div>
+  </div>
+</section>
+
+<div class="endmark">
+  <div class="em-line">End of Technical Briefing No. 2</div>
+  <div class="em-rule"></div>
+  <div class="em-quote">None of it makes running silent obsolete. It makes running silent insufficient on its own.</div>
+  <div class="em-src">— Bottom Line</div>
+</div>
+
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="colophon">
+    <div class="colophon-left">
+      <div class="colophon-mark">NORTH PACIFIC STRATEGY INITIATIVE</div>
+      <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
+      <div class="colophon-text">
+        Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
+        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.<br>
+        Companion record: <a href="https://www.macroview.live/ledger">MacroView daily calls, dated since 19 June 2026</a> (external, open data).
+      </div>
+    </div>
+    <div class="colophon-right">
+      VOL. I<br>
+      EST. MMXXVI<br>
+      <a href="https://github.com/cherishwins/npsi-site">GITHUB</a>  ·  <a href="https://www.linkedin.com/company/north-pacific-strategy-initiative/" rel="me">LINKEDIN</a>  ·  <a href="/ledger/">LEDGER</a>  ·  <a href="/disclosure/">DISCLOSURE</a>  ·  <a href="/colophon/">COLOPHON</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

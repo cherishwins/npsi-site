@@ -1,7 +1,7 @@
 {
   "imprint": "North Pacific Strategy Initiative",
   "url": "https://npsi.ca/",
-  "generated": "2026-10-14",
+  "generated": "2026-10-17",
   "identifiers": {
     "serial": "Publication serial, assigned by the editor alone at publication; sequential within its line; never reused.",
     "accession": "Intake number, NPSI-YYYYMMDD-X, assigned when a document enters the system; immutable. A document may carry an accession number before a serial is assigned."
@@ -277,6 +277,27 @@
       "pdf": "/tb1/technical-briefing.pdf",
       "files": [
         "/tb1/technical-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "TB",
+      "number": 2,
+      "serial": null,
+      "accession": "NPSI-20261014",
+      "folder": "tb2",
+      "url": "/tb2/",
+      "title": "Running Silent",
+      "subtitle": "What ambient signal mapping can and cannot find. A claim-by-claim technical assessment of “passive multi-domain over-the-horizon target fusion.”",
+      "version": "v1.0",
+      "released": "2026-10-17",
+      "series": null,
+      "status": "published",
+      "pdf": "/tb2/technical-briefing.pdf",
+      "files": [
+        "/tb2/technical-briefing-print.pdf",
+        "/tb2/technical-briefing.pdf"
       ],
       "supersedes": null,
       "superseded_by": null
