@@ -35,6 +35,7 @@ Cite the canonical URLs below.
 
 ## Technical Briefings
 
+- [TB2 — Running Silent](https://npsi.ca/tb2/): What ambient signal mapping can and cannot find — a claim-by-claim technical assessment of “passive multi-domain over-the-horizon target fusion.” Eighteen claims from a widely circulated AI-generated text graded against open physics, peer-reviewed research and programme records: the VLF hull-scattering mechanism fails on seawater skin depth (about 1.8 m at 20 kHz), dark vessels cannot be found by subtracting AIS from itself, and no published mechanism turns satellite-signal “micro-variance” into a carrier track. What works is narrower and more active: radar matched to AIS, radio geolocation of emitters, seabed and towed acoustic arrays, skywave radar cued to imaging satellites, and fusion software at scale. NPSI-20261014 (serial pending); v1.0, dated 14 October 2026, published 17 October 2026. PDF: https://npsi.ca/tb2/technical-briefing.pdf (print edition: https://npsi.ca/tb2/technical-briefing-print.pdf)
 - [TB1 — The Verified Sky](https://npsi.ca/tb1/): Sensing, certainty, and the law of automated airspace awareness — state of the art in computer vision and sensor fusion for monitoring defined airspace, the verification-ledger architecture, detection-to-action latency, lawful automated response in Canada, and a conservative capability forecast to 2031. v1.0.1, 11 June 2026 (errata 14 October 2026). PDF: https://npsi.ca/tb1/technical-briefing.pdf
 
 ## Briefing Notes
