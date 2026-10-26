@@ -1,43 +1,47 @@
 {
- "generated": "2026-10-19T18:44:44Z",
+ "generated": "2026-10-26T14:44:53Z",
  "sources": {
   "http://ckpgtoday.ca/2026/01/21/quick-quotes-what-people-are-saying-about-carneys-speech/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ]
   },
   "http://en.kremlin.ru/acts/news/71506": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260611075215/http://en.kremlin.ru/acts/news/71506",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
-   ]
+   ],
+   "timestamp": "20260611075215"
   },
   "https://247wallst.com/": {
-   "checked": "2026-10-19",
-   "cited_by": [
-    "sb9"
-   ]
-  },
-  "https://abc.xyz/": {
-   "archive_url": "http://web.archive.org/web/20261012070523/https://abc.xyz/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019135430/https://247wallst.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261012070523"
+   "timestamp": "20261019135430"
+  },
+  "https://abc.xyz/": {
+   "archive_url": "http://web.archive.org/web/20261025111909/https://abc.xyz/",
+   "checked": "2026-10-26",
+   "cited_by": [
+    "sb9"
+   ],
+   "timestamp": "20261025111909"
   },
   "https://alaskapublic.org/news/politics/2026-09-30/trump-claims-south-korea-will-invest-50-billion-in-alaska-gas-pipeline-but-offers-few-details": {
-   "archive_url": "http://web.archive.org/web/20261010003136/https://alaskapublic.org/news/politics/2026-09-30/trump-claims-south-korea-will-invest-50-billion-in-alaska-gas-pipeline-but-offers-few-details",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261013211709/https://alaskapublic.org/news/politics/2026-09-30/trump-claims-south-korea-will-invest-50-billion-in-alaska-gas-pipeline-but-offers-few-details",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
-   "timestamp": "20261010003136"
+   "timestamp": "20261013211709"
   },
   "https://alaskapublic.org/news/politics/alaska-legislature/2026-06-04/glenfarne-releases-alaska-lng-cost-estimates-as-skeptical-legislators-press-for-details": {
    "archive_url": "http://web.archive.org/web/20260812024526/https://alaskapublic.org/news/politics/alaska-legislature/2026-06-04/glenfarne-releases-alaska-lng-cost-estimates-as-skeptical-legislators-press-for-details",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -45,37 +49,37 @@
   },
   "https://apma.ca/": {
    "archive_url": "http://web.archive.org/web/20261008042143/https://www.apma.ca/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
    "timestamp": "20261008042143"
   },
   "https://app2.msci.com/webapp/index_ann/DocGet?pub_key=ZPma4fa7hJo%3D&lang=en&format=html": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
    ]
   },
   "https://arxiv.org/abs/1707.08945": {
    "archive_url": "http://web.archive.org/web/20260925073737/https://arxiv.org/abs/1707.08945",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
    "timestamp": "20260925073737"
   },
   "https://arxiv.org/abs/1712.09665": {
-   "archive_url": "http://web.archive.org/web/20261010095407/https://arxiv.org/abs/1712.09665",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017094620/https://arxiv.org/abs/1712.09665",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
-   "timestamp": "20261010095407"
+   "timestamp": "20261017094620"
   },
   "https://arxiv.org/abs/1904.08653": {
    "archive_url": "http://web.archive.org/web/20261012080235/https://arxiv.org/abs/1904.08653",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -83,7 +87,7 @@
   },
   "https://arxiv.org/abs/2109.07193": {
    "archive_url": "http://web.archive.org/web/20260220170510/https://arxiv.org/abs/2109.07193",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -91,7 +95,7 @@
   },
   "https://arxiv.org/abs/2509.11614": {
    "archive_url": "http://web.archive.org/web/20260522202032/https://arxiv.org/abs/2509.11614",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -99,7 +103,7 @@
   },
   "https://arynews.tv/pakistan-warns-india-attempt-to-stop-water-to-be-considered-war/": {
    "archive_url": "http://web.archive.org/web/20250425020104/https://arynews.tv/pakistan-warns-india-attempt-to-stop-water-to-be-considered-war/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -107,7 +111,7 @@
   },
   "https://asianews.network/why-south-korea-faces-another-us-tariff-fight/": {
    "archive_url": "http://web.archive.org/web/20260729073142/https://asianews.network/why-south-korea-faces-another-us-tariff-fight/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -115,7 +119,7 @@
   },
   "https://asiatimes.com/2025/02/chinas-magnetic-tech-can-detect-us-stealth-subs-study/": {
    "archive_url": "http://web.archive.org/web/20250723225557/https://asiatimes.com/2025/02/chinas-magnetic-tech-can-detect-us-stealth-subs-study/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -123,55 +127,59 @@
   },
   "https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/92736/801146272055049-service-definition-document-2024-05-02-1537.pdf": {
    "archive_url": "http://web.archive.org/web/20250725083805/https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/92736/801146272055049-service-definition-document-2024-05-02-1537.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20250725083805"
   },
   "https://biofuelsdigest.com/hyundai-motor-group-withdraws-canadian-hydrogen-project/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://blog.blom-invest.com/retrenchment-of-the-lebanese-banking-sector-oct-2019-apr-2023/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019140055/https://blog.blom-invest.com/retrenchment-of-the-lebanese-banking-sector-oct-2019-apr-2023/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019140055"
   },
   "https://blog.blominvestbank.com/bdls-foreign-reserve-assets-stand-at-11-66b-after-an-84-2m-increase-in-the-first-two-weeks-of-august-2026/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019140140/https://blog.blominvestbank.com/bdls-foreign-reserve-assets-stand-at-11-66b-after-an-84-2m-increase-in-the-first-two-weeks-of-august-2026/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019140140"
   },
   "https://blogs.worldbank.org/en/opendata/fertilizer-prices-surge-as-strait-of-hormuz-disruptions-tighten-": {
    "archive_url": "http://web.archive.org/web/20260913034504/https://blogs.worldbank.org/en/opendata/fertilizer-prices-surge-as-strait-of-hormuz-disruptions-tighten-",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260913034504"
   },
   "https://bls.gov/news.release/cpi.nr0.htm": {
-   "archive_url": "http://web.archive.org/web/20261015224038/https://www.bls.gov/news.release/cpi.nr0.htm",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261024220433/https://www.bls.gov/news.release/cpi.nr0.htm",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261015224038"
+   "timestamp": "20261024220433"
   },
   "https://boereport.com/2026/09/30/what-is-alaska-lng-and-why-does-the-project-face-doubts/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://breakingdefense.com/2025/05/ai-unchained-ngas-maven-tool-significantly-decreasing-time-to-targeting-agency-chief-says/": {
    "archive_url": "http://web.archive.org/web/20260822060415/https://breakingdefense.com/2025/05/ai-unchained-ngas-maven-tool-significantly-decreasing-time-to-targeting-agency-chief-says/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -179,7 +187,7 @@
   },
   "https://ca.news.yahoo.com/russia-china-fail-u-n-195917733.html": {
    "archive_url": "http://web.archive.org/web/20221002071443/https://ca.news.yahoo.com/russia-china-fail-u-n-195917733.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -187,7 +195,7 @@
   },
   "https://cdn.greenpeace.fr/site/uploads/2026/01/Annexe-Uranium-Chiffres-a-jour-181225docx.pdf": {
    "archive_url": "http://web.archive.org/web/20260128130849/https://cdn.greenpeace.fr/site/uploads/2026/01/Annexe-Uranium-Chiffres-a-jour-181225docx.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -195,7 +203,7 @@
   },
   "https://cdn.greenpeace.fr/site/uploads/2026/02/Greenpeace-investigation-France-Russia-radioactive-trafficking-continues-2026-EN.pdf": {
    "archive_url": "http://web.archive.org/web/20260316182928/https://cdn.greenpeace.fr/site/uploads/2026/02/Greenpeace-investigation-France-Russia-radioactive-trafficking-continues-2026-EN.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -203,23 +211,23 @@
   },
   "https://climateandsecurity.org/2013/03/connecting-the-drops-an-indus-river-basin-roadmap/": {
    "archive_url": "http://web.archive.org/web/20240912051924/https://climateandsecurity.org/2013/03/connecting-the-drops-an-indus-river-basin-roadmap/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20240912051924"
   },
   "https://cmegroup.com/": {
-   "archive_url": "http://web.archive.org/web/20261012185401/https://www.cmegroup.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261021062844/https://www.cmegroup.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261012185401"
+   "timestamp": "20261021062844"
   },
   "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share": {
    "archive_url": "http://web.archive.org/web/20261017012616/https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1",
     "wp2",
@@ -228,14 +236,14 @@
    "timestamp": "20261017012616"
   },
   "https://cyprusshippingnews.com/2026/09/09/tankers-vlcc-market-trending-higher/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://defence-industry.eu/hanwha-ocean-links-canadian-submarine-proposal-to-wider-south-korea-canada-cooperation-in-energy-and-industry/": {
    "archive_url": "http://web.archive.org/web/20260606085010/https://defence-industry.eu/hanwha-ocean-links-canadian-submarine-proposal-to-wider-south-korea-canada-cooperation-in-energy-and-industry/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -243,7 +251,7 @@
   },
   "https://defence-ua.com/photo/u_nadiji_shovatisja_vid_ukrajinskih_droniv_z_mashinnim_zorom_rashisti_distali_slipuchij_kamufljazh_z_pershoji_svitovoji_vijni_ale_ne_zrozumili_jak_vin_pratsjuje-457.html": {
    "archive_url": "http://web.archive.org/web/20260705134750/https://defence-ua.com/photo/u_nadiji_shovatisja_vid_ukrajinskih_droniv_z_mashinnim_zorom_rashisti_distali_slipuchij_kamufljazh_z_pershoji_svitovoji_vijni_ale_ne_zrozumili_jak_vin_pratsjuje-457.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -251,7 +259,7 @@
   },
   "https://defensescoop.com/2026/04/15/palantir-maven-smart-system-pentagon-program-transition-feinberg/": {
    "archive_url": "http://web.archive.org/web/20260719072126/https://defensescoop.com/2026/04/15/palantir-maven-smart-system-pentagon-program-transition-feinberg/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -259,7 +267,7 @@
   },
   "https://defensescoop.com/2026/09/22/maven-smart-system-ai-james-mazol-cameron-stanley-defensetalks/": {
    "archive_url": "http://web.archive.org/web/20261006171447/https://defensescoop.com/2026/09/22/maven-smart-system-ai-james-mazol-cameron-stanley-defensetalks/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -267,27 +275,27 @@
   },
   "https://digital-commons.usnwc.edu/nwc-review/vol64/iss2/6": {
    "archive_url": "http://web.archive.org/web/20260712143232/https://digital-commons.usnwc.edu/nwc-review/vol64/iss2/6/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260712143232"
   },
   "https://doi.org/10.1049/rsn2.12446": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://doi.org/10.1364/OSAC.408761": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://easychair.org/publications/preprint/Z8Mw": {
    "archive_url": "http://web.archive.org/web/20260218091912/https://easychair.org/publications/preprint/Z8Mw",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -295,7 +303,7 @@
   },
   "https://electricautonomy.ca/ev-supply-chain/batteries/2026-02-13/stellantis-exits-nextstar-energy-battery-production-in-windsor/": {
    "archive_url": "http://web.archive.org/web/20260324052455/https://electricautonomy.ca/ev-supply-chain/batteries/2026-02-13/stellantis-exits-nextstar-energy-battery-production-in-windsor/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -303,87 +311,87 @@
   },
   "https://electro-mechanicalsystems.curtisswright.com/indal": {
    "archive_url": "http://web.archive.org/web/20261012072529/https://electro-mechanicalsystems.curtisswright.com/indal",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
    "timestamp": "20261012072529"
   },
   "https://ember-energy.org/latest-insights/global-electricity-review-2025/": {
-   "archive_url": "http://web.archive.org/web/20261008135905/https://ember-energy.org/latest-insights/global-electricity-review-2025/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016092437/https://ember-energy.org/latest-insights/global-electricity-review-2025/",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp4"
    ],
-   "timestamp": "20261008135905"
+   "timestamp": "20261016092437"
   },
   "https://en.fnnews.com/news/202511141141574421": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.majalla.com/node/333225": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://en.sedaily.com/finance/2026/09/03/koreas-foreign-reserves-post-record-monthly-jump-in-august": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.sedaily.com/finance/2026/09/21/korea-us-extend-repayment-window-for-200-billion-investment": {
    "archive_url": "http://web.archive.org/web/20260921225246/https://en.sedaily.com/finance/2026/09/21/korea-us-extend-repayment-window-for-200-billion-investment",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
    "timestamp": "20260921225246"
   },
   "https://en.sedaily.com/finance/2026/09/30/fx-authorities-sold-96-billion-in-q2-to-defend-won": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.sedaily.com/finance/2026/09/30/won-ends-higher-as-quarter-end-exporter-sales-offset": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.sedaily.com/finance/2026/10/01/korea-us-energy-plan-puts-120-billion-nuclear-push-in-four": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.sedaily.com/finance/2026/10/01/korea-wires-first-24-billion-for-us-investment-project": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.sedaily.com/finance/2026/10/01/us-locks-in-alaska-lng-stake-seoul-vows-tough-talks": {
    "archive_url": "http://web.archive.org/web/20261002004033/https://en.sedaily.com/finance/2026/10/01/us-locks-in-alaska-lng-stake-seoul-vows-tough-talks",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
    "timestamp": "20261002004033"
   },
   "https://en.sedaily.com/international/2026/07/09/us-section-301-tariffs-loom-korea-calls-125-percent-forced": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://en.wikipedia.org/wiki/2021%E2%80%932022_Iraqi_political_crisis": {
    "archive_url": "http://web.archive.org/web/20260717214547/https://en.wikipedia.org/wiki/2021%E2%80%932022_Iraqi_political_crisis",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -391,7 +399,7 @@
   },
   "https://en.wikipedia.org/wiki/Basic_Law_for_the_Federal_Republic_of_Germany": {
    "archive_url": "http://web.archive.org/web/20261016210043/https://en.wikipedia.org/wiki/Basic_Law_for_the_Federal_Republic_of_Germany",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -399,7 +407,7 @@
   },
   "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority_Order_1": {
    "archive_url": "http://web.archive.org/web/20260307025436/https://en.wikipedia.org/wiki/Coalition_Provisional_Authority_Order_1",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -407,7 +415,7 @@
   },
   "https://en.wikipedia.org/wiki/Constitution_of_Iraq": {
    "archive_url": "http://web.archive.org/web/20260928162838/https://en.wikipedia.org/wiki/Constitution_of_Iraq",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -415,7 +423,7 @@
   },
   "https://en.wikipedia.org/wiki/Cyril_Radcliffe,_1st_Viscount_Radcliffe": {
    "archive_url": "http://web.archive.org/web/20260831104008/https://en.wikipedia.org/wiki/Cyril_Radcliffe,_1st_Viscount_Radcliffe",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -423,7 +431,7 @@
   },
   "https://en.wikipedia.org/wiki/Elias_Peter_Hoayek": {
    "archive_url": "http://web.archive.org/web/20260918004451/https://en.wikipedia.org/wiki/Elias_Peter_Hoayek",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -431,7 +439,7 @@
   },
   "https://en.wikipedia.org/wiki/Haider_al-Abadi": {
    "archive_url": "http://web.archive.org/web/20260924175435/https://en.wikipedia.org/wiki/Haider_al-Abadi",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -439,23 +447,23 @@
   },
   "https://en.wikipedia.org/wiki/High_Representative_for_Bosnia_and_Herzegovina": {
    "archive_url": "http://web.archive.org/web/20261007080539/https://en.wikipedia.org/wiki/High_Representative_for_Bosnia_and_Herzegovina",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20261007080539"
   },
   "https://en.wikipedia.org/wiki/India": {
-   "archive_url": "http://web.archive.org/web/20261015052140/https://en.wikipedia.org/wiki/India",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261021003326/https://en.wikipedia.org/wiki/India",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20261015052140"
+   "timestamp": "20261021003326"
   },
   "https://en.wikipedia.org/wiki/Indus_Waters_Treaty": {
    "archive_url": "http://web.archive.org/web/20260903001002/https://en.wikipedia.org/wiki/Indus_Waters_Treaty",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -463,7 +471,7 @@
   },
   "https://en.wikipedia.org/wiki/Medog_Hydropower_Station": {
    "archive_url": "http://web.archive.org/web/20260916011309/https://en.wikipedia.org/wiki/Medog_Hydropower_Station",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -471,7 +479,7 @@
   },
   "https://en.wikipedia.org/wiki/Mount_Lebanon_Mutasarrifate": {
    "archive_url": "http://web.archive.org/web/20260918153517/https://en.wikipedia.org/wiki/Mount_Lebanon_Mutasarrifate",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -479,87 +487,91 @@
   },
   "https://en.wikipedia.org/wiki/National_Pact": {
    "archive_url": "http://web.archive.org/web/20261013001216/https://en.wikipedia.org/wiki/National_Pact",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20261013001216"
   },
   "https://en.wikipedia.org/wiki/Nawaf_Salam": {
-   "archive_url": "http://web.archive.org/web/20260928192018/https://en.wikipedia.org/wiki/Nawaf_Salam",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261014040812/https://en.wikipedia.org/wiki/Nawaf_Salam",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20260928192018"
+   "timestamp": "20261014040812"
   },
   "https://en.wikipedia.org/wiki/Pakistan": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016030511/https://en.wikipedia.org/wiki/Pakistan",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261016030511"
   },
   "https://en.wikipedia.org/wiki/Radcliffe_Line": {
    "archive_url": "http://web.archive.org/web/20260913100728/https://en.wikipedia.org/wiki/Radcliffe_Line",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260913100728"
   },
   "https://en.wikipedia.org/wiki/Red_Sea_crisis": {
-   "archive_url": "http://web.archive.org/web/20261013102238/https://en.wikipedia.org/wiki/Red_Sea_crisis",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026043229/https://en.wikipedia.org/wiki/Red_Sea_crisis",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20261013102238"
+   "timestamp": "20261026043229"
   },
   "https://en.wikipedia.org/wiki/Rwandan_genocide": {
-   "archive_url": "http://web.archive.org/web/20261013135345/https://en.wikipedia.org/wiki/Rwandan_genocide",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261015142816/https://en.wikipedia.org/wiki/Rwandan_genocide",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20261013135345"
+   "timestamp": "20261015142816"
   },
   "https://energy.gov/": {
-   "archive_url": "http://web.archive.org/web/20261019060655/https://www.energy.gov/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026042126/https://www.energy.gov/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019060655"
+   "timestamp": "20261026042126"
   },
   "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2536/view": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://enterpriseam.com/menaplus/2026/05/13/who-pays-for-lebanons-banking-collapse/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019143216/https://enterpriseam.com/menaplus/2026/05/13/who-pays-for-lebanons-banking-collapse/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019143216"
   },
   "https://enterpriseam.com/menaplus/2026/09/30/lebanon-hopes-for-imf-agreement-as-financial-gap-law-becomes-the-last-obstacle/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://ercot.com/": {
-   "archive_url": "http://web.archive.org/web/20261013023014/https://www.ercot.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261024020507/https://www.ercot.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261013023014"
+   "timestamp": "20261024020507"
   },
   "https://erf.org.eg/publications/ive-got-the-power-mapping-connections-between-lebanons-banking-sector-and-the-ruling-class/": {
    "archive_url": "http://web.archive.org/web/20260729011303/https://erf.org.eg/publications/ive-got-the-power-mapping-connections-between-lebanons-banking-sector-and-the-ruling-class/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -567,7 +579,7 @@
   },
   "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf": {
    "archive_url": "http://web.archive.org/web/20261012184024/https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -575,7 +587,7 @@
   },
   "https://eu.36kr.com/en/p/3991581777607427": {
    "archive_url": "http://web.archive.org/web/20260921095716/https://eu.36kr.com/en/p/3991581777607427",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -583,7 +595,7 @@
   },
   "https://euratom-supply.ec.europa.eu/document/download/416f638d-1928-44b6-a9d9-d9180b6eb2ad_en?filename=ESA%20Annual%20Report%202022%20-%20Final%20%28website%29_2.pdf": {
    "archive_url": "http://web.archive.org/web/20261008070452/https://euratom-supply.ec.europa.eu/document/download/416f638d-1928-44b6-a9d9-d9180b6eb2ad_en?filename=ESA%20Annual%20Report%202022%20-%20Final%20%28website%29_2.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -591,7 +603,7 @@
   },
   "https://euratom-supply.ec.europa.eu/document/download/96aa8afa-cdb9-41e0-a8c1-a1958d7afe1d_en?filename=Euratom%20Supply%20Agency%20-%20Annual%20report%202021%20-%20Corrected%20edition.pdf": {
    "archive_url": "http://web.archive.org/web/20251112090541/https://euratom-supply.ec.europa.eu/document/download/96aa8afa-cdb9-41e0-a8c1-a1958d7afe1d_en?filename=Euratom%20Supply%20Agency%20-%20Annual%20report%202021%20-%20Corrected%20edition.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -599,7 +611,7 @@
   },
   "https://euratom-supply.ec.europa.eu/document/download/a7d4263d-84dd-4300-bb7a-9a2fdb618163_en?filename=MJAA21001ENN_002.pdf": {
    "archive_url": "http://web.archive.org/web/20260521172220/https://euratom-supply.ec.europa.eu/document/download/a7d4263d-84dd-4300-bb7a-9a2fdb618163_en?filename=MJAA21001ENN_002.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -607,7 +619,7 @@
   },
   "https://europeanwesternbalkans.com/2025/08/06/dodiks-presidential-mandate-terminated-by-central-election-commission/": {
    "archive_url": "http://web.archive.org/web/20260630200239/http://europeanwesternbalkans.com/2025/08/06/dodiks-presidential-mandate-terminated-by-central-election-commission/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -615,7 +627,7 @@
   },
   "https://europeanwesternbalkans.com/2025/10/29/us-lifts-sanctions-on-dodik-and-his-closest-associates/": {
    "archive_url": "http://web.archive.org/web/20260630185610/http://europeanwesternbalkans.com/2025/10/29/us-lifts-sanctions-on-dodik-and-his-closest-associates/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -623,29 +635,29 @@
   },
   "https://europeanwesternbalkans.com/2026/07/01/louis-j-crishock-appointed-as-the-acting-high-representative-for-bih/": {
    "archive_url": "http://web.archive.org/web/20260712063155/https://europeanwesternbalkans.com/2026/07/01/louis-j-crishock-appointed-as-the-acting-high-representative-for-bih/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260712063155"
   },
   "https://factcheckni.org/?p=23146": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://federalreserve.gov/": {
-   "archive_url": "http://web.archive.org/web/20261018133429/https://www.federalreserve.gov/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261021165437/https://www.federalreserve.gov/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261018133429"
+   "timestamp": "20261021165437"
   },
   "https://finance.yahoo.com/news/trumps-350-billion-investment-demand-213120175.html": {
    "archive_url": "http://web.archive.org/web/20250925105815/https://finance.yahoo.com/news/trumps-350-billion-investment-demand-213120175.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -653,39 +665,39 @@
   },
   "https://fiscaldata.treasury.gov/": {
    "archive_url": "http://web.archive.org/web/20261004064354/https://fiscaldata.treasury.gov/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
    "timestamp": "20261004064354"
   },
   "https://forbes.com/": {
-   "archive_url": "http://web.archive.org/web/20261019123011/https://www.forbes.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261022220250/https://www.forbes.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019123011"
+   "timestamp": "20261022220250"
   },
   "https://fortune.com/": {
-   "archive_url": "http://web.archive.org/web/20261019122330/https://fortune.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261024105017/https://fortune.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019122330"
+   "timestamp": "20261024105017"
   },
   "https://fred.stlouisfed.org/": {
-   "archive_url": "http://web.archive.org/web/20261013151400/https://fred.stlouisfed.org/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026035211/https://fred.stlouisfed.org/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261013151400"
+   "timestamp": "20261026035211"
   },
   "https://gastops.com/": {
    "archive_url": "http://web.archive.org/web/20261001085444/https://www.gastops.com/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -693,23 +705,23 @@
   },
   "https://goldsilver.ai/": {
    "archive_url": "http://web.archive.org/web/20260620134406/https://goldsilver.ai/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
    "timestamp": "20260620134406"
   },
   "https://history.state.gov/": {
-   "archive_url": "http://web.archive.org/web/20261013155926/https://history.state.gov/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017143044/https://history.state.gov/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261013155926"
+   "timestamp": "20261017143044"
   },
   "https://history.state.gov/historicaldocuments/frus1943v04/d1035": {
    "archive_url": "http://web.archive.org/web/20250926224622/https://history.state.gov/historicaldocuments/frus1943v04/d1035",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -717,7 +729,7 @@
   },
   "https://history.state.gov/historicaldocuments/frus1945v06/d450": {
    "archive_url": "http://web.archive.org/web/20260613044645/https://history.state.gov/historicaldocuments/frus1945v06/d450",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
@@ -725,7 +737,7 @@
   },
   "https://history.state.gov/historicaldocuments/frus1945v06/d452": {
    "archive_url": "http://web.archive.org/web/20260926062926/https://history.state.gov/historicaldocuments/frus1945v06/d452",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
@@ -733,7 +745,7 @@
   },
   "https://history.state.gov/historicaldocuments/frus1945v06/d470": {
    "archive_url": "http://web.archive.org/web/20250925093430/https://history.state.gov/historicaldocuments/frus1945v06/d470",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
@@ -741,31 +753,31 @@
   },
   "https://history.state.gov/historicaldocuments/frus1945v06/d771": {
    "archive_url": "http://web.archive.org/web/20260923003519/https://history.state.gov/historicaldocuments/frus1945v06/d771",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
    "timestamp": "20260923003519"
   },
   "https://history.state.gov/historicaldocuments/frus1945v06/d776": {
-   "archive_url": "http://web.archive.org/web/20260920170211/https://history.state.gov/historicaldocuments/frus1945v06/d776",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261015030218/https://history.state.gov/historicaldocuments/frus1945v06/d776",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
-   "timestamp": "20260920170211"
+   "timestamp": "20261015030218"
   },
   "https://home.treasury.gov/": {
-   "archive_url": "http://web.archive.org/web/20261019043144/https://home.treasury.gov/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026041814/https://home.treasury.gov/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019043144"
+   "timestamp": "20261026041814"
   },
   "https://ici.org/": {
    "archive_url": "http://web.archive.org/web/20261003200320/https://www.ici.org/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
@@ -773,7 +785,7 @@
   },
   "https://iea.blob.core.windows.net/assets/a25ddf53-cd6c-4910-ac90-16bfd28399e7/-12MAR2026_OilMarketReport.pdf": {
    "archive_url": "http://web.archive.org/web/20261003213426/https://iea.blob.core.windows.net/assets/a25ddf53-cd6c-4910-ac90-16bfd28399e7/-12MAR2026_OilMarketReport.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -781,37 +793,37 @@
   },
   "https://img.exim.gov/s3fs-public/documents/exim-oig_eca-evaluation_oig-ev-23-04_final_0.pdf": {
    "archive_url": "http://web.archive.org/web/20260702024137/https://img.exim.gov/s3fs-public/documents/exim-oig_eca-evaluation_oig-ev-23-04_final_0.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
    "timestamp": "20260702024137"
   },
   "https://img.exim.gov/s3fs-public/reports/competitiveness_reports/2019/2019-EXIM-Competitiveness-Report-FINAL.pdf": {
-   "archive_url": "http://web.archive.org/web/20260925021659/https://img.exim.gov/s3fs-public/reports/competitiveness_reports/2019/2019-EXIM-Competitiveness-Report-FINAL.pdf",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017071035/https://img.exim.gov/s3fs-public/reports/competitiveness_reports/2019/2019-EXIM-Competitiveness-Report-FINAL.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
-   "timestamp": "20260925021659"
+   "timestamp": "20261017071035"
   },
   "https://indonesiabusinesspost.com/6062/financial-crimes/ojk-imposes-rp542-49b-in-fines-on-3-418-parties-flags-32-stock-manipulation-cases": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
    ]
   },
   "https://investing.com/": {
-   "archive_url": "http://web.archive.org/web/20261019121610/https://www.investing.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261021110327/https://www.investing.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019121610"
+   "timestamp": "20261021110327"
   },
   "https://investors.mpmaterials.com/investor-news/news-details/2025/MP-Materials-Announces-Transformational-Public-Private-Partnership-with-the-Department-of-Defense-to-Accelerate-U-S--Rare-Earth-Magnet-Independence/default.aspx": {
    "archive_url": "http://web.archive.org/web/20261013124821/https://investors.mpmaterials.com/investor-news/news-details/2025/MP-Materials-Announces-Transformational-Public-Private-Partnership-with-the-Department-of-Defense-to-Accelerate-U-S--Rare-Earth-Magnet-Independence/default.aspx",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
@@ -819,7 +831,7 @@
   },
   "https://ir.kindermorgan.com/news/news-details/2017/Open-Season-for-Trans-Mountain-Expansion-Concludes/default.aspx": {
    "archive_url": "http://web.archive.org/web/20230811170736/https://ir.kindermorgan.com/news/news-details/2017/Open-Season-for-Trans-Mountain-Expansion-Concludes/default.aspx",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1"
    ],
@@ -827,7 +839,7 @@
   },
   "https://ised-isde.canada.ca/site/investment-canada-act/en/national-security-decisions": {
    "archive_url": "http://web.archive.org/web/20261009082955/https://ised-isde.canada.ca/site/investment-canada-act/en/national-security-decisions",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
@@ -835,7 +847,7 @@
   },
   "https://jec.senate.gov/": {
    "archive_url": "http://web.archive.org/web/20250921023837/https://www.jec.senate.gov/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
@@ -843,7 +855,7 @@
   },
   "https://keia.org/analysis/the-iran-war-is-stress-testing-south-koreas-energy-model/": {
    "archive_url": "http://web.archive.org/web/20260917193022/https://keia.org/analysis/the-iran-war-is-stress-testing-south-koreas-energy-model/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -851,53 +863,55 @@
   },
   "https://kliimaministeerium.ee/sites/default/files/documents/2026-01/Open%20Letter%20by%20the%20Coastal%20States%20of%20the%20Baltic%20Sea%20and%20the%20North%20Sea%20with%20Iceland%20on%20the%20Growing%20Risks%20to%20Maritime%20Safety%20%20to%20the%20International%20_.pdf": {
    "archive_url": "http://web.archive.org/web/20260819041603/https://kliimaministeerium.ee/sites/default/files/documents/2026-01/Open%20Letter%20by%20the%20Coastal%20States%20of%20the%20Baltic%20Sea%20and%20the%20North%20Sea%20with%20Iceland%20on%20the%20Growing%20Risks%20to%20Maritime%20Safety%20%20to%20the%20International%20_.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260819041603"
   },
   "https://koreaherald.com/": {
-   "archive_url": "http://web.archive.org/web/20261017141824/https://www.koreaherald.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261025194721/https://www.koreaherald.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261017141824"
+   "timestamp": "20261025194721"
   },
   "https://koreapro.org/2026/09/lee-jae-myungs-wall-street-pitch-tests-south-koreas-capital-market-credibility/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://koreapro.org/2026/09/south-korea-builds-diplomatic-case-for-limited-hormuz-role-in-talks-with-iran/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://koreapro.org/2026/09/south-korean-markets-reopen-as-oil-and-bond-yields-test-chip-led-rally/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://koreapro.org/2026/09/us-midterm-clock-raises-stakes-for-south-koreas-200-billion-investment-talks/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://koreapro.org/2026/10/trumps-korea-investment-victory-lap-masks-safeguards-seoul-still-controls/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261004171013/https://koreapro.org/2026/10/trumps-korea-investment-victory-lap-masks-safeguards-seoul-still-controls/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
-   ]
+   ],
+   "timestamp": "20261004171013"
   },
   "https://koreattw.substack.com/p/us-south-korea-joint-fact-sheet-and": {
    "archive_url": "http://web.archive.org/web/20260710231529/https://koreattw.substack.com/p/us-south-korea-joint-fact-sheet-and",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -905,7 +919,7 @@
   },
   "https://kpmg.com/us/en/taxnewsflash/news/2025/12/us-tariff-modifications-products-korea.html": {
    "archive_url": "http://web.archive.org/web/20260520111010/https://kpmg.com/us/en/taxnewsflash/news/2025/12/us-tariff-modifications-products-korea.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -913,7 +927,7 @@
   },
   "https://militarnyi.com/en/news/russian-forces-use-wwi-era-dazzle-camouflage-to-counter-ai-drones/": {
    "archive_url": "http://web.archive.org/web/20260608211256/https://militarnyi.com/en/news/russian-forces-use-wwi-era-dazzle-camouflage-to-counter-ai-drones/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -921,21 +935,23 @@
   },
   "https://n1info.ba/english/news/christian-schmidt-confirms-he-will-step-down-as-bosnias-high-representative/": {
    "archive_url": "http://web.archive.org/web/20260511202002/https://n1info.ba/english/news/christian-schmidt-confirms-he-will-step-down-as-bosnias-high-representative/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260511202002"
   },
   "https://n1info.ba/english/news/covic-calls-for-revision-of-dayton-agreement-and-constitutional-reform-in-bosnia": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260217145716/https://n1info.ba/english/news/covic-calls-for-revision-of-dayton-agreement-and-constitutional-reform-in-bosnia/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20260217145716"
   },
   "https://natural-resources.canada.ca/energy-sources/fossil-fuels/oil-resources": {
    "archive_url": "http://web.archive.org/web/20261006104535/https://natural-resources.canada.ca/energy-sources/fossil-fuels/oil-resources",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp4"
    ],
@@ -943,39 +959,45 @@
   },
   "https://natural-resources.canada.ca/science-data/data-analysis/natural-resources-major-projects-planned-under-construction-2024-2034": {
    "archive_url": "http://web.archive.org/web/20260925102228/https://natural-resources.canada.ca/science-data/data-analysis/natural-resources-major-projects-planned-under-construction-2024-2034",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
    "timestamp": "20260925102228"
   },
   "https://new.intellinews.com/articles/south-korea-s-2025-exports-set-record-surge-past-700bn-mark-on-chip-boom-418025": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://news.bgov.com/tech-and-telecom-law/japan-us-far-apart-on-550-billion-fund-projects-akazawa-says": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019145449/https://news.bgov.com/tech-and-telecom-law/japan-us-far-apart-on-550-billion-fund-projects-akazawa-says",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
-   ]
+   ],
+   "timestamp": "20261019145449"
   },
   "https://news.stv.tv/world/us-claims-to-have-taken-out-irans-mine-laying-vessels": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260415091406/https://news.stv.tv/world/us-claims-to-have-taken-out-irans-mine-laying-vessels",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20260415091406"
   },
   "https://newyorkfed.org/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019002337/https://www.newyorkfed.org/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
-   ]
+   ],
+   "timestamp": "20261019002337"
   },
   "https://nextstar-energy.com/lg-energy-solution-to-acquire-full-ownership-of-nextstar-energy-in-joint-strategic-decision-with-stellantis/": {
    "archive_url": "http://web.archive.org/web/20260312012030/http://nextstar-energy.com/lg-energy-solution-to-acquire-full-ownership-of-nextstar-energy-in-joint-strategic-decision-with-stellantis/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -983,7 +1005,7 @@
   },
   "https://nextstar-energy.com/nextstar-energy-celebrates-grand-opening-of-canadas-first-and-only-commercial-scale-battery-manufacturing-facility/": {
    "archive_url": "http://web.archive.org/web/20260917124443/https://nextstar-energy.com/nextstar-energy-celebrates-grand-opening-of-canadas-first-and-only-commercial-scale-battery-manufacturing-facility/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -991,7 +1013,7 @@
   },
   "https://nextstar-energy.com/nextstar-energy-celebrates-one-millionth-battery-cell-made/": {
    "archive_url": "http://web.archive.org/web/20260519212034/https://nextstar-energy.com/nextstar-energy-celebrates-one-millionth-battery-cell-made/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -999,7 +1021,7 @@
   },
   "https://nowlebanon.com/a-nation-in-the-making-yusuf-sader-and-the-publication-of-lebanons-constitution-1926/": {
    "archive_url": "http://web.archive.org/web/20260612085548/https://nowlebanon.com/a-nation-in-the-making-yusuf-sader-and-the-publication-of-lebanons-constitution-1926/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1007,351 +1029,375 @@
   },
   "https://nownews.seoul.co.kr/news/newsView.php?id=20260709601011": {
    "archive_url": "http://web.archive.org/web/20260710140340/https://nownews.seoul.co.kr/news/newsView.php?id=20260709601011",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20260710140340"
   },
   "https://npsi.ca/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20170915135624/http://npsi.ca/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20170915135624"
   },
   "https://npsi.ca/about/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/bn1/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/bn1/briefing-note.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019150558/https://npsi.ca/bn1/briefing-note.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019150558"
   },
   "https://npsi.ca/briefings/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/colophon/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/commentary/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/disclosure/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/engage/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/ledger/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/papers/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/pl1/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/pl1/pacific-ledger.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/pl2/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019152401/https://npsi.ca/pl2/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019152401"
   },
   "https://npsi.ca/pl2/pacific-ledger.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/register/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb1/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb1/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb2/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb2/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb3/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb3/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb4/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb4/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb5/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb5/special-briefing-print.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb5/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb6/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb6/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb8/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb8/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019155100/https://npsi.ca/sb8/special-briefing.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019155100"
   },
   "https://npsi.ca/sb9/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/sb9/special-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/tb1/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/tb1/technical-briefing.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019155547/https://npsi.ca/tb1/technical-briefing.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019155547"
   },
   "https://npsi.ca/tb2/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019155712/https://npsi.ca/tb2/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019155712"
   },
   "https://npsi.ca/tb2/technical-briefing-print.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/tb2/technical-briefing.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp1/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019160402/https://npsi.ca/wp1/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019160402"
   },
   "https://npsi.ca/wp1/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019160417/https://npsi.ca/wp1/working-paper.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019160417"
   },
   "https://npsi.ca/wp10/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp10/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp11/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019160749/https://npsi.ca/wp11/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019160749"
   },
   "https://npsi.ca/wp11/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp2/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp2/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp3/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp3/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019161642/https://npsi.ca/wp3/working-paper.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019161642"
   },
   "https://npsi.ca/wp4/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp4/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp5/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp5/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019162608/https://npsi.ca/wp5/working-paper.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019162608"
   },
   "https://npsi.ca/wp7/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp7/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://npsi.ca/wp9/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019163030/https://npsi.ca/wp9/",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
-   ]
+   ],
+   "timestamp": "20261019163030"
   },
   "https://npsi.ca/wp9/working-paper.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "(npsi.ca)"
    ]
   },
   "https://openknowledge.fao.org/server/api/core/bitstreams/0f6f7892-f296-4d8a-9be0-c51946ccee84/content": {
    "archive_url": "http://web.archive.org/web/20260916204513/https://openknowledge.fao.org/server/api/core/bitstreams/0f6f7892-f296-4d8a-9be0-c51946ccee84/content",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1359,37 +1405,37 @@
   },
   "https://orano.group/en/news/news-group/2023/october/board-of-directors-of-orano-approves-project-to-extend-the-enrichment-capacity-of-the-georges-besse-2-plant": {
    "archive_url": "http://web.archive.org/web/20260810003608/https://www.orano.group/en/news/news-group/2023/october/board-of-directors-of-orano-approves-project-to-extend-the-enrichment-capacity-of-the-georges-besse-2-plant",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260810003608"
   },
   "https://patents.google.com/patent/US11953580": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://pcacases.com/web/sendAttach/83591": {
    "archive_url": "http://web.archive.org/web/20261007035833/https://pcacases.com/web/sendAttach/83591",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20261007035833"
   },
   "https://pjm.com/": {
-   "archive_url": "http://web.archive.org/web/20261005165926/https://www.pjm.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016164434/https://www.pjm.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261005165926"
+   "timestamp": "20261016164434"
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10764273/": {
    "archive_url": "http://web.archive.org/web/20260309124702/https://pmc.ncbi.nlm.nih.gov/articles/PMC10764273/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -1397,7 +1443,7 @@
   },
   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7037432/": {
    "archive_url": "http://web.archive.org/web/20260606052021/https://pmc.ncbi.nlm.nih.gov/articles/PMC7037432/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -1405,7 +1451,7 @@
   },
   "https://presidentalalimi.net/en/news1505.html": {
    "archive_url": "http://web.archive.org/web/20260302075344/https://presidentalalimi.net/en/news1505.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1413,37 +1459,37 @@
   },
   "https://press.spglobal.com/2026-06-24-Canadian-Oil-Sands-Greenhouse-Gas-Intensity-Continues-a-17-year-Decline-Down-Nearly-One-third-Since-2009,-S-P-Global-Energy-Analysis-Finds": {
    "archive_url": "http://web.archive.org/web/20260710234120/https://press.spglobal.com/2026-06-24-Canadian-Oil-Sands-Greenhouse-Gas-Intensity-Continues-a-17-year-Decline-Down-Nearly-One-third-Since-2009,-S-P-Global-Energy-Analysis-Finds",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp4"
    ],
    "timestamp": "20260710234120"
   },
   "https://pubs.aip.org/asa/jasa/article/159/5/4702/3392990/Tracking-ships-with-submarine-cables-Unsupervised": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://qz.com/": {
-   "archive_url": "http://web.archive.org/web/20261019023737/https://qz.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261025134147/https://qz.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019023737"
+   "timestamp": "20261025134147"
   },
   "https://reuters.com/": {
-   "archive_url": "http://web.archive.org/web/20261019124321/https://www.reuters.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026123957/https://www.reuters.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019124321"
+   "timestamp": "20261026123957"
   },
   "https://rin.org.uk/page/RIN_Maritime_Report": {
    "archive_url": "http://web.archive.org/web/20251115182720/https://rin.org.uk/page/RIN_Maritime_Report",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -1451,27 +1497,29 @@
   },
   "https://royalsocietypublishing.org/doi/10.1098/rsos.240624": {
    "archive_url": "http://web.archive.org/web/20250716213027/https://royalsocietypublishing.org/doi/10.1098/rsos.240624",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
    "timestamp": "20250716213027"
   },
   "https://scroll.in/article/674238": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019163650/https://scroll.in/article/674238/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019163650"
   },
   "https://seecheck.org/?p=11733": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://shipandbunker.com/news/emea/354498-us-to-resume-naval-blockade-of-iranian-ports": {
    "archive_url": "http://web.archive.org/web/20260716073827/https://shipandbunker.com/news/emea/354498-us-to-resume-naval-blockade-of-iranian-ports",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1479,21 +1527,23 @@
   },
   "https://source.benchmarkminerals.com/article/ford-scales-back-ev-plans-with-exit-from-canadian-cathode-project": {
    "archive_url": "http://web.archive.org/web/20250302083921/https://source.benchmarkminerals.com/article/ford-scales-back-ev-plans-with-exit-from-canadian-cathode-project",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20250302083921"
   },
   "https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261001011511/https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
-   ]
+   ],
+   "timestamp": "20261001011511"
   },
   "https://sustainablebiz.ca/quebec-battery-facility-proceeds-as-planned-gm-posco": {
    "archive_url": "http://web.archive.org/web/20260310070750/https://sustainablebiz.ca/quebec-battery-facility-proceeds-as-planned-gm-posco",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -1501,35 +1551,37 @@
   },
   "https://tdri.or.th/en/2025/04/get-tough-on-stock-market-misconduct/": {
    "archive_url": "http://web.archive.org/web/20260513040840/https://tdri.or.th/en/2025/04/get-tough-on-stock-market-misconduct/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
    ],
    "timestamp": "20260513040840"
   },
   "https://the-decoder.com/": {
-   "archive_url": "http://web.archive.org/web/20261019115930/https://the-decoder.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026044341/https://the-decoder.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261019115930"
+   "timestamp": "20261026044341"
   },
   "https://thecorner.eu/news-europe/sp-unexpectedly-downgrades-frances-credit-rating-to-a-with-stable-outlook-due-to-uncertainty-over-public-finances/122528/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261025183612/https://thecorner.eu/news-europe/sp-unexpectedly-downgrades-frances-credit-rating-to-a-with-stable-outlook-due-to-uncertainty-over-public-finances/122528/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261025183612"
   },
   "https://thedocs.worldbank.org/en/doc/1f1012470cef4e4e5d3080dc5ceda3c4-0280012022/lebanon-public-finance-report-ponzi-finance": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf": {
    "archive_url": "http://web.archive.org/web/20260821023619/https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/original/CMO-April-2026.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1537,7 +1589,7 @@
   },
   "https://thenationalnews.com/news/mena/2026/08/01/former-lebanese-central-bank-governor-riad-salameh-arrested": {
    "archive_url": "http://web.archive.org/web/20260801114912/https://www.thenationalnews.com/news/mena/2026/08/01/former-lebanese-central-bank-governor-riad-salameh-arrested/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1545,7 +1597,7 @@
   },
   "https://thequantuminsider.com/2025/04/27/china-tests-drone-mounted-quantum-sensor-that-could-reshape-submarine-detection/": {
    "archive_url": "http://web.archive.org/web/20260119235740/https://thequantuminsider.com/2025/04/27/china-tests-drone-mounted-quantum-sensor-that-could-reshape-submarine-detection/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -1553,7 +1605,7 @@
   },
   "https://thevaultreport.com/": {
    "archive_url": "http://web.archive.org/web/20261002184125/https://thevaultreport.com/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
@@ -1561,7 +1613,7 @@
   },
   "https://thewalrus.ca/carneys-surge-in-quebec-could-wipe-the-sovereigntist-party-off-the-map/": {
    "archive_url": "http://web.archive.org/web/20250911032322/https://thewalrus.ca/carneys-surge-in-quebec-could-wipe-the-sovereigntist-party-off-the-map/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -1569,43 +1621,45 @@
   },
   "https://trade.gov/country-commercial-guides/lebanon-trade-financing": {
    "archive_url": "http://web.archive.org/web/20260605045617/https://www.trade.gov/country-commercial-guides/lebanon-trade-financing",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260605045617"
   },
   "https://tradingeconomics.com/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ]
   },
   "https://tradingeconomics.com/france/government-bond-yield/news/485191": {
-   "checked": "2026-10-19",
-   "cited_by": [
-    "sb8"
-   ]
-  },
-  "https://treaties.un.org/doc/Publication/UNTS/Volume%20419/volume-419-I-6032-English.pdf": {
-   "archive_url": "http://web.archive.org/web/20261004205713/https://treaties.un.org/doc/Publication/UNTs/Volume%20419/volume-419-I-6032-English.pDf",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019164934/https://tradingeconomics.com/france/government-bond-yield/news/485191",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20261004205713"
+   "timestamp": "20261019164934"
+  },
+  "https://treaties.un.org/doc/Publication/UNTS/Volume%20419/volume-419-I-6032-English.pdf": {
+   "archive_url": "http://web.archive.org/web/20261017075656/https://treaties.un.org/doc/Publication/UNTs/Volume%20419/volume-419-I-6032-English.pdf",
+   "checked": "2026-10-26",
+   "cited_by": [
+    "sb8"
+   ],
+   "timestamp": "20261017075656"
   },
   "https://umami.is/": {
-   "archive_url": "http://web.archive.org/web/20261005062612/https://umami.is/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261026113758/https://umami.is/",
+   "checked": "2026-10-26",
    "cited_by": [
     "colophon"
    ],
-   "timestamp": "20261005062612"
+   "timestamp": "20261026113758"
   },
   "https://united24media.com/war-in-ukraine/russia-revives-wwi-dazzle-camouflage-to-evade-ukrainian-ai-drones-does-it-work-19334": {
    "archive_url": "http://web.archive.org/web/20260615174444/https://united24media.com/war-in-ukraine/russia-revives-wwi-dazzle-camouflage-to-evade-ukrainian-ai-drones-does-it-work-19334",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -1613,81 +1667,83 @@
   },
   "https://ustr.gov/about-us/policy-offices/press-office/fact-sheets/2018/march/new-us-trade-policy-and-national": {
    "archive_url": "http://web.archive.org/web/20260526170622/https://ustr.gov/about-us/policy-offices/press-office/fact-sheets/2018/march/new-us-trade-policy-and-national",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
    "timestamp": "20260526170622"
   },
   "https://utilitydive.com/": {
-   "archive_url": "http://web.archive.org/web/20261013171753/https://www.utilitydive.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017075707/https://www.utilitydive.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb9"
    ],
-   "timestamp": "20261013171753"
+   "timestamp": "20261017075707"
   },
   "https://v7cdn.lbcgroup.tv/news/news-bulletin-reports/896669/lebanese-cabinet-approves-draft-financial-gap-law-sends-it-to-parliame/en": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://view.asiae.co.kr/en/article/2026082017071366625": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://windward.ai/blog/gps-jamming-surges-in-the-middle-east-gulf-1650-ships-hit/": {
    "archive_url": "http://web.archive.org/web/20260725062104/https://windward.ai/blog/gps-jamming-surges-in-the-middle-east-gulf-1650-ships-hit/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260725062104"
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2019/tradeflow/Imports/partner/ALL/product/284410": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2020/tradeflow/Imports/partner/ALL/product/284410": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2021/tradeflow/Imports/partner/ALL/product/284410": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019170049/https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2021/tradeflow/Imports/partner/ALL/product/284410",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019170049"
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2022/tradeflow/Imports/partner/ALL/product/284410": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2023/tradeflow/Imports/partner/ALL/product/284410": {
    "archive_url": "http://web.archive.org/web/20260620170940/https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2023/tradeflow/Imports/partner/ALL/product/284410",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260620170940"
   },
   "https://wits.worldbank.org/trade/comtrade/en/country/FRA/year/2024/tradeflow/Imports/partner/ALL/product/284410": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://world-nuclear-news.org/articles/french-reactor-using-full-core-of-recycled-uranium": {
    "archive_url": "http://web.archive.org/web/20260712185229/https://world-nuclear-news.org/Articles/French-reactor-using-full-core-of-recycled-uranium",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1695,21 +1751,23 @@
   },
   "https://world-nuclear.org/information-library/country-profiles/countries-a-f/canada-uranium": {
    "archive_url": "http://web.archive.org/web/20261006033022/https://world-nuclear.org/information-library/country-profiles/countries-a-f/canada-uranium",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp4"
    ],
    "timestamp": "20261006033022"
   },
   "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019170638/https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019170638"
   },
   "https://www.airandspaceforces.com/article/1213china/": {
    "archive_url": "http://web.archive.org/web/20260607165925/https://www.airandspaceforces.com/article/1213china/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -1717,21 +1775,21 @@
   },
   "https://www.airuniversity.af.edu/Portals/10/CASI/documents/Research/Infrastructure/2025-03-10%20Air%20Defense%20Radars.pdf": {
    "archive_url": "http://web.archive.org/web/20260613071730/https://www.airuniversity.af.edu/Portals/10/CASI/documents/Research/Infrastructure/2025-03-10%20Air%20Defense%20Radars.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260613071730"
   },
   "https://www.al-monitor.com/originals/2026/09/yemens-houthis-seize-key-city-red-sea": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.algoma.com/news/algoma-steel-and-hanwha-ocean-sign-binding-memorandum-of-understanding-mou-for-long-term-strategic-arrangement-supporting-canadian-patrol-submarine-project/": {
    "archive_url": "http://web.archive.org/web/20260313022016/https://www.algoma.com/news/algoma-steel-and-hanwha-ocean-sign-binding-memorandum-of-understanding-mou-for-long-term-strategic-arrangement-supporting-canadian-patrol-submarine-project/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2",
     "wp1",
@@ -1741,7 +1799,7 @@
   },
   "https://www.aljazeera.com/news/2023/3/21/is-iraqs-sectarian-quota-system-holding-the-country-back": {
    "archive_url": "http://web.archive.org/web/20260126035212/https://www.aljazeera.com/news/2023/3/21/is-iraqs-sectarian-quota-system-holding-the-country-back",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1749,59 +1807,59 @@
   },
   "https://www.aljazeera.com/news/2026/5/14/iraqs-parliament-approves-new-ali-al-zaidi-government": {
    "archive_url": "http://web.archive.org/web/20261007025323/https://www.aljazeera.com/news/2026/5/14/iraqs-parliament-approves-new-ali-al-zaidi-government",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20261007025323"
   },
   "https://www.app.com.pk/?p=1181377": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.arabnews.com/node/2162281": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.arabnews.com/node/2163721": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2876612-hormuz-oil-export-losses-near-2.8bn-bl-iea": {
    "archive_url": "http://web.archive.org/web/20260911161043/https://www.argusmedia.com/en/news-and-insights/latest-market-news/2876612-hormuz-oil-export-losses-near-2.8bn-bl-iea",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260911161043"
   },
   "https://www.asiae.co.kr/article/2026053118501800583": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.asiae.co.kr/en/article/2026053118501800583": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.asiae.co.kr/en/article/2026072410094950571": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.asiapacific.ca/blog/gaining-better-understanding-asia-pacific-investment-canada": {
    "archive_url": "http://web.archive.org/web/20260514162046/https://www.asiapacific.ca/blog/gaining-better-understanding-asia-pacific-investment-canada",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -1809,27 +1867,27 @@
   },
   "https://www.asiapacific.ca/publication/canada-chose-nato-submarines-now-it-must-keep-south-korea-close": {
    "archive_url": "http://web.archive.org/web/20260707020727/https://www.asiapacific.ca/publication/canada-chose-nato-submarines-now-it-must-keep-south-korea-close",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20260707020727"
   },
   "https://www.asiapacific.ca/publication/charting-canadas-submarine-future-defence-industry-and-maritime-security-considerations": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.asiapacific.ca/publication/what-ottawas-tkms-submarine-decision-means-for-canada-south-korea-relations": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QE3961": {
    "archive_url": "http://web.archive.org/web/20260608110630/https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QE3961",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1837,7 +1895,7 @@
   },
   "https://www.atlanticcouncil.org/blogs/econographics/is-the-end-of-the-petrodollar-near/": {
    "archive_url": "http://web.archive.org/web/20260924165926/https://www.atlanticcouncil.org/blogs/econographics/is-the-end-of-the-petrodollar-near/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -1845,49 +1903,51 @@
   },
   "https://www.bankofcanada.ca/2017/11/bank-canada-bank-korea-sign-currency-swap-agreement/": {
    "archive_url": "http://web.archive.org/web/20260712190252/https://www.bankofcanada.ca/2017/11/bank-canada-bank-korea-sign-currency-swap-agreement/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1"
    ],
    "timestamp": "20260712190252"
   },
   "https://www.bankofcanada.ca/core-functions/monetary-policy/inflation/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261006122645/https://www.bankofcanada.ca/core-functions/monetary-policy/inflation/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261006122645"
   },
   "https://www.blakes.com/insights/canada-announces-productivity-mega-deduction/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.blakes.com/insights/u-s-imposes-50-percent-tariffs-on-canadian-products-effective-august-22-2026/": {
-   "archive_url": "http://web.archive.org/web/20261016142304/https://www.blakes.com/insights/u-s-imposes-50-percent-tariffs-on-canadian-products-effective-august-22-2026/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261020193706/https://www.blakes.com/insights/u-s-imposes-50-percent-tariffs-on-canadian-products-effective-august-22-2026/",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
-   "timestamp": "20261016142304"
+   "timestamp": "20261020193706"
   },
   "https://www.bloomberg.com/news/features/2016-05-30/the-untold-story-behind-saudi-arabia-s-41-year-u-s-debt-secret": {
    "archive_url": "http://web.archive.org/web/20260522173250/https://www.bloomberg.com/news/features/2016-05-30/the-untold-story-behind-saudi-arabia-s-41-year-u-s-debt-secret",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260522173250"
   },
   "https://www.bluewin.ch/en/news/rating-agency-moodys-warns-france-with-negative-outlook-li.2932427": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.bnnbloomberg.ca/business/2026/06/01/south-koreas-hanwha-to-use-algoma-steel-material-to-build-military-vehicles-in-canada/": {
    "archive_url": "http://web.archive.org/web/20260629170319/https://www.bnnbloomberg.ca/business/2026/06/01/south-koreas-hanwha-to-use-algoma-steel-material-to-build-military-vehicles-in-canada/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -1895,7 +1955,7 @@
   },
   "https://www.bnnbloomberg.ca/business/2026/06/03/exclusive-to-win-submarine-contract-south-koreas-project-beaver-proposes-manufacturing-hydrogen-trucks-in-canada/": {
    "archive_url": "http://web.archive.org/web/20260806202723/https://www.bnnbloomberg.ca/business/2026/06/03/exclusive-to-win-submarine-contract-south-koreas-project-beaver-proposes-manufacturing-hydrogen-trucks-in-canada/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -1903,7 +1963,7 @@
   },
   "https://www.businesswire.com/news/home/20240116728733/en": {
    "archive_url": "http://web.archive.org/web/20241205095204/https://www.businesswire.com/news/home/20240116728733/en/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -1911,35 +1971,37 @@
   },
   "https://www.c4isrnet.com/intel-geoint/sensors/2019/09/30/stealthy-no-more-a-german-radar-vendor-says-it-tracked-the-f-35-jet-in-2018-from-a-pony-farm/": {
    "archive_url": "http://web.archive.org/web/20260801043451/https://www.c4isrnet.com/intel-geoint/sensors/2019/09/30/stealthy-no-more-a-german-radar-vendor-says-it-tracked-the-f-35-jet-in-2018-from-a-pony-farm/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260801043451"
   },
   "https://www.cae.com/": {
-   "archive_url": "http://web.archive.org/web/20261013164512/https://www.cae.com/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016220535/https://www.cae.com/",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
-   "timestamp": "20261013164512"
+   "timestamp": "20261016220535"
   },
   "https://www.cambridge.org/core/journals/american-journal-of-international-law/article/president-trump-unsigns-arms-trade-treaty-after-requesting-its-return-from-the-senate/1788EFC6D863B1FCCA75833797E018BB": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260302104337/https://www.cambridge.org/core/journals/american-journal-of-international-law/article/president-trump-unsigns-arms-trade-treaty-after-requesting-its-return-from-the-senate/1788EFC6D863B1FCCA75833797E018BB",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
-   ]
+   ],
+   "timestamp": "20260302104337"
   },
   "https://www.canada.ca/en/defence-investment-agency/news/2026/07/government-of-canada-advances-canadian-patrol-submarine-project.html": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.canada.ca/en/department-national-defence/news/2024/07/canada-launching-process-to-acquire-up-to-12-conventionally-powered-submarines.html": {
    "archive_url": "http://web.archive.org/web/20260713144129/https://www.canada.ca/en/department-national-defence/news/2024/07/canada-launching-process-to-acquire-up-to-12-conventionally-powered-submarines.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -1947,39 +2009,39 @@
   },
   "https://www.canada.ca/en/global-affairs/news/2026/02/joint-statement-canadarepublic-of-korea-foreign-and-defence-22-ministerial-meeting.html": {
    "archive_url": "http://web.archive.org/web/20260512224449/https://www.canada.ca/en/global-affairs/news/2026/02/joint-statement-canadarepublic-of-korea-foreign-and-defence-22-ministerial-meeting.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
    "timestamp": "20260512224449"
   },
   "https://www.canada.ca/en/innovation-science-economic-development/news/2026/01/canada-and-republic-of-korea-strengthen-ties-in-key-industrial-sectors.html": {
-   "archive_url": "http://web.archive.org/web/20260305212115/https://www.canada.ca/en/innovation-science-economic-development/news/2026/01/canada-and-republic-of-korea-strengthen-ties-in-key-industrial-sectors.html",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017164409/https://www.canada.ca/en/innovation-science-economic-development/news/2026/01/canada-and-republic-of-korea-strengthen-ties-in-key-industrial-sectors.html",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
-   "timestamp": "20260305212115"
+   "timestamp": "20261017164409"
   },
   "https://www.canada.ca/en/intergovernmental-affairs/news/2025/06/legislation-to-build-one-canadian-economy-receives-royal-assent.html": {
    "archive_url": "http://web.archive.org/web/20260315155020/https://www.canada.ca/en/intergovernmental-affairs/news/2025/06/legislation-to-build-one-canadian-economy-receives-royal-assent.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
    "timestamp": "20260315155020"
   },
   "https://www.canada.ca/en/privy-council/major-projects-office.html": {
-   "archive_url": "http://web.archive.org/web/20261013084708/https://www.canada.ca/en/privy-council/major-projects-office.html",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017204539/https://www.canada.ca/en/privy-council/major-projects-office.html",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
-   "timestamp": "20261013084708"
+   "timestamp": "20261017204539"
   },
   "https://www.canadianmanufacturing.com/manufacturing/the-automotive-parts-manufacturers-association-apma-and-hanwha-corporation-announce-landmark-canada-south-korea-joint-venture-318351/": {
    "archive_url": "http://web.archive.org/web/20260623072940/https://www.canadianmanufacturing.com/manufacturing/the-automotive-parts-manufacturers-association-apma-and-hanwha-corporation-announce-landmark-canada-south-korea-joint-venture-318351/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -1987,7 +2049,7 @@
   },
   "https://www.cas.go.jp/jp/seisaku/tariff_measures/houmon/pdf/MOU(EN).pdf": {
    "archive_url": "http://web.archive.org/web/20260114175924/https://www.cas.go.jp/jp/seisaku/tariff_measures/houmon/pdf/MOU(EN).pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -1995,7 +2057,7 @@
   },
   "https://www.cbc.ca/news/canada/edmonton/alberta-separatists-say-more-than-300k-have-signed-petition-9.7187218": {
    "archive_url": "http://web.archive.org/web/20260922133823/https://www.cbc.ca/news/canada/edmonton/alberta-separatists-say-more-than-300k-have-signed-petition-9.7187218",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2",
     "wp3"
@@ -2004,7 +2066,7 @@
   },
   "https://www.cbc.ca/news/canada/montreal/becancour-gm-posco-ev-battery-project-paused-9.6941007": {
    "archive_url": "http://web.archive.org/web/20261007024957/https://www.cbc.ca/news/canada/montreal/becancour-gm-posco-ev-battery-project-paused-9.6941007",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2012,7 +2074,7 @@
   },
   "https://www.cbc.ca/news/canada/sudbury/algoma-steel-submarine-contract-9.7259921": {
    "archive_url": "http://web.archive.org/web/20261003142719/https://www.cbc.ca/news/canada/sudbury/algoma-steel-submarine-contract-9.7259921",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2020,7 +2082,7 @@
   },
   "https://www.cbc.ca/news/world/trump-canada-us-trade-tariffs-cusma-usmca-9.7276973": {
    "archive_url": "http://web.archive.org/web/20261004150003/https://www.cbc.ca/news/world/trump-canada-us-trade-tariffs-cusma-usmca-9.7276973",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2028,7 +2090,7 @@
   },
   "https://www.centralbanking.com/central-banks/reserves/7972966/weaponisation-of-reserves-likely-to-spur-de-dollarisation": {
    "archive_url": "http://web.archive.org/web/20260306020430/https://www.centralbanking.com/central-banks/reserves/7972966/weaponisation-of-reserves-likely-to-spur-de-dollarisation",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1"
    ],
@@ -2036,22 +2098,24 @@
   },
   "https://www.cer-rec.gc.ca/en/data-analysis/canada-energy-future/2026/": {
    "archive_url": "http://web.archive.org/web/20260929233240/https://www.cer-rec.gc.ca/en/data-analysis/canada-energy-future/2026/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
    "timestamp": "20260929233240"
   },
   "https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-canada.html": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260307152401/https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-canada.html",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2",
     "wp4"
-   ]
+   ],
+   "timestamp": "20260307152401"
   },
   "https://www.ciro.ca/sites/default/files/2024-07/CIRO-Enforcement-Report-2024.pdf": {
    "archive_url": "http://web.archive.org/web/20250825130557/https://www.ciro.ca/sites/default/files/2024-07/CIRO-Enforcement-Report-2024.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
    ],
@@ -2059,7 +2123,7 @@
   },
   "https://www.cnbc.com/2019/03/31/for-want-of-a-quorum-americas-jobs-are-being-lost.html": {
    "archive_url": "http://web.archive.org/web/20241004030309/https://www.cnbc.com/2019/03/31/for-want-of-a-quorum-americas-jobs-are-being-lost.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2067,7 +2131,7 @@
   },
   "https://www.cnn.com/2026/01/26/economy/tariffs-trump-south-korea": {
    "archive_url": "http://web.archive.org/web/20260128025314/https://www.cnn.com/2026/01/26/economy/tariffs-trump-south-korea",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2075,21 +2139,21 @@
   },
   "https://www.congress.gov/crs-product/IF10017": {
    "archive_url": "http://web.archive.org/web/20260317005012/https://www.congress.gov/crs-product/IF10017",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
    "timestamp": "20260317005012"
   },
   "https://www.congress.gov/crs-product/R43581": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ]
   },
   "https://www.connaissancedesenergies.org/la-production-electrique-bas-carbone-de-la-france-atteint-un-maximum-historique-en-2025": {
    "archive_url": "http://web.archive.org/web/20260606231442/https://www.connaissancedesenergies.org/la-production-electrique-bas-carbone-de-la-france-atteint-un-maximum-historique-en-2025",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2097,7 +2161,7 @@
   },
   "https://www.connexionfrance.com/practical/graph-see-frances-historic-debt-levels/732333": {
    "archive_url": "http://web.archive.org/web/20260118165944/https://www.connexionfrance.com/practical/graph-see-frances-historic-debt-levels/732333",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2105,7 +2169,7 @@
   },
   "https://www.constituteproject.org/constitution/Bosnia_Herzegovina_2009": {
    "archive_url": "http://web.archive.org/web/20260901005947/https://www.constituteproject.org/constitution/Bosnia_Herzegovina_2009",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2113,7 +2177,7 @@
   },
   "https://www.consultancy-me.com/news/6568/alvarez-marsal-delivers-damning-report-on-lebanons-central-bank": {
    "archive_url": "http://web.archive.org/web/20260429201111/https://www.consultancy-me.com/news/6568/alvarez-marsal-delivers-damning-report-on-lebanons-central-bank",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2121,21 +2185,21 @@
   },
   "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf": {
    "archive_url": "http://web.archive.org/web/20260218064344/https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260218064344"
   },
   "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se%20RA.pdf": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.cpf.navy.mil/rimpac/": {
    "archive_url": "http://web.archive.org/web/20260925103354/https://www.cpf.navy.mil/rimpac/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -2143,35 +2207,37 @@
   },
   "https://www.crfb.org/blogs/social-security-and-medicare-trustees-release-2026-reports": {
    "archive_url": "http://web.archive.org/web/20260917213427/https://www.crfb.org/blogs/social-security-and-medicare-trustees-release-2026-reports",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260917213427"
   },
   "https://www.crfb.org/papers/analysis-2026-social-security-trustees-report": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260912014732/https://www.crfb.org/papers/analysis-2026-social-security-trustees-report",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20260912014732"
   },
   "https://www.csis.org/analysis/can-india-cut-pakistans-indus-river-lifeline": {
    "archive_url": "http://web.archive.org/web/20260822114013/https://www.csis.org/analysis/can-india-cut-pakistans-indus-river-lifeline",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260822114013"
   },
   "https://www.csis.org/analysis/energy-considerations-exim-reauthorization": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ]
   },
   "https://www.csis.org/analysis/impact-iran-conflict-south-korea-numbers": {
    "archive_url": "http://web.archive.org/web/20260921050821/https://www.csis.org/analysis/impact-iran-conflict-south-korea-numbers",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2179,7 +2245,7 @@
   },
   "https://www.csis.org/analysis/us-exim-bank-age-great-power-competition": {
    "archive_url": "http://web.archive.org/web/20261002170528/https://www.csis.org/analysis/us-exim-bank-age-great-power-competition",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2187,7 +2253,7 @@
   },
   "https://www.csis.org/events/ai-and-advanced-technologies-fight-combatant-command-and-service-collaboration": {
    "archive_url": "http://web.archive.org/web/20260611201753/https://www.csis.org/events/ai-and-advanced-technologies-fight-combatant-command-and-service-collaboration",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -2195,7 +2261,7 @@
   },
   "https://www.ctvnews.ca/business/article/south-korea-sweetens-submarine-bid-will-manufacture-armoured-vehicles-in-canada-if-chosen/": {
    "archive_url": "http://web.archive.org/web/20260430104116/https://www.ctvnews.ca/business/article/south-korea-sweetens-submarine-bid-will-manufacture-armoured-vehicles-in-canada-if-chosen/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -2203,27 +2269,27 @@
   },
   "https://www.darpa.mil/research/research-spotlights/ocean-of-things": {
    "archive_url": "http://web.archive.org/web/20260608105632/https://www.darpa.mil/research/research-spotlights/ocean-of-things",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260608105632"
   },
   "https://www.defensenews.com/global/europe/2023/08/10/hensoldt-unveils-a-deployable-package-of-its-twinvis-passive-radar/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://www.digitaltoday.co.kr/en/view/36204/korea-us-strategic-investment-special-act-passes-parliament": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202606.en.html": {
    "archive_url": "http://web.archive.org/web/20261019034237/https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202606.en.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2231,7 +2297,7 @@
   },
   "https://www.eceee.org/all-news/news/france-is-eus-first-importer-of-russian-nuclear-products-study/": {
    "archive_url": "http://web.archive.org/web/20240522201031/https://www.eceee.org/all-news/news/france-is-eus-first-importer-of-russian-nuclear-products-study/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2239,7 +2305,7 @@
   },
   "https://www.eia.gov/todayinenergy/detail.php?id=63446": {
    "archive_url": "http://web.archive.org/web/20261007132715/https://www.eia.gov/todayinenergy/detail.php?id=63446",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2247,7 +2313,7 @@
   },
   "https://www.eia.gov/todayinenergy/detail.php?id=67386": {
    "archive_url": "http://web.archive.org/web/20260923061955/https://www.eia.gov/todayinenergy/detail.php?id=67386",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2255,7 +2321,7 @@
   },
   "https://www.elections.ca/res/rep/off/ovrGE45/62/table9E.html": {
    "archive_url": "http://web.archive.org/web/20260923063019/https://www.elections.ca/res/rep/off/ovrGE45/62/table9E.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2263,7 +2329,7 @@
   },
   "https://www.elections.ca/res/rep/off/ovrGE45/home.html": {
    "archive_url": "http://web.archive.org/web/20260927154905/https://www.elections.ca/res/rep/off/ovrGE45/home.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2271,7 +2337,7 @@
   },
   "https://www.electrive.com/2026/03/06/nextstar-energy-opens-battery-cell-plant-in-canada/": {
    "archive_url": "http://web.archive.org/web/20260306222026/https://www.electrive.com/2026/03/06/nextstar-energy-opens-battery-cell-plant-in-canada/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2279,7 +2345,7 @@
   },
   "https://www.enbridge.com/stories/2022/september/landmark-equity-pipeline-partnership-between-enbridge-and-23-indigenous-communities": {
    "archive_url": "http://web.archive.org/web/20260316181545/https://www.enbridge.com/Stories/2022/September/Landmark-equity-pipeline-partnership-between-Enbridge-and-23-Indigenous-communities",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2287,35 +2353,39 @@
   },
   "https://www.enerdata.net/publications/daily-energy-news/iea-member-countries-agree-release-400-mbl-oil-stocks.html": {
    "archive_url": "http://web.archive.org/web/20260411112807/https://www.enerdata.net/publications/daily-energy-news/iea-member-countries-agree-release-400-mbl-oil-stocks.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260411112807"
   },
   "https://www.energy.gov/documents/amended-order-no-202-26-01a": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260706213042/https://www.energy.gov/documents/amended-order-no-202-26-01a",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
-   ]
+   ],
+   "timestamp": "20260706213042"
   },
   "https://www.energy.gov/documents/order-no-202-26-01-ercot": {
    "archive_url": "http://web.archive.org/web/20260706213042/https://www.energy.gov/documents/order-no-202-26-01-ercot",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
    "timestamp": "20260706213042"
   },
   "https://www.energy.gov/sites/default/files/2024-06/125.%20IEA%2C%20Clean%20Energy%20Investment.pdf": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260705164338/https://www.energy.gov/sites/default/files/2024-06/125.%20IEA%2C%20Clean%20Energy%20Investment.pdf",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp4"
-   ]
+   ],
+   "timestamp": "20260705164338"
   },
   "https://www.everycrsreport.com/reports/IN10900.html": {
    "archive_url": "http://web.archive.org/web/20250206022648/https://www.everycrsreport.com/reports/IN10900.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2323,7 +2393,7 @@
   },
   "https://www.executivegov.com/articles/national-reconnaissance-office-nrol172-launch": {
    "archive_url": "http://web.archive.org/web/20260622235215/https://www.executivegov.com/articles/national-reconnaissance-office-nrol172-launch",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -2331,45 +2401,47 @@
   },
   "https://www.exim.gov/about/special-initiatives/supply-chain-resiliency-initiative": {
    "archive_url": "http://web.archive.org/web/20260730151740/https://www.exim.gov/about/special-initiatives/supply-chain-resiliency-initiative",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
    "timestamp": "20260730151740"
   },
   "https://www.exim.gov/news/exim-debuts-2019-competitiveness-report-finds-chinas-predatory-practices-are-fundamentally": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019175246/https://www.exim.gov/news/exim-debuts-2019-competitiveness-report-finds-chinas-predatory-practices-are-fundamentally",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
-   ]
+   ],
+   "timestamp": "20261019175246"
   },
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20131031a.htm": {
-   "archive_url": "http://web.archive.org/web/20261004155250/https://www.federalreserve.gov/newsevents/pressreleases/monetary20131031a.htm",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016005956/https://www.federalreserve.gov/newsevents/pressreleases/monetary20131031a.htm",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1"
    ],
-   "timestamp": "20261004155250"
+   "timestamp": "20261016005956"
   },
   "https://www.fondsdereserve.fr/": {
    "archive_url": "http://web.archive.org/web/20260614124701/https://www.fondsdereserve.fr/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260614124701"
   },
   "https://www.france24.com/en/europe/20260611-russian-trucks-covered-zebra-camouflage-ukraine-war-dazzle": {
-   "archive_url": "http://web.archive.org/web/20261011195028/https://www.france24.com/en/europe/20260611-russian-trucks-covered-zebra-camouflage-ukraine-war-dazzle",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261014150810/https://www.france24.com/en/europe/20260611-russian-trucks-covered-zebra-camouflage-ukraine-war-dazzle",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
-   "timestamp": "20261011195028"
+   "timestamp": "20261014150810"
   },
   "https://www.gao.gov/products/id-79-7": {
    "archive_url": "http://web.archive.org/web/20260923170906/https://www.gao.gov/products/id-79-7",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2377,7 +2449,7 @@
   },
   "https://www.gm.ca/en/home/company/canada/ultium-cam.html": {
    "archive_url": "http://web.archive.org/web/20260519153450/https://www.gm.ca/en/home/company/canada/ultium-cam.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2385,21 +2457,21 @@
   },
   "https://www.gold.org/news-and-events/press-releases/central-banks-set-step-gold-buying-over-next-year": {
    "archive_url": "http://web.archive.org/web/20260721145319/https://www.gold.org/news-and-events/press-releases/central-banks-set-step-gold-buying-over-next-year",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260721145319"
   },
   "https://www.govinfo.gov/content/pkg/FR-2025-12-04/html/2025-21940.htm": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.govinfo.gov/content/pkg/FR-2026-03-17/pdf/2026-05214.pdf": {
    "archive_url": "http://web.archive.org/web/20260919233545/https://www.govinfo.gov/content/pkg/FR-2026-03-17/pdf/2026-05214.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2407,7 +2479,7 @@
   },
   "https://www.hanwha.com/newsroom/news/feature-stories/how-hanwha-is-supporting-canadas-industrial-future.do": {
    "archive_url": "http://web.archive.org/web/20261008033349/https://www.hanwha.com/newsroom/news/feature-stories/how-hanwha-is-supporting-canadas-industrial-future.do",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2415,7 +2487,7 @@
   },
   "https://www.hensoldt.net/news/hensoldts-passive-radar-in-nato-measurement-campaign/": {
    "archive_url": "http://web.archive.org/web/20240619153803/https://www.hensoldt.net/news/hensoldts-passive-radar-in-nato-measurement-campaign",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -2423,7 +2495,7 @@
   },
   "https://www.history.navy.mil/research/histories/ship-histories/danfs/e/enterprise-cvan-65-viii-1981-1985.html": {
    "archive_url": "http://web.archive.org/web/20251208222232/https://www.history.navy.mil/research/histories/ship-histories/danfs/e/enterprise-cvan-65-viii-1981-1985.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -2431,7 +2503,7 @@
   },
   "https://www.hydroquebec.com/about/publications-reports/action-plan-2035.html": {
    "archive_url": "http://web.archive.org/web/20260930165319/https://www.hydroquebec.com/about/publications-reports/action-plan-2035.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2439,7 +2511,7 @@
   },
   "https://www.indembassyhanoi.gov.in/page/transcript-of-special-briefing-by-mea/": {
    "archive_url": "http://web.archive.org/web/20260311034032/https://www.indembassyhanoi.gov.in/page/transcript-of-special-briefing-by-mea/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2447,7 +2519,7 @@
   },
   "https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/korea-coree/index.aspx?lang=eng": {
    "archive_url": "http://web.archive.org/web/20260820201220/https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/korea-coree/index.aspx?lang=eng",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -2455,7 +2527,7 @@
   },
   "https://www.international.gc.ca/transparency-transparence/indo-pacific-indo-pacifique/index.aspx?lang=eng": {
    "archive_url": "http://web.archive.org/web/20261005201623/https://www.international.gc.ca/transparency-transparence/indo-pacific-indo-pacifique/index.aspx?lang=eng",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
@@ -2463,7 +2535,7 @@
   },
   "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-04/2025%20Federal%20Election_Week_5_FedVote_FINAL%20Apr%2027%202025.pdf": {
    "archive_url": "http://web.archive.org/web/20260712085243/https://www.ipsos.com/sites/default/files/ct/news/documents/2025-04/2025%20Federal%20Election_Week_5_FedVote_FINAL%20Apr%2027%202025.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2471,7 +2543,7 @@
   },
   "https://www.isda.org/2012/03/09/isda-emea-determinations-committee-restructuring-credit-event-has-occurred-with-respect-to-the-hellenic-republic": {
    "archive_url": "http://web.archive.org/web/20260610222140/https://www.isda.org/2012/03/09/isda-emea-determinations-committee-restructuring-credit-event-has-occurred-with-respect-to-the-hellenic-republic/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1"
    ],
@@ -2479,7 +2551,7 @@
   },
   "https://www.japantimes.co.jp/business/2026/02/20/economy/second-round-pledge/": {
    "archive_url": "http://web.archive.org/web/20260224025911/https://www.japantimes.co.jp/business/2026/02/20/economy/second-round-pledge/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2487,7 +2559,7 @@
   },
   "https://www.japantimes.co.jp/business/2026/09/05/japan-progress-us-investment-pact/": {
    "archive_url": "http://web.archive.org/web/20260905033135/https://www.japantimes.co.jp/business/2026/09/05/japan-progress-us-investment-pact/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2495,7 +2567,7 @@
   },
   "https://www.jpost.com/international/article-909090": {
    "archive_url": "http://web.archive.org/web/20260920035113/https://www.jpost.com/international/article-909090",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2503,7 +2575,7 @@
   },
   "https://www.justsecurity.org/96629/revised-case-zablocki-act-at-six-months/": {
    "archive_url": "http://web.archive.org/web/20260107061835/https://www.justsecurity.org/96629/revised-case-zablocki-act-at-six-months/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2511,7 +2583,7 @@
   },
   "https://www.koreaherald.com/article/10597156": {
    "archive_url": "http://web.archive.org/web/20251022142604/https://www.koreaherald.com/article/10597156",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2519,7 +2591,7 @@
   },
   "https://www.koreaherald.com/article/10663265": {
    "archive_url": "http://web.archive.org/web/20260129061658/https://www.koreaherald.com/article/10663265",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2527,33 +2599,33 @@
   },
   "https://www.koreaherald.com/article/10664563": {
    "archive_url": "http://web.archive.org/web/20260128035748/https://www.koreaherald.com/article/10664563",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20260128035748"
   },
   "https://www.koreaherald.com/article/10768437": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.koreaherald.com/article/10878676": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.koreaherald.com/article/10889661": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.koreajoongangdaily.com/business/korea-conditions-alaska-lng-investment-on-viability-as-washington-touts-50b-from-seoul/12889392": {
    "archive_url": "http://web.archive.org/web/20261001005021/https://www.koreajoongangdaily.com/business/korea-conditions-alaska-lng-investment-on-viability-as-washington-touts-50b-from-seoul/12889392",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2561,7 +2633,7 @@
   },
   "https://www.koreajoongangdaily.com/business/trump-says-korea-could-pay-double-if-it-doesnt-sign-on-to-50b-alaska-lng-deal/12903931": {
    "archive_url": "http://web.archive.org/web/20261006090656/https://www.koreajoongangdaily.com/business/trump-says-korea-could-pay-double-if-it-doesnt-sign-on-to-50b-alaska-lng-deal/12903931",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2569,7 +2641,7 @@
   },
   "https://www.koreajoongangdaily.com/korea/korea-to-pay-us-139-more-this-year-for-sma/11545875": {
    "archive_url": "http://web.archive.org/web/20260716160049/https://www.koreajoongangdaily.com/korea/korea-to-pay-us-139-more-this-year-for-sma/11545875",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2577,7 +2649,7 @@
   },
   "https://www.koreajoongangdaily.com/korea/project-beaver-koreas-223b-offer-to-build-hydrogen-trucks-in-canada-to-give-submarine-bid-more-bite/12536864": {
    "archive_url": "http://web.archive.org/web/20260714084721/https://www.koreajoongangdaily.com/korea/project-beaver-koreas-223b-offer-to-build-hydrogen-trucks-in-canada-to-give-submarine-bid-more-bite/12536864",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2585,7 +2657,7 @@
   },
   "https://www.koreatimes.co.kr/business/banking-finance/20260918/foreigners-snap-7-month-sell-offs-of-korean-stocks-in-august": {
    "archive_url": "http://web.archive.org/web/20260919165452/https://www.koreatimes.co.kr/business/banking-finance/20260918/foreigners-snap-7-month-sell-offs-of-korean-stocks-in-august",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2593,7 +2665,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260129/hyundai-motor-bears-brunt-of-us-tariff-in-2025-earnings": {
    "archive_url": "http://web.archive.org/web/20260203200148/https://www.koreatimes.co.kr/business/companies/20260129/hyundai-motor-bears-brunt-of-us-tariff-in-2025-earnings",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2601,7 +2673,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260206/possible-us-25-tariff-puts-hyundai-kia-earnings-under-pressure": {
    "archive_url": "http://web.archive.org/web/20260208133458/https://www.koreatimes.co.kr/business/companies/20260206/possible-us-25-tariff-puts-hyundai-kia-earnings-under-pressure",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2609,7 +2681,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260331/lig-nex1-rebrands-as-lig-defense-aerospace-to-bolster-global-ambitions": {
    "archive_url": "http://web.archive.org/web/20260529083535/https://www.koreatimes.co.kr/business/companies/20260331/lig-nex1-rebrands-as-lig-defense-aerospace-to-bolster-global-ambitions",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2617,7 +2689,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260605/korea-bolsters-canadian-submarine-bid-with-hydrogen-vehicle-project": {
    "archive_url": "http://web.archive.org/web/20260708052520/https://www.koreatimes.co.kr/business/companies/20260605/korea-bolsters-canadian-submarine-bid-with-hydrogen-vehicle-project",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2625,7 +2697,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260723/korean-firms-review-canada-investment-plans-after-submarine-bid-loss": {
    "archive_url": "http://web.archive.org/web/20260724075341/https://www.koreatimes.co.kr/business/companies/20260723/korean-firms-review-canada-investment-plans-after-submarine-bid-loss",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2633,7 +2705,7 @@
   },
   "https://www.koreatimes.co.kr/business/companies/20260922/korea-selects-texas-power-plant-as-1st-us-investment-project": {
    "archive_url": "http://web.archive.org/web/20260924234133/https://www.koreatimes.co.kr/business/companies/20260922/korea-selects-texas-power-plant-as-1st-us-investment-project",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2641,7 +2713,7 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20251114/full-text-joint-fact-sheet-on-korea-us-trade-deal": {
    "archive_url": "http://web.archive.org/web/20260602032124/https://www.koreatimes.co.kr/foreignaffairs/20251114/full-text-joint-fact-sheet-on-korea-us-trade-deal",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2649,7 +2721,7 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20260724/korea-says-us-to-honor-15-tariff-cap-regarding-new-section-301-duties": {
    "archive_url": "http://web.archive.org/web/20260831211031/https://www.koreatimes.co.kr/foreignaffairs/20260724/korea-says-us-to-honor-15-tariff-cap-regarding-new-section-301-duties",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2657,7 +2729,7 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20261001/korea-expects-faster-progress-in-security-talks-with-us-following-investment-announcement": {
    "archive_url": "http://web.archive.org/web/20261006083432/https://www.koreatimes.co.kr/foreignaffairs/20261001/korea-expects-faster-progress-in-security-talks-with-us-following-investment-announcement",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2665,7 +2737,7 @@
   },
   "https://www.koreatimes.co.kr/southkorea/others/20261001/korea-protests-us-unilateral-announcement-on-alaska-lng-project": {
    "archive_url": "http://web.archive.org/web/20261005115609/https://www.koreatimes.co.kr/southkorea/others/20261001/korea-protests-us-unilateral-announcement-on-alaska-lng-project",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2673,7 +2745,7 @@
   },
   "https://www.koreatimes.co.kr/world/20261001/trump-to-unveil-200-billion-investment-in-us-projects-by-s-korea-white-house-says": {
    "archive_url": "http://web.archive.org/web/20261001144529/https://www.koreatimes.co.kr/world/20261001/trump-to-unveil-200-billion-investment-in-us-projects-by-s-korea-white-house-says",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2681,7 +2753,7 @@
   },
   "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/": {
    "archive_url": "http://web.archive.org/web/20251018083557/https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2689,7 +2761,7 @@
   },
   "https://www.law.cornell.edu/uscode/text/12/635f": {
    "archive_url": "http://web.archive.org/web/20260719040003/https://www.law.cornell.edu/uscode/text/12/635f",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
@@ -2697,7 +2769,7 @@
   },
   "https://www.law.cornell.edu/uscode/text/42/18743": {
    "archive_url": "http://web.archive.org/web/20260415175743/https://www.law.cornell.edu/uscode/text/42/18743",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
@@ -2705,36 +2777,38 @@
   },
   "https://www.law.cornell.edu/uscode/text/50/4552": {
    "archive_url": "http://web.archive.org/web/20251231235025/https://www.law.cornell.edu/uscode/text/50/4552",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
    ],
    "timestamp": "20251231235025"
   },
   "https://www.legal500.com/developments/thought-leadership/administrative-monetary-fines-of-the-capital-markets-board-of-turkiye-in-2025-key-types-of-breaches/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019180242/https://www.legal500.com/developments/thought-leadership/administrative-monetary-fines-of-the-capital-markets-board-of-turkiye-in-2025-key-types-of-breaches/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
-   ]
+   ],
+   "timestamp": "20261019180242"
   },
   "https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php": {
-   "archive_url": "http://web.archive.org/web/20261015040714/https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261015084445/https://www.longwarjournal.org/archives/2026/09/houthis-take-yemens-red-sea-coast-and-key-bab-al-mandeb-islands.php",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
-   "timestamp": "20261015040714"
+   "timestamp": "20261015084445"
   },
   "https://www.lse.ac.uk/middle-east-centre/research/muhasasa-taifia": {
    "archive_url": "http://web.archive.org/web/20260309152225/https://www.lse.ac.uk/middle-east-centre/research/muhasasa-taifia",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260309152225"
   },
   "https://www.macroview.live/ledger": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     ".",
     "about",
@@ -2772,21 +2846,23 @@
   },
   "https://www.mccarthy.ca/en/insights/blogs/mccarthy-tetrault-tax-perspectives/productivity-mega-deduction-key-tax-measures-announced-at-the-canada-investment-summit": {
    "archive_url": "http://web.archive.org/web/20261012061457/https://www.mccarthy.ca/en/insights/blogs/mccarthy-tetrault-tax-perspectives/productivity-mega-deduction-key-tax-measures-announced-at-the-canada-investment-summit",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20261012061457"
   },
   "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-next-big-shifts-in-ai-workloads-and-hyperscaler-strategies": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260611154903/https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-next-big-shifts-in-ai-workloads-and-hyperscaler-strategies",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
-   ]
+   ],
+   "timestamp": "20260611154903"
   },
   "https://www.mercatus.org/research/policy-briefs/ex-im-bank-comparative-analysis-pre-and-post-quorum-lending": {
    "archive_url": "http://web.archive.org/web/20260304121202/https://www.mercatus.org/research/policy-briefs/ex-im-bank-comparative-analysis-pre-and-post-quorum-lending",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2794,7 +2870,7 @@
   },
   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6362.pdf": {
    "archive_url": "http://web.archive.org/web/20240405145219/https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6362.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb4"
    ],
@@ -2802,21 +2878,21 @@
   },
   "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/senbotsusha/index.html": {
    "archive_url": "http://web.archive.org/web/20260928035359/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/senbotsusha/index.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
    "timestamp": "20260928035359"
   },
   "https://www.mlex.com/mlex/trade/articles/2452043": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/f6603c070021c7f86001fdd38b1fd7a6/778bdbf5db9ced7c8fd52756c00bf0cd": {
    "archive_url": "http://web.archive.org/web/20260302035242/https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/f6603c070021c7f86001fdd38b1fd7a6/778bdbf5db9ced7c8fd52756c00bf0cd",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2824,7 +2900,7 @@
   },
   "https://www.nber.org/papers/w32019": {
    "archive_url": "http://web.archive.org/web/20260517123128/https://www.nber.org/papers/w32019",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2832,7 +2908,7 @@
   },
   "https://www.ndl.go.jp/constitution/e/outline/03outline.html": {
    "archive_url": "http://web.archive.org/web/20260808081114/https://www.ndl.go.jp/constitution/e/outline/03outline.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2840,7 +2916,7 @@
   },
   "https://www.northernontariobusiness.com/industry-news/manufacturing/algoma-steel-says-beam-mill-plan-remains-real-despite-submarine-contract-setback-12617878": {
    "archive_url": "http://web.archive.org/web/20260801074626/https://www.northernontariobusiness.com/industry-news/manufacturing/algoma-steel-says-beam-mill-plan-remains-real-despite-submarine-contract-setback-12617878",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2848,21 +2924,21 @@
   },
   "https://www.nro.gov/news-media-featured-stories/news-media-archive/News-Article/Article/4457615/nros-proliferated-architecture-exceeding-expectations-pddnro-tells-space-sympos/": {
    "archive_url": "http://web.archive.org/web/20260512213559/https://www.nro.gov/news-media-featured-stories/news-media-archive/News-Article/Article/4457615/nros-proliferated-architecture-exceeding-expectations-pddnro-tells-space-sympos/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260512213559"
   },
   "https://www.nro.gov/news-media-featured-stories/news-media-press-releases/Archived-Press-Releases/Press-Release-Article/Article/4520427/nro-launches-fourteenth-proliferated-architecture-mission-with-nrol-179/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://www.oedigital.com/news/543193-south-korea-aims-to-cut-middle-east-crude-dependence-to-50-by-2035": {
    "archive_url": "http://web.archive.org/web/20260923120102/https://www.oedigital.com/news/543193-south-korea-aims-to-cut-middle-east-crude-dependence-to-50-by-2035",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp1",
     "wp2"
@@ -2870,20 +2946,22 @@
    "timestamp": "20260923120102"
   },
   "https://www.omanobserver.om/article/1195040/oman/six-months-of-war-20-dead-in-68-incidents-near-hormuz-imo": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.opb.org/article/2026/01/09/southern-yemen-separatists-to-dissolve-after-chief-fled-to-uae/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019181228/https://www.opb.org/article/2026/01/09/southern-yemen-separatists-to-dissolve-after-chief-fled-to-uae/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261019181228"
   },
   "https://www.osler.com/en/insights/updates/from-critical-minerals-to-evs-canada-korea-mou-aims-to-attract-investment-and-build-supply-chain-resilience": {
    "archive_url": "http://web.archive.org/web/20260515082949/https://www.osler.com/en/insights/updates/from-critical-minerals-to-evs-canada-korea-mou-aims-to-attract-investment-and-build-supply-chain-resilience/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2891,7 +2969,7 @@
   },
   "https://www.osw.waw.pl/en/publikacje/osw-commentary/2023-07-04/russias-nuclear-project-hungary-frances-growing-role": {
    "archive_url": "http://web.archive.org/web/20260722221112/https://www.osw.waw.pl/en/publikacje/osw-commentary/2023-07-04/russias-nuclear-project-hungary-frances-growing-role",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -2899,7 +2977,7 @@
   },
   "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-us-exim-15-billion-usd-mou-export-credit/": {
    "archive_url": "http://web.archive.org/web/20260809181238/https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-us-exim-15-billion-usd-mou-export-credit/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2907,7 +2985,7 @@
   },
   "https://www.piie.com/blogs/trade-and-investment-policy-watch/price-waiting-exim-board-quorum-jobs": {
    "archive_url": "http://web.archive.org/web/20260712145424/https://www.piie.com/blogs/trade-and-investment-policy-watch/price-waiting-exim-board-quorum-jobs",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -2915,7 +2993,7 @@
   },
   "https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2025-releases/20251217-pjm-auction-procures-134479-mw-of-generation-resources.pdf": {
    "archive_url": "http://web.archive.org/web/20261002213336/https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2025-releases/20251217-pjm-auction-procures-134479-mw-of-generation-resources.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2923,23 +3001,23 @@
   },
   "https://www.pm.gc.ca/en/news/news-releases/2025/11/13/prime-minister-carney-announces-second-tranche-nation-building-projects": {
    "archive_url": "http://web.archive.org/web/20260831112102/https://www.pm.gc.ca/en/news/news-releases/2025/11/13/prime-minister-carney-announces-second-tranche-nation-building-projects",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
    "timestamp": "20260831112102"
   },
   "https://www.pm.gc.ca/en/news/news-releases/2026/07/06/prime-minister-carney-announces-preferred-supplier-canadian-patrol": {
-   "archive_url": "http://web.archive.org/web/20260707093602/https://www.pm.gc.ca/en/news/news-releases/2026/07/06/prime-minister-carney-announces-preferred-supplier-canadian-patrol",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261016075156/https://www.pm.gc.ca/en/news/news-releases/2026/07/06/prime-minister-carney-announces-preferred-supplier-canadian-patrol",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
-   "timestamp": "20260707093602"
+   "timestamp": "20261016075156"
   },
   "https://www.pm.gc.ca/en/news/news-releases/2026/09/15/prime-minister-carney-introduces-new-productivity-mega-deduction": {
    "archive_url": "http://web.archive.org/web/20260919210035/https://www.pm.gc.ca/en/news/news-releases/2026/09/15/prime-minister-carney-introduces-new-productivity-mega-deduction",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -2947,7 +3025,7 @@
   },
   "https://www.pm.gc.ca/en/news/speeches/2026/01/20/principled-and-pragmatic-canadas-path-prime-minister-carney-addresses": {
    "archive_url": "http://web.archive.org/web/20261003035212/https://www.pm.gc.ca/en/news/speeches/2026/01/20/principled-and-pragmatic-canadas-path-prime-minister-carney-addresses",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
@@ -2955,7 +3033,7 @@
   },
   "https://www.rferl.org/a/zebra-dazzle-camouflage-ai-hornet-drones-russia-ukraine-invasion/33771856.html": {
    "archive_url": "http://web.archive.org/web/20260825194214/https://www.rferl.org/a/zebra-dazzle-camouflage-ai-hornet-drones-russia-ukraine-invasion/33771856.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
@@ -2963,7 +3041,7 @@
   },
   "https://www.rigzone.com/news/south_korea_takes_steps_toward_potential_alaska_lng_investment-01-oct-2026-184752-article/": {
    "archive_url": "http://web.archive.org/web/20261004112302/https://www.rigzone.com/news/south_korea_takes_steps_toward_potential_alaska_lng_investment-01-oct-2026-184752-article/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -2971,79 +3049,83 @@
   },
   "https://www.rusi.org/explore-our-research/publications/commentary/catch-235-western-dependence-russian-nuclear-supplies-hard-shake": {
    "archive_url": "http://web.archive.org/web/20260510204450/https://www.rusi.org/explore-our-research/publications/commentary/catch-235-western-dependence-russian-nuclear-supplies-hard-shake",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20260510204450"
   },
   "https://www.scmp.com/news/china/military/article/3109809/chinas-aircraft-carrier-killer-missiles-successfully-hit-target": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260924132125/https://www.scmp.com/news/china/military/article/3109809/chinas-aircraft-carrier-killer-missiles-successfully-hit-target",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
-   ]
+   ],
+   "timestamp": "20260924132125"
   },
   "https://www.scmp.com/news/china/science/article/3297575/china-can-detect-us-seawolf-class-submarine-magnetic-wake-tracking-study": {
    "archive_url": "http://web.archive.org/web/20260809055852/https://www.scmp.com/news/china/science/article/3297575/china-can-detect-us-seawolf-class-submarine-magnetic-wake-tracking-study",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
    "timestamp": "20260809055852"
   },
   "https://www.scmp.com/news/china/science/article/3367965/china-tested-handheld-submarine-detector-it-tracked-subway-train-underground": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ]
   },
   "https://www.sec.gov/Archives/edgar/data/0001605484/000160548426000041/stellantisnv20260331interi.htm": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.sec.gov/Archives/edgar/data/0001605484/000160548426000064/stellantisnv20260630semi-a.htm": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.sec.gov/Archives/edgar/data/1860805/000110465926088340/tm2621580d1_ex99-1.htm": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.sec.gov/Archives/edgar/data/1860805/000110465926088340/tm2621580d1_ex99-2.htm": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.sec.gov/Archives/edgar/data/1907184/000117184324004848/exh_991.htm": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261019182635/https://www.sec.gov/Archives/edgar/data/1907184/000117184324004848/exh_991.htm",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb2"
-   ]
+   ],
+   "timestamp": "20261019182635"
   },
   "https://www.sipri.org/databases/armstransfers": {
-   "archive_url": "http://web.archive.org/web/20261013013122/https://www.sipri.org/databases/armstransfers",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261013143612/https://www.sipri.org/databases/armstransfers",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
-   "timestamp": "20261013013122"
+   "timestamp": "20261013143612"
   },
   "https://www.steelmarketupdate.com/2026/07/08/algoma-in-talks-with-tkms-following-submarine-deal/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.supremecourt.gov/opinions/25pdf/607us2r12_8nj9.pdf": {
    "archive_url": "http://web.archive.org/web/20261011060944/https://www.supremecourt.gov/opinions/25pdf/607us2r12_8nj9.pdf",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -3051,7 +3133,7 @@
   },
   "https://www.tandfonline.com/doi/abs/10.1080/13530199908705684": {
    "archive_url": "http://web.archive.org/web/20241231010751/https://www.tandfonline.com/doi/abs/10.1080/13530199908705684",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -3059,21 +3141,23 @@
   },
   "https://www.tcenergy.com/announcements/2022/2022-03-09-tc-energy-signs-equity-option-agreements-with-indigenous-communities-across-the-coastal-gaslink-project-corridor/": {
    "archive_url": "http://web.archive.org/web/20260607111448/https://www.tcenergy.com/announcements/2022/2022-03-09-tc-energy-signs-equity-option-agreements-with-indigenous-communities-across-the-coastal-gaslink-project-corridor/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp2"
    ],
    "timestamp": "20260607111448"
   },
   "https://www.theglobeandmail.com/politics/article-canada-submarine-contract-germany-tkms/": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260809122322/https://www.theglobeandmail.com/politics/article-canada-submarine-contract-germany-tkms/",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
-   ]
+   ],
+   "timestamp": "20260809122322"
   },
   "https://www.theglobeandmail.com/politics/article-canada-submarine-contract-tkms-germany-mark-carney/": {
    "archive_url": "http://web.archive.org/web/20260707005540/https://www.theglobeandmail.com/politics/article-canada-submarine-contract-tkms-germany-mark-carney/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
@@ -3081,35 +3165,35 @@
   },
   "https://www.thelec.net/news/articleView.html?idxno=11807": {
    "archive_url": "http://web.archive.org/web/20260630220056/https://www.thelec.net/news/articleView.html?idxno=11807",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ],
    "timestamp": "20260630220056"
   },
   "https://www.thelec.net/news/articleView.html?idxno=12087": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "pl2"
    ]
   },
   "https://www.tipranks.com/news/the-truth-about-the-petrodollar-pact": {
    "archive_url": "http://web.archive.org/web/20240827073713/https://www.tipranks.com/news/the-truth-about-the-petrodollar-pact",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
    "timestamp": "20240827073713"
   },
   "https://www.toutsurmesfinances.com/retraite/suspension-reforme-des-retraites.html": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ]
   },
   "https://www.trumanlibrary.gov/library/public-papers/122/radio-address-american-people-after-signing-terms-unconditional-surrender": {
    "archive_url": "http://web.archive.org/web/20260513220808/https://www.trumanlibrary.gov/library/public-papers/122/radio-address-american-people-after-signing-terms-unconditional-surrender",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb5"
    ],
@@ -3117,7 +3201,7 @@
   },
   "https://www.twz.com/17903/china-reveals-it-has-two-underwater-listening-devices-within-range-of-guam": {
    "archive_url": "http://web.archive.org/web/20260607000927/https://www.twz.com/17903/china-reveals-it-has-two-underwater-listening-devices-within-range-of-guam",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -3125,7 +3209,7 @@
   },
   "https://www.twz.com/29505/the-navys-secretive-nemesis-electronic-warfare-capability-will-change-naval-combat-forever": {
    "archive_url": "http://web.archive.org/web/20260907221224/https://www.twz.com/29505/the-navys-secretive-nemesis-electronic-warfare-capability-will-change-naval-combat-forever",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "tb2"
    ],
@@ -3133,47 +3217,51 @@
   },
   "https://www.twz.com/air/russia-covering-its-aircraft-in-tires-is-about-befuddling-image-matching-seekers-u-s-military-confirms": {
    "archive_url": "http://web.archive.org/web/20260725173439/https://www.twz.com/air/russia-covering-its-aircraft-in-tires-is-about-befuddling-image-matching-seekers-u-s-military-confirms",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ],
    "timestamp": "20260725173439"
   },
   "https://www.twz.com/land/russian-trucks-get-dazzle-paint-to-throw-off-ai-enabled-drones": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp7"
    ]
   },
   "https://www.upi.com/Top_News/World-News/2026/05/05/navy-submarine-dosan-ahn-chang-ho/8751778026038/": {
    "archive_url": "http://web.archive.org/web/20260507200631/https://www.upi.com/Top_News/World-News/2026/05/05/navy-submarine-dosan-ahn-chang-ho/8751778026038/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp3"
    ],
    "timestamp": "20260507200631"
   },
   "https://www.upi.com/Top_News/World-News/2026/09/18/korea-Lee-Jae-Myung-Hormuz-military-involvement-Trump/1261789718405/": {
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ]
   },
   "https://www.uschamber.com/finance/coalition-in-support-of-exim-reauthorization": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017064211/https://www.uschamber.com/finance/coalition-in-support-of-exim-reauthorization",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
-   ]
+   ],
+   "timestamp": "20261017064211"
   },
   "https://www.uschamber.com/finance/support-for-the-long-term-reauthorization-of-the-export-import-bank-of-the-united-states": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20260516211750/https://www.uschamber.com/finance/support-for-the-long-term-reauthorization-of-the-export-import-bank-of-the-united-states",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
-   ]
+   ],
+   "timestamp": "20260516211750"
   },
   "https://www.wardandsmith.com/article/court-of-international-trade-rejects-10-section-122-tariff-what-businesses-should-know-while-the-appeal-proceeds": {
    "archive_url": "http://web.archive.org/web/20260813212928/https://www.wardandsmith.com/article/court-of-international-trade-rejects-10-section-122-tariff-what-businesses-should-know-while-the-appeal-proceeds",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
@@ -3181,7 +3269,7 @@
   },
   "https://www.warner.senate.gov/public/index.cfm/2026/2/warner-cramer-introduce-legislation-reauthorizing-exim-for-10-years": {
    "archive_url": "http://web.archive.org/web/20260410234053/https://www.warner.senate.gov/public/index.cfm/2026/2/warner-cramer-introduce-legislation-reauthorizing-exim-for-10-years",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "wp9"
    ],
@@ -3189,29 +3277,31 @@
   },
   "https://www.washingtontimes.com/news/2026/sep/30/trump-announces-200b-south-korean-investments-us/": {
    "archive_url": "http://web.archive.org/web/20261002184848/https://www.washingtontimes.com/news/2026/sep/30/trump-announces-200b-south-korean-investments-us/",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
    "timestamp": "20261002184848"
   },
   "https://www.whitehouse.gov/fact-sheets/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung": {
-   "archive_url": "http://web.archive.org/web/20260930225854/https://www.whitehouse.gov/fact-sheets/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung/",
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261017064904/https://www.whitehouse.gov/fact-sheets/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung/",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
-   "timestamp": "20260930225854"
+   "timestamp": "20261017064904"
   },
   "https://www.worldbank.org/en/news/press-release/2022/01/24/lebanon-s-crisis-great-denial-in-the-deliberate-depression": {
-   "checked": "2026-10-19",
+   "archive_url": "http://web.archive.org/web/20261009190600/https://www.worldbank.org/en/news/press-release/2022/01/24/lebanon-s-crisis-great-denial-in-the-deliberate-depression",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
-   ]
+   ],
+   "timestamp": "20261009190600"
   },
   "https://www.worldbank.org/en/news/press-release/2022/11/23/lebanon-time-for-an-equitable-banking-resolution": {
    "archive_url": "http://web.archive.org/web/20260916005741/https://www.worldbank.org/en/news/press-release/2022/11/23/lebanon-time-for-an-equitable-banking-resolution",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb8"
    ],
@@ -3219,7 +3309,7 @@
   },
   "https://www.yahoo.com/news/articles/trump-announces-energy-critical-mineral-204549246.html": {
    "archive_url": "http://web.archive.org/web/20260221205819/https://www.yahoo.com/news/articles/trump-announces-energy-critical-mineral-204549246.html",
-   "checked": "2026-10-19",
+   "checked": "2026-10-26",
    "cited_by": [
     "sb6"
    ],
