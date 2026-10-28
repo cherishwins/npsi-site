@@ -11,7 +11,7 @@
   <!-- Reading views and institutional pages -->
   <url>
     <loc>https://npsi.ca/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -60,8 +60,13 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://npsi.ca/sb10/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://npsi.ca/sb9/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -131,12 +136,12 @@
   </url>
   <url>
     <loc>https://npsi.ca/briefings/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://npsi.ca/register/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -151,7 +156,7 @@
   </url>
   <url>
     <loc>https://npsi.ca/disclosure/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -161,7 +166,7 @@
   </url>
   <url>
     <loc>https://npsi.ca/commentary/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -214,6 +219,16 @@
   <url>
     <loc>https://npsi.ca/wp1/working-paper.pdf</loc>
     <lastmod>2026-05-17</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb10/special-briefing.pdf</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://npsi.ca/sb10/contractor-checklist.pdf</loc>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.4</priority>
   </url>
   <url>

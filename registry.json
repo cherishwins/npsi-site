@@ -1,7 +1,7 @@
 {
   "imprint": "North Pacific Strategy Initiative",
   "url": "https://npsi.ca/",
-  "generated": "2026-10-17",
+  "generated": "2026-10-28",
   "identifiers": {
     "serial": "Publication serial, assigned by the editor alone at publication; sequential within its line; never reused.",
     "accession": "Intake number, NPSI-YYYYMMDD-X, assigned when a document enters the system; immutable. A document may carry an accession number before a serial is assigned."
@@ -277,6 +277,27 @@
       "pdf": "/sb9/special-briefing.pdf",
       "files": [
         "/sb9/special-briefing.pdf"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "line": "SB",
+      "number": 10,
+      "serial": null,
+      "accession": "NPSI-20261027",
+      "folder": "sb10",
+      "url": "/sb10/",
+      "title": "The 2027 Cliff",
+      "subtitle": "On 1 January the Pentagon stops contracting for magnets, tungsten and tantalum mined or refined in China. The rule is narrower than reported. The gap it exposes is wider.",
+      "version": "v1.0",
+      "released": "2026-10-28",
+      "series": null,
+      "status": "published",
+      "pdf": "/sb10/special-briefing.pdf",
+      "files": [
+        "/sb10/contractor-checklist.pdf",
+        "/sb10/special-briefing.pdf"
       ],
       "supersedes": null,
       "superseded_by": null
