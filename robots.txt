@@ -86,3 +86,4 @@ User-agent: archive.org_bot
 Allow: /
 
 Sitemap: https://npsi.ca/sitemap.xml
+Sitemap: https://npsi.ca/feed.xml
