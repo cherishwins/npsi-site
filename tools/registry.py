@@ -408,11 +408,45 @@ def chrome() -> tuple[str, str, str]:
 
 
 OG_DEFAULT_ALT = "North Pacific Strategy Initiative: Working Papers on Pacific Sovereignty and Bilateral Architecture"
+CARD_TAGLINES = {
+    "papers": "Pacific sovereignty, bilateral architecture, and the options open to middle powers.",
+    "briefings": "Single-issue assessments, the technical substrate, and short-form notes.",
+    "register": "Every identifier the imprint has assigned, by number.",
+}
 
 
-def page_shell(path: str, title: str, description: str, key: str, body: str) -> str:
+def collection_ld(url: str, title: str, description: str, docs: list[dict]) -> str:
+    """Schema.org CollectionPage with the list it carries, so a crawler reads the
+    index page as an index of documents, in the page's own order."""
+    items = [{"@type": "ListItem", "position": i + 1, "url": f"https://npsi.ca{d['url']}",
+              "name": f"{nav_label(d)} · {d['title']}"} for i, d in enumerate(docs)]
+    data = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": url,
+        "url": url,
+        "name": f"{title} · North Pacific Strategy Initiative",
+        "description": description,
+        "inLanguage": "en-CA",
+        "isPartOf": {"@id": "https://npsi.ca/#website"},
+        "publisher": {"@id": "https://npsi.ca/#organization"},
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items},
+    }
+    return '<script type="application/ld+json">\n' + json.dumps(data, indent=2, ensure_ascii=False) + "\n</script>\n"
+
+
+def page_shell(path: str, title: str, description: str, key: str, body: str,
+               docs: list[dict] | None = None) -> str:
     head, _, footer = chrome()
     url = f"https://npsi.ca{path}"
+    ld = collection_ld(url, title, description, docs) if docs else ""
+    # Each index page has its own share card (assets/img/<page>-og.svg, rendered
+    # by tools/render-og.sh); the generic card is the fallback.
+    folder = path.strip("/")
+    card = f"{folder}-og.png" if (ROOT / "assets" / "img" / f"{folder}-og.png").is_file() else "og-default.png"
+    card_alt = (f"{title}, North Pacific Strategy Initiative. {CARD_TAGLINES[folder]}"
+                if card != "og-default.png" else OG_DEFAULT_ALT)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -425,17 +459,17 @@ def page_shell(path: str, title: str, description: str, key: str, body: str) -> 
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="https://npsi.ca/assets/img/og-default.png">
+<meta property="og:image" content="https://npsi.ca/assets/img/{card}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{OG_DEFAULT_ALT}">
+<meta property="og:image:alt" content="{esc(card_alt)}">
 <meta property="og:site_name" content="North Pacific Strategy Initiative">
 <meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:alt" content="{OG_DEFAULT_ALT}">
+<meta name="twitter:image:alt" content="{esc(card_alt)}">
 
 <link rel="canonical" href="{url}">
-
+{ld}
 {head}
 </head>
 <body>
@@ -796,21 +830,23 @@ def render() -> int:
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     render_home_lists(reg)
     render_commentary_table(reg)
+    docs = reg["documents"]
     pages = {
         "papers": ("/papers/", "Working Papers",
                    "Every NPSI working paper, by publication date: the current paper, the archive, and the numbering.",
-                   "papers", render_papers(reg)),
+                   "papers", render_papers(reg), by_date(d for d in docs if d["line"] == "WP")),
         "briefings": ("/briefings/", "Briefings",
                       "NPSI Technical Briefings, Briefing Notes and Special Briefings, by publication date.",
-                      "briefings", render_briefings(reg)),
+                      "briefings", render_briefings(reg),
+                      by_date(d for d in docs if d["line"] in ("TB", "BN", "SB"))),
         "register": ("/register/", "The Number Register",
                      "Every identifier the North Pacific Strategy Initiative has assigned: publication serials, accession numbers, and reserved numbers never released.",
-                     "register", render_register(reg)),
+                     "register", render_register(reg), docs),
     }
-    for folder, (path, title, desc, key, body) in pages.items():
+    for folder, (path, title, desc, key, body, listed) in pages.items():
         out = ROOT / folder / "index.html"
         out.parent.mkdir(exist_ok=True)
-        out.write_text(page_shell(path, title, desc, key, body), encoding="utf-8")
+        out.write_text(page_shell(path, title, desc, key, body, listed), encoding="utf-8")
         print(f"rendered {folder}/index.html")
     FEED.write_text(feed_xml(reg), encoding="utf-8")
     print(f"rendered feed.xml ({len(reg['documents'])} entries)")

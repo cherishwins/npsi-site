@@ -29,6 +29,8 @@ Market-enforcement briefing, integrated 4 October 2026 as a PDF-first release pa
 - **The Tollgate Test:** five signs (thin floats and fresh listings; funds that own each other's trades; "cash" that holds stock; promoters close to power; a price on prosecution) and four numbers to demand (collection rate, median fine, referrals and convictions, pay-to-close route). Three or more signs, and the penalty code is the wrong document to read.
 - **Register:** the briefing's "From the author" note (p. 20) is signed and in the first person; that is the author's form for this document. AI assistance is stated on the back cover and in the page's metadata block.
 
+- Link maintenance, 28 October 2026: the Legal500 citation (Administrative Monetary Fines of the Capital Markets Board of Türkiye in 2025) moved; its old /developments/thought-leadership/ address returned 404 and the source list now links the same article on the firm's Legal500 page. Text unchanged, no version bump.
+
 ## Open review items
 
 The source check behind v1.0.1, with the optional additions the editor has not approved, is in the editor's private corrections list: <https://claude.ai/artifact/7EB5uvKWoMrRqNiwCHBzWN>.
