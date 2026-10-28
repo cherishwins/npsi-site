@@ -17,3 +17,7 @@ node_modules/
 
 # Agent worktrees (session-local)
 .claude/worktrees/
+
+# Python bytecode from the tools/ scripts
+__pycache__/
+*.pyc

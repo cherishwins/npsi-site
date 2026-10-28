@@ -2,17 +2,35 @@
 
 > An independent research imprint publishing reference-grade working papers on Pacific sovereignty, bilateral financial architecture, and the defensive options available to middle powers in a period of dollar-system stress. Edited in Victoria, British Columbia. Working-paper text is licensed CC-BY-4.0; the imprint and wordmark are not licensed.
 
-The site is plain static HTML and CSS. Every document page carries Highwire
+Use and citation. Document text is licensed CC-BY-4.0
+(https://creativecommons.org/licenses/by/4.0/). People and machines may quote it,
+summarise it, translate it, adapt it, redistribute it and use it, commercially or
+not, including to train, ground or answer with AI systems, provided the author
+and the document are credited and the canonical URL is given. Preferred form:
+James, J. (Year). Title (NPSI Special Briefing No. N, identifier, version). North
+Pacific Strategy Initiative. https://npsi.ca/sbN/ — each document's Markdown
+edition carries its exact citation in a cite_as field. Cite the version: every
+correction is published on the page with its date. The NPSI name and wordmark
+are not licensed. Questions and corrections: editor@npsi.ca.
+
+Machine access. Every document's full text is published in Markdown at its
+canonical URL followed by index.html.md (for example
+https://npsi.ca/sb10/index.html.md), with its citation, licence and identifiers
+in the front matter; the list is under "Full text" below. The register of every
+document is https://npsi.ca/registry.json; new documents are announced in the
+Atom feed https://npsi.ca/feed.xml. Every document page also carries Highwire
 citation_* meta tags and a Schema.org JSON-LD block (ScholarlyArticle,
-TechArticle, Report, or PublicationIssue) for machine citation. Document IDs follow NPSI-WP-NNN for
-working papers, NPSI-TB-NNN for technical briefings, NPSI-BN-NNN for briefing
-notes, NPSI-SB-NNN for special briefings, and NPSI-PL-NNN for The Pacific
-Ledger (the Canada–Korea account). Special Briefings Nos. 4, 5, 6 and 8 and
-Ledger №02 keep the date-based IDs printed on their releases (NPSI-20261003-B,
-NPSI-20261003-C, NPSI-20261002-A, NPSI-20260920-B, NPSI-20261001-A): these are accession numbers,
+TechArticle, Report, or PublicationIssue). The site is plain static HTML and CSS.
+
+Identifiers. Document IDs follow NPSI-WP-NNN for working papers, NPSI-TB-NNN for
+technical briefings, NPSI-BN-NNN for briefing notes, NPSI-SB-NNN for special
+briefings, and NPSI-PL-NNN for The Pacific Ledger (the Canada–Korea account).
+Technical Briefing No. 2, Special Briefings Nos. 4, 5, 6, 8, 9 and 10 and Ledger
+№02 keep the date-based IDs printed on their releases (NPSI-20261014,
+NPSI-20261003-B, NPSI-20261003-C, NPSI-20261002-A, NPSI-20260920-B,
+NPSI-20261016, NPSI-20261027, NPSI-20261001-A): these are accession numbers,
 assigned at intake; a publication serial is assigned by the editor alone and is
-pending for each. The full register of
-identifiers is https://npsi.ca/register/ (machine-readable: https://npsi.ca/registry.json).
+pending for each. The full register of identifiers is https://npsi.ca/register/.
 Cite the canonical URLs below.
 
 ## Working Papers
@@ -54,11 +72,40 @@ Cite the canonical URLs below.
 - [SB2 — The Three Doors](https://npsi.ca/sb2/): Under U.S. defense law, Canada has been a domestic source since 1992 (50 U.S.C. §4552) — a Canadian miner's map to American federal money: DPA Title III, where Canada counts as domestic, and two doors that do not depend on it — the Infrastructure Investment and Jobs Act §40210 pilot grants (42 U.S.C. §18743), which require a U.S. site or partner, and EXIM's Supply Chain Resiliency Initiative, which finances foreign projects on U.S. offtake. Ten-panel briefing. v1.0.1, 2 July 2026 (corrected 14 October 2026; PDF v1.0 canonical). PDF: https://npsi.ca/sb2/special-briefing.pdf
 - [SB1 — Zero Secrets](https://npsi.ca/sb1/): Canada's data and AI sovereignty crisis — under the CLOUD Act and FISA 702, jurisdiction follows corporate ownership, not server location; an audit of the federal sovereign-AI agenda, four international models, and a three-stage response. Companion to WP5, Sovereign Compute North (https://npsi.ca/wp5/). v1.0.1, 11 June 2026 (errata 14 October 2026). PDF: https://npsi.ca/sb1/special-briefing.pdf
 
+## Full text
+
+The complete text of each document in Markdown, newest first. The reading view and the PDF remain the editions of record.
+
+- [SB10 — The 2027 Cliff](https://npsi.ca/sb10/index.html.md)
+- [SB9 — Settled in Cash](https://npsi.ca/sb9/index.html.md)
+- [TB2 — Running Silent](https://npsi.ca/tb2/index.html.md)
+- [SB8 — The Authored State](https://npsi.ca/sb8/index.html.md)
+- [SB6 — The Walk-Away Price](https://npsi.ca/sb6/index.html.md)
+- [The Pacific Ledger №02 — The Pacific Ledger](https://npsi.ca/pl2/index.html.md)
+- [SB5 — One Day, Four Names](https://npsi.ca/sb5/index.html.md)
+- [SB4 — The Tollgate Markets](https://npsi.ca/sb4/index.html.md)
+- [WP11 — Rated AAA by the Issuer](https://npsi.ca/wp11/index.html.md)
+- [The Pacific Ledger №01 — The Pacific Ledger](https://npsi.ca/pl1/index.html.md)
+- [WP9 — The Counterparty Problem](https://npsi.ca/wp9/index.html.md)
+- [WP10 — Fair Use for We, IP Theft for Thee](https://npsi.ca/wp10/index.html.md)
+- [SB3 — The Ledger With One Entry](https://npsi.ca/sb3/index.html.md)
+- [WP7 — Dazzle 2.0](https://npsi.ca/wp7/index.html.md)
+- [SB2 — The Three Doors](https://npsi.ca/sb2/index.html.md)
+- [BN1 — The Voter File](https://npsi.ca/bn1/index.html.md)
+- [SB1 — Zero Secrets](https://npsi.ca/sb1/index.html.md)
+- [TB1 — The Verified Sky](https://npsi.ca/tb1/index.html.md)
+- [WP5 — Sovereign Compute North](https://npsi.ca/wp5/index.html.md)
+- [WP4 — The Addition Paradox](https://npsi.ca/wp4/index.html.md)
+- [WP3 — A Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/index.html.md)
+- [WP2 — A Canada–United States Energy and Compute Compact](https://npsi.ca/wp2/index.html.md)
+- [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/index.html.md)
+
 ## Indexes
 
 - [Working Papers](https://npsi.ca/papers/): Every working paper by publication date — the current paper, the archive, and the numbering.
 - [Briefings](https://npsi.ca/briefings/): Technical Briefings, Briefing Notes and Special Briefings, by publication date.
 - [The Number Register](https://npsi.ca/register/): Every identifier the imprint has assigned — publication serials, accession numbers, and reserved numbers never released. Machine-readable form: https://npsi.ca/registry.json
+- [Atom feed](https://npsi.ca/feed.xml): Every published document, newest first, with links to its page, Markdown edition and PDFs.
 
 ## The Imprint
 

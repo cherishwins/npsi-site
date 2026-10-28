@@ -9,7 +9,7 @@ The institutional website of the **North Pacific Strategy Initiative (NPSI)** �
 **Live at:** `npsi.ca` — registered for ten years through CIRA, the canonical domain. The `.ca` is strategic, not a fallback: CIRA verifies Canadian presence (blocks typosquatters by registry policy), the long registration signals permanence, and the domain matches the imprint's editorial seat in Victoria, BC. Defensive redirects from `npsi.org` and similar are optional, not required.
 **Editor:** Jesse James (`editor@npsi.ca`). Standardized June 2026 (PR #24): all site-facing editorial correspondence — footers, JSON-LD, commentary mailtos, security.txt, humans.txt, CITATION.cff — uses the institutional alias `editor@npsi.ca`. The `commentary@npsi.ca` alias remains reserved for future activation. The personal address `jesse@fitforgov.com` no longer appears on the site.
 **LinkedIn:** [`linkedin.com/company/north-pacific-strategy-initiative`](https://www.linkedin.com/company/north-pacific-strategy-initiative/) — the imprint's institutional social presence.
-**Scope of the site:** 33 pages plus a 404 — home, the three index pages (`/papers/`, `/briefings/`, `/register/`), nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), two technical-briefing reading views (TB No. 1 *The Verified Sky*, TB No. 2 *Running Silent*), one briefing-note reading view (BN No. 1 *The Voter File*), nine special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*, SB No. 4 *The Tollgate Markets*, SB No. 5 *One Day, Four Names*, SB No. 6 *The Walk-Away Price*, SB No. 8 *The Authored State*, SB No. 9 *Settled in Cash*, SB No. 10 *The 2027 Cliff*, with its companion checklist *Before the First of January*; No. 7 is reserved for a document whose source has not arrived), two Pacific Ledger issues (№01, July 2026; №02, October 2026) plus the `/ledger/` issue index, about, engage, commentary index, disclosure, colophon. Static HTML and CSS, no JavaScript framework. **`registry.json`** at the root is the public register of every published document (see *The register*, below).
+**Scope of the site:** 33 pages plus a 404 — home, the three index pages (`/papers/`, `/briefings/`, `/register/`), nine working-paper views (No. 1 *The Bilateral Foundation*, No. 2, No. 3, No. 4 *The Addition Paradox*, No. 5 *Sovereign Compute North*, No. 7 *Dazzle 2.0*, No. 9 *The Counterparty Problem*, No. 10 *Fair Use for We, IP Theft for Thee*, No. 11 *Rated AAA by the Issuer*), two technical-briefing reading views (TB No. 1 *The Verified Sky*, TB No. 2 *Running Silent*), one briefing-note reading view (BN No. 1 *The Voter File*), nine special-briefing views (SB No. 1 *Zero Secrets*, SB No. 2 *The Three Doors*, SB No. 3 *The Ledger With One Entry*, SB No. 4 *The Tollgate Markets*, SB No. 5 *One Day, Four Names*, SB No. 6 *The Walk-Away Price*, SB No. 8 *The Authored State*, SB No. 9 *Settled in Cash*, SB No. 10 *The 2027 Cliff*, with its companion checklist *Before the First of January*; No. 7 is reserved for a document whose source has not arrived), two Pacific Ledger issues (№01, July 2026; №02, October 2026) plus the `/ledger/` issue index, about, engage, commentary index, disclosure, colophon. Static HTML and CSS, no JavaScript framework. **`registry.json`** at the root is the public register of every published document (see *The register*, below); **`feed.xml`** is its Atom feed, and every document's full text is published in Markdown at **`<folder>/index.html.md`** for machine readers (see *Machine readers*, below).
 
 **Working-paper titles (canonical):** WP1 = *The Bilateral Foundation* (retitled May 2026; was *A Canada–Korea Pacific Infrastructure Facility* — that phrase is now reserved for the CKPIF *instrument* in body prose, not the paper title). WP2 = *A Canada–United States Energy and Compute Compact*. WP3 = *A Canada–Korea Pacific Defence-Industrial Corridor*. WP4 = *The Addition Paradox*. WP5 = *Sovereign Compute North* (published 27 May 2026; `wp5/working-paper.pdf` is the canonical release, `wp5/index.html` carries the full reading view. Co-issued with Fit For Gov; companion to SB1). WP7 = *Dazzle 2.0* (first paper in the NPSI Counter-Autonomy series). WP9 = *The Counterparty Problem* (published 27 July 2026; `wp9/working-paper.pdf` generated from the reading view 29 July 2026). WP10 = *Fair Use for We, IP Theft for Thee* (Technical Series; published 26 July 2026; `wp10/working-paper.pdf` is the canonical release; **superseded by WP11** — remains available unaltered with a correction notice attached, per WP11's own commitment; never quietly edit WP10). WP11 = *Rated AAA by the Issuer* (Technical Series; published 28 July 2026; full reading view + `wp11/working-paper.pdf`, 18 pp.; supersedes WP10 with four itemised corrections at its §1). Numbering is the author's: WP6 and WP8 remain unreleased, so the archive carries intentional gaps at 6 and 8.
 
@@ -39,7 +39,7 @@ Every published document is listed in **`registry.json`** at the site root, extr
 
 Numbers reserved and never released (WP6, WP8) stay on the register as *never issued*. The archive is ordered by publication date; the register by number; both are kept.
 
-**Workflow:** after any change to a document's metadata, its folder, or the current paper: `python3 tools/registry.py --all` (extract, render the three index pages and the home lists, refresh document breadcrumbs, rewrite the nav, check). `tools/set_current_paper.py` runs the relevant parts itself.
+**Workflow:** after any change to a document's metadata, its folder, its text, or the current paper: `python3 tools/registry.py --all` (extract, render the three index pages, the home lists and `feed.xml`, refresh document breadcrumbs, rewrite the nav, write the Markdown editions, check). `tools/set_current_paper.py` runs the relevant parts itself.
 
 ## What this site is *not*
 
@@ -100,7 +100,7 @@ Three typefaces, **self-hosted** from `assets/fonts/` since 14 October 2026: the
 
 - **Full wordmark** (in `assets/img/npsi-wordmark.svg`): used on document covers, cover banners, the site masthead in some contexts. Three-line stack: `NORTH PACIFIC STRATEGY INITIATIVE` in Pacific Navy small caps, italic descriptor in Treaty Bronze, mono volume marker in Maritime Teal. Three-tick meridian rule above.
 - **Compact masthead** (in `assets/img/npsi-masthead.svg`): used at the top of every page header — wordmark only with thin bronze rule below. No descriptor.
-- **Square mark** (in `assets/img/favicon.svg` and the LinkedIn assets): for square/circle constraints — favicon, LinkedIn profile mark, future Slack/social where required. "NP" monogram in Pacific Navy with meridian above and mono volume marker below.
+- **Square mark** (in `assets/img/favicon.svg` and the LinkedIn assets): for square/circle constraints — favicon, LinkedIn profile mark, future Slack/social where required. "NP" monogram in Pacific Navy with meridian above and mono volume marker below. On screen it is cream NP and bronze meridian on navy, drawn by `tools/render-icons.py` from the vendored Source Serif 4 Bold as outlined paths (an SVG favicon cannot load web fonts, so live text fell back to the reader's system serif). Two layouts of the same mark (October 2026): the *tab* layout, NP enlarged to read at 16px, for `favicon.svg`, `favicon-32.png`, `favicon.png` and the root `/favicon.ico` (16/32/48, which feed readers, chat unfurlers and favicon fetchers request); the *app* layout, with the original clear space, for `apple-touch-icon.png`, `icon-192.png` and `icon-512.png` (also the manifest's maskable icon and the JSON-LD `logo`). Pages link the icons with `?v=2` so returning browsers drop the old cached mark; bump it if the mark changes again.
 
 **Wordmark rules, hard:**
 - Never recolor outside the brand pair. On screen (dark identity): Document Cream on Pacific Navy. In print and light-era contexts: Pacific Navy on Document Cream. No third combination.
@@ -134,7 +134,7 @@ The five-link nav (adopted October 2026 at the editor's direction, replacing a f
 
 ### Document navigation (every document page)
 
-Directly inside `<main>`, between `<!-- doc-nav -->` markers, every document carries a breadcrumb (NPSI › line › No. N) and previous/next links ordered by publication date within the line, each carrying number and title. `tools/registry.py --doc-nav` writes and refreshes it; never hand-edit it.
+Directly inside `<main>`, between `<!-- doc-nav -->` markers, every document carries a breadcrumb (NPSI › line › No. N) and previous/next links ordered by publication date within the line, each carrying number and title, plus the same trail as Schema.org `BreadcrumbList` JSON-LD (search engines show it in place of the bare URL). `tools/registry.py --doc-nav` writes and refreshes it; never hand-edit it.
 
 ### Page opener (every content page)
 
@@ -161,7 +161,7 @@ The meridian rule with three ticks (`<span>` is the middle tick) appears at the 
       <div class="colophon-tag">Working Papers on Pacific Sovereignty &amp; Bilateral Architecture</div>
       <div class="colophon-text">
         Editor: Jesse James  ·  <a href="mailto:editor@npsi.ca">editor@npsi.ca</a><br>
-        Working paper text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The imprint and wordmark are not licensed.<br>
+        Document text: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>, free to quote, share, translate and adapt, including in AI systems, with attribution. The imprint and wordmark are not licensed.<br>
         Companion record: <a href="https://www.macroview.live/ledger">MacroView daily calls, dated since 19 June 2026</a> (external, open data).
       </div>
     </div>
@@ -193,16 +193,17 @@ npsi-site/
 ├── README.md                        institutional landing for the GitHub repo
 ├── DEPLOYMENT.md                    deployment notes
 ├── index.html  404.html             home (current paper, the Ledger, compact archive and briefing lists); not-found page
-├── registry.json                    the public register of every published document (tools/registry.py)
+├── registry.json  feed.xml          the public register of every published document, and its Atom feed (tools/registry.py)
 ├── papers/ briefings/ register/     index pages rendered from the registry — never hand-edit
 ├── about/ disclosure/ engage/ commentary/ colophon/ ledger/    institutional pages (ledger/ is the Ledger's issue index)
-├── wp1/ … wp11/  tb1/ tb2/ bn1/ sb1/ … sb10/ pl1/ pl2/            one folder per document: index.html, its PDF, and CLAUDE.md (canon)
+├── wp1/ … wp11/  tb1/ tb2/ bn1/ sb1/ … sb10/ pl1/ pl2/            one folder per document: index.html, its PDF, index.html.md (the Markdown edition, generated) and CLAUDE.md (canon)
 ├── llms.txt  llms-full.txt          machine-readable indexes
-├── sitemap.xml  robots.txt  vercel.json  humans.txt  CITATION.cff  manifest.webmanifest  .well-known/security.txt
+├── sitemap.xml  robots.txt  vercel.json  humans.txt  CITATION.cff  manifest.webmanifest  favicon.ico
+├── .well-known/security.txt  .well-known/tdmrep.json  321437bffbf88535cb7beeaddd237764.txt (IndexNow key; keep)
 ├── assets/css/site.css              shared stylesheet, fully tokenized
 ├── assets/css/fonts.css  assets/fonts/   self-hosted @font-face rules and woff2 files (tools/vendor-fonts.py; OFL.txt alongside)
 ├── assets/img/                      wordmark (dark + light), favicons, share cards (SVG source + PNG), figures
-├── tools/                           sitecheck.py · registry.py · set_current_paper.py · vendor-fonts.py · archive-sources.py · render-og.sh · fonts/ (not deployed)
+├── tools/                           sitecheck.py · registry.py · fulltext.py · set_current_paper.py · indexnow.py · render-icons.py · vendor-fonts.py · archive-sources.py · render-og.sh · fonts/ (not deployed)
 ├── figures/                         working figure sources for papers in progress (not deployed)
 └── .claude/skills/                  npsi-publish (publishing procedure) · npsi-korean-translation · fluid-scale
 ```
@@ -212,7 +213,7 @@ npsi-site/
 ### When adding a new page
 
 1. **Copy `about/index.html` as the template.** It has the cleanest structure of the existing pages.
-2. Update the `<title>`, meta description, OG tags.
+2. Update the `<title>`, meta description, OG tags (with `og:image:alt` and `twitter:image:alt`); keep the licence and feed links that follow the manifest link.
 3. Run `python3 tools/registry.py --nav` to write the masthead nav (it sets the active link).
 4. Use the existing CSS — do not add new tokens or new components without flagging.
 5. Maintain the page footer verbatim.
@@ -247,11 +248,23 @@ The skip-link is keyboard-only (hidden until focused); `<main id="main" tabindex
 - **`vercel.json`** — HTTP headers (CSP, HSTS, X-Frame-Options, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, long-cache on immutable assets) plus URL canonicalisation: `trailingSlash: true` so `/wp11` redirects to `/wp11/` and the served URL matches `rel="canonical"`, and a 308 from `www.npsi.ca` to the apex so one hostname serves the imprint. Updating CSP requires also updating the `script-src` allowlist if a new third-party script is added. The Umami analytics domain (`cloud.umami.is`) is allowlisted; nothing else may run a script. Fonts and stylesheets are `'self'` only (self-hosted fonts since 14 October 2026).
 - **`sitemap.xml`** + **`robots.txt`** — discoverability plumbing for crawlers, Internet Archive, Google Scholar. `sitemap.xml` carries `<loc>`, `<lastmod>` and `<priority>` only; see the `npsi-publish` skill (checklist item 12) for how `lastmod` is derived; `python3 tools/sitecheck.py --fix-sitemap` applies it.
 - **`humans.txt`** at site root — editorial/technical credits.
-- **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, canonical URL and one-line abstract per paper. Update it whenever a paper or briefing is added or retitled.
+- **`llms.txt`** at site root — LLM-crawler index per the llms.txt convention: imprint summary, the use-and-citation statement, canonical URL and one-line abstract per paper, and a "Full text" list linking every Markdown edition (the gate fails a document missing from it). Update it whenever a paper or briefing is added or retitled.
 - **`llms-full.txt`** at site root — the full-content companion (added July 2026): complete abstract, key findings, citation metadata, and PDF URL per document, sourced from each page's JSON-LD abstract and the per-document canonical-fact files (`<folder>/CLAUDE.md`). Update it in the same commit as `llms.txt` whenever a document is added, retitled, or superseded.
-- **`robots.txt`** — allows all crawling and *explicitly* welcomes the named AI/LLM crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, et al.) with a comment header pointing machine readers at `llms.txt` / `llms-full.txt`. Maximal crawlability is deliberate imprint policy (CC-BY-4.0 text, citation-seeking); never add `Disallow` rules or `noindex` beyond the 404 page without flagging.
+- **`robots.txt`** — allows all crawling and *explicitly* welcomes the named AI/LLM crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, et al.) and the search engines (Korea's Yeti and Daumoa among them), states AI-use preferences (`Content-Usage`, `Content-Signal`), and points machine readers at `llms.txt`, `llms-full.txt`, the Markdown editions, `registry.json` and `feed.xml`. Maximal crawlability is deliberate imprint policy (CC-BY-4.0 text, citation-seeking); never add `Disallow` rules or `noindex` beyond the 404 page without flagging.
 - **`.well-known/security.txt`** — RFC 9116 contact for security researchers. Bump the `Expires:` field annually.
 - **`CITATION.cff`** at repo root — renders GitHub's "Cite this repository" widget for academic reuse.
+
+### Machine readers (October 2026)
+
+The imprint wants its text read, quoted, cited and used, by people and machines alike; every signal below says so in a vocabulary some reader understands. None of it changes a page's visible register.
+
+- **Markdown editions** — `tools/fulltext.py` converts each document's `<main>` to `<folder>/index.html.md` (the llms.txt convention for a URL ending in a slash): front matter with title, identifier, version, dates, canonical URL, PDFs, licence and an exact `cite_as`, then the text, tables and sources, with figures as their `aria-label` descriptions. Derived, never hand-edited: `registry.py --all` writes them and the gate fails a stale one. Served as `text/markdown`, open CORS, `X-Robots-Tag: noindex, follow` (so search indexes keep the HTML page and the Markdown cannot compete with it as a duplicate). Each document's head links its edition with `rel="alternate" type="text/markdown"`.
+- **`feed.xml`** — Atom feed of every document, newest first, rendered from the register by `registry.py --render` (with page, Markdown and PDF links and the JSON-LD abstract). A record of publication for feed readers, Naver and agents; not a content stream. Every page's head links it.
+- **Licence signals** — every page's head carries `<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">`; the footer line reads "Document text: CC-BY-4.0, free to quote, share, translate and adapt, including in AI systems, with attribution"; JSON-LD carries `license` and `"isAccessibleForFree": true`; `/engage/` §4 states the machine terms; `llms.txt`, `llms-full.txt`, `robots.txt` and every Markdown edition open with the same use statement. HTTP headers on every response: `Content-Usage: train-ai=y, search=y` (IETF AI Preferences draft) and `tdm-reservation: 0`, with `/.well-known/tdmrep.json` (W3C TDMRep: no text-and-data-mining rights reserved). `robots.txt` repeats `Content-Usage` and adds `Content-Signal: search=yes, ai-input=yes, ai-train=yes`. These are preferences, not grants beyond CC-BY-4.0; the name and wordmark stay unlicensed everywhere.
+- **Search snippets** — `X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1` on every response (large share images and full snippets in Google and Bing, and Discover eligibility); the 404 page's own `noindex` meta still wins.
+- **Share cards** — every page carries `og:image:alt` and `twitter:image:alt` (the document's title, number and imprint), documents add `article:published_time`, `article:modified_time` where the JSON-LD has `dateModified`, and `article:section`. The gate fails a page without the alt text, licence link or feed link, and a document without its Markdown link or publication date.
+- **IndexNow** — `.github/workflows/indexnow.yml` waits for Vercel's production deployment of each push to `main`, then submits the changed pages and PDFs (`tools/indexnow.py`) to api.indexnow.org, which shares them with Bing (and through it Copilot and ChatGPT search), Naver, Yandex, Seznam and Yep. The key is public by design and served at `/321437bffbf88535cb7beeaddd237764.txt`; never delete that file. Run the workflow by hand with *all* to resubmit every sitemap URL.
+- **Caching** — fonts are `immutable` for a year; images (share cards, icons) cache for a day with a week of `stale-while-revalidate`, so a re-rendered card or mark reaches readers; machine files (`llms*.txt`, `registry.json`, `feed.xml`, `sitemap.xml`, `robots.txt`, `.well-known/*`, `*.md`) cache for an hour and allow any origin.
 
 ### When fixing or improving CSS
 
@@ -280,7 +293,10 @@ python3 -m http.server 8000
 ## Tools (repository only; never deployed)
 
 - `python3 tools/sitecheck.py` — the gate. Run before every commit that touches a page; it must report 0 errors. `--external` probes outbound links; `--fix-sitemap` refreshes `<lastmod>` from git just before committing. It runs `registry.py --check` as its last step.
-- `python3 tools/registry.py --all` — extract `registry.json` from the document pages, render `/papers/`, `/briefings/`, `/register/` and the home page lists, refresh every document's breadcrumb and previous/next links, write the nav on every page, then check. The steps are also available singly (`--extract`, `--render`, `--doc-nav`, `--nav`, `--check`, `--list`).
+- `python3 tools/registry.py --all` — extract `registry.json` from the document pages, render `/papers/`, `/briefings/`, `/register/`, the home page lists and `feed.xml`, refresh every document's breadcrumb and previous/next links, write the nav on every page, write every document's Markdown edition, then check.
+- `python3 tools/fulltext.py [--check]` — the Markdown editions alone (`registry.py --all` runs it).
+- `python3 tools/indexnow.py --since <commit> | --all [--dry-run]` — announce changed URLs to IndexNow engines; the workflow runs it after each deploy.
+- `python3 tools/render-icons.py` — redraw the square mark (favicon SVG, `/favicon.ico`, PNG icons) from the vendored Source Serif 4 Bold; needs `pip install fonttools pillow`. The steps are also available singly (`--extract`, `--render`, `--doc-nav`, `--nav`, `--check`, `--list`).
 - `python3 tools/set_current_paper.py N --title "…" --version v1.0 --month "Month YYYY"` — makes WP N current: every previous-paper banner, the demoted paper's banner, sitemap priorities, the registry's current paper, and the pages rendered from it. Update the home page's current card first.
 - `python3 tools/archive-sources.py --check | --save | --report [--self]` — keeps every cited source in the Wayback Machine so a citation outlives its URL. `--check` looks up snapshots for all external hrefs on the site, `--save` asks Save Page Now to capture the ones without, `--self` adds the site's own pages from `sitemap.xml`; results go to `tools/archive-manifest.json` (a record, never deployed). No page is modified. `.github/workflows/archive-sources.yml` runs it weekly and commits the manifest; run `--save` from a network that can reach `web.archive.org`.
 - `python3 tools/vendor-fonts.py` — refreshes `assets/fonts/*.woff2` and `assets/css/fonts.css` from Google Fonts (see *Typography*). Run it after adding a face or weight to its `FAMILIES`, or when new Korean text needs slices the site does not yet carry (the tool scans every page for Hangul).

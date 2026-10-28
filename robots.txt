@@ -1,77 +1,88 @@
 # robots.txt — North Pacific Strategy Initiative (npsi.ca)
 #
-# All crawling is welcome. Working-paper text is licensed CC-BY-4.0;
-# machine-readable indexes for AI systems are published at
-#   https://npsi.ca/llms.txt        (index — one-line abstract per document)
-#   https://npsi.ca/llms-full.txt   (full abstracts, findings, citation metadata)
+# All crawling is welcome, by search engines, archives, researchers and AI
+# systems alike. Document text is licensed CC-BY-4.0
+# (https://creativecommons.org/licenses/by/4.0/): it may be quoted, summarised,
+# translated, adapted, redistributed and used to train, ground or answer with
+# AI systems, with attribution to the author and the canonical URL. The NPSI
+# name and wordmark are not licensed.
+#
+# For machine readers:
+#   https://npsi.ca/llms.txt             index, one line per document, with usage terms
+#   https://npsi.ca/llms-full.txt        abstracts, findings and citation metadata
+#   https://npsi.ca/<doc>/index.html.md  full text of each document in Markdown
+#   https://npsi.ca/registry.json        the register of every document and identifier
+#   https://npsi.ca/feed.xml             Atom feed of new documents
 # Every reading view carries Highwire citation_* meta tags and Schema.org
-# JSON-LD (ScholarlyArticle) for machine citation.
+# JSON-LD for machine citation.
+#
+# Usage preferences are stated in two vocabularies: Content-Usage (IETF AI
+# Preferences, draft-ietf-aipref-attach) and Content-Signal (the Content
+# Signals Policy). Both say yes to search, AI input and AI training.
 
 User-agent: *
 Allow: /
+Content-Usage: train-ai=y, search=y
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 # --- AI and LLM crawlers: explicitly welcome ---------------------------------
 
 User-agent: GPTBot
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: Claude-Web
-Allow: /
-
 User-agent: Claude-SearchBot
-Allow: /
-
 User-agent: Claude-User
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
+User-agent: GoogleOther
+User-agent: Google-CloudVertexBot
+User-agent: Gemini-Deep-Research
+User-agent: Google-NotebookLM
+User-agent: Applebot
 User-agent: Applebot-Extended
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
-Allow: /
-
 User-agent: CCBot
-Allow: /
-
 User-agent: meta-externalagent
-Allow: /
-
+User-agent: meta-externalfetcher
 User-agent: FacebookBot
-Allow: /
-
 User-agent: Amazonbot
-Allow: /
-
 User-agent: DuckAssistBot
-Allow: /
-
+User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
-Allow: /
-
 User-agent: MistralAI-User
+User-agent: MistralAI-Index
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Bravebot
+User-agent: YouBot
+User-agent: PhindBot
+User-agent: ExaBot
+User-agent: TavilyBot
+User-agent: xAI-Grok
+User-agent: DeepSeekBot
+User-agent: Bytespider
+User-agent: Diffbot
+Allow: /
+Content-Usage: train-ai=y, search=y
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+# --- Search engines, including Korea's ---------------------------------------
+
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Yeti
+User-agent: Daumoa
+User-agent: DuckDuckBot
+User-agent: YandexBot
 Allow: /
 
 # --- Archives and scholarly indexers -----------------------------------------
 
 User-agent: ia_archiver
+User-agent: archive.org_bot
 Allow: /
 
 Sitemap: https://npsi.ca/sitemap.xml

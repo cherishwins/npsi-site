@@ -39,7 +39,7 @@ This repository is the source of [`npsi.ca`](https://npsi.ca): plain static HTML
 
 Every identifier the imprint has assigned, by number, is on [the number register](https://npsi.ca/register/); the machine-readable form is [`registry.json`](https://npsi.ca/registry.json). Two identifiers are kept apart: the publication serial above, assigned by the editor at publication, and an accession number (`NPSI-YYYYMMDD-X`) assigned at intake and never changed.
 
-The full index, with a one-line abstract per document, is maintained at [npsi.ca/llms.txt](https://npsi.ca/llms.txt); complete abstracts and citation metadata are at [npsi.ca/llms-full.txt](https://npsi.ca/llms-full.txt). Every reading view carries Highwire `citation_*` tags and Schema.org JSON-LD.
+The full index, with a one-line abstract per document, is maintained at [npsi.ca/llms.txt](https://npsi.ca/llms.txt); complete abstracts and citation metadata are at [npsi.ca/llms-full.txt](https://npsi.ca/llms-full.txt). The full text of every document is published in Markdown at its address followed by `index.html.md` (for example [npsi.ca/sb10/index.html.md](https://npsi.ca/sb10/index.html.md)), and new documents are listed in the Atom feed at [npsi.ca/feed.xml](https://npsi.ca/feed.xml). Every reading view carries Highwire `citation_*` tags and Schema.org JSON-LD. The text is CC-BY-4.0: people and machines, AI systems included, may quote, summarise, translate, adapt and build on it, with attribution.
 
 ## What this site is — and is not
 
