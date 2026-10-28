@@ -7,8 +7,9 @@
 
 registry.json at the site root is the single public list of every published
 NPSI document. The index pages (/papers/, /briefings/, /register/), the
-breadcrumb and previous/next links on document pages, llms.txt and the
-sitemap are expected to agree with it; `--check` is run by sitecheck.py so a
+breadcrumb and previous/next links on document pages, the Atom feed
+(feed.xml), the Markdown editions (<folder>/index.html.md, tools/fulltext.py),
+llms.txt and the sitemap are expected to agree with it; `--check` is run by sitecheck.py so a
 page cannot be published that the register does not know about.
 
 Two identifiers, by design (adopted October 2026):
@@ -33,6 +34,9 @@ import sys
 from datetime import date
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import fulltext  # noqa: E402  (tools/fulltext.py: the Markdown editions)
+
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "registry.json"
 FOLDER = re.compile(r"^(wp|tb|bn|sb|pl)(\d+)$")
@@ -54,7 +58,7 @@ LINES = {
            "description": "Single-issue strategic assessments, published when an exposure demands attention outside the working-paper cycle."},
     "PL": {"name": "The Pacific Ledger", "singular": "Pacific Ledger issue", "serial": "NPSI-PL-NNN",
            "index": "/ledger/", "pdf": "pacific-ledger.pdf",
-           "description": "A monthly account of the Canada–Korea relationship. Every entry sourced, both sides of the account kept."},
+           "description": "An account of the Canada–Korea relationship. Every entry sourced, both sides of the account kept. Issues close when the account warrants one."},
 }
 
 # The primary navigation, sitewide (adopted October 2026, replacing the
@@ -226,6 +230,10 @@ def check() -> int:
         if serials.count(s) > 1:
             print(f"ERROR serial {s} is assigned to more than one document")
             errors += 1
+    if not FEED.is_file() or FEED.read_text(encoding="utf-8") != feed_xml(reg):
+        print("ERROR feed.xml is missing or out of date; run tools/registry.py --render")
+        errors += 1
+    errors += fulltext.check(reg)
     print(f"registry: {len(reg['documents'])} documents, {errors} errors")
     return 1 if errors else 0
 
@@ -348,6 +356,18 @@ def doc_nav_html(d: dict, prev: dict | None, nxt: dict | None) -> str:
                      f'<span aria-hidden="true">→</span></a>')
     if links:
         parts.append('<div class="doc-nav-links">' + "".join(links) + "</div>")
+    # The same trail as Schema.org BreadcrumbList, which search engines show
+    # in place of the bare URL under a result.
+    crumbs = [("North Pacific Strategy Initiative", "https://npsi.ca/"),
+              (line["name"], f"https://npsi.ca{line['index']}"),
+              (f"{here} · {d['title']}", f"https://npsi.ca{d['url']}")]
+    trail = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": name, "item": url}
+                            for i, (name, url) in enumerate(crumbs)],
+    }, ensure_ascii=False)
+    parts.append(f'<script type="application/ld+json">{trail}</script>')
     return ('<!-- doc-nav -->\n<nav class="doc-nav" aria-label="Document navigation">\n  '
             + "\n  ".join(parts) + "\n</nav>\n<!-- /doc-nav -->\n")
 
@@ -387,6 +407,9 @@ def chrome() -> tuple[str, str, str]:
     return head, "", footer
 
 
+OG_DEFAULT_ALT = "North Pacific Strategy Initiative: Working Papers on Pacific Sovereignty and Bilateral Architecture"
+
+
 def page_shell(path: str, title: str, description: str, key: str, body: str) -> str:
     head, _, footer = chrome()
     url = f"https://npsi.ca{path}"
@@ -405,9 +428,11 @@ def page_shell(path: str, title: str, description: str, key: str, body: str) -> 
 <meta property="og:image" content="https://npsi.ca/assets/img/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{OG_DEFAULT_ALT}">
 <meta property="og:site_name" content="North Pacific Strategy Initiative">
 <meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="{OG_DEFAULT_ALT}">
 
 <link rel="canonical" href="{url}">
 
@@ -684,6 +709,89 @@ def render_home_lists(reg: dict) -> int:
     return 0
 
 
+FEED = ROOT / "feed.xml"
+
+
+def doc_meta(folder: str) -> dict:
+    """The abstract and modification date a document page declares in its JSON-LD."""
+    s = (ROOT / folder / "index.html").read_text(encoding="utf-8")
+    out = {"abstract": None, "modified": None}
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
+        try:
+            data = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        for node in data.get("@graph", [data]):
+            out["abstract"] = out["abstract"] or node.get("abstract") or node.get("description")
+            out["modified"] = out["modified"] or node.get("dateModified")
+    if not out["abstract"]:
+        out["abstract"] = clean(first(r'<meta property="og:description" content="([^"]*)"', s))
+    return out
+
+
+def atom_date(iso: str) -> str:
+    """2026-10-28 -> 2026-10-28T12:00:00Z; a month-only date takes the first."""
+    parts = (iso or "").split("-")
+    while len(parts) < 3:
+        parts.append("01")
+    return "-".join(parts[:3]) + "T12:00:00Z"
+
+
+def feed_xml(reg: dict) -> str:
+    """The Atom feed of every published document, newest first. A record of
+    publication for feed readers, search engines (Naver among them) and agents,
+    rendered from the register: it carries no content the register does not."""
+    x = lambda v: html.escape(v or "", quote=True)
+    entries, latest = [], ""
+    for d in by_date(reg["documents"]):
+        meta = doc_meta(d["folder"])
+        url = f"https://npsi.ca{d['url']}"
+        published = atom_date(d["released"])
+        updated = atom_date(meta["modified"]) if meta["modified"] else published
+        latest = max(latest, updated)
+        line = LINES[d["line"]]
+        label = (f"The Pacific Ledger №{d['number']:02d}" if d["line"] == "PL"
+                 else f"{line['singular']} No. {d['number']}")
+        ident = d["serial"] or f"{d['accession']}, serial pending"
+        links = [f'    <link rel="alternate" type="text/html" href="{url}"/>',
+                 f'    <link rel="alternate" type="text/markdown" href="{url}index.html.md"/>']
+        for f in d["files"]:
+            size = (ROOT / f.lstrip("/")).stat().st_size
+            links.append(f'    <link rel="enclosure" type="application/pdf" href="https://npsi.ca{f}" length="{size}"/>')
+        status = ""
+        if d.get("superseded_by"):
+            status = f" Superseded by https://npsi.ca/{d['superseded_by']}/."
+        entries.append("\n".join([
+            "  <entry>",
+            f"    <title>{x(d['title'])} — {x(label)}</title>",
+            f"    <id>{url}</id>",
+            *links,
+            f"    <published>{published}</published>",
+            f"    <updated>{updated}</updated>",
+            f'    <category term="{x(line["name"])}"/>',
+            f"    <summary>{x(meta['abstract'])} ({x(ident)}, {x(d.get('version') or 'as issued')}.){x(status)}</summary>",
+            "  </entry>",
+        ]))
+    return "\n".join([
+        '<?xml version="1.0" encoding="utf-8"?>',
+        '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-CA">',
+        "  <title>North Pacific Strategy Initiative</title>",
+        "  <subtitle>Working papers, briefings and the Pacific Ledger: Pacific sovereignty, bilateral financial architecture, and the options open to middle powers. Every document is free to read and licensed CC-BY-4.0.</subtitle>",
+        "  <id>https://npsi.ca/</id>",
+        '  <link rel="self" type="application/atom+xml" href="https://npsi.ca/feed.xml"/>',
+        '  <link rel="alternate" type="text/html" href="https://npsi.ca/"/>',
+        '  <link rel="related" type="application/json" href="https://npsi.ca/registry.json"/>',
+        f"  <updated>{latest}</updated>",
+        "  <author><name>Jesse James</name><email>editor@npsi.ca</email><uri>https://npsi.ca/about/</uri></author>",
+        "  <icon>https://npsi.ca/assets/img/icon-192.png</icon>",
+        "  <logo>https://npsi.ca/assets/img/og-default.png</logo>",
+        "  <rights>Document text CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/): quote, share, translate and adapt it, including in AI systems, with attribution. The NPSI name and wordmark are not licensed.</rights>",
+        *entries,
+        "</feed>",
+        "",
+    ])
+
+
 def render() -> int:
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     render_home_lists(reg)
@@ -704,6 +812,8 @@ def render() -> int:
         out.parent.mkdir(exist_ok=True)
         out.write_text(page_shell(path, title, desc, key, body), encoding="utf-8")
         print(f"rendered {folder}/index.html")
+    FEED.write_text(feed_xml(reg), encoding="utf-8")
+    print(f"rendered feed.xml ({len(reg['documents'])} entries)")
     return 0
 
 
@@ -716,7 +826,7 @@ def main() -> int:
     g.add_argument("--render", action="store_true", help="write /papers/, /briefings/ and /register/ from the registry")
     g.add_argument("--doc-nav", action="store_true", help="refresh breadcrumb and previous/next on document pages")
     g.add_argument("--nav", action="store_true", help="rewrite the masthead nav on every deployed page")
-    g.add_argument("--all", action="store_true", help="extract, render, doc-nav, nav, then check")
+    g.add_argument("--all", action="store_true", help="extract, render (with feed.xml), doc-nav, nav, Markdown editions, then check")
     a = ap.parse_args()
     if a.extract or a.all:
         reg = build()
@@ -730,6 +840,8 @@ def main() -> int:
         apply_doc_nav()
     if a.nav or a.all:
         apply_nav()
+    if a.all:
+        fulltext.write(json.loads(REGISTRY.read_text(encoding="utf-8")))
     if a.check or a.all:
         return check()
     if a.list:

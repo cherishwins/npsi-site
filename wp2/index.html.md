@@ -1,0 +1,717 @@
+---
+title: "A Canada–United States Energy and Compute Compact"
+subtitle: "Cooperative leverage in the AI-era continental grid."
+series: "Working Papers"
+number: 2
+identifier: "NPSI-WP-002"
+version: "v1.0.1"
+published: "2026-05"
+status: published
+author: "Jesse James"
+publisher: "North Pacific Strategy Initiative"
+canonical_url: "https://npsi.ca/wp2/"
+pdf:
+  - "https://npsi.ca/wp2/working-paper.pdf"
+description: "Cooperative leverage in the AI-era continental grid. NPSI Working Paper No. 2, v1.0.1, May 2026 (errata, October 2026)."
+license: "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)"
+cite_as: "James, J. (2026). A Canada–United States Energy and Compute Compact (NPSI Working Paper No. 2, NPSI-WP-002, v1.0.1). North Pacific Strategy Initiative. https://npsi.ca/wp2/"
+---
+
+> Machine-readable full text of NPSI Working Paper No. 2, *A Canada–United States Energy and Compute Compact*, from the reading view at https://npsi.ca/wp2/. The reading view and the PDF are the editions of record; figures are given as their text descriptions. The text is licensed CC-BY-4.0: quote it, summarise it, translate it, share it and use it, including in AI systems and their answers, with attribution to the author and a link to https://npsi.ca/wp2/. The NPSI name and wordmark are not licensed. Register of every NPSI document: https://npsi.ca/registry.json · index for machine readers: https://npsi.ca/llms.txt
+
+Working Paper No. 2 · v1.0.1 · May 2026 · For Discussion v1.0.1 · OCTOBER 2026
+
+# A Canada–United States Energy and Compute Compact
+
+Cooperative leverage in the AI-era continental grid.
+
+## You are reading a previous working paper.
+
+The current working paper is [Working Paper No. 11 — *Rated AAA by the Issuer*](https://npsi.ca/wp11/) (v1.0.1, July 2026). This paper is the energy & compute rail of the three-rail Pacific architecture — with [WP1](https://npsi.ca/wp1/) (financial rail) and [WP3](https://npsi.ca/wp3/) (defence-industrial rail).
+
+- **Editor:** Jesse James
+- **Document ID:** `NPSI-WP-002`
+- **Version:** `v1.0.1` · [change log](https://github.com/cherishwins/npsi-site/commits/main/wp2/index.html)
+- **Released:** May 2026
+- **Revised:** v1.0.1, 14 October 2026 — errata: the capacity figures restated (hydro, not total, exceeds 82,000 MW); the training–inference split corrected to the paper's own baseline; the 2028 capacity gap labelled as the paper's derivation; the CKPIF staging and the Series II tranche stated consistently with Working Paper No. 1; register, attribution and arithmetic corrections. PDF reprinted.
+- **Status:** For discussion. Editorially controlled. Public version-controlled review open. All thirteen sections in publishable prose with figures (A–E). Named commentary welcomed.
+- **Repository:** [github.com/cherishwins/npsi-site](https://github.com/cherishwins/npsi-site)
+- **Cite as:** James, J. (Ed.). (2026). *A Canada–United States Energy and Compute Compact* (NPSI Working Paper No. 2, v1.0.1).
+- **Companions:** [WP1 — The Bilateral Foundation](https://npsi.ca/wp1/)
+[WP3 — Canada–Korea Pacific Defence-Industrial Corridor](https://npsi.ca/wp3/)
+[WP4 — The Addition Paradox](https://npsi.ca/wp4/)
+[WP7 — Dazzle 2.0](https://npsi.ca/wp7/)
+
+## Executive Summary
+
+The American electricity grid cannot deliver the power that American artificial-intelligence ambitions require. By 2028, on this paper's derivation from the Lawrence Berkeley National Laboratory demand range, new U.S. data centres will need approximately **44 gigawatts** of additional capacity. The grid is on track to deliver roughly **25**. The shortfall — **19 gigawatts, binding within four years** — is concentrated in the PJM Interconnection (the Mid-Atlantic, Virginia, the Ohio Valley), the Electric Reliability Council of Texas (ERCOT), and the Midcontinent System Operator (MISO). Interconnection queues in the worst-affected regions already exceed eight years. The Department of Energy issued an emergency order in January 2026 authorising ERCOT to direct data centres to run on diesel and natural-gas backup. That is what a structural capacity gap looks like before it becomes a national emergency.
+
+Canada has the surplus the United States needs. Hydro-Québec's dispatchable hydroelectric fleet is 37,370 MW. BC Hydro is 13,200 MW. Manitoba Hydro is 5,500 MW. Combined dispatchable hydro alone — before the Carney administration's Clean Electricity Strategy and the Hydro-Québec Action Plan 2035 add a single new megawatt — exceeds the marginal U.S. training-tier shortfall. Canada's installed hydroelectric capacity alone exceeds 82,000 MW, and hydro supplies roughly 60 percent of national generation. The Canada Energy Regulator's *Energy Future 2026* forecasts domestic load growth of 26 to 85 percent by 2050 across modelled scenarios. Surplus is real. Calibration is the question.
+
+This document develops a design specification for the architecture that connects those two facts: a **Canada–United States Energy and Compute Compact**. The compact pairs Canadian dispatchable generation with the U.S. grid through ultra-high-voltage transmission interties, sites the latency-agnostic AI training workload on Canadian hydro, and preserves the latency-critical inference workload at the U.S. urban edge. It is treaty-based and several (not joint) in liability. Indigenous co-ownership is designed in at issuance through the First Nations Major Projects Coalition and Canada Infrastructure Bank Indigenous Equity Initiative templates established in NPSI Working Paper No. 1. The financial rail is the *Canada–Korea Pacific Infrastructure Facility* (CKPIF) proposed in that paper, extended through Phase 2 to incorporate U.S.-side counterparty engagement on transmission and off-take.
+
+The strategic logic is the logic that animates Working Paper No. 1: *counterparty-risk diversification* through structurally complementary architecture, additive to existing North American economic infrastructure, framed as *cooperative leverage* rather than retaliatory escalation. The frame follows the doctrine articulated by Prime Minister Mark Carney at the World Economic Forum in Davos on 20 January 2026 in the address [*Principled and Pragmatic: Canada's Path*](https://www.pm.gc.ca/en/news/speeches/2026/01/20/principled-and-pragmatic-canadas-path-prime-minister-carney-addresses) — that the world is undergoing "a rupture in the world order, the end of a pleasant fiction," and that Canada's response is not symmetrical retaliation but the recognition that "Canada has what the world wants" and the cultivation of those concentrated, hard-to-substitute assets accordingly. The doctrine has been codified in legislation: the [*One Canadian Economy Act*](https://www.canada.ca/en/intergovernmental-affairs/news/2025/06/legislation-to-build-one-canadian-economy-receives-royal-assent.html) (Bill C-5), which received Royal Assent on 26 June 2025 and whose Free Trade and Labour Mobility provisions came into force on 1 January 2026, statutorily dismantles internal trade barriers and is projected to unlock an estimated CAD 200 billion in retained gross domestic product — approximately CAD 5,100 per Canadian per year. That is the domestic foundation on which the compact rests.
+
+The CUSMA joint review of **1 July 2026** is the binding timing constraint. The 2018 sunset mechanism turns the agreement from a permanent treaty into a periodically conditional one: unanimous extension renews to 2042, non-extension triggers annual reviews and a 2036 expiry. The compact is the kind of macro-level proposition that broadens the aperture of that negotiation — exchanging guaranteed, prioritised access to Canadian energy and critical minerals for permanent tariff exemption and rule-of-law commitments, rather than retaliating tariff-for-tariff against an economy ten times larger.
+
+### Key design conclusions
+
+1. **The U.S. capacity gap is structural, not cyclical.** Lawrence Berkeley National Laboratory projects U.S. data-centre electricity consumption at 325–580 TWh by 2028 against a 2023 baseline of 176 TWh. Demand is climbing on a curve set by the physics of generative-AI inference; supply cannot match it within the relevant horizon. The PJM capacity-market clearing-price spike of summer 2025 — *USD 9.4 billion* in additional bills to 67 million ratepayers — is a leading indicator, not a one-off.
+2. **The training–inference bifurcation is the strategic key.** AI inference must run within roughly 50 milliseconds of the end-user; it is therefore tied to U.S. urban grid topology. AI training is latency-agnostic on the order of weeks to months and can be sited on any baseload that is cheap, cool, and politically reliable. [McKinsey projects](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-next-big-shifts-in-ai-workloads-and-hyperscaler-strategies) AI training capacity growing from approximately 23 GW to 62 GW through 2030 (~22% CAGR) while inference grows from approximately 21 GW to 93 GW (~35% CAGR). The two trajectories cross before 2030, with inference surpassing training to become the dominant AI workload — concentrated in U.S. urban metros where the user populations sit. The United States cannot meet both demands within domestic capacity. The compact reallocates training to Canadian hydro and preserves inference at the U.S. edge. Both sides win.
+3. **Canadian surplus is real, calibrated, and exportable.** Combined dispatchable Canadian hydro alone exceeds the marginal U.S. training shortfall. The [Hydro-Québec Action Plan 2035](https://www.hydroquebec.com/about/publications-reports/action-plan-2035.html) commits CAD 155–185 billion of new generation, 5,000 km of new transmission, and grid modernisation. The Clean Electricity Strategy authorises a nuclear renaissance — large reactors and microreactors — alongside expanded uranium production. The 2023–24 low-runoff curtailment is the relevant climatological precedent and is structurally addressable through diversified-source siting; it is not a structural ceiling on export commitments.
+4. **The compact uses Working Paper No. 1's architectural pattern verbatim.** Treaty-based bilateral framework. Several, not joint, liability. KPI-linked coupon adjustments under ICMA Sustainability-Linked Bond Principles, calibrated at 25-bp step calibration. Indigenous co-ownership designed in at issuance through the FNMPC and CIB Indigenous Equity Initiative templates. English-law governance, LCIA arbitration, Luxembourg listing, Singapore Exchange secondary. No new financial-engineering instrument is required. Every component is in liquid form today.
+5. **The financial rail is the CKPIF.** Capital expenditures of the compact — ultra-high-voltage interties, training data-centre infrastructure, generation expansion, grid modernisation, northern-corridor transmission — fall within the CKPIF's indicative US$25–40 billion programme size over 5–7 years. The Canada–Korea supranational vehicle accommodates U.S.-side counterparty engagement as an additive Phase 2 layer; the senior bond stack remains Korean institutional. The compact and the facility are one architecture with two off-take rails.
+6. **Critical minerals are the Korea bridge.** Canadian copper, nickel, cobalt, lithium, and rare-earth supply binds the compute compact (United States side) and the financial compact (Korea side) into a single Pacific architecture. Korean dependence on Canadian feed for high-bandwidth memory production — Samsung and SK Hynix together supply more than 75 percent of global HBM, the critical input to the AI processor stack — for EV battery production at LG Energy Solution and Hyundai, and for advanced semiconductor manufacturing, makes the minerals corridor structurally complementary to both rails. The compact augments existing critical-minerals contracting; it does not displace it.
+7. **Federal continuity is a precondition, not an assumption.** The compact's bilateral framework, like Working Paper No. 1's, assumes a unified Canadian counterparty. Provincial separatist mobilisation in 2025–26 — the Stay Free Alberta signature delivery of 4 May 2026, the Parti Québécois polling lead ahead of the October 2026 provincial election — introduces volatility into that assumption. The structural mathematics of secession are forecast separately in NPSI Briefing Note No. 2, *Confederation Mathematics* (forthcoming). The empirical record of 2025 is unambiguous: external pressure consolidated the federation rather than fragmenting it. Bloc Québécois Quebec polling fell into the 23–25 percent range during the April 2025 federal campaign, well below its 2024 lead; Canadian national pride within Quebec rose substantially across the same period. The compact is designed to remain operationally robust under stressed federal scenarios — but the federation is the precondition, and the design pretends otherwise at its peril.
+
+**Bottom line.** Every component of the proposed compact exists in liquid, regulated form in 2026. Ultra-high-voltage interconnections between the Canadian and American grids are operational at multiple Pacific Northwest, Quebec–New York, and Manitoba–Minnesota interfaces. Supranational treaty issuance has 70 years of precedent at the European Investment Bank and 5 years at the European Commission's NGEU. Indigenous-equity templates are live: Athabasca Indigenous Investments' 11.57 percent net-operating-interest in seven Enbridge pipelines (CAD 1.12 billion), the Coastal GasLink 10 percent LP option, the Nisga'a 50 percent ownership of the Prince Rupert Gas Transmission line, the BC Indigenous Power Coalition's North Coast transmission framework. ICMA Sustainability-Linked Bond Principles set the dominant coupon-calibration market structure. The Bank of Canada–Bank of Korea standing swap line, signed November 2017, has no expiration and no preset limit. The novelty is the *bundling*: an integrated Canada–United States continental energy and compute architecture, structurally complementary to the Pacific bilateral architecture of Working Paper No. 1, financed through the existing CKPIF supranational vehicle, protected by treaty-grade Indigenous co-ownership, and timed to the CUSMA renewal.
+
+The binding constraint is not technical and it is not financial. It is the political durability of CUSMA renewal and the federal-continuity precondition. Both are addressable. Neither is automatic.
+
+Strategic indispensability is the structural alternative to symmetrical retaliation. The smaller economy that controls a critical asset the larger economy cannot replace negotiates from a position the smaller economy that escalates tariffs in kind cannot reach. *— §1, Executive Summary*
+
+[Figure: Figure A — The three-rail Pacific architecture: financial rail (Canada–Korea, Working Paper No. 1) above, energy and compute rail (Canada–United States, this paper) in the middle, and critical-minerals rail (cross-cutting) below. Canada at the meridian, anchoring all three.]
+
+FIGURE A · THE THREE-RAIL PACIFIC ARCHITECTURE · FINANCIAL (KOREA, WP1) + ENERGY & COMPUTE (U.S., WP2) + CRITICAL MINERALS (CROSS-CUTTING)
+
+## 1. The CUSMA Joint Review and the Sunset Clock
+
+In 2018 the United States insisted on a sunset clause in the agreement that became CUSMA. The result was Article 34.7. It does what the name suggests. It ends the agreement.
+
+Article 34.7 requires a joint review on the sixth anniversary of entry into force — **1 July 2026** — at which the heads of government of all three parties must confirm in writing that the agreement should continue. Unanimous affirmation extends CUSMA for sixteen additional years, to 2042, with the next review at year twelve. Anything less than unanimous triggers a different machine: annual joint reviews until the agreement is unanimously extended or expires by operation of law on 1 July 2036.
+
+That mechanism was engineered to create recurring leverage. The dominant economic party in a three-party agreement can use the threat of non-extension to extract continuous concessions; whether or not the threat is acted upon, it is structural and cannot be argued away. The agreement no longer behaves as a permanent treaty. It behaves as a periodically conditional one.
+
+### What the United States is asking for in 2026
+
+Public consultations launched by the Government of Canada in late 2025, together with the U.S. Trade Representative's published 2026 negotiating objectives, identify a consistent set of American positions. Tariff-rate quotas under Canadian dairy supply management. Digital-services taxes and data-residency requirements, which Washington characterises as discriminatory barriers against American technology firms. Rules of origin in the integrated North American automotive supply chain. Cultural protections, government-procurement rules, and a broader posture on regulatory alignment.
+
+These are not new irritants. They are long-standing U.S. trade objectives now consolidated into a single negotiating window with a hard deadline. The premise of the U.S. negotiating posture is direct: bilateral trade is zero-sum, and the agreement renews only on terms the United States considers favourable.
+
+### Why retaliation is the wrong instrument
+
+The conventional response to U.S. tariff measures is symmetrical retaliation — tariffs in kind, escalation as deterrent. The response has historical precedent. In March 2025 it nearly devolved into a full continental trade war when the United States imposed 25 percent tariffs on Canadian and Mexican goods.
+
+The arithmetic is unforgiving. Two-way Canada–U.S. trade is approximately CAD 800 billion annually. The Canadian economy is roughly one-tenth the size of the American economy. Symmetrical retaliation in a matched-magnitude tariff war is asymmetrical in its effects: the smaller economy absorbs proportionally larger damage, sooner, with fewer fiscal alternatives. The strategy is structurally a losing one before any individual decision is made about which sector to defend.
+
+This is not a political judgement. It is gravity. The smaller economy that escalates tariffs in kind reaches the limit of its retaliatory ammunition before the larger economy reaches the limit of its absorptive capacity. The asymmetry is the reason CUSMA exists in its current form, and it is the reason a tariff-for-tariff posture cannot succeed in the July 2026 review.
+
+### Broadening the aperture: the grand bargain
+
+The strategic alternative is to refuse the framing of bilateral negotiation as tariff-for-tariff combat and to broaden the aperture of the negotiation itself. Where the United States arrives with a list of irritants, Canada arrives with a list of irreplaceable assets — energy, critical minerals, advanced manufacturing inputs, and the dispatchable baseload required to host artificial-intelligence training at scale. Where the United States proposes tariffs, Canada proposes prioritised, treaty-grade access. The exchange is asymmetric in terms but symmetric in upside: tariff exemption and rule-of-law commitments in exchange for guaranteed delivery of assets the United States cannot quickly substitute.
+
+This is the doctrine of *strategic indispensability*. It was articulated by Prime Minister Mark Carney at the World Economic Forum in Davos in January 2026 and codified domestically in the *One Canadian Economy Act* (Bill C-5), which received Royal Assent in 2025 and came into force on 1 January 2026. The Act statutorily dismantles internal trade barriers — divergent licensing regimes, transportation-weight inconsistencies, alcohol-transport restrictions, localised procurement preferences — that the International Monetary Fund has estimated to operate as a de-facto 9 percent internal tariff on the Canadian economy, rising to approximately 40 percent in certain service sectors. The IMF projects that full implementation will increase Canadian real gross domestic product by approximately 7 percent: roughly CAD 200 billion in retained output, or CAD 5,100 per Canadian per year.
+
+The internal-market consolidation is the precondition for the external posture. A friction-free Canadian market of 41 million people negotiates from a different position than thirteen separate provincial markets, each with its own regulatory perimeter. The compact developed in this paper is the natural external complement to that domestic consolidation: a single, integrated, treaty-grade asset offered to the American counterparty in exchange for permanent tariff exemption — not negotiated piecemeal, sector by sector, but as a continental architecture.
+
+The CUSMA July 2026 review is the window. The compact is the offer.
+
+## 2. The U.S. Electricity-Capacity Crisis
+
+For fifteen years the American grid did not have a demand problem. From 2005 to 2019, total U.S. electricity demand grew at approximately 0.1 percent annually. Efficiency gains in lighting, appliances, and industrial machinery offset baseline population and economic growth. Even the first wave of cloud-data-centre expansion through the 2010s did not perturb the equilibrium meaningfully.
+
+That equilibrium broke around 2022, when generative-artificial-intelligence workloads reached commercial scale.
+
+A standard internet search consumes a trivial quantum of electricity. A query processed by a generative-AI model — even on a conservative middle estimate — consumes approximately 2.9 watt-hours, roughly ten times the search figure, with complex queries on frontier models reaching 18.9 watt-hours. The figures sound trivial in isolation. Multiplied by billions of queries per day across the platform layer, they are not. A single popular AI service can require more than 850 megawatt-hours per day, sufficient to power tens of thousands of American homes for a year.
+
+In 2023 U.S. data centres consumed approximately 176 TWh of electricity, roughly 4.4 percent of total national electricity consumption. By 2028, the [Lawrence Berkeley National Laboratory's *2024 United States Data Center Energy Usage Report*](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf) projects that figure will reach **325–580 TWh**, between 6.7 and 12 percent of total U.S. electricity demand. Globally, generative-AI inference alone is forecast to consume 347 TWh annually by 2030 — more than the entire annual electricity consumption of Italy.
+
+### What the grid can deliver — and what it cannot
+
+Demand on that curve cannot be met within current grid capacity. On this paper's derivation from the LBNL demand range, new U.S. data centres will require approximately 44 GW of additional capacity by 2028, while constraints on transformer manufacturing, permitted high-voltage transmission, and the pace of new generation deployment limit deliverable additions in the same window to approximately 25 GW. The structural shortfall, on that derivation, is 19 GW. The shortfall is not theoretical and it is not cyclical. It is binding, and the window in which it binds is now.
+
+The shortfall is not distributed evenly. It is concentrated in the regional transmission organisations and independent system operators that host the densest data-centre clusters.
+
+- **PJM Interconnection** (Mid-Atlantic, Virginia, Ohio Valley): the global epicentre of grid congestion. Hosts more than 25 percent of national data-centre load, primarily in Northern Virginia. Anticipates 55 GW of new large-load growth by 2030 against an existing interconnection queue exceeding eight years.
+- **ERCOT** (Texas): hosts gigawatt-scale projects including OpenAI's "Stargate" facility. Demand growth has forced emergency interventions; developers are deploying hundreds of megawatts of behind-the-meter natural-gas turbines to bypass grid interconnection entirely.
+- **MISO and SPP** (Midcontinent and Southwest): pivoting from a problem of transmitting renewable energy across long distances to a problem of serving sudden, hyper-localised demand shocks from concentrated data-centre campuses.
+
+PJM is the most acute case. Its [December 2025 capacity auction](https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2025-releases/20251217-pjm-auction-procures-134479-mw-of-generation-resources.pdf) for the 2027/2028 delivery year cleared at the cap — **USD 333.44 per MW-day**, the second consecutive year prices have hit the ceiling. Capacity payments of approximately **USD 16.4 billion** will pass through to the 67 million ratepayers PJM serves across 13 states and the District of Columbia. Even at the cap, the auction came up 6,600 MW short of PJM's own reliability requirement. The leading-edge financial signal is unambiguous: a market that hits its own price cap, twice in a row, while still failing to procure enough capacity.
+
+### The regulatory response is rationing
+
+The federal regulatory apparatus has responded with measures that, three years ago, would have been considered emergency interventions. They are now becoming routine.
+
+On 24–25 January 2026, the U.S. Department of Energy issued [Order No. 202-26-01](https://www.energy.gov/documents/order-no-202-26-01-ercot) (and amended [202-26-01A](https://www.energy.gov/documents/amended-order-no-202-26-01a)) authorising ERCOT, under Section 202(c) of the Federal Power Act, to direct backup generation at data centres — including hyperscaler facilities — to operate during winter-storm grid emergency conditions. The order was prompted by Winter Storm Fern, but the precedent is structural: the federal regulator has now formalised data-centre backup generation as a last-resort grid-reliability instrument. In parallel, the PJM independent market monitor has argued that all new data centres should be required to bring physically associated new generation online before connecting to the grid — a measure that would, in effect, halt third-party data-centre development in PJM territory.
+
+A regulatory regime that forces the world's most advanced computing infrastructure to run on diesel is not a stable equilibrium. It is a signal that the grid has reached a hard physical limit and that political authorities have not yet identified a credible domestic path to meeting the next four years of demand at scale.
+
+[Figure: Figure C — A bar chart comparing the approximately 44 gigawatts of new U.S. data-centre capacity required by 2028 against the approximately 25 gigawatts the grid is on track to deliver in the same window, with the 19-gigawatt structural shortfall called out. The figures are this paper's derivation from the LBNL 2028 demand range, not a published estimate.]
+
+FIGURE C · THE U.S. CAPACITY GAP · REQUIRED 44 GW vs DELIVERABLE 25 GW BY 2028 — A 19 GW STRUCTURAL SHORTFALL · NPSI DERIVATION FROM THE LBNL 2028 DEMAND RANGE
+
+The path exists. It runs through Canada.
+
+## 3. AI Training and Inference — The Strategic Bifurcation
+
+The grid arithmetic in §2 makes one thing clear. The United States cannot deliver, within its own borders, the electricity required to support both phases of artificial-intelligence deployment at the scale the next four years require. The reason is not industrial. It is physical. AI infrastructure is bifurcated into two distinct phases — *training* and *inference* — that obey different physical laws and therefore have different geographic determinants. The bifurcation is the strategic key to the compact.
+
+### Training: gigawatt-scale, latency-agnostic
+
+Training is the phase in which a model ingests massive datasets and adjusts its internal parameters until it produces useful output. A single training run for a frontier model consumes tens of megawatts continuously for weeks or months. The workload is bursty in the sense that the calendar of training runs is uneven; within a run, consumption is sustained and immense.
+
+Training is concerned with processing historical data, not responding to live queries. It has no human latency budget. A training facility can be located thousands of kilometres from the eventual user without affecting model performance in any way. The geographic determinants of a training siting decision are therefore four:
+
+- **Cheap, reliable baseload** — measured in dollars per megawatt-hour across a 24/7 operational profile
+- **Climate that reduces thermal load** — northern latitudes, dry continental climates, and access to natural cooling water as structural advantages
+- **Counterparty stability** — political, regulatory, and grid-reliability durability over the multi-year operational lifecycle
+- **Speed of build** — interconnection queue length, permitting timelines, transformer availability
+
+These determinants converge on a small number of jurisdictions with significant idle baseload, low ambient cooling cost, mature regulatory frameworks, and stable allied counterparty status. Canada sits at the top of that group. Canadian hydro is dispatchable, low-cost, low-emissions, located far from population centres, and operating in a climate that requires minimal mechanical cooling for high-density compute load.
+
+### Inference: sub-50 ms, latency-critical, geographically bound
+
+Inference is the phase in which a trained model is applied to a live query. Every chatbot conversation, AI-generated image, automated triage decision, and code-completion event is an inference event. Inference workloads run continuously and serve millions of concurrent users.
+
+Unlike training, inference has a hard latency budget. Consumer-facing AI applications target sub-50-millisecond response times to maintain a usable experience. That 50-millisecond budget covers network round-trip, model execution, and user-facing rendering combined. The geographic implication is direct: inference must run near the end-user. Inference cannot be offshored. It is bound to U.S. urban grid topology by physics, not by policy.
+
+The consequence is that inference workloads compete directly with U.S. residential, commercial, and industrial demand for the same urban grid capacity. They cannot be routed to a remote jurisdiction. They cannot be deferred. They must be served where the users are.
+
+### The CAGR divergence and what it implies
+
+The economic trajectory of the AI industry is shifting decisively toward inference. [McKinsey's analysis of AI workload demand](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-next-big-shifts-in-ai-workloads-and-hyperscaler-strategies) projects through 2030:
+
+- **Training** capacity grows from approximately 23 GW to 62 GW — a compound annual rate of ~22 percent
+- **Inference** capacity grows from approximately 21 GW to 93 GW — a compound annual rate of ~35 percent
+
+The two trajectories cross before 2030. Today the two are roughly at parity; by 2030, on this projection, inference reaches about 60 percent of AI compute capacity. The direction is the structural consequence of generative-AI systems moving from research-and-development pilot deployment into mass-market consumer and enterprise production — billions of queries served continuously, against finite training runs measured in weeks-to-months.
+
+Apply these trajectories to the U.S. capacity gap from §2 and the geometry becomes unforgiving. Inference's ~35 percent CAGR concentrated in urban U.S. grid topology — where users live, where the 50-millisecond latency budget binds — converges directly onto the same regional grid operators (PJM, ERCOT, MISO) already at their reliability ceilings. If hyperscale operators consume scarce urban capacity to build training gigafactories, they cannot deploy the inference layer that monetises the training investment in the first place. The market does not tolerate that trade-off. Neither does the political system that depends on AI deployment to deliver economic returns.
+
+The United States must offload its training workload to a secure, allied jurisdiction with abundant baseload and stable counterparty risk in order to preserve domestic urban capacity for inference. The choice is not between offload and self-sufficiency. It is between offload and rationing.
+
+[Figure: Figure B — Two side-by-side panels comparing AI training and AI inference. Training: latency-agnostic, bursty, ~22% CAGR through 2030 (23 to 62 GW), sites where baseload is cheap and climate favours natural cooling. Inference: latency-critical, persistent, ~35% CAGR through 2030 (21 to 93 GW), must run at the U.S. urban edge by physics. Bottom bar: training and inference roughly at parity today; by 2030 inference reaches about 60% of AI compute capacity.]
+
+FIGURE B · TRAINING AND INFERENCE — THE STRATEGIC BIFURCATION · TWO PHASES, DIFFERENT PHYSICS, DIFFERENT GEOGRAPHY
+
+### What the bifurcation makes possible
+
+The bifurcation argument is what distinguishes the compact from a generic Canadian-energy-export proposition. Energy export across the Canada–U.S. border is not new; Canada has been a net electricity exporter to the United States for decades. The novelty of the compact is that it is architected around a specific, structurally segmented demand — the training tier of the U.S. AI build-out — which:
+
+1. Cannot be served by U.S. domestic capacity within the relevant time horizon
+2. Is structurally indifferent to the geographic location of generation
+3. Has a counterparty (U.S. hyperscale operators and their downstream institutional buyers) with sufficient capital depth and procurement sophistication to commit to long-term off-take
+4. Is amenable to the same KPI-linked, treaty-grade contracting framework developed for the CKPIF in Working Paper No. 1
+
+The compact is therefore not a renegotiation of existing electricity-trading arrangements. It is a new architectural layer, sitting on top of existing transmission and the existing North American energy-regulatory framework, designed specifically to capture the training-tier opportunity at scale.
+
+The bifurcation is the analytical hinge. Without it, the compact reads as a marginal expansion of existing exports. With it, the compact reads as the structurally-correct response to a specific physical constraint on U.S. AI deployment — and the United States as the natural counterparty.
+
+## 4. Canadian Generation Surplus and the Energy Superpower Doctrine
+
+Canada is the only G7 economy whose installed electricity capacity meaningfully exceeds the marginal demand of the U.S. AI training tier. The surplus is real, but it is calibrated against a domestic load growth that is itself steep. Both facts have to be in the analysis.
+
+### The installed base
+
+Canadian installed hydroelectric capacity is approximately 82,000 MW, and roughly 60 percent of national generation is hydroelectric ([Canada Energy Regulator](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-canada.html)). The provincial dispatchable fleet — the portion that can be ramped on demand to meet load shifts — is concentrated in three crown corporations:
+
+- **Hydro-Québec**: 37,370 MW dispatchable across 61 hydroelectric plants, 28 major reservoirs operating as natural batteries, and 34,900 km of transmission. Net income CAD 2.9 billion in 2024; CAD 26.1 billion direct contribution to provincial gross domestic product.
+- **BC Hydro**: 13,200 MW dispatchable, predominantly hydro, with deep integration into Pacific Northwest interties.
+- **Manitoba Hydro**: 5,500 MW dispatchable, with established Manitoba–Minnesota and Manitoba–North Dakota interconnections.
+
+Combined dispatchable hydro across these three utilities alone is approximately **56,000 MW**. The marginal U.S. training shortfall identified in §2 is on the order of 19 GW. The Canadian dispatchable fleet exceeds it by a factor of nearly three — and that ratio reflects only the existing fleet, before any new generation under the Action Plan 2035 or the Clean Electricity Strategy comes online.
+
+Canada is also a net electricity exporter to the United States and has been for decades. In 2022 gross Canadian electricity exports reached 22.6 TWh, predominantly into the U.S. Northeast (New York and New England) from Hydro-Québec. The trading relationship is established. The institutional architecture exists. The compact extends and re-architects it; it does not invent it.
+
+### The Hydro-Québec Action Plan 2035
+
+In 2023 Hydro-Québec published [Action Plan 2035](https://www.hydroquebec.com/about/publications-reports/action-plan-2035.html), the most significant new-generation commitment in North America by any single utility. Its contours:
+
+- 60 TWh of new generation capacity by 2035 (approximately 8,000–9,000 MW), equivalent to the installed capacity of three of the largest existing facilities (Robert-Bourassa, Manic-5, Romaine combined)
+- Approximately 5,000 km of new transmission lines
+- Total capital investment of **CAD 155–185 billion** across new generation, transmission expansion, and grid modernisation, with a target reduction of power outages by 35 percent over the decade
+- CAD 10 billion committed to demand-side management, targeting the freeing of 3,500 MW through energy efficiency
+- Wind: more than 10,000 MW of new wind power capacity by 2035
+- Hydroelectric uprating: 3,800–4,200 MW of additional output from existing stations, plus new hydropower facilities including pumped storage
+
+Demand-side execution to date has validated the strategy. The 2025 LogisVert efficient-homes programme delivered 1.8 TWh in energy savings; the mass deployment of zero-cost smart thermostats successfully shifted 306 MW of peak demand. The plan is operating, not just announced.
+
+### The Clean Electricity Strategy and the Energy Superpower posture
+
+The Carney administration's Clean Electricity Strategy formalises the federal-provincial coordination required to convert generation potential into deliverable capacity. Four pillars:
+
+1. **Enabling new builds across Canada** — provincial generation expansion under priority-project legislation (notably Quebec's Bill 5 and Bill 63, which streamline environmental authorisation and consolidate permitting into a unified process)
+2. **Expanding interprovincial transmission interties** — to allow load balancing across the Canadian footprint and to enable export at scale into the U.S. grid
+3. **Advancing uranium production** — Canada is the world's second-largest uranium producer, supplying the fuel for the renaissance below
+4. **A nuclear renaissance** — large-scale conventional reactors (CANDU and successor designs) and small-modular and microreactor deployment for grid-edge and remote-community applications
+
+The strategy is anchored in the broader doctrine articulated by Prime Minister Mark Carney as the *Energy Superpower* posture: explicit recognition that Canadian sovereignty in the mid-twenty-first century rests on the cultivation of concentrated, high-value, hard-to-substitute assets — energy, critical minerals, advanced manufacturing inputs, sovereign-grade financial architecture — rather than on residual reliance on a single dominant trading partner. The [Major Projects Office](https://www.canada.ca/en/privy-council/major-projects-office.html), launched 29 August 2025 under Minister of Energy and Natural Resources Tim Hodgson with Dawn Farrell as inaugural CEO, is the institutional vehicle for converting policy into final investment decisions within a stated two-year window. Fifteen projects across mining, electricity, energy, and transport have been referred to the Office to date, representing combined investment of [more than CAD 116 billion across the first two tranches](https://www.pm.gc.ca/en/news/news-releases/2025/11/13/prime-minister-carney-announces-second-tranche-nation-building-projects).
+
+### Domestic load growth — the calibration constraint
+
+Surplus exists today. Whether it persists, and on what schedule, depends on the trajectory of Canadian domestic electricity load — which is itself climbing steeply.
+
+The Canada Energy Regulator's [*Energy Future 2026*](https://www.cer-rec.gc.ca/en/data-analysis/canada-energy-future/2026/) (EF2026), released 17 March 2026, projects that total Canadian electricity demand will increase between **26 percent and 85 percent by 2050** across four modelled scenarios — Current Measures, Higher, Lower, and Canada Net-zero. The drivers are mass adoption of electric vehicles, electrification of industrial process heat and transportation, expansion of domestic data-centre demand, and population growth. Generation grows between 30 percent and more than double today's levels, with more than 96 percent from non-emitting or low-emitting sources. In the most aggressive Canada Net-zero scenario, electricity supersedes hydrocarbons as the largest single source of energy in the economy by 2050.
+
+The implication is not that Canada lacks surplus. The implication is that any export commitment must be sized against the domestic trajectory. The compact's architecture must explicitly preserve domestic supply priority — through structural cap-and-allocate mechanisms, dispatchable-priority dispatch protocols during domestic peak, and regulatory primacy of the Canadian system operator over export load. These are design conditions, not afterthoughts.
+
+### Climatological volatility
+
+A second calibration constraint is climatological. Persistently low runoff in northern Quebec across 2023 and 2024 — driven by reduced snow cover and below-average precipitation — forced Hydro-Québec to curtail electricity sales on external markets to protect domestic supply. The *Green Battery* metaphor for Quebec hydro is durable but not infinite; reservoirs are finite, runoff is climatologically variable, and export commitments to a 30-year horizon must be hedged against the variance.
+
+The variance is structurally addressable. Diversified-source siting across BC Hydro, Manitoba Hydro, and the new-build nuclear capacity reduces single-basin exposure. The dispatchable / non-dispatchable hybridisation that Action Plan 2035 anticipates absorbs a portion of the volatility. The contractual KPI architecture imported from the CKPIF design — verified-output covenants, throughput KPIs, step-down mechanisms tied to runoff conditions — prices the residual risk explicitly into the compact's coupon structure. The 2023–24 episode is the relevant precedent for risk pricing, not the relevant ceiling on commitment.
+
+### The honest summary
+
+Canada has the surplus. The surplus is real, calibrated, and exportable on a multi-decade horizon. The surplus is not unlimited; it is sized by domestic load growth and bounded by climatological variance. The compact treats the surplus as a managed national asset rather than a residual export, and it imports the contractual framework already developed in Working Paper No. 1 to make that management explicit, durable, and bilateral.
+
+The next question is what the architecture of that compact looks like in practice. That is §5.
+
+## 5. Architecture of the Compact
+
+The compact is a layered architecture, not a single instrument. Every layer is assembled from off-the-shelf components. The novelty is the bundling.
+
+### Layer 1: The treaty wrapper
+
+The compact is structured as a treaty-grade bilateral commitment between Canada and the United States. Several, not joint, liability — each party guarantees only its own commitments. Canada guarantees generation availability and transmission delivery. The United States guarantees off-take volume, market access, and tariff exemption. Neither party can be made liable for the other's default.
+
+The wrapper provides:
+
+- A bilateral commitment to maintain UHV transmission capacity across designated cross-border interfaces over a 30-year horizon
+- Permanent tariff exemption for electricity, AI compute services, and critical-minerals feed traversing the compact's commercial boundary
+- An adjustment mechanism keyed to objectively verified KPIs — transmission capacity delivered, generation availability, GHG intensity, Indigenous equity maintained — with adjustment magnitudes calibrated under ICMA Sustainability-Linked Bond Principles
+- A dispute-resolution mechanism: English-law contract overlay with submission to LCIA arbitration on the financial layer, plus a treaty-level consultative joint committee with binding fallback for sovereign-to-sovereign matters
+
+The wrapper does not require unanimous tri-party CUSMA renewal to function. It sits alongside CUSMA as a specialised bilateral compact, structurally analogous to the bilateral defence-procurement and intelligence-sharing agreements that operate alongside (not within) NORAD or Five Eyes frameworks. CUSMA renewal is the preferred environment; CUSMA non-renewal is survivable.
+
+### Layer 2: Transmission topology
+
+The Canada–U.S. grid is already deeply interconnected. The compact extends an existing physical architecture, it does not invent one. Operational cross-border interties relevant to the compact:
+
+- **Pacific Northwest**: BC Hydro to the Bonneville Power Administration via the Boundary, Custer, and Selkirk lines. Approximately 3,000+ MW operational transfer capacity.
+- **Manitoba–Minnesota / North Dakota**: HVDC interties from Manitoba Hydro into MISO. Approximately 2,300 MW.
+- **Quebec–New York**: HVDC interties from Hydro-Québec into NYISO via Châteauguay and Beauharnois. Approximately 2,100+ MW combined; the Champlain Hudson Power Express (CHPE) under construction adds 1,250 MW directly into New York City by 2026.
+- **Quebec–New England**: Phase II/III interties via Highgate and Sandy Pond. Approximately 2,000 MW.
+
+Aggregate cross-border transfer capacity is on the order of 15,000+ MW. The compact requires substantially more capacity at the training-tier scale; the indicative incremental UHV requirement is 10,000–15,000 MW over the 5–7 year build window, sited adjacent to existing corridors and to new generation in northern Quebec, northern BC, and northern Manitoba.
+
+### Layer 3: Training-centre siting
+
+Training data-centre siting is the locus of physical investment. Compact-eligible sites are characterised by adjacency to dispatchable hydro generation, climatically favourable conditions for high-density compute (northern latitudes, dry continental climate, water access for cooling), connection to the UHV transmission layer, Crown-land or Indigenous-consent jurisdiction under FNMPC engagement, and inclusion in the Major Projects Office accelerated pipeline.
+
+Three corridor candidates are operationally credible at scale:
+
+1. **Saguenay–Lac-Saint-Jean / Côte-Nord** (Quebec) — anchored to the Manic-5 and Robert-Bourassa generation complexes, with approximately 6,000 MW dispatchable hydro adjacent. Existing transmission to the Quebec–NY interties.
+2. **Peace River / Bennett** (British Columbia) — anchored to Site C (1,100 MW), Peace Canyon (700 MW), and W.A.C. Bennett (2,800 MW); existing Pacific Northwest intertie to BPA.
+3. **Northern Manitoba** — anchored to Limestone, Long Spruce, and Kettle generation (combined approximately 3,500 MW); existing tie into MISO.
+
+Each corridor supports between 2,000 and 5,000 MW of training-tier compute capacity at sustained 24/7 utilisation. Combined deliverable capacity is 6,000–15,000 MW, sited with diversified-source resilience against any single-basin climatological volatility.
+
+### Layer 4: Off-take and commercial structure
+
+Off-take from the U.S. side runs through three channels:
+
+1. **Hyperscale operator direct contracts** — bilateral 15- to 30-year power-purchase and compute-services agreements with the major U.S. AI infrastructure operators (Microsoft, Amazon, Google, Meta, the Oracle/OpenAI Stargate consortium, Anthropic). Take-or-pay structure mandatory for project finance, sized to anchor the construction-tranche debt service.
+2. **U.S. utility intermediation** — for residual training capacity not directly contracted to hyperscale, U.S. utilities (Constellation, Vistra, NextEra) act as intermediated buyers under FERC-regulated tariff structures, providing back-stop demand and price discovery.
+3. **U.S. sovereign and institutional channel** — long-term electricity and compute supply to U.S. federal AI infrastructure (DOE national laboratories, defence-research compute, intelligence-community compute) under bilateral treaty-grade commitment, structurally analogous to existing bilateral nuclear and defence-research arrangements.
+
+Take-or-pay reserves and minimum-volume commitments are calibrated by reference to the Trans Mountain Expansion precedent in Working Paper No. 1 §2 — approximately 80 percent of capacity reserved for committed shippers under long-term take-or-pay contracts, with the residual exposed to merchant-tier pricing.
+
+### Layer 5: KPI-linked coupon overlay
+
+The financial layer applies the CKPIF KPI architecture from Working Paper No. 1 directly. Compact KPIs:
+
+- Transmission capacity delivered against commissioning schedule (T+3y, T+5y) — ±20 bp coupon adjustment
+- Sustained off-take volume, 12-month rolling — ±15 bp
+- GHG intensity of training compute (kgCO₂e per MWh delivered) — ±20 bp
+- Indigenous equity share maintained at ≥10 percent — ±15 bp (continuous)
+- Curtailment events triggered by climatological variance — informational disclosure, capped impact
+
+ICMA Sustainability-Linked Bond Principles, 25-bp step calibration, ±100 bp aggregate cap. External verification by an independent third-party assurance practice (KPMG, EY, Deloitte sustainability assurance) annually.
+
+### Layer 6: Governance, listing, and settlement
+
+- **Governing law**: English law for the bond instruments (mirrors WP1); New York law for U.S.-side off-take contracts where U.S. counterparties insist.
+- **Arbitration**: LCIA for bond-instrument disputes; ICDR (New York) for off-take contract disputes.
+- **Listing**: Luxembourg Stock Exchange primary, Singapore Exchange secondary, with optional Toronto / NYSE secondary listing for retail placement (compatible with the Canada Strong Fund retail-investment mechanism).
+- **Settlement**: Conventional Euroclear / Clearstream for the bond stack; tokenised pilot tranche of US$200–500 million on the BIS Toronto Innovation Centre / Project Agorá rails (mirrors WP1 §5).
+
+[Figure: Figure D — A six-layer architectural stack showing the compact's components from foundation upward: Layer 1 Treaty Wrapper (Canada × United States, several-not-joint, financed through CKPIF), Layer 2 Transmission Topology (Pacific NW, Quebec–NYISO, Manitoba–MISO interties), Layer 3 Training-Centre Siting (Saguenay/Côte-Nord, Peace River/Bennett, Northern Manitoba), Layer 4 Off-Take and Commercial Structure (hyperscale direct, U.S. utility intermediation, U.S. federal AI compute), Layer 5 KPI-Linked Coupon Overlay (ICMA SLB Principles, 25 bp step calibration), Layer 6 Governance, Listing, and Settlement (English law, LCIA, Luxembourg, BIS Toronto).]
+
+FIGURE D · ARCHITECTURE OF THE COMPACT · SIX LAYERS, OFF-THE-SHELF COMPONENTS, FOUNDATION UP
+
+### What this architecture requires — and what it does not
+
+The compact *does not* require any of the following:
+
+- A new financial-engineering instrument
+- A new clearing or settlement infrastructure
+- A new transnational regulatory authority
+- A new transmission system operator
+- A new commercial-procurement framework
+- Unanimous CUSMA tri-party renewal in July 2026
+
+The compact *does* require:
+
+- A bilateral treaty drafted by Global Affairs Canada and the U.S. Department of State, modelled on the European Investment Bank or Nordic Investment Bank precedent
+- Federal regulatory expedited process for cross-border UHV interconnection (existing FERC and Canada Energy Regulator authority is adequate; the binding constraint is permitting timeline compression, not legal authority)
+- Indigenous co-ownership engagement at issuance, through the FNMPC, the CIB Indigenous Equity Initiative, and the federal Indigenous Loan Guarantee Program
+- Final investment decision on each of the three corridor anchor projects within a 24- to 36-month window — the Major Projects Office sequencing target
+
+Every component is precedented. Every counterparty exists. The architecture is buildable. The binding constraint is sequencing, not innovation.
+
+## 6. Critical Minerals and the Korea Bridge
+
+The compact developed in §5 is a U.S.-Canada bilateral architecture. Working Paper No. 1 develops the Canada-Korea financial architecture. Both rails depend, structurally, on a third asset class: Canadian critical-minerals supply to Korean advanced manufacturing. The mineral corridor is the substrate that binds the compact to Working Paper No. 1 and converts the two bilateral rails into a single Pacific architecture.
+
+### What the Korean stack actually consumes
+
+Korea is the world's leading producer of high-bandwidth memory (HBM), the critical input to the AI processor stack. By the third quarter of 2025, the two Korean producers held more than 75 percent of the market between them — SK Hynix at roughly 53 percent and Samsung at roughly 35 percent on Counterpoint's estimate — with the U.S. producer Micron accounting for the balance ([Counterpoint Research, Global DRAM and HBM Market Share](https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share)). HBM4 reached commercial mass production in February 2026 with the launch of NVIDIA's Rubin platform. Korean industry analysts now describe HBM as *a strategic asset comparable to energy resources or critical minerals* — language that, three years ago, would have been reserved for crude oil or rare earths.
+
+The HBM stack runs on imported feedstock. Korea has limited domestic mineral resources and is structurally dependent on imports for the inputs to its semiconductor, EV-battery, and broader advanced-manufacturing complex:
+
+- **Copper** — electrical conductor; semiconductor interconnect
+- **Nickel** — battery cathode; semiconductor lithography
+- **Cobalt** — battery cathode
+- **Lithium** — battery cathode
+- **Rare earths** — motors (EV, wind), permanent magnets, chip manufacture (lanthanum, cerium, neodymium)
+- **Uranium** — Korea is heavily nuclear; Canada is the world's second-largest uranium producer
+
+Canada has all of these in significant quantities. Production is concentrated in jurisdictions with stable counterparty status — Quebec, British Columbia, Ontario, Saskatchewan, the Northwest Territories — with Indigenous-equity precedent already established through the FNMPC, the CIB Indigenous Equity Initiative, and the Coastal GasLink / Athabasca Indigenous Investments / Nisga'a–PRGT pattern.
+
+### What is already happening
+
+Korean strategic investment in Canadian critical minerals is not theoretical. It is operational, and it is at scale.
+
+- **POSCO** — active in Canadian critical minerals (lithium, nickel) and steel
+- **LG Energy Solution and Hyundai Motor Group** — EV-supply-chain investments in Ontario; cathode-active-material plants under construction
+- **Korea Zinc** — critical-minerals processing and refining
+- **EcoPro** — cathode-active-material production
+- **LIG Nex1** — defence-related minerals and components
+- **Hanwha Ocean × Algoma Steel** — USD 250 million / CAD 345 million structural arrangement linked to the Canadian Patrol Submarine Project
+- **KOGAS** — 5 percent equity in LNG Canada, the largest single-energy-project investment in Canadian history
+
+These are not abstractions. Korean capital is already in Canadian minerals at scale. The compact's contribution is not to manufacture the relationship; it is to architect it as a treaty-grade commitment on a multi-decade horizon.
+
+### The three-rail Pacific architecture
+
+The architecture, viewed together with Working Paper No. 1, is now best described in three rails:
+
+1. **Financial rail (Canada–Korea)** — the CKPIF supranational vehicle from Working Paper No. 1; thirty-year programme, US$25–40 billion indicative size, KRW/CAD/USD parallel tranches; senior bond stack anchored by the National Pension Service, Korea Investment Corporation, Korea Post, and Korean life insurers.
+2. **Energy and compute rail (Canada–United States)** — the compact developed in this paper; UHV transmission, training-tier compute, U.S. urban-edge inference preservation; off-take by hyperscale operators, U.S. utilities, U.S. federal AI compute.
+3. **Critical-minerals rail (cross-cutting)** — Canadian copper, nickel, cobalt, lithium, rare-earth, and uranium supply to Korean advanced manufacturing; Korean processed materials feeding into U.S. semiconductor and EV manufacturing under existing trade frameworks; Indigenous-equity participation throughout.
+
+The three rails reinforce one another. The compute rail (United States) generates demand for advanced semiconductors, which require Korean HBM, which requires Canadian minerals. The financial rail (Korea) provides the institutional capital that funds Canadian generation expansion and Indigenous co-ownership infrastructure, which is the substrate of the compute rail. Each rail's counterparty depends on the other two for substantive returns. Each rail's collapse undermines the other two.
+
+The cross-cutting structure is the strategic point. Bilateral relationships are durable when they are isolated. Bilateral relationships are *indispensable* when they are structurally bound to a second bilateral relationship that the same counterparty also values. The minerals rail makes the energy rail (United States) and the financial rail (Korea) durable in ways that neither would be on its own.
+
+### What the compact adds to existing minerals trade
+
+The compact does not replace existing critical-minerals contracting between Canadian producers and Korean buyers. It adds three things:
+
+1. **Treaty-grade priority access** — assured supply commitments, conditional on the operational durability of the three rails as a single architecture.
+2. **Bundled financing** — minerals capital expenditure funded through CKPIF Phase 2 alongside the energy compact, with the same Indigenous-equity framework, the same KPI overlays, and the same ESG-disclosure standards applied uniformly across all three rails.
+3. **First and Last Mile Fund integration** — the federal CAD 1.5 billion First and Last Mile Fund for critical minerals connects mine-mouth to processing to port; the compact directs the fund's investment thesis toward priority corridor projects supplying the three-rail architecture.
+
+The minerals rail is the asset that makes the other two rails strategically durable. Without it, the energy and financial commitments float. With it, they bind.
+
+## 7. The CKPIF Financial Rail
+
+The capital expenditure required to build the compact — UHV transmission, training data-centre infrastructure, dispatchable hydro expansion, grid modernisation, northern-corridor transmission, critical-minerals corridor capex — falls within the indicative programme size of the Canada–Korea Pacific Infrastructure Facility (CKPIF) as proposed in Working Paper No. 1. The compact does not require a new financing vehicle. It requires the activation of CKPIF Phase 2.
+
+### CKPIF programme structure (recap)
+
+For convenience, the Working Paper No. 1 design specification:
+
+- Treaty-based supranational issuer, owned 50/50 by Canada and Korea, seated in Luxembourg with a Singapore subsidiary for Asian distribution
+- English-law governance; LCIA arbitration
+- Several (not joint) sovereign guarantees from Canada and Korea
+- Indicative programme size: US$25–40 billion over 5–7 years, in benchmark-sized tranches of US$3–5 billion
+- Indicative pricing: +50–80 bp over 30Y UST at launch, compressing to +30–60 bp as the curve matures
+- Three-currency tranching: USD benchmark plus parallel CAD and KRW; ISDA-documented cross-currency overlay
+- KPI-linked coupon adjustments under ICMA Sustainability-Linked Bond Principles, ±100 bp aggregate cap
+- Indigenous Series I tranche, 10–15 percent of programme value, with +25 bp ratchet protection
+- Tokenised pilot tranche US$200–500 million on the BIS Toronto Innovation Centre and Project Agorá rails
+- Listing: Luxembourg primary, Singapore Exchange secondary
+
+These are unchanged for the compact. Working Paper No. 1 is the authoritative reference.
+
+### Phase 2: the compact's place in the CKPIF stack
+
+The CKPIF was designed to fund Pacific corridor infrastructure broadly. The pipeline thesis in Working Paper No. 1 §8 (Fort McMurray to Prince Rupert) is one possible use of proceeds, not the sole use. Working Paper No. 1 §12 explicitly addresses this:
+
+> The CKPIF facility should be designed to fund any qualifying Pacific corridor infrastructure, of which the pipeline is one possible use. If the pipeline fails regulatory or consent processes, the facility funds the North Coast transmission line, Cedar LNG follow-on, Ksi Lisims LNG, critical-minerals corridor, or other qualifying projects. *— Working Paper No. 1, §12*
+
+The compact's transmission, training-centre, and minerals-corridor projects are qualifying uses of proceeds under that mandate. The compact is therefore **CKPIF Phase 2**: the second cohort of qualifying projects funded through the established supranational vehicle.
+
+Phase 2 does not require restructuring the supranational, renegotiating the founding treaty, or reissuing the senior bond stack. It requires:
+
+- Use-of-proceeds amendment to the CKPIF programme prospectus
+- Designation of compact projects as qualifying under the existing KPI framework
+- Issuance of additional benchmark tranches sized to compact capex requirements
+- Activation of the U.S.-side counterparty channels (off-take, equity in transmission entities)
+
+### U.S.-side participation
+
+A foundational point: the senior bond stack remains Korean institutional. The CKPIF was designed for Korean placement — National Pension Service, Korea Investment Corporation, Korea Post, Korean life insurers, and the Maple 8 — anchoring the bond demand side, with European and Gulf institutional capital as secondary placement. Adding the U.S. dimension does not alter that allocation.
+
+U.S.-side participation in the compact runs through three channels, none of which competes with Korean bond demand:
+
+1. **Direct off-take contracting** — U.S. hyperscale operators, utilities, and federal AI compute purchasing electricity and compute services from compact-funded infrastructure under long-term take-or-pay structures (per §5 Layer 4)
+2. **Equity participation in transmission entities** — U.S. utilities and grid operators taking minority equity stakes in cross-border UHV transmission special-purpose vehicles, structurally analogous to the Bonneville Power Administration's existing intertie partnerships
+3. **Public-sector partnership** — U.S. Department of Energy national-laboratory engagement on compact-related research and development (advanced-grid technology, immersion cooling, carbon-tracking systems), structured as bilateral research partnerships rather than financial commitments
+
+The United States is the *off-take* counterparty. It is not the *placement* counterparty. The distinction is structural and intentional. It preserves the strategic logic of CKPIF as a Pacific safe-asset additive whose senior bond demand is sourced from Korean and allied institutions, while still binding U.S.-side commercial commitment to the asset class.
+
+### Pricing implications
+
+The compact's expansion of CKPIF's qualifying use-of-proceeds is credit-positive on the existing Phase 1 programme. The diversification of off-take across the energy / minerals / financial corridors reduces concentration risk on any single project (notably the Fort McMurray pipeline, whose execution risk Working Paper No. 1 §12 identifies as the binding constraint on Phase 1). Bond markets reward diversified-revenue supranationals; the indicative pricing range of +50–80 bp over 30Y UST should compress accordingly as the Phase 2 programme builds out.
+
+Compact projects carry a parallel Indigenous Series II tranche on the same terms as Working Paper No. 1's Series I — 10–15 percent of compact capital expenditure with the +25 bp ratchet protection if Indigenous equity falls below 10 percent. The Indigenous-equity architecture is one design across the CKPIF programme — Series I for Phase 1, Series II for the compact — with identical terms. §9 addresses the structure in detail.
+
+### Sequencing
+
+Working Paper No. 1 §11 sets the Phase 1 sequencing: feasibility paper at months 0–6, treaty drafting and project shortlist at months 6–12, inaugural USD benchmark of US$3–5 billion at months 12–18. The compact's projects can sit within the project shortlist from month 6 onward. The compact does not introduce new sequencing risk; it adopts the WP1 sequencing and adds U.S.-side counterparty engagement as a parallel workstream.
+
+## 8. Stress Scenario Analysis
+
+The compact must remain operational under stressed conditions across the political, geopolitical, climatological, and regulatory dimensions. The relevant stressors and the compact's behaviour under each:
+
+### CUSMA non-extension at the July 2026 review
+
+If the joint review on 1 July 2026 fails to produce unanimous extension, CUSMA enters the annual-review regime with a 2036 expiry on a path of recurring tariff risk. The compact's bilateral treaty wrapper is designed to function independently of CUSMA — explicitly so, in §5 Layer 1. Compact behaviour: tariff-exemption commitments hold (they are bilateral and treaty-grade); off-take contracts hold (they are private bilateral commercial agreements); transmission interties continue to operate; CKPIF Phase 2 funding continues. **Net effect**: temporarily widening U.S.-side counterparty risk premium of approximately 10–25 bp on Phase 2 tranches; manageable. The instrument's bilateral specialised structure was designed for this scenario.
+
+### U.S. grid emergency escalation
+
+If U.S. grid emergencies of the January 2026 ERCOT type proliferate — DOE emergency orders to PJM, MISO, the Western Interconnection — the compact's value proposition strengthens. Compact behaviour: hyperscale operator off-take demand accelerates; pricing on remaining capacity hardens; compact training-centre projects move ahead of schedule on regulatory pathway; CKPIF Phase 2 demand outpaces issuance. **Net effect**: tightening of CKPIF spreads, faster build-out, increased political leverage in CUSMA negotiations. *This scenario is the live tailwind.*
+
+### U.S. political reversal
+
+A future U.S. administration may seek to unwind the bilateral compact for ideological or industrial-policy reasons. The treaty wrapper's several-not-joint structure protects Canada from unilateral U.S. exit on the Canadian commitments (generation, transmission, Indigenous co-ownership). The treaty is enforceable under English law and LCIA arbitration; treaty exit requires standard withdrawal procedures with notice periods of typically 6–24 months. Off-take contracts are private commercial agreements with multi-decade terms; unilateral abrogation would invite damages litigation and dollar-credibility damage. **Net effect**: residual political risk priced into Phase 2 spreads at approximately 15–30 bp; not eliminable, but priced.
+
+### Provincial separatist accident
+
+The structural mathematics of provincial secession are addressed in NPSI Briefing Note No. 2 (forthcoming). For the compact: a successful Quebec or Alberta separation referendum would introduce immediate uncertainty over the federal counterparty status. Compact behaviour: temporary CKPIF spread widening of 50–100 bp; transmission and training-centre construction pauses pending federal-counterparty clarity; off-take contracts unaffected (commercial counterparties continue to perform). The 2025 empirical record indicates that external pressure has consolidated rather than fragmented the federation; the compact's design is robust under stressed federal scenarios but does not eliminate the residual risk. §10 addresses the federal-continuity precondition in detail.
+
+### Korean peninsula military event
+
+Korea CDS spreads typically widen 50–150 bp on serious provocations. Compact behaviour: KRW-tranche performance underperforms; USD and CAD tranches relatively unaffected; the several-not-joint guarantee structure means Canada's portion is unimpaired; the BoC–BoK standing swap line operates as a structural mitigant. **Net effect**: 30–60 bp temporary spread widening on the CKPIF KRW tranche; contained.
+
+### Strait of Hormuz protraction
+
+The February 2026 Strait of Hormuz crisis is the largest oil supply disruption in the IEA's tracking; approximately 20 percent of seaborne oil and 20 percent of LNG normally transit Hormuz. Korea sourced about 70 percent of its oil from the Middle East in 2025, most of it shipped through the Strait ([Korean Industry Ministry data, via Reuters](https://www.oedigital.com/news/543193-south-korea-aims-to-cut-middle-east-crude-dependence-to-50-by-2035)). Korean energy security is the most immediate buyer-side rationale for the entire Pacific architecture. Compact behaviour: structural Korean demand for the WP1 financial rail strengthens; demand for diversified critical-minerals supply (the compact's third rail) accelerates; the U.S. compute rail (the compact's primary thesis) is essentially insulated. **Net effect**: live tailwind.
+
+### Climatological hydro volatility
+
+The 2023–24 low-runoff curtailment is the relevant precedent. Compact behaviour: temporary curtailment of training-tier off-take commitments under the dispatchable-priority dispatch protocol established in §4; KPI-linked coupon step-down on throughput KPI; off-take contracts include weather-derivative-style hedges sized to compact capacity. **Net effect**: residual operational variance priced into compact KPI overlay; not a structural ceiling on commitment.
+
+### Indigenous-consent challenge
+
+A specific corridor project (Saguenay, Peace River, or Northern Manitoba) may face an Indigenous-consent challenge analogous to the Northern Gateway 2016 *Gitxaala Nation* decision. Compact behaviour: per §9, Indigenous co-ownership is designed in at issuance through the FNMPC, CIB IEI, and federal Indigenous Loan Guarantee Program — explicitly to avoid the Northern Gateway pattern of minority equity participation without Indigenous economic leadership. The compact's structure makes the Indigenous tranche financially attractive, politically durable, and executable. The residual risk is project-specific corridor selection, not architectural. Multi-corridor diversification across three sites materially reduces exposure to single-corridor failure.
+
+### Net assessment
+
+The compact's design is robust under each stress scenario individually. It is robust under most pairwise combinations. It is fragile under the combined scenario of (a) provincial separatist accident plus (b) U.S. political reversal plus (c) major Indigenous-consent challenge — but that combination is also a scenario in which Working Paper No. 1's CKPIF and most other Pacific-architecture instruments would also fail. The compact does not eliminate sovereign-architecture risk. It concentrates risk where the architecture can address it, prices what is residual, and survives the rest.
+
+## 9. Indigenous Equity Architecture
+
+The compact's Indigenous-equity architecture is the architecture developed in Working Paper No. 1 §9, applied to compact-specific projects. The structural reasoning is identical: Indigenous co-ownership designed in at issuance, not retrofitted; Indigenous economic leadership, not minority equity participation; Indigenous governance rights anchored in corridor-specific limited partnerships; cost-of-capital advantage through the Canada Infrastructure Bank Indigenous Equity Initiative.
+
+### The institutional framework
+
+Three federal vehicles support the architecture, all operational with established track records:
+
+- **First Nations Major Projects Coalition (FNMPC)** — 186 member nations, advising on 21 projects worth approximately CAD 45 billion in current pipeline.
+- **Canada Infrastructure Bank Indigenous Equity Initiative (IEI)** — direct loans of CAD 5–100 million at minimum Government of Canada rates, repayment up to 15 years, financing up to 90 percent of Indigenous equity stake.
+- **Federal Indigenous Loan Guarantee Program** — CAD 5 billion announced in Budget 2024, sector-agnostic backing for Indigenous equity participation in major projects.
+
+The compact extends an existing framework. It does not invent new institutions.
+
+### Live precedents
+
+The compact's Indigenous architecture is calibrated against precedents already in market:
+
+- **[Athabasca Indigenous Investments](https://www.enbridge.com/stories/2022/september/landmark-equity-pipeline-partnership-between-enbridge-and-23-indigenous-communities)** — 11.57 percent non-operating interest in seven Enbridge-operated pipelines (Athabasca, Wood Buffalo/Athabasca Twin, Norlite, Waupisoo, Wood Buffalo, Woodland, Woodland extension); CAD 1.12 billion purchase, 23 First Nation and Métis communities, October 2022. The largest Indigenous energy-equity transaction in North American history at signing.
+- **[Coastal GasLink](https://www.tcenergy.com/announcements/2022/2022-03-09-tc-energy-signs-equity-option-agreements-with-indigenous-communities-across-the-coastal-gaslink-project-corridor/)** (TC Energy / KKR / AIMCo) — 10 percent LP option, two limited partnerships representing 16 of 20 Nations along the corridor; option agreements signed March 2022. Template for designed-in equity at issuance.
+- **Prince Rupert Gas Transmission** (Nisga'a Nation × Western LNG) — 50 percent Nisga'a ownership; full transfer from TC Energy in 2024. Template for Indigenous economic leadership rather than minority participation.
+- **BC Indigenous Power Coalition** — approximately 50 percent First Nations equity in the North Coast transmission framework currently under development. Direct precedent for the BC corridor of the compact.
+
+Each precedent provides specific contractual templates — equity-stake structuring, limited-partnership governance, cost-of-capital arrangements — that can be applied to the compact's three corridors with minimal customisation.
+
+### Designed-in tranche for the compact
+
+The compact's Indigenous co-ownership runs through a separate **Series II (Indigenous-Compact)** tranche, sized at 10–15 percent of total compact capital expenditure, structurally analogous to the Working Paper No. 1 Series I (Indigenous-CKPIF) tranche but applied to compact projects.
+
+1. **Corridor-specific Indigenous Limited Partnerships** — three LPs, one per corridor (Saguenay, Peace River, Northern Manitoba), governed by boards with proportional First Nations representation along each corridor.
+2. **Subscription** — 90 percent financed by CIB IEI direct loans; 10 percent by First Nations own-source revenue, treaty trust funds, and federal Indigenous Loan Guarantee Program co-funding.
+3. **Economic rights** — pari passu coupon and principal with the senior compact tranches; **+25 bp step-up coupon adjustment if Indigenous equity share falls below 10 percent** — the structural protection ratchet.
+4. **Governance rights** — Nation-level consent on route changes through traditional territories; veto right on amendments to Indigenous-equity KPIs; director representation on the compact's Canadian counterparty entity.
+5. **Cost-of-capital** — CIB IEI rate is materially below CKPIF coupon; positive carry spread for the Indigenous LPs, monetisable as own-source revenue in perpetuity.
+
+[Figure: Figure E — The Indigenous Series II tranche structure for the compact. Top: institutional framework (FNMPC, CIB Indigenous Equity Initiative, federal Indigenous Loan Guarantee Program). Middle: three corridor-specific Indigenous limited partnerships — Saguenay/Côte-Nord (Cree, Innu nations), Peace River/Bennett (BC Indigenous Power Coalition), Northern Manitoba (Cree nations) — each subscribed 90% via CIB IEI loans and 10% from own-source revenue. Centre: the Series II tranche, sized at 10–15% of compact capital expenditure, pari passu with senior tranches, with a +25 bp step-up coupon ratchet if Indigenous equity falls below 10%. Bottom: economic and governance rights — positive carry spread, route consent, KPI-amendment veto, director representation, multi-corridor strategic durability.]
+
+FIGURE E · INDIGENOUS SERIES II TRANCHE · DESIGNED IN AT ISSUANCE, INDIGENOUS ECONOMIC LEADERSHIP, +25 bp PROTECTIVE RATCHET
+
+### Why the architecture matters strategically
+
+The Northern Gateway autopsy in Working Paper No. 1 §8 is the relevant cautionary precedent. Approximately 30 of 42 bands along the route had signed equity agreements with Enbridge for 10 percent equity participation; nonetheless, the project's coastal terminus and the absence of Indigenous economic *leadership* (as distinct from minority equity *participation*) were politically fatal. The compact's three-corridor design is intended to avoid that pattern:
+
+- **Indigenous economic leadership**, not minority participation — the Series II tranche structure makes Indigenous equity meaningful (10–15 percent) and protected (the +25 bp ratchet).
+- **Designed-in at issuance**, not retrofitted — corridor-specific LPs are co-architects of the compact, not late-stage participants.
+- **Multi-corridor diversification** — opposition to a single corridor does not automatically threaten the compact's core thesis; the architecture survives the loss of any one corridor.
+
+Indigenous co-ownership is not a political accommodation. It is a structural feature of the compact's durability under stress.
+
+## 10. The Federal-Continuity Precondition
+
+Both rails of the Pacific architecture — the financial rail of Working Paper No. 1 and the energy-and-compute rail of this paper — assume a unified Canadian counterparty. The treaty wrapper is bilateral. The several-not-joint guarantees are sovereign-to-sovereign. The Indigenous-equity tranches presume federal trust-relationship continuity. The CKPIF supranational holds Crown commitments. **If Confederation breaks, none of it functions.**
+
+Provincial separatist mobilisation in 2025–26 has therefore moved from a domestic political question into a question with direct implications for bilateral architecture. The [Stay Free Alberta signature delivery of 4 May 2026](https://www.cbc.ca/news/canada/edmonton/alberta-separatists-say-more-than-300k-have-signed-petition-9.7187218) — 301,620 signatures against the 178,000-signature threshold — placed the question on the legislative calendar; an Edmonton court has paused signature verification pending a constitutional challenge by Alberta First Nations who argue the petition process violates treaty rights. The Parti Québécois polling lead ahead of the October 2026 provincial election places the same question on the electoral calendar. These are not rhetorical risks. They are scheduled events.
+
+The forensic mathematics of provincial secession is treated separately in **NPSI Briefing Note No. 2 — *Confederation Mathematics*** (forthcoming). For the compact, three points need to be in the analysis here.
+
+### Why the federation actually holds
+
+The 2025 empirical record is unambiguous. External pressure on the Canadian federation in 2025 — explicit "fifty-first state" rhetoric from the U.S. administration, 25 percent tariffs on most Canadian imports beginning February 2025, separate 10 percent tariffs on energy, and reported direct engagement between U.S. administration figures and Alberta separatist organisations — did not fragment the federation. It consolidated it. The directional shift is documented:
+
+- Canadian national pride within Quebec rose substantially through spring 2025, reversing the 2024 sovereigntist trend
+- Bloc Québécois support in Quebec polling fell into the 23–25 percent range across major Canadian polling firms ([Ipsos](https://www.ipsos.com/sites/default/files/ct/news/documents/2025-04/2025%20Federal%20Election_Week_5_FedVote_FINAL%20Apr%2027%202025.pdf) placed the Bloc at 25 percent in Quebec; [Léger](https://thewalrus.ca/carneys-surge-in-quebec-could-wipe-the-sovereigntist-party-off-the-map/) placed it at 23 percent), well below the Bloc's 2024 Quebec-leading position; the actual [April 2025 result](https://www.elections.ca/res/rep/off/ovrGE45/62/table9E.html) in Quebec held the Bloc to 27.7 percent and 22 seats
+- The [April 2025 federal election](https://www.elections.ca/res/rep/off/ovrGE45/home.html) returned the Liberals to a 169-seat minority government on approximately 43.8 percent of the popular vote — the highest single-party vote share since 1984
+
+The phenomenon is empirical, not rhetorical. Under sustained external tariff pressure, the electorate views the Canadian federal state as a necessary geopolitical shield. The historical sovereigntist argument that independence would "escape" U.S. pressure has inverted: independence is now widely understood as *delivering* a province directly into U.S. negotiating leverage with no federal counterweight. That perception is empirically grounded and supported by the macroeconomic mathematics in BN-002.
+
+### The structural mathematics — three load-bearing facts
+
+The full forensic case is in BN-002. For the compact, three findings carry:
+
+1. **Indigenous treaty rights are constitutionally insurmountable.** Treaties 4, 6, 7, 8, and 10 cover the entirety of Alberta's oilsands and major urban centres. Treaties 6, 7, and 8 are agreements with the federal Crown, not the provincial Crown. A new international border around Alberta would sever the federal trust relationship, severing the constitutional foundation for federal jurisdiction over treaty lands. Sturgeon Lake Cree Nation and other First Nations have already filed in court; a judge has granted a temporary stay on signature validation pending constitutional review. First Nations could lawfully demand to remain within Canada, fragmenting any seceding province's territorial integrity into an unnavigable jurisdictional checkerboard. The same logic applies, with adapted treaty geography, to other separatist scenarios.
+2. **The macroeconomic arithmetic is uniformly negative.** University of Calgary modelling (Tombe) estimates an immediate 4 percent GDP contraction for an independent Alberta under conservative trade-friction assumptions, escalating to 6 percent under realistic friction; cumulative loss approximately CAD 130 billion over a decade. Quebec analyses indicate a long-run GDP contraction of approximately 5 percent below baseline, with consolidated net debt-to-GDP spiking to approximately 92 percent on per-capita federal-debt allocation — among the most indebted advanced economies. Quebec faces the loss of Equalization (approximately CAD 13.5–13.9 billion annually); Alberta receives no Equalization, but would leave a federal fiscal framework to which it has been a net contributor of roughly CAD 244.6 billion over 2007–22; both face the loss of CUSMA preferential access, and the structural friction costs of establishing sovereign apparatuses (currency, central bank, defence, diplomatic corps, border security) at zero base.
+3. **The currency options are uniformly punishing.** A new sovereign currency would trade at a deep discount to the Canadian dollar, triggering immediate capital flight and a foreclosure wave on CAD-denominated mortgages. Unilateral retention of the Canadian dollar surrenders monetary policy to the Bank of Canada with no representation. Dollarisation under the Panama model strips the new state of monetary sovereignty entirely; commodity-shock absorption shifts to internal devaluation through wage cuts and unemployment. There is no monetary path that preserves both stability and sovereignty.
+
+The cumulative finding of the structural analysis is that secession is not a low-probability path to a bad outcome. It is a high-probability path to a catastrophic one. Working Paper No. 1 and this paper are addressed to a federation that is structurally, empirically, and politically more durable than any recent decade has indicated.
+
+### What this means for compact design
+
+The compact does not assume secession is impossible. It assumes secession is structurally costly enough to be unlikely, and it prices the residual risk explicitly:
+
+- Bilateral treaty wrapper drafted in language that is enforceable against the Government of Canada, not against any individual province
+- Several-not-joint liability allocates Canadian guarantee obligations to the federal Crown, with internal allocation among provinces governed by domestic fiscal architecture
+- Indigenous Series II tranche structured around First Nations as constitutional rights-holders independent of provincial-government continuity
+- Multi-corridor diversification (BC, Quebec, Manitoba) means single-province separation does not eliminate the compact's deliverable capacity
+- CKPIF Phase 2 spread widens 50–100 bp temporarily under separatist accident, per §8 — a cost, not a structural failure
+
+The federation is the precondition. The compact is designed for a federation that holds. The empirical record indicates the federation will hold. The compact prices what it cannot assume.
+
+## 11. Political Feasibility and Champions
+
+Treaty-grade architectures require champions in three capitals — Ottawa, Washington, and Seoul — and operating coordination across provincial governments, Indigenous nations, and institutional counterparties. The combinatorics are ambitious. The current political environment is also more favourable than at any point in the past decade.
+
+### Ottawa: the credentialed counterparty
+
+The Government of Canada is led by a prime minister who governed the Bank of Canada through the global financial crisis and the Bank of England from 2013 to 2020, and who chaired the Financial Stability Board from 2011 to 2018 — a counterparty fluent in the instruments this paper proposes.
+
+The Davos address of January 2026, in which the doctrine of strategic indispensability articulated in §1 was first publicly stated, drew a standing ovation and was widely received in counterpart institutions; Finland's President Alexander Stubb called it "a deep analysis of the change in the world order and the new balance that we're looking at" ([The Canadian Press, 21 January 2026](http://ckpgtoday.ca/2026/01/21/quick-quotes-what-people-are-saying-about-carneys-speech/)). The reception reflects relationships built over two decades of operating at the highest levels of global finance — relationships now available to Canadian negotiators as a working asset.
+
+The [April 2025 federal general election](https://www.elections.ca/res/rep/off/ovrGE45/home.html) returned the Liberals to a 169-seat minority government on approximately 43.8 percent of the popular vote — the highest single-party vote share in any Canadian federal election since 1984. Minister of Energy and Natural Resources Tim Hodgson — former Goldman Sachs Canada chief executive and former special advisor to the Bank of Canada — leads on the energy file. The Major Projects Office, launched 29 August 2025, is the institutional vehicle for converting policy into final investment decisions; fifteen projects across mining, electricity, energy, and transport have been referred to the Office to date, representing combined investment of more than CAD 116 billion across the first two tranches announced in September and November 2025.
+
+### Washington: the structural counterpart
+
+U.S.-side champions for the compact are technical and institutional rather than narrowly partisan. The compact is engineered around the AI-grid problem, which is bipartisan in its operational urgency.
+
+- The U.S. Department of Energy issued the January 2026 ERCOT emergency order. DOE is the federal counterparty on grid-emergency response and on national-laboratory engagement under the compact's research-partnership channel
+- Lawrence Berkeley National Laboratory is the principal U.S. technical authority on data-centre electricity demand. LBNL projections supply the 325–580 TWh demand baseline from which this paper derives its 19 GW gap
+- The Federal Energy Regulatory Commission regulates cross-border transmission. FERC's interconnection authority is the binding regulatory channel for the UHV-intertie expansion the compact requires
+- The U.S. Trade Representative leads the CUSMA July 2026 review and is the institutional counterparty for the bilateral treaty-grade tariff-exemption commitments
+
+Compact engagement runs through established bilateral diplomatic and technical channels — Global Affairs Canada with the U.S. Department of State; Natural Resources Canada with DOE; the Canada Energy Regulator with FERC. The compact does not depend on personal relationships within any single U.S. administration. It depends on durable institutional channels that have operated continuously across multiple administrations.
+
+### Seoul: the financial anchor
+
+The Korean champions for the compact are unchanged from Working Paper No. 1 §11. President Lee Jae-myung (Democratic Party, inaugurated 4 June 2025) has stated explicit policy alignment with Canada on critical minerals, clean energy, and defence cooperation. The Ministry of Trade, Industry and Energy under Minister Kim Jung-kwan leads on industrial policy and energy security. The Bank of Korea, under Governor Rhee Chang-yong, is the operating counterparty via the standing swap line and Project Agorá. Anchor institutional buyers — the National Pension Service (approximately US$900–960 billion AUM), the Korea Investment Corporation, Korea Post, and Korean life insurers (Samsung Life, Hanwha Life, Kyobo) — anchor the senior bond stack.
+
+Korean strategic investment in Canadian minerals and energy (POSCO, KOGAS, LG Energy Solution, Hyundai, Korea Zinc, EcoPro, Hanwha Ocean) provides existing operational ground truth that the bilateral architecture is more than a proposed financial instrument. It is the formalisation of a pattern of capital flow already established and operating.
+
+### Provincial and Indigenous counterparts
+
+The compact's three corridors require operating partnership with three provincial governments and the First Nations Major Projects Coalition:
+
+- **Quebec** (Saguenay / Côte-Nord corridor): provincial government with October 2026 election as the relevant political variable; Hydro-Québec as system operator and primary capital allocator; Indigenous engagement through Cree, Innu, and other affected nations
+- **British Columbia** (Peace River / Bennett corridor): provincial government, BC Hydro as system operator; First Nations engagement through the BC Indigenous Power Coalition with the established North Coast transmission-equity precedent
+- **Manitoba** (Northern Manitoba corridor): provincial government, Manitoba Hydro as system operator; Indigenous engagement through Cree and other northern nations
+
+The Indigenous-equity architecture in §9 positions corridor-specific First Nations as co-architects rather than subordinate counterparties.
+
+### Sequencing
+
+Working Paper No. 1 §11 specifies the financial-rail sequencing. The compact's energy-and-compute rail runs in parallel:
+
+- **Months 0–6** — Track-1.5 dialogue with U.S. counterparts (DOE, LBNL, FERC); feasibility paper combining the WP1 and WP2 analytical cores; institutional soft-sounding of hyperscale operators and U.S. utilities; corridor diligence with Hydro-Québec, BC Hydro, Manitoba Hydro; FNMPC engagement on Indigenous-equity design.
+- **Months 6–12** — Bilateral treaty drafting (Canada–United States) on the EIB / NIB precedent; treaty drafting (Canada–Korea) per WP1; provincial intergovernmental memoranda; Indigenous LP structuring per FNMPC and CIB IEI templates.
+- **Months 12–18** — Inaugural CKPIF USD benchmark issuance per WP1 schedule; first compact transmission and training-centre projects to final investment decision through the Major Projects Office; first U.S.-side off-take contracts with hyperscale operators.
+- **Pre-1 July 2026** — Public framework announcement (not full execution): a treaty-grade Canada–U.S. compact under negotiation, structurally complementary to Working Paper No. 1's CKPIF, designed as an additive proposition in the CUSMA review window. The political signal is the asset. Full execution follows the review.
+
+The framework announcement is achievable on the current timeline. The compact's institutional foundation exists. The political champions are in place. The sequencing is realistic.
+
+## 12. Risks and Failure Modes
+
+Beyond the stress scenarios analysed in §8, the compact faces specific structural risks during build-out and operation. The material failure modes:
+
+### Regulatory and permitting bottleneck
+
+Cross-border UHV transmission requires FERC siting authority on the U.S. side and Canada Energy Regulator authority on the Canadian side. Both regulators have established processes; both have observed permitting timelines that exceed the compact's 24- to 36-month FID target. **Mitigation**: front-loaded engagement under the Major Projects Office accelerated framework on the Canadian side; engagement on FERC interconnection-queue reform on the U.S. side. This is the highest-probability failure mode short of political reversal.
+
+### Korean counterparty diversion
+
+Korea is engaged with Australia (critical minerals), the United States directly (IRA subsidies for Korean EV-battery and semiconductor manufacturing), and the European Union (CETA-equivalent bilateral architectures under negotiation). If Korean institutional capital allocates elsewhere within its overall Pacific-and-Atlantic diversification budget, CKPIF placement risk increases. **Mitigation**: WP1 §10's institutional engagement (NPS, KIC, Korea Post, life insurers) is the binding mitigant; the compact reinforces rather than dilutes the Korean strategic case.
+
+### CKPIF Phase 1 execution delay
+
+The compact is CKPIF Phase 2. Phase 2 cannot execute without Phase 1 substantially in place. Working Paper No. 1 §12 identifies Indigenous consent for the Fort McMurray pipeline as the binding constraint on Phase 1 and addresses it through the explicit "decouple financial architecture from pipeline binary" recommendation. **Mitigation**: Phase 1 funds any qualifying Pacific corridor infrastructure (per WP1 §12); the compact's three corridors are themselves qualifying alternatives.
+
+### Hyperscale operator counterparty risk
+
+The compact's primary off-take counterparties are U.S. hyperscale operators (Microsoft, Amazon, Google, Meta, the Stargate consortium, Anthropic). All are large, well-capitalised, investment-grade. None is sovereign. A material counterparty failure (insolvency, regulatory restructuring, antitrust break-up) could disrupt off-take. **Mitigation**: take-or-pay structure with reserve accounts; multi-counterparty diversification with no single operator above 25 percent of off-take; U.S. utility intermediation as second-line backstop.
+
+### Cyber and grid security
+
+Cross-border UHV interties and large-scale training data-centre infrastructure are critical-infrastructure assets. Cyber and physical security exposure is material. **Mitigation**: compact-grade cybersecurity standards adopted from the Communications Security Establishment (Canada) and the Cybersecurity and Infrastructure Security Agency (United States); operational redundancy built into transmission architecture; BIS Toronto Innovation Centre payments-rail security framework adopted for the tokenised pilot tranche.
+
+### Climatological volatility
+
+Addressed in §4 and §8. The 2023–24 low-runoff curtailment is the relevant precedent. **Mitigation**: multi-corridor diversification, dispatchable / non-dispatchable hybridisation, explicit climate KPI overlay in the compact's coupon structure. Residual volatility is priced; not eliminable.
+
+### Reputational and framing risk
+
+A bilateral Canada–U.S. compact may be characterised — by domestic Canadian critics, by Korean counterparties, or by other allied trading partners — as Canada subordinating itself to U.S. industrial policy. The framing matters. **Mitigation**: framing discipline, rigorously applied. The compact is positioned as cooperative leverage, additive to existing North American architecture, structurally complementary to the Korean financial rail, and explicitly designed around Canadian regulatory primacy and Indigenous co-ownership. The narrative is *Canada controls assets the United States cannot replace.* It is not *Canada exports its sovereignty to the United States.*
+
+### Political reversal in Ottawa
+
+A future Canadian government may seek to unwind the compact. The treaty wrapper's bilateral form provides the durability mitigant. **Mitigation**: treaty entrenchment via Parliament; cross-partisan support cultivation (the underlying energy and trade thesis is framed in cross-partisan terms); Indigenous co-ownership creates a domestic political constituency for treaty maintenance.
+
+### Net assessment
+
+The compact's risks are concentrated in execution and sequencing rather than in architecture. Each risk has an established mitigation pathway. None is novel; all are precedented in earlier infrastructure-scale sovereign architecture. The cumulative risk profile is acceptable for a 30-year horizon but requires active institutional management — the Major Projects Office and the CKPIF supranational vehicle's governance committees are the appropriate institutional homes.
+
+## 13. Concluding Synthesis
+
+The case presented in this paper is straightforward.
+
+The American electricity grid cannot deliver the power the American AI build-out requires. The shortfall is approximately 19 GW by 2028, concentrated in the geographies that host the densest data-centre clusters, binding within four years, and addressed in 2026 through emergency interventions that cannot be sustained as a stable equilibrium.
+
+Canada has the surplus. Combined dispatchable Canadian hydro alone exceeds the marginal U.S. training shortfall — before any new generation under the Hydro-Québec Action Plan 2035 or the Carney administration's Clean Electricity Strategy comes online.
+
+The training–inference bifurcation is what makes the compact an analytical case rather than a political convenience. AI inference must run at the U.S. urban edge by physics; AI training is latency-agnostic and can be sited on Canadian baseload. The United States must offload training in order to preserve domestic urban capacity for inference. Both parties win. The alternative is rationing.
+
+Every component of the compact is in liquid form today. The treaty wrapper has seventy years of supranational precedent at the European Investment Bank and five years at the European Commission's NGEU. The KPI overlay is the dominant market structure in sustainability-linked sovereign issuance. The Indigenous-equity templates are operating at industrial scale across multiple Canadian projects. The transmission interties exist and are operational; the compact extends a 15,000-MW cross-border architecture refined over four decades. The financial rail — the Canada–Korea Pacific Infrastructure Facility from Working Paper No. 1 — is in detailed design, with an indicative path to inaugural issuance within 18 months of a launch decision.
+
+The novelty is the bundling: an integrated three-rail Pacific architecture in which the financial rail (Korea), the energy and compute rail (United States), and the cross-cutting critical-minerals rail reinforce one another. Each rail's counterparty depends on the other two for substantive returns. Each rail's collapse undermines the other two. The interlocking structure is what makes the architecture strategically durable on a 30-year horizon.
+
+The framing is consistent across both papers and across the broader NPSI editorial discipline. Canada is most secure when it controls assets the United States cannot quickly replace and Korea cannot quickly substitute. Symmetrical tariff retaliation in a matched-magnitude trade war is asymmetrical in its effects: the smaller economy absorbs proportionally larger damage, sooner, with fewer fiscal alternatives. Strategic indispensability is the structural alternative — and the only alternative consistent with rule-of-law multilateral commitments.
+
+The federation is the asset that makes all three rails operational. Provincial separatism breaks the counterparty stack on which both bilateral compacts depend. The 2025 empirical record indicates that external pressure has consolidated rather than fragmented the federation; the *One Canadian Economy Act* has strengthened the structural argument; the structural mathematics of secession (treated separately in NPSI Briefing Note No. 2, forthcoming) make the case prohibitively expensive on its own terms.
+
+The CUSMA joint review of 1 July 2026 is the window. The compact is the offer. The architecture is buildable. The counterparties exist. The political champions are in place. The sequencing is realistic.
+
+The dollar will remain dominant through the thirty-year life of the compact and the thirty-year life of the CKPIF programme. The case for the compact is not that the dollar fails. The case is that prudent middle powers diversify counterparty risk by becoming structurally indispensable to multiple counterparties — and that the right time to build the architecture is before the architecture is needed.
+
+The work between now and 1 July 2026 is to convert the analytical case into a treaty-drafting workstream and a feasibility paper that the appropriate institutional counterparties — Canadian, American, Korean, and Indigenous — can engage with substantively. Working Paper No. 1 and this paper are the analytical foundation. The execution sequence is set out in §11. The political conditions are favourable. The technical conditions are demanding but achievable.
+
+The compact is the architecture for what Canadian middle-power sovereignty actually requires in 2026: not retaliation, not isolation, not subordination, but structural indispensability built from the assets the federation already possesses, organised under treaty-grade discipline, and protected by Indigenous co-ownership at issuance.
+
+Strategic indispensability is built from assets the federation already possesses. It is not a posture. It is a balance sheet. The compact converts that balance sheet into bilateral architecture before the architecture is needed. *— §13, Concluding Synthesis*
+
+---
+
+## Engage with this Working Paper
+
+Working Paper No. 2 was published as v1.0 in May 2026 and stands at v1.0.1 (October 2026), for discussion. Substantive editorial commentary, factual corrections, and technical critique are welcomed. Named commentary — attributed responses of 500 to 1500 words — may be incorporated into a subsequent minor version (v1.x) with full attribution.

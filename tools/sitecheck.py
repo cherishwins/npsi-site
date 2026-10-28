@@ -18,8 +18,10 @@ What it checks, per page:
   links     every internal href/src resolves to a file; every #fragment
             resolves to an id on the target page
   metadata  <title>, description, canonical (absolute, trailing slash),
-            og:url == canonical, og:image file exists, JSON-LD parses,
-            citation_pdf_url / JSON-LD encoding point at real files
+            og:url == canonical, og:image file exists and has og:image:alt,
+            JSON-LD parses, citation_pdf_url / JSON-LD encoding point at real
+            files; rel="license" (CC-BY-4.0) and the feed link on every page,
+            and on documents the Markdown edition link and article:published_time
   markup    unbalanced tags, duplicate ids, <img> without alt
   brand     hex colours in page <style> blocks outside the site.css palette,
             font families outside the three site faces, inline px font sizes
@@ -28,7 +30,8 @@ What it checks, per page:
 Site-wide: links labelled "current paper" point at it, every released PDF is
 linked from the home page or its line's index page, og:image dimensions match the PNG, sitemap.xml lists
 every page and PDF with each <lastmod> equal to the file's last commit date,
-and llms.txt / llms-full.txt mention every page. Paths in .vercelignore are
+llms.txt / llms-full.txt mention every page, and llms.txt links every
+document's Markdown edition. Paths in .vercelignore are
 not deployed, so they are not checked.
 """
 
@@ -49,6 +52,7 @@ from urllib.parse import unquote, urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://npsi.ca"
+LICENCE = "https://creativecommons.org/licenses/by/4.0/"
 SKIP_DIRS = {".git", ".claude", ".agents", ".github", "tools", "node_modules"}
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
         "meta", "source", "track", "wbr"}
@@ -388,6 +392,23 @@ def main() -> int:
                 declared = (pg.meta.get("og:image:width"), pg.meta.get("og:image:height"))
                 if size and all(declared) and declared != (str(size[0]), str(size[1])):
                     err(where, f"og:image is {size[0]}x{size[1]} but the page declares {declared[0]}x{declared[1]}")
+            if not pg.meta.get("og:image:alt"):
+                err(where, "missing og:image:alt (the share card's text description)")
+            # machine-readable reuse: the licence, the feed and, for documents,
+            # the Markdown edition (tools/fulltext.py) are declared in every head
+            heads = [(a.get("rel", ""), a.get("type", ""), a.get("href", ""))
+                     for t, a, _ in pg.elements if t == "link"]
+            if ("license", "", LICENCE) not in heads:
+                err(where, f'missing <link rel="license" href="{LICENCE}">')
+            if ("alternate", "application/atom+xml", "/feed.xml") not in heads:
+                err(where, 'missing <link rel="alternate" type="application/atom+xml" href="/feed.xml">')
+            parts = p.relative_to(ROOT).parts
+            if len(parts) == 2 and DOC_FOLDER.match(parts[0]):
+                md = f"/{parts[0]}/index.html.md"
+                if not any(r == "alternate" and ty == "text/markdown" and h == md for r, ty, h in heads):
+                    err(where, f'missing <link rel="alternate" type="text/markdown" href="{md}">')
+                if not pg.meta.get("article:published_time"):
+                    err(where, "missing article:published_time")
         for raw, line in pg.jsonld:
             try:
                 data = json.loads(raw)
@@ -533,6 +554,12 @@ def main() -> int:
             u = SITE + url_of(p)
             if u not in txt and u.rstrip("/") not in txt:
                 warn(name, f"no mention of {u}")
+
+    llms = (ROOT / "llms.txt").read_text(encoding="utf-8")
+    for d in registry.get("documents", []):
+        u = f"{SITE}/{d['folder']}/index.html.md"
+        if u not in llms:
+            err("llms.txt", f"no link to the Markdown edition {u} (add it under Full text)")
 
     # external links ------------------------------------------------------
     if args.external:

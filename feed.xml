@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-CA">
+  <title>North Pacific Strategy Initiative</title>
+  <subtitle>Working papers, briefings and the Pacific Ledger: Pacific sovereignty, bilateral financial architecture, and the options open to middle powers. Every document is free to read and licensed CC-BY-4.0.</subtitle>
+  <id>https://npsi.ca/</id>
+  <link rel="self" type="application/atom+xml" href="https://npsi.ca/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://npsi.ca/"/>
+  <link rel="related" type="application/json" href="https://npsi.ca/registry.json"/>
+  <updated>2026-10-28T12:00:00Z</updated>
+  <author><name>Jesse James</name><email>editor@npsi.ca</email><uri>https://npsi.ca/about/</uri></author>
+  <icon>https://npsi.ca/assets/img/icon-192.png</icon>
+  <logo>https://npsi.ca/assets/img/og-default.png</logo>
+  <rights>Document text CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/): quote, share, translate and adapt it, including in AI systems, with attribution. The NPSI name and wordmark are not licensed.</rights>
+  <entry>
+    <title>The 2027 Cliff — Special Briefing No. 10</title>
+    <id>https://npsi.ca/sb10/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb10/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb10/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb10/contractor-checklist.pdf" length="428392"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb10/special-briefing.pdf" length="1336812"/>
+    <published>2026-10-28T12:00:00Z</published>
+    <updated>2026-10-28T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>On 1 January the Pentagon stops contracting for magnets, tungsten and tantalum mined or refined in China. The rule is narrower than reported. The gap it exposes is wider. A forensic assessment of United States legal, industrial, grid and workforce readiness for the defence critical-materials ban, with every claim in the circulating draft checked against the primary text. The cliff is real, but it is not where the draft put it. Magnet tonnage is not the constraint. The constraint sits upstream, in heavy rare earths, samarium and tungsten, where no contractor can fix supply in the 66 days left. Of about 48,000 tonnes of NdFeB magnets the United States used in 2025, about 300 came from domestic sources. (NPSI-20261027, serial pending, v1.0.)</summary>
+  </entry>
+  <entry>
+    <title>Settled in Cash — Special Briefing No. 9</title>
+    <id>https://npsi.ca/sb9/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb9/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb9/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb9/special-briefing.pdf" length="159811"/>
+    <published>2026-10-17T12:00:00Z</published>
+    <updated>2026-10-17T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>The AI build was priced like a futures contract. A data centre only settles one way: physical delivery of power. In mid-October 2026 the S&amp;P 500 sat less than 1% below its record while the assets closest to the data centre fell hardest: Korea&#x27;s KOSPI lost 7.57% in a session and CoreWeave&#x27;s 9% notes traded at 80.75, a yield near 15.3%. Dominion Energy has about 54 GW of data-centre capacity under contract against a 4.8 GW data-centre billing peak; gold&#x27;s paper on COMEX runs about 2.7 times registered metal. Gold, crude, the October credit scare and the money loop are checked against the record, claim by claim. (NPSI-20261016, serial pending, v1.0.)</summary>
+  </entry>
+  <entry>
+    <title>Running Silent — Technical Briefing No. 2</title>
+    <id>https://npsi.ca/tb2/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/tb2/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/tb2/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/tb2/technical-briefing-print.pdf" length="1134440"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/tb2/technical-briefing.pdf" length="1105704"/>
+    <published>2026-10-17T12:00:00Z</published>
+    <updated>2026-10-17T12:00:00Z</updated>
+    <category term="Technical Briefings"/>
+    <summary>A claim-by-claim technical assessment of a widely circulated AI-generated text claiming that ambient radio, commercial transponder feeds and machine learning can be fused into a real-time global map of hidden submarines and carrier groups. Eighteen claims are graded against open physics, peer-reviewed research and programme records. Multi-sensor fusion is eroding concealment at sea, but the three mechanisms the text relies on fail: seawater extinguishes a VLF field within metres, a ship that is not broadcasting is absent from an AIS feed rather than revealed by subtracting it, and no published mechanism turns micro-variance in background satellite signal strength into a carrier track. What works is narrower, more expensive and more active: satellite radar matched against AIS, satellite geolocation of ships that still emit, seabed and towed acoustic arrays, skywave over-the-horizon radar cued to imaging satellites, and fusion software at scale. None of it makes running silent obsolete; it makes running silent insufficient on its own. (NPSI-20261014, serial pending, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Authored State — Special Briefing No. 8</title>
+    <id>https://npsi.ca/sb8/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb8/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb8/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb8/special-briefing.pdf" length="1199704"/>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>An outside power writes the rules by which a country governs itself and goes home; the formula hardens because a local class finds that the broken system guarantees its position. The evidence is set out as testimony in seven exhibits: Lebanon&#x27;s 1932 census and its banks; Iraq, Bosnia, Northern Ireland, Cyprus and Rwanda; France audited as an author, from its nuclear fuel cycle to its pensions; three of the author&#x27;s claims withdrawn; Hormuz and Bab al-Mandeb in 2026; Radcliffe&#x27;s line and the Indus; and the reader&#x27;s own inflation target, pension and reserve currency. The finding is narrow: fix identity into the distribution of power and you manufacture a class that defends the formula after it has stopped defending anyone else. (NPSI-20260920-B, serial pending, v1.0.)</summary>
+  </entry>
+  <entry>
+    <title>The Walk-Away Price — Special Briefing No. 6</title>
+    <id>https://npsi.ca/sb6/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb6/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb6/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb6/special-briefing.pdf" length="1629895"/>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>Korea wired the first $2.4 billion of its $200 billion US strategic-investment commitment on 1 October 2026 and, the same day, protested the way Washington had announced the Alaska LNG project. It reads both against the texts: the Strategic Investment MOU, whose written price of refusal, a diversion of Korea&#x27;s returns equal to the unfunded amount plus a tariff remedy, is rarely quoted whole; the $20 billion annual cap; Korea&#x27;s Special Act; and the Supreme Court&#x27;s February ruling, which moved any tariff penalty to a Section 301 docket or the Section 232 auto rate. It prices a first refusal on Alaska and names the disbursement, the reactor advance of up to $10 billion, where Seoul&#x27;s refusal buys something money cannot. (NPSI-20261002-A, serial pending, v1.0.)</summary>
+  </entry>
+  <entry>
+    <title>The Pacific Ledger — The Pacific Ledger №02</title>
+    <id>https://npsi.ca/pl2/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/pl2/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/pl2/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/pl2/pacific-ledger.pdf" length="855639"/>
+    <published>2026-10-14T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="The Pacific Ledger"/>
+    <summary>The second issue of The Pacific Ledger carries one entry: the editor&#x27;s sorting of every Korean commitment made around the Canadian Patrol Submarine Project after Ottawa named TKMS preferred supplier on 6 July 2026. Thirteen commitments are tiered by condition: five contingent on a Hanwha Ocean award, which have lapsed, been suspended, shelved or sit under review; five bid-linked with no stated condition, which continue as research, trade and intent; and three independent of the bid, the only ones with capital in the ground. NextStar in Windsor and KOGAS&#x27;s stake in LNG Canada are operating; Ultium CAM in Bécancour is scheduled for late October. Four recommendations follow. Issue closed 1 October 2026; published 14 October 2026 with pre-publication corrections applied. (NPSI-20261001-A, serial pending, as issued.)</summary>
+  </entry>
+  <entry>
+    <title>One Day, Four Names — Special Briefing No. 5</title>
+    <id>https://npsi.ca/sb5/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb5/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb5/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb5/special-briefing-print.pdf" length="1464951"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb5/special-briefing.pdf" length="1421351"/>
+    <published>2026-10-03T12:00:00Z</published>
+    <updated>2026-10-04T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>The war in the Pacific ended once. It has at least six official names, and none of them is neutral. Each name is a sentence with a subject removed, and where the subject went is where the policy lives. Japan&#x27;s official name for 15 August, fixed by cabinet decision in 1982, mentions neither the war&#x27;s end nor its loss; Seoul&#x27;s says the light was restored without naming who restored it; Washington&#x27;s says victory over Japan, and Korea is not in the sentence. The briefing reads the names as primary sources against the documents of 1945, among them Stalin&#x27;s message of 16 August accepting the order that split Korea, in which he also asked for the northern half of Hokkaido, and the three documents behind the legend of the 38th parallel. It then reads the speeches of 15 August 2026 against the names, and finds that each did what its name predicted. (NPSI-20261003-C, serial pending, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Tollgate Markets — Special Briefing No. 4</title>
+    <id>https://npsi.ca/sb4/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb4/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb4/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb4/special-briefing.pdf" length="1919976"/>
+    <published>2026-10-03T12:00:00Z</published>
+    <updated>2026-10-04T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>On 17 September 2026 Turkey&#x27;s Capital Markets Board ordered 131 investment funds into liquidation in a single day; inside them sat the savings of 455,758 people. In 2025 the same regulator fined 297 people and companies a combined TRY 2.69 billion, about 1% of a single money market fund at the centre of the collapse, and under Article 107(3) of the Capital Markets Law a person accused of transaction-based manipulation who pays twice the benefit before an investigation opens faces no penalty at all. The briefing calls such a place a tollgate market: one where breaking the rules is a toll you pay, not a wall you hit. It rates seventeen markets on enforcement in practice and finds that the answer depends less on their laws than on three things the laws do not show: the gain nobody measures, the fine nobody collects, and the trial that never comes. (NPSI-20261003-B, serial pending, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>Rated AAA by the Issuer — Working Paper No. 11</title>
+    <id>https://npsi.ca/wp11/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp11/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp11/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp11/working-paper.pdf" length="749603"/>
+    <published>2026-07-28T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>There is no enforced definition of open source in artificial intelligence. A standards body wrote one and cannot compel anyone to use it; a regulator wrote a different one that binds in a single jurisdiction; a procurement authority asked departments to consider it and never defined it at all. In that vacuum, the company that builds a model is the party that declares it open — the labeller is the labelled. The closest precedent is not open-source software but the credit rating. The paper corrects its predecessor (WP-10) in a published correction notice, establishes that the July 2026 policy fight is not about whether to ban open-weight models but about who defines &#x27;sufficiently capable,&#x27; and applies documented base rates from four other markets that ran unenforced quality labels to produce a forecast, with probabilities, of how this one resolves. (NPSI-WP-011, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Pacific Ledger — The Pacific Ledger №01</title>
+    <id>https://npsi.ca/pl1/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/pl1/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/pl1/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/pl1/pacific-ledger.pdf" length="605563"/>
+    <published>2026-07-28T12:00:00Z</published>
+    <updated>2026-07-28T12:00:00Z</updated>
+    <category term="The Pacific Ledger"/>
+    <summary>A monthly account of the Canada–Korea relationship. Premier issue: on July 6 Canada named TKMS preferred supplier for the Canadian Patrol Submarine Project over Hanwha&#x27;s KSS-III — and the relationship spent the rest of the month posting new entries anyway. The ledger records LNG Canada&#x27;s first cargo into KOGAS&#x27;s Incheon terminal, a planned rise of up to 3.3× in Canadian crude to Korea, LG Energy Solution&#x27;s buyout of the NextStar battery plant (agreed in February, closed 31 March), a joint critical-minerals stockpiling plan due by end-2026, fifty years of CANDU collaboration, Defence Cooperation Agreement negotiations, and Kapyong at 75. (NPSI-PL-001, as issued.)</summary>
+  </entry>
+  <entry>
+    <title>The Counterparty Problem — Working Paper No. 9</title>
+    <id>https://npsi.ca/wp9/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp9/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp9/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp9/working-paper.pdf" length="671884"/>
+    <published>2026-07-27T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>U.S. reliability is not one question but two, and conflating them produces bad risk analysis. The United States has a real, documented and recently accelerating record of formally exiting binding treaties — roughly fifteen significant withdrawals or repudiations since 2001 — but no honest failure-to-convert base rate can be computed for non-binding instruments like MoUs, because no registry of U.S. MoUs exists. The paper assesses the 24 July 2026 PIF–EXIM $15 billion MoU against the sharpest available case study: EXIM&#x27;s 2015–2019 board-quorum lapse, which cut the bank&#x27;s financing by almost 85 percent, and a charter that expires again on 31 December 2026 with reauthorization still in committee. (NPSI-WP-009, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>Fair Use for We, IP Theft for Thee — Working Paper No. 10</title>
+    <id>https://npsi.ca/wp10/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp10/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp10/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp10/working-paper.pdf" length="701248"/>
+    <published>2026-07-26T12:00:00Z</published>
+    <updated>2026-07-26T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>Between 16 and 24 July 2026 the United States government came closer to restricting foreign open-weight AI models than at any point in the technology&#x27;s existence — and not one of the statements driving that policy rests on an agreed definition of the thing being restricted. The paper reads the licences: of eleven major model families surveyed, three satisfy the Open Source Initiative&#x27;s definition, and none of those three operates at frontier scale. Llama 4&#x27;s licence withholds rights from anyone domiciled in the European Union, inside a product marketed as open source, in the one jurisdiction that offers open-source models a regulatory exemption. And the characterisation now driving policy — that training on another party&#x27;s output is fair use when American labs do it and theft when Chinese labs do it — is real at the level of framing, weaker than advertised at the level of evidence, and applied to conduct that three separate bodies of law treat three separate ways. (NPSI-WP-010, v1.0.) Superseded by https://npsi.ca/wp11/.</summary>
+  </entry>
+  <entry>
+    <title>The Ledger With One Entry — Special Briefing No. 3</title>
+    <id>https://npsi.ca/sb3/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb3/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb3/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb3/special-briefing.pdf" length="2928147"/>
+    <published>2026-07-26T12:00:00Z</published>
+    <updated>2026-07-26T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>Since United States forces captured Nicolás Maduro on 3 January 2026, the American government has controlled the sale of Venezuelan crude oil and the disposition of its proceeds. The Financial Times estimates those sales have raised more than US$13 billion; Venezuela&#x27;s own transparency portal records a single receipt of $300 million, and no audit has been published. The briefing verifies the factual record, prices the gap, explains the legal architecture that produced the offshore structure — two traps in American law that would have destroyed the funds on arrival — and benchmarks the arrangement against the three comparable oil-custody regimes of the past quarter-century. It reaches an uncomfortable conclusion: the Venezuela mechanism is the least accountable of the four, and the most accountable of them still lost $8.8 billion. (NPSI-SB-003, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>Dazzle 2.0 — Working Paper No. 7</title>
+    <id>https://npsi.ca/wp7/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp7/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp7/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp7/working-paper.pdf" length="1047410"/>
+    <published>2026-07-12T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>Russian logistics trucks in Ukraine have worn high-contrast dazzle paint since late May 2026, and the intent — degrading the machine vision on strike drones — is accepted by serious analysts. But no controlled test shows the tactic defeating any named detector. The durable finding is cost asymmetry: a paint can iterates in an afternoon; a fielded detector re-learns only as fast as its slowest update loop. The paper separates confirmed fact from inference and hype, and draws the procurement lesson for NATO and Canada: vision-only terminal guidance is brittle; sensor fusion, human authorization, and edge-retrainable models are the robust answers. (NPSI-WP-007, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Three Doors — Special Briefing No. 2</title>
+    <id>https://npsi.ca/sb2/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb2/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb2/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb2/special-briefing.pdf" length="43085"/>
+    <published>2026-07-02T12:00:00Z</published>
+    <updated>2026-07-02T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>Under U.S. defense law, Canada has been a domestic source since 1992 (50 U.S.C. §4552), and Canadian companies qualify for Defense Production Act Title III grants, loans, loan guarantees and purchase commitments on the same footing as a firm in Ohio. This briefing maps three doors to American federal money for Canadian critical-minerals firms: Title III, where Canada counts as domestic; the Department of Energy pilot grants under §40210 of the Infrastructure Investment and Jobs Act (42 U.S.C. §18743), which require a U.S. site or a U.S. partner; and the Export-Import Bank&#x27;s Supply Chain Resiliency Initiative, which finances foreign projects on the strength of U.S. offtake. Only the first depends on Canada counting as domestic. The briefing then maps the navigation moat that stalls applicants. Corrected v1.0.1, October 2026; the v1.0 PDF stands as issued. (NPSI-SB-002, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Voter File — Briefing Note No. 1</title>
+    <id>https://npsi.ca/bn1/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/bn1/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/bn1/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/bn1/briefing-note.pdf" length="161121"/>
+    <published>2026-06-11T12:00:00Z</published>
+    <updated>2026-06-11T12:00:00Z</updated>
+    <category term="Briefing Notes"/>
+    <summary>Every major Canadian federal political party maintains a database with a record on substantially every voter, assembled in five layers: the Elections Canada list of electors, canvassing observations, appended public records, appended commercial data, and modelled behavioural scores. No layer requires consent; no layer grants a right of access. In March 2026, Part 4 of Bill C-4 excluded federal parties from provincial and territorial privacy law, retroactive to 2000. (NPSI-BN-001, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>Zero Secrets — Special Briefing No. 1</title>
+    <id>https://npsi.ca/sb1/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/sb1/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb1/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb1/special-briefing.pdf" length="104963"/>
+    <published>2026-06-11T12:00:00Z</published>
+    <updated>2026-06-11T12:00:00Z</updated>
+    <category term="Special Briefings"/>
+    <summary>Canada effectively holds no data secrets from the United States — not by choice, but by architecture. The overwhelming majority of Canadian government, corporate, and citizen data sits on infrastructure owned by three American corporations, and under the US CLOUD Act and FISA Section 702, American jurisdiction follows corporate ownership, not server location. This briefing audits the exposure, the federal response, and the demonstrated capability class, and recommends a three-stage sovereign-infrastructure response. (NPSI-SB-001, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Verified Sky — Technical Briefing No. 1</title>
+    <id>https://npsi.ca/tb1/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/tb1/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/tb1/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/tb1/technical-briefing.pdf" length="192943"/>
+    <published>2026-06-11T12:00:00Z</published>
+    <updated>2026-06-11T12:00:00Z</updated>
+    <category term="Technical Briefings"/>
+    <summary>A survey of the 2025–2026 state of the art in computer vision and sensing for monitoring a defined volume of airspace; the verification architecture that converts a probabilistic detection into a near-certain identification; realistic detection-to-action latency; the statutory line between lawful and criminal automated response for a private Canadian operator; and a deliberately conservative capability forecast at one, two-and-a-half, and five years. (NPSI-TB-001, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>Sovereign Compute North — Working Paper No. 5</title>
+    <id>https://npsi.ca/wp5/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp5/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp5/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp5/working-paper.pdf" length="183309"/>
+    <published>2026-05-27T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>Canada has the cheapest low-carbon firm electricity in the G7. Korea controls the global memory chokepoint on which every modern AI accelerator depends. Microsoft France has stated under oath (French Senate, 10 June 2025) that it cannot guarantee French citizens&#x27; data against US extraterritorial reach. The trade is obvious: Canadian electrons, Korean memory, Canadian law, Korean and allied capital — combined into a government-owned compute fabric that reaches from the Hydro-Québec switchyard to the municipal town hall. (NPSI-WP-005, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Addition Paradox — Working Paper No. 4</title>
+    <id>https://npsi.ca/wp4/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp4/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp4/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp4/working-paper.pdf" length="492997"/>
+    <published>2026-05-15T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>Why the energy transition did not happen, why that is acceptable, and why Canada is uniquely positioned to win the forty years that follow. A record year for clean-energy deployment was also a record year for fossil combustion: the global system did not transition, it expanded. (NPSI-WP-004, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>A Canada–Korea Pacific Defence-Industrial Corridor — Working Paper No. 3</title>
+    <id>https://npsi.ca/wp3/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp3/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp3/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp3/working-paper.pdf" length="1467150"/>
+    <published>2026-05-01T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>A bilateral defence-industrial architecture pairing the Canadian Patrol Submarine Project with the Hanwha–Algoma Steel and Hanwha–APMA industrial-offset structures, anchored to the CKFTA institutional foundation, the October 2025 SDCP, and the 25 February 2026 Foreign and Defence (2+2) Ministerial Joint Statement. (NPSI-WP-003, v1.0.2.)</summary>
+  </entry>
+  <entry>
+    <title>A Canada–United States Energy and Compute Compact — Working Paper No. 2</title>
+    <id>https://npsi.ca/wp2/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp2/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp2/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp2/working-paper.pdf" length="1579446"/>
+    <published>2026-05-01T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>A treaty-grade bilateral architecture pairing Canadian dispatchable generation with the U.S. grid through ultra-high-voltage transmission, siting AI training workloads on Canadian hydro-electric capacity, and preserving inference workloads at the U.S. urban edge. Structurally complementary to Working Paper No. 1; financed through the same supranational vehicle. (NPSI-WP-002, v1.0.1.)</summary>
+  </entry>
+  <entry>
+    <title>The Bilateral Foundation — Working Paper No. 1</title>
+    <id>https://npsi.ca/wp1/</id>
+    <link rel="alternate" type="text/html" href="https://npsi.ca/wp1/"/>
+    <link rel="alternate" type="text/markdown" href="https://npsi.ca/wp1/index.html.md"/>
+    <link rel="enclosure" type="application/pdf" href="https://npsi.ca/wp1/working-paper.pdf" length="242666"/>
+    <published>2026-05-01T12:00:00Z</published>
+    <updated>2026-10-14T12:00:00Z</updated>
+    <category term="Working Papers"/>
+    <summary>A thirty-year Canada–Korea co-issued sovereign infrastructure bond — assembled from off-the-shelf instruments, priced as a spread over US Treasuries, with Indigenous co-ownership embedded at issuance — as the architecture of middle-power independence. (NPSI-WP-001, v1.0.1.)</summary>
+  </entry>
+</feed>

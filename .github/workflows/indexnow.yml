@@ -1,0 +1,68 @@
+name: Notify search engines (IndexNow)
+
+# After each push to main, wait for Vercel's production deployment of that
+# commit, then tell the IndexNow engines (Bing, Naver, Yandex, Seznam, Yep)
+# which pages and PDFs changed, so a new document is recrawled within hours
+# rather than whenever a crawler next visits. Run it by hand with "all" to
+# submit every URL in sitemap.xml. tools/indexnow.py holds the public key;
+# the key file it names sits at the site root.
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', '**.pdf', 'llms.txt', 'llms-full.txt']
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Submit every URL in sitemap.xml'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  deployments: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wait for the production deployment of this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          for i in $(seq 1 40); do
+            id=$(gh api "repos/$REPO/deployments?sha=$SHA&environment=Production" --jq '.[0].id // empty')
+            state=""
+            if [ -n "$id" ]; then
+              state=$(gh api "repos/$REPO/deployments/$id/statuses" --jq '.[0].state // empty')
+            fi
+            echo "check $i: ${state:-no production deployment yet}"
+            case "$state" in
+              success) exit 0 ;;
+              failure|error) echo "::warning::production deployment $state; submitting anyway"; exit 0 ;;
+            esac
+            sleep 15
+          done
+          echo "::warning::no production deployment seen in 10 minutes; submitting anyway"
+      - name: Wait for the key file to be served
+        run: |
+          key=$(sed -n 's/^KEY = "\(.*\)"$/\1/p' tools/indexnow.py)
+          for i in $(seq 1 20); do
+            curl -fsS "https://npsi.ca/$key.txt" | grep -qx "$key" && exit 0
+            sleep 15
+          done
+          echo "::error::https://npsi.ca/$key.txt is not live"; exit 1
+      - name: Submit changed URLs
+        run: |
+          if [ "${{ inputs.all }}" = "true" ]; then
+            python3 tools/indexnow.py --all
+          elif [ -n "${{ github.event.before }}" ]; then
+            python3 tools/indexnow.py --since "${{ github.event.before }}"
+          else
+            python3 tools/indexnow.py --since HEAD~1
+          fi || echo "::warning::IndexNow did not accept the submission (see the log)"

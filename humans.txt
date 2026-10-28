@@ -18,4 +18,5 @@ Type: Source Serif 4, Source Sans 3, JetBrains Mono, Noto Serif KR / Sans KR
 Hosting: Vercel (static files, no build step)
 Analytics: Umami (cookieless, aggregate, no fingerprinting)
 Repository: github.com/cherishwins/npsi-site
-Licence: Working paper text CC-BY-4.0; site source MIT; imprint and wordmark not licensed.
+Licence: Document text CC-BY-4.0, for people and machines alike; site source MIT; imprint and wordmark not licensed.
+Machine access: /llms.txt, /llms-full.txt, /registry.json, /feed.xml, and /<document>/index.html.md (full text in Markdown)

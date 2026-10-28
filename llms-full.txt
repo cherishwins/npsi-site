@@ -7,6 +7,17 @@ the complete abstract, key findings, and citation metadata for every document
 the imprint has published. Index last revised 28 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
+Use: document text is licensed CC-BY-4.0
+(https://creativecommons.org/licenses/by/4.0/). People and machines may quote,
+summarise, translate, adapt, redistribute and use it, commercially or not,
+including to train, ground or answer with AI systems, crediting the author and
+the document and giving its canonical URL. The NPSI name and wordmark are not
+licensed. The full text of each document is published in Markdown at its
+canonical URL followed by index.html.md (for example
+https://npsi.ca/sb10/index.html.md), with an exact citation in its cite_as
+field; the register is https://npsi.ca/registry.json and new documents are
+announced at https://npsi.ca/feed.xml.
+
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
 v[M.m]). North Pacific Strategy Initiative. https://npsi.ca/wp[N]/. Substitute
 Technical Briefing / Briefing Note / Special Briefing and the matching URL for
