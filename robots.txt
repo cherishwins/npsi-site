@@ -16,14 +16,16 @@
 # Every reading view carries Highwire citation_* meta tags and Schema.org
 # JSON-LD for machine citation.
 #
-# Usage preferences are stated in two vocabularies: Content-Usage (IETF AI
-# Preferences, draft-ietf-aipref-attach) and Content-Signal (the Content
-# Signals Policy). Both say yes to search, AI input and AI training.
+# Usage preferences: yes to search, to AI input (grounding and answers) and to
+# AI training. Every response from npsi.ca carries them as HTTP headers:
+#   Content-Usage: train-ai=y, search=y      (IETF AI Preferences draft)
+#   tdm-reservation: 0                        (W3C TDMRep; /.well-known/tdmrep.json)
+# In Content Signals terms: search=yes, ai-input=yes, ai-train=yes. They are
+# kept out of the groups below so this file stays valid RFC 9309 for every
+# parser.
 
 User-agent: *
 Allow: /
-Content-Usage: train-ai=y, search=y
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 # --- AI and LLM crawlers: explicitly welcome ---------------------------------
 
@@ -66,8 +68,6 @@ User-agent: DeepSeekBot
 User-agent: Bytespider
 User-agent: Diffbot
 Allow: /
-Content-Usage: train-ai=y, search=y
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 # --- Search engines, including Korea's ---------------------------------------
 

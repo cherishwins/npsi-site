@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- NPSI section card: /colophon/ — Open Graph, 1200×630. Same layout as the document cards. -->
+  <!-- Palette: Pacific Navy #F4EFE3, Treaty Bronze #C08D60, Maritime Teal #7FA8B5, Document Cream #081C30, ink #D9D3C6 -->
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="#081C30"/>
+
+  <text x="64" y="80" class="serif" font-weight="600" font-size="13" letter-spacing="3.4" fill="#F4EFE3">NORTH PACIFIC STRATEGY INITIATIVE</text>
+  <text x="1136" y="80" class="mono" font-size="10.5" letter-spacing="2.2" fill="#C08D60" text-anchor="end">TYPE · PALETTE · INFRASTRUCTURE</text>
+
+  <line x1="64" y1="108" x2="1136" y2="108" stroke="#C08D60" stroke-width="0.7"/>
+  <line x1="64"   y1="103.5" x2="64"   y2="112.5" stroke="#C08D60" stroke-width="1.1"/>
+  <line x1="600"  y1="105"   x2="600"  y2="111"   stroke="#C08D60" stroke-width="1"/>
+  <line x1="1136" y1="103.5" x2="1136" y2="112.5" stroke="#C08D60" stroke-width="1.1"/>
+
+  <text x="64" y="158" class="mono" font-size="10.5" letter-spacing="3" fill="#7FA8B5">COLOPHON</text>
+
+  <text x="64" y="248" class="serif" font-weight="700" font-size="76" fill="#F4EFE3" letter-spacing="-0.5">Colophon</text>
+  <text x="64" y="306" class="serif" font-style="italic" font-size="24" fill="#C08D60">How the imprint is set, built and licensed.</text>
+
+  <line x1="64" y1="352" x2="1136" y2="352" stroke="#2E4A63" stroke-width="0.5"/>
+  <text x="64" y="404" class="serif" font-size="21" fill="#D9D3C6">Source Serif 4, Source Sans 3 and JetBrains Mono. Plain HTML and CSS.</text>
+  <text x="64" y="436" class="serif" font-size="21" fill="#D9D3C6">Document text CC-BY-4.0.</text>
+  <line x1="64" y1="520" x2="1136" y2="520" stroke="#2E4A63" stroke-width="0.5"/>
+
+  <text x="64" y="580" class="mono" font-size="10.5" letter-spacing="2.2" fill="#7FA8B5">WORKING PAPERS ON PACIFIC SOVEREIGNTY &amp; BILATERAL ARCHITECTURE</text>
+  <text x="1136" y="580" class="mono" font-size="10.5" letter-spacing="2.2" fill="#7FA8B5" text-anchor="end">NPSI.CA/COLOPHON/</text>
+</svg>

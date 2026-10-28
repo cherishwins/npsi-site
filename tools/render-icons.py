@@ -18,7 +18,8 @@ Two layouts of the same mark, on the dark identity (cream NP, bronze meridian, n
   app   the home-screen layout, with generous clear space: apple-touch-icon.png
         (180), icon-192.png and icon-512.png. The 512 is also the manifest's
         maskable icon (the mark sits inside Android's 80% safe circle) and the
-        logo the JSON-LD names for the imprint.
+        logo the JSON-LD names for the imprint; npsi-logo-1080.png is the same
+        mark for profiles and directories that want a larger square logo.
 
 Needs fontTools and Pillow (pip install fonttools pillow) and resvg (fetched by npx,
 as tools/render-og.sh does). Repository only; never deployed.
@@ -130,6 +131,12 @@ def main() -> None:
     save_png(rasterise(app, 180), IMG / "apple-touch-icon.png")
     save_png(rasterise(app, 192), IMG / "icon-192.png")
     save_png(rasterise(app, 512), IMG / "icon-512.png")
+    # The square logo for profiles and directories (Google Business Profile,
+    # ORCID, Zenodo, LinkedIn): 1080 px, saved unoptimised so the file stays
+    # above the 10 KB floor some uploaders enforce.
+    logo = rasterise(app, 1080).convert("RGB")
+    logo.save(IMG / "npsi-logo-1080.png")
+    print(f"wrote assets/img/npsi-logo-1080.png ({logo.width}x{logo.height})")
 
 
 if __name__ == "__main__":
