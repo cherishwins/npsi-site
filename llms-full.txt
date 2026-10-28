@@ -4,7 +4,7 @@
 
 This file is the full-content companion to https://npsi.ca/llms.txt. It carries
 the complete abstract, key findings, and citation metadata for every document
-the imprint has published. Index last revised 17 October 2026; status lines
+the imprint has published. Index last revised 28 October 2026; status lines
 describe each document as at its release unless dated otherwise.
 
 How to cite: James, J. ([Year]). *[Title]* (NPSI Working Paper No. [N],
@@ -13,9 +13,10 @@ Technical Briefing / Briefing Note / Special Briefing and the matching URL for
 the other series. Document IDs follow NPSI-WP-NNN (working papers), NPSI-TB-NNN
 (technical briefings), NPSI-BN-NNN (briefing notes), NPSI-SB-NNN (special
 briefings), NPSI-PL-NNN (The Pacific Ledger, the Canada–Korea account); Special
-Briefings Nos. 4, 5, 6, 8 and 9, Technical Briefing No. 2 and Ledger №02 keep
-the date-based IDs printed on their releases (NPSI-20261003-B, NPSI-20261003-C,
-NPSI-20261002-A, NPSI-20260920-B, NPSI-20261016, NPSI-20261014, NPSI-20261001-A), accession
+Briefings Nos. 4, 5, 6, 8, 9 and 10, Technical Briefing No. 2 and Ledger №02
+keep the date-based IDs printed on their releases (NPSI-20261003-B,
+NPSI-20261003-C, NPSI-20261002-A, NPSI-20260920-B, NPSI-20261016,
+NPSI-20261027, NPSI-20261014, NPSI-20261001-A), accession
 numbers whose publication serials are pending. Every document has an HTML page at its
 canonical URL with Highwire citation_* meta tags and Schema.org JSON-LD. For
 PDF-first releases (WP5, WP10, WP11, SB2, SB3, SB4, SB5) the PDF is the
@@ -427,6 +428,33 @@ territorial privacy law retroactive to 2000, leaving voters no right of access
 or correction, with the Senate's three-year
 sunset amendment rejected. Explicitly non-partisan; the illustrative voter
 record is fictional and labelled as such.
+
+## Special Briefing No. 10 — The 2027 Cliff
+
+- ID: NPSI-20261027 (accession number; publication serial pending) · v1.0 · dated 27 October 2026; published 28 October 2026 with pre-publication corrections applied
+- Canonical: https://npsi.ca/sb10/ (reading view, with the companion as its final section) · PDF (21 pp.): https://npsi.ca/sb10/special-briefing.pdf · companion, Before the First of January, a contractor readiness checklist (3 pp.): https://npsi.ca/sb10/contractor-checklist.pdf
+- Keywords: critical minerals, rare earths, NdFeB magnets, samarium-cobalt, dysprosium, terbium, tungsten, tantalum, gallium, germanium, molybdenum, DFARS, 10 U.S.C. 4872, Executive Order 14415, defence procurement, export controls, MOFCOM, supply chains, ERCOT, mining workforce
+- Notes: a third-person assessment with judgements marked "[NPSI assessment]" and a signed first-person closing note; nine figures; a line-by-line check of the circulating draft; 52 sources. Carries an interest note for the editor's declared energy-sector work and the adjacent applied-intelligence work, and states its AI drafting assistance (https://npsi.ca/disclosure/). Not legal advice. Released with pre-publication corrections applied, listed at the foot of the page.
+
+Abstract: On 1 January the Pentagon stops contracting for magnets, tungsten
+and tantalum mined or refined in China. The rule is narrower than reported. The
+gap it exposes is wider. A forensic assessment of United States legal,
+industrial, grid and workforce readiness for the defence critical-materials
+ban, with every claim in the circulating draft checked against the primary
+text. The cliff is real, but it is not where the draft put it. Magnet tonnage
+is not the constraint. The constraint sits upstream, in heavy rare earths,
+samarium and tungsten, where no contractor can fix supply in the 66 days left.
+
+Key findings: Of about 48,000 tonnes of NdFeB magnets the United States used
+in 2025, about 300 came from domestic sources (Arthur D. Little via Reuters).
+China refines more than 99% of dysprosium and terbium; dysprosium oxide outside
+China sold at about 16.3 times the Chinese price in late September, while NdPr
+sells slightly below it. No commercial US tungsten mine has produced since 2015,
+and tungsten APT went from $331 to above $3,000. The upstream bar (10 U.S.C.
+4872(a)(3), added by the FY2026 act) applies from 1 January 2027, and under
+Executive Order 14415 nonavailability waivers then require an accepted
+mitigation plan. Beijing's arrangement runs to 10 January, nine days after the
+rule bites, but its suspension notice still reads 10 November.
 
 ## Special Briefing No. 9 — Settled in Cash
 
