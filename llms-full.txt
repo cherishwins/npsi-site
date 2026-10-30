@@ -469,10 +469,10 @@ rule bites, but its suspension notice still reads 10 November.
 
 ## Special Briefing No. 9 — Settled in Cash
 
-- ID: NPSI-20261016 (accession number; publication serial pending) · v1.0 · dated 16 October 2026; published 17 October 2026
+- ID: NPSI-20261016 (accession number; publication serial pending) · v1.0.1 (page, errata 30 October 2026) · PDF v1.0 · dated 16 October 2026; published 17 October 2026
 - Canonical: https://npsi.ca/sb9/ (reading view, set from the author's HTML) · PDF (11 pp.): https://npsi.ca/sb9/special-briefing.pdf
 - Keywords: AI infrastructure, data centres, power delivery, CoreWeave, credit, gold, COMEX, futures, Treasury market, Federal Reserve, passive investing, ERCOT, Dominion Energy, PJM, KOSPI
-- Notes: a signed briefing in the first person; six figures; a fifteen-claim verification ledger; sources grouped and linked. Carries an interest note for the editor's declared energy-sector work and the adjacent applied-intelligence work, and states its AI drafting assistance (https://npsi.ca/disclosure/). Released with pre-publication corrections applied, listed at the foot of the page. No. 7 in this line remains reserved.
+- Notes: a signed briefing in the first person; six figures; a fifteen-claim verification ledger; sources grouped and linked. Carries an interest note for the editor's declared energy-sector work and the adjacent applied-intelligence work, and states its AI drafting assistance (https://npsi.ca/disclosure/). Released with pre-publication corrections applied; errata of 30 October 2026 (v1.0.1) on the page only. Both are listed at the foot of the page. No. 7 in this line remains reserved.
 
 Abstract: The AI build was priced like a futures contract. A data centre only
 settles one way: physical delivery of power. In mid-October 2026 the S&P 500
