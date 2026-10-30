@@ -1,7 +1,7 @@
 {
   "imprint": "North Pacific Strategy Initiative",
   "url": "https://npsi.ca/",
-  "generated": "2026-10-28",
+  "generated": "2026-10-30",
   "identifiers": {
     "serial": "Publication serial, assigned by the editor alone at publication; sequential within its line; never reused.",
     "accession": "Intake number, NPSI-YYYYMMDD-X, assigned when a document enters the system; immutable. A document may carry an accession number before a serial is assigned."
@@ -270,7 +270,7 @@
       "url": "/sb9/",
       "title": "Settled in Cash",
       "subtitle": "The AI build was priced like a futures contract. A data centre only settles one way: physical delivery of power.",
-      "version": "v1.0",
+      "version": "v1.0.1",
       "released": "2026-10-17",
       "series": null,
       "status": "published",

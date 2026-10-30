@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://npsi.ca/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://npsi.ca/"/>
   <link rel="related" type="application/json" href="https://npsi.ca/registry.json"/>
-  <updated>2026-10-28T12:00:00Z</updated>
+  <updated>2026-10-30T12:00:00Z</updated>
   <author><name>Jesse James</name><email>editor@npsi.ca</email><uri>https://npsi.ca/about/</uri></author>
   <icon>https://npsi.ca/assets/img/icon-192.png</icon>
   <logo>https://npsi.ca/assets/img/og-default.png</logo>
@@ -30,9 +30,9 @@
     <link rel="alternate" type="text/markdown" href="https://npsi.ca/sb9/index.html.md"/>
     <link rel="enclosure" type="application/pdf" href="https://npsi.ca/sb9/special-briefing.pdf" length="159811"/>
     <published>2026-10-17T12:00:00Z</published>
-    <updated>2026-10-17T12:00:00Z</updated>
+    <updated>2026-10-30T12:00:00Z</updated>
     <category term="Special Briefings"/>
-    <summary>The AI build was priced like a futures contract. A data centre only settles one way: physical delivery of power. In mid-October 2026 the S&amp;P 500 sat less than 1% below its record while the assets closest to the data centre fell hardest: Korea&#x27;s KOSPI lost 7.57% in a session and CoreWeave&#x27;s 9% notes traded at 80.75, a yield near 15.3%. Dominion Energy has about 54 GW of data-centre capacity under contract against a 4.8 GW data-centre billing peak; gold&#x27;s paper on COMEX runs about 2.7 times registered metal. Gold, crude, the October credit scare and the money loop are checked against the record, claim by claim. (NPSI-20261016, serial pending, v1.0.)</summary>
+    <summary>The AI build was priced like a futures contract. A data centre only settles one way: physical delivery of power. In mid-October 2026 the S&amp;P 500 sat less than 1% below its record while the assets closest to the data centre fell hardest: Korea&#x27;s KOSPI lost 7.57% in a session and CoreWeave&#x27;s 9% notes traded at 80.75, a yield near 15.3%. Dominion Energy has about 54 GW of data-centre capacity under contract against a 4.8 GW data-centre billing peak; gold&#x27;s paper on COMEX runs about 2.7 times registered metal. Gold, crude, the October credit scare and the money loop are checked against the record, claim by claim. (NPSI-20261016, serial pending, v1.0.1.)</summary>
   </entry>
   <entry>
     <title>Running Silent — Technical Briefing No. 2</title>
